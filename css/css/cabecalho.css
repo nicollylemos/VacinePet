@@ -4,7 +4,12 @@
 }
 
 .navbar-brand{
+    color: #FA5909;
     font-family:baloo;
     font-size: 25px;
     padding: 0;
+}
+
+#navbar{
+    background-color: rgb(255, 247, 247);
 }
