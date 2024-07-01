@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/cabecalho.css">
+    <link rel="stylesheet" href="css/css/header.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
@@ -18,16 +18,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Sobre
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Sobre a veterinária</a></li>
-                <li><a class="dropdown-item" href="#">Sobre o VacinePet</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Como funciona o atendimento domiciliar?</a></li>
-              </ul>
+          <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Agendamento</a>
@@ -53,13 +45,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Ajuda</a>
             </li>
-            <li class="nav-item"> 
-              <button>Entrar</button>
-            </li>
-            <li class="nav-item"> 
-              <button>Cadastrar</button>
-            </li>
-          
+            <div  class="btn-acesso">
+              <li class="nav-item"> 
+                <button>Entrar</button>
+                <button>Cadastrar</button>
+              </li>
+            </div>
           </ul>
         </div>
       </div>

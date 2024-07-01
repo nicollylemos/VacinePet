@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'baloo';
+    src: url("../font/Baloo-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'league';
+    src: url("../font/static/LeagueSpartan-Regular.ttf");
+}
+
+.navbar-brand {
+    color: #FA5909;
+    font-family: baloo;
+    font-size: 25px;
+    padding: 0;
+}
+
+#navbar {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    font-family: league;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    margin-right: 20px;
+}
+
+.dropdown-item {
+    font-family: league;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+#navbarSupportedContent{
+    margin-left:40px;   
+}
+
+.btn-acesso{
+    margin-right: 60px;
+}
