@@ -7,8 +7,17 @@
     src:url("../font/Baloo-Regular.ttf");
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 .tela-inicial{
-    background-color: #FFD371;
+    background-image: url(fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     width: 100%;
     height: 100vh;
@@ -35,20 +44,34 @@
 .info-inicial{
     width: 610px;
     margin-left:100px;
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 150px;
     
 }
 .info-inicial p{
-    font-family: league;
+    font-family: baloo;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-size: 20px;
-    color: black;
+    font-size: 19px;
+    color: #2c2c2c;
     position: relative;
-    bottom: 15px;
+    bottom: 20px;
+    margin-left: 8px;
 }
 body{
     background-color: rgb(255, 255, 255);
     margin: 0;
 }
+
+.btn-inicio{
+    background-color: #52BACB;
+    color: #fff;
+    font-weight: 650;
+    border-radius:50px;
+    font-size: 20px;
+    padding: 8px;
+    width: 200px;
+    border: none;
+    letter-spacing: 1px;
+}
+

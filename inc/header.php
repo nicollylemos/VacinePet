@@ -12,7 +12,7 @@
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
     <nav id="navbar" class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.php">VacinePet </a>
+        <a class="navbar-brand" href="index.php">VacinePet <i class="fa-solid fa-paw fa-rotate-by" style="color: #fa5909; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,8 +47,8 @@
             </li>
             <div  class="btn-acesso">
               <li class="nav-item"> 
-                <button>Entrar</button>
-                <button>Cadastrar</button>
+                <button class="btn-login">Entrar</button>
+                <button class="btn-cad">Cadastrar</button>
               </li>
             </div>
           </ul>
