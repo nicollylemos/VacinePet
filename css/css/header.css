@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'league';
-    src: url("../font/static/LeagueSpartan-Regular.ttf");
+    src: url("../font/league/LeagueSpartan-Regular.ttf");
 }
 
 .navbar-brand {
@@ -25,7 +25,7 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-size: 20px;
-    color: black;
+    color: rgb(27, 27, 27);
     margin-right: 20px;
 }
 

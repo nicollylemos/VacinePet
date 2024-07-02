@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/static/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family:'baloo';
+    src:url("../font/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.tela-inicial{
+    background-image: url(fundo-index.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.titulo-site{
+    color: #FA5909;
+    font-family:baloo;
+    font-size: 100px;
+    padding: 0;
+    margin-bottom: 0px;
+  
+}
+.subtitulo-site{
+    position: relative;
+    bottom: 15px;
+    color:#E65005;
+    font-family:baloo;
+    font-size: 25px;
+    padding: 0;
+    margin-left:8px;
+}
+
+.info-inicial{
+    width: 610px;
+    margin-left:100px;
+    position: absolute;
+    top: 150px;
+    
+}
+.info-inicial p{
+    font-family: baloo;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 19px;
+    color: #343434;
+    position: relative;
+    bottom: 20px;
+    margin-left: 8px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.btn-inicio{
+    background-color: #52BACB;
+    color: #fff;
+    font-weight: 650;
+    border-radius:50px;
+    font-size: 20px;
+    padding: 8px;
+    width: 200px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.informacao{
+    width: 95vw;
+    position: relative;
+
+}
+
+#info-cao{
+    background-color: #FFD371;
+    width: 500px;
+    height: 270px;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#info-gato{
+    background-color: #52BACB;
+    width: 500px;
+    height: 270px;
+    border-radius: 25px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+#info-gato h3{
+    margin-top: 6px;
+    font-family: oswald;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 60px;
+    color: #FFD371;
+    letter-spacing: 2px;
+}
+
+#info-cao h3{
+    margin-top: 6px;
+    font-family: oswald;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 60px;
+    color: #FA5909;
+    letter-spacing: 2px;
+}
+
+#info-gato p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#info-cao p{
+    color: #343434;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.texto{
+    width: 250px;
+}
+
+a{
+    text-decoration:none;
+
+}
+
+.informacao button{
+    background-color: #ffffff;
+    color: #2FA8BB;
+    font-weight: 650;
+    border-radius:50px;
+    font-size: 18px;
+    padding: 6;
+    width: 150px;
+    border: none;
+    margin-top: 15px;
+    height: 35px;
+}
