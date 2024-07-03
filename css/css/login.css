@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/static/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family:'baloo';
+    src:url("../font/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
+}
+body {
+    background-color: #52BACB;
+}
+.title-login{
+    color: #52BACB;
+    font-family:baloo;
+    font-size: 60px;
+    width: 610px;
+    margin-left:-20px;
+    position: absolute;
+    top: -50px;
+
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 950px; 
+    right: 13%;
+    margin: 0 auto;
+    align-items: center;
+    height: 80%;
+    margin-top: 5%;
+    z-index: 2;
+    box-shadow: 20px 20px 20px rgb(8, 113, 129);
+}
+
+
+.form {
+    position: absolute;
+    left: 12%;
+    top: 20%;
+}
+
+.form-control {
+    border: solid #52BACB;
+}
+
+.yellow-div {
+    background-color: #FFD371;
+    position: absolute;
+    width: 420px; 
+    right: 0%;
+    height: 100%;
+    margin-top: 0%;
+    background-image: url('/img/gatologin.png');
+    background-size: 130%;
+    background-position: center 95%;
+}
+
+.cilindros {
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cilindro1 {
+    top: 315px;
+    width: 200px;
+    height: 25px;
+    left: -20%;
+
+}
+
+.cilindro2 {
+    top: 350px;
+    width: 250px;
+    height: 40px;
+    left: -20%;
+}
+
+.cilindro3 {
+    top: 454px;
+    width: 230px;
+    height: 45px;
+    left: -20%;
+}
+
+.cilindro4 {
+    top: 400px;
+    width: 190px;
+    height: 45px;
+    left: -20%;
+}
+.cilindro5 { /*bolinha*/
+    border-radius: 50%;
+    top: 300px;
+    width: 15px;
+    height: 15px;
+    left: 30%;
+}
+
