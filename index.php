@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/style.css">
+    <link rel="stylesheet" href="css/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet</title>
 </head>
@@ -20,7 +20,7 @@
             <button class="btn-inicio">Agendar</button>
         </div>
         <div class="img-animal">
-            <img src="" alt="">
+            <img src="img/grupo-animais.png" alt="">
         </div>
     </div>
    </section>
@@ -28,16 +28,17 @@
 
    <div class="informacao">
         <div class="row justify-content-center">
-            <div class="col-4" id="info-cao">
-                <div class="texto">
-                    <h3>CÃO</h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy.
-                    <button><a href="">Ler Mais</a></button>
+                <div class="col-4" id="info-cao">
+                    <div class="texto">
+                        <h3>CÃO</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy.
+                        <button><a href="">Ler Mais</a></button>
+                    </div>
+                    <div class="img-pet">
+                    <img src="img/cachorro-infos.png" width="100px" alt="">
+                    </div>
                 </div>
-                <div class="img-pet">
-                <img src="img/cachorro-infos.png" width="100px" alt="">
-                </div>
-            </div>
+            </a>
             <div class="col-4" id="info-gato">
                 <div class="texto">
                         <h3>GATO</h3>
