@@ -25,7 +25,7 @@
                 <form action="login.php" method="post">
 
                     <div class="title">
-                        <h1 class="title-login"> LOGIN <i style="color: #fa5909; --fa-rotate-angle: 49deg; "></i></h1>
+                        <h1 class="title-login"> LOGINNNNN <i style="color: #fa5909; --fa-rotate-angle: 49deg; "></i></h1>
                     </div>
 
                     <div class="form-group mt-4">
