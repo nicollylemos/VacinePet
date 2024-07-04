@@ -64,14 +64,7 @@
                                 name="customer['zip_code']">
                         </div>
 
-                        <div class="steps">
-                            <span class="circle active">1</span>
-                            <span class="circle">2</span>
-                            <span class="circle">3</span>
-                            <span class="circle">4</span>
-                            <div class="progress-bar">
-                                <span class="indicator"></span>
-                            </div>
+           
 
                             <div class="buttons">
                                 <button id="prev" disabled>Prev</button>
