@@ -14,39 +14,42 @@
    <section class="home-inicial">
     <div class="tela-inicial">
         <div class="info-inicial">
-            <h1 class="titulo-site">VacinePet <i class="fa-solid fa-paw fa-rotate-by" style="color: #fa5909; --fa-rotate-angle: 49deg; width: 30px; height:10px; font-size:50px;"></i></h1>
+            <h1 class="titulo-site">VacinePet <i class="fa-solid fa-paw fa-rotate-by" style="color: #fa5909; --fa-rotate-angle: 49deg; width: 50px; height:10px; font-size:55px;"></i></h1>
             <h2 class="subtitulo-site">CARINHO, CUIDADO E PREVENÇÃO PARA <br>SEU PET, NO CONFORTO DA SUA CASA.</h2>
-            <p> Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and  scrambled it to make a type specimen book. </p>
+            <p> Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and  scrambled it to make a type specimen book.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and  scrambled it to make a type specimen book. </p>
             <button class="btn-inicio">Agendar</button>
         </div>
         <div class="img-animal">
-            <img src="img/grupo-animais.png" alt="">
+        
         </div>
     </div>
    </section>
    <section class="info-doencas">
-
    <div class="informacao">
         <div class="row justify-content-center">
                 <div class="col-4" id="info-cao">
                     <div class="texto">
                         <h3>CÃO</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy.
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy text of the printing  is simply.
                         <button><a href="">Ler Mais</a></button>
                     </div>
                     <div class="img-pet">
-                    <img src="img/cachorro-infos.png" width="100px" alt="">
+                        <div class="pet-dog">
+                            <img src="imgs/cachorro-fofo.png" height="260px"width="240px"alt="">
+                        </div>
                     </div>
                 </div>
-            </a>
             <div class="col-4" id="info-gato">
                 <div class="texto">
                         <h3>GATO</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy.
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy text of the printing  is simply.
                         <button><a href="">Ler Mais</a></button>
                 </div>
                 <div class="img-pet">
-                  
+                    <div class="pet-cat">
+                        <img src="" alt="">
+                    </div>
                 </div>
             </div>
        </div>

@@ -2,23 +2,26 @@
     font-family: 'league';
     src: url("../font/static/LeagueSpartan-Regular.ttf");
 }
+
 @font-face {
-    font-family:'baloo';
-    src:url("../font/Baloo-Regular.ttf");
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
 }
+
 @font-face {
-    font-family:'oswald';
-    src:url("../font/oswald/Oswald-Regular.ttf");
+    font-family: 'oswald';
+    src: url("../font/oswald/Oswald-Regular.ttf");
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-.tela-inicial{
-    background-image: url(fundo-index.svg);
+.tela-inicial {
+    background-image: url(img/background-index.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,59 +30,60 @@
     height: 100vh;
 }
 
-.titulo-site{
+.titulo-site {
     color: #FA5909;
-    font-family:baloo;
-    font-size: 100px;
+    font-family: baloo;
+    font-size: 120px;
     padding: 0;
     margin-bottom: 0px;
-  
-}
-.subtitulo-site{
-    position: relative;
-    bottom: 15px;
-    color:#E65005;
-    font-family:baloo;
-    font-size: 25px;
-    padding: 0;
-    margin-left:8px;
+
 }
 
-.info-inicial{
-    width: 610px;
-    margin-left:100px;
+.subtitulo-site {
+    position: relative;
+    bottom: 15px;
+    color: #E65005;
+    font-family: baloo;
+    font-size: 25px;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.info-inicial {
+    width: 690px;
+    margin-left: 120px;
     position: absolute;
     top: 150px;
-    
 }
-.info-inicial p{
+
+.info-inicial p {
     font-family: baloo;
     font-optical-sizing: auto;
     font-weight: 500;
     font-size: 19px;
     color: #343434;
     position: relative;
-    bottom: 20px;
+    bottom: 15px;
     margin-left: 8px;
 }
 
-.tela-inicial img{
+.tela-inicial img {
     position: relative;
     left: 700px;
     width: 45%;
     top: 100px;
 }
 
-body{
+body {
     background-color: rgb(255, 255, 255);
     margin: 0;
 }
 
-.btn-inicio{
+.btn-inicio {
     background-color: #52BACB;
     color: #fff;
     font-weight: 650;
-    border-radius:50px;
+    border-radius: 50px;
     font-size: 20px;
     padding: 8px;
     width: 200px;
@@ -87,97 +91,120 @@ body{
     letter-spacing: 1px;
 }
 
-.informacao{
+.informacao {
     width: 95vw;
     position: relative;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
 }
 
-#info-cao{
+#info-cao {
     background-color: #FFD371;
     width: 540px;
     height: 290px;
     border-radius: 25px;
-    margin:25px;
+    margin: 25px;
     position: relative;
     top: 30px;
+    box-shadow: 15px 15px 15px #e9e6e6;
 }
 
-#info-gato{
+#info-gato {
     background-color: #52BACB;
     width: 540px;
     height: 290px;
     border-radius: 25px;
-    margin:25px;
+    margin: 25px;
     position: relative;
     top: 30px;
-    
+    box-shadow: 15px 15px 15px #e9e6e6;
+
 }
 
-#info-gato h3{
+#info-gato h3 {
     margin-top: 6px;
-    font-family: oswald;
+    font-family: baloo;
     font-optical-sizing: auto;
-    font-weight: 900;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 65px;
     color: #FFD371;
     letter-spacing: 2px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
-#info-cao h3{
+#info-cao h3 {
     margin-top: 6px;
-    font-family: oswald;
+    font-family: baloo;
     font-optical-sizing: auto;
-    font-weight: 900;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 65px;
     color: #FA5909;
     letter-spacing: 2px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
-#info-gato p{
+#info-gato p {
     color: #fff;
     font-weight: 700;
     font-size: 15px;
+    position: relative;
+    bottom: 20px;
 }
 
-#info-cao p{
+#info-cao p {
     color: #343434;
     font-weight: 700;
     font-size: 15px;
+    position: relative;
+    bottom: 20px;
 }
 
-.texto{
-    width: 250px;
+.texto {
+    width: 270px;
+    position: relative;
+    float: left;
+    padding-left: 10px;
 }
 
 .informacao a {
     text-decoration: none;
-    color:  #2FA8BB;
- }
- /* link que foi visitado */
- .informacao a:visited {
-     color: #2FA8BB;
- }
- /* quando o ponteiro do mouse passa no link */
- .informacao a:hover {
-     color:  #178c9e;
- }
- /* quando o link for selecionado */
- .informacao a:active {
-     color: #178c9e;
- }
+    color: #2FA8BB;
+}
 
-.informacao button{
+/* link que foi visitado */
+.informacao a:visited {
+    color: #2FA8BB;
+}
+
+/* quando o ponteiro do mouse passa no link */
+.informacao a:hover {
+    color: #178c9e;
+}
+
+/* quando o link for selecionado */
+.informacao a:active {
+    color: #178c9e;
+}
+
+.informacao button {
     background-color: #ffffff;
     font-weight: 650;
-    border-radius:50px;
+    border-radius: 50px;
     font-size: 18px;
     padding: 6;
     width: 150px;
     border: none;
-    margin-top: 15px;
+    margin-top: 10px;
     height: 35px;
-    text-decoration:none;
+    text-decoration: none;
+}
+
+.img-pet{
+    position: relative;
+    float: right;
+    top: 30px;
 }

@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'baloo';
-    src: url("../font/Baloo-Regular.ttf");
+    src: url("../font/baloo/Baloo-Regular.ttf");
 }
 
 @font-face {
@@ -45,6 +45,4 @@
     margin-left:40px;   
 }
 
-.btn-acesso{
-    margin-right: 60px;
-}
+    
