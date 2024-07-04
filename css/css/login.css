@@ -63,7 +63,7 @@ body {
     background-size: 130%;
     background-position: center 95%;
     background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .cilindros {
     position: absolute;
@@ -119,16 +119,19 @@ body {
     margin-left: 55%; 
     color: #FD811C;
     font-family: baloo;
+    text-decoration: none;
 }
 
 .criar {
     color: #FD811C;
     font-family: baloo;
+    text-decoration: none;
 }
 .criar-div{
     margin-top: 8%;
     right: 10%;
 }
 .final{
-    right: 10%;
+    margin-top: 15%;
+    text-align:center;
 }

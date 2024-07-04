@@ -42,12 +42,8 @@
                             <div id="actions" class="mt-4">
                                 <button type="submit" class="btn btn-primary btn-custom">ENTRAR</button>
                             </div>
-
-                            <div class="criar-div">
                                 <h7>Não tem uma conta?</h7><a href="#"class="criar">Cadastre-se</a>
-                            </div>
                         </div>
-                        
                     </form>
                 </div>
             </div>
