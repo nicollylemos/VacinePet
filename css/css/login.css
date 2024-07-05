@@ -18,7 +18,7 @@ body {
     font-family: baloo;
     font-size: 60px;
     width: 610px;
-    margin-left: -20px;
+    margin-left: -20px; 
     position: absolute;
     bottom: 315px;
 }
