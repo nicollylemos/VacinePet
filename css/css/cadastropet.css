@@ -20,13 +20,18 @@ body{
     right: 12%;
     margin: 0 auto;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     margin-top: 3%;
     z-index: 2;
 }
 .form-control{
     border:  solid #FFD371;
     font-family: baloo;
+    width: 300px;
+    margin-top: 14%;
+    left: 20%;
+    border-radius: 20px;
+    height: 50px;
 }
 .form-control::placeholder {
     color: #8C8C8C; 
@@ -34,11 +39,13 @@ body{
 .form-control1{
     font-family: baloo;
 }
-.title{
+.title-title{
+    font-size: 60px;
     color: #FD811C;
     font-family:baloo;
 }
-.sub-title{
+.sub-title-title{
+    font-size: 20px;
     color: #52BACB;
 }
 .form{
@@ -49,18 +56,21 @@ body{
 .blue-div{
     background-color: #52BACB;
     background-image: url('img/dogcadpet.png');
+    background-size: 130%;
+    background-position: center 95%;
+    background-repeat: no-repeat;
     position: absolute;
     width: 280px; 
     left:0%;
     margin: 0 auto;
     align-items: center;
-    height: 100vh;
-    margin-top: 0%;
+    height: 110vh;
+
 }
 .title-blue-div1{
     color: rgb(255, 255, 255);
     font-family: baloo;
-    height: 30%;
+    height: 15%;
 }
 .title-blue-div2{
     color: white;
@@ -68,21 +78,22 @@ body{
 }
 .title-blue-div3{
     color: rgb(255, 255, 255);
+    font-size: 20px;
 }
-.circle {
-    width: 150px;
-    height: 150px;
-    background-color: #FFD371;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    position: relative;
+.btn-custom {
+    top: 110%;
+    font-family: baloo;
+    font-size: 23px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 250px;
+    color: white;
 }
-.dog-image {
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    object-fit: cover;
+.btn-custom:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+}
+.final{
+    text-align:center;
 }
