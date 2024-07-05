@@ -1,58 +1,15 @@
 @font-face {
-  font-family: 'league';
-  src: url("../font/static/LeagueSpartan-Regular.ttf");
+    font-family: 'league';
+    src: url("../font/static/LeagueSpartan-Regular.ttf");
 }
 @font-face {
-  font-family:'baloo';
-  src:url("../font/baloo/Baloo-Regular.ttf");
+    font-family:'baloo';
+    src:url("../font/baloo/Baloo-Regular.ttf");
 }
 @font-face {
-  font-family:'oswald';
-  src:url("../font/oswald/Oswald-Regular.ttf");
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
 }
-body{
+body {
     background-color: #FFD371;
 }
-.container{
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    width: 1200px; 
-    right: 10%;
-    margin: 0 auto;
-    align-items: center;
-    height: 100vh;
-    margin-top: 3%;
-    z-index: 2;
-}
-.form-control{
-    border:  solid #FFD371;
-}
-.title{
-    color: #FD811C;
-    font-family: baloo;
-    font-size: 10px;
-    width: 610px;
-    bottom: 315px;
-}
-.sub-title{
-    color: #52BACB;
-}
-.form{
-    position: absolute;
-    right: 10%;
-    top: 12%;
-}
-.blue-div{
-    background-color: #52BACB;
-    position: absolute;
-    width: 200px; 
-    left:0%;
-    margin: 0 auto;
-    align-items: center;
-    height: 100vh;
-    margin-top: 0%;
-
-}
-
-
-
