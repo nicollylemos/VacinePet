@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/static/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family:'baloo';
+    src:url("../font/baloo/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
+}
+body{
+    background-color: #FFD371;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 980px; 
+    right: 12%;
+    margin: 0 auto;
+    align-items: center;
+    height: 100vh;
+    margin-top: 3%;
+    z-index: 2;
+}
+.form-control{
+    border:  solid #FFD371;
+    font-family: baloo;
+}
+.form-control::placeholder {
+    color: #8C8C8C; 
+}
+.form-control1{
+    font-family: baloo;
+}
+.title{
+    color: #FD811C;
+    font-family:baloo;
+}
+.sub-title{
+    color: #52BACB;
+}
+.form{
+    position: absolute;
+    left: 37%;
+    top: 12%;
+}
+.blue-div{
+    background-color: #52BACB;
+    background-image: url('img/dogcadpet.png');
+    position: absolute;
+    width: 280px; 
+    left:0%;
+    margin: 0 auto;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0%;
+}
+.title-blue-div1{
+    color: rgb(255, 255, 255);
+    font-family: baloo;
+    height: 30%;
+}
+.title-blue-div2{
+    color: white;
+    font-family: baloo;
+}
+.title-blue-div3{
+    color: rgb(255, 255, 255);
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #FFD371;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+}
+.dog-image {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+}
