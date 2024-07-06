@@ -6,8 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/styles.css">
+    <link rel="stylesheet" href="css/css/telainicial.css">
+    <link rel="stylesheet" href="css/css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>VacinePet</title>
 </head>
 <body>
@@ -16,7 +19,7 @@
         <div class="info-inicial">
             <h1 class="titulo-site">VacinePet <i class="fa-solid fa-paw fa-rotate-by" style="color: #fa5909; --fa-rotate-angle: 49deg; width: 50px; height:10px; font-size:55px;"></i></h1>
             <h2 class="subtitulo-site">CARINHO, CUIDADO E PREVENÇÃO PARA <br>SEU PET, NO CONFORTO DA SUA CASA.</h2>
-            <p> Lorem Ipsum is simply dummy text of the printing and  typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and  scrambled it to make a type specimen book.
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and  scrambled it to make a type specimen book.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer took a galley of type and  scrambled it to make a type specimen book. </p>
             <button class="btn-inicio">Agendar</button>
         </div>
@@ -25,6 +28,7 @@
         </div>
     </div>
    </section>
+   <!-- Card para tela de informações sobre as doenças -->
    <section class="info-doencas">
    <div class="informacao">
         <div class="row justify-content-center">
@@ -36,7 +40,7 @@
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog">
-                            <img src="imgs/cachorro-fofo.png" height="260px"width="240px"alt="">
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
@@ -54,12 +58,102 @@
             </div>
        </div>
     </div>
-   
-
-  
    </section>
-   <section class="atendimento-dmcl">
 
+   <!-- Valores Vacinas -->
+   <section class="secao-valores">
+    <div class="titulo-vacina">
+        <h2>Vacinas Procuradas</h2>
+    </div>
+   <div class="slide-container swiper">
+   <div class="slide-content">
+        <div class=" card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/gato-card.jpeg" alt="" class="card-img">
+                    </div>
+                </div>
+                    <div class="card-content">
+                        <h3 class="nome-vacina"><!-- futuro php--> Vacina Polivalente</h3>
+                        <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                        </p>
+                        <a href=""></a>
+                    </div>
+            </div>
+            <div class=" card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/gato-card.jpeg" alt="" class="card-img">
+                    </div>
+                </div>
+                    <div class="card-content">
+                        <h3 class="nome-vacina"><!-- futuro php--> Vacina Polivalente</h3>
+                        <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                        </p>
+                        <a href=""></a>
+                    </div>
+            </div>
+            <div class=" card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/gato-card.jpeg" alt="" class="card-img">
+                    </div>
+                </div>
+                    <div class="card-content">
+                        <h3 class="nome-vacina"><!-- futuro php--> Vacina Polivalente</h3>
+                        <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                        </p>
+                        <a href=""></a>
+                    </div>
+            </div>
+            <div class=" card swiper-slide">       
+                    <div class="image-content">
+                    <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="imgs/gato-card.jpeg" alt="" class="card-img">
+                        </div>
+                    </div>
+                        <div class="card-content">
+                            <h3 class="nome-vacina"><!-- futuro php--> Vacina Polivalente</h3>
+                            <p class="description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                            </p>
+                            <a href=""></a>
+                        </div>
+            </div>
+            <div class="card swiper-slide">
+            <div class="image-content">
+                <span class="overlay"></span>
+                    <div class="card-image">
+                        <img src="imgs/gato-card.jpeg" alt="" class="card-img">
+                    </div>
+                </div>
+                    <div class="card-content">
+                        <h3 class="nome-vacina"><!-- futuro php--> Vacina Polivalente</h3>
+                        <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                        </p>
+                        <a href=""></a>
+                    </div>
+            </div>
+        </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+    </div>  
    </section>
 </body>
+<!--Swiper JavaScript-->
+<script src="js/swiper/swiper-bundle.min.js"></script>
+<!--JavaScript-->
+<script src="js/script.js"></script>
+
+
 </html>

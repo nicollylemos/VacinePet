@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/league/LeagueSpartan-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'oswald';
+    src: url("../font/oswald/Oswald-Regular.ttf");
+}
+
+.valores-info{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.valores-info h2{
+    font-family: baloo;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #ffffff;
+   
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px ;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid  #FA5909;
+}
+
+.slide-container{
+    width: 100%;
+    padding: 40px 0;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px 0 25px;
+    padding: 25px 0;
+}
+.nome-vacina{
+    font-family: league;
+    font-size: 25px;
+    font-weight: 700;
+    color: #52BACB;
+}
+
+.description{
+    font-size:14px;
+    color: #707070;
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:#FA5909 ;
+    left: 0;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #FA5909;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #ffffff;
+}
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.swiper{
+    width: 95%;
+}
+
+.btn-img{
+    z-index: auto;
+    position: absolute;
+}
+
+
