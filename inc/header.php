@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/header.css">
+    <link rel="stylesheet" href="css/css/cabecalho.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-0 m-0 border-0 bd-example m-0 border-0">
@@ -48,7 +48,7 @@
             <div  class="btn-acesso">
               <li class="nav-item"> 
                 <a href="login.php"><button class="btn-login">Entrar</button></a>
-                <a href="cadastro.php"><button class="btn-cad">Cadastrar</button></a>
+                <a href="cadastropet.php"><button class="btn-cad">Cadastrar</button></a>
               </li>
             </div>
           </ul>

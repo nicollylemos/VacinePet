@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'league';
-    src: url("../font/static/LeagueSpartan-Regular.ttf");
+    src: url("../font/league/LeagueSpartan-Regular.ttf");
 }
 @font-face {
     font-family:'baloo';
@@ -18,7 +18,6 @@ body {
     font-family: baloo;
     font-size: 60px;
     width: 610px;
-    margin-left: -20px; 
     position: absolute;
     bottom: 315px;
 }

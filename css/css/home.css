@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/league/LeagueSpartan-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'oswald';
+    src: url("../font/oswald/Oswald-Regular.ttf");
+}
+
+.valores-info{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.valores-info h2{
+    font-family: baloo;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #ffffff;
+    height: 900px;
+   
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px ;
+}
+
+.card-image{
+    position: relative;
+    height: 55px;
+    width: 55px;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #FD811C solid 6px;
+}
+
+.slide-container{
+    width: 100%;
+    padding: 40px 0;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px 0 25px;
+    padding: 25px 0;
+}
+
+.nome-vacina{
+    font-family: baloo;
+    font-size: 25px;
+    font-weight: 500;
+    color: #52BACB;
+    position: relative;
+    bottom: 55px;
+    text-align: center;
+    align-items: center;
+}
+
+.description{
+    font-size:14px;
+    color: #707070;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.swiper{
+    width: 95%;
+}
+
+.btn-img{
+    z-index: auto;
+    position: absolute;
+}
+
+.valor{
+    font-size: 30px;
+    font-family: baloo;
+    position: relative;
+    bottom: 30px;
+}
+
+.btn-vacinas{
+    background-color: #52BACB;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px;
+    width: 250px;
+    border: none;
+    font-family: baloo;
+    letter-spacing: 1px;
+    position:relative;
+    bottom: 45px;
+}
+
+.titulo-vacina h2{
+    text-align: center;
+    align-items: center;
+    font-family: baloo;
+    font-weight: 800;
+    color: #FD811C;
+    margin: 35px;
+}
+
