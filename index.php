@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/home.css">
+    <link rel="stylesheet" href="css/css/telainicial.css">
     <link rel="stylesheet" href="css/css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
@@ -181,11 +181,25 @@
                 <div class="swiper-button-next"></div>
             </div>
     </section>
+    <section class="atendimento-domiciliar">
+        <div class="fundo-atendimento">
+            <div class="conteudo-atend">
+                <h2>Como funciona o atendimento domiciliar?</h2>
+                <p class="descricao">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                </p>
+                <button class="btn-ler-atend">Ler Mais</button>
+
+            </div>
+        </div>
+    </section>
 </body>
+
 <!--Swiper JavaScript-->
 <script src="js/swiper/swiper-bundle.min.js"></script>
 <!--JavaScript-->
-<script src="js/script.js"></script>
+<script src="js/telainicial.js"></script>
 
 
 </html>

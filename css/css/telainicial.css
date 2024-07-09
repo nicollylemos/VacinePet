@@ -133,3 +133,6 @@
     margin: 35px;
 }
 
+.btn-vacinas:hover {
+    background-color: #55abb9;
+}
