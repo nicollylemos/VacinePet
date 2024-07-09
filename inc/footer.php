@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/css/footer.css">
 </head>
-    <body>
-    		
-        <hr>
-        </main> <!-- /container -->
 
-    <footer class="container">
-	    <?php $hoje = new DateTime("now", new DateTimeZone("America/Sao_Paulo"));     ?>
-        <p>&copy;2023 a <?php echo $hoje -> format ("Y"); ?> - Projeto PW - Nicolly Lemos e Karina de Moraes</p>
-    </footer>
-    
-	<script src="<?php echo BASEURL; ?>js/unpkg.com_@popperjs_core@2.11.8_dist_umd_popper.min.js"></script>
-    <script src="<?php echo BASEURL; ?>js/code.jquery.com_jquery-3.7.0.min.js"></script>
-    <script src="<?php echo BASEURL; ?>js/awesome/all.min.js"></script>
-    <script src="<?php echo BASEURL; ?>js/bootstrap/bootstrap.min.js"></script>
-    <script src="<?php echo BASEURL; ?>js/main.js"></script>
+<body>
+    <h1>VacinePet <i class="fa-solid fa-paw fa-rotate-by"
+            style="color: #fa5909; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h1>
+    <div class="infos-site">
+        <ul>
+            <li>Funcionamento de Segunda a Sexta</li>
+            <li>Telefone: (XX) XXXXX-XXXX</li>
+            <li>Email: vacinpet@gmail.com</li>
+        </ul>
+        <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termo de Uso</a></li>
+            <li><a href="#">Direitos Autorais</a></li>
+        </ul>
+    </div>
+</body>
 
-    </body>
 </html>
