@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/static/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family: 'oswald';
+    src: url("../font/oswald/Oswald-Regular.ttf");
+}
+body {
+    background-color: #FFD371;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    align-items: center;
+    height: 110vh;
+    margin-top: 3%;
+    z-index: 2;
+}
+.blue-div {
+    background-color: #52BACB;
+    background-size: 130%;
+    background-position: center 95%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 280px;
+    left: 0%;
+    margin: 0 auto;
+    align-items: center;
+    height: 110vh;
+}
+.form {
+    position: absolute;
+    left: 34%;
+    top: 6%;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  
+}
+.title-title {
+    font-size: 60px;
+    color: #FD811C;
+    font-family: baloo;
+}
+.sub-title-title {
+    font-size: 20px;
+    color: #52BACB;
+}
+.title-blue-div1 {
+    color: rgb(255, 255, 255);
+    font-family: baloo;
+    background-color: #901cfd;
+}
+.title-blue-div2 {
+    color: white;
+    font-family: baloo;
+    background-color: black;
+}
+.title-blue-div3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: #fbff00;
+}
+.form-control {
+    border: solid #FFD371;
+    font-family: baloo;
+    border-radius: 20px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-control::placeholder {
+    color: #8C8C8C;
+}
+.form-control1 {
+    font-family: baloo;
+    margin-bottom: 15px;
+    margin-top: 8%;
+}
+.radio-group {
+    justify-content: flex-end;
+}
+.radio-group input {
+    margin-right: 5px;
+}
+.radio-group label {
+    margin-right: 10px;
+}
+.btn-custom {
+    top: 10%;
+    font-family: baloo;
+    font-size: 23px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 250px;
+    color: white;
+}
+.btn-custom:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+    color: white;
+}
+.final{
+    text-align: center;
+    margin-top: 90px;
+}
