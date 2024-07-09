@@ -92,6 +92,13 @@ body {
     font-family: league;
     letter-spacing: 1px;
 }
+.btn-inicio:hover{
+    background-color:  #55abb9;
+}
+.btn-inicio a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .informacao {
     width: 95vw;
@@ -114,7 +121,7 @@ body {
 }
 
 #info-gato {
-    background-color:  #2FA8BB;
+    background-color:  #52BACB;
     width: 520px;
     height: 290px;
     border-radius: 25px;

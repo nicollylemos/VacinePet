@@ -101,7 +101,8 @@ body {
     left: 30%;
 }
 .btn-custom {
-    top: 110%;
+    bottom: 25px;
+    position: relative;
     font-family: baloo;
     font-size: 23px;
     background-color: #FD811C;
@@ -119,6 +120,12 @@ body {
     color: #FD811C;
     font-family: baloo;
     text-decoration: none;
+}
+
+.cad-text{
+    position: relative;
+    bottom: 10px;
+
 }
 
 .criar {
