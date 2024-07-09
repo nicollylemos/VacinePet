@@ -10,11 +10,13 @@
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
+
 body {
     background-color: #FFD371;
 }
+
 .container {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     position: relative;
     width: 980px;
     margin: 0 auto;
@@ -23,17 +25,39 @@ body {
     margin-top: 3%;
     z-index: 2;
 }
+
 .blue-div {
     background-color: #52BACB;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
     background-size: 130%;
     background-position: center 95%;
     background-repeat: no-repeat;
     position: absolute;
     width: 280px;
-    left: 0%;
-    margin: 0 auto;
-    align-items: center;
+    left: 0;
     height: 110vh;
+}
+
+.title-blue-div1 {
+    color: #fff;
+    font-family: 'baloo';
+    margin-bottom: 20px;
+}
+
+.title-blue-div2 {
+    color: white;
+    font-family: 'baloo';
+    margin-top: 170px;
+}
+.title-blue-div3 {
+    color: #fff;
+    font-size: 20px;
 }
 .form {
     position: absolute;
@@ -42,73 +66,99 @@ body {
     width: 100%;
     max-width: 600px;
     padding: 20px;
-  
 }
 .title-title {
     font-size: 60px;
     color: #FD811C;
-    font-family: baloo;
+    font-family: 'baloo';
+    margin-bottom: 20px;
 }
 .sub-title-title {
     font-size: 20px;
     color: #52BACB;
-}
-.title-blue-div1 {
-    color: rgb(255, 255, 255);
-    font-family: baloo;
-    background-color: #901cfd;
-}
-.title-blue-div2 {
-    color: white;
-    font-family: baloo;
-    background-color: black;
-}
-.title-blue-div3 {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    background-color: #fbff00;
+    margin-bottom: 15px;
 }
 .form-control {
     border: solid #FFD371;
-    font-family: baloo;
+    font-family: 'baloo';
     border-radius: 20px;
     height: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #000; /* Cor do texto digitado */
 }
 .form-control::placeholder {
-    color: #8C8C8C;
+    color: #8c8c8c9a;
+}
+.form-control:focus {
+    border-color: #fcdfa3; /* Cor da borda quando focada */
+    outline: none; /* Remove o outline padrão */
 }
 .form-control1 {
-    font-family: baloo;
+    font-family: 'baloo';
     margin-bottom: 15px;
     margin-top: 8%;
+    margin-left: 20px;
 }
 .radio-group {
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
 }
+
 .radio-group input {
-    margin-right: 5px;
+    margin-right: 8px;
 }
+
 .radio-group label {
-    margin-right: 10px;
+    margin-right: 15px;
 }
+
 .btn-custom {
-    top: 10%;
-    font-family: baloo;
+    font-family: 'baloo';
     font-size: 23px;
     background-color: #FD811C;
     border-color: #FD811C;
     border-radius: 20px;
-    width: 250px;
+    width: 200px;
     color: white;
+    margin-right: 23px;
 }
+
 .btn-custom:hover {
     background-color: #fcab65;
     border-color: #fcab65;
     color: white;
 }
-.final{
+
+.final {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 40px;
 }
+.hiper-final{
+    text-align: center;
+    margin-top: 7px;
+    color: #FD811C;
+    font-family: baloo;
+    text-decoration: none;
+
+}
+/*foto e bola*/
+.bola{
+    background-color: #FFD371;
+    width: 220px;
+    height: 200px;
+    margin-top: 90px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bola .imagem {
+    position: relative;
+    top: -3px;
+    width: 400px;
+    height: 250px;
+    left: 10px;
+}
+

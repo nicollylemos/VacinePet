@@ -15,6 +15,9 @@
         <h4 class="title-blue-div1">Vacine Pet<i class="fa-solid fa-paw fa-rotate-by" style="color: white; --fa-rotate-angle: 49deg; width: 20px; height:20px; font-size:15px;"></i></h4>
         <h1 class="title-blue-div2">Bem-vindo,</h1>
         <h3 class="title-blue-div3">Agende a vacinação do seu pet com praticidade e segurança.<br> Cadastre-se agora!</h3>
+        <div class="bola">
+            <img src="css/css/img/dogcadpet.png" class="imagem" alt="Dog"/>
+        </div>
     </div>
 
     <div class="form">
@@ -83,15 +86,18 @@
                 <div class="form-group col-md-6">
                     <input type="text" placeholder="Peso aproximado do Pet" maxlength="100" class="form-control" name="customer['hood']">
                 </div>
-            </div>
-
-            <div class="final">
-                <div id="actions" class="mt-4">
-                    <button type="submit" class="btn btn-$orange-400 btn-custom">CADASTRAR DEPOIS</button>
-                </div>
-            </div>      
-        </form>
+            </div> 
+        </form> 
+        
+    <div class="final">
+        <div id="actions" class="mt-4">
+            <button type="submit" class="btn btn- btn-custom">PRÓXIMA ETAPA</button>
+        </div>
+    </div> 
+    <div class="hiper-final">
+        <a class="hiper-final" href="#">Gostaria de cadastrar seu pet depois? Clique Aqui.</a>
     </div>
+    </div>   
 </div>
 </body>
 </html>
