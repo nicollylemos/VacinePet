@@ -7,8 +7,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/home.css">
-    <link rel="stylesheet" href="css/css/estilo.css">
+    <link rel="stylesheet" href="css/css/inicio.css">
+    <link rel="stylesheet" href="css/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -27,7 +27,7 @@
                     took a galley of type and scrambled it to make a type specimen book.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when anunknown printer
                     took a galley of type and scrambled it to make a type specimen book. </p>
-                <button class="btn-inicio">Agendar</button>
+                <button class="btn-inicio"><a href="agendamento.php">Agendar</a> </button>
             </div>
             <div class="img-animal">
 
@@ -181,11 +181,33 @@
                 <div class="swiper-button-next"></div>
             </div>
     </section>
+    <section class="atendimento-domiciliar">
+        <div class="fundo-atendimento">
+            <div class="conteudo-atend">
+                <h2>Como funciona o atendimento domiciliar?</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    <br>
+                    Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <button class="btn-ler-atend">Ler Mais</button>
+
+            </div>
+        </div>
+    </section>
 </body>
+<?php 
+ include("./inc/footer.php")
+?>
+
 <!--Swiper JavaScript-->
 <script src="js/swiper/swiper-bundle.min.js"></script>
 <!--JavaScript-->
-<script src="js/script.js"></script>
+<script src="js/telainicial.js"></script>
 
 
 </html>

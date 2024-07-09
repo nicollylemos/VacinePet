@@ -13,7 +13,7 @@
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
 
-.valores-info{
+.valores-info {
     display: flex;
     align-items: center;
     min-height: 100vh;
@@ -21,36 +21,37 @@
 
 }
 
-.slide-content{
+.slide-content {
     margin: 0 40px;
 }
 
-.valores-info h2{
+.valores-info h2 {
     font-family: baloo;
 }
 
-.card{
+.card {
     border-radius: 25px;
     background-color: #ffffff;
     height: 900px;
-   
+
 }
+
 .image-content,
-.card-content{
+.card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 14px ;
+    padding: 10px 14px;
 }
 
-.card-image{
+.card-image {
     position: relative;
     height: 55px;
     width: 55px;
     padding: 3px;
 }
 
-.card-image .card-img{
+.card-image .card-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -58,18 +59,19 @@
     border: #FD811C solid 6px;
 }
 
-.slide-container{
+.slide-container {
     width: 100%;
     padding: 40px 0;
 }
-.image-content{
+
+.image-content {
     position: relative;
     row-gap: 5px;
     border-radius: 25px 25px 0 25px;
     padding: 25px 0;
 }
 
-.nome-vacina{
+.nome-vacina {
     font-family: baloo;
     font-size: 25px;
     font-weight: 500;
@@ -80,8 +82,8 @@
     align-items: center;
 }
 
-.description{
-    font-size:14px;
+.description {
+    font-size: 14px;
     color: #707070;
     text-align: center;
     position: relative;
@@ -91,25 +93,25 @@
 .append-buttons {
     text-align: center;
     margin-top: 20px;
-  }
+}
 
-.swiper{
+.swiper {
     width: 95%;
 }
 
-.btn-img{
+.btn-img {
     z-index: auto;
     position: absolute;
 }
 
-.valor{
+.valor {
     font-size: 30px;
     font-family: baloo;
     position: relative;
     bottom: 30px;
 }
 
-.btn-vacinas{
+.btn-vacinas {
     background-color: #52BACB;
     color: #fff;
     font-weight: 500;
@@ -120,16 +122,65 @@
     border: none;
     font-family: baloo;
     letter-spacing: 1px;
-    position:relative;
+    position: relative;
     bottom: 45px;
 }
 
-.titulo-vacina h2{
+.titulo-vacina h2 {
     text-align: center;
     align-items: center;
     font-family: baloo;
     font-weight: 800;
     color: #FD811C;
     margin: 35px;
+    font-size: 50px;
 }
 
+.btn-vacinas:hover {
+    background-color: #55abb9;
+}
+
+.fundo-atendimento{
+    margin-top: 50px;
+    background-color:   #52BACB;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+}
+.fundo-atendimento h2{
+    color: #ffffff;
+    font-family: baloo;
+    font-size: 65px;
+    margin-left: 20px;
+}
+
+.conteudo-atend{
+    width: 50%;
+    margin-left: 40px;
+    position: relative;
+    top: 70px;
+}
+
+.fundo-atendimento p{
+    font-size: 19px;
+    font-weight: 700;
+    text-align: left;
+    font-family: baloo;
+    margin-left: 20px;
+    color: #3b3b3b;;
+}
+
+.btn-ler-atend{
+    font-family: baloo;
+    font-size: 23px;
+    background-color: #52BACB;
+    border-radius: 20px;
+    border-radius: 20px;
+    border: 4px solid white;
+    width: 200px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
