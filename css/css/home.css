@@ -138,6 +138,7 @@
 
 .btn-vacinas:hover {
     background-color: #55abb9;
+    transition: 0.7s;
 }
 
 .fundo-atendimento{
@@ -146,7 +147,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
     height: 100vh;
 }
 .fundo-atendimento h2{
@@ -183,4 +183,9 @@
     color: white;
     margin-left: 20px;
     margin-top: 10px;
+}
+
+.btn-ler-atend:hover{
+    border: 4px solid #e3e2e2;
+    color:  #e3e2e2;
 }
