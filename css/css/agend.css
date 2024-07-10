@@ -27,7 +27,7 @@ body{
 
 .logo{
 
-    margin-top: 40px;
+    margin-top: 60px;
     position: absolute;
     left: 30%;
 
@@ -37,8 +37,8 @@ body{
 .container {
     background-color: rgb(255, 255, 255);
     position: absolute;
-    width: 1090px; 
-    left: 13%; 
+    width: 1020px; 
+    left: 15%; 
     height: 80%;
     z-index: 2;
    
@@ -48,8 +48,8 @@ body{
 
 .form {
     position: absolute;
-    left: 55%;
-    top: 20%;
+    left: 50%;
+    top: 25%;
 }
 
 .form-control {
@@ -71,24 +71,24 @@ body{
     color: rgb(255, 255, 255);
     background-color: #52BACB;
     position: absolute;
-    width: 420px; 
+    width: 390px; 
     left: 0%;
     height: 100%;
     margin-top: 0%;
     background-image: url('img/fundopatinhas.png');
-    background-size: 130%;
+    background-size: 150%;
     background-position: center 95%;
     background-repeat: no-repeat;
 }
 
-.imagem-menor {
+.imagem-animais {
     position: absolute;
-    top: 26%;
-    right: -8%;
-    width: 450px; /* Ajuste o tamanho conforme necessário */
-    height: auto; /* Manter a proporção da imagem */
-    display: block; /* Exibir a imagem como um bloco */
-    margin: 10px auto; /* Centralizar a imagem horizontalmente */
+    top: 33%;
+    left: 6%;
+    width: 690px;
+    height: auto; 
+    display: block; 
+    margin: 10px auto;
 }
 
 /* Etapas */
