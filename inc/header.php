@@ -55,7 +55,7 @@
                     <div class="btn-acesso">
                         <li class="nav-item">
                             <a href="login.php"><button class="btn-login">Entrar</button></a>
-                            <a href="cadpet.php"><button class="btn-cad">Cadastrar</button></a>
+                            <a href="cadastro.php"><button class="btn-cad">Cadastrar</button></a>
                         </li>
                     </div>
                 </ul>
