@@ -21,7 +21,7 @@
     </div>
 
     <div class="form">
-        <form action="cadastro.php" method="post">
+        <form action="cadastropet.php" method="post">
             <div class="title">
                 <h1 class="title-title">CADASTRO DO PET</h1>
             </div>
