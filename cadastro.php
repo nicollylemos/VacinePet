@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/css/cadpet.css">
     <script src="steps.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
-    <title>Cadastro Pet</title>
+    <title>Cadastro</title>
 </head>
 <body>
 <div class="container">
