@@ -91,7 +91,7 @@
         
     <div class="final">
         <div id="actions" class="mt-4">
-            <button type="submit" class="btn btn- btn-custom">PRÓXIMA ETAPA</button>
+            <button type="submit" class="btn btn- btn-custom">PRÓXIMO</button>
         </div>
     </div> 
     <div class="hiper-final">
