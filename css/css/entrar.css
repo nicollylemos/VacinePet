@@ -49,7 +49,11 @@ body {
     height: 50px;
 }
 .form-control::placeholder {
-    color: #8C8C8C; 
+    color: #8c8c8c9a;
+}
+.form-control:focus {
+    border-color: #82c9d4; /* Cor da borda quando focada */
+    outline: none; /* Remove o outline padrão */
 }
 .yellow-div {
     background-color: #FFD371;
