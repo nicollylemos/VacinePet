@@ -157,15 +157,15 @@
 }
 
 .conteudo-atend{
-    width: 50%;
+    width: 47%;
     margin-left: 40px;
     position: relative;
     top: 70px;
 }
 
 .fundo-atendimento p{
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     text-align: left;
     font-family: baloo;
     margin-left: 20px;
