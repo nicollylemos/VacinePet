@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/cadpet.css">
-    <script src="steps.js" defer></script>
+    <link rel="stylesheet" href="css/css/cadpet2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
-    <title>Cadastro Pet</title>
+    <title>Cadastro do Pet</title>
 </head>
 <body>
 <div class="container">
@@ -16,87 +15,43 @@
         <h1 class="title-blue-div2">Bem-vindo,</h1>
         <h3 class="title-blue-div3">Agende a vacinação do seu pet com praticidade e segurança.<br> Cadastre-se agora!</h3>
         <div class="bola">
-            <img src="css/css/img/dogcadpet.png" class="imagem" alt="Dog"/>
+            <img src="css/css/img/dogcadpet.png" class="imagem" alt="Foto do Pet">
         </div>
     </div>
 
     <div class="form">
-        <form action="cadastropet.php" method="post">
+        <form action="cadastro.php" method="post">
             <div class="title">
                 <h1 class="title-title">CADASTRO DO PET</h1>
             </div>
             <div class="sub-title">
                 <h5 class="sub-title-title">Preencha o cadastro abaixo com as informações do seu pet.</h5>
             </div>
-
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control" name="customer['name']">
-                </div>
-                <div class="col-md-6">
-                    <div class="form-control1">
-                        <p>Sexo:</p>
-                        <div class="radio-group">
-                            <input type="radio" id="sexo-m" name="sexo" value="Macho">
-                            <label for="sexo-m">Macho</label>
-                            <input type="radio" id="sexo-f" name="sexo" value="Fêmea">
-                            <label for="sexo-f">Fêmea</label>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="form-group">
+                <label class="label-info">Informações Adicionais:</label>
+                <textarea id="msg" class="form-control" rows="3" placeholder="Utilize esse espaço para adicionar mais informações sobre o Pet"></textarea>
+            </div>
+            
+            <div class="quad-blue">
+            <div class="upload-section">
+                <label for="file-upload" class="custom-file-upload">
+                    <i id="anexo" class="fa fa-cloud-upload"></i> 
+                    <div class="tab"></div>
+                    <h3 class="anexo">Anexe aqui a foto do seu pet</h3>
+                </label>
+                <input id="file-upload" type="file" />
+            </div>
             </div>
 
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <input type="text" maxlength="11" placeholder="Idade do Pet" class="form-control" name="customer['cpf_cnpj']">
-                </div>
-                <div class="col-md-6">
-                    <div class="form-control1">
-                        <p>Seu pet é castrado?</p>
-                        <div class="radio-group">
-                            <input type="radio" id="sim" name="castrado" value="Sim">
-                            <label for="sim">Sim</label>
-                            <input type="radio" id="nao" name="castrado" value="Não">
-                            <label for="nao">Não</label>
-                        </div>
-                    </div>
-                </div>
+            <div class="final">
+                <button type="submit" class="btn btn-custom">FINALIZAR</button>
             </div>
 
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="customer['address']">
-                </div>
-                <div class="col-md-6">
-                    <div class="form-control1">
-                        <p>Qual o porte do seu Pet?</p>
-                        <div class="radio-group">
-                            <input type="radio" id="porte-p" name="porte" value="Pequeno">
-                            <label for="porte-p">Pequeno</label>
-                            <input type="radio" id="porte-m" name="porte" value="Médio">
-                            <label for="porte-m">Médio</label>
-                            <input type="radio" id="porte-g" name="porte" value="Grande">
-                            <label for="porte-g">Grande</label>
-                        </div>
-                    </div>
-                </div>
+            <div class="hiper-final">
+                <a class="hiper-final" href="#">Gostaria de cadastrar seu pet depois? Clique Aqui.</a>
             </div>
-
-            <div class="row">
-                <div class="form-group col-md-6">
-                    <input type="text" placeholder="Peso aproximado do Pet" maxlength="100" class="form-control" name="customer['hood']">
-                </div>
-            </div> 
         </form> 
-        
-    <div class="final">
-        <div id="actions" class="mt-4">
-            <button type="submit" class="btn btn- btn-custom">PRÓXIMO</button>
-        </div>
-    </div> 
-    <div class="hiper-final">
-        <a class="hiper-final" href="#">Gostaria de cadastrar seu pet depois? Clique Aqui.</a>
-    </div>
     </div>   
 </div>
 </body>
