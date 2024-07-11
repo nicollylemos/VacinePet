@@ -44,7 +44,7 @@
     bottom: 15px;
     color: #E65005;
     font-family: baloo;
-    font-size: 25px;
+    font-size: 30px;
     padding: 0;
     margin-left: 8px;
 }
@@ -86,7 +86,7 @@ body {
     font-weight: 600;
     border-radius: 50px;
     font-size: 25px;
-    padding: 5px;
+    padding: 3.5px;
     width: 210px;
     border: none;
     font-family: league;
@@ -182,7 +182,7 @@ body {
 
 .informacao a {
     text-decoration: none;
-    color: #2FA8BB;
+    color: #52BACB;
 }
 
 /* link que foi visitado */
@@ -218,4 +218,11 @@ body {
     position: relative;
     float: right;
     top: 30px;
+}
+.fa-solid{
+    color: #fa5909;
+    --fa-rotate-angle: 49deg;
+     width: 50px; 
+     height:10px; 
+     font-size:55px;
 }

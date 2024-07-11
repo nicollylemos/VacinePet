@@ -4,7 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/footer.css">
+    <link rel="stylesheet" href="css/css/rodape.css">
+    <link rel="stylesheet" href="css/css/responsividade/footer-resp.css">
+    <style>
+    @media (min-width:310px) and (max-width: 350px) {
+        .footer {
+
+            width: 350px;
+            height: 650px;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        .redes-sociais {
+            position: relative;
+            top: 10px;
+        }
+
+        i {
+            text-align: center;
+            margin: 5px
+        }
+    }
+    </style>
+
 </head>
 
 <body>
@@ -16,13 +41,20 @@
                 <li>
                     <h2>Contato</h2>
                 </li>
-                <li><i class="fa-solid fa-clock" style="color: #ffffff;font-size:10px;"></i> Funcionamento de Segunda
-                    a
+                <li><i class="fa-solid fa-clock" style="color: #ffffff;font-size:10px;"></i>Funcionamento de Segunda a
                     Sexta</li>
-                <li><i class="fa-solid fa-phone" style="color: #ffffff;font-size:10px;"></i> Telefone: (XX) XXXXX-XXXX
+                <li><i class="fa-solid fa-phone" style="color: #ffffff;font-size:10px;"></i>Telefone: (XX) XXXXX-XXXX
                 </li>
-                <li><i class="fa-solid fa-envelope" style="color: #ffffff;font-size:10px;"></i> Email:
+                <li><i class="fa-solid fa-envelope" style="color: #ffffff;font-size:10px;"></i>Email:
                     vacinepet@gmail.com</li>
+            </ul>
+            <ul class="duvidas">
+                <li>
+                    <h2>Dúvidas</h2>
+                </li>
+                <li><a href="#">Como funciona o atendimento domiciliar?</a></li>
+                <li><a href="#">Como confirmar agendamento</a></li>
+                <li><a href="#">Formas de pagamento</a></li>
             </ul>
             <ul>
                 <li>
@@ -40,25 +72,14 @@
                 <li><a href="#">Sobre o profissional</a></li>
                 <li><a href="#">Sobre o atendimento</a></li>
             </ul>
-            <ul>
-                <li>
-                    <h2>Dúvidas</h2>
-                </li>
-                <li><a href="#">Como funciona o atendimento domiciliar?</a></li>
-                <li><a href="#">Como confirmar agendamento</a></li>
-                <li><a href="#">Formas de pagamento</a></li>
-            </ul>
             <ul class="redes-sociais">
                 <li>
                     <h2>Nossas Redes Sociais:</h2>
                 </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;font-size:35px;"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;font-size:35px;"></i></a>
-                </li>
+                <li class="icones"><a href="#"><i class="fa-brands fa-instagram"
+                            style="color: #ffffff;font-size:35px;"></i></a><a href="#"><i class="fa-brands fa-facebook"
+                            style="color: #ffffff;font-size:35px;"></i></a></li>
             </ul>
-
-
         </div>
     </div>
 </body>
