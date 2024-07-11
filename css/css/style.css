@@ -81,12 +81,12 @@ body {
 }
 
 .btn-inicio {
-    background-color: #52BACB;
+    background-color:  #52BACB;
     color: #fff;
     font-weight: 600;
     border-radius: 50px;
     font-size: 25px;
-    padding: 8px;
+    padding: 5px;
     width: 210px;
     border: none;
     font-family: league;
@@ -94,6 +94,7 @@ body {
 }
 .btn-inicio:hover{
     background-color:  #55abb9;
+    transition: 0.4s;
 }
 .btn-inicio a{
     text-decoration: none;
@@ -158,18 +159,18 @@ body {
 
 #info-gato p {
     color: #fff;
-    font-weight: 700;
     font-size: 15px;
     position: relative;
-    bottom: 20px;
+    bottom: 15px;
+    font-family: baloo;
 }
 
 #info-cao p {
     color: #343434;
-    font-weight: 700;
     font-size: 15px;
     position: relative;
-    bottom: 20px;
+    bottom: 15px;
+    font-family: baloo;
 }
 
 .texto {
@@ -201,15 +202,16 @@ body {
 
 .informacao button {
     background-color: #ffffff;
-    font-weight: 650;
     border-radius: 50px;
     font-size: 18px;
     padding: 6;
     width: 150px;
     border: none;
-    margin-top: 10px;
     height: 35px;
     text-decoration: none;
+    font-family: baloo;
+    position: relative;
+    bottom: 15px;
 }
 
 .img-pet{

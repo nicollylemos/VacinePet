@@ -17,9 +17,9 @@
     color: #ffffff;
     font-family: baloo;
     font-size: 23px;
-    margin-left: 20px;
+    margin-left: 30px;
     position: relative;
-    top: 10px;
+    top: 20px;
     margin-bottom: 25px;
 }
 
@@ -30,6 +30,7 @@
 .footer ul{
     display: inline-block;
     list-style: none; 
+   
 }
 .footer li{
    font-family: league;
@@ -49,3 +50,11 @@ a{
     color: #ffffff;
 
 }
+
+.redes-sociais{
+    display: inline-block;
+    position: relative;
+    bottom:30px;
+  
+}
+
