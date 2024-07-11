@@ -22,7 +22,7 @@
 }
 
 #navbar {
-    height: 50px;
+    height: 45px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -47,3 +47,37 @@
     margin-left:40px;   
 }
 
+.btn-login {
+    font-family: league;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3.5px solid #52BACB;
+    width: 150px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #52BACB;
+
+}
+
+
+.btn-cad {
+    font-family: league;
+    font-size: 18px;
+    background-color:#52BACB;
+    border-radius: 10px;
+    border: 3.5px solid #52BACB;
+    width: 150px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff; /* Cor do texto no botão */
+    text-decoration: none; /* Remova sublinhado de links */
+}
+
+
+.btn-acesso{
+    display: inline-block;
+    align-items: center;
+    position: relative;
+}

@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/home.css">
+    <link rel="stylesheet" href="css/css/telainicial.css">
     <link rel="stylesheet" href="css/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
@@ -41,9 +41,10 @@
                 <div class="col-4" id="info-cao">
                     <div class="texto">
                         <h3>CÃO</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum
-                            has been the industry's standard dummy text of the printing is simply.
-                            <button><a href="">Ler Mais</a></button>
+                        <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que podem
+                            afetar seus pets e como preveni-las. Conheça os riscos
+                            à saúde do seu cão!</p>
+                        <button type="submit"><a href="">Ler Mais</a></button>
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog">
@@ -54,9 +55,10 @@
                 <div class="col-4" id="info-gato">
                     <div class="texto">
                         <h3>GATO</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum
-                            has been the industry's standard dummy text of the printing is simply.
-                            <button><a href="">Ler Mais</a></button>
+                        <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que podem
+                            afetar seus pets e como preveni-las. Conheça os riscos
+                            à saúde do seu gato!</p>
+                        <button><a href="">Ler Mais</a></button>
                     </div>
                     <div class="img-pet">
                         <div class="pet-cat">
