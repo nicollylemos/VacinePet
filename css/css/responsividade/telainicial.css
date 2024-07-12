@@ -108,7 +108,7 @@
     }
 }
 
-@media (max-width:767px) and (min-width:350px) {
+@media (max-width:740px) and (min-width:350px) {
     .tela-inicial{
         background-image: url(imgs/fundo-mobile-530.png);
         background-repeat: no-repeat;
