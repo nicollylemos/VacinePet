@@ -21,7 +21,7 @@
 }
 
 .tela-inicial {
-    background-image: url(img/background-index.svg);
+    background-image: url(img/fundo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -212,6 +212,7 @@ body {
     font-family: baloo;
     position: relative;
     bottom: 15px;
+    color: #55abb9;
 }
 
 .img-pet{

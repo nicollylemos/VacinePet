@@ -8,8 +8,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/home.css">
-    <link rel="stylesheet" href="css/css/style.css">
+    <link rel="stylesheet" href="css/css/inicio.css">
+    <link rel="stylesheet" href="css/css/styles.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
@@ -44,7 +44,7 @@
                     <div class="texto">
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
-                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão !</p>
+                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
                         <a href=""><button type="submit">Ler Mais</button></a>
                     </div>
                     <div class="img-pet">
@@ -55,7 +55,7 @@
                     <div class="texto">
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
-                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato !</p>
+                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
                         <a href=""><button>Ler Mais</button></a>
                     </div>
                     <div class="img-pet">

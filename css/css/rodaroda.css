@@ -20,7 +20,7 @@
     margin-left: 30px;
     position: relative;
     top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .footer{
@@ -55,6 +55,12 @@ a{
     display: inline-block;
     position: relative;
     bottom:30px;
+  
+}
+
+.redes-sociais i{
+    text-align: center;
+    margin: 5px
   
 }
 
