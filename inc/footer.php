@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/rodaroda.css">
+    <link rel="stylesheet" href="css/css/rodarodape.css">
     <link rel="stylesheet" href="css/css/responsividade/footer-resp.css">
     <style>
     @media (min-width:310px) and (max-width: 350px) {
@@ -44,6 +44,28 @@
         .redes-sociais i {
             text-align: center;
             margin: 5px
+        }
+    }
+
+    @media (max-width: 992px) and (min-width:725px) {
+        .redes-sociais {
+            margin-top: 30px;
+            margin-left: 90px;
+        }
+
+        .footer {
+            height: 400px;
+        }
+    }
+
+
+    @media (min-width:992px) and (max-width:1216px) {
+        .redes-sociais {
+            margin-top: 30px;
+        }
+
+        .footer {
+            height: 400px;
         }
     }
     </style>
@@ -95,9 +117,14 @@
                 </li>
                 <li class="icones"><a href="#"><i class="fa-brands fa-instagram"
                             style="color: #ffffff;font-size:35px;"></i></a><a href="#"><i class="fa-brands fa-facebook"
-                            style="color: #ffffff;font-size:35px;"></i></a></li>
+                            style="color: #ffffff;font-size:35px;"></i></a>
+                </li>
             </ul>
+            <hr>
+            <p class="creditos"> VacinePet © Copyright 2024. Desenvolvido pela WebWave</p>
         </div>
+
+
     </div>
 </body>
 

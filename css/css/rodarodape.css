@@ -2,17 +2,14 @@
     font-family: 'league';
     src: url("../font/league/LeagueSpartan-Regular.ttf");
 }
-
 @font-face {
     font-family: 'baloo';
     src: url("../font/baloo/Baloo-Regular.ttf");
 }
-
 @font-face {
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
-
 .footer h1{
     color: #ffffff;
     font-family: baloo;
@@ -22,15 +19,13 @@
     top: 25px;
     margin-bottom: 35px;
 }
-
 .footer{
-    background-color:#419dac ;
+    background-color:#419dac;
+    height: 270px;
 }
-
 .footer ul{
     display: inline-block;
     list-style: none; 
-   
 }
 .footer li{
    font-family: league;
@@ -38,29 +33,33 @@
    font-weight: 500;
    font-size: 15px;
 }
-
 a{
     text-decoration: none;
     color: #fff;
 }
-
 .footer h2{
     font-size: 17px;
     font-family: baloo;
     color: #ffffff;
-
 }
-
 .redes-sociais{
     display: inline-block;
     position: relative;
     bottom:30px;
-  
 }
-
 .redes-sociais i{
     text-align: center;
     margin: 5px
-  
 }
 
+.creditos{
+    margin-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+hr{
+    margin: 20px;
+}
