@@ -10,7 +10,7 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/home.css">
     <link rel="stylesheet" href="css/css/style.css">
-    <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
+    <link rel="stylesheet" href="css/css/responsividade/telainicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -31,7 +31,7 @@
                 <p>Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu <br>animal de
-                    estimação. </p><a href="agendamento.php"><button class="btn-inicio">Agendar </button></a>
+                    estimação. </p><a href="calendario.html"><button class="btn-inicio">Agendar </button></a>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -44,7 +44,7 @@
                     <div class="texto">
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
-                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão !</p>
+                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
                         <a href=""><button type="submit">Ler Mais</button></a>
                     </div>
                     <div class="img-pet">
@@ -55,7 +55,7 @@
                     <div class="texto">
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
-                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato !</p>
+                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
                         <a href=""><button>Ler Mais</button></a>
                     </div>
                     <div class="img-pet">

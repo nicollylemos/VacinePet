@@ -19,9 +19,8 @@
     box-sizing: border-box;
 
 }
-
 .tela-inicial {
-    background-image: url(img/background-index.svg);
+    background-image: url(img/background-home.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -104,7 +103,7 @@ body {
 .informacao {
     width: 95vw;
     position: relative;
-    top: 150px;
+    top: 170px;
     left: 50%;
     transform: translate(-50%,-50%);
 
@@ -212,6 +211,7 @@ body {
     font-family: baloo;
     position: relative;
     bottom: 15px;
+    color: #55abb9;
 }
 
 .img-pet{
@@ -221,8 +221,8 @@ body {
 }
 .fa-solid{
     color: #fa5909;
-    --fa-rotate-angle: 49deg;
+    --fa-rotate-angle: 53deg;
      width: 50px; 
-     height:10px; 
+     height:2px; 
      font-size:55px;
 }
