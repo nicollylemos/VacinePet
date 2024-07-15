@@ -187,7 +187,7 @@
                             <br>
                             <p>Realizado em: <span id="dataHoraAgendamento"></span></p>
 
-                            <h6 class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br> Obrigado por confiar na VacinePet para cuidar do seu filho de quatro patas!</h6>
+                            <h6 class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br> Obrigado por confiar no VacinePet para cuidar do seu filho de <br>quatro patas!</h6>
                         </div>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="finalizar()">Finalizar</button>
