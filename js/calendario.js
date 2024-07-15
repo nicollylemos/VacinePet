@@ -3,12 +3,14 @@ const calendar = document.querySelector(".calendar"),
     daysContainer= document.querySelector(".days"),
     prev = document.querySelector(".prev"),
     next = document.querySelector(".next");
+const tableDays = document.querySelector(".days")
 
 let today = new Date();
 let activeDay;
 let month = today.getMonth();
 let year = today.getFullYear();
-
+let firstDayOfWeek = new Date(year,month, 1).getDay()-1;
+let
 const months = [
     "Janeiro",
     "Fevereiro",
@@ -38,47 +40,8 @@ function initCalendar(){
     //atualiza data do topo do calendário
     date.innerHTML = months[month] + " " + year;
 
-    //adicionando dias
-    let days = "";
+   
 
-  for (let x = day; x > 0; x--) {
-    days += `<div class="day prev-date">${prevDays - x + 1}</div>`;
-  }
-
-  for (let i = 1; i <= lastDate; i++) {
-    //check if event is present on that day
-    let event = false;
-    eventsArr.forEach((eventObj) => {
-      if (
-        eventObj.day === i &&
-        eventObj.month === month + 1 &&
-        eventObj.year === year
-      ) {
-        event = true;
-      }
-    });
-    if (
-      i === new Date().getDate() &&
-      year === new Date().getFullYear() &&
-      month === new Date().getMonth()
-    ) {
-      activeDay = i;
-      getActiveDay(i);
-      updateEvents(i);
-      if (event) {
-        days += `<div class="day today active event">${i}</div>`;
-      } else {
-        days += `<div class="day today active">${i}</div>`;
-      }
-    } else {
-      if (event) {
-        days += `<div class="day event">${i}</div>`;
-      } else {
-        days += `<div class="day ">${i}</div>`;
-      }
-    }
-}
-    
     daysContainer.innerHTML = days;
 }
 
