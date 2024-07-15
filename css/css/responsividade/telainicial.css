@@ -376,6 +376,51 @@
     .fundo-atendimento p{
         width: 600px;
     }
+    .info-inicial {
+        margin-left: 30px;
+    }
+
+}
+
+@media (min-width:1400px) {
+    .info-inicial {
+        margin-left: 70px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1370px){
+    .info-inicial {
+        margin-left: 40px;
+        width: 600px;
+    }
+    .info-inicial h1{
+        font-size:90px;
+    }
+    .info-inicial p{
+        font-size:18px;
+    }
+    .info-inicial button{
+        font-size:19px;
+    }
+    .fa-solid {
+        font-size: 43px;
+        width: 40px;
+        height: 2px;
+    }
+    .conteudo-atend {
+        width: 600px;
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .conteudo-atend h2 {
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .conteudo-atend p {
+        font-size: 19.5px;
+    }
 
 }
 
