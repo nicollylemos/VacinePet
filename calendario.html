@@ -1,51 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dynamic Calendar JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="css/css/calendary.css">
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/calendario.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
-    <title>Agendamento</title>
-</head>
-
-<body>
-
+    <!-- Google Font Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="js/calendary.js" defer></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="blue-div"></div>
-        <div class="left">
-            <div class="calendar">
-                <div class="month">
-                    <i class="fa fa-angle-left prev"></i>
-                    <div class="date">Agosto 2024</div>
-                    <i class="fa fa-angle-right next"></i>
+        <div class="blue-div">
+           <div class="horarios-demo">
+                <p class="dt-select"></p>
+                <p>Selecione um horário:</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="contactChoice1">10:00</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="contactChoice1">12:00</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="contactChoice1">14:00</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="contactChoice1">16:00</label>
+                <div class="btn-select">
+                    <a href="agendamento.php"><button type="submit">AVANÇAR</button></a>
                 </div>
-                <div class="weekdays">
-                    <div>Dom</div>
-                    <div>Seg</div>
-                    <div>Ter</div>
-                    <div>Qua</div>
-                    <div>Qui</div>
-                    <div>Sex</div>
-                    <div>Sab</div>
-                </div>
-                <div class="days">
-                    <div class="day prev-date">30</div>
-                    <div class="day prev-date">31</div>
-                    <div class="day">1</div>
-                    
-                </div>
-                <div class="goto-today">
-                    <div class="goto">
-                        <input type="text" placeholder="mm/yyyy" class="date-input">
-                        <button class="goto-btn">Buscar</button>
-                    </div>
-                    <button class="today-btn">Hoje</button>
-                </div>
-            </div>
+           </div>
         </div>
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Dom</li>
+          <li>Seg</li>
+          <li>Ter</li>
+          <li>Qua</li>
+          <li>Qui</li>
+          <li>Sex</li>
+          <li>Sab</li>
+        </ul>
+        <ul class="days"></ul>
+        <div class="goto-today">
+            <div class="goto">
+                <input type="text" placeholder="mm/yyyy" class="date-input">
+                <button class="goto-btn">Buscar</button>
+            </div>
+            <button class="today-btn">Hoje</button>
+        </div>
+    </div>  
+      </div>
     </div>
-    <script src="js/calendario.js"></script>
-</body>
+</div>
+  </body>
 </html>

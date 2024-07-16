@@ -1,3 +1,4 @@
+/* Import Google font - Poppins */
 @font-face {
     font-family: 'league';
     src: url("../font/league/LeagueSpartan-Bold.ttf");
@@ -10,8 +11,123 @@
     font-family: 'poppins';
     src: url("../font/poppins/Poppins-Medium.ttf");
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  width: 550px;
+  background: #fff;
+  border-radius: 10px;
+  float: right;
+  margin-right: 25px;
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: var(--primary-clr);
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #717171ec;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+.calendar .days{
+  margin-bottom: 20px;
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+
+.btn-select button{
+    font-family: baloo;
+    font-size: 23px;
+    background-color: #FD811C;
+    border: 1px solid #FD811C;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    cursor: pointer;
+}
+.btn-select button:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+}
 body{
-    background-color:#FFD371;;
+    background-color:#FFD371;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -49,92 +165,8 @@ body{
     display: flex;
     float: left;
 }
-.left{
-    width: 60%;
-    display: flex;
-    float: right;
-    padding:2px;
-}
-.calendar{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: #717171ec;
-}
-.calendar .month .prev,
-.calendar .month .next{
-    cursor:pointer;
-
-}
-.calendar .month{
-    width: 100%;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-.calendar .month .prev:hover,
-.calendar .month .next:hover{
-    color: var(--primary-clr);
-}
-.calendar .weekdays{
-    width: 100%;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-.calendar .weekdays div{
-    width: 14.28%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.calendar .days{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0.20px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.calendar .days .day{
-    width: 14.28%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color:var(--primary-clr);
-    border: 1px solid #f5f5f5;
-}
-.calendar .day:not(.prev-date , .next-date):hover{
-    color: #fff;
-    background-color: var(--primary-clr);
-}
-.calendar .days .prev-date,
-.calendar .days .next-date{
-    color:#b3b3b3
-}
 /* apenas para o diário */
 .calendar .days .active{
-    position: relative;
-    font-size: 1.5rem;
     color: #fff;
     background-color: var(--primary-clr);
 }
@@ -146,14 +178,6 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-}
-.calendar .days .today{
-    font-size: 1.5rem;
-
-}
-/*apenas no diário*/
-.calendar .days .event{
-    position: relative;
 }
 .calendar .days .event::after{
     content: "";
