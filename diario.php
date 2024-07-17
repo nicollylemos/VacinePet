@@ -71,7 +71,7 @@
             <i class="fas fa-plus"></i>
         </button>
     </div>
-    <script src="js/calendario.js"></script>
+    <script src="js/diario.js"></script>
 </body>
 
 </html>
