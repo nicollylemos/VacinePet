@@ -45,7 +45,7 @@
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
-                        <a href=""><button type="submit">Ler Mais</button></a>
+                        <a href="doencascao.php"><button type="submit">Ler Mais</button></a>
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog"><img src="" alt=""></div>
@@ -56,7 +56,7 @@
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href=""><button>Ler Mais</button></a>
+                        <a href="doencasgato.php"><button>Ler Mais</button></a>
                     </div>
                     <div class="img-pet">
                         <div class="pet-cat"><img src="" alt=""></div>

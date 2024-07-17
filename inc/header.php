@@ -38,12 +38,7 @@
                         </li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Agendamento</a>
                         </li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Programa </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Programa para Gatos</a></li>
-                                <li><a class="dropdown-item" href="#">Programas para Cães</a></li>
-                            </ul>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Veterinária</a>
                         </li>
                         <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Informações </a>
