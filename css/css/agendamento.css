@@ -38,12 +38,15 @@ body{
     background-color: rgb(255, 255, 255);
     position: absolute;
     width: 1020px; 
+    height: auto;
     left: 15%; 
     height: 80%;
     z-index: 2;
    
     top: 50%;
     transform: translateY(-50%);
+    min-height: 600px;
+    max-height: 1000px;
 }
 
 .form {
@@ -83,7 +86,7 @@ body{
 
 .imagem-animais {
     position: absolute;
-    top: 33%;
+    top: 35%;
     left: 6%;
     width: 690px;
     height: auto; 
@@ -91,6 +94,23 @@ body{
     margin: 10px auto;
 }
 
+.btn-custom {
+    top: 20px;
+    position: relative;
+    font-family: baloo;
+    font-size: 20px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+}
 /* Etapas */
+
 
 
