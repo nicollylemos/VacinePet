@@ -1,0 +1,43 @@
+body{
+    background-image: url('img/fundo-patas.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: baloo;
+}
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.subtitle{
+    color: #ffffff;
+    margin-top: 20px;
+}
+.title-comofunciona{
+    color: #F7D577;
+    background-color: #FC9242;
+    border-radius: 30px;
+    padding: 5px 10px; 
+    display: inline-block;
+
+}
+.title {
+    border-radius: 15px; /* Cantos arredondados */
+    display: inline-block; /* Para ajustar o fundo ao tamanho do texto */
+    margin-top: 40px;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    width: 100%;
+}
+
+.img-fluid {
+    max-width: 45%; /* Certifique-se de que as imagens não sejam maiores que o contêiner */
+    height: auto;
+    border-radius: 15px;
+    
+    margin-top: -70px;
+}
+
+
+
