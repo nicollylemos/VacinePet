@@ -173,7 +173,7 @@
                     patas estejam protegidos contra diversas doenças é através da vacinação. No entanto,
                     levar os animais a uma clínica veterinária nem sempre é uma tarefa fácil. É aí que o serviço
                     de atendimento a domicílio para vacinação de animais se destaca como uma excelente
-                    alternativa. </p><button class="btn-ler-atend">Ler Mais</button>
+                    alternativa. </p><a href="como-funciona.php"><button class="btn-ler-atend">Saiba mais</button></a>
             </div>
         </div>
     </section>
