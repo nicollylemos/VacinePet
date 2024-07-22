@@ -68,7 +68,6 @@ function initCalendar() {
   const lastDate = lastDay.getDate();
   const day = firstDay.getDay();
   const nextDays = 7 - lastDay.getDay() - 1;
-
   date.innerHTML = months[month] + " " + year;
 
   let days = "";
@@ -100,13 +99,13 @@ function initCalendar() {
       if (event) {
         days += `<div class="day today active event">${i}</div>`;
       } else {
-        days += `<div class="day today active">${i}</div>`;
+        days += `<div class="day today active"> ${i}</div>`; //PHP aqui para puxar a data
       }
     } else {
       if (event) {
-        days += `<div class="day event">${i}</div>`;
+        days += `<div class="day">${i}</div>`;
       } else {
-        days += `<div class="day ">${i}</div>`;
+        days += `<div class="day">${i}</div>`; //PHP aqui para puxar a data
       }
     }
   }
@@ -233,7 +232,6 @@ function gotoDate() {
 function getActiveDay(date) {
   const day = new Date(year, month, date);
   const dayName = day.toString().split(" ")[0];
-  eventDay.innerHTML = dayName;
   eventDate.innerHTML = date + " " + months[month] + " " + year;
 }
 
@@ -247,21 +245,14 @@ function updateEvents(date) {
       year === event.year
     ) {
       event.events.forEach((event) => {
-        events += `<div class="event">
-            <div class="title">
-              <i class="fas fa-circle"></i>
-              <h3 class="event-title">${event.title}</h3>
-            </div>
-            <div class="event-time">
-              <span class="event-time">${event.time}</span>
-            </div>
+        events += `<div>
         </div>`;
       });
     }
   });
   if (events === "") {
     events = `<div class="no-event">
-            <h3>No Events</h3>
+            <h3></h3>
         </div>`;
   }
   eventsContainer.innerHTML = events;
