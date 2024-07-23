@@ -12,7 +12,7 @@
 }
 
 .start {
-    background-image: url(img/gatofundo.png);
+    background-image: url(img/fundodoen.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@
     width: 45%;
 }
 .title-start {
-    color: #F7D577;
+    color: #FA5909;
     font-family: baloo;
     font-size: 85px;
     position: relative;
@@ -47,15 +47,15 @@
     position: relative;
     font-family: baloo;
     font-size: 23px;
-    background-color: #F7D577;
-    border-color: #F7D577;
+    background-color: #FD811C;
+    border-color: #FD811C;
     border-radius: 20px;
     width: 200px;
-    color:#2FA8BB;
+    color: white;
 }
 .btn-start:hover {
-    background-color: #f8e09f;
-    border-color: #f8e09f;
+    background-color: #fcab65;
+    border-color: #fcab65;
 }
 
 
@@ -159,7 +159,7 @@
 }
 
 .btn-vacinas {
-    background-color: #52BACB;  
+    background-color: #FA5909;  
     color: #fff;
     font-weight: 500;
     border-radius: 15px;
@@ -176,7 +176,7 @@
 
 /* bolinhas*/
 .orange-balls{
-    background-color:  #FFD271;
+    background-color:  #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -184,7 +184,7 @@
     margin-top: -4%;
 }
 .orange-balls1{
-    background-color:  #FFD271;
+    background-color:  #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -192,7 +192,7 @@
     margin-top: 3%;
 }
 .orange-balls2{
-    background-color:  #FFD271;
+    background-color:  #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -200,7 +200,7 @@
     margin-top: 3%;
 }
 .blue-balls{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 39px;
     height: 39px;
     border-radius: 50%;
@@ -208,7 +208,7 @@
     margin-top: -8%;
 }
 .blue-balls1{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 27px;
     height: 27px;
     border-radius: 50%;
@@ -216,7 +216,7 @@
     margin-top: 2%;
 }
 .blue-balls2{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 43px;
     height: 43px;
     border-radius: 50%;
@@ -224,7 +224,7 @@
     margin-top: 0%;
 }
 .blue-balls3{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -236,7 +236,7 @@
     width: 50px;
     object-fit: cover;
     border-radius: 50%;
-    border: #FD811C solid 6px;
+    border: #52BACB solid 6px;
     margin-left: 81%;
     margin-top: -8%;
 }
@@ -245,7 +245,7 @@
     width: 42px;
     object-fit: cover;
     border-radius: 50%;
-    border: #FD811C solid 6px;
+    border: #52BACB solid 6px;
     margin-left:92%;
     margin-top: -2%;
 }
