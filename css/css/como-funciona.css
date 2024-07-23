@@ -1,9 +1,10 @@
-body{
+body {
     background-image: url('img/fundo-patas.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 110%;
     font-family: baloo;
 }
+
 .container {
     text-align: center;
     width: 80%;
@@ -11,33 +12,167 @@ body{
     margin: auto;
 }
 
-.subtitle{
+.subtitle {
     color: #ffffff;
     margin-top: 20px;
 }
-.title-comofunciona{
+
+.title-comofunciona {
     color: #F7D577;
     background-color: #FC9242;
     border-radius: 30px;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     display: inline-block;
-
+    margin-top: 20px;
 }
+
+.title-visita-container,
+.title-acompanhamento-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.title-visita{
+    color: #F7D577;
+    background-color: #FC9242;
+    border-radius: 30px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+    position: relative;
+    right: 10%;
+    
+}
+.title-acompanhamento {
+    color: #F7D577;
+    background-color: #FC9242;
+    border-radius: 30px;
+    padding: 5px 60px;
+    display: inline-block;
+    margin-left: 10px; /* Espaçamento entre o ícone e o texto */
+    position: relative;
+    right: 3%;
+    
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 500%;
+    color: #2FA8BB;
+    font-size: 1.8em;
+    position: relative;
+    left: 2%;
+    z-index: 1;
+}
+.icon-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 500%;
+    color: #2FA8BB;
+    font-size: 1.8em;
+    position: relative;
+    left: 7%;
+    z-index: 1;
+}
+
+.text-visita{
+    color: #ffffff;
+    background-color: #2FA8BB;
+    border-radius: 30px;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.text-acompanhamento {
+    color: #ffffff;
+    background-color: #2FA8BB;
+    border-radius: 30px;
+    padding: 15px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    left: 5%;
+}
+
 .title {
-    border-radius: 15px; /* Cantos arredondados */
-    display: inline-block; /* Para ajustar o fundo ao tamanho do texto */
+    border-radius: 15px;
+    display: inline-block;
     margin-top: 40px;
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    margin-bottom: 20px;
     width: 100%;
 }
 
 .img-fluid {
-    max-width: 45%; /* Certifique-se de que as imagens não sejam maiores que o contêiner */
+    max-width: 45%;
     height: auto;
     border-radius: 15px;
-    
     margin-top: -70px;
 }
 
+.sections-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    left: 5%;
+}
 
+.section {
+    position: relative;
+    right: 10%;
+}
 
+.sections {
+    position: relative;
+    left: 10%;
+}
+
+.separator {
+    width: 40px;
+    background-color: #FC9242;
+    height: 300px; /* Altura da barra laranja */
+    position: relative;
+    left: 20px;
+}
+
+.title-2{
+    color: #F7D577;
+}
+.text-agendeja{
+    color:#ffffff ;
+    margin-top: 20px;
+}
+
+.agende-agora{
+    margin-top: 15%;
+}
+
+.btn-custom {
+    top: 20px;
+    position: relative;
+    font-family: baloo;
+    font-size: 20px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.btn-custom:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+}
