@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #FFD371;
+  }
+  
+  #year__container {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+  }
+  
+  #month__container {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  #days__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+    width: 100%;    
+  }
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    margin: 30px;
+  }
+
+.calendario{
+    width:50%;
+    font-size: 25px;
+    position: absolute;
+    left: 45%;
+    top: 15%;
+
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 1020px; 
+    height: auto;
+    left: 15%; 
+    height: 80%;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: 600px;
+    max-height: 1000px;
+}
+
+.form {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
+
+.form-control {
+    border: solid #FFD371;
+    width: 350px;
+    margin-top: 0%;
+    left: 12%;
+    font-family: baloo;
+    border-radius: 20px;
+    height: 50px;
+}
+
+.form-control::placeholder {
+    color: #8C8C8C; 
+}
+
+.blue-div {
+    font-family: baloo;
+    color: rgb(255, 255, 255);
+    background-color: #52BACB;
+    position: relative;
+    width: 390px; 
+    left: 0%;
+    height: 100%;
+    margin-top: 0%;
+    background-size: 150%;
+    background-position: center 95%;
+    background-repeat: no-repeat;
+}
