@@ -49,7 +49,7 @@
             </div>
 
             <div class="hiper-final">
-                <a class="hiper-final" href="#">Gostaria de cadastrar seu pet depois? Clique Aqui.</a>
+                <a class="hiper-final" href="index.php">Gostaria de cadastrar seu pet depois? Clique Aqui.</a>
             </div>
         </form> 
     </div>   
