@@ -93,7 +93,7 @@
                 </li>
                 <li><a href="#">Como funciona o atendimento domiciliar?</a></li>
                 <li><a href="#">Como confirmar agendamento</a></li>
-                <li><a href="#">Formas de pagamento</a></li>
+                <li><a href="pagamento.php">Formas de pagamento</a></li>
             </ul>
             <ul>
                 <li>
