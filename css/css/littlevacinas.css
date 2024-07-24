@@ -1,0 +1,19 @@
+.top-section {
+    height: 70vh;
+    background-image: url('img/fundopatas-branca.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bottom-section {
+    height: 100vh;
+    background-color:#2D8896;
+}
+.title-vacina{
+    color: #F7D577;
+    background-color: #2D8896;
+    border-radius: 30px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
