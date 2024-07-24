@@ -5,7 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: baloo;
+}
+
+@font-face {
+  font-family: 'baloo';
+  src: url("../font/baloo/Baloo-Regular.ttf");
 }
 /* nice scroll bar */
 ::-webkit-scrollbar {
