@@ -56,17 +56,17 @@ body {
 .icones {
     display: flex;
     justify-content: center;
-    gap: 0px; /* Ajuste o espaço entre os ícones */
+    gap: 0px; 
     margin-top: -50px;
 }
 
 .icone-item {
     text-align: center;
-    max-width: 30%; /* Mantém o mesmo tamanho para todos os ícones */
+    max-width: 30%; 
 }
 
 .icone-protecao, .icone-conveniencia, .icone-saude {
-    width: 100%; /* Use o 100% para manter o tamanho original dos ícones */
+    width: 100%; 
     height: auto;
     z-index: 1;
 }
@@ -78,7 +78,7 @@ body {
 
 .icone-texto {
     color: #ffffff;
-    font-size: 14px; /* Ajuste o tamanho do texto conforme necessário */
+    font-size: 14px; 
     margin: 0;
     padding: 0 10px;
 }
