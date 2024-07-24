@@ -1,11 +1,16 @@
 :root {
-  --primary-clr: #b38add;
+  --primary-clr:  #f27c06;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: baloo;
+}
+
+@font-face {
+  font-family: 'baloo';
+  src: url("../font/baloo/Baloo-Regular.ttf");
 }
 /* nice scroll bar */
 ::-webkit-scrollbar {
@@ -27,19 +32,20 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
-  background-color: #e2e1dc;
+  background-color: #FFD371;
 }
 .container {
   position: relative;
   width: 1200px;
-  min-height: 850px;
+  min-height: 700px;
   margin: 0 auto;
   padding: 5px;
   color: #fff;
   display: flex;
-
+  background-color:  #52BACB;
+  margin-top: 20px;
   border-radius: 10px;
-  background-color: #373c4f;
+  box-shadow: 20px 20px 20px #edbf5c;
 }
 .left {
   width: 60%;
@@ -53,31 +59,15 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  color: #878895;
+  color: #959487;
   border-radius: 5px;
   background-color: #fff;
 }
-/* set after behind the main element */
-.calendar::before,
-.calendar::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 12px;
-  height: 97%;
-  border-radius: 0 5px 5px 0;
-  background-color: #d3d4d6d7;
-  transform: translateY(-50%);
-}
-.calendar::before {
-  height: 94%;
-  left: calc(100% + 12px);
-  background-color: rgb(153, 153, 153);
-}
+
+
 .calendar .month {
   width: 100%;
-  height: 150px;
+  height: 130px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,7 +86,7 @@ body {
 }
 .calendar .weekdays {
   width: 100%;
-  height: 100px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,7 +110,7 @@ body {
   padding: 0 20px;
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
 }
 .calendar .days .day {
   width: 14.28%;
@@ -166,7 +156,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 10px 2px var(--primary-clr);
 }
 .calendar .days .today {
   font-size: 2rem;
@@ -205,6 +194,8 @@ body {
   padding: 0 20px;
   margin-bottom: 20px;
   color: var(--primary-clr);
+  position: relative;
+  bottom: 40px;
 }
 .calendar .goto-today .goto {
   display: flex;
@@ -267,8 +258,8 @@ body {
 }
 .right .today-date .event-date {
   font-size: 1rem;
-  font-weight: 400;
-  color: #878895;
+  font-weight: 500;
+  color: #ffffff;
 }
 .events {
   width: 100%;
@@ -291,7 +282,7 @@ body {
   padding: 0 20px;
   padding-left: 50px;
   color: #fff;
-  background: linear-gradient(90deg, #3f4458, transparent);
+  background: linear-gradient(90deg, #6ed8e9, transparent);
   cursor: pointer;
 }
 /* even event */
@@ -299,7 +290,7 @@ body {
   background: transparent;
 }
 .events .event:hover {
-  background: linear-gradient(90deg, var(--primary-clr), transparent);
+  background: linear-gradient(90deg, #3aadbe, transparent);
 }
 .events .event .title {
   display: flex;
@@ -321,7 +312,7 @@ body {
 .events .event .event-time {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #878895;
+  color: #b3f4fb;
   margin-left: 15px;
   pointer-events: none;
 }
@@ -340,7 +331,7 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0.3;
-  color: var(--primary-clr);
+  color: #e8f2ff;
   transform: translateY(-50%);
 }
 .events .event:hover::after {
@@ -349,15 +340,15 @@ body {
 .add-event {
   position: absolute;
   bottom: 30px;
-  right: 30px;
   width: 40px;
   height: 40px;
+  margin-left: 40px ;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  color: #878895;
-  border: 2px solid #878895;
+  color:  #ffffff;
+  border: 4px solid  #ffffff;
   opacity: 0.5;
   border-radius: 50%;
   background-color: transparent;
@@ -537,22 +528,3 @@ body {
   }
 }
 
-.credits {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 10px;
-  font-size: 12px;
-  color: #fff;
-  background-color: #b38add;
-}
-.credits a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-.credits a:hover {
-  text-decoration: underline;
-}
