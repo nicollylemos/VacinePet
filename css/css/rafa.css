@@ -42,7 +42,7 @@
 }
 #doencas {
     background-color: rgb(255, 255, 255);
-    height: 600px;
+    height: 550px;
 }
 .btn-start {
     position: relative;
@@ -61,12 +61,124 @@
 
 
 /* carrossel help */
+.valores-info {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
 
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.valores-info h2 {
+    font-family: baloo;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #ffffff;
+    height: 900px;
+    border-color: #FD811C;
+
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    margin-top: 33%;
+    height: 300px;
+}
+
+.slide-container {
+    width: 100%;
+}
+
+.nome-vacina {
+    font-family: baloo;
+    font-size: 30px;
+    font-weight: 500;
+    color: #FD811C;
+    position: relative;
+    bottom: 55px;
+    text-align: center;
+    align-items: center;
+}
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.swiper {
+    width: 95%;
+}
+.valor {
+    font-size: 30px;
+    font-family: baloo;
+    position: relative;
+    bottom: 30px;
+}
+
+.btn-vacinas {
+    background-color: #FD811C;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px;
+    width: 90px;
+    height: 40px;
+    border: none;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 45px;
+    align-items: center;
+}
+.btn-vacinas:hover{
+    background-color: #ffae6b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px;
+    width: 90px;
+    height: 40px;
+    border: none;
+    font-family: baloo;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 45px;
+}
+.titulo-vacina h2 {
+    text-align: center;
+    align-items: center;
+    font-family: baloo;
+    font-weight: 800;
+    color: #52BACB;
+    margin: 35px;
+    font-size: 45px;
+    height: 70px;
+    margin-top: 3%;
+}
+.textinhos{
+    height: 300px;
+}
 
 
 /* bolinhas*/
 .orange-balls{
-    background-color:  #FD811C;
+    background-color: #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
