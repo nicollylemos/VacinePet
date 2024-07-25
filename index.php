@@ -31,7 +31,7 @@
                 <p>Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu <br>animal de
-                    estimação. </p><a href="calendario.html"><button class="btn-inicio">Agendar </button></a>
+                    estimação. </p><a href="agendamento.php"><button class="btn-inicio">Agendar </button></a>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -45,7 +45,7 @@
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
-                        <a href="doencascao.php"><button type="submit">Ler Mais</button></a>
+                        <a href="doencascachorro.php"><button type="submit">Ler Mais</button></a>
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog"><img src="" alt=""></div>

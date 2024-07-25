@@ -33,6 +33,7 @@
     font-size: 85px;
     position: relative;
     z-index: 1;
+    line-height: 0.85; 
 }
 .sub-title-start {
     color: #3b3b3b;

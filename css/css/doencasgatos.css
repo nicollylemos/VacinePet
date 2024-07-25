@@ -33,6 +33,7 @@
     font-size: 85px;
     position: relative;
     z-index: 1;
+    line-height: 0.9; 
 }
 .sub-title-start {
     color: #3b3b3b;
@@ -46,12 +47,13 @@
 .btn-start {
     position: relative;
     font-family: baloo;
-    font-size: 23px;
+    font-size: 25px;
     background-color: #F7D577;
-    border-color: #F7D577;
+    border: 1px solid #F7D577;
     border-radius: 20px;
-    width: 200px;
+    width: 220px;
     color:#2FA8BB;
+    margin-top: 5px;
 }
 .btn-start:hover {
     background-color: #f8e09f;
