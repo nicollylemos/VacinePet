@@ -107,7 +107,7 @@
                 <li>
                     <h2>Sobre nós</h2>
                 </li>
-                <li><a href="#">Sobre o VacinePet</a></li>
+                <li><a href="infos-page/sobre-vacinepet.php">Sobre o VacinePet</a></li>
                 <li><a href="#">Sobre o profissional</a></li>
                 <li><a href="#">Sobre o atendimento</a></li>
             </ul>

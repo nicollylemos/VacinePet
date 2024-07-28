@@ -31,7 +31,7 @@
                 <p>Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu <br>animal de
-                    estimação. </p><a href="agendamento.php"><button class="btn-inicio">Agendar </button></a>
+                    estimação. </p><a href="agendamento.php"><button class="btn-inicio">Agendar</button></a>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -86,8 +86,8 @@
                             </h3>
                             <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                 typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                printing and typesetting industry. Lorem Ipsum has. </p><a href="vacinas.php"><button type="submit"
-                                class="btn-vacinas" >Ver Mais</button></a>
+                                printing and typesetting industry. Lorem Ipsum has. </p><a href="vacinas.php"><button
+                                    type="submit" class="btn-vacinas">Ver Mais</button></a>
                         </div>
                     </div>
                     <div class=" card swiper-slide">

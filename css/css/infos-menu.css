@@ -1,0 +1,21 @@
+.home{
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 90px;
+    height: 100vh;
+    width: calc(100% - 250px);
+}
+
+.header{
+    background-color:#61ccdc;
+    width: 100%;
+    margin: 30px 10px 40px 50px;  
+    height: 200px; 
+    border-radius: 20px;
+
+}
+
+.home .content{
+    text-align: center;
+}
