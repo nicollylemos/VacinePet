@@ -1,0 +1,71 @@
+@font-face {
+    font-family:'baloo';
+    src:url("../font/baloo/Baloo-Regular.ttf");
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    top: 0;
+    left: 90px;
+    height: 100vh;
+    width: calc(100% - 250px);
+}
+
+.home .header{
+    background-color: #52BACB;
+    width: 100%;
+    margin: 30px 10px 50px 0px;  
+    height: 200px; 
+    border-radius: 20px;
+
+}
+
+.home .content{
+    text-align: center;
+    padding-left:70px;
+    position: relative;
+}
+
+.home .content h1{
+    color: #ff6600;
+    font-size: 45px;
+    font-family: baloo;
+}
+
+.home .content h2{
+    color:  #52BACB;
+    font-size: 25px;
+    font-family: baloo;
+    line-height: 2px;
+}
+
+.home .content p{
+    font-weight: 600;
+    text-align: justify;
+    justify-content: center;
+    padding: 10px 40px 0px 40px;
+
+}
+
+.home .content .content-txt{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.home .content .pet-img{
+    background-color: rgb(212, 212, 212);
+    position: relative;
+    width: 90%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.home .content .pet-img img{
+    width: 100%;
+}
