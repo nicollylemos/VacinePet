@@ -44,8 +44,7 @@
     font-weight: 600;
     text-align: justify;
     justify-content: center;
-    padding: 10px 40px 0px 40px;
-
+    padding: 0px 40px 0px 40px;
 }
 
 .home .content .content-txt{
@@ -68,4 +67,45 @@
 
 .home .content .pet-img img{
     width: 100%;
+}
+
+.home .content .subtitle{
+    color: #52BACB;
+    font-weight: 700;
+    font-family: baloo;
+    font-size: 23px;
+    text-align: left;
+    margin-top: 10px;
+    padding: 10px 40px 0px 40px;
+    position: relative;
+    top: 25px;
+}
+
+.container-end p{
+    margin-top:30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.home .container-end button{
+    background-color: transparent;
+    color: #ff6600;
+    border-radius: 20px;
+    border: #ff6600 solid 3.5px;
+    width: 200px;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.home .container-end button:hover{
+    border:  #ff802c solid 3.5px;
+    color: #ff802c;
+}
+.home .container-end{
+   height: 110px;
 }

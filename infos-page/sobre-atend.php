@@ -19,13 +19,16 @@
         <div class="content">
             <div class="header"></div>
             <div class="content-about">
-                <h1>Sobre o VacinePet</h1>
-                <h2>A saúde do seu pet em primeiro lugar.</h2>
+                <h1>Sobre o atendimento</h1>
+                <h2>Conheça a Dra. Monica.</h2>
                 <div class="content-txt one">
                     <p>A saúde e o bem-estar dos nossos amigos de quatro patas são de extrema importância. Por isso,
-                        apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de estimação
-                        com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a dia, o
-                        estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas vezes
+                        apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
+                        estimação
+                        com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
+                        dia, o
+                        estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas
+                        vezes
                         dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
                         eficiente para você e seu companheiro.</p>
                 </div>

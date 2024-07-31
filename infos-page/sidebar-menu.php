@@ -29,21 +29,21 @@
                 <div class="menu">
                     <ul class="menu-links">
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="sobre-vacinepet.php">
                                 <i class="fa-solid fa-syringe icon"></i>
                                 <span class="text nav-text">Sobre o VacinePet</span>
                             </a>
                         </li>
 
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="sobre-profissional.php">
                                 <i class="fa-solid fa-user-tie icon"></i>
                                 <span class="text nav-text">Sobre a profissional</span>
                             </a>
                         </li>
 
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="sobre-atend.php">
                                 <i class="fa-solid fa-bell-concierge icon"></i>
                                 <span class="text nav-text">Sobre o atendimento</span>
                             </a>

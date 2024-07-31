@@ -19,8 +19,8 @@
         <div class="content">
             <div class="header"></div>
             <div class="content-about">
-                <h1>Sobre o VacinePet</h1>
-                <h2>A saúde do seu pet em primeiro lugar.</h2>
+                <h1>Sobre a profissional</h1>
+                <h2>Conheça a Dra. Monica.</h2>
                 <div class="content-txt one">
                     <p>A saúde e o bem-estar dos nossos amigos de quatro patas são de extrema importância. Por isso,
                         apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de estimação
