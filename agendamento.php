@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css/responsividade/agendamento.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/agendamento.css">
+    <link rel="stylesheet" href="css/css/agendar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Agendamento</title>
     <style>
-        .hidden {
-            display: none;
-        }
+    .hidden {
+        display: none;
+    }
     </style>
 </head>
 
@@ -175,8 +175,7 @@
                         </div>
                         <button type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(4)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
-                            onclick="enviarForm()">Enviar</button>
+                        <button type="button" class="btn btn-primary btn-custom" onclick="enviarForm()">Enviar</button>
                     </div>
 
                     <!-- Etapa 6: tela de agradecimento -->
@@ -188,7 +187,8 @@
                             <br>
                             <p>Realizado em: <span id="dataHoraAgendamento"></span></p>
 
-                            <h6 class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br> Obrigado por confiar no VacinePet para cuidar do seu filho de <br>quatro patas!</h6>
+                            <h6 class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br>
+                                Obrigado por confiar no VacinePet para cuidar do seu filho de <br>quatro patas!</h6>
                         </div>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="finalizar()">Finalizar</button>

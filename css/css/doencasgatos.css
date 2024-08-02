@@ -12,7 +12,7 @@
 }
 
 .start {
-    background-image: url(img/fundodoen.png);
+    background-image: url(img/gatofundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,11 +28,12 @@
     width: 45%;
 }
 .title-start {
-    color: #FA5909;
+    color: #F7D577;
     font-family: baloo;
     font-size: 85px;
     position: relative;
     z-index: 1;
+    line-height: 0.9; 
 }
 .sub-title-start {
     color: #3b3b3b;
@@ -46,16 +47,17 @@
 .btn-start {
     position: relative;
     font-family: baloo;
-    font-size: 23px;
-    background-color: #FD811C;
-    border-color: #FD811C;
+    font-size: 25px;
+    background-color: #F7D577;
+    border: 1px solid #F7D577;
     border-radius: 20px;
-    width: 200px;
-    color: white;
+    width: 220px;
+    color:#2FA8BB;
+    margin-top: 5px;
 }
 .btn-start:hover {
-    background-color: #fcab65;
-    border-color: #fcab65;
+    background-color: #f8e09f;
+    border-color: #f8e09f;
 }
 
 
@@ -159,7 +161,7 @@
 }
 
 .btn-vacinas {
-    background-color: #FA5909;  
+    background-color: #52BACB;  
     color: #fff;
     font-weight: 500;
     border-radius: 15px;
@@ -176,7 +178,7 @@
 
 /* bolinhas*/
 .orange-balls{
-    background-color:  #FD811C;
+    background-color:  #FFD271;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -184,7 +186,7 @@
     margin-top: -4%;
 }
 .orange-balls1{
-    background-color:  #FD811C;
+    background-color:  #FFD271;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -192,7 +194,7 @@
     margin-top: 3%;
 }
 .orange-balls2{
-    background-color:  #FD811C;
+    background-color:  #FFD271;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -200,7 +202,7 @@
     margin-top: 3%;
 }
 .blue-balls{
-    background-color:#52BACB;
+    background-color:#FD811C;
     width: 39px;
     height: 39px;
     border-radius: 50%;
@@ -208,7 +210,7 @@
     margin-top: -8%;
 }
 .blue-balls1{
-    background-color:#52BACB;
+    background-color:#FD811C;
     width: 27px;
     height: 27px;
     border-radius: 50%;
@@ -216,7 +218,7 @@
     margin-top: 2%;
 }
 .blue-balls2{
-    background-color:#52BACB;
+    background-color:#FD811C;
     width: 43px;
     height: 43px;
     border-radius: 50%;
@@ -224,7 +226,7 @@
     margin-top: 0%;
 }
 .blue-balls3{
-    background-color:#52BACB;
+    background-color:#FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -236,7 +238,7 @@
     width: 50px;
     object-fit: cover;
     border-radius: 50%;
-    border: #52BACB solid 6px;
+    border: #FD811C solid 6px;
     margin-left: 81%;
     margin-top: -8%;
 }
@@ -245,7 +247,7 @@
     width: 42px;
     object-fit: cover;
     border-radius: 50%;
-    border: #52BACB solid 6px;
+    border: #FD811C solid 6px;
     margin-left:92%;
     margin-top: -2%;
 }

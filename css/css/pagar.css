@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/static/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family: 'oswald';
+    src: url("../font/oswald/Oswald-Regular.ttf");
+}
+body {
+    background-image: url(img/fundo-azul.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    background-color: #fff;
+    position: relative;
+    width: 820px;
+    margin: 0 auto;
+    align-items: center;
+    height: 110vh;
+    margin-top: 3%;
+    z-index: 2;
+    margin-bottom: 4%;
+}
+.blue-div {
+    background-color: #FFD371;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: 130%;
+    background-position: center 95%;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 290px;
+    left: 0;
+    height: 110vh;
+    background-image: url('/css/css/img/miau.png');
+    background-size: 150%;
+    background-position: center 101%;
+    background-repeat: no-repeat;
+}
+.title{
+    font-family: baloo;
+    color: white;
+    font-size: 45px;
+    margin-top: 70%;
+}
+.title-title{
+    color: white;
+    font-size: 20px;
+}
+.title-blue-div1 {
+    color: #fff;
+    font-family: 'baloo';
+    margin-bottom: 20px;
+}
+.space{
+    height: 70px;
+}
+.text{
+    width: 500px;
+    margin-left: 37%;
+}
+.text-text{
+    font-family: baloo;
+    color: #FD811C;
+    font-size: 55px;
+}
+.text-exp{
+    margin-top: 3%;
+    color: #3b3b3b;
+    font-size: 20px;
+    font-family: baloo;
+}.text-exp1{
+    margin-top: 2%;
+    color: #3b3b3b;
+    font-size: 20px;
+    font-family: baloo;
+}
+
+/* bolinhas*/
+.orange-balls{
+    background-color: #FD811C;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 75%;
+    margin-top:6%;
+}
+.orange-balls1{
+    background-color:  #FD811C;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 90%;
+    margin-top: 4%;
+}
+.orange-balls2{
+    background-color:  #FD811C;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 60%;
+    margin-top: 2%;
+}
+.blue-balls{
+    background-color:#52BACB;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    margin-left: 55%;
+    margin-top: -20%;
+}
+.blue-balls1{
+    background-color:#52BACB;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-left: 80%;
+    margin-top: 2%;
+}
+.blue-balls2{
+    background-color:#52BACB;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    margin-left: 74%;
+    margin-top: 5%;
+}
+.blue-balls3{
+    background-color:#52BACB;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 93%;
+    margin-top: -3%;
+}
+.bolinha-furada{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #52BACB solid 6px;
+    margin-left: 67%;
+    margin-top: -27%;
+}
+.bolinha-furada1{
+    height: 42px;
+    width: 42px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #52BACB solid 6px;
+    margin-left:92%;
+    margin-top: -2%;
+}
+

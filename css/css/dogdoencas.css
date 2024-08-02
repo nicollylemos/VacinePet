@@ -12,7 +12,7 @@
 }
 
 .start {
-    background-image: url(img/gatofundo.png);
+    background-image: url(img/fundodoen.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,11 +28,12 @@
     width: 45%;
 }
 .title-start {
-    color: #F7D577;
+    color: #FA5909;
     font-family: baloo;
     font-size: 85px;
     position: relative;
     z-index: 1;
+    line-height: 0.85; 
 }
 .sub-title-start {
     color: #3b3b3b;
@@ -41,21 +42,21 @@
 }
 #doencas {
     background-color: rgb(255, 255, 255);
-    height: 600px;
+    height: 550px;
 }
 .btn-start {
     position: relative;
     font-family: baloo;
     font-size: 23px;
-    background-color: #F7D577;
-    border-color: #F7D577;
+    background-color: #FD811C;
+    border-color: #FD811C;
     border-radius: 20px;
     width: 200px;
-    color:#2FA8BB;
+    color: white;
 }
 .btn-start:hover {
-    background-color: #f8e09f;
-    border-color: #f8e09f;
+    background-color: #fcab65;
+    border-color: #fcab65;
 }
 
 
@@ -80,55 +81,32 @@
     border-radius: 25px;
     background-color: #ffffff;
     height: 900px;
+    border-color: #FD811C;
 
 }
-
-.image-content,
 .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
-}
-
-.card-image {
-    position: relative;
-    height: 55px;
-    width: 55px;
-    padding: 3px;
-}
-
-.card-image .card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: #FD811C solid 6px; /* bolinha furada */
+    margin-top: 33%;
+    height: 300px;
 }
 
 .slide-container {
     width: 100%;
-    padding: 40px 0;
-}
-
-.image-content {
-    position: relative;
-    row-gap: 5px;
-    border-radius: 25px 25px 0 25px;
-    padding: 25px 0;
 }
 
 .nome-vacina {
     font-family: baloo;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
-    color: #52BACB;
+    color: #FD811C;
     position: relative;
     bottom: 55px;
     text-align: center;
     align-items: center;
 }
-
 .description {
     font-size: 14px;
     color: #707070;
@@ -143,14 +121,8 @@
 }
 
 .swiper {
-    width: 30%;
+    width: 95%;
 }
-
-.btn-img {
-    z-index: auto;
-    position: absolute;
-}
-
 .valor {
     font-size: 30px;
     font-family: baloo;
@@ -159,24 +131,54 @@
 }
 
 .btn-vacinas {
-    background-color: #52BACB;  
+    background-color: #FD811C;
     color: #fff;
     font-weight: 500;
     border-radius: 15px;
     font-size: 18px;
     padding: 8px;
-    width: 250px;
+    width: 90px;
+    height: 40px;
+    border: none;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 45px;
+    align-items: center;
+}
+.btn-vacinas:hover{
+    background-color: #ffae6b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px;
+    width: 90px;
+    height: 40px;
     border: none;
     font-family: baloo;
     letter-spacing: 1px;
     position: relative;
     bottom: 45px;
 }
+.titulo-vacina h2 {
+    text-align: center;
+    align-items: center;
+    font-family: baloo;
+    font-weight: 800;
+    color: #52BACB;
+    margin: 35px;
+    font-size: 45px;
+    height: 70px;
+    margin-top: 3%;
+}
+.textinhos{
+    height: 300px;
+}
 
 
 /* bolinhas*/
 .orange-balls{
-    background-color:  #FFD271;
+    background-color: #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -184,7 +186,7 @@
     margin-top: -4%;
 }
 .orange-balls1{
-    background-color:  #FFD271;
+    background-color:  #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -192,7 +194,7 @@
     margin-top: 3%;
 }
 .orange-balls2{
-    background-color:  #FFD271;
+    background-color:  #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -200,7 +202,7 @@
     margin-top: 3%;
 }
 .blue-balls{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 39px;
     height: 39px;
     border-radius: 50%;
@@ -208,7 +210,7 @@
     margin-top: -8%;
 }
 .blue-balls1{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 27px;
     height: 27px;
     border-radius: 50%;
@@ -216,7 +218,7 @@
     margin-top: 2%;
 }
 .blue-balls2{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 43px;
     height: 43px;
     border-radius: 50%;
@@ -224,7 +226,7 @@
     margin-top: 0%;
 }
 .blue-balls3{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -236,7 +238,7 @@
     width: 50px;
     object-fit: cover;
     border-radius: 50%;
-    border: #FD811C solid 6px;
+    border: #52BACB solid 6px;
     margin-left: 81%;
     margin-top: -8%;
 }
@@ -245,7 +247,7 @@
     width: 42px;
     object-fit: cover;
     border-radius: 50%;
-    border: #FD811C solid 6px;
+    border: #52BACB solid 6px;
     margin-left:92%;
     margin-top: -2%;
 }

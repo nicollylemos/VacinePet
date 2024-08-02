@@ -7,8 +7,10 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/entrar.css">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <link rel="stylesheet" href="css/css/responsividade/telalogi.css">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Login</title>
 </head>
 
@@ -46,7 +48,7 @@
                     <div class="final">
                         <div id="actions" class="mt-4">
                             <button type="submit" class="btn btn-primary btn-custom">ENTRAR</button>
-                        </div>
+                    </div>
                         <div class="cad-text">
                             <h7>Não tem uma conta?</h7><a href="#" class="criar">Cadastre-se</a>
                         </div>

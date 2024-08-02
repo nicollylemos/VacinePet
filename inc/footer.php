@@ -91,9 +91,9 @@
                 <li>
                     <h2>Dúvidas</h2>
                 </li>
-                <li><a href="#">Como funciona o atendimento domiciliar?</a></li>
+                <li><a href="como-funciona.php">Como funciona o agendamento</a></li>
                 <li><a href="#">Como confirmar agendamento</a></li>
-                <li><a href="#">Formas de pagamento</a></li>
+                <li><a href="infos-page/pagamento.php">Formas de pagamento</a></li>
             </ul>
             <ul>
                 <li>
@@ -107,9 +107,9 @@
                 <li>
                     <h2>Sobre nós</h2>
                 </li>
-                <li><a href="#">Sobre o VacinePet</a></li>
-                <li><a href="#">Sobre o profissional</a></li>
-                <li><a href="#">Sobre o atendimento</a></li>
+                <li><a href="infos-page/sobre-vacinepet.php">Sobre o VacinePet</a></li>
+                <li><a href="infos-page/sobre-profissional.php">Sobre o profissional</a></li>
+                <li><a href="infos-page/sobre-atend.php">Sobre o atendimento</a></li>
             </ul>
             <ul class="redes-sociais">
                 <li>
