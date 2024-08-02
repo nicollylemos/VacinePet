@@ -99,5 +99,6 @@
     </div>
     </div>   
 </div>
+<script src="js/cadastro.js"></script>
 </body>
 </html>
