@@ -46,6 +46,7 @@ body{
     transform: translateY(-50%);
     min-height: 600px;
     max-height: 1000px;
+    box-shadow: 20px 20px 20px rgb(240, 199, 96)
 }
 
 .form {
@@ -71,14 +72,13 @@ body{
 .blue-div {
     font-family: baloo;
     color: rgb(255, 255, 255);
-    background-color: #52BACB;
     position: absolute;
     width: 390px; 
     left: 0%;
     height: 100%;
     margin-top: 0%;
-    background-image: url('img/fundopatinhas.png');
-    background-size: 150%;
+    background-image: url('img/fundo-azul.jpg');
+    background-size: cover;
     background-position: center 95%;
     background-repeat: no-repeat;
 }

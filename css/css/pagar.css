@@ -11,7 +11,7 @@
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
 body {
-    background-image: url(img/fundo-patas.png);
+    background-image: url(img/fundo-azul.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,7 +43,7 @@ body {
     width: 290px;
     left: 0;
     height: 110vh;
-    background-image: url('img/miau.png');
+    background-image: url('/css/css/img/miau.png');
     background-size: 150%;
     background-position: center 101%;
     background-repeat: no-repeat;
