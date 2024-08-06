@@ -26,14 +26,8 @@
    .final{
       margin-left: 250px;
    }
-   .esquecer{  
-
-   }
    .cad-text{
       margin-left: 100px;
-   }
-   .cd{
-
    }
    .cilindro1{
       background-color: #FFD371;
@@ -86,6 +80,7 @@
       margin-top: 23%;
    }
    .cilindro1{
+      position: relative;
       background-color: #FFD371;
       margin-top: -85%;
       margin-left: 50px;
@@ -115,23 +110,23 @@
 }
 @media (min-width:450px) and (max-width: 575px){
    .container{
-      width: 500px;
-      height: 500px;
+      width: 575px;
+      height: 100vh;
+      justify-content: center;
+      box-shadow: none;
    }
    .cilindros{
       display: none;
    }
    .yellow-div{
-      width: 200px;
-      background-size: 420px;
-      background-position: 80%;
+      display: none;
    }
    .form-control{
       width: 220px;
    }
    .form{
-      margin-left: -3%;
-      margin-top: 3%;
+      margin-left: 10%;
+      margin-top: 4%;
    }
    .esquecer{
       margin-left: 26%;
@@ -141,12 +136,15 @@
       margin-top: 10%;
       margin-left: -3%;
    }
+   body{
+      background: none;
+   }
 }
 @media (min-width:576px) and (max-width: 700px){
    .yellow-div{
       width: 200px;
-      background-size: 400px;
-      background-position: 80%;
+      background-size: cover;
+      background-position: 70%;
    }
    .cilindros{
       display: none;
@@ -160,6 +158,7 @@
    }
    .form{
       margin-left: -3%;
+      margin-top: 6%;
    }
    .esquecer{
       margin-left: 35%;
@@ -170,66 +169,172 @@
    }
 }
 @media (min-width:700px) and (max-width: 767px){
-
-}
-@media (min-width:767px) and (max-width: 850px){
    .yellow-div{
-      width: 320px;
-      background-size: 450px;
-   }
-   .form{
-      margin-left: -8%;
-      margin-top: -3%;
-   }
-   .cilindro3{
-      display: none;
-   }
-   .cilindro1{
-      width: 150px;
-      margin-left: -8%;
-   }
-   .cilindro5{
-      margin-top: -5%;
-      margin-left: -4%;
-   }
-   .cilindro2{
-      width: 220px;
-      margin-top: -1%;
-   }
-   .cilindro4{
-      width: 190px;
-      margin-top: -2%;
-      margin-left: -5%;
+      width: 230px;
+      background-size: cover;
+      background-position: 80%;
    }
    .cilindros{
-      margin-top: -5%;
+      display: none;
    }
+   .form-control{
+      width: 240px;
+   }
+   .form{
+      margin-left: -5%;
+      margin-top: 4%;
+
+   }
+   .esquecer{
+      margin-left: 30%;
+   }
+   .final{
+      margin-bottom: 10%;
+   }
+   .btn-custom{
+      bottom: 10%;
+   }
+   .cad-text{
+      bottom: 10%;
+   }
+}
+@media (min-width:768px) and (max-width: 850px){
+   .yellow-div{
+      width: 310px;
+      background-size: cover;
+      background-position: 80%;
+   }
+   .form{
+      margin-left: -6%;
+      margin-top: 8%;
+   }
+   .cilindros{
+      display: none;
+   }
+
 }
 @media (min-width:850px) and (max-width: 960px){
    .yellow-div{
-      width: 300px;
-      background-size: 420px;
+      width: 305px;
+      background-size: cover;
+      background-position: right;
+   
    }
-   .cilindro3{
+   .cilindros{
       display: none;
    }
    .form{
       margin-left: -7%;
-      margin-top: -2%;
+      margin-top: 4%;
    }
-   .cilindro1{
-      width: 150px;
+   .esquecer{
+      margin-left: 53%;
    }
-   .cilindros{
-      margin-top: -4%;
+   .btn-custom{
+      bottom: 5%;
    }
-   .cilindro2{
-      width: 200px;
-   }
-   .cilindro4{
-      width: 170px;
+   .cad-text{
+      bottom: 5%;
    }
 }
-@media (min-width:960px) and (max-width: 1027px){
-   
+@media (min-width:960px) and (max-width: 992px){
+   .form-control{
+      width: 300px;
+   }
+   .form{
+      margin-left: -5%;
+      margin-top: 4%;
+   }
+   .yellow-div{
+      width: 330px;
+      background-size: cover;
+      background-position: right;
+   }
+   .cilindros{
+      display: none;
+   }
+   .esquecer{
+      margin-left: 25%;
+   }
+   .btn-custom{
+      bottom: 5%;
+   }
+   .cad-text{
+      bottom: 5%;
+   }
+   .esquecer{
+      position: relative;
+      right: -25%;
+   }
+}
+@media (min-width:992px) and (max-width: 1080px){
+   .form-control{
+      width: 400px;
+   }
+   form{
+      margin-left: 5%;
+   }
+   .yellow-div{
+      width: 370px;
+      background-size: 550px;
+      background-position: right;
+   }
+   .cilindros{
+      display: none;
+   }
+   .btn-custom{
+      margin-top: 3%;
+   }
+   .title-login{
+      margin-bottom: 8%;
+   }
+
+
+}
+@media (min-width:1080px) and (max-width: 1440px){
+   .cilindros{
+      display: none;
+   }
+   .title-login{
+      margin-top: 10%;
+   }
+   .yellow-div{
+      width: 380px;
+      background-size: 600px;
+      background-position: right;
+   }
+   .form-control{
+      width: 400px;
+   }
+   .form{
+      margin-left: -3%;
+      margin-top: 3%;
+   }
+
+}
+@media (min-width:1440px) and (max-width: 1920px){
+   .cilindros{
+      display: none;
+   }
+   .form{
+      margin-left: -2%;
+      margin-top: 4%;
+   }
+   .yellow-div{
+      background-position: right;
+      background-size: cover;
+   }
+}
+@media (min-width:1920px) and (max-width: 2560px){
+   .cilindros{
+      display: none;
+   }
+   .yellow-div{
+      background-position: right;
+      background-size: cover;
+   }
+   .form{
+      margin-left: -3%;
+      margin-top: 4%;
+   }
 }
