@@ -1,0 +1,235 @@
+@media (min-width:310px) and (max-width: 350px) {
+
+   body{
+    background-color: white;
+   }
+   .form{
+      width: 300px;
+      height: 600px;
+   }
+   .title-login{
+      margin-left:215px;
+      margin-bottom: 85%;
+      font-size: 55px;
+   }
+   .yellow-div{
+      background-image: none;
+      background-color: white;
+   }
+   .form-control{
+      margin-left: 215px;
+      width: 250px;
+   }
+   .container{
+      box-shadow: none;
+   }
+   .final{
+      margin-left: 250px;
+   }
+   .esquecer{  
+
+   }
+   .cad-text{
+      margin-left: 100px;
+   }
+   .cd{
+
+   }
+   .cilindro1{
+      background-color: #FFD371;
+      margin-top: -85%;
+      margin-left: 50px;
+   }
+   .cilindro2{
+      background-color: #FFD371;
+      margin-top: -85%;
+      margin-left: 120px;
+      width: 100px;
+   }
+   .cilindro3{
+      background-color:#FFD371;
+      margin-top: -97%;
+      width: 200px;
+      height: 30px;
+      margin-left: 90px;
+   }
+   .cilindro5{
+      background-color:#FFD371;
+      margin-top: -70%;
+      margin-left: -35%;
+   }
+   .cilindro4{
+      display: none;
+   }
+}
+@media (min-width:350px) and (max-width: 450px){
+   body{
+      background-color: white;
+   }
+   .yellow-div{
+      background-color: white;
+      background-image: none;
+   }
+   .container{
+      box-shadow: none;
+   }
+   .form{
+      margin-left: 210px;
+   }
+   .form-control{
+      width: 300px;
+   }
+   .esquecer{
+      margin-left: 47%;
+   }
+   .final{
+      margin-top: 23%;
+   }
+   .cilindro1{
+      background-color: #FFD371;
+      margin-top: -85%;
+      margin-left: 50px;
+   }
+   .cilindro2{
+      background-color: #FFD371;
+      margin-top: -85%;
+      margin-left: 120px;
+      width: 150px;
+   }
+   .cilindro3{
+      background-color:#FFD371;
+      margin-top: -97%;
+      width: 200px;
+      height: 30px;
+      margin-left: 90px;
+   }
+   .cilindro5{
+      background-color:#FFD371;
+      margin-top: -70%;
+      margin-left: -35%;
+   }
+   .cilindro4{
+      display: none;
+   }
+
+}
+@media (min-width:450px) and (max-width: 575px){
+   .container{
+      width: 500px;
+      height: 500px;
+   }
+   .cilindros{
+      display: none;
+   }
+   .yellow-div{
+      width: 200px;
+      background-size: 420px;
+      background-position: 80%;
+   }
+   .form-control{
+      width: 220px;
+   }
+   .form{
+      margin-left: -3%;
+      margin-top: 3%;
+   }
+   .esquecer{
+      margin-left: 26%;
+   }
+   .btn-custom{
+      width: 150px;
+      margin-top: 10%;
+      margin-left: -3%;
+   }
+}
+@media (min-width:576px) and (max-width: 700px){
+   .yellow-div{
+      width: 200px;
+      background-size: 400px;
+      background-position: 80%;
+   }
+   .cilindros{
+      display: none;
+   }
+   .title-login{
+      font-size: 60px;
+      margin-bottom: -7%;
+   }
+   .form-control{
+      width: 250px;
+   }
+   .form{
+      margin-left: -3%;
+   }
+   .esquecer{
+      margin-left: 35%;
+   }
+   .btn-custom{
+      width: 150px;
+      margin-top: 6%;
+   }
+}
+@media (min-width:700px) and (max-width: 767px){
+
+}
+@media (min-width:767px) and (max-width: 850px){
+   .yellow-div{
+      width: 320px;
+      background-size: 450px;
+   }
+   .form{
+      margin-left: -8%;
+      margin-top: -3%;
+   }
+   .cilindro3{
+      display: none;
+   }
+   .cilindro1{
+      width: 150px;
+      margin-left: -8%;
+   }
+   .cilindro5{
+      margin-top: -5%;
+      margin-left: -4%;
+   }
+   .cilindro2{
+      width: 220px;
+      margin-top: -1%;
+   }
+   .cilindro4{
+      width: 190px;
+      margin-top: -2%;
+      margin-left: -5%;
+   }
+   .cilindros{
+      margin-top: -5%;
+   }
+}
+@media (min-width:850px) and (max-width: 960px){
+   .yellow-div{
+      width: 300px;
+      background-size: 420px;
+   }
+   .cilindro3{
+      display: none;
+   }
+   .form{
+      margin-left: -7%;
+      margin-top: -2%;
+   }
+   .cilindro1{
+      width: 150px;
+   }
+   .cilindros{
+      margin-top: -4%;
+   }
+   .cilindro2{
+      width: 200px;
+   }
+   .cilindro4{
+      width: 170px;
+   }
+}
+@media (min-width:960px) and (max-width: 1027px){
+   
+}
