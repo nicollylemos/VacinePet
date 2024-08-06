@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VacinePet</title>
-    <link rel="stylesheet" href="../css/css/infos-menu.css">
+    <link rel="stylesheet" href="../css/css/info-menu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
     <link rel="stylesheet" href="../css/css/responsividade/footer-resp.css">
 </head>
@@ -30,9 +30,8 @@
                         eficiente para você e seu companheiro.</p>
                 </div>
             </div>
-            <div class="pet-img">
-                <img src="../imgs/cachorro-fofo.jpg" height="500px" alt="">
-            </div>
+            <!-- <div class="pet-img">
+        </div>-->
             <h3 class="subtitle">1 Como surgiu?</h3>
             <div class="content-txt two">
                 <p>A saúde e o bem-estar dos nossos amigos de quatro
