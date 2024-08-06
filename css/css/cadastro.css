@@ -21,8 +21,8 @@ body {
     width: 980px;
     margin: 0 auto;
     align-items: center;
-    height: 110vh;
-    margin-top: 3%;
+    height: 80vh;
+    margin-top: 6%;
     z-index: 2;
 }
 
@@ -41,7 +41,7 @@ body {
     position: absolute;
     width: 280px;
     left: 0;
-    height: 110vh;
+    height: 80vh;
 }
 
 .title-blue-div1 {
@@ -62,7 +62,7 @@ body {
 .form {
     position: absolute;
     left: 34%;
-    top: 6%;
+    top: 1%;
     width: 100%;
     max-width: 600px;
     padding: 20px;
@@ -83,7 +83,7 @@ body {
     font-family: 'baloo';
     border-radius: 20px;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 100px;
     margin-bottom: 10px;
     color: #000; /* Cor do texto digitado */
 }
@@ -153,12 +153,60 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 .bola .imagem {
     position: relative;
-    top: -3px;
+    top: 49px;
     width: 400px;
     height: 250px;
     left: 10px;
 }
+.upload-section {
+    text-align: center;
+    margin: 30px 0;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'baloo';
+    font-size: 20px;
+    border: dashed 2px #ffffff;
+    border-radius: 10px;
+    background-color: #52BACB;
+    height: 120px;
+    width: 220px;
+    margin-top: 15px;
+}
 
+#file-upload{
+    display: none;
+}
+.quad-blue{
+    background-color: #52BACB;
+    border-radius: 10px;
+    height: 150px;
+    width: 250px;
+    margin-left: 140px;
+}
+.title-sucesso{
+    color: #52BACB;
+    font-family: 'baloo';
+}
+.div-botoes{
+    position: absolute;
+    bottom: -20%;
+    margin-left: 9%;
+}
+
+.div-botoess{
+    position: absolute;
+    bottom: -20%;
+    margin-left: 30%;
+}
+.anexo{
+    margin-top: 10px;
+    font-size: 20px;
+}
