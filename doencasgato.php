@@ -31,18 +31,7 @@ include ("./inc/header.php")
             <div class="splash-container">
             </div>
         </div>
-        <!--bolinhas laranjas -->
-        <div class="orange-balls"></div>
-        <div class="orange-balls1"></div>
-        <div class="orange-balls2"></div>
-        <!--bolinhas azuis -->
-        <div class="blue-balls"></div>
-        <div class="blue-balls1"></div>
-        <div class="blue-balls2"></div>
-        <div class="blue-balls3"></div>
-        <!--bolinhas azuis meio -->
-        <div class="bolinha-furada"></div>
-        <div class="bolinha-furada1"></div>
+
     </section>
     <section id="doencas">
         <!--carrossel help-->
