@@ -1,12 +1,6 @@
 :root {
   --primary-clr:  #f27c06;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: baloo;
-}
 
 @font-face {
   font-family: 'baloo';
@@ -24,28 +18,17 @@
   background: var(--primary-clr);
   border-radius: 50px;
 }
-
-body {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
-  background-color: #FFD371;
-}
 .container {
-  position: relative;
-  width: 1200px;
-  min-height: 700px;
-  margin: 0 auto;
   padding: 5px;
   color: #fff;
   display: flex;
-  background-color:  #52BACB;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 20px 20px 20px #edbf5c;
+  background-color:  #e9e9e9;
+  position: absolute;
+  top: 0;
+  left: 320px;
+  height: 100vh;
+  width: 1000px;
+
 }
 .left {
   width: 60%;
@@ -55,7 +38,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
