@@ -1,0 +1,25 @@
+@media (min-width:310px) and (max-width: 350px) {
+    body{
+        background-color: white;
+    }
+    .blue-div{
+        display: none;
+    }
+
+    
+}
+@media (min-width:765px) and (max-width:991px ) {
+    .blue-div{
+        display: none;
+    }
+
+    .form{
+        position: absolute;
+        left: 1000%;
+    }
+
+
+  
+
+    
+}
