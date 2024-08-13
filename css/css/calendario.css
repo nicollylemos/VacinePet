@@ -1,0 +1,26 @@
+#agendamento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#horarios-disponiveis {
+    margin-top: 20px;
+}
+
+.horario {
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos para o item selecionado */
+.horario.selecionado {
+    background-color: #F7D577;
+    color: #000;
+    font-weight: bold;
+    border-color: #F7D577;
+}
