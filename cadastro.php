@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/cadastro.css">
+    <link rel="stylesheet" href="css/css/cad.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
@@ -30,8 +30,9 @@
                 Cadastre-se agora!
             </h3>
             <div class="bola">
-                <img src="css/css/img/dogcadpet.png" class="imagem" alt="Dog" />
+                
             </div>
+            <img src="css/css/img/dogcadpet.png" class="imagem" alt="Dog" />
         </div>
 
         <div class="form">
@@ -45,36 +46,38 @@
                         <h5 class="sub-title-title">Preencha o cadastro abaixo com suas informações pessoais.</h5>
                     </div>
 
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control"
-                                name="customer_name">
+                    <div class="form1">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control"
+                                    name="customer_name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" maxlength="11" placeholder="CPF" class="form-control"
+                                    name="customer_cpf_cnpj">
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" maxlength="11" placeholder="CPF" class="form-control"
-                                name="customer_cpf_cnpj">
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="date" placeholder="Data de Nascimento" class="form-control"
-                                name="customer_birth_date">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="date" placeholder="Data de Nascimento" class="form-control"
+                                    name="customer_birth_date">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="DDD + Telefone" maxlength="100" class="form-control"
+                                    name="customer_phone">
+                            </div>
                         </div>
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="DDD + Telefone" maxlength="100" class="form-control"
-                                name="customer_phone">
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Email" maxlength="255" class="form-control"
-                                name="customer_email">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <input type="password" placeholder="Senha" maxlength="100" class="form-control"
-                                name="customer_password">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Email" maxlength="255" class="form-control"
+                                    name="customer_email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="password" placeholder="Senha" maxlength="100" class="form-control"
+                                    name="customer_password">
+                            </div>
                         </div>
                     </div>
                     <div class="div-botoess">
@@ -155,24 +158,27 @@
                     <div class="sub-title">
                         <h5 class="sub-title-title">Preencha com as informações do seu pet.</h5>
                     </div>
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
-                                name="pet_name">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-control1">
-                                <p>Sexo:</p>
-                                <div class="radio-group">
-                                    <input type="radio" id="sexo-m" name="pet_sex" value="Macho">
-                                    <label for="sexo-m">Macho</label>
-                                    <input type="radio" id="sexo-f" name="pet_sex" value="Fêmea">
-                                    <label for="sexo-f">Fêmea</label>
+
+                    <div class="radio">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
+                                    name="pet_name">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-control1">
+                                    <p>Sexo:</p>
+                                    <div class="radio-group">
+                                        <input type="radio" id="sexo-m" name="pet_sex" value="Macho">
+                                        <label for="sexo-m">Macho</label>
+                                        <input type="radio" id="sexo-f" name="pet_sex" value="Fêmea">
+                                        <label for="sexo-f">Fêmea</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" maxlength="11" placeholder="Idade do Pet" class="form-control"
