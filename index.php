@@ -10,7 +10,7 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/home.css">
     <link rel="stylesheet" href="css/css/style.css">
-    <link rel="stylesheet" href="css/css/whatsapp.css">
+    <link rel="stylesheet" href="css/css/.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
