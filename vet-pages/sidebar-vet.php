@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/css/sidebarvet.css">
+    <link rel="stylesheet" href="../css/css/sidebar-vet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 </head>
 
@@ -14,12 +14,12 @@
         <nav class="sidebar">
             <header>
                 <div class="image-text">
-                    <span class="image">
-                    </span>
+                    <div class="text logo-text">
+                        <span class="hello">Olá, Luciane Mônica</span>
+                    </div>
                 </div>
-
+                <i class=" fa-solid fa-angle-left"></i>
             </header>
-
             <div class="menu-bar">
                 <div class="menu">
                     <ul class="menu-links">
@@ -33,12 +33,12 @@
                         <li class="nav-link">
                             <a href="sobre-profissional.php">
                                 <i class="fa-solid fa-clock-rotate-left icon"></i>
-                                <span class="text nav-text">Históricos de Agendamentos</span>
+                                <span class="text nav-text">Histórico Agendamentos</span>
                             </a>
                         </li>
 
                         <li class="nav-link">
-                            <a href="diary.php">
+                            <a href="diario.php">
                                 <i class="fa-solid fa-calendar-days icon"></i>
                                 <span class="text nav-text">Meu Diário</span>
                             </a>
@@ -54,3 +54,37 @@
                     </ul>
                 </div>
             </div>
+
+        </nav>
+    </section>
+    <section class="home">
+        <div class="content">
+        </div>
+    </section>
+    <script>
+    const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav'),
+        toggle = body.querySelector(".fa-solid"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+    toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    })
+    searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+        separacao.classList.remove("close");
+    })
+    modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+            modeText.innerText = "Light mode";
+        } else {
+            modeText.innerText = "Dark mode";
+
+        }
+    });
+    </script>
+</body>
+
+</html>
