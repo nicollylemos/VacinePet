@@ -56,7 +56,7 @@
       display: none;
    }
 }
-@media (min-width:350px) and (max-width: 450px){
+@media (min-width:350px) and (max-width: 449px){
    body{
       background-color: white;
    }
@@ -80,6 +80,7 @@
       margin-top: 23%;
    }
    .cilindro1{
+      width: 250px;
       position: relative;
       background-color: #FFD371;
       margin-top: -85%;
@@ -109,36 +110,41 @@
 
 }
 @media (min-width:450px) and (max-width: 575px){
-   .container{
-      width: 575px;
-      height: 100vh;
-      justify-content: center;
-      box-shadow: none;
-   }
-   .cilindros{
-      display: none;
-   }
-   .yellow-div{
-      display: none;
-   }
-   .form-control{
-      width: 220px;
-   }
-   .form{
-      margin-left: 10%;
-      margin-top: 4%;
-   }
-   .esquecer{
-      margin-left: 26%;
-   }
-   .btn-custom{
-      width: 150px;
-      margin-top: 10%;
-      margin-left: -3%;
-   }
    body{
       background: none;
    }
+   .yellow-div{
+      background-color: rgb(255, 255, 255);
+      background-image: none;
+      z-index: 1;
+      height: 500px;
+      margin-top: -45%;
+   }
+   .container{
+      box-shadow: none;
+      margin-left: 187px;
+      margin-top: 10%;
+   }
+   .cilindros{
+      background-color: #FFD371;
+   }
+   .cilindro5{
+      display: none;
+   }
+   .cilindro1{
+      width: 250px;
+      margin-left: -18%;
+   }
+   .cilindro2{
+      margin-left: -5%;
+   }
+   .cilindro4{
+      margin-left: -10%;
+   }
+   .cilindro3{
+      margin-left: 3%;
+   }
+
 }
 @media (min-width:576px) and (max-width: 700px){
    .yellow-div{
@@ -272,7 +278,7 @@
       width: 400px;
    }
    form{
-      margin-left: 5%;
+      margin-left: -4%;
    }
    .yellow-div{
       width: 370px;
@@ -288,8 +294,6 @@
    .title-login{
       margin-bottom: 8%;
    }
-
-
 }
 @media (min-width:1080px) and (max-width: 1440px){
    .cilindros{
