@@ -42,7 +42,6 @@ body {
     left: 0;
     height: 80vh;
 }
-
 .title-blue-div1 {
     color: #fff;
     font-family: 'baloo';
@@ -65,7 +64,7 @@ body {
     width: 100%;
     max-width: 600px;
     padding: 20px;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .form1{
     margin-top: 7%;
