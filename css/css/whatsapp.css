@@ -1,0 +1,36 @@
+
+        @keyframes vibrate-vertical {
+            0% { transform: translateY(0); }
+            20% { transform: translateY(-4px); }
+            40% { transform: translateY(4px); }
+            60% { transform: translateY(-4px); }
+            80% { transform: translateY(4px); }
+            100% { transform: translateY(0); }
+        }
+
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366; /* Cor verde do WhatsApp */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: vibrate-vertical 1s ease infinite;
+            z-index: 9999; /* Garante que o ícone fique no topo de todos os elementos */
+        }
+
+        .whatsapp-icon a {
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .whatsapp-icon i {
+            margin: 0;
+        }
+

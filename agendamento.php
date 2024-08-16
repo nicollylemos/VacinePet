@@ -4,17 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/responsividade/agendamentoo.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/agendar.css">
+    <link rel="stylesheet" href="css/css/calendarioo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <title>Agendamento</title>
-        <style>
-            .hidden {
-                display: none;
-            }
-        </style>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,8 +33,27 @@
         <div class="quad">
             <div class="form">
                 <form id="agendamentoForm" action="agendamento.php" method="post" onsubmit="return false;">
-                    <!-- Etapa 1: informações pessoais -->
+                    <!-- Etapa 1: introdução -->
                     <div id="etapa1">
+                        <div class="title">
+                            <h1 class="title-agendamento"> AGENDAMENTO <i
+                                    style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
+                            <h6 class="subtitle">
+                                Parabéns por priorizar a saúde e segurança do seu pet! </p>Agora, para prosseguir com o
+                                agendamento, basta<br> selecionar o dia e horário que melhor se adequam à <br>sua
+                                agenda.
+                            </h6>
+                        </div>
+                        <div id="agendamento-container">
+                            <label for="data">Escolha uma data:</label>
+                            <input type="date" id="data" name="data">
+                            <div id="horarios-disponiveis"></div>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-custom"
+                            onclick="proximaEtapa(2)">Próximo</button>
+                    </div>
+                    <!-- Etapa 2: informações pessoais -->
+                    <div id="etapa2" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
@@ -51,12 +75,14 @@
                         <div class="form-group mt-4">
                             <input type="text" maxlength="11" placeholder="CPF" class="form-control" name="cpf">
                         </div>
+                        <button type="button" class="btn btn-secondary btn-custom"
+                            onclick="anteriorEtapa(1)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(2)">Próximo</button>
+                            onclick="proximaEtapa(3)">Próximo</button>
                     </div>
 
-                    <!-- Etapa 2: endereço 1 -->
-                    <div id="etapa2" class="hidden">
+                    <!-- Etapa 3: endereço 1 -->
+                    <div id="etapa3" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">ENDEREÇO (1/2)</h1>
                             <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
@@ -78,13 +104,13 @@
                                 name="bloco">
                         </div>
                         <button type="button" class="btn btn-secondary btn-custom"
-                            onclick="anteriorEtapa(1)">Anterior</button>
+                            onclick="anteriorEtapa(2)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(3)">Próximo</button>
+                            onclick="proximaEtapa(4)">Próximo</button>
                     </div>
 
-                    <!-- Etapa 3: endereço 2 -->
-                    <div id="etapa3" class="hidden">
+                    <!-- Etapa 4: endereço 2 -->
+                    <div id="etapa4" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">ENDEREÇO (2/2)</h1>
                             <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
@@ -106,13 +132,13 @@
                             </select>
                         </div>
                         <button type="button" class="btn btn-secondary btn-custom"
-                            onclick="anteriorEtapa(2)">Anterior</button>
+                            onclick="anteriorEtapa(3)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(4)">Próximo</button>
+                            onclick="proximaEtapa(5)">Próximo</button>
                     </div>
 
-                    <!-- Etapa 4: informações sobre o pet 1 -->
-                    <div id="etapa4" class="hidden">
+                    <!-- Etapa 5: informações sobre o pet 1 -->
+                    <div id="etapa5" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">SOBRE O PET (1/2)</h1>
                             <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
@@ -134,13 +160,13 @@
                             <input type="text" maxlength="3" placeholder="Idade" class="form-control" name="idade">
                         </div>
                         <button type="button" class="btn btn-secondary btn-custom"
-                            onclick="anteriorEtapa(3)">Anterior</button>
+                            onclick="anteriorEtapa(4)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(5)">Próximo</button>
+                            onclick="proximaEtapa(6)">Próximo</button>
                     </div>
 
-                    <!-- Etapa 5: informações sobre o pet 2 -->
-                    <div id="etapa5" class="hidden">
+                    <!-- Etapa 6: informações sobre o pet 2 -->
+                    <div id="etapa6" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">SOBRE O PET (2/2)</h1>
                             <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
@@ -175,12 +201,12 @@
                             <textarea placeholder="Histórico" class="form-control" name="historico"></textarea>
                         </div>
                         <button type="button" class="btn btn-secondary btn-custom"
-                            onclick="anteriorEtapa(4)">Anterior</button>
+                            onclick="anteriorEtapa(5)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom" onclick="enviarForm()">Enviar</button>
                     </div>
 
-                    <!-- Etapa 6: tela de agradecimento -->
-                    <div id="etapa6" class="hidden">
+                    <!-- Etapa 7: tela de agradecimento -->
+                    <div id="etapa7" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">Agendamento realizado com sucesso! <i
                                     class="fas fa-check-circle" style="color: green;"></i></h1>
@@ -199,6 +225,7 @@
         </div>
     </div>
     <script src="js/agendamento.js"></script>
+    <script src="js/cale.js"></script>
 </body>
 
 </html>
