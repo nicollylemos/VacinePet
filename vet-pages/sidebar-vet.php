@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/css/sidebar-vet.css">
+    <title>VacinePet</title>
+    <link rel="stylesheet" href="../css/css/sidebarvet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 </head>
 
@@ -24,14 +24,14 @@
                 <div class="menu">
                     <ul class="menu-links">
                         <li class="nav-link">
-                            <a href="sobre-vacinepet.php">
+                            <a href="agendamentos.php">
                                 <i class="fa-solid fa-bars-progress icon"></i>
                                 <span class="text nav-text">Agendamentos Ativos</span>
                             </a>
                         </li>
 
                         <li class="nav-link">
-                            <a href="sobre-profissional.php">
+                            <a href="htrc-agendamentos.php">
                                 <i class="fa-solid fa-clock-rotate-left icon"></i>
                                 <span class="text nav-text">Histórico Agendamentos</span>
                             </a>

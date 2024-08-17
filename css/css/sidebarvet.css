@@ -41,9 +41,7 @@ body{
 
 .container {
     padding: 5px;
-    color: #fff;
     display: flex;
-    background-color:  #bcbcbc;
     position: absolute;
     top: 0;
     left: 320px;
@@ -127,6 +125,7 @@ header .image-text .hello {
     color: var(--primary-color);
     align-items: left;
     padding-left: 30px;
+    margin-left: -10px;
 }
 
 header .image-text .subtitle{
