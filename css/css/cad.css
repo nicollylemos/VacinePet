@@ -125,13 +125,21 @@ body {
     color: white;
     margin-right: 10px;
 }
-
 .btn-custom:hover {
     background-color: #fcab65;
     border-color: #fcab65;
     color: white;
 }
-
+.btn-perso {
+    font-family: 'baloo';
+    font-size: 23px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    margin-right: 10px;
+}
 .final {
     text-align: center;
     margin-top: 60px;
