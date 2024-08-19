@@ -46,3 +46,4 @@ document.getElementById('data').addEventListener('change', (event) => {
     const dataSelecionada = event.target.value;
     mostrarHorarios(dataSelecionada);
 });
+

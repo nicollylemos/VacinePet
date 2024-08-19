@@ -16,7 +16,7 @@ function enviarForm() {
     let horaFormatada = dataHoraAtual.toLocaleTimeString('pt-BR', { hour: 'numeric', minute: '2-digit' });
     let dataHoraFormatada = `${dataFormatada} às ${horaFormatada}`;
     document.getElementById('dataHoraAgendamento').textContent = dataHoraFormatada;
-    proximaEtapa(6); // avança para a tela de agradecimento (Etapa 6)
+    proximaEtapa(7); // avança para a tela de agradecimento (Etapa 7)
 }
 
 function finalizar() {

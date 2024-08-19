@@ -22,7 +22,7 @@
                     </div>
                 </div>
 
-                <i class=" fa-solid fa-angle-right"></i>
+                <i class=" fa-solid fa-angle-left"></i>
             </header>
 
             <div class="menu-bar">

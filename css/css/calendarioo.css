@@ -19,8 +19,20 @@
 
 /* Estilos para o item selecionado */
 .horario.selecionado {
-    background-color: #F7D577;
-    color: #000;
-    font-weight: bold;
-    border-color: #F7D577;
+    background-color:#2FA8BB ;
+    color: #000000;
+    font-weight: bolder;
+    border-color:#2FA8BB ;
 }
+input[type="date"] {
+    font-size: 16px;
+    border: 2px solid #FD811C;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #FFF;
+    color: #131212;
+}
+
+
+
+

@@ -1,5 +1,5 @@
 <?php 
- include("./inc/header.php")
+ include("./inc/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -10,6 +10,7 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/home.css">
     <link rel="stylesheet" href="css/css/style.css">
+    <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
@@ -177,6 +178,15 @@
             </div>
         </div>
     </section>
+
+    <!-- Ícone do WhatsApp -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/5511999999999?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20o%20serviço.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
+            target="_blank" title="Fale conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
 </body>
 <?php include("./inc/footer.php") ?>
 <!--Swiper JavaScript-->
