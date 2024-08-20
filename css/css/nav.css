@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: black
+}
