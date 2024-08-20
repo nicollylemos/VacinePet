@@ -1,0 +1,307 @@
+@media (min-width:310px) and (max-width: 350px){
+    body{
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .title-title{
+        display: none;
+    }
+    .form{
+        position: relative;
+        margin-left: -34%;
+        margin-top: 25%;
+    }
+    .form-control{
+        width: 245px;
+        height: 35px;
+    }
+    .sub-title-title{
+        font-size: 15px;
+    }
+    .btn-custom{
+        position: relative;
+        width: 150px;
+        margin-left: 10%;
+        margin-bottom: 15%;
+    }
+    .container{
+        position: absolute;
+        margin-top: 60%;
+        height: 900px;
+        width: 100%;
+        position: absolute;
+        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+    }
+    .blue-div-resp{
+        margin-top: -175px;
+    }
+    .title-blue-div1{
+        font-size: 15px;
+    }
+    .title-blue-div2{
+        margin-top: 0%;
+        font-size: 22px;
+    }
+    .title-blue-div3{
+        font-size: 14px;
+    }
+    .btn-perso {
+        position: relative;
+        font-family: 'baloo';
+        width: 150px;
+        color: white;
+        margin-left: 10%;
+        margin-bottom: -100%;
+    }
+    .btn-cad{
+        position: relative;
+        align-items: center;
+        margin-left: -25%;
+    }
+    .quad-blue{
+        position: relative;
+        margin-left: -1%;
+        margin-bottom: 15%;
+    }
+
+}
+@media (min-width:350px) and (max-width: 400px){
+    body{
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .title-title{
+        display: none;
+    }
+    .form{
+        position: relative;
+        margin-left: -30%;
+        margin-top: 25%;
+    }
+    .form-control{
+        width: 255px;
+        height: 35px;
+    }
+    .sub-title-title{
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        width: 150px;
+        margin-left: 10%;
+        margin-bottom: 15%;
+    }
+    .container{
+        position: absolute;
+        margin-top: 60%;
+        height: 950px;
+        width: 100%;
+        position: absolute;
+        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+    }
+    .blue-div-resp{
+        margin-top: -175px;
+    }
+    .title-blue-div1{
+        font-size: 19px;
+    }
+    .title-blue-div2{
+        margin-top: 0%;
+        font-size: 27px;
+    }
+    .title-blue-div3{
+        font-size: 16px;
+    }
+    .btn-perso {
+        position: relative;
+        font-family: 'baloo';
+        width: 150px;
+        color: white;
+        margin-left: 10%;
+        margin-bottom: -100%;
+    }
+    .btn-cad{
+        position: relative;
+        align-items: center;
+        margin-left: -25%;
+    }
+    .quad-blue{
+        position: relative;
+        margin-left: 0%;
+        margin-bottom: 15%;
+    }
+
+}
+@media (min-width:400px) and (max-width: 450px){
+    body{
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .title-title{
+        display: none;
+    }
+    .form{
+        position: relative;
+        margin-left: -33%;
+        margin-top: 25%;
+    }
+    .form-control{
+        width: 340px;
+        height: 40px;
+    }
+    .sub-title-title{
+        font-size: 21px;
+    }
+    .btn-custom{
+        position: relative;
+        width: 150px;
+        margin-left: 20%;
+        margin-bottom: 10%;
+    }
+    .container{
+        position: absolute;
+        margin-top: 60%;
+        height: 1000px;
+        width: 100%;
+        position: absolute;
+        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+    }
+    .blue-div-resp{
+        margin-top: -175px;
+    }
+    .title-blue-div1{
+        position: relative;
+        font-size: 19px;
+        margin-left: 5%;
+    }
+    .title-blue-div2{
+        position: relative;
+        margin-top: 0%;
+        font-size: 27px;
+        margin-left: 5%;
+    }
+    .title-blue-div3{
+        position: relative;
+        font-size: 16px;
+        margin-left: 5%;
+    }
+    .btn-perso {
+        position: relative;
+        font-family: 'baloo';
+        width: 150px;
+        color: white;
+        margin-left: 20%;
+        margin-bottom: -75%;
+    }
+    .btn-cad{
+        position: relative;
+        align-items: center;
+        margin-left: -15%;
+    }
+    .quad-blue{
+        position: relative;
+        margin-left: 10%;
+        margin-bottom: 15%;
+    }
+}
+@media (min-width:451px) and (max-width: 500px){
+    body{
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .title-title{
+        display: none;
+    }
+    .form{
+        position: relative;
+        margin-left: -33%;
+        margin-top: -20%;
+    }
+    .form-control{
+        width: 370px;
+        height: 40px;
+    }
+    .sub-title-title{
+        font-size: 21px;
+    }
+    .btn-custom{
+        position: relative;
+        width: 150px;
+        margin-left: 23%;
+        margin-bottom: 10%;
+    }
+    .container{
+        position: absolute;
+        margin-top: 60%;
+        height: 1000px;
+        width: 100%;
+        position: absolute;
+        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+    }
+    .blue-div-resp{
+        margin-top: -175px;
+    }
+    .title-blue-div1{
+        position: relative;
+        font-size: 19px;
+        margin-left: 5%;
+        top:-30px;
+    }
+    .title-blue-div2{
+        position: relative;
+        font-size: 27px;
+        margin-left: 5%;
+        top: -175px;
+    }
+    .title-blue-div3{
+        position: relative;
+        font-size: 16px;
+        margin-left: 5%;
+        top: -175px;
+    }
+    .btn-perso {
+        position: relative;
+        font-family: 'baloo';
+        width: 150px;
+        color: white;
+        margin-left: 23%;
+        margin-bottom: -65%;
+    }
+    .btn-cad{
+        position: relative;
+        align-items: center;
+        margin-left: -10%;
+    }
+    .quad-blue{
+        position: relative;
+        margin-left: 10%;
+        margin-bottom: 15%;
+        width: 300px;
+        height: 150px;
+    }
+    .custom-file-upload{
+        width: 260px;
+        height: 120px;
+    }
+}
+

@@ -178,14 +178,15 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Ícone do WhatsApp -->
     <div class="whatsapp-icon">
-        <a href="https://wa.me/5511999999999?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20o%20serviço.%20Poderia%20me%20ajudar%20com%20mais%20informações?" target="_blank" title="Fale conosco no WhatsApp">
+        <a href="https://wa.me/5511999999999?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20o%20serviço.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
+            target="_blank" title="Fale conosco no WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-    
+
 </body>
 <?php include("./inc/footer.php") ?>
 <!--Swiper JavaScript-->
