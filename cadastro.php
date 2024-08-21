@@ -285,7 +285,8 @@
                         <br><br>Caso
                         queira realizar o agendamento depois, clique em "Finalizar".
                     </p>
-                    <div class="div-botoes"> <button type="button" class="btn btn-primary btn-custom btn-perso"
+                    <div class="div-botoes2">
+                        <button type="button" class="btn btn-primary btn-custom btn-perso1"
                             onclick="finalizar()">Finalizar</button>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="agendamento()">Agendar</button>

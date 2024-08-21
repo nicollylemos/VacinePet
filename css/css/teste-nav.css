@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'league';
+    src: url("../font/league/LeagueSpartan-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#menuList{
+    position: absolute;
+    margin-left: 17%;
+}
+
+nav {
+    padding: 1px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    position: relative;
+    height: 70px;
+}
+
+.logo {
+    color: #FA5909;
+    font-family: baloo;
+    font-size: 25px;
+    padding: 0;
+    font-weight: 100;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: league;
+    font-size: 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #FA5909;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #ffffff;
+        gap: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+
+    nav ul li {
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .btn-acesso {
+        padding: 10px 0;
+        /* Ajusta a altura para acomodar os botões */
+    }
+}
+
+.btn-login {
+    cursor: pointer;
+    font-family: league;
+    font-size: 18px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3.5px solid #52BACB;
+    width: 150px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #52BACB;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.btn-cad {
+    cursor: pointer;
+    font-family: league;
+    font-size: 18px;
+    background-color: #52BACB;
+    border-radius: 10px;
+    border: 3.5px solid #52BACB;
+    width: 150px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+    /* Cor do texto no botão */
+    text-decoration: none;
+    /* Remova sublinhado de links */
+    padding: 2px;
+}
+
+.btn-acesso {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+    right: -30%;
+}
