@@ -7,7 +7,7 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/cad.css">
-    <link rel="stylesheet" href="css/css/responsividade/telacadastrar.css">
+    <link rel="stylesheet" href="css/css/responsividade/telacadastra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="div-botoess">
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button type="button" class="btn btn-primary btn-custom btn-cad"
                             onclick="proximaEtapa(2)">Próximo</button>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                     <div class="div-botoes">
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(1)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(3)">Próximo</button>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                     <div class="div-botoes">
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button type="button" id="btn-sec" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(2)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(4)">Próximo</button>
@@ -238,7 +238,7 @@
                         </div>
                     </div>
                     <div class="div-botoes">
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(3)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(5)">Próximo</button>
@@ -270,7 +270,7 @@
                         </div>
                     </div>
                     <div class="div-botoes">
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(4)">Anterior</button>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(6)">Enviar</button>
@@ -285,7 +285,7 @@
                         <br><br>Caso
                         queira realizar o agendamento depois, clique em "Finalizar".
                     </p>
-                    <div class="div-botoes"> <button type="button" class="btn btn-primary btn-custom"
+                    <div class="div-botoes"> <button type="button" class="btn btn-primary btn-custom btn-perso"
                             onclick="finalizar()">Finalizar</button>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="agendamento()">Agendar</button>
