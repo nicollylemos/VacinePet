@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/agendamentos.css" />
+    <link rel="stylesheet" href="../css/css/agdmt.css" />
     <title>VacinePet</title>
 </head>
 
@@ -21,7 +21,7 @@
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1>Agendamentos Ativos</h1>
+                    <h1><i class="fa-solid fa-bars-progress icon" style="font-size:0.8em;"></i> Agendamentos Ativos</h1>
                     <div class="table">
                         <table>
                             <tr>
@@ -38,7 +38,7 @@
                                 <td>28/01/2025</td>
                                 <td>16:00</td>
                                 <td>Nicolly Lemos</td>
-                                <td>Bagu Lemos</td>
+                                <td>Bagu Lemos Raimundo Carvalho</td>
                                 <td>Pendente</td>
                                 <td>
                                     <i class="fa-solid fa-eye"></i>
@@ -51,7 +51,8 @@
                                 <td>28/01/2025</td>
                                 <td>16:00</td>
                                 <td>Nicolly Lemos</td>
-                                <td>Bagu Lemosssssssssssssssss</td>
+                                <td>Bagu
+                                </td>
                                 <td>Pendente</td>
                                 <td>
                                     <i class="fa-solid fa-eye"></i>
@@ -63,7 +64,7 @@
                                 <td>01</td>
                                 <td>28/01/2025</td>
                                 <td>16:00</td>
-                                <td>Nicolly Lemos</td>
+                                <td>Nicolly Lemos da Silva Oliveira Santos Raimunda</td>
                                 <td>Bagu Lemos</td>
                                 <td>Pendente</td>
                                 <td>

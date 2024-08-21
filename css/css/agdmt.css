@@ -1,15 +1,15 @@
 :root{
     --primary-clr:#52BACB;
-    --title-color:#272727;
+    --title-color:#2b2b2b;
     --edit-color: #FD811C;
 }
 
 .table{
-    width: 100%;
+    width: 900px;
 }
 
 .container-tabela{
-    margin: 30px;
+    margin: 19px;
 }
 .container-tabela h1{
     font-weight: 600;
@@ -21,16 +21,17 @@
     background-color: rgb(255, 255, 255);
     border-collapse: collapse;
     overflow-x:auto;
+    box-shadow: 20px 20px 20px #dfdfdf;
 }
 
 .table table td{
     text-align: center;
-    padding: 1.4em;
+    padding: 0.7em;
     
 }
 .table table th{
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     padding: 0.5em;
 }
 .table table th{
@@ -58,4 +59,17 @@ table td button{
 .table .fa-solid{
     color: #787575;
     margin: 20px;
+    cursor:pointer;
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+    width: 50px;
+}
+
+table th:nth-child(4), table td:nth-child(4) {
+    width: 170px;
+}
+
+table th:nth-child(5), table td:nth-child(5) {
+    width: 100px;
 }
