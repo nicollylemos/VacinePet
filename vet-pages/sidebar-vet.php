@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VacinePet</title>
-    <link rel="stylesheet" href="../css/css/sidebarvet.css">
+    <link rel="stylesheet" href="../css/css/sidebar-vet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 </head>
 
@@ -46,7 +46,7 @@
                     </ul>
                     <ul class="menu-links">
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="valores-alt.php">
                                 <i class="fa-solid fa-money-bill icon"></i>
                                 <span class="text nav-text">Alteração de Valores</span>
                             </a>

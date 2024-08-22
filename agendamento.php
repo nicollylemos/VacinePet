@@ -27,7 +27,7 @@
         <div class="blue-div">
             <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
                     style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
-            <img src="imgs/cachorro-agend.png" class="imagem-animais">
+            
         </div>
 
         <div class="quad">
@@ -51,6 +51,7 @@
                         </div>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(2)">Próximo</button>
+                            
                     </div>
                     <!-- Etapa 2: informações pessoais -->
                     <div id="etapa2" class="hidden">
@@ -208,10 +209,11 @@
                     <!-- Etapa 7: tela de agradecimento -->
                     <div id="etapa7" class="hidden">
                         <div class="title">
-                            <h1 class="title-agendamento">Agendamento realizado com sucesso! <i
+                            <h1 class="title-agendamentos">Agendamento realizado com sucesso! <i
                                     class="fas fa-check-circle" style="color: green;"></i></h1>
                             <br>
                             <br>
+                            
                             <p>Realizado em: <span id="dataHoraAgendamento"></span></p>
 
                             <h6 class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br>

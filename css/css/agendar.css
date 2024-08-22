@@ -24,6 +24,14 @@ body{
     left: 0%;
 
 }
+.title-agendamentos{
+    color:  #52BACB ;
+    font-family: baloo;
+    margin-top: -60px;
+    position: absolute;
+    left: 0%;
+
+}
 
 .logo{
 
@@ -76,7 +84,7 @@ body{
     left: 0%;
     height: 100%;
     margin-top: 0%;
-    background-image: url('img/fundo-azul.jpg');
+    background-image: url('img/fundocachorro.png');
     background-size: cover;
     background-position: center 95%;
     background-repeat: no-repeat;

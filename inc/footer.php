@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css/rodarodape.css">
-    <link rel="stylesheet" href="css/css/responsividade/footer-resp.css">
     <style>
     @media (min-width:310px) and (max-width: 350px) {
         .footer {

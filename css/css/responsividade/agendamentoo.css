@@ -1,25 +1,71 @@
 @media (min-width:310px) and (max-width: 350px) {
-    body{
-        background-color: white;
-    }
+
     .blue-div{
         display: none;
     }
+
+    .container{
+        background-image: url('../img/fundo-azul.jpg');
+        background-size: 150%;
+        
+    }
+   
 
     
 }
-@media (min-width:765px) and (max-width:991px ) {
+
+@media (min-width:765px) and (max-width: 991px) {
+    .blue-div {
+        width: 320px !important;
+    
+    }
+    .title-agendamentos{
+        position: relative;
+        top: -12%;
+    }
+    #etapa7{
+        
+    }
+    .subtitle{
+       
+    }
+    
+    
+   
+}
+
+@media (min-width:763px) and (max-width: 767px){
+
+    
     .blue-div{
+        
         display: none;
     }
 
-    .form{
-        position: absolute;
-        left: 1000%;
+    .container{
+      background-color: aliceblue;
+        
     }
+    .title{
+        margin-top: 10%;
+        position: relative;
+        right: 40%;
+        
+    }
+    #agendamento-container{
+        position: relative;
+        right: 50%;
+    }
+     .btn-custom{
+        position: relative;
+        right: 18%;
+    }
+
+}
+
+
 
 
   
 
     
-}
