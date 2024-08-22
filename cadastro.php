@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/cad.css">
-    <link rel="stylesheet" href="css/css/responsividade/telacadastra.css">
+    <link rel="stylesheet" href="css/css/responsividade/telacadastrar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
@@ -32,7 +32,7 @@
                 Cadastre-se agora!
             </h3>
             <div class="bola">
-                
+
             </div>
             <img src="css/css/img/dogcadpet.png" class="imagem" alt="Dog" />
         </div>
@@ -58,7 +58,7 @@
                         <h1 class="title-title">CADASTRO</h1>
                     </div>
                     <div class="sub-title">
-                        <h5 class="sub-title-title">Preencha o cadastro abaixo com suas informações pessoais.</h5>
+                        <h5 class="sub-title-title sub1">Preencha o cadastro abaixo com suas informações pessoais.</h5>
                     </div>
 
                     <div class="form1">
@@ -73,16 +73,34 @@
                             </div>
                         </div>
 
+
+                        <!--MASCARA E LIMITE DE DIGITAÇÃO, APENAS NÚMEROS-->
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="date" placeholder="Data de Nascimento" class="form-control"
-                                    name="customer_birth_date">
+                                <input type="text" class="form-control" placeholder="Data de Nascimento"
+                                    name="customer_birth_date" maxlength="10">
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="text" placeholder="DDD + Telefone" maxlength="100" class="form-control"
+                                <input type="text" placeholder="DDD + Telefone" maxlength="14" class="form-control"
                                     name="customer_phone">
                             </div>
                         </div>
+
+                        <script>
+                            // Máscara para a data de nascimento
+                            document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function (e) {
+                                let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
+                                if (value.length > 8) {
+                                    value = value.slice(0, 8); // Limita a 8 dígitos
+                                }
+                                // Adiciona as barras conforme necessário
+                                value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
+                                value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
+                                e.target.value = value;
+                            });
+
+                            // Máscara para o telefone
+                        </script>
 
                         <div class="row">
                             <div class="form-group col-md-6">
@@ -193,7 +211,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" maxlength="11" placeholder="Idade do Pet" class="form-control"
@@ -238,9 +256,9 @@
                         </div>
                     </div>
                     <div class="div-botoes">
-                        <button type="button" class="btn btn-secondary btn-custom btn-perso"
+                        <button type="button" id="btn-etapa4" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(3)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button type="button" id="btn-btn-etapa4" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(5)">Próximo</button>
                     </div>
                 </div>
@@ -264,9 +282,9 @@
                             <label for="file-upload" class="custom-file-upload">
                                 <i id="anexo" class="fa fa-cloud-upload"></i>
                                 <div class="tab"></div>
-                                <h3 class="anexo">Anexe aqui a foto do seu pet</h3> 
+                                <h3 class="anexo">Anexe aqui a foto do seu pet</h3>
                             </label>
-                            <input id="file-upload" type="file"/>
+                            <input id="file-upload" type="file" />
                         </div>
                     </div>
                     <div class="div-botoes">
@@ -279,19 +297,22 @@
 
                 <!-- Tela de confirmação -->
                 <div id="etapa6" class="etapa hidden">
-                    <h1 class="title-sucesso">Cadastro realizado com sucesso! <i class="fas fa-check-circle"
-                            style="color: green;"></i></h1>
-                    <p><br>Seu cadastro foi realizado com sucesso e agora você pode prosseguir para o agendamento.
-                        <br><br>Caso
-                        queira realizar o agendamento depois, clique em "Finalizar".
-                    </p>
+                    <div class="check">
+                        <h1 class="title-sucesso">Cadastro realizado com sucesso! <i class="fas fa-check-circle"
+                                style="color: green;"></i></h1>
+                    </div>
+                    <div class="p">
+                        <p><br>Seu cadastro foi realizado com sucesso e agora você pode prosseguir para o agendamento.
+                            <br><br>Caso
+                            queira realizar o agendamento depois, clique em "Finalizar".
+                        </p>
+                    </div>
                     <div class="div-botoes2">
                         <button type="button" class="btn btn-primary btn-custom btn-perso1"
                             onclick="finalizar()">Finalizar</button>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="agendamento()">Agendar</button>
                     </div>
-
                 </div>
             </form>
         </div>
