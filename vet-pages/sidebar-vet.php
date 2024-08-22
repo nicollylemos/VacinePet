@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VacinePet</title>
-    <link rel="stylesheet" href="../css/css/sidebar-vet.css">
+    <link rel="stylesheet" href="../css/css/sidebar-vetd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 </head>
 

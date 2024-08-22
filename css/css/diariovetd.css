@@ -14,7 +14,7 @@
   font-weight: 500;
 }
 .container{
-  background-color:var(--body-color);
+  background-color:transparent;
   border-radius: 20px;
   margin-left: 80px;
 }

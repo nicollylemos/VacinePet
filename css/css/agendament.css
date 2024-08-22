@@ -46,20 +46,21 @@ body{
     background-color: rgb(255, 255, 255);
     position: absolute;
     width: 1020px; 
-    height: auto;
-    left: 24%; 
+    height: auto; 
     height: 80%;
     z-index: 2;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
     min-height: 600px;
     max-height: 1000px;
+    box-shadow: 20px 20px 20px #efc364;
 }
 
 .form {
     position: absolute;
     left: 50%;
-    top: 25%;
+    top: 20%;
 }
 
 .form-control {

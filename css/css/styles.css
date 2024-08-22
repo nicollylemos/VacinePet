@@ -99,14 +99,15 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
-
+.info-doencas{
+    position: relative;
+}
 .informacao {
     width: 95vw;
     position: relative;
     top: 170px;
     left: 50%;
     transform: translate(-50%,-50%);
-
 }
 
 #info-cao {
@@ -114,10 +115,11 @@ body {
     width: 520px;
     height: 290px;
     border-radius: 25px;
-    margin: 35px;
     position: relative;
     top: 30px;
     box-shadow: 15px 15px 15px #e9e6e6;
+    display: flex;
+    float: left;
 }
 
 #info-gato {
@@ -125,10 +127,11 @@ body {
     width: 520px;
     height: 290px;
     border-radius: 25px;
-    margin: 35px;
     position: relative;
     top: 30px;
     box-shadow: 15px 15px 15px #e9e6e6;
+    display: flex;
+    float: right;
 
 }
 

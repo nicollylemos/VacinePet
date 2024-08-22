@@ -8,7 +8,7 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/responsividade/agendamentoo.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/agendar.css">
+    <link rel="stylesheet" href="css/css/agendament.css">
     <link rel="stylesheet" href="css/css/calendarioo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -16,9 +16,9 @@
 
     <title>Agendamento</title>
     <style>
-        .hidden {
-            display: none;
-        }
+    .hidden {
+        display: none;
+    }
     </style>
 </head>
 
@@ -27,7 +27,7 @@
         <div class="blue-div">
             <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
                     style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
-            
+
         </div>
 
         <div class="quad">
@@ -38,11 +38,11 @@
                         <div class="title">
                             <h1 class="title-agendamento"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
-                            <h6 class="subtitle">
+                            <p class="subtitle">
                                 Parabéns por priorizar a saúde e segurança do seu pet! </p>Agora, para prosseguir com o
-                                agendamento, basta<br> selecionar o dia e horário que melhor se adequam à <br>sua
-                                agenda.
-                            </h6>
+                            agendamento, basta<br> selecionar o dia e horário que melhor se adequam à <br>sua
+                            agenda.
+                            </p>
                         </div>
                         <div id="agendamento-container">
                             <label for="data">Escolha uma data:</label>
@@ -51,16 +51,16 @@
                         </div>
                         <button type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(2)">Próximo</button>
-                            
+
                     </div>
                     <!-- Etapa 2: informações pessoais -->
                     <div id="etapa2" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
-                            <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
+                            <p class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
                                 para
-                                prosseguir com o agendamento.</h6>
+                                prosseguir com o agendamento.</p>
                         </div>
                         <div class="form-group mt-4">
                             <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control"
@@ -213,7 +213,7 @@
                                     class="fas fa-check-circle" style="color: green;"></i></h1>
                             <br>
                             <br>
-                            
+
                             <p>Realizado em: <span id="dataHoraAgendamento"></span></p>
 
                             <h6 class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br>

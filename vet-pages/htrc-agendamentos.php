@@ -1,5 +1,6 @@
-<?php
-    include("sidebar-vet.php");
+<?php 
+ include("../inc/header.php");
+ include("sidebar-vet.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

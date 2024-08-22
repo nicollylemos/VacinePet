@@ -12,12 +12,16 @@
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
-
+.vacinas-valor{
+    position: relative;
+    
+}
 .valores-info {
     display: flex;
     align-items: center;
     min-height: 100vh;
     justify-content: center;
+  
 
 }
 

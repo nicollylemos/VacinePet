@@ -1,61 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <title>VacinePet</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/cabecalho.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-    @media (min-width:992px) and (max-width:1216px) {
-        .btn-login {
-            width: 110px;
-            margin-right: 10px;
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logo {
+        font-size: 30px;
+        color: #FA5909;
+        font-family: baloo;
+        float: left;
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #fff;
+        border-bottom: 1px solid #DDD;
+    }
+
+    .topnav .link {
+        float: left;
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .topnav a:hover {
+        background-color: #000;
+        color: black;
+    }
+
+    .topnav a.active {
+        color: white;
+    }
+
+    .topnav .icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
         }
 
-        .btn-cad {
-            width: 110px;
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
         }
     }
     </style>
+</head>
 
-<body class="p-0 m-0 border-0 bd-example m-0 border-0">
-    <nav id="navbar" class="navbar navbar-expand-lg">
-        <div class="container-fluid"><a class="navbar-brand" href="index.php">VacinePet <i
-                    class="fa-solid fa-paw fa-rotate-by"
-                    style="color: #fa5909; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></a><button
-                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                    class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="link-content">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Início</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Agendamento</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Informações </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Doenças em Gatos</a></li>
-                                <li><a class="dropdown-item" href="#">Doenças em Cães</a></li>
-                            </ul>
-                        </li>
-                </div>
-                <div class="btn-acesso ms-auto">
-                    <a href="login.php"><button class="btn-login">Entrar</button></a><a href="cadastro.php"><button
-                            class="btn-cad">Cadastrar</button></a>
-                </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.php" class="logo">VacinePet<i class="fa-solid fa-paw fa-rotate-by"
+                style="color: #FA5909; --fa-rotate-angle: 49deg; width: 20px; height: 20px; font-size: 15px;"></i></a>
+        <a href="#news" class="link">News</a>
+        <a href="#contact" class="link">Contact</a>
+        <a href="#about" class="link">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
 </body>
 
 </html>
