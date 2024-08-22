@@ -1,5 +1,5 @@
-<?php 
- include("./nav.php");
+<?php
+include("./inc/teste-nav.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -14,6 +14,7 @@
 }
 .vacinas-valor{
     position: relative;
+    top: 300%;
     
 }
 .valores-info {
@@ -21,8 +22,7 @@
     align-items: center;
     min-height: 100vh;
     justify-content: center;
-  
-
+    
 }
 
 .slide-content {
@@ -81,7 +81,7 @@
     font-weight: 500;
     color: #52BACB;
     position: relative;
-    bottom: 55px;
+    bottom: 50px;
     text-align: center;
     align-items: center;
 }
@@ -91,7 +91,7 @@
     color: #707070;
     text-align: center;
     position: relative;
-    bottom: 60px;
+    bottom: 47px;
 }
 
 .append-buttons {
@@ -112,7 +112,8 @@
     font-size: 30px;
     font-family: baloo;
     position: relative;
-    bottom: 30px;
+    bottom: 43px;
+    
 }
 
 .btn-vacinas {
@@ -127,7 +128,7 @@
     font-family: baloo;
     letter-spacing: 1px;
     position: relative;
-    bottom: 45px;
+    bottom: 20px;
 }
 
 .titulo-vacina h2 {
@@ -192,3 +193,7 @@
     border: 4px solid #e3e2e2;
     color:  #e3e2e2;
 }
+.secao-valores {
+    margin-top: 400px; /* Ajuste esse valor conforme necessário */
+}
+

@@ -1,5 +1,5 @@
-<?php 
- include("./inc/header.php");
+<?php
+include("./inc/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/iniciar.css">
+    <link rel="stylesheet" href="css/css/inicio.css">
     <link rel="stylesheet" href="css/css/styles.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
@@ -46,7 +46,7 @@
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
-                        <a href="doencascachorro.php"><button type="submit">Ler Mais</button></a>
+                        <a href="doencascachorro.php"><button type="submit" class="btn-ler">Ler Mais</button></a>
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog"><img src="" alt=""></div>
@@ -57,7 +57,7 @@
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="doencasgato.php"><button>Ler Mais</button></a>
+                        <a href="doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
                     </div>
                     <div class="img-pet">
                         <div class="pet-cat"><img src="" alt=""></div>
@@ -66,11 +66,12 @@
             </div>
         </div>
     </section>
+
     <!-- Valores Vacinas -->
     <section class="secao-valores">
         <div class="vacinas-valor">
             <div class="titulo-vacina">
-                <h2>Vacinas Procuradas</h2>
+                <h2>Vacinas mais procuradas</h2>
             </div>
             <div class="slide-container swiper">
                 <div class="slide-content">

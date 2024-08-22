@@ -85,7 +85,7 @@ body {
     font-weight: 600;
     border-radius: 50px;
     font-size: 25px;
-    padding: 3.5px;
+    padding: 10.0px;
     width: 210px;
     border: none;
     font-family: league;
@@ -105,9 +105,10 @@ body {
 .informacao {
     width: 95vw;
     position: relative;
-    top: 170px;
+    top: 10px;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index:10;
 }
 
 #info-cao {
@@ -120,6 +121,8 @@ body {
     box-shadow: 15px 15px 15px #e9e6e6;
     display: flex;
     float: left;
+    right: -5%;
+    
 }
 
 #info-gato {
@@ -132,6 +135,7 @@ body {
     box-shadow: 15px 15px 15px #e9e6e6;
     display: flex;
     float: right;
+    right: 5%;
 
 }
 
@@ -165,6 +169,7 @@ body {
     position: relative;
     bottom: 15px;
     font-family: baloo;
+    margin-left: 2%;
 }
 
 #info-cao p {
@@ -173,6 +178,11 @@ body {
     position: relative;
     bottom: 15px;
     font-family: baloo;
+    margin-left: 2%;
+}
+.btn-ler{
+    margin-top: 5%;
+    margin-left: 2%;
 }
 
 .texto {

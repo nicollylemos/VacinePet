@@ -1,5 +1,5 @@
-<?php 
- include("./inc/header.php");
+<?php
+include("./inc/teste-nav.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

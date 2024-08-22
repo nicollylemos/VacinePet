@@ -8,7 +8,7 @@
     src: url("../font/league/LeagueSpartan-Regular.ttf");
 }
 
-* {
+header * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,13 +20,14 @@ body {
     height: 100%;
     width: 100%;
 }
-#menuList{
+
+#menuList {
     position: absolute;
     margin-left: 17%;
 }
 
 nav {
-    padding: 1px 30px;
+    padding: 0 30px; /* Remover padding superior/inferior */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +40,6 @@ nav {
     color: #FA5909;
     font-family: baloo;
     font-size: 25px;
-    padding: 0;
     font-weight: 100;
 }
 
@@ -47,6 +47,8 @@ nav ul {
     display: flex;
     gap: 30px;
     align-items: center;
+    margin: 0; /* Remover margens */
+    padding: 0; /* Remover padding */
 }
 
 nav ul li {
@@ -58,6 +60,8 @@ nav ul li a {
     color: #000000;
     font-family: league;
     font-size: 20px;
+    padding: 10px; /* Adiciona padding para aumentar a área clicável e alinhar melhor */
+    display: block; /* Certifique-se de que o padding se aplique corretamente */
 }
 
 .menu-icon {
@@ -97,42 +101,37 @@ nav ul li a {
     }
 }
 
-.btn-acesso .btn-login {
-    cursor: pointer;
-    font-family: league;
-    font-size: 18px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 3.5px solid #52BACB;
-    width: 150px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    color: #52BACB;
-    margin-right: 10px;
-    padding: 2px;
-}
-
+.btn-acesso .btn-login,
 .btn-acesso .btn-cad {
     cursor: pointer;
     font-family: league;
     font-size: 18px;
-    background-color: #52BACB;
     border-radius: 10px;
-    border: 3.5px solid #52BACB;
+    border: 3.5px solid;
     width: 150px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    color: #fff;
-    /* Cor do texto no botão */
     text-decoration: none;
-    /* Remova sublinhado de links */
-    padding: 2px;
+    display: inline-block;
+    padding: 8px 0; /* Ajustado para criar uma área de clique maior e melhorar o alinhamento */
+}
+
+.btn-acesso .btn-login {
+    background-color: #ffffff;
+    color: #52BACB;
+    border-color: #52BACB;
+    margin-right: 10px;
+}
+
+.btn-acesso .btn-cad {
+    background-color: #52BACB;
+    color: #fff;
+    border-color: #52BACB;
 }
 
 .btn-acesso {
     display: inline-block;
     align-items: center;
     position: relative;
-    right: -30%;
+    right: -10%; /* Ajuste a posição para evitar deslocamento indesejado */
 }
