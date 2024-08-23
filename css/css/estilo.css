@@ -80,7 +80,7 @@ body {
 }
 
 .btn-inicio {
-    background-color:  #52BACB;
+    background-color:   #52BACB;
     color: #fff;
     font-weight: 600;
     border-radius: 50px;
@@ -90,6 +90,7 @@ body {
     border: none;
     font-family: league;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 .btn-inicio:hover{
     background-color:  #55abb9;

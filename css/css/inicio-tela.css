@@ -12,6 +12,11 @@
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
+
+@font-face {
+    font-family: 'poppins';
+    src: url("../font/poppins/Poppins-Regular.ttf");
+}
 .vacinas-valor{
     position: relative;
     top: 300%;
@@ -37,6 +42,7 @@
     border-radius: 25px;
     background-color: #ffffff;
     height: 900px;
+    border: 1px solid #a8a8a8;
 
 }
 
@@ -88,10 +94,12 @@
 
 .description {
     font-size: 14px;
-    color: #707070;
+    color: #898383;
     text-align: center;
     position: relative;
     bottom: 47px;
+    font-family: poppins;
+    font-weight: 700;
 }
 
 .append-buttons {
@@ -129,6 +137,7 @@
     letter-spacing: 1px;
     position: relative;
     bottom: 20px;
+    cursor: pointer;
 }
 
 .titulo-vacina h2 {
