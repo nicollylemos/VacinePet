@@ -6,8 +6,8 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/cadastro.css">
-    <link rel="stylesheet" href="css/css/responsividade/telacadastrar.css">
+    <link rel="stylesheet" href="css/css/cadastrar.css">
+    <link rel="stylesheet" href="css/css/responsividade/telacad.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
@@ -24,25 +24,22 @@
             <h4 class="title-blue-div1">
                 VacinePet
                 <i class="fa-solid fa-paw fa-rotate-by"
-                    style="color: white; --fa-rotate-angle: 49deg; width: 20px; height: 20px; font-size: 15px;"></i>
+                    ></i>
             </h4>
             <h1 class="title-blue-div2">Bem-vindo,</h1>
             <h3 class="title-blue-div3">
                 Agende a vacinação do seu pet com praticidade e segurança.<br>
                 Cadastre-se agora!
             </h3>
-
-
         </div>
 
         <div class="blue-div-resp">
             <h4 class="title-blue-div1">
-                Vacine Pet
-                <i class="fa-solid fa-paw fa-rotate-by"
-                    style="color: white; --fa-rotate-angle: 49deg; width: 20px; height: 20px; font-size: 15px;"></i>
+                VacinePet
+                <i class="fa-solid fa-paw fa-rotate-by"></i>
             </h4>
-            <h1 class="title-blue-div2">Bem-vindo,</h1>
-            <h3 class="title-blue-div3">
+            <h1 class="title-blue-div2 titulo">Bem-vindo,</h1>
+            <h3 class="title-blue-div3 titulo">
                 Agende a vacinação do seu pet <br> com praticidade e segurança.<br>
                 Cadastre-se agora!
             </h3>

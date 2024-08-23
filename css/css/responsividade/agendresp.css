@@ -1,17 +1,11 @@
 @media (min-width:310px) and (max-width: 350px) {
-
     .blue-div{
         display: none;
     }
-
     .container{
         background-image: url('../img/fundo-azul.jpg');
         background-size: 150%;
-        
     }
-   
-
-    
 }
 
 @media (min-width:765px) and (max-width: 991px) {

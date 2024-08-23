@@ -10,7 +10,14 @@
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
-
+.fa-solid{
+    color: white; 
+    display:none;
+    transform: rotate(49deg);
+    width: 20px; 
+    height: 20px; 
+    font-size: 15px;
+}
 body {
     background-color: #FFD371;
 }
@@ -46,6 +53,12 @@ body {
     width: 280px;
     left: 0;
     height: 100%;
+    background-image: url('img/cac.png');
+    background-position: center 100%;
+    background-repeat: no-repeat;
+}
+.blue-div-resp{
+    display: none; /*responsividade arrumar*/
 }
 
 .title-blue-div1 {
@@ -57,7 +70,7 @@ body {
 .title-blue-div2 {
     color: white;
     font-family: 'baloo';
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .title-blue-div3 {
     color: #fff;
