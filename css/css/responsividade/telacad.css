@@ -5,6 +5,10 @@
         background-size: cover;
         background-repeat: no-repeat; 
     }
+
+    .fa-solid{
+        display:flex; /* icon patinha */
+    }
     .blue-div{
         display: none;
     }
@@ -18,7 +22,7 @@
     }
     .form-control{
         width: 245px;
-        height: 35px;
+        height: 40px;
     }
     .sub-title-title{
         font-size: 15px;
@@ -30,9 +34,8 @@
         margin-bottom: 15%;
     }
     .container{
-        position: absolute;
-        margin-top: 60%;
-        height: 900px;
+        margin-top: 80%;
+        height: 700px;
         width: 100%;
         position: absolute;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
@@ -47,12 +50,12 @@
         font-size: 15px;
     }
     .title-blue-div2{
-        margin-top: 2%;
+        margin-top: 8%;
         font-size: 22px;
     }
     .title-blue-div3{
-        font-size: 14px;
-        margin-top: 5%;
+        font-size: 13px;
+        margin-top: -3%;
     }
     .btn-perso {
         position: relative;
@@ -97,11 +100,11 @@
     .form{
         position: relative;
         margin-left: -30%;
-        margin-top: 25%;
+        margin-top: 18%;
     }
     .form-control{
         width: 255px;
-        height: 35px;
+        height: 42px;
     }
     .sub-title-title{
         font-size: 20px;
@@ -114,10 +117,9 @@
     }
     .container{
         position: absolute;
-        margin-top: 60%;
-        height: 950px;
+        margin-top: 340px;
+        height: 800px;
         width: 100%;
-        position: absolute;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
         border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
@@ -134,7 +136,7 @@
         font-size: 27px;
     }
     .title-blue-div3{
-        font-size: 16px;
+        font-size: 15px;
     }
     .btn-perso {
         position: relative;
@@ -185,11 +187,11 @@
     .form{
         position: relative;
         margin-left: -33%;
-        margin-top: 25%;
+        margin-top: 23%;
     }
     .form-control{
-        width: 340px;
-        height: 40px;
+        width: 335px;
+        height: 42px;
     }
     .sub-title-title{
         font-size: 21px;
@@ -202,10 +204,9 @@
     }
     .container{
         position: absolute;
-        margin-top: 60%;
-        height: 1000px;
+        margin-top: 375px;
+        height: 800px;
         width: 100%;
-        position: absolute;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
         border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
@@ -275,11 +276,11 @@
     .form{
         position: relative;
         margin-left: -33%;
-        margin-top: -20%;
+        margin-top: 10%;
     }
     .form-control{
         width: 370px;
-        height: 40px;
+        height: 45px;
     }
     .sub-title-title{
         font-size: 21px;
@@ -292,10 +293,9 @@
     }
     .container{
         position: absolute;
-        margin-top: 60%;
-        height: 1000px;
+        margin-top: 405px;
+        height: 800px;
         width: 100%;
-        position: absolute;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
         border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
@@ -314,13 +314,13 @@
         position: relative;
         font-size: 27px;
         margin-left: 5%;
-        top: -175px;
+        top: -40px;
     }
     .title-blue-div3{
         position: relative;
         font-size: 16px;
         margin-left: 5%;
-        top: -175px;
+        top: -50px;
     }
     .btn-perso {
         position: relative;
@@ -374,7 +374,7 @@
     }
     .form-control{
         width: 410px;
-        height: 40px;
+        height: 48px;
     }
     .sub-title-title{
         font-size: 18px;
@@ -387,10 +387,9 @@
     }
     .container{
         position: absolute;
-        margin-top: 60%;
-        height: 1000px;
+        margin-top: 440px;
+        height: 800px;
         width: 100%;
-        position: absolute;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
         border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
@@ -404,10 +403,11 @@
         position: relative;
         font-size: 19px;
         margin-left: 5%;
+        margin-top: -10%;
     }
     .title-blue-div2{
         position: relative;
-        margin-top: 0%;
+        margin-top: 5%;
         font-size: 27px;
         margin-left: 5%;
     }
@@ -481,10 +481,9 @@
     }
     .container{
         position: absolute;
-        margin-top: 60%;
-        height: 1000px;
+        margin-top: 450px;
+        height: 800px;
         width: 100%;
-        position: absolute;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
         border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
@@ -579,10 +578,9 @@
     }
     .container{
         position: absolute;
-        margin-top: 60%;
-        height: 1000px;
+        margin-top: 460px;
+        height: 800px;
         width: 100%;
-        position: absolute;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
         border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
@@ -645,97 +643,56 @@
     }
 }
 @media (min-width:576px) and (max-width: 620px){
-    body{
-        background-color: #FFD371;
-    }
-    .form-control{
+   .blue-div{
+    width: 200px;
+   }
+   .title-blue-div1{
         position: relative;
-        left: 10%;
-        bottom: 25%;
-        width: 235px;
-        height: 40px;
-    }
-    .container{
-        position: relative;
-        height: 870px;
-        width: 100%;
-    }
-    .blue-div{
-        width: 215px;
-        height: 870px;
-    }
-    .blue-div-resp{
-        display: none;
-    }   
-    .imagem{
-        display: none;
-    }
-    .title-title{
-        font-size: 50px;
-        position: relative;
-        left: 9%;
-    }
-    .sub-title-title{
-        position: relative;
-        left: 10%;
-        font-size: 11px;
-    }
-    .sub1{
-        position: relative;
-        left: 4%;
-        font-size: 11px;
-    }
-    .bola{
-        display: none;
-    }
-    .btn-cad{
-        width: 130px;
-        margin-top: -150%;
-        margin-left: -35%;
-    }
-    .btn-custom{
-        width: 120px;
-        margin-bottom: 10%;
-    }
-    .form-control1{
-        position: relative;
-        left: 9%;
-    }
-    #btn-etapa4{
-        position: relative;
-        top: -95px; 
-    }
-    .label-info{
-        position: relative;
-        left: 15%;
-    }
-    #msg{
-        height: 100px;
-    }
-    .quad-blue{
-        position: relative;
-        left: -19%;
-    }
-    .title-sucesso{
-        font-size: 33px;
-        position: relative;
-        left: 4%;
-    }
-    .p{
-        width: 260px;
-        position: relative;
-        left: 12%;
-    }
-    .check{
-        width: 300px;
-        position: relative;
-        left: 5%;
-    }
-    .div-botoes2{
-        position: relative;
-        bottom: -20px;
-        left: 9%;
-    }
+        top: 23%;
+   }
+   .title-title{
+    position: relative;
+    font-size: 50px;
+    left: 7%;
+   }
+   .titulo{
+    display: none;
+   }
+   .sub-title-title{
+    position: relative;
+    font-size: 15px;
+    width: 330px;
+    left: 7%;
+   }
+   .title-blue-div2{
+    position: relative;
+    top: 33%;
+    width: 180px;
+   }
+   .title-blue-div3{
+    position: relative;
+    top: 33%;
+    width: 180px;
+   }
+   .form{
+    position: relative;
+    top: 23%;
+   }
+   .form-control{
+    position: relative;
+    width: 250px;
+    height: 45px;
+    left: 7%;
+   }
+   .container{
+    height: 1020px;
+   }
+   .btn-cad{
+    position: relative;
+    margin-top: -135%;
+    left: -38%;
+    width: 130px;
+   }
 }
 @media (min-width:620px) and (max-width: 690px){
     body{
