@@ -4,8 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/rodarodape.css">
+    <link rel="stylesheet" href="../css/css/rodapee.css">
     <style>
+    @font-face {
+        font-family: 'league';
+        src: url("../font/league/LeagueSpartan-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: 'baloo';
+        src: url("../font/baloo/Baloo-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: 'oswald';
+        src: url("../font/oswald/Oswald-Regular.ttf");
+    }
+
+    .footer h1 {
+        color: #ffffff;
+        font-family: baloo;
+        font-size: 23px;
+        margin-left: 30px;
+        position: relative;
+        top: 25px;
+        margin-bottom: 35px;
+        font-weight: 500;
+    }
+
+    .footer {
+        padding-left: 15px;
+    }
+
+    .footer {
+        background-color: #419dac;
+        height: 270px;
+    }
+
+    .footer ul {
+        display: inline-block;
+        list-style: none;
+        font-weight: 400;
+    }
+
+    .footer li {
+        font-family: league;
+        color: #ffffff;
+        margin-right: 30px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer h2 {
+        font-size: 17px;
+        font-family: baloo;
+        color: #ffffff;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .redes-sociais {
+        display: inline-block;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .redes-sociais i {
+        text-align: center;
+        margin: 5px
+    }
+
+    .creditos {
+        margin-top: 10px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    hr {
+        margin: 20px;
+    }
+
     @media (min-width:310px) and (max-width: 350px) {
         .footer {
             width: 350px;
