@@ -22,7 +22,7 @@
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1><i class="fa-solid fa-bars-progress icon" style="font-size:0.8em;"></i> Agendamentos Ativos</h1>
+                    <h1> Agendamentos Ativos</h1>
                     <div class="table">
                         <table>
                             <tr>

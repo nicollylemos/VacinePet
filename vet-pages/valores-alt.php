@@ -22,7 +22,7 @@
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1> <i class="fa-solid fa-money-bill icon" style="font-size:0.8em;"></i> Alteração de Valores</h1>
+                    <h1> Alteração de Valores</h1>
                     <div class="valores">
                         <div class="container-valores">
                             <div class="id">01</div>

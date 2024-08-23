@@ -15,18 +15,23 @@ body {
     background-color: #FFD371;
 }
 .container {
-    background-color: #fff;
-    position: relative;
-    width: 980px;
-    margin: 0 auto;
-    align-items: center;
-    height: 80vh;
-    margin-top: 6%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 1020px; 
+    height: 90%;
     z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 600px;
+    max-height: 1000px;
+    box-shadow: 20px 20px 20px #efc364;
+
 }
 
 .blue-div {
     background-color: #52BACB;
+    background-image: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Alinha o conteúdo ao topo */
@@ -34,25 +39,25 @@ body {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    background-size: 130%;
+    background-size: 100%;
     background-position: center 95%;
     background-repeat: no-repeat;
     position: absolute;
     width: 280px;
     left: 0;
-    height: 80vh;
+    height: 100%;
 }
 
 .title-blue-div1 {
     color: #fff;
     font-family: 'baloo';
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .title-blue-div2 {
     color: white;
     font-family: 'baloo';
-    margin-top: 170px;
+    margin-top: 50px;
 }
 .title-blue-div3 {
     color: #fff;
@@ -68,7 +73,7 @@ body {
     margin-top: 2%;
 }
 .form1{
-    margin-top: 7%;
+    margin-top: 3%;
 }
 .title-title {
     font-size: 60px;
@@ -153,27 +158,8 @@ body {
     text-decoration: none;
 
 }
-/*foto e bola*/
-.bola{
-    background-color: #FFD371;
-    width: 220px;
-    height: 210px;
-    margin-top:150px;
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-}
-.imagem {
-    position: absolute;
-    top: 522px;
-    width: 400px;
-    height: 250px;
-    left: -44px;
-    z-index: 1;
-}
+
+
 .upload-section {
     text-align: center;
     margin: 30px 0;

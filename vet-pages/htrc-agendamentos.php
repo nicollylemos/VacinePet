@@ -22,7 +22,7 @@
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1><i class="fa-solid fa-clock-rotate-left icon" style="font-size:0.8em;"></i> Histórico
+                    <h1> Histórico
                         Agendamentos</h1>
                     <div class="table">
                         <table>

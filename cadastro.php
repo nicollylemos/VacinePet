@@ -6,14 +6,14 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/cad.css">
+    <link rel="stylesheet" href="css/css/cadastro.css">
     <link rel="stylesheet" href="css/css/responsividade/telacadastrar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
-        .hidden {
-            display: none;
-        }
+    .hidden {
+        display: none;
+    }
     </style>
 </head>
 
@@ -22,7 +22,7 @@
     <div class="container">
         <div class="blue-div">
             <h4 class="title-blue-div1">
-                Vacine Pet
+                VacinePet
                 <i class="fa-solid fa-paw fa-rotate-by"
                     style="color: white; --fa-rotate-angle: 49deg; width: 20px; height: 20px; font-size: 15px;"></i>
             </h4>
@@ -31,10 +31,8 @@
                 Agende a vacinação do seu pet com praticidade e segurança.<br>
                 Cadastre-se agora!
             </h3>
-            <div class="bola">
 
-            </div>
-            <img src="css/css/img/dogcadpet.png" class="imagem" alt="Dog" />
+
         </div>
 
         <div class="blue-div-resp">
@@ -87,19 +85,20 @@
                         </div>
 
                         <script>
-                            // Máscara para a data de nascimento
-                            document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function (e) {
-                                let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
-                                if (value.length > 8) {
-                                    value = value.slice(0, 8); // Limita a 8 dígitos
-                                }
-                                // Adiciona as barras conforme necessário
-                                value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
-                                value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
-                                e.target.value = value;
-                            });
+                        // Máscara para a data de nascimento
+                        document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function(
+                            e) {
+                            let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
+                            if (value.length > 8) {
+                                value = value.slice(0, 8); // Limita a 8 dígitos
+                            }
+                            // Adiciona as barras conforme necessário
+                            value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
+                            value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
+                            e.target.value = value;
+                        });
 
-                            // Máscara para o telefone
+                        // Máscara para o telefone
                         </script>
 
                         <div class="row">
