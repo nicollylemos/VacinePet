@@ -7,13 +7,13 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/cadastrar.css">
-    <link rel="stylesheet" href="css/css/responsividade/telacad.css">
+    <link rel="stylesheet" href="css/css/responsividade/telacadastrarr.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
-    .hidden {
-        display: none;
-    }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
@@ -23,8 +23,7 @@
         <div class="blue-div">
             <h4 class="title-blue-div1">
                 VacinePet
-                <i class="fa-solid fa-paw fa-rotate-by"
-                    ></i>
+                <i class="fa-solid fa-paw fa-rotate-by"></i>
             </h4>
             <h1 class="title-blue-div2">Bem-vindo,</h1>
             <h3 class="title-blue-div3">
@@ -82,20 +81,20 @@
                         </div>
 
                         <script>
-                        // Máscara para a data de nascimento
-                        document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function(
-                            e) {
-                            let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
-                            if (value.length > 8) {
-                                value = value.slice(0, 8); // Limita a 8 dígitos
-                            }
-                            // Adiciona as barras conforme necessário
-                            value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
-                            value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
-                            e.target.value = value;
-                        });
+                            // Máscara para a data de nascimento
+                            document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function (
+                                e) {
+                                let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
+                                if (value.length > 8) {
+                                    value = value.slice(0, 8); // Limita a 8 dígitos
+                                }
+                                // Adiciona as barras conforme necessário
+                                value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
+                                value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
+                                e.target.value = value;
+                            });
 
-                        // Máscara para o telefone
+                            // Máscara para o telefone
                         </script>
 
                         <div class="row">
@@ -245,12 +244,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Peso aproximado do Pet" maxlength="100" class="form-control"
-                                name="pet_weight">
-                        </div>
-                    </div>
+
                     <div class="div-botoes">
                         <button type="button" id="btn-etapa4" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(3)">Anterior</button>
@@ -267,10 +261,10 @@
                     <div class="sub-title">
                         <h5 class="sub-title-title">Preencha com as informações do seu pet.</h5>
                     </div>
-                    <div class="form-group">
-                        <label class="label-info">Informações Adicionais:</label>
-                        <textarea id="msg" class="form-control" rows="3"
-                            placeholder="Utilize esse espaço para adicionar mais informações sobre o Pet"></textarea>
+                    <div class="form-group mt-4 col-md-6" style="width: 530px;">
+                        <input type="text"
+                            placeholder="Utilize esse espaço para adicionar mais informações sobre o pet."
+                            class="form-control add" name="cep">
                     </div>
 
                     <div class="quad-blue">
