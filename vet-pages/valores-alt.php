@@ -23,32 +23,40 @@
             <div class="container-tabela">
                 <div class="content">
                     <h1> Alteração de Valores</h1>
-                    <div class="valores">
+                    <div class="top-valores">
                         <div class="container-valores">
-                            <div class="id">01</div>
-                            <div>V4</div>
+                            <div class="id"> Id</div>
+                            <div>Valores</div>
                             <div>Gato</div>
                             <div>149,99</div>
                             <div><button class="alt">Alterar</button></div>
                         </div>
-                        <div class="container-valores">
-                            <div class="id">02</div>
-                            <div>V8</div>
-                            <div>Cachorro</div>
-                            <div>149,99</div>
-                            <div><button class="alt">Alterar</button></div>
-                        </div>
-                        <div class="container-valores">
-                            <div class="id">03</div>
-                            <div>Antirrábica</div>
-                            <div>Cachorro</div>
-                            <div>149,99</div>
-                            <div><button class="alt">Alterar</button></div>
+                        <div class="valores">
+                            <div class="container-valores">
+                                <div class="id">01</div>
+                                <div>V4</div>
+                                <div>Gato</div>
+                                <div>149,99</div>
+                                <div><button class="alt">Alterar</button></div>
+                            </div>
+                            <div class="container-valores">
+                                <div class="id">02</div>
+                                <div>V8</div>
+                                <div>Cachorro</div>
+                                <div>149,99</div>
+                                <div><button class="alt">Alterar</button></div>
+                            </div>
+                            <div class="container-valores">
+                                <div class="id">03</div>
+                                <div>Antirrábica</div>
+                                <div>Cachorro</div>
+                                <div>149,99</div>
+                                <div><button class="alt">Alterar</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
