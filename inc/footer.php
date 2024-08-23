@@ -53,9 +53,10 @@
         margin-right: 30px;
         font-size: 15px;
         margin-left: 10px;
+        margin-top: 5px;
     }
 
-    a {
+    .footer a {
         text-decoration: none;
         color: #fff;
     }
