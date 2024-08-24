@@ -54,7 +54,7 @@ body{
     position: static;
     top: 53px;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 310px;
     padding: 10px 14px;
     background: var(--sidebar-color);

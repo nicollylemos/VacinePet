@@ -12,13 +12,14 @@
 
     .topnav {
         overflow: hidden;
-        background-color: #333;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
     }
 
     .topnav a {
         float: left;
         display: block;
-        color: #f2f2f2;
+        color: #3e3e3e;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -38,6 +39,40 @@
     .topnav .icon {
         display: none;
     }
+
+    .topnav .cad {
+        background-color: transparent;
+        border: 3.5px solid var(--primary-clr);
+        color: var(--primary-clr);
+        font-weight: 600;
+        border-radius: 8px;
+        width: 150px;
+        font-size: 15px;
+        cursor: pointer;
+        height: 35px;
+    }
+
+    .topnav button {
+        float: left;
+        display: block;
+        text-align: center;
+        margin: 14px 2px;
+        left: 55%;
+        position: relative;
+    }
+
+    .topnav .login {
+        color: #ffffff;
+        background-color: var(--primary-clr);
+        font-weight: 600;
+        border-radius: 8px;
+        width: 150px;
+        font-size: 15px;
+        cursor: pointer;
+        height: 35px;
+        border: none;
+    }
+
 
     @media screen and (max-width: 600px) {
         .topnav a:not(:first-child) {
@@ -77,9 +112,6 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
 
     <script>

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/vet.css" />
+    <link rel="stylesheet" href="../css/css/vetedm.css" />
     <title>VacinePet</title>
 </head>
 
@@ -32,7 +32,7 @@
                                 <th>Tutor</th>
                                 <th>Pet</th>
                                 <th>Situação</th>
-                                <th>Mais</th>
+                                <th>...</th>
                             </tr>
                             <tr>
                                 <td>01</td>
@@ -44,9 +44,10 @@
                                 <td>
 
                                     <!-- com variável -->
-                                    <button onclick="modal.showModal()">Abrir Modal</button>
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-check"></i>
+                                    <button onclick="modalView.showModal()"> <i class="fa-solid fa-eye"></i></button>
+                                    <button onclick="modalEdit.showModal()"> <i
+                                            class="fa-solid fa-pen-to-square"></i></button>
+                                    <button onclick="modalCheck.showModal()"> <i class="fa-solid fa-check"></i></button>
                                 </td>
                             </tr>
                             <tr>
@@ -83,10 +84,20 @@
         </div>
         </div>
     </section>
-    <dialog class="modal-edit" id="modal">
-        <button onclick=" modal.close()">fechar Modal</button>
+    <dialog class="modal" id="modalView">
+        <h1>Visualizar</h1>
+        <button class="close" onclick=" modalView.close()">Fechar</button>
     </dialog>
-
+    <dialog class="modal" id="modalEdit">
+        <h1>Editar</h1>
+        <button class="save">Salvar</button>
+        <button class="close" onclick=" modalEdit.close()">Fechar</button>
+    </dialog>
+    <dialog class="modal" id="modalCheck">
+        <h1>Alterar Situação</h1>
+        <button class="save">Salvar</button>
+        <button class="close" onclick=" modalCheck.close()">Fechar</button>
+    </dialog>
 </body>
 
 </html>

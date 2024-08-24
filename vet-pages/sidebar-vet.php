@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VacinePet</title>
-    <link rel="stylesheet" href="../css/css/sidebar-vetd.css">
+    <link rel="stylesheet" href="../css/css/sidebar-vetdmc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 </head>
 
@@ -24,7 +24,7 @@
                 <div class="menu">
                     <ul class="menu-links">
                         <li class="nav-link">
-                            <a href="agendamentos.php">
+                            <a href="index.php">
                                 <i class="fa-solid fa-bars-progress icon"></i>
                                 <span class="text nav-text">Agendamentos Ativos</span>
                             </a>

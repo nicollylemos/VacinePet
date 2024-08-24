@@ -6,7 +6,8 @@
 :root{
     --primary-clr:#52BACB;
     --title-color:#3e3e3e;
-    --edit-color: #FD811C;
+    --second-color: #FD811C;
+    --primary-hover: #7bcdd9; 
 }
 .top-valores{
     background-color:var(--primary-clr);
@@ -29,10 +30,12 @@
     margin: 19px;
 }
 .container-tabela h1{
-    font-weight: 600;
-    font-size: 1.7em;
-    margin-bottom: 25px;
-    color: var(--title-color)
+    font-weight: 500;
+    font-size: 2.4em;
+    margin-bottom: 15px;
+    color:#41a4b3;
+    font-family: baloo;
+    letter-spacing:-0.9px;
 }
 .table table{
     background-color: rgb(255, 255, 255);
@@ -129,7 +132,60 @@ table th:nth-child(5), table td:nth-child(5) {
     color: var(--primary-clr);
     cursor: pointer;
 }
-#modal{
-    width: 400px;
+.modal {
+    width: 380px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:  none;
+}
+
+.modal h1{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--title-color);
     text-align: center;
+}
+
+
+.modal .close{
+    background-color: transparent;
+    border: 3.5px solid var(--primary-clr);
+    color: var(--primary-clr);
+    font-weight: 600; 
+    border-radius: 8px;
+    width: 70%;
+    font-size: 15px;
+    cursor: pointer;
+    height: 35px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+.modal .save{
+    color: #ffffff;
+    background-color:  var(--primary-clr);
+    font-weight: 600; 
+    border-radius: 8px;
+    width: 70%;
+    font-size: 15px;
+    cursor: pointer;
+    height: 35px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.modal .close:hover{
+    color: var(--primary-hover);
+    border-color: var(--primary-hover);
 }
