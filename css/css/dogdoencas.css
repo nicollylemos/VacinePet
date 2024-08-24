@@ -12,18 +12,24 @@
 }
 
 .start {
-    background-image: url(img/fundodoen.png);
+    background-image: url(img/fundo-doencasdog.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0;
+    margin-top: -6%;
     width: 100%;
     height: 100vh;
+}
+.subtitle{
+    text-align: center;
+    font-family: league;
+    font-size: 20px;
+    color: #3b3b3b;
 }
 
 .escritos {
     top: 12%;
-    margin-left: 10%;
+    margin-left: 45%;
     position: relative;
     width: 45%;
 }
@@ -39,21 +45,24 @@
     color: #3b3b3b;
     font-family: baloo;
     font-size: 20px;
+    position: relative;
+    margin-top: -9%;
 }
 #doencas {
     background-color: rgb(255, 255, 255);
-    height: 550px;
+    height: 770px;
 }
 .btn-start {
     position: relative;
     font-family: baloo;
     font-size: 23px;
-    background-color: #FD811C;
-    border-color: #FD811C;
+    background-color: transparent; /* Fundo transparente */
+    border: 3px solid #FD811C; /* Borda laranja */
     border-radius: 20px;
     width: 200px;
-    color: white;
+    color: #FD811C; /* Texto laranja */
 }
+
 .btn-start:hover {
     background-color: #fcab65;
     border-color: #fcab65;
@@ -250,5 +259,38 @@
     border: #52BACB solid 6px;
     margin-left:92%;
     margin-top: -2%;
+}
+
+@keyframes pulsate {
+    0%, 100% {
+        transform: scale(1); /* Tamanho normal */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta 10% do tamanho original */
+    }
+}
+
+.btn-custom {
+  
+    position: relative;
+    font-family: baloo;
+    font-size: 20px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    margin-bottom: 100px;
+    left: 42%; 
+    top: 100px;
+    width: 200px;
+    animation: pulsate 3s infinite; /* Aplicando a animação */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.btn-custom:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+    animation: none; /* Parando a animação ao passar o mouse */
 }
 
