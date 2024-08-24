@@ -12,6 +12,9 @@
     .blue-div{
         display: none;
     }
+    .blue-div-resp{
+        display: flex; /*responsividade arrumar*/
+    }
     .title-title{
         display: none;
     }

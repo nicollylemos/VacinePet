@@ -58,7 +58,7 @@ body {
     background-repeat: no-repeat;
 }
 .blue-div-resp{
-    display: none; /*responsividade arrumar*/
+    display: flex; /*responsividade arrumar*/
 }
 
 .title-blue-div1 {

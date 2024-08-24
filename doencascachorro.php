@@ -1,3 +1,6 @@
+<?php
+include("./inc/header.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -33,7 +36,8 @@
     <section id="doencas">
         <div class="space"></div>
         <div class="titulo-vacina">
-            <h2>Doenças Caninas</h2>
+            <h2>DOENÇAS CANINAS</h2>
+            <p class="subtitle">Conheça as principais doenças caninas e agende a vacinação com o veterinário<br> para garantir a saúde e bem-estar do seu pet.</p>
         </div>
         <div class="slide-container swiper">
             <div class="slide-content">
@@ -188,6 +192,10 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+            <div class="agende-agora">
+            <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
+
+        </div>
     </section>
 </body>
 <?php include ("./inc/footer.php") ?>
