@@ -10,14 +10,6 @@
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
-.fa-solid{
-    color: white; 
-    display:none;
-    transform: rotate(49deg);
-    width: 20px; 
-    height: 20px; 
-    font-size: 15px;
-}
 body {
     background-color: #FFD371;
 }
@@ -58,7 +50,7 @@ body {
     background-repeat: no-repeat;
 }
 .blue-div-resp{
-    display: flex; /*responsividade arrumar*/
+    display: none; /*responsividade arrumar*/
 }
 
 .title-blue-div1 {

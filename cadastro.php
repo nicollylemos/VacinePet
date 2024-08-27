@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/cadastrar.css">
-    <link rel="stylesheet" href="css/css/responsividade/telacadastrarr.css">
+    <link rel="stylesheet" href="css/css/responsividade/telacadastra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
@@ -23,7 +23,7 @@
         <div class="blue-div">
             <h4 class="title-blue-div1">
                 VacinePet
-                <i class="fa-solid fa-paw fa-rotate-by"></i>
+                <i class="fa-solid fa-paw fa-rotate-by" style=" color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
             </h4>
             <h1 class="title-blue-div2">Bem-vindo,</h1>
             <h3 class="title-blue-div3">
@@ -35,11 +35,11 @@
         <div class="blue-div-resp">
             <h4 class="title-blue-div1">
                 VacinePet
-                <i class="fa-solid fa-paw fa-rotate-by"></i>
+                <i class="fa-solid fa-paw fa-rotate-by" style=" display: none; color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
             </h4>
             <h1 class="title-blue-div2 titulo">Bem-vindo,</h1>
             <h3 class="title-blue-div3 titulo">
-                Agende a vacinação do seu pet <br> com praticidade e segurança.<br>
+                Agende a vacinação do seu pet com praticidade e segurança.<br>
                 Cadastre-se agora!
             </h3>
         </div>
