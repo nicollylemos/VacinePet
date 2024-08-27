@@ -14,7 +14,7 @@
     .form{
         position: relative;
         margin-left: -34%;
-        margin-top: -15%;
+        margin-top: 5%;
     }
     .form-control{
         width: 245px;
@@ -28,6 +28,10 @@
         width: 150px;
         margin-left: 10%;
         margin-bottom: 15%;
+    }
+    .form-control1{
+        position: relative;
+        left: -8%;
     }
     .container{
         margin-top: 100%;
@@ -69,7 +73,7 @@
     }
 
 }
-@media (min-width:350px) and (max-width: 400px){
+@media (min-width:350px) and (max-width: 375px){
     body{
         background-color: #52bacb;
         background-image: url('./imgs/cadresp.jpg');
@@ -84,7 +88,7 @@
     }
     .form{
         position: relative;
-        margin-left: -30%;
+        margin-left: -31%;
         margin-top: 18%;
     }
     .form-control{
@@ -102,8 +106,95 @@
     }
     .container{
         position: absolute;
-        margin-top: 340px;
-        height: 800px;
+        margin-top: 375px;
+        height: 900px;
+        width: 100%;
+        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+    }
+    .blue-div-resp{
+        margin-top: -175px;
+    }
+    .title-blue-div1{
+        font-size: 19px;
+    }
+    .title-blue-div2{
+        margin-top: 0%;
+        font-size: 27px;
+    }
+    .title-blue-div3{
+        font-size: 15px;
+    }
+    .btn-perso {
+        position: relative;
+        font-family: 'baloo';
+        width: 150px;
+        color: white;
+        margin-left: 10%;
+        margin-bottom: -100%;
+    }
+    .btn-cad{
+        position: relative;
+        align-items: center;
+        margin-left: -25%;
+    }
+    .quad-blue{
+        position: relative;
+        margin-left: 0%;
+        margin-bottom: 15%;
+    }
+    #msg{
+        height: 100px;
+    }
+    .div-botoes2{
+        position: relative;
+        left: 10%;
+    }
+    #btn-etapa4{
+        top: -60px;
+    }
+    #btn-btn-etapa4{
+        top: -15px;
+    }    /* Arrumar botões */
+
+}
+@media (min-width:375px) and (max-width: 400px){
+    body{
+        background-color: #52bacb;
+        background-image: url('./imgs/cadresp.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+    .blue-div{
+        display: none;
+    }
+    .title-title{
+        display: none;
+    }
+    .form{
+        position: relative;
+        margin-left: -30%;
+        margin-top: 10%;
+    }
+    .form-control{
+        width: 285px;
+        height: 42px;
+    }
+    .sub-title-title{
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        width: 150px;
+        margin-left: 10%;
+        margin-bottom: 15%;
+    }
+    .container{
+        position: absolute;
+        margin-top: 330px;
+        height: 900px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
@@ -172,7 +263,7 @@
     .form{
         position: relative;
         margin-left: -33%;
-        margin-top: 23%;
+        margin-top: 13%;
     }
     .form-control{
         width: 335px;
@@ -185,12 +276,12 @@
         position: relative;
         width: 150px;
         margin-left: 20%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
     .container{
         position: absolute;
-        margin-top: 375px;
-        height: 800px;
+        margin-top: 250px;
+        height: 900px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
@@ -222,7 +313,7 @@
         width: 150px;
         color: white;
         margin-left: 20%;
-        margin-bottom: -75%;
+        margin-bottom: -95%;
     }
     .btn-cad{
         position: relative;
@@ -264,7 +355,7 @@
         margin-top: 10%;
     }
     .form-control{
-        width: 370px;
+        width: 380px;
         height: 45px;
     }
     .sub-title-title{
@@ -278,8 +369,8 @@
     }
     .container{
         position: absolute;
-        margin-top: 405px;
-        height: 800px;
+        margin-top: 445px;
+        height: 900px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
@@ -355,7 +446,7 @@
     .form{
         position: relative;
         margin-left: -31%;
-        margin-top: 25%;
+        margin-top: 10%;
     }
     .form-control{
         width: 410px;
@@ -372,8 +463,8 @@
     }
     .container{
         position: absolute;
-        margin-top: 440px;
-        height: 800px;
+        margin-top: 465px;
+        height: 910px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
@@ -449,7 +540,7 @@
     .form{
         position: relative;
         margin-left: -30%;
-        margin-top: 25%;
+        margin-top: 10%;
     }
     .form-control{
         width: 410px;
@@ -466,8 +557,8 @@
     }
     .container{
         position: absolute;
-        margin-top: 450px;
-        height: 800px;
+        margin-top: 475px;
+        height: 915px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
@@ -546,10 +637,10 @@
     .form{
         position: relative;
         margin-left: -30%;
-        margin-top: 25%;
+        margin-top: 10%;
     }
     .form-control{
-        width: 410px;
+        width: 455px;
         height: 40px;
     }
     .sub-title-title{
@@ -563,8 +654,8 @@
     }
     .container{
         position: absolute;
-        margin-top: 460px;
-        height: 800px;
+        margin-top: 490px;
+        height: 920px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
         border-top-right-radius: 25px; /* Arredonda o canto superior direito */
@@ -661,7 +752,7 @@
    }
    .form{
     position: relative;
-    top: 23%;
+    top: 20%;
    }
    .form-control{
     position: relative;
@@ -670,13 +761,45 @@
     left: 7%;
    }
    .container{
-    height: 1020px;
+    height: 1050px;
    }
    .btn-cad{
     position: relative;
     margin-top: -135%;
     left: -38%;
     width: 130px;
+   }
+   .btn-perso{
+    width: 130px;
+   }
+   .btn-custom{
+    width: 130px;
+   }
+   .div-botoes{
+    position: relative;
+    bottom: -25px;
+   }
+   .quad-blue{
+    position: relative;
+    left: -20%;
+   }
+   .title-sucesso{
+    position: relative;
+    left: 5%;
+    width: 300px;
+   }
+   .p{
+    position: relative;
+    left: 5%;
+    width: 250px;
+   }
+   .div-botoes2{
+    position: relative;
+    left: 5%;
+   }
+   #etapa6{
+    position: relative;
+    top: 30px;
    }
 }
 @media (min-width:620px) and (max-width: 690px){
