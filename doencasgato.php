@@ -78,7 +78,7 @@ include("./inc/header.php");
                                 <!-- futuro php-->CORONAVIROSE
                             </h3>
                             <div class="textinhos">
-                                <p class="description">Aqui está o texto combinado:
+                                <p class="description">
 
                                     A coronavirose canina é uma doença viral altamente contagiosa que acomete
                                     principalmente os intestinos, causando diarreia e vômito. Ela afeta frequentemente
@@ -197,6 +197,7 @@ include("./inc/header.php");
 
         </div>
     </section>
+    
 </body>
 <?php include ("./inc/footer.php") ?>
 <!--scroll JS-->

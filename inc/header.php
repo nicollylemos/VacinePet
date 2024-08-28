@@ -107,7 +107,7 @@
             position: relative;
             flex-direction: column;
             align-items: flex-start;
-            z-index: 80;
+            z-index: 1000;
         }
 
         .topnav.responsive .menu {
