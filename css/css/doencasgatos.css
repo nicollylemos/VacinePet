@@ -12,52 +12,60 @@
 }
 
 .start {
-    background-image: url(img/gatofundo.png);
+    background-image: url(img/fundo-cat.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0;
+    margin-top: -6%;
     width: 100%;
     height: 100vh;
+}
+.subtitle{
+    text-align: center;
+    font-family: league;
+    font-size: 20px;
+    color: #3b3b3b;
 }
 
 .escritos {
     top: 12%;
-    margin-left: 10%;
+    margin-left: 45%;
     position: relative;
     width: 45%;
 }
 .title-start {
-    color: #F7D577;
+    color: #ffd371;
     font-family: baloo;
     font-size: 85px;
     position: relative;
     z-index: 1;
-    line-height: 0.9; 
+    line-height: 0.85; 
 }
 .sub-title-start {
-    color: #3b3b3b;
+    color: white;
     font-family: baloo;
     font-size: 20px;
+    position: relative;
+    margin-top: -9%;
 }
 #doencas {
     background-color: rgb(255, 255, 255);
-    height: 600px;
+    height: 770px;
 }
 .btn-start {
     position: relative;
     font-family: baloo;
-    font-size: 25px;
-    background-color: #F7D577;
-    border: 1px solid #F7D577;
+    font-size: 23px;
+    background-color: transparent; /* Fundo transparente */
+    border: 3px solid #ffcf67; /* Borda laranja */
     border-radius: 20px;
-    width: 220px;
-    color:#2FA8BB;
-    margin-top: 5px;
+    width: 200px;
+    color: #ffcf67; /* Texto laranja */
 }
+
 .btn-start:hover {
-    background-color: #f8e09f;
-    border-color: #f8e09f;
+    background-color: #fddf9d;
+    border-color: #fddf9d;
 }
 
 
@@ -82,55 +90,32 @@
     border-radius: 25px;
     background-color: #ffffff;
     height: 900px;
+    border-color: #FD811C;
 
 }
-
-.image-content,
 .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
-}
-
-.card-image {
-    position: relative;
-    height: 55px;
-    width: 55px;
-    padding: 3px;
-}
-
-.card-image .card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: #FD811C solid 6px; /* bolinha furada */
+    margin-top: 33%;
+    height: 300px;
 }
 
 .slide-container {
     width: 100%;
-    padding: 40px 0;
-}
-
-.image-content {
-    position: relative;
-    row-gap: 5px;
-    border-radius: 25px 25px 0 25px;
-    padding: 25px 0;
 }
 
 .nome-vacina {
     font-family: baloo;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
-    color: #52BACB;
+    color: #FD811C;
     position: relative;
     bottom: 55px;
     text-align: center;
     align-items: center;
 }
-
 .description {
     font-size: 14px;
     color: #707070;
@@ -145,14 +130,8 @@
 }
 
 .swiper {
-    width: 30%;
+    width: 95%;
 }
-
-.btn-img {
-    z-index: auto;
-    position: absolute;
-}
-
 .valor {
     font-size: 30px;
     font-family: baloo;
@@ -161,24 +140,54 @@
 }
 
 .btn-vacinas {
-    background-color: #52BACB;  
+    background-color: #FD811C;
     color: #fff;
     font-weight: 500;
     border-radius: 15px;
     font-size: 18px;
     padding: 8px;
-    width: 250px;
+    width: 90px;
+    height: 40px;
+    border: none;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 45px;
+    align-items: center;
+}
+.btn-vacinas:hover{
+    background-color: #ffae6b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px;
+    width: 90px;
+    height: 40px;
     border: none;
     font-family: baloo;
     letter-spacing: 1px;
     position: relative;
     bottom: 45px;
 }
+.titulo-vacina h2 {
+    text-align: center;
+    align-items: center;
+    font-family: baloo;
+    font-weight: 800;
+    color: #52BACB;
+    margin: 35px;
+    font-size: 45px;
+    height: 70px;
+    margin-top: 3%;
+}
+.textinhos{
+    height: 300px;
+}
 
 
 /* bolinhas*/
 .orange-balls{
-    background-color:  #FFD271;
+    background-color: #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -186,7 +195,7 @@
     margin-top: -4%;
 }
 .orange-balls1{
-    background-color:  #FFD271;
+    background-color:  #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -194,7 +203,7 @@
     margin-top: 3%;
 }
 .orange-balls2{
-    background-color:  #FFD271;
+    background-color:  #FD811C;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -202,7 +211,7 @@
     margin-top: 3%;
 }
 .blue-balls{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 39px;
     height: 39px;
     border-radius: 50%;
@@ -210,7 +219,7 @@
     margin-top: -8%;
 }
 .blue-balls1{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 27px;
     height: 27px;
     border-radius: 50%;
@@ -218,7 +227,7 @@
     margin-top: 2%;
 }
 .blue-balls2{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 43px;
     height: 43px;
     border-radius: 50%;
@@ -226,7 +235,7 @@
     margin-top: 0%;
 }
 .blue-balls3{
-    background-color:#FD811C;
+    background-color:#52BACB;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -238,7 +247,7 @@
     width: 50px;
     object-fit: cover;
     border-radius: 50%;
-    border: #FD811C solid 6px;
+    border: #52BACB solid 6px;
     margin-left: 81%;
     margin-top: -8%;
 }
@@ -247,8 +256,33 @@
     width: 42px;
     object-fit: cover;
     border-radius: 50%;
-    border: #FD811C solid 6px;
+    border: #52BACB solid 6px;
     margin-left:92%;
     margin-top: -2%;
+}
+
+
+.btn-custom {
+  
+    position: relative;
+    font-family: baloo;
+    font-size: 20px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    margin-bottom: 100px;
+    left: 42%; 
+    top: 100px;
+    width: 200px;
+    animation: pulsate 3s infinite; /* Aplicando a animação */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.btn-custom:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+    animation: none; /* Parando a animação ao passar o mouse */
 }
 
