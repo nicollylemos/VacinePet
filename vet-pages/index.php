@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/vetedrmo.css" />
+    <link rel="stylesheet" href="../css/css/vetdmon.css" />
     <title>VacinePet</title>
 </head>
 
@@ -122,9 +122,18 @@
         <button class="close" onclick=" modalEdit.close()">Fechar</button>
     </dialog>
     <dialog class="modal" id="modalCheck">
-        <h1>Alterar Situação</h1>
-        <button class="save">Salvar</button>
-        <button class="close" onclick=" modalCheck.close()">Fechar</button>
+        <div class="modalCheck">
+            <h1>Alterar Situação</h1>
+            <p>Este agendamento está atualmente pendente.</p>
+            <div class="alt-situ">
+                <select>
+                    <option value="1">Finalizado</option>
+                    <option value="2">Cancelado</option>
+                </select>
+            </div>
+            <button class="save">Salvar</button>
+            <button class="close" onclick=" modalCheck.close()">Fechar</button>
+        </div>
     </dialog>
 </body>
 

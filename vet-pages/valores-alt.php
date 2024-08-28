@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/vetedrmo.css" />
+    <link rel="stylesheet" href="../css/css/vetdmon.css" />
     <title>VacinePet</title>
 </head>
 
@@ -23,54 +23,31 @@
             <div class="container-tabela">
                 <div class="content">
                     <h1> Alteração de Valores</h1>
-                    <div class="table">
-                        <table>
-                            <tr>
-                                <th class="id">Id</th>
-                                <th>Vacina</th>
-                                <th>Tipo</th>
-                                <th>Valor</th>
-                                <th>...</th>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Polivalente</td>
-                                <td>Cachorro</td>
-                                <td>149,00</td>
-                                <td>
-                                    <button>
-                                        Alterar
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2025</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos</td>
-                                <td>Bagu
-                                </td>
-                                <td>Pendente</td>
-                                <td>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2025</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos da Silva Oliveira Santos Raimunda</td>
-                                <td>Bagu Lemos</td>
-                                <td>Pendente</td>
-                                <td>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                        </table>
+                    <div class="valores">
+                        <div class="container-valores vac-cat">
+                            <div class="id">01</div>
+                            <div>V4</div>
+                            <div>Gato</div>
+                            |
+                            <div>149,99</div>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="container-valores vac-dog">
+                            <div class="id">02</div>
+                            <div>V8</div>
+                            <div>Cachorro</div>
+                            |
+                            <div>149,99</div>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </div>
+                        <div class="container-valores vac-cat">
+                            <div class="id">03</div>
+                            <div>Antirrábica</div>
+                            <div>Cachorro</div>
+                            |
+                            <div>149,99</div>
+                            <i class="fa-solid fa-pen-to-square icone"></i>
+                        </div>
                     </div>
                 </div>
             </div>
