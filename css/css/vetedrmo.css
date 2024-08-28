@@ -150,6 +150,7 @@ table th:nth-child(5), table td:nth-child(5) {
     font-weight: 600;
     color: var(--title-color);
     text-align: center;
+    margin-bottom: 15px;
 }
 
 
@@ -158,12 +159,12 @@ table th:nth-child(5), table td:nth-child(5) {
     border: 3.5px solid var(--primary-clr);
     color: var(--primary-clr);
     font-weight: 600; 
-    border-radius: 8px;
+    border-radius: 10px;
     width: 70%;
     font-size: 15px;
     cursor: pointer;
     height: 35px;
-    top: 60%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
     position: relative;
@@ -185,6 +186,25 @@ table th:nth-child(5), table td:nth-child(5) {
     border: none;
 }
 
+.modal .infos .dados
+{
+    margin-top:5px;
+    display: inline-block;
+}
+
+.modal .infos .obv{
+    border: 2px solid #b8b7b7;
+    border-radius: 20px;
+    height: 120px;
+    padding-left: 6px;
+}
+.modal .infos .obv-title{
+    color:#787575;
+    font-size: 13px;
+}
+.modal .infos .txt{
+    font-size: 14px;
+}
 .modal .close:hover{
     color: var(--primary-hover);
     border-color: var(--primary-hover);

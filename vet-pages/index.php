@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/vetedm.css" />
+    <link rel="stylesheet" href="../css/css/vetedrmo.css" />
     <title>VacinePet</title>
 </head>
 
@@ -86,7 +86,31 @@
     </section>
     <dialog class="modal" id="modalView">
         <h1>Visualizar</h1>
+        <div class="infos">
+            <div>
+                <div class="tp-dados">Nome do Tutor:</div>
+                <p>Nicolly Lemos</p>
+            </div>
+            <div>
+                <div class="tp-dados">Nome do Pet:</div>
+                <p>Bagu Lemos
+                </p>
+            </div>
+            <div>
+                <div class="tp-dados">Data do Atendimento:</div>
+                <p>28/06/2024</p>
+            </div>
+            <div class="tp dados">Horário:</div>
+            <div class="dados"> 16:00</div>
+            <div class="tp dados">Endereço:</div>
+            <div class="dados"> Rua Benedito de Almeida</div>
+            <div class="obv">
+                <div class="obv-title">Observações:</div>
+                <div class="txt">Ele é fofo</div>
+            </div>
+        </div>
         <button class="close" onclick=" modalView.close()">Fechar</button>
+
     </dialog>
     <dialog class="modal" id="modalEdit">
         <h1>Editar</h1>
