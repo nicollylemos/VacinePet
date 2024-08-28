@@ -100,13 +100,17 @@
                 <div class="tp-dados">Data do Atendimento:</div>
                 <p>28/06/2024</p>
             </div>
-            <div class="tp dados">Horário:</div>
-            <div class="dados"> 16:00</div>
-            <div class="tp dados">Endereço:</div>
-            <div class="dados"> Rua Benedito de Almeida</div>
+            <div>
+                <div class="tp-dados">Horário:</div>
+                <p>16:00</p>
+            </div>
+            <div>
+                <div class="tp-dados">Endereço:</div>
+                <p>Rua Benedito de Almeida</p>
+            </div>
             <div class="obv">
                 <div class="obv-title">Observações:</div>
-                <div class="txt">Ele é fofo</div>
+                <div class="txt">Ele é fofo e lindooo</div>
             </div>
         </div>
         <button class="close" onclick=" modalView.close()">Fechar</button>

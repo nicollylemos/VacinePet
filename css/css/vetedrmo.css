@@ -134,7 +134,7 @@ table th:nth-child(5), table td:nth-child(5) {
 }
 .modal {
     width: 380px;
-    height: 450px;
+    height: 490px;
     background-color: #ffffff;
     border-radius: 20px;
     padding: 20px;
@@ -147,10 +147,12 @@ table th:nth-child(5), table td:nth-child(5) {
 .modal h1{
     font-size: 25px;
     margin-top: 10px;
-    font-weight: 600;
     color: var(--title-color);
-    text-align: center;
     margin-bottom: 15px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2px;
+    font-weight: 700;
 }
 
 
@@ -186,20 +188,24 @@ table th:nth-child(5), table td:nth-child(5) {
     border: none;
 }
 
-.modal .infos .dados
-{
+.modal .infos .tp-dados{
     margin-top:5px;
     display: inline-block;
+    font-weight: 600;
 }
-
+.modal .infos p{
+    display: inline-block;
+}
 .modal .infos .obv{
-    border: 2px solid #b8b7b7;
+    border: 1.5px solid #bdbdbd;
     border-radius: 20px;
     height: 120px;
-    padding-left: 6px;
+    padding-left: 9px;
+    margin-top: 10px;
+    padding-top: 5px;
 }
 .modal .infos .obv-title{
-    color:#787575;
+    color:#bdbdbd;
     font-size: 13px;
 }
 .modal .infos .txt{
