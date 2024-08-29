@@ -8,6 +8,8 @@ include("./inc/header.php");
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/dogdoencas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
@@ -37,7 +39,8 @@ include("./inc/header.php");
         <div class="space"></div>
         <div class="titulo-vacina">
             <h2>DOENÇAS CANINAS</h2>
-            <p class="subtitle">Conheça as principais doenças caninas e agende a vacinação com o veterinário<br> para garantir a saúde e bem-estar do seu pet.</p>
+            <p class="subtitle">Conheça as principais doenças caninas e agende a vacinação com o veterinário<br> para
+                garantir a saúde e bem-estar do seu pet.</p>
         </div>
         <div class="slide-container swiper">
             <div class="slide-content">
@@ -54,8 +57,11 @@ include("./inc/header.php");
                                     nasais e oculares,
                                     tosse e espirros de um outro animal infectado... </p>
                             </div>
-                            <a href="#"><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                        style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button></a>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalCinomose">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
+
                         </div>
                     </div>
                     <div class=" card swiper-slide">
@@ -68,8 +74,10 @@ include("./inc/header.php");
                                     mortalidade, causada por bactérias que também podem infectar os humanos. A
                                     transmissão se dá principalmente pelo contato com a urina...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalLeptospirose">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class=" card swiper-slide">
@@ -85,8 +93,10 @@ include("./inc/header.php");
                                     animais mais jovens e pode também comprometer o sistema respiratório. Um dos
                                     principais...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalCoronavirose">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class=" card swiper-slide">
@@ -100,8 +110,10 @@ include("./inc/header.php");
                                     aparelho digestivo e o sistema imunológico dos cães. A transmissão ocorre através do
                                     contato direto com fezes ou vômitos infectados...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalParvovirose">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -114,8 +126,10 @@ include("./inc/header.php");
                                     fígado, causada por um vírus agressivo, transmitida pelas descargas orais e nasais,
                                     fezes e pelo contato com o ambiente...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalHepatite">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -128,9 +142,10 @@ include("./inc/header.php");
                                     tratado, pode levar a complicações como as pneumonias. A transmissão se dá pelo
                                     contato direto entre cães, onde os...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
-                        </div>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalAdenovirose">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                     </div>
                     <div class="card swiper-slide">
                         <div class="card-content">
@@ -142,8 +157,10 @@ include("./inc/header.php");
                                     transmissão acontece quando animais doentes tossem, espirram ou quando um cão
                                     saudável tem contato com objetos de um animal doente...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalParainfluenza">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -156,8 +173,10 @@ include("./inc/header.php");
                                     traqueobronquite infecciosa canina, é uma doença altamente contagiosa, causada pela
                                     bactéria Bordetella bronchiseptica, também podendo ter...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalTosse">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -170,8 +189,10 @@ include("./inc/header.php");
                                     importantes porque é uma zoonose fatal. Geralmente é transmitida por meio da mordida
                                     de um animal infectado (que pode ser um cão ou um gato) ou...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalRaiva">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -184,8 +205,10 @@ include("./inc/header.php");
                                     protozoário Giardia lamblia, que vive no intestino delgado dos cães. É altamente
                                     contagiosa. Pode ser transmitida dos cães para outros animais domésticos...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                data-bs-target="#modalGiardiase">
+                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -193,12 +216,56 @@ include("./inc/header.php");
                 <div class="swiper-button-next"></div>
             </div>
             <div class="agende-agora">
-            <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
+                <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
-        </div>
+            </div>
     </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalCinomose" tabindex="-1" aria-labelledby="modalDoencaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDoencaLabel">CINOMOSE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A cinomose é um dos maiores pesadelos dos tutores de cães, é uma doença altamente infecciosa e
+                    frequentemente fatal causada por um vírus.
+                    <br><br>
+                    A doença afeta principalmente os sistemas respiratório, gastrointestinal e nervoso central dos cães,
+                    causando sintomas graves e, em muitos casos, levando à morte.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLeptospirose" tabindex="-1" aria-labelledby="modalDoencaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDoencaLabel">CINOMOSE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    A cinomose é um dos maiores pesadelos dos tutores de cães, é uma doença altamente infecciosa e
+                    frequentemente fatal causada por um vírus.
+                    <br><br>
+                    A doença afeta principalmente os sistemas respiratório, gastrointestinal e nervoso central dos cães,
+                    causando sintomas graves e, em muitos casos, levando à morte.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
-<?php include ("./inc/footer.php") ?>
+<?php include("./inc/footer.php") ?>
 <!--scroll JS-->
 <script src="js/scroll.js"></script>
 <!--swiper JS -->

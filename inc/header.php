@@ -147,13 +147,13 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="index.php" class="logo">VacinePet<i class="fa-solid fa-paw fa-rotate-by"
+        <a href="/VacinePet/index.php" class="logo">VacinePet<i class="fa-solid fa-paw fa-rotate-by"
                 style="color: #FA5909; --fa-rotate-angle: 49deg; width: 20px; height: 20px; font-size: 15px;"></i></a>
         <div class="menu">
-            <a href="index.php" class="home active">Início</a>
-            <a href="agendamento.php">Agendamento</a>
-            <a href="infos-page/sobre-vacinepet.php">Sobre</a>
-            <a href="infos-page/sobre-profissional.php">Profissional</a>
+            <a href="/VacinePet/index.php" class="home active">Início</a>
+            <a href="/VacinePet/agendamento.php">Agendamento</a>
+            <a href="/VacinePet/infos-page/sobre-vacinepet.php">Sobre</a>
+            <a href="/VacinePet/infos-page/sobre-profissional.php">Profissional</a>
 
         </div>
         <div class="buttons">
