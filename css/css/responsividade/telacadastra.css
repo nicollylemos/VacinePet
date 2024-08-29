@@ -34,7 +34,7 @@
         left: -8%;
     }
     .container{
-        margin-top: 100%;
+        margin-top: 335px;
         height: 850px;
         width: 100%;
         position: absolute;
@@ -106,7 +106,7 @@
     }
     .container{
         position: absolute;
-        margin-top: 375px;
+        margin-top: 390px;
         height: 900px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
@@ -193,7 +193,7 @@
     }
     .container{
         position: absolute;
-        margin-top: 330px;
+        margin-top: 400px;
         height: 900px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
@@ -280,7 +280,7 @@
     }
     .container{
         position: absolute;
-        margin-top: 250px;
+        margin-top: 430px;
         height: 900px;
         width: 100%;
         border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
@@ -802,189 +802,142 @@
     top: 30px;
    }
 }
-@media (min-width:620px) and (max-width: 690px){
-    body{
-        background-color: #FFD371;
+@media (min-width:620px) and (max-width: 767px){
+    .blue-div{
+        width: 200px;
+       }
+       .title-blue-div1{
+            position: relative;
+            top: 23%;
+       }
+       .title-title{
+        position: relative;
+        font-size: 50px;
+        left: 7%;
+       }
+       .titulo{
+        display: none;
+       }
+       .sub-title-title{
+        position: relative;
+        font-size: 15px;
+        width: 330px;
+        left: 7%;
+       }
+       .title-blue-div2{
+        position: relative;
+        top: 33%;
+        width: 180px;
+       }
+       .title-blue-div3{
+        position: relative;
+        top: 33%;
+        width: 180px;
+       }
+       .form{
+        position: relative;
+        top: 20%;
+       }
+       .form-control{
+        position: relative;
+        width: 250px;
+        height: 45px;
+        left: 7%;
+       }
+       .container{
+        height: 1050px;
+       }
+       .btn-cad{
+        position: relative;
+        margin-top: -135%;
+        left: -38%;
+        width: 130px;
+       }
+       .btn-perso{
+        width: 130px;
+       }
+       .btn-custom{
+        width: 130px;
+       }
+       .div-botoes{
+        position: relative;
+        bottom: -25px;
+       }
+       .quad-blue{
+        position: relative;
+        left: -20%;
+       }
+       .title-sucesso{
+        position: relative;
+        left: 5%;
+        width: 300px;
+       }
+       .p{
+        position: relative;
+        left: 5%;
+        width: 250px;
+       }
+       .div-botoes2{
+        position: relative;
+        left: 5%;
+       }
+       #etapa6{
+        position: relative;
+        top: 30px;
+       }
+}
+@media (min-width:768px) and (max-width: 991px){
+    .blue-div{
+        width: 230px;
     }
     .form-control{
+        width: 200px;
+    }
+    .title-blue-div1{
         position: relative;
-        left: 10%;
-        bottom: 25%;
-        width: 235px;
-        height: 40px;
-    }
-    .container{
-        position: relative;
-        height: 870px;
-        width: 100%;
-    }
-    .blue-div{
-        width: 215px;
-        height: 870px;
-    }
-    .blue-div-resp{
-        display: none;
-    }   
-    .imagem{
-        display: none;
+        top: 20px;
     }
     .title-title{
-        font-size: 50px;
-        position: relative;
-        left: 9%;
+        font-size: 53px;
     }
     .sub-title-title{
-        position: relative;
-        left: 10%;
-        font-size: 11px;
-    }
-    .sub1{
-        position: relative;
-        left: 4%;
-        font-size: 11px;
-    }
-    .bola{
-        display: none;
+        font-size: 16px;
     }
     .btn-cad{
-        width: 130px;
-        margin-top: -150%;
-        margin-left: -35%;
-    }
-    .btn-custom{
-        width: 120px;
-        margin-bottom: 10%;
-    }
-    .form-control1{
         position: relative;
-        left: 9%;
+        left: -25%;
     }
-    #btn-etapa4{
+    .div-botoes{
         position: relative;
-        top: -95px; 
-    }
-    .label-info{
-        position: relative;
-        left: 15%;
-    }
-    #msg{
-        height: 100px;
+        left: -8%;
+        top: 50px;
     }
     .quad-blue{
         position: relative;
-        left: -19%;
+        left: -10%;
     }
-    .title-sucesso{
-        font-size: 33px;
-        position: relative;
-        left: 4%;
-    }
-    .p{
-        width: 260px;
-        position: relative;
-        left: 12%;
-    }
-    .check{
-        width: 300px;
-        position: relative;
-        left: 5%;
-    }
-    .div-botoes2{
-        position: relative;
-        bottom: -20px;
-        left: 9%;
-    }
-}
-@media (min-width:690px) and (max-width: 750px){
-    body{
-        background-color: #FFD371;
-    }
-    .form-control{
-        position: relative;
-        left: 10%;
-        bottom: 25%;
-        width: 235px;
-        height: 40px;
-    }
-    .container{
-        position: relative;
-        height: 870px;
-        width: 100%;
-    }
-    .blue-div{
-        width: 220px;
-        height: 870px;
-    }
-    .blue-div-resp{
-        display: none;
-    }   
-    .imagem{
-        display: none;
-    }
-    .title-title{
-        font-size: 50px;
-        position: relative;
-        left: 9%;
-    }
-    .sub-title-title{
-        position: relative;
-        left: 10%;
-        font-size: 11px;
-    }
-    .sub1{
-        position: relative;
-        left: 4%;
-        font-size: 11px;
-    }
-    .bola{
-        display: none;
-    }
-    .btn-cad{
-        width: 130px;
-        margin-top: -150%;
-        margin-left: -35%;
-    }
-    .btn-custom{
-        width: 120px;
-        margin-bottom: 10%;
+    .add{
+        width: 420px;
     }
     .form-control1{
         position: relative;
-        left: 9%;
+        left: -36%;
+        font-size: 15px;
+        top: 10px;
     }
-    #btn-etapa4{
+    #etapa4{
         position: relative;
-        top: -95px; 
-    }
-    .label-info{
-        position: relative;
-        left: 15%;
-    }
-    #msg{
-        height: 100px;
-    }
-    .quad-blue{
-        position: relative;
-        left: -19%;
+        left: -3%;
     }
     .title-sucesso{
-        font-size: 33px;
-        position: relative;
-        left: 4%;
-    }
-    .p{
-        width: 260px;
-        position: relative;
-        left: 12%;
-    }
-    .check{
         width: 300px;
-        position: relative;
-        left: 5%;
+    }
+    p{
+        width: 350px;
     }
     .div-botoes2{
         position: relative;
-        bottom: -20px;
-        left: 9%;
+        top: 25px;
     }
 }
+
