@@ -290,3 +290,41 @@
     animation: none; /* Parando a animação ao passar o mouse */
 }
 
+/*MODAL*/
+/* Centralizar o texto no corpo do modal */
+.modal-body {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Garantir que o conteúdo do modal não ocupe a tela inteira */
+.modal-content {
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: auto;
+}
+
+/* Adicionar algum espaçamento entre as linhas para melhor legibilidade */
+.modal-body p {
+    margin-bottom: 1.5em;
+}
+
+/* Estilizar o título do modal para se destacar */
+.modal-title {
+    text-align: center;
+    font-size: 1.5em;
+    color: #FD811C;
+    font-family: baloo;
+}
+.btn-fechar{
+    background-color: #52BACB;
+    color: #ffffff;
+    
+}
+.btn-fechar:hover{
+    background-color: #48a1af;
+    color: #ffffff;
+}
+
+
+
+

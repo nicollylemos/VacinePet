@@ -59,7 +59,8 @@ include("./inc/header.php");
                             </div>
                             <button type="button" class="btn-vacinas" data-bs-toggle="modal"
                                 data-bs-target="#modalCinomose">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                <i class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
                             </button>
 
                         </div>
@@ -76,7 +77,8 @@ include("./inc/header.php");
                             </div>
                             <button type="button" class="btn-vacinas" data-bs-toggle="modal"
                                 data-bs-target="#modalLeptospirose">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                <i class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
                             </button>
                         </div>
                     </div>
@@ -86,16 +88,15 @@ include("./inc/header.php");
                                 <!-- futuro php-->CORONAVIROSE
                             </h3>
                             <div class="textinhos">
-                                <p class="description">Aqui está o texto combinado:
-
-                                    A coronavirose canina é uma doença viral altamente contagiosa que acomete
-                                    principalmente os intestinos, causando diarreia e vômito. Ela afeta frequentemente
-                                    animais mais jovens e pode também comprometer o sistema respiratório. Um dos
-                                    principais...
+                                <p class="description">A cinomose é um dos maiores pesadelos dos tutores de cães, é uma
+                                    doença altamente infecciosa e frequentemente fatal causada por um vírus. A
+                                    transmissão ocorre pelo contato direto com secreções nasais e oculares, tosse e
+                                    espirros de um outro animal infectado
                             </div>
                             <button type="button" class="btn-vacinas" data-bs-toggle="modal"
                                 data-bs-target="#modalCoronavirose">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                <i class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
                             </button>
                         </div>
                     </div>
@@ -112,7 +113,8 @@ include("./inc/header.php");
                             </div>
                             <button type="button" class="btn-vacinas" data-bs-toggle="modal"
                                 data-bs-target="#modalParvovirose">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                <i class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
                             </button>
                         </div>
                     </div>
@@ -128,7 +130,8 @@ include("./inc/header.php");
                             </div>
                             <button type="button" class="btn-vacinas" data-bs-toggle="modal"
                                 data-bs-target="#modalHepatite">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                <i class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
                             </button>
                         </div>
                     </div>
@@ -144,83 +147,91 @@ include("./inc/header.php");
                             </div>
                             <button type="button" class="btn-vacinas" data-bs-toggle="modal"
                                 data-bs-target="#modalAdenovirose">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
-                            </button>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="card-content">
-                            <h3 class="nome-vacina">
-                                <!-- futuro php-->PARAINFLUENZA
-                            </h3>
-                            <div class="textinhos">
-                                <p class="description">O vírus da parainfluenza é um parente do vírus da gripe humana. A
-                                    transmissão acontece quando animais doentes tossem, espirram ou quando um cão
-                                    saudável tem contato com objetos de um animal doente...
-                            </div>
-                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
-                                data-bs-target="#modalParainfluenza">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                <i class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
                             </button>
                         </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="card-content">
-                            <h3 class="nome-vacina">
-                                <!-- futuro php-->TOSSE DOS CANIS
-                            </h3>
-                            <div class="textinhos">
-                                <p class="description">A tosse dos canis, também conhecida como gripe canina ou
-                                    traqueobronquite infecciosa canina, é uma doença altamente contagiosa, causada pela
-                                    bactéria Bordetella bronchiseptica, também podendo ter...
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h3 class="nome-vacina">
+                                    <!-- futuro php-->PARAINFLUENZA
+                                </h3>
+                                <div class="textinhos">
+                                    <p class="description">O vírus da parainfluenza é um parente do vírus da gripe
+                                        humana. A
+                                        transmissão acontece quando animais doentes tossem, espirram ou quando um cão
+                                        saudável tem contato com objetos de um animal doente...
+                                </div>
+                                <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                    data-bs-target="#modalParainfluenza">
+                                    <i class="fa-solid fa-angle-down"
+                                        style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                </button>
                             </div>
-                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
-                                data-bs-target="#modalTosse">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
-                            </button>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h3 class="nome-vacina">
+                                    <!-- futuro php-->TOSSE DOS CANIS
+                                </h3>
+                                <div class="textinhos">
+                                    <p class="description">A tosse dos canis, também conhecida como gripe canina ou
+                                        traqueobronquite infecciosa canina, é uma doença altamente contagiosa, causada
+                                        pela
+                                        bactéria Bordetella bronchiseptica, também podendo ter...
+                                </div>
+                                <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                    data-bs-target="#modalTosse">
+                                    <i class="fa-solid fa-angle-down"
+                                        style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h3 class="nome-vacina">
+                                    <!-- futuro php-->RAIVA
+                                </h3>
+                                <div class="textinhos">
+                                    <p class="description">A raiva é uma das doenças infecciosas de cães e gatos mais
+                                        importantes porque é uma zoonose fatal. Geralmente é transmitida por meio da
+                                        mordida
+                                        de um animal infectado (que pode ser um cão ou um gato) ou...
+                                </div>
+                                <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                    data-bs-target="#modalRaiva">
+                                    <i class="fa-solid fa-angle-down"
+                                        style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="card-content">
+                                <h3 class="nome-vacina">
+                                    <!-- futuro php-->GIARDÍASE
+                                </h3>
+                                <div class="textinhos">
+                                    <p class="description">A giardíase é uma doença causada por um parasita, o
+                                        protozoário Giardia lamblia, que vive no intestino delgado dos cães. É altamente
+                                        contagiosa. Pode ser transmitida dos cães para outros animais domésticos...
+                                </div>
+                                <button type="button" class="btn-vacinas" data-bs-toggle="modal"
+                                    data-bs-target="#modalGiardiase">
+                                    <i class="fa-solid fa-angle-down"
+                                        style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="card-content">
-                            <h3 class="nome-vacina">
-                                <!-- futuro php-->RAIVA
-                            </h3>
-                            <div class="textinhos">
-                                <p class="description">A raiva é uma das doenças infecciosas de cães e gatos mais
-                                    importantes porque é uma zoonose fatal. Geralmente é transmitida por meio da mordida
-                                    de um animal infectado (que pode ser um cão ou um gato) ou...
-                            </div>
-                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
-                                data-bs-target="#modalRaiva">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="card-content">
-                            <h3 class="nome-vacina">
-                                <!-- futuro php-->GIARDÍASE
-                            </h3>
-                            <div class="textinhos">
-                                <p class="description">A giardíase é uma doença causada por um parasita, o
-                                    protozoário Giardia lamblia, que vive no intestino delgado dos cães. É altamente
-                                    contagiosa. Pode ser transmitida dos cães para outros animais domésticos...
-                            </div>
-                            <button type="button" class="btn-vacinas" data-bs-toggle="modal"
-                                data-bs-target="#modalGiardiase">
-                                <i class="fa-solid fa-angle-down" style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i>
-                            </button>
-                        </div>
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="agende-agora">
-                <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
+                <div class="agende-agora">
+                    <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
-            </div>
+                </div>
     </section>
-    
+
     <!-- Modal -->
     <div class="modal fade" id="modalCinomose" tabindex="-1" aria-labelledby="modalDoencaLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -230,14 +241,30 @@ include("./inc/header.php");
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    A cinomose é um dos maiores pesadelos dos tutores de cães, é uma doença altamente infecciosa e
-                    frequentemente fatal causada por um vírus.
-                    <br><br>
-                    A doença afeta principalmente os sistemas respiratório, gastrointestinal e nervoso central dos cães,
-                    causando sintomas graves e, em muitos casos, levando à morte.
+                    A doença ataca o sistema digestivo, respiratório e, por fim, o sistema nervoso central, causando
+                    tremores, desorientação e convulsões. Quando o vírus atinge o sistema nervoso central, em geral não
+                    há tratamento efetivo, apenas medidas paliativas, que buscam tratar e melhorar os sintomas.<br> Caso
+                    sobreviva, o animal pode ficar com sequelas para o resto da vida.<br><br>
+
+                    Os sintomas são:
+
+                    Diarreia;
+
+                    Vômito;
+
+                    Corrimento nasal e ocular;
+
+                    Tosse;
+
+                    Tiques nervosos;
+
+                    Convulsões e paralisias.<br><br>
+                    A melhor forma de prevenir a cinomose é por meio da vacinação. Converse com o médico-veterinário e
+                    mantenha a vacinação do seu pet em dia.
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-fechar" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
@@ -258,7 +285,7 @@ include("./inc/header.php");
                     causando sintomas graves e, em muitos casos, levando à morte.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-fechar" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
