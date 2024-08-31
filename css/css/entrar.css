@@ -125,6 +125,11 @@ body {
     font-family: baloo;
     text-decoration: none;
 }
+a{
+    color: #FD811C;
+    font-family: baloo;
+    text-decoration: none;
+}
 
 .cad-text{
     position: relative;

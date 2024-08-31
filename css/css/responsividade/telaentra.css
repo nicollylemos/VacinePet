@@ -1,5 +1,7 @@
 @media (min-width:310px) and (max-width: 350px) {
-
+   html, body {
+      overflow-x: hidden; /* Esconde a rolagem horizontal */
+    }
    body{
     background-color: white;
    }
@@ -8,7 +10,9 @@
       height: 600px;
    }
    .title-login{
-      margin-left:215px;
+      position: relative;
+      top: 20px;
+      left: 230px;
       margin-bottom: 85%;
       font-size: 55px;
    }
@@ -17,7 +21,9 @@
       background-color: white;
    }
    .form-control{
-      margin-left: 215px;
+      position: relative;
+      top: -210px;
+      left: 230px;
       width: 250px;
    }
    .container{
@@ -27,7 +33,10 @@
       margin-left: 250px;
    }
    .cad-text{
-      margin-left: 100px;
+      position: relative;
+      width: 250px;
+      left: -10px;
+      top: -200px;
    }
    .cilindro1{
       background-color: #FFD371;
@@ -55,8 +64,22 @@
    .cilindro4{
       display: none;
    }
+   .esquecer{
+      position: relative;
+      left: 150px;
+      width: 300px;
+      top: -205px;
+   }
+   .btn-custom{
+      position: relative;
+      top: -205px;
+      left: 5px;
+   }
 }
-@media (min-width:350px) and (max-width: 449px){
+@media (min-width:351px) and (max-width: 449px){
+   html, body {
+      overflow-x: hidden; /* Esconde a rolagem horizontal */
+    }
    body{
       background-color: white;
    }
@@ -110,6 +133,9 @@
 
 }
 @media (min-width:450px) and (max-width: 575px){
+   html, body {
+      overflow-x: hidden; /* Esconde a rolagem horizontal */
+    }
    body{
       background: none;
    }
@@ -174,11 +200,14 @@
       margin-top: 6%;
    }
 }
-@media (min-width:700px) and (max-width: 767px){
+@media (min-width:701px) and (max-width: 767px){
    .yellow-div{
       width: 230px;
       background-size: cover;
       background-position: 80%;
+   }
+   .title-login{
+      top: -35px;
    }
    .cilindros{
       display: none;
@@ -212,10 +241,13 @@
    }
    .form{
       margin-left: -6%;
-      margin-top: 8%;
+      margin-top: 4%;
    }
    .cilindros{
       display: none;
+   }
+   .title-login{
+      top: -60px;
    }
 
 }
@@ -273,7 +305,7 @@
       right: -25%;
    }
 }
-@media (min-width:992px) and (max-width: 1080px){
+@media (min-width:993px) and (max-width: 1080px){
    .form-control{
       width: 400px;
    }
@@ -295,12 +327,12 @@
       margin-bottom: 8%;
    }
 }
-@media (min-width:1080px) and (max-width: 1440px){
+@media (min-width:1081px) and (max-width: 1440px){
    .cilindros{
       display: none;
    }
    .title-login{
-      margin-top: 10%;
+      margin-top: 50px;
    }
    .yellow-div{
       width: 380px;
@@ -316,7 +348,7 @@
    }
 
 }
-@media (min-width:1440px) and (max-width: 1920px){
+@media (min-width:1441px) and (max-width: 1920px){
    .cilindros{
       display: none;
    }
@@ -329,7 +361,7 @@
       background-size: cover;
    }
 }
-@media (min-width:1920px) and (max-width: 2560px){
+@media (min-width:1921px) and (max-width: 2560px){
    .cilindros{
       display: none;
    }

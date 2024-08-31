@@ -35,7 +35,7 @@
         <div class="blue-div-resp">
             <h4 class="title-blue-div1">
                 VacinePet
-                <i class="fa-solid fa-paw fa-rotate-by" style=" display: none; color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
+                <i class="fa-solid fa-paw fa-rotate-by" style="  color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
             </h4>
             <h1 class="title-blue-div2 titulo">Bem-vindo,</h1>
             <h3 class="title-blue-div3 titulo">
@@ -61,7 +61,7 @@
                                 <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control"
                                     name="customer_name">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div id="cpf" class="form-group col-md-6">
                                 <input type="text" maxlength="11" placeholder="CPF" class="form-control"
                                     name="customer_cpf_cnpj">
                             </div>
@@ -74,7 +74,7 @@
                                 <input type="text" class="form-control" placeholder="Data de Nascimento"
                                     name="customer_birth_date" maxlength="10">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div id="tele" class="form-group col-md-6">
                                 <input type="text" placeholder="DDD + Telefone" maxlength="14" class="form-control"
                                     name="customer_phone">
                             </div>
@@ -102,7 +102,7 @@
                                 <input type="text" placeholder="Email" maxlength="255" class="form-control"
                                     name="customer_email">
                             </div>
-                            <div class="form-group col-md-6">
+                            <div id="senha" class="form-group col-md-6">
                                 <input type="password" placeholder="Senha" maxlength="100" class="form-control"
                                     name="customer_password">
                             </div>
@@ -126,14 +126,14 @@
                         <div class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Rua" class="form-control" name="rua">
                         </div>
-                        <div class="form-group mt-4 col-md-6">
+                        <div id="num" class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="10" placeholder="Número" class="form-control" name="numero">
                         </div>
                         <div class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Complemento" class="form-control"
                                 name="complemento">
                         </div>
-                        <div class="form-group mt-4 col-md-6">
+                        <div id="bloco" class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Bloco (Apto.)" class="form-control"
                                 name="bloco">
                         </div>
@@ -158,13 +158,13 @@
                         <div class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="8" placeholder="Bairro" class="form-control" name="bairro">
                         </div>
-                        <div class="form-group mt-4 col-md-6">
+                        <div id="cep" class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="8" placeholder="CEP" class="form-control" name="cep">
                         </div>
                         <div class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Cidade" class="form-control" name="cidade">
                         </div>
-                        <div class="form-group mt-4 col-md-6">
+                        <div id="sp" class="form-group mt-4 col-md-6">
                             <select class="form-control" name="estado">
                                 <option value="SP">SP</option>
                             </select>

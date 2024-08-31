@@ -30,7 +30,7 @@
                 <form action="login.php" method="post">
 
                     <div class="title">
-                        <h1 class="title-login"> LOGIN <i style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
+                        <h1 class="title-login"> LOGIN </h1>
                     </div>
 
                     <div class="form-group mt-4">
@@ -43,14 +43,16 @@
                             name="customer['cpf_cnpj']">
                     </div>
 
-                    <a href="#" class="esquecer">Esqueceu sua senha?</a>
+                    <div class="esquecer">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
 
                     <div class="final">
                         <div id="actions" class="mt-4">
                             <button type="submit" class="btn btn-primary btn-custom">ENTRAR</button>
                     </div>
                         <div class="cad-text">
-                            <h7>Não tem uma conta?</h7><a href="#" class="criar">Cadastre-se</a>
+                            <h7>Não tem uma conta?</h7><a href="#"> Cadastre-se</a>
                         </div>
                 </form>
             </div>

@@ -49,10 +49,7 @@ body {
     background-position: center 100%;
     background-repeat: no-repeat;
 }
-.blue-div-resp{
-    display: none; /*responsividade arrumar*/
-}
-
+    
 .title-blue-div1 {
     color: #fff;
     font-family: 'baloo';
@@ -213,4 +210,3 @@ body {
     margin-top: 10px;
     font-size: 20px;
 }
-

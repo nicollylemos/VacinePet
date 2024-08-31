@@ -1,51 +1,74 @@
-@media (min-width:310px) and (max-width: 350px){
-    body{
+@media (min-width:310px) and (max-width: 350px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .blue-div-resp {
+        position: relative;
+        top: -45px;
+        align-items: center;
+    }
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -34%;
-        margin-top: 5%;
+        margin-top: -20px;
     }
-    .form-control{
+
+    .form-control {
         width: 245px;
         height: 40px;
     }
-    .sub-title-title{
-        font-size: 15px;
-    }   
-    .btn-custom{
+
+    .sub-title-title {
+        font-size: 20px;
+    }
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 10%;
         margin-bottom: 15%;
     }
-    .form-control1{
+
+    .form-control1 {
         position: relative;
         left: -8%;
     }
-    .container{
-        margin-top: 335px;
-        height: 850px;
+
+    .container {
+        margin-top: 400px;
+        height: 720vh;
         width: 100%;
         position: absolute;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         margin-top: -155px;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -54,79 +77,122 @@
         margin-left: 10%;
         margin-bottom: -100%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -25%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: -1%;
         margin-bottom: 15%;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 10%;
     }
 
+    .title-blue-div1 {
+        position: relative;
+        top: 25px;
+        font-size: 15px;
+    }
+
+    .title-blue-div2 {
+        position: relative;
+        top: -45px;
+        font-size: 25px;
+    }
+
+    .title-blue-div3 {
+        position: relative;
+        top: -45px;
+        font-size: 18px;
+        width: 270px;
+    }
+
 }
-@media (min-width:350px) and (max-width: 375px){
-    body{
+
+@media (min-width:351px) and (max-width: 375px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -31%;
         margin-top: 18%;
     }
-    .form-control{
+
+    .form-control {
         width: 255px;
         height: 42px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 20px;
     }
-    .btn-custom{
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 10%;
         margin-bottom: 15%;
     }
-    .container{
+
+    .container {
         position: absolute;
         margin-top: 390px;
         height: 900px;
         width: 100%;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         margin-top: -175px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
         font-size: 19px;
     }
-    .title-blue-div2{
+
+    .title-blue-div2 {
         margin-top: 0%;
         font-size: 27px;
     }
-    .title-blue-div3{
+
+    .title-blue-div3 {
         font-size: 15px;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -135,85 +201,113 @@
         margin-left: 10%;
         margin-bottom: -100%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -25%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: 0%;
         margin-bottom: 15%;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 10%;
     }
-    #btn-etapa4{
+
+    #btn-etapa4 {
         top: -60px;
     }
-    #btn-btn-etapa4{
+
+    #btn-btn-etapa4 {
         top: -15px;
-    }    /* Arrumar botões */
+    }
+
+    /* Arrumar botões */
 
 }
-@media (min-width:375px) and (max-width: 400px){
-    body{
+
+@media (min-width:376px) and (max-width: 400px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -30%;
         margin-top: 10%;
     }
-    .form-control{
+
+    .form-control {
         width: 285px;
         height: 42px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 20px;
     }
-    .btn-custom{
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 10%;
         margin-bottom: 15%;
     }
-    .container{
+
+    .container {
         position: absolute;
         margin-top: 400px;
         height: 900px;
         width: 100%;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         margin-top: -175px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
         font-size: 19px;
     }
-    .title-blue-div2{
+
+    .title-blue-div2 {
         margin-top: 0%;
         font-size: 27px;
     }
-    .title-blue-div3{
+
+    .title-blue-div3 {
         font-size: 15px;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -222,91 +316,119 @@
         margin-left: 10%;
         margin-bottom: -100%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -25%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: 0%;
         margin-bottom: 15%;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 10%;
     }
-    #btn-etapa4{
+
+    #btn-etapa4 {
         top: -60px;
     }
-    #btn-btn-etapa4{
+
+    #btn-btn-etapa4 {
         top: -15px;
-    }    /* Arrumar botões */
+    }
+
+    /* Arrumar botões */
 
 }
-@media (min-width:401px) and (max-width: 450px){
-    body{
+
+@media (min-width:401px) and (max-width: 450px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -33%;
         margin-top: 13%;
     }
-    .form-control{
+
+    .form-control {
         width: 335px;
         height: 42px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 21px;
     }
-    .btn-custom{
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 20%;
         margin-bottom: 5%;
     }
-    .container{
+
+    .container {
         position: absolute;
         margin-top: 430px;
         height: 900px;
         width: 100%;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         margin-top: -175px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
         position: relative;
         font-size: 19px;
         margin-left: 5%;
     }
-    .title-blue-div2{
+
+    .title-blue-div2 {
         position: relative;
         margin-top: 0%;
         font-size: 27px;
         margin-left: 5%;
     }
-    .title-blue-div3{
+
+    .title-blue-div3 {
         position: relative;
         font-size: 16px;
         margin-left: 5%;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -315,89 +437,120 @@
         margin-left: 20%;
         margin-bottom: -95%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -15%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: 10%;
         margin-bottom: 15%;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 10%;
     }
-    #btn-etapa4{
+
+    #btn-etapa4 {
         top: -60px;
     }
 }
-@media (min-width:451px) and (max-width: 500px){
-    body{
+
+@media (min-width:451px) and (max-width: 500px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .blue-div-resp {
+        position: relative;
+        top: -55px;
+    }
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -33%;
-        margin-top: 10%;
+        margin-top: -10%;
     }
-    .form-control{
+
+    .form-control {
         width: 380px;
         height: 45px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 21px;
     }
-    .btn-custom{
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 23%;
         margin-bottom: 10%;
     }
-    .container{
+
+    .container {
         position: absolute;
         margin-top: 445px;
-        height: 900px;
+        height: 900vh;
         width: 100%;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         margin-top: -175px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
         position: relative;
         font-size: 19px;
         margin-left: 5%;
-        top:-30px;
+        top: -30px;
     }
-    .title-blue-div2{
+
+    .title-blue-div2 {
         position: relative;
-        font-size: 27px;
+        font-size: 30px;
         margin-left: 5%;
-        top: -40px;
+        top: -75px;
     }
-    .title-blue-div3{
+
+    .title-blue-div3 {
         position: relative;
-        font-size: 16px;
+        font-size: 20px;
         margin-left: 5%;
-        top: -50px;
+        top: -80px;
+        width: 300px;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -406,92 +559,119 @@
         margin-left: 23%;
         margin-bottom: -65%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -10%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: 10%;
         margin-bottom: 15%;
         width: 300px;
         height: 150px;
     }
-    .custom-file-upload{
+
+    .custom-file-upload {
         width: 260px;
         height: 120px;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 10%;
     }
 }
-@media (min-width:501px) and (max-width: 525px){
-    body{
+
+@media (min-width:501px) and (max-width: 525px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -31%;
-        margin-top: 10%;
+        margin-top: 5%;
     }
-    .form-control{
+
+    .form-control {
         width: 410px;
         height: 48px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 18px;
     }
-    .btn-custom{
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 20%;
         margin-bottom: 10%;
     }
-    .container{
+
+    .container {
         position: absolute;
         margin-top: 465px;
-        height: 910px;
+        height: 900vh;
         width: 100%;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         position: relative;
-        margin-top: -220px;
+        margin-top: -180px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
         position: relative;
         font-size: 19px;
         margin-left: 5%;
-        margin-top: -10%;
+        margin-top: -50%;
     }
-    .title-blue-div2{
+
+    .title-blue-div2 {
         position: relative;
-        margin-top: 5%;
-        font-size: 27px;
+        top: -70px;
+        font-size: 32px;
         margin-left: 5%;
     }
-    .title-blue-div3{
+
+    .title-blue-div3 {
         position: relative;
-        font-size: 16px;
+        top: -80px;
+        font-size: 20px;
         margin-left: 5%;
+        width: 300px;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -500,91 +680,116 @@
         margin-left: 20%;
         margin-bottom: -75%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -15%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: 10%;
         margin-bottom: 15%;
         width: 300px;
         height: 150px;
     }
-    .custom-file-upload{
+
+    .custom-file-upload {
         width: 260px;
         height: 120px;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 10%;
     }
 }
-@media (min-width:525px) and (max-width: 565px){
-    body{
+
+@media (min-width:526px) and (max-width: 565px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -30%;
-        margin-top: 10%;
+        margin-top: 25%;
     }
-    .form-control{
+
+    .form-control {
         width: 410px;
         height: 40px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 18px;
     }
-    .btn-custom{
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 30%;
         margin-bottom: 10%;
     }
-    .container{
+
+    .container {
         position: absolute;
         margin-top: 475px;
         height: 915px;
         width: 100%;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         position: relative;
         margin-top: -240px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
         position: relative;
         font-size: 22px;
         margin-left: 5%;
     }
-    .title-blue-div2{
+
+    .title-blue-div2 {
         position: relative;
         margin-top: 0%;
         font-size: 33px;
         margin-left: 5%;
     }
-    .title-blue-div3{
+
+    .title-blue-div3 {
         position: relative;
         font-size: 18px;
         margin-left: 5%;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -593,95 +798,121 @@
         margin-left: 30%;
         margin-bottom: -75%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -15%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: 13%;
         margin-bottom: 15%;
         width: 300px;
         height: 150px;
     }
-    .custom-file-upload{
+
+    .custom-file-upload {
         width: 260px;
         height: 120px;
     }
-    .btn-perso1{
+
+    .btn-perso1 {
         position: relative;
         margin-bottom: -48%;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 1%;
     }
 }
-@media (min-width:566px) and (max-width: 575px){
-    body{
+
+@media (min-width:566px) and (max-width: 575px) {
+    body {
         background-color: #52bacb;
-        background-image: url('./imgs/cadresp.jpg');
         background-size: cover;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
     }
-    .blue-div{
+
+    #pata {
+        color: white !important;
+    }
+
+    .blue-div {
         display: none;
     }
-    .title-title{
+
+    .title-title {
         display: none;
     }
-    .form{
+
+    .form {
         position: relative;
         margin-left: -30%;
         margin-top: 10%;
     }
-    .form-control{
+
+    .form-control {
         width: 455px;
         height: 40px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 18px;
     }
-    .btn-custom{
+
+    .btn-custom {
         position: relative;
         width: 150px;
         margin-left: 30%;
         margin-bottom: 10%;
     }
-    .container{
+
+    .container {
         position: absolute;
         margin-top: 490px;
         height: 920px;
         width: 100%;
-        border-top-left-radius: 25px; /* Arredonda o canto superior esquerdo */
-        border-top-right-radius: 25px; /* Arredonda o canto superior direito */
-        border-bottom-left-radius: 0; /* Deixa o canto inferior esquerdo normal */
-        border-bottom-right-radius: 0; /* Deixa o canto inferior direito normal */
+        border-top-left-radius: 25px;
+        /* Arredonda o canto superior esquerdo */
+        border-top-right-radius: 25px;
+        /* Arredonda o canto superior direito */
+        border-bottom-left-radius: 0;
+        /* Deixa o canto inferior esquerdo normal */
+        border-bottom-right-radius: 0;
+        /* Deixa o canto inferior direito normal */
     }
-    .blue-div-resp{
+
+    .blue-div-resp {
         position: relative;
         margin-top: -240px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
         position: relative;
         font-size: 22px;
         margin-left: 5%;
     }
-    .title-blue-div2{
+
+    .title-blue-div2 {
         position: relative;
         margin-top: 0%;
         font-size: 33px;
         margin-left: 5%;
     }
-    .title-blue-div3{
+
+    .title-blue-div3 {
         position: relative;
         font-size: 18px;
         margin-left: 5%;
     }
+
     .btn-perso {
         position: relative;
         font-family: 'baloo';
@@ -690,254 +921,374 @@
         margin-left: 30%;
         margin-bottom: -75%;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         align-items: center;
         margin-left: -15%;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         margin-left: 13%;
         margin-bottom: 15%;
         width: 300px;
         height: 150px;
     }
-    .custom-file-upload{
+
+    .custom-file-upload {
         width: 260px;
         height: 120px;
     }
-    .btn-perso1{
+
+    .btn-perso1 {
         position: relative;
         margin-bottom: -48%;
     }
-    #msg{
+
+    #msg {
         height: 100px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         left: 1%;
     }
 }
-@media (min-width:576px) and (max-width: 620px){
-   .blue-div{
-    width: 200px;
-   }
-   .title-blue-div1{
+
+@media (min-width:576px) and (max-width: 620px) {
+    .blue-div {
+        width: 200px;
+    }
+
+    .title-blue-div1 {
         position: relative;
         top: 23%;
-   }
-   .title-title{
-    position: relative;
-    font-size: 50px;
-    left: 7%;
-   }
-   .titulo{
-    display: none;
-   }
-   .sub-title-title{
-    position: relative;
-    font-size: 15px;
-    width: 330px;
-    left: 7%;
-   }
-   .title-blue-div2{
-    position: relative;
-    top: 33%;
-    width: 180px;
-   }
-   .title-blue-div3{
-    position: relative;
-    top: 33%;
-    width: 180px;
-   }
-   .form{
-    position: relative;
-    top: 20%;
-   }
-   .form-control{
-    position: relative;
-    width: 250px;
-    height: 45px;
-    left: 7%;
-   }
-   .container{
-    height: 1050px;
-   }
-   .btn-cad{
-    position: relative;
-    margin-top: -135%;
-    left: -38%;
-    width: 130px;
-   }
-   .btn-perso{
-    width: 130px;
-   }
-   .btn-custom{
-    width: 130px;
-   }
-   .div-botoes{
-    position: relative;
-    bottom: -25px;
-   }
-   .quad-blue{
-    position: relative;
-    left: -20%;
-   }
-   .title-sucesso{
-    position: relative;
-    left: 5%;
-    width: 300px;
-   }
-   .p{
-    position: relative;
-    left: 5%;
-    width: 250px;
-   }
-   .div-botoes2{
-    position: relative;
-    left: 5%;
-   }
-   #etapa6{
-    position: relative;
-    top: 30px;
-   }
-}
-@media (min-width:620px) and (max-width: 767px){
-    .blue-div{
-        width: 200px;
-       }
-       .title-blue-div1{
-            position: relative;
-            top: 23%;
-       }
-       .title-title{
+    }
+
+    .title-title {
         position: relative;
         font-size: 50px;
         left: 7%;
-       }
-       .titulo{
+    }
+
+    .titulo {
         display: none;
-       }
-       .sub-title-title{
+    }
+
+    .sub-title-title {
         position: relative;
         font-size: 15px;
         width: 330px;
         left: 7%;
-       }
-       .title-blue-div2{
+    }
+
+    .title-blue-div2 {
         position: relative;
         top: 33%;
         width: 180px;
-       }
-       .title-blue-div3{
+    }
+
+    .title-blue-div3 {
         position: relative;
         top: 33%;
         width: 180px;
-       }
-       .form{
+    }
+
+    .form {
         position: relative;
         top: 20%;
-       }
-       .form-control{
+    }
+
+    .form-control {
         position: relative;
         width: 250px;
         height: 45px;
         left: 7%;
-       }
-       .container{
+    }
+
+    .container {
         height: 1050px;
-       }
-       .btn-cad{
+    }
+
+    .btn-cad {
         position: relative;
         margin-top: -135%;
         left: -38%;
         width: 130px;
-       }
-       .btn-perso{
+    }
+
+    .btn-perso {
         width: 130px;
-       }
-       .btn-custom{
+    }
+
+    .btn-custom {
         width: 130px;
-       }
-       .div-botoes{
+    }
+
+    .div-botoes {
         position: relative;
         bottom: -25px;
-       }
-       .quad-blue{
+    }
+
+    .quad-blue {
         position: relative;
         left: -20%;
-       }
-       .title-sucesso{
+    }
+
+    .title-sucesso {
         position: relative;
         left: 5%;
         width: 300px;
-       }
-       .p{
+    }
+
+    .p {
         position: relative;
         left: 5%;
         width: 250px;
-       }
-       .div-botoes2{
+    }
+
+    .div-botoes2 {
         position: relative;
         left: 5%;
-       }
-       #etapa6{
+    }
+
+    #etapa6 {
         position: relative;
         top: 30px;
-       }
-}
-@media (min-width:768px) and (max-width: 991px){
-    .blue-div{
-        width: 230px;
     }
-    .form-control{
+
+    .blue-div-resp {
+        display: none;
+    }
+}
+
+@media (min-width:620px) and (max-width: 767px) {
+    .blue-div {
         width: 200px;
     }
-    .title-blue-div1{
+
+    .title-blue-div1 {
+        position: relative;
+        top: 23%;
+    }
+
+    .title-title {
+        position: relative;
+        font-size: 50px;
+        left: 7%;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .sub-title-title {
+        position: relative;
+        font-size: 15px;
+        width: 330px;
+        left: 7%;
+    }
+
+    .title-blue-div2 {
+        position: relative;
+        top: 33%;
+        width: 180px;
+    }
+
+    .title-blue-div3 {
+        position: relative;
+        top: 33%;
+        width: 180px;
+    }
+
+    .form {
+        position: relative;
+        top: 20%;
+    }
+
+    .form-control {
+        position: relative;
+        width: 250px;
+        height: 45px;
+        left: 7%;
+    }
+
+    .container {
+        height: 1050px;
+    }
+
+    .btn-cad {
+        position: relative;
+        margin-top: -135%;
+        left: -38%;
+        width: 130px;
+    }
+
+    .btn-perso {
+        width: 130px;
+    }
+
+    .btn-custom {
+        width: 130px;
+    }
+
+    .div-botoes {
+        position: relative;
+        bottom: -25px;
+    }
+
+    .quad-blue {
+        position: relative;
+        left: -20%;
+    }
+
+    .title-sucesso {
+        position: relative;
+        left: 5%;
+        width: 300px;
+    }
+
+    .p {
+        position: relative;
+        left: 5%;
+        width: 250px;
+    }
+
+    .div-botoes2 {
+        position: relative;
+        left: 5%;
+    }
+
+    #etapa6 {
+        position: relative;
+        top: 30px;
+    }
+
+    .blue-div-resp {
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .blue-div {
+        width: 240px;
+    }
+
+    .form-control {
+        width: 200px;
+    }
+
+    .title-blue-div1 {
         position: relative;
         top: 20px;
     }
-    .title-title{
+
+    .title-title {
         font-size: 53px;
     }
-    .sub-title-title{
+
+    .sub-title-title {
         font-size: 16px;
     }
-    .btn-cad{
+
+    .btn-cad {
         position: relative;
         left: -25%;
     }
-    .div-botoes{
+
+    .div-botoes {
         position: relative;
-        left: -8%;
+        left: -6%;
         top: 50px;
     }
-    .quad-blue{
+
+    .quad-blue {
         position: relative;
         left: -10%;
     }
-    .add{
+
+    .add {
         width: 420px;
     }
-    .form-control1{
+
+    .form-control1 {
         position: relative;
         left: -36%;
         font-size: 15px;
         top: 10px;
     }
-    #etapa4{
+
+    #etapa4 {
         position: relative;
         left: -3%;
     }
-    .title-sucesso{
+
+    .title-sucesso {
         width: 300px;
     }
-    p{
+
+    p {
         width: 350px;
     }
-    .div-botoes2{
+
+    .div-botoes2 {
         position: relative;
         top: 25px;
     }
+
+    #cpf {
+        position: relative;
+        left: -11%;
+    }
+
+    #tele {
+        position: relative;
+        left: -11%;
+    }
+
+    #senha {
+        position: relative;
+        left: -11%;
+    }
+
+    #senha {
+        position: relative;
+        left: -11%;
+    }
+
+    #num {
+        position: relative;
+        left: -11%;
+    }
+
+    #bloco {
+        position: relative;
+        left: -11%;
+    }
+
+    #cep {
+        position: relative;
+        left: -11%;
+    }
+
+    #sp {
+        position: relative;
+        left: -11%;
+    }
+
+    .blue-div-resp {
+        display: none;
+    }
 }
 
+@media (min-width:991px) and (max-width: 1600px) {
+    .blue-div-resp {
+        display: none;
+    }
+}
+@media (min-width:1600px) and (max-width: 2560px){
+    .blue-div-resp {
+        display: none;
+    }
+}
