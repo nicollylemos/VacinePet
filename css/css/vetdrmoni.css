@@ -136,7 +136,38 @@ table th:nth-child(5), table td:nth-child(5) {
     justify-content: center;
     
   }
+  .container-valores button{
+    background-color: transparent;
+    border: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .container-valores .icon, 
+  .container-valores .icone{
+    padding: 10px;
+    border-radius: 25px;
+    color: #fff;
+  }
 
+.modalEdit input{
+    border-radius: 20px;
+    padding: 10px;
+    color: #5a5a5a;
+}
+.modalEdit {
+   text-align: center;
+}
+.modalEdit p{
+    font-weight: 600;
+    margin-bottom: 3%;
+    margin-top: 5%;
+ }
+  .container-valores .icon{
+    background-color: var(--primary-clr);
+  }
+  .container-valores .icone{
+    background-color: var(--second-color);
+  }
 .alt{
     border: 4px solid var(--primary-clr);
     border-radius: 20px;
