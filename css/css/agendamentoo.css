@@ -12,20 +12,13 @@
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
-body{
-    background-color:  #FFD371;
+
+body {
+    background-color: #FFD371;
 }
 
-.title-agendamento{
-    color:  #52BACB ;
-    font-family: baloo;
-    margin-top: -60px;
-    position: absolute;
-    left: 0%;
-
-}
-.title-agendamento-um{
-    color:  #52BACB ;
+.title-agendamento {
+    color: #52BACB;
     font-family: baloo;
     margin-top: -60px;
     position: absolute;
@@ -33,9 +26,8 @@ body{
 
 }
 
-
-.title-agendamentos{
-    color:  #52BACB ;
+.title-agendamento-um {
+    color: #52BACB;
     font-family: baloo;
     margin-top: -60px;
     position: absolute;
@@ -43,7 +35,23 @@ body{
 
 }
 
-.logo{
+
+.title-agendamentos {
+    color: #52BACB;
+    font-family: baloo;
+    margin-top: -60px;
+    position: absolute;
+    left: 0%;
+
+}
+
+.subtitle-inicio {
+    position: relative;
+    width: 350px;
+}
+
+
+.logo {
 
     margin-top: 60px;
     position: absolute;
@@ -55,12 +63,12 @@ body{
 .container {
     background-color: rgb(255, 255, 255);
     position: absolute;
-    width: 1020px; 
+    width: 1020px;
     height: 90%;
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     min-height: 600px;
     max-height: 1000px;
     box-shadow: 20px 20px 20px #efc364;
@@ -83,14 +91,21 @@ body{
 }
 
 .form-control::placeholder {
-    color: #8C8C8C; 
+    color: #8c8c8c9a;
+}
+
+.form-control:focus {
+    border-color: #fcdfa3;
+    /* Cor da borda quando focada */
+    outline: none;
+    /* Remove o outline padrão */
 }
 
 .blue-div {
     font-family: baloo;
     color: rgb(255, 255, 255);
     position: absolute;
-    width: 390px; 
+    width: 390px;
     left: 0%;
     height: 100%;
     margin-top: 0%;
@@ -105,14 +120,15 @@ body{
     top: 49%;
     left: 6%;
     width: 690px;
-    height: auto; 
-    display: block; 
+    height: auto;
+    display: block;
     margin: 10px auto;
 }
 
 .btn-custom {
     top: 20px;
     position: relative;
+    left: 120px;
     font-family: baloo;
     font-size: 20px;
     background-color: #FD811C;
@@ -126,7 +142,17 @@ body{
     background-color: #fcab65;
     border-color: #fcab65;
 }
+#span{
+    position: relative;
+    top: 50px;
+}
+#agradecimento{
+    position: relative;
+    top: 50px;
+}
+#final{
+    position: relative;
+    top: 55px;
+}
+
 /* Etapas */
-
-
-

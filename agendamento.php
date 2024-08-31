@@ -2,10 +2,10 @@
 <html lang="pt-BR">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/responsividade/telaagendar.css">
+    <link rel="stylesheet" href="css/css/responsividade/telaagend.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/agendamentoo.css">
     <link rel="stylesheet" href="css/css/calendarioo.css">
@@ -15,18 +15,23 @@
 
     <title>Agendamento</title>
     <style>
-    .hidden {
-        display: none;
-    }
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
+
+    <div class="blue-div-resp">
+        <h2 class="logo" style="font-family:baloo; color:white;">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
+                style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
+    </div>
+
     <div class="container">
         <div class="blue-div">
             <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
                     style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
-
         </div>
 
         <div class="quad">
@@ -37,11 +42,11 @@
                         <div class="title">
                             <h1 class="title-agendamento"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
-                            <p class="subtitle">
+                            <h6 class="subtitle-inicio">
                                 Parabéns por priorizar a saúde do seu pet! <br><br>
-                                Agora, para prosseguir com o agendamento, selecione o dia<br> e horário que melhor se
+                                Agora, para prosseguir com o agendamento, selecione o dia e horário que melhor se
                                 adequam à sua agenda.
-                            </p>
+                            </h6>
 
 
                         </div>
@@ -50,7 +55,7 @@
                             <input type="date" id="data" name="data">
                             <div id="horarios-disponiveis"></div>
                         </div>
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button id="btn-um" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(2)">Próximo</button>
 
                     </div>
@@ -59,27 +64,29 @@
                         <div class="title">
                             <h1 class="title-agendamento-um"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
-                            <p class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
+                            <h6 class="subtitle1">Verifique as informações abaixo e altere em caso <br> de necessidade
                                 para
-                                prosseguir com o agendamento.</p>
+                                prosseguir com o agendamento.</h6>
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control"
-                                name="nome">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Nome Completo"
+                                class="form-control" name="nome">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="email" maxlength="255" placeholder="Email" class="form-control" name="email">
+                            <input id="form-control" type="email" maxlength="255" placeholder="Email"
+                                class="form-control" name="email">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="11" placeholder="Telefone" class="form-control"
-                                name="telefone">
+                            <input id="form-control" type="text" maxlength="11" placeholder="Telefone"
+                                class="form-control" name="telefone">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="11" placeholder="CPF" class="form-control" name="cpf">
+                            <input id="form-control" type="text" maxlength="11" placeholder="CPF" class="form-control"
+                                name="cpf">
                         </div>
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button id="btn-dois" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(1)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button id="btn-dois" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(3)">Próximo</button>
                     </div>
 
@@ -87,7 +94,7 @@
                     <div id="etapa3" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">ENDEREÇO (1/2)</h1>
-                            <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
+                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
                                 para
                                 prosseguir com o agendamento.</h6>
                         </div>
@@ -115,7 +122,7 @@
                     <div id="etapa4" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">ENDEREÇO (2/2)</h1>
-                            <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
+                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
                                 para
                                 prosseguir com o agendamento.</h6>
                         </div>
@@ -143,7 +150,7 @@
                     <div id="etapa5" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">SOBRE O PET (1/2)</h1>
-                            <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
+                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
                                 para
                                 prosseguir com o agendamento.</h6>
                         </div>
@@ -171,7 +178,7 @@
                     <div id="etapa6" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">SOBRE O PET (2/2)</h1>
-                            <h6 class="subtitle">Verifique as informações abaixo e altere em caso <br> de necessidade
+                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
                                 para
                                 prosseguir com o agendamento.</h6>
                         </div>
@@ -215,12 +222,12 @@
                             <br>
                             <br>
 
-                            <p>Realizado em: <span id="dataHoraAgendamento"></span></p>
+                            <p id="span">Realizado em: <span id="dataHoraAgendamento"></span></p>
 
-                            <h6 class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br>
+                            <h6 id="agradecimento" class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br>
                                 Agradecemos por confiar no VacinePet!</h6>
                         </div>
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button id="final" type="button" class="btn btn-primary btn-custom"
                             onclick="finalizar()">Finalizar</button>
                     </div>
                 </form>

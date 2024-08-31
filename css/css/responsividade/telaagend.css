@@ -1,0 +1,73 @@
+@media (min-width:310px) and (max-width: 350px) {
+
+    body{
+        background-image: url(imgs/agenda.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .blue-div {
+        display: none;
+    }
+    .blue-div-resp{
+        position: relative;
+        left: -70px;
+        top: 25px;
+    }
+    .container{
+        margin-top: 200px;
+        height: 720vh;
+        width: 100%;
+        border-top-left-radius: 20px; /* Arredondar o canto superior esquerdo */
+        border-top-right-radius: 20px; /* Arredondar o canto superior direito */
+    }
+    #etapa1{
+        position: relative;
+        left: -150px;
+    }
+    .title-agendamento{
+        position: relative;
+        font-size: 35px;
+        margin-left: 20px;
+        top: -10px;
+    }
+    .subtitle-inicio{
+        position: relative;
+        width: 300px;
+        left: 5px;
+    }
+    #agendamento-container{
+        position: relative;
+        top: -10px;
+    }
+    #btn-um{
+        position: relative;
+        left: 100px;
+    }
+    .title-agendamento-um{
+        position: relative;
+        font-size: 35px;
+        margin-left: 20px;
+        top: -10px;
+    }
+    #etapa2{
+        position: relative;
+        left: -150px;
+    }
+    #form-control{
+        position: relative;
+        left: 13px;
+        width: 270px;
+    }
+    #btn-dois{
+        position: relative;
+        left: 50px;
+    }
+    #etapa3{
+        position: relative;
+        left: -150px;
+    }
+}

@@ -1,8 +1,0 @@
-@media (min-width:310px) and (max-width: 350px) {
-    body{
-        background-image: url('imgs/agend.jpg');
-    }
-    .blue-div {
-        display: none;
-    }
-}
