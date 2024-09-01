@@ -1,0 +1,437 @@
+@media (min-width:310px) and (max-width: 374px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body {
+        background-image: url(imgs/agenda.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .blue-div {
+        display: none;
+    }
+    .blue-div-resp {
+        position: relative;
+        left: -70px;
+        top: 25px;
+    }
+    .container {
+        margin-top: 200px;
+        height: 720vh;
+        width: 100%;
+        border-top-left-radius: 20px;
+        /* Arredondar o canto superior esquerdo */
+        border-top-right-radius: 20px;
+        /* Arredondar o canto superior direito */
+    }
+    #etapa1 {
+        position: relative;
+        left: -150px;
+    }
+    .title-agendamento {
+        position: relative;
+        font-size: 35px;
+        margin-left: 20px;
+        top: -10px;
+    }
+    .subtitle-inicio {
+        position: relative;
+        width: 300px;
+        left: -10px;
+    }
+    #agendamento-container {
+        position: relative;
+        top: 5px;
+        left: -20px;
+    }
+    #btn-um {
+        position: relative;
+        left: 100px;
+    }
+    .title-agendamento-um {
+        position: relative;
+        font-size: 35px;
+        margin-left: 20px;
+        top: -10px;
+    }
+    #etapa2 {
+        position: relative;
+        left: -150px;
+    }
+    #form-control {
+        position: relative;
+        left: 13px;
+        width: 270px;
+    }
+    #btn-dois {
+        position: relative;
+        left: 45px;
+    }
+    #etapa3 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-tres {
+        position: relative;
+        left: 50px;
+    }
+
+    #etapa4 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-quatro {
+        position: relative;
+        left: 50px;
+    }
+    #etapa5 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-cinco {
+        position: relative;
+        left: 50px;
+    }
+    #etapa6 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-seis {
+        position: relative;
+        left: 50px;
+    }
+    #radio {
+        position: relative;
+        left: 40px;
+    }
+    textarea {
+        width: 250px;
+    }
+    #etapa7 {
+        position: relative;
+        left: -150px;
+    }
+    #sucesso {
+        width: 300px;
+    }
+    #span {
+        position: relative;
+        top: -20px;
+    }
+    #agradecimento {
+        position: relative;
+        top: -20px;
+        width: 300px;
+    }
+    #final {
+        position: relative;
+        left: 100px;
+        top: 15px;
+    }
+    #sobre {
+        position: relative;
+        left: -10px;
+    }
+    #sub{
+        width: 300px;
+    }
+}
+@media (min-width:375px) and (max-width: 430px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body {
+        background-image: url(imgs/agenda.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .blue-div {
+        display: none;
+    }
+    .blue-div-resp {
+        position: relative;
+        left: -70px;
+        top: 25px;
+    }
+    .container {
+        margin-top: 200px;
+        height: 720vh;
+        width: 100%;
+        border-top-left-radius: 20px;
+        /* Arredondar o canto superior esquerdo */
+        border-top-right-radius: 20px;
+        /* Arredondar o canto superior direito */
+    }
+    #etapa1 {
+        position: relative;
+        left: -150px;
+    }
+    .title-agendamento {
+        position: relative;
+        font-size: 35px;
+        margin-left: 20px;
+        top: -10px;
+    }
+    .subtitle-inicio {
+        position: relative;
+        width: 300px;
+        left: -10px;
+    }
+    #agendamento-container {
+        position: relative;
+        top: 5px;
+        left: -20px;
+    }
+    #btn-um {
+        position: relative;
+        left: 100px;
+    }
+    .title-agendamento-um {
+        position: relative;
+        font-size: 35px;
+        margin-left: 20px;
+        top: -10px;
+    }
+    #etapa2 {
+        position: relative;
+        left: -150px;
+    }
+    #form-control {
+        position: relative;
+        left: -5px;
+        width: 310px;
+    }
+    #btn-dois {
+        position: relative;
+        left: 45px;
+    }
+    #etapa3 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-tres {
+        position: relative;
+        left: 50px;
+    }
+
+    #etapa4 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-quatro {
+        position: relative;
+        left: 50px;
+    }
+    #etapa5 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-cinco {
+        position: relative;
+        left: 50px;
+    }
+    #etapa6 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-seis {
+        position: relative;
+        left: 50px;
+    }
+    #radio {
+        position: relative;
+        left: 40px;
+    }
+    textarea {
+        width: 250px;
+    }
+    #etapa7 {
+        position: relative;
+        left: -150px;
+    }
+    #sucesso {
+        width: 350px;
+    }
+    #span {
+        position: relative;
+        top: -20px;
+    }
+    #agradecimento {
+        position: relative;
+        top: -20px;
+        width: 300px;
+    }
+    #final {
+        position: relative;
+        left: 100px;
+        top: 15px;
+    }
+    #sobre {
+        position: relative;
+        left: -10px;
+    }
+    #sub{
+        width: 300px;
+    }
+}
+@media (min-width:431px) and (max-width: 505px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body {
+        background-image: url(imgs/agenda.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 25%;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .blue-div {
+        display: none;
+    }
+    .blue-div-resp {
+        position: relative;
+        left: -70px;
+        top: 25px;
+    }
+    .container {
+        margin-top: 200px;
+        height: 720vh;
+        width: 100%;
+        border-top-left-radius: 20px;
+        /* Arredondar o canto superior esquerdo */
+        border-top-right-radius: 20px;
+        /* Arredondar o canto superior direito */
+    }
+    #etapa1 {
+        position: relative;
+        left: -150px;
+    }
+    .title-agendamento {
+        position: relative;
+        font-size: 40px;
+        margin-left: 5px;
+        top: -10px;
+    }
+    .subtitle-inicio {
+        position: relative;
+        width: 300px;
+        left: -10px;
+    }
+    #agendamento-container {
+        position: relative;
+        top: 5px;
+        left: -20px;
+    }
+    #btn-um {
+        position: relative;
+        left: 100px;
+    }
+    .title-agendamento-um {
+        position: relative;
+        font-size: 40px;
+        margin-left: 5px;
+        top: -10px;
+    }
+    #etapa2 {
+        position: relative;
+        left: -150px;
+    }
+    #form-control {
+        position: relative;
+        left: -30px;
+        width: 360px;
+    }
+    #btn-dois {
+        position: relative;
+        left: 45px;
+    }
+    #etapa3 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-tres {
+        position: relative;
+        left: 50px;
+    }
+
+    #etapa4 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-quatro {
+        position: relative;
+        left: 50px;
+    }
+    #etapa5 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-cinco {
+        position: relative;
+        left: 50px;
+    }
+    #etapa6 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-seis {
+        position: relative;
+        left: 50px;
+    }
+    #radio {
+        position: relative;
+        left: 40px;
+    }
+    textarea {
+        width: 250px;
+    }
+    #etapa7 {
+        position: relative;
+        left: -150px;
+    }
+    #sucesso {
+        width: 350px;
+    }
+    #span {
+        position: relative;
+        top: -20px;
+    }
+    #agradecimento {
+        position: relative;
+        top: -20px;
+        width: 300px;
+    }
+    #final {
+        position: relative;
+        left: 100px;
+        top: 15px;
+    }
+    #sobre {
+        position: relative;
+        left: -15px;
+    }
+}
+@media (min-width:506px) and (max-width: 575px) {
+    #blue-div{
+        width: 230px !important;
+    }
+}
+
+
+

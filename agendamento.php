@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/responsividade/telaagend.css">
+    <link rel="stylesheet" href="css/css/responsividade/agendaresp.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/css/agendamentoo.css">
     <link rel="stylesheet" href="css/css/calendarioo.css">
@@ -29,7 +29,7 @@
     </div>
 
     <div class="container">
-        <div class="blue-div">
+        <div id="blue-div" class="blue-div">
             <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
                     style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
         </div>
@@ -64,9 +64,7 @@
                         <div class="title">
                             <h1 class="title-agendamento-um"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
-                            <h6 class="subtitle1">Verifique as informações abaixo e altere em caso <br> de necessidade
-                                para
-                                prosseguir com o agendamento.</h6>
+                            <h6 id="sub" class="veri">Verifique as informações abaixo e altere em caso de necessidade</h6>
                         </div>
                         <div class="form-group mt-4">
                             <input id="form-control" type="text" maxlength="255" placeholder="Nome Completo"
@@ -94,27 +92,25 @@
                     <div id="etapa3" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">ENDEREÇO (1/2)</h1>
-                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
-                                para
-                                prosseguir com o agendamento.</h6>
+                            <h6 id="sub">Verifique as informações abaixo e altere em caso de necessidade</h6>
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="255" placeholder="Rua" class="form-control" name="rua">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Rua" class="form-control" name="rua">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="10" placeholder="Número" class="form-control" name="numero">
+                            <input id="form-control" type="text" maxlength="10" placeholder="Número" class="form-control" name="numero">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="255" placeholder="Complemento" class="form-control"
+                            <input id="form-control" type="text" maxlength="255" placeholder="Complemento" class="form-control"
                                 name="complemento">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="255" placeholder="Bloco (Apto.)" class="form-control"
+                            <input id="form-control" type="text" maxlength="255" placeholder="Bloco (Apto.)" class="form-control"
                                 name="bloco">
                         </div>
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button id="btn-tres" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(2)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button id="btn-tres" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(4)">Próximo</button>
                     </div>
 
@@ -122,81 +118,75 @@
                     <div id="etapa4" class="hidden">
                         <div class="title">
                             <h1 class="title-agendamento">ENDEREÇO (2/2)</h1>
-                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
-                                para
-                                prosseguir com o agendamento.</h6>
+                            <h6 id="sub">Verifique as informações abaixo e altere em caso de necessidade</h6>
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="8" placeholder="Bairro" class="form-control" name="bairro">
+                            <input id="form-control" type="text" maxlength="8" placeholder="Bairro" class="form-control" name="bairro">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="8" placeholder="CEP" class="form-control" name="cep">
+                            <input id="form-control" type="text" maxlength="8" placeholder="CEP" class="form-control" name="cep">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="255" placeholder="Cidade" class="form-control" name="cidade">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Cidade" class="form-control" name="cidade">
                         </div>
-                        <div class="form-group mt-4">
-                            <select class="form-control" name="estado">
+                        <div  class="form-group mt-4">
+                            <select id="form-control" class="form-control" name="estado">
                                 <option value="SP">SP</option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button id="btn-quatro" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(3)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button id="btn-quatro" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(5)">Próximo</button>
                     </div>
 
                     <!-- Etapa 5: informações sobre o pet 1 -->
                     <div id="etapa5" class="hidden">
                         <div class="title">
-                            <h1 class="title-agendamento">SOBRE O PET (1/2)</h1>
-                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
-                                para
-                                prosseguir com o agendamento.</h6>
+                            <h1 id="sobre" class="title-agendamento">SOBRE O PET (1/2)</h1>
+                            <h6 id="sub" class="subtitle2">Verifique as informações abaixo e altere em caso de necessidade</h6>
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
+                            <input id="form-control" type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
                                 name="nomePet">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="10" placeholder="Peso Aproximado" class="form-control"
+                            <input id="form-control" type="text" maxlength="10" placeholder="Peso Aproximado" class="form-control"
                                 name="peso">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="255" placeholder="Raça" class="form-control" name="raca">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Raça" class="form-control" name="raca">
                         </div>
                         <div class="form-group mt-4">
-                            <input type="text" maxlength="3" placeholder="Idade" class="form-control" name="idade">
+                            <input id="form-control" type="text" maxlength="3" placeholder="Idade" class="form-control" name="idade">
                         </div>
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button id="btn-cinco" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(4)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
+                        <button id="btn-cinco" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(6)">Próximo</button>
                     </div>
 
                     <!-- Etapa 6: informações sobre o pet 2 -->
                     <div id="etapa6" class="hidden">
                         <div class="title">
-                            <h1 class="title-agendamento">SOBRE O PET (2/2)</h1>
-                            <h6 class="subtitle2">Verifique as informações abaixo e altere em caso <br> de necessidade
-                                para
-                                prosseguir com o agendamento.</h6>
+                            <h1 id="sobre" class="title-agendamento">SOBRE O PET (2/2)</h1>
+                            <h6 id="sub" class="subtitle2">Verifique as informações abaixo e altere em caso de necessidade</h6>
                         </div>
-                        <div class="form-group mt-4">
+                        <div id="radio" class="form-group mt-4">
                             <label>Sexo:</label><br>
-                            <input type="radio" id="sexoM" name="sexo" value="M">
+                            <input  type="radio" id="sexoM" name="sexo" value="M">
                             <label for="sexoM">Macho</label>
                             <input type="radio" id="sexoF" name="sexo" value="F">
                             <label for="sexoF">Fêmea</label>
                         </div>
-                        <div class="form-group mt-4">
+                        <div id="radio" class="form-group mt-4">
                             <label>Castrado:</label><br>
                             <input type="radio" id="castradoSim" name="castrado" value="sim">
                             <label for="castradoSim">Sim</label>
                             <input type="radio" id="castradoNao" name="castrado" value="nao">
                             <label for="castradoNao">Não</label>
                         </div>
-                        <div class="form-group mt-4">
+                        <div id="radio" class="form-group mt-4">
                             <label>Porte:</label><br>
                             <input type="radio" id="portePequeno" name="porte" value="pequeno">
                             <label for="portePequeno">Pequeno</label>
@@ -207,20 +197,18 @@
                         </div>
 
                         <div class="form-group mt-4">
-                            <textarea placeholder="Histórico" class="form-control" name="historico"></textarea>
+                            <input id="form-control" type="text" placeholder="Histórico" class="form-control" name="historico"></input>
                         </div>
-                        <button type="button" class="btn btn-secondary btn-custom"
+                        <button id="btn-seis" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(5)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom" onclick="enviarForm()">Enviar</button>
+                        <button id="btn-seis" type="button" class="btn btn-primary btn-custom" onclick="enviarForm()">Enviar</button>
                     </div>
 
                     <!-- Etapa 7: tela de agradecimento -->
                     <div id="etapa7" class="hidden">
                         <div class="title">
-                            <h1 class="title-agendamentos">Agendamento realizado com sucesso! <i
+                            <h1 id="sucesso" class="title-agendamentos">Agendamento realizado com sucesso! <i
                                     class="fas fa-check-circle" style="color: green;"></i></h1>
-                            <br>
-                            <br>
 
                             <p id="span">Realizado em: <span id="dataHoraAgendamento"></span></p>
 

@@ -71,7 +71,7 @@ body {
     transform: translate(-50%, -50%);
     min-height: 600px;
     max-height: 1000px;
-    box-shadow: 20px 20px 20px #efc364;
+    box-shadow: 20px 20px 20px #c09b4c;
 }
 
 .form {
@@ -153,6 +153,9 @@ body {
 #final{
     position: relative;
     top: 55px;
+}
+#sub{
+    width: 300px;
 }
 
 /* Etapas */
