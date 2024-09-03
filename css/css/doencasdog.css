@@ -188,84 +188,6 @@
 }
 
 
-/* bolinhas*/
-.orange-balls{
-    background-color: #FD811C;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 84%;
-    margin-top: -4%;
-}
-.orange-balls1{
-    background-color:  #FD811C;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 95%;
-    margin-top: 3%;
-}
-.orange-balls2{
-    background-color:  #FD811C;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 77%;
-    margin-top: 3%;
-}
-.blue-balls{
-    background-color:#52BACB;
-    width: 39px;
-    height: 39px;
-    border-radius: 50%;
-    margin-left: 89%;
-    margin-top: -8%;
-}
-.blue-balls1{
-    background-color:#52BACB;
-    width: 27px;
-    height: 27px;
-    border-radius: 50%;
-    margin-left: 88%;
-    margin-top: 2%;
-}
-.blue-balls2{
-    background-color:#52BACB;
-    width: 43px;
-    height: 43px;
-    border-radius: 50%;
-    margin-left: 84%;
-    margin-top: 0%;
-}
-.blue-balls3{
-    background-color:#52BACB;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 96%;
-    margin-top: -2%;
-}
-.bolinha-furada{
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: #52BACB solid 6px;
-    margin-left: 81%;
-    margin-top: -8%;
-}
-.bolinha-furada1{
-    height: 42px;
-    width: 42px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: #52BACB solid 6px;
-    margin-left:92%;
-    margin-top: -2%;
-}
-
-
-
 .btn-custom {
   
     position: relative;
@@ -289,40 +211,44 @@
     border-color: #fcab65;
     animation: none; /* Parando a animação ao passar o mouse */
 }
-
-/*MODAL*/
-/* Centralizar o texto no corpo do modal */
-.modal-body {
-    text-align: center;
+/* modal */
+.modal-css {
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
     padding: 20px;
-}
-
-/* Garantir que o conteúdo do modal não ocupe a tela inteira */
-.modal-content {
-    max-width: 800px; /* Ajuste conforme necessário */
-    margin: auto;
-}
-
-/* Adicionar algum espaçamento entre as linhas para melhor legibilidade */
-.modal-body p {
-    margin-bottom: 1.5em;
-}
-
-/* Estilizar o título do modal para se destacar */
-.modal-title {
+    border-color: #FD811C;
+    border-width: 1px;
+    overflow: hidden;
+  }
+  .title-modal{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 35px;
     color: #FD811C;
     font-family: baloo;
-}
-.btn-fechar{
+  }
+  .btn-modal-fechar{
+    position: relative;
+    left: 35%;
+    top: 50px;
     background-color: #52BACB;
-    color: #ffffff;
-    
+    color: white;
+    font-family: baloo;
+    border-radius: 20px;
+    border-color: #52BACB;  
+    text-align: center;
+    border: none;
+    width: 150px;
+    height: 30px;
+  }
+
+  .modal-body {
+    padding: 20px;
+    text-align: justify;
 }
-.btn-fechar:hover{
-    background-color: #48a1af;
-    color: #ffffff;
+.destaque{
+    font-weight:600;
 }
 
 

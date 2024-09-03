@@ -8,7 +8,8 @@ include("./inc/header.php");
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/doencasgatos.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css/doencasgato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -58,7 +59,110 @@ include("./inc/header.php");
                             <button onclick="modal.showModal()" class="btn-vacinas"><i class="fa-solid fa-angle-down"
                                     style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
 
-                            <dialog id="modal">
+                            <dialog id="modal" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="title-modal">CINOMOSE</div>
+                                        <div class="modal-body">
+                                            A doença ataca o sistema digestivo, respiratório e, por fim, o sistema
+                                            nervoso central, causando
+                                            tremores, desorientação e convulsões. Quando o vírus atinge o sistema
+                                            nervoso central, em geral não
+                                            há tratamento efetivo, apenas medidas paliativas, que buscam tratar e
+                                            melhorar os sintomas. Caso
+                                            sobreviva, o animal pode ficar com sequelas para o resto da vida.<br><br>
+
+                                            Os sintomas são:
+
+                                            <span class="destaque">Diarreia;
+
+                                                Vômito;
+
+                                                Corrimento nasal e ocular;
+
+                                                Tosse;
+
+                                                Tiques nervosos;
+
+                                                Convulsões e paralisias.</span><br><br>
+                                            A melhor forma de prevenir a cinomose é por meio da vacinação. Converse com
+                                            o médico-veterinário e
+                                            mantenha a vacinação do seu pet em dia.
+
+                                        </div>
+                                    </div>
+                                    <button class="btn-modal-fechar" onclick="modal.close()">FECHAR</button>
+                            </dialog>
+                        </div>
+                    </div>
+                    <div class=" card swiper-slide">
+                        <div class="card-content">
+                            <h3 class="nome-vacina">
+                                <!-- futuro php-->LEPTOSPIROSE CANINA
+                            </h3>
+                            <div class="textinhos">
+                                <p class="description">A leptospirose canina é uma doença com alto índice de
+                                    mortalidade, causada por bactérias que também podem infectar os humanos. A
+                                    transmissão se dá principalmente pelo contato com a urina...
+                            </div>
+                            </p> <button onclick="modal1.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal1" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="title-modal">CINOMOSE</div>
+                                        <div class="modal-body">
+                                            A doença ataca o sistema digestivo, respiratório e, por fim, o sistema
+                                            nervoso central, causando
+                                            tremores, desorientação e convulsões. Quando o vírus atinge o sistema
+                                            nervoso central, em geral não
+                                            há tratamento efetivo, apenas medidas paliativas, que buscam tratar e
+                                            melhorar os sintomas. Caso
+                                            sobreviva, o animal pode ficar com sequelas para o resto da vida.<br><br>
+
+                                            Os sintomas são:
+
+                                            <span class="destaque">Diarreia;
+
+                                                Vômito;
+
+                                                Corrimento nasal e ocular;
+
+                                                Tosse;
+
+                                                Tiques nervosos;
+
+                                                Convulsões e paralisias.</span><br><br>
+                                            A melhor forma de prevenir a cinomose é por meio da vacinação. Converse com
+                                            o médico-veterinário e
+                                            mantenha a vacinação do seu pet em dia.
+
+                                        </div>
+                                    </div>
+                                    <button class="btn-modal-fechar" onclick="modal1.close()">FECHAR</button>
+                            </dialog>
+                        </div>
+                    </div>
+                    <div class=" card swiper-slide">
+                        <div class="card-content">
+                            <h3 class="nome-vacina">
+                                <!-- futuro php-->CORONAVIROSE
+                            </h3>
+                            <div class="textinhos">
+                                <p class="description">
+
+                                    A coronavirose canina é uma doença viral altamente contagiosa que acomete
+                                    principalmente os intestinos, causando diarreia e vômito. Ela afeta frequentemente
+                                    animais mais jovens e pode também comprometer o sistema respiratório. Um dos
+                                    principais...
+                            </div>
+                            </p> <button onclick="modal2.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal2" class="modal-css">
                                 <div class="infos">
                                     <div>
                                         <div class="tp-dados">Nome do Tutor:</div>
@@ -86,39 +190,8 @@ include("./inc/header.php");
                                         <div class="txt">Ele é fofo e lindooo</div>
                                     </div>
                                 </div>
-                                <button onclick="modal.close()">fechar Modal</button>
+                                <button onclick="modal2.close()">fechar Modal</button>
                             </dialog>
-                        </div>
-                    </div>
-                    <div class=" card swiper-slide">
-                        <div class="card-content">
-                            <h3 class="nome-vacina">
-                                <!-- futuro php-->LEPTOSPIROSE CANINA
-                            </h3>
-                            <div class="textinhos">
-                                <p class="description">A leptospirose canina é uma doença com alto índice de
-                                    mortalidade, causada por bactérias que também podem infectar os humanos. A
-                                    transmissão se dá principalmente pelo contato com a urina...
-                            </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
-                        </div>
-                    </div>
-                    <div class=" card swiper-slide">
-                        <div class="card-content">
-                            <h3 class="nome-vacina">
-                                <!-- futuro php-->CORONAVIROSE
-                            </h3>
-                            <div class="textinhos">
-                                <p class="description">
-
-                                    A coronavirose canina é uma doença viral altamente contagiosa que acomete
-                                    principalmente os intestinos, causando diarreia e vômito. Ela afeta frequentemente
-                                    animais mais jovens e pode também comprometer o sistema respiratório. Um dos
-                                    principais...
-                            </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
                         </div>
                     </div>
                     <div class=" card swiper-slide">
@@ -132,8 +205,40 @@ include("./inc/header.php");
                                     aparelho digestivo e o sistema imunológico dos cães. A transmissão ocorre através do
                                     contato direto com fezes ou vômitos infectados...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            </p> <button onclick="modal3.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal3" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal3.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -146,8 +251,40 @@ include("./inc/header.php");
                                     fígado, causada por um vírus agressivo, transmitida pelas descargas orais e nasais,
                                     fezes e pelo contato com o ambiente...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            </p> <button onclick="modal4.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal4" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal4.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -160,8 +297,40 @@ include("./inc/header.php");
                                     tratado, pode levar a complicações como as pneumonias. A transmissão se dá pelo
                                     contato direto entre cães, onde os...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            </p> <button onclick="modal5.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal5" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal5.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -174,8 +343,40 @@ include("./inc/header.php");
                                     transmissão acontece quando animais doentes tossem, espirram ou quando um cão
                                     saudável tem contato com objetos de um animal doente...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            </p> <button onclick="modal6.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal6" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal6.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -188,8 +389,40 @@ include("./inc/header.php");
                                     traqueobronquite infecciosa canina, é uma doença altamente contagiosa, causada pela
                                     bactéria Bordetella bronchiseptica, também podendo ter...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            </p> <button onclick="modal7.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal7" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal7.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -202,8 +435,40 @@ include("./inc/header.php");
                                     importantes porque é uma zoonose fatal. Geralmente é transmitida por meio da mordida
                                     de um animal infectado (que pode ser um cão ou um gato) ou...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            </p> <button onclick="modal8.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal8" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal8.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                     <div class="card swiper-slide">
@@ -216,8 +481,40 @@ include("./inc/header.php");
                                     protozoário Giardia lamblia, que vive no intestino delgado dos cães. É altamente
                                     contagiosa. Pode ser transmitida dos cães para outros animais domésticos...
                             </div>
-                            </p><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button>
+                            </p> <button onclick="modal9.showModal()" class="btn-vacinas"><i
+                                    class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal9" class="modal-css">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal9.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -228,7 +525,10 @@ include("./inc/header.php");
                 <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
             </div>
+        </div>
     </section>
+
+
 
 </body>
 <?php include("./inc/footer.php") ?>

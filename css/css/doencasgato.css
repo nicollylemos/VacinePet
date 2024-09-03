@@ -285,6 +285,46 @@
     border-color: #fcab65;
     animation: none; /* Parando a animação ao passar o mouse */
 }
+/* modal */
+.modal-css {
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    border-color: #FD811C;
+    border-width: 1px;
+    overflow: hidden;
+  }
+  .title-modal{
+    text-align: center;
+    font-size: 35px;
+    color: #FD811C;
+    font-family: baloo;
+  }
+  .btn-modal-fechar{
+    position: relative;
+    left: 35%;
+    top: 50px;
+    background-color: #52BACB;
+    color: white;
+    font-family: baloo;
+    border-radius: 20px;
+    border-color: #52BACB;  
+    text-align: center;
+    border: none;
+    width: 150px;
+    height: 30px;
+  }
+
+  .modal-body {
+    padding: 20px;
+    text-align: justify;
+}
+.destaque{
+    font-weight:600;
+}
+
 
 
 
