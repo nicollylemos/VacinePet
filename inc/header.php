@@ -53,7 +53,7 @@
     .topnav .cad {
         cursor: pointer;
         font-size: 18px;
-        background-color: #ffffff;
+        background-color: transparent;
         border-radius: 10px;
         border: 3.5px solid #52BACB;
         width: 150px;
@@ -62,22 +62,22 @@
         text-decoration: none;
         color: #52BACB;
         font-family: league;
-        padding: 2%;
+        padding: 3%;
     }
 
     .topnav .login {
         cursor: pointer;
         font-size: 18px;
-        background-color: #ffffff;
+        background-color: #52BACB;
         border-radius: 10px;
         border: 3.5px solid #52BACB;
         width: 150px;
         font-weight: 700;
         letter-spacing: 0.5px;
         text-decoration: none;
-        color: #52BACB;
+        color: #fff;
         font-family: league;
-        padding: 2%;
+        padding: 3%;
     }
 
     .topnav .icon {
