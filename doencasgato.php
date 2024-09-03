@@ -19,7 +19,7 @@ include("./inc/header.php");
     <section class="start">
         <div class="espaco"></div>
         <div class="escritos">
-        <h1 class="title-start">DOENÇAS<br>FELINAS</h1>
+            <h1 class="title-start">DOENÇAS<br>FELINAS</h1>
             <h4 class="sub-title-start">Conheça as doenças felinas e proteja seu melhor amigo!<br>
                 Saber mais sobre infecções e problemas genéticos<br>
                 é essencial para a saúde do seu gato. Identifique<br>
@@ -37,7 +37,8 @@ include("./inc/header.php");
         <div class="space"></div>
         <div class="titulo-vacina">
             <h2>DOENÇAS FELINAS</h2>
-            <p class="subtitle">Conheça as principais doenças felinas e agende a vacinação com o veterinário<br> para garantir a saúde e bem-estar do seu pet.</p>
+            <p class="subtitle">Conheça as principais doenças felinas e agende a vacinação com o veterinário<br> para
+                garantir a saúde e bem-estar do seu pet.</p>
         </div>
         <div class="slide-container swiper">
             <div class="slide-content">
@@ -54,8 +55,39 @@ include("./inc/header.php");
                                     nasais e oculares,
                                     tosse e espirros de um outro animal infectado... </p>
                             </div>
-                            <a href="#"><button type="submit" class="btn-vacinas"><i class="fa-solid fa-angle-down"
-                                        style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i></button></a>
+                            <button onclick="modal.showModal()" class="btn-vacinas"><i class="fa-solid fa-angle-down"
+                                    style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
+
+                            <dialog id="modal">
+                                <div class="infos">
+                                    <div>
+                                        <div class="tp-dados">Nome do Tutor:</div>
+                                        <p>Nicolly Lemos</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Nome do Pet:</div>
+                                        <p>Bagu Lemos
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Data do Atendimento:</div>
+                                        <p>28/06/2024</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Horário:</div>
+                                        <p>16:00</p>
+                                    </div>
+                                    <div>
+                                        <div class="tp-dados">Endereço:</div>
+                                        <p>Rua Benedito de Almeida</p>
+                                    </div>
+                                    <div class="obv">
+                                        <div class="obv-title">Observações:</div>
+                                        <div class="txt">Ele é fofo e lindooo</div>
+                                    </div>
+                                </div>
+                                <button onclick="modal.close()">fechar Modal</button>
+                            </dialog>
                         </div>
                     </div>
                     <div class=" card swiper-slide">
@@ -193,13 +225,13 @@ include("./inc/header.php");
                 <div class="swiper-button-next"></div>
             </div>
             <div class="agende-agora">
-            <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
+                <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
-        </div>
+            </div>
     </section>
-    
+
 </body>
-<?php include ("./inc/footer.php") ?>
+<?php include("./inc/footer.php") ?>
 <!--scroll JS-->
 <script src="js/scroll.js"></script>
 <!--swiper JS -->
