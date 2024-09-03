@@ -55,8 +55,25 @@
                             <input type="date" id="data" name="data">
                             <div id="horarios-disponiveis"></div>
                         </div>
+
+                        <div id="serviço">
+                            <p class="serviço">Escolha do serviço:</p>
+                            <label class="radio-option">
+                                <input type="radio" name="service" value="castrar">
+                                Castração de gatos
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="service" value="vacinar">
+                                Vacina animal
+                            </label>
+                        </div>
+
                         <button id="btn-um" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(2)">Próximo</button>
+
+                        <p class="recado"> Atenção: O custo de deslocamento é ajustado conforme<br> a localização do
+                            atendimento.
+                        </p>
 
                     </div>
                     <!-- Etapa 2: informações pessoais -->
@@ -64,7 +81,8 @@
                         <div class="title">
                             <h1 class="title-agendamento-um"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
-                            <h6 id="sub" class="veri">Verifique as informações abaixo e altere em caso de necessidade</h6>
+                            <h6 id="sub" class="veri">Verifique as informações abaixo e altere em caso de necessidade
+                            </h6>
                         </div>
                         <div class="form-group mt-4">
                             <input id="form-control" type="text" maxlength="255" placeholder="Nome Completo"
@@ -95,18 +113,20 @@
                             <h6 id="sub">Verifique as informações abaixo e altere em caso de necessidade</h6>
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="255" placeholder="Rua" class="form-control" name="rua">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Rua" class="form-control"
+                                name="rua">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="10" placeholder="Número" class="form-control" name="numero">
+                            <input id="form-control" type="text" maxlength="10" placeholder="Número"
+                                class="form-control" name="numero">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="255" placeholder="Complemento" class="form-control"
-                                name="complemento">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Complemento"
+                                class="form-control" name="complemento">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="255" placeholder="Bloco (Apto.)" class="form-control"
-                                name="bloco">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Bloco (Apto.)"
+                                class="form-control" name="bloco">
                         </div>
                         <button id="btn-tres" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(2)">Anterior</button>
@@ -121,15 +141,18 @@
                             <h6 id="sub">Verifique as informações abaixo e altere em caso de necessidade</h6>
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="8" placeholder="Bairro" class="form-control" name="bairro">
+                            <input id="form-control" type="text" maxlength="8" placeholder="Bairro" class="form-control"
+                                name="bairro">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="8" placeholder="CEP" class="form-control" name="cep">
+                            <input id="form-control" type="text" maxlength="8" placeholder="CEP" class="form-control"
+                                name="cep">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="255" placeholder="Cidade" class="form-control" name="cidade">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Cidade"
+                                class="form-control" name="cidade">
                         </div>
-                        <div  class="form-group mt-4">
+                        <div class="form-group mt-4">
                             <select id="form-control" class="form-control" name="estado">
                                 <option value="SP">SP</option>
                             </select>
@@ -144,21 +167,24 @@
                     <div id="etapa5" class="hidden">
                         <div class="title">
                             <h1 id="sobre" class="title-agendamento">SOBRE O PET (1/2)</h1>
-                            <h6 id="sub" class="subtitle2">Verifique as informações abaixo e altere em caso de necessidade</h6>
+                            <h6 id="sub" class="subtitle2">Verifique as informações abaixo e altere em caso de
+                                necessidade</h6>
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
-                                name="nomePet">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Nome do Pet"
+                                class="form-control" name="nomePet">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="10" placeholder="Peso Aproximado" class="form-control"
-                                name="peso">
+                            <input id="form-control" type="text" maxlength="10" placeholder="Peso Aproximado"
+                                class="form-control" name="peso">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="255" placeholder="Raça" class="form-control" name="raca">
+                            <input id="form-control" type="text" maxlength="255" placeholder="Raça" class="form-control"
+                                name="raca">
                         </div>
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" maxlength="3" placeholder="Idade" class="form-control" name="idade">
+                            <input id="form-control" type="text" maxlength="3" placeholder="Idade" class="form-control"
+                                name="idade">
                         </div>
                         <button id="btn-cinco" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(4)">Anterior</button>
@@ -170,11 +196,12 @@
                     <div id="etapa6" class="hidden">
                         <div class="title">
                             <h1 id="sobre" class="title-agendamento">SOBRE O PET (2/2)</h1>
-                            <h6 id="sub" class="subtitle2">Verifique as informações abaixo e altere em caso de necessidade</h6>
+                            <h6 id="sub" class="subtitle2">Verifique as informações abaixo e altere em caso de
+                                necessidade</h6>
                         </div>
                         <div id="radio" class="form-group mt-4">
                             <label>Sexo:</label><br>
-                            <input  type="radio" id="sexoM" name="sexo" value="M">
+                            <input type="radio" id="sexoM" name="sexo" value="M">
                             <label for="sexoM">Macho</label>
                             <input type="radio" id="sexoF" name="sexo" value="F">
                             <label for="sexoF">Fêmea</label>
@@ -197,11 +224,13 @@
                         </div>
 
                         <div class="form-group mt-4">
-                            <input id="form-control" type="text" placeholder="Histórico" class="form-control" name="historico"></input>
+                            <input id="form-control" type="text" placeholder="Histórico" class="form-control"
+                                name="historico"></input>
                         </div>
                         <button id="btn-seis" type="button" class="btn btn-secondary btn-custom"
                             onclick="anteriorEtapa(5)">Anterior</button>
-                        <button id="btn-seis" type="button" class="btn btn-primary btn-custom" onclick="enviarForm()">Enviar</button>
+                        <button id="btn-seis" type="button" class="btn btn-primary btn-custom"
+                            onclick="enviarForm()">Enviar</button>
                     </div>
 
                     <!-- Etapa 7: tela de agradecimento -->
@@ -212,7 +241,9 @@
 
                             <p id="span">Realizado em: <span id="dataHoraAgendamento"></span></p>
 
-                            <h6 id="agradecimento" class="subtitle">Em breve entraremos em contato para confirmar os detalhes.<br><br>
+
+                            <h6 id="agradecimento" class="subtitle">Em breve entraremos em contato para confirmar os
+                                detalhes.<br><br>
                                 Agradecemos por confiar no VacinePet!</h6>
                         </div>
                         <button id="final" type="button" class="btn btn-primary btn-custom"

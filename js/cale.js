@@ -37,7 +37,7 @@ function mostrarHorarios(data) {
             horariosContainer.appendChild(horarioElemento);
         });
     } else {
-        horariosContainer.innerHTML = '<p>Não há horários disponíveis para esta data.</p>';
+        horariosContainer.innerHTML = '<p style="position:relative; left:12%;">Não há horários disponíveis<br> para esta data.</p>';
     }
 }
 

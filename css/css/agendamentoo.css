@@ -25,6 +25,18 @@ body {
     left: 0%;
 
 }
+.radio-option {
+    display: flex;
+    align-items: center;
+}
+.radio-option input {
+    margin-right: 8px;
+}
+
+.radio-option label {
+    margin-right: 15px;
+}
+
 
 .title-agendamento-um {
     color: #52BACB;
@@ -126,7 +138,7 @@ body {
 }
 
 .btn-custom {
-    top: 20px;
+    top: 35px;
     position: relative;
     left: 120px;
     font-family: baloo;
@@ -157,5 +169,25 @@ body {
 #sub{
     width: 300px;
 }
+.recado{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bolder;
+    position: relative;
+    margin-top: 15%;
+    color: #9c9c9c;
 
-/* Etapas */
+}
+#agendamento-container{
+    position: relative;
+    left: 30%;
+    
+}
+
+#serviço{
+    position: fixed;
+    top: 40%;
+    
+}
+
+
