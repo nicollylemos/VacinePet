@@ -71,9 +71,7 @@ include("./inc/header.php");
                                 <!-- futuro php-->LEPTOSPIROSE CANINA
                             </h3>
                             <div class="textinhos">
-                                <p class="description">A leptospirose canina é uma doença com alto índice de
-                                    mortalidade, causada por bactérias que também podem infectar os humanos. A
-                                    transmissão se dá principalmente pelo contato com a urina...
+                                <p class="description">
                             </div>
                             <button type="button" class="btn-vacinas" data-bs-toggle="modal"
                                 data-bs-target="#modalLeptospirose">
@@ -274,7 +272,7 @@ include("./inc/header.php");
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalDoencaLabel">CINOMOSE</h5>
+                    <h5 class="modal-title" id="modalDoencaLabel">LEPTOSPIROSE CANINA</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
