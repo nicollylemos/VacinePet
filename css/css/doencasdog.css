@@ -200,7 +200,7 @@
     color: white;
     margin-bottom: 100px;
     left: 42%; 
-    top: 100px;
+    top: 85px;
     width: 200px;
     animation: pulsate 3s infinite; /* Aplicando a animação */
     transition: transform 0.3s ease; /* Transição suave */
