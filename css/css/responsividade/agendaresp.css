@@ -42,8 +42,10 @@
     }
     .subtitle-inicio {
         position: relative;
+        text-align: center;
         width: 300px;
-        left: -10px;
+        left: -23px;
+        top: -20px;
     }
     #agendamento-container {
         position: relative;
@@ -118,11 +120,11 @@
         left: -150px;
     }
     #sucesso {
-        width: 300px;
+        font-size: 25px;
     }
     #span {
         position: relative;
-        top: -20px;
+        top: 30px;
     }
     #agradecimento {
         position: relative;
@@ -139,6 +141,18 @@
         left: -10px;
     }
     #sub{
+        width: 300px;
+    }
+    #servico{
+        position: relative;
+        left: 90px;
+        top: 5px;
+    }
+    #agendamento-container{
+        position: relative;
+        margin-left: -250px;
+    }
+    .recado{
         width: 300px;
     }
 }
@@ -186,8 +200,9 @@
     }
     .subtitle-inicio {
         position: relative;
+        text-align: center;
         width: 300px;
-        left: -10px;
+        left: -20px;
     }
     #agendamento-container {
         position: relative;
@@ -285,6 +300,18 @@
     #sub{
         width: 300px;
     }
+    #servico{
+        position: relative;
+        left: 90px;
+        top: 5px;
+    }
+    #agendamento-container{
+        position: relative;
+        margin-left: -250px;
+    }
+    .recado{
+        width: 300px;
+    }
 }
 @media (min-width:431px) and (max-width: 505px) {
     html,
@@ -330,6 +357,7 @@
     }
     .subtitle-inicio {
         position: relative;
+        text-align: center;
         width: 300px;
         left: -10px;
     }
