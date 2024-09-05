@@ -151,9 +151,11 @@
                 style="color: #FA5909; --fa-rotate-angle: 49deg; width: 20px; height: 20px; font-size: 15px;"></i></a>
         <div class="menu">
             <a href="/VacinePet/index.php" class="home active">Início</a>
-            <a href="/VacinePet/agendamento.php">Agendamento</a>
-            <a href="/VacinePet/infos-page/sobre-vacinepet.php">Sobre</a>
             <a href="/VacinePet/infos-page/sobre-profissional.php">Profissional</a>
+            <a href="/VacinePet/agendamento.php">Agendamento</a>
+            <a href="#">Adoção</a>
+            <a href="#">Castração</a>
+            <a href="/VacinePet/infos-page/sobre-vacinepet.php">Sobre</a>
 
         </div>
         <div class="buttons">
