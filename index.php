@@ -9,7 +9,7 @@ include("./inc/header.php");
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/inicio-tela.css">
-    <link rel="stylesheet" href="css/css/estilo.css">
+    <link rel="stylesheet" href="css/css/index.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
@@ -85,7 +85,7 @@ include("./inc/header.php");
                                 <p class="valor">149,
                                     99</p>
                                 <h3 class="nome-vacina">
-                                    <!-- futuro php-->PolivalentE
+                                    <!-- futuro php-->Polivalente
                                 </h3>
                                 <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the

@@ -110,6 +110,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index:10;
+    
 }
 
 #info-cao {
@@ -123,6 +124,7 @@ body {
     display: flex;
     float: left;
     right: -5%;
+    margin-left: 100px;
     
 }
 
@@ -137,6 +139,7 @@ body {
     display: flex;
     float: right;
     right: 5%;
+    margin-right: 100px;
 
 }
 
