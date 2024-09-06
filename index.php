@@ -85,7 +85,7 @@ include("./inc/header.php");
                                 <p class="valor">149,
                                     99</p>
                                 <h3 class="nome-vacina">
-                                    <!-- futuro php-->PolivalentE
+                                    <!-- futuro php-->Polivalente
                                 </h3>
                                 <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
