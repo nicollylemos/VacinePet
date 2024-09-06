@@ -26,7 +26,7 @@
                         <li class="nav-link">
                             <a href="index.php">
                                 <i class="fa-solid fa-user icon"></i>
-                                <span class="text nav-text">Meu Perfil</span>
+                                <span class="text nav-text">Meu Perfiu</span>
                             </a>
                         </li>
 
