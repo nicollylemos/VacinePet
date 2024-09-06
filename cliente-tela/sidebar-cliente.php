@@ -26,7 +26,7 @@
                         <li class="nav-link">
                             <a href="index.php">
                                 <i class="fa-solid fa-user icon"></i>
-                                <span class="text nav-text">Meu Perfiu</span>
+                                <span class="text nav-text">Meu Perfil</span>
                             </a>
                         </li>
 
@@ -47,8 +47,8 @@
                     <ul class="menu-links">
                         <li class="nav-link">
                             <a href="valores-alt.php">
-                                <i class="fa-solid fa-money-bill icon"></i>
-                                <span class="text nav-text">Notificação</span>
+                                <i class="fa-solid fa-bell icon"></i>
+                                <span class=" text nav-text">Notificação</span>
                             </a>
                         </li>
                     </ul>

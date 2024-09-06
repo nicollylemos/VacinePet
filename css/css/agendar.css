@@ -182,12 +182,12 @@ body {
 #agendamento-container{
     position: relative;
     left: 10%;
+    top: 35px;
     
 }
-
-#serviço{   
+.servico{
     position: relative;
-    top: -20px;
+    top: -50px;
 }
 #btn-um{
     position: relative;
