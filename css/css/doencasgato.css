@@ -10,6 +10,10 @@
     font-family:'oswald';
     src:url("../font/oswald/Oswald-Regular.ttf");
 }
+@font-face {
+    font-family: 'poppins';
+    src: url("../font/poppins/Poppins-Regular.ttf");
+}
 
 .start {
     background-image: url(img/fundo-cat.png);
@@ -34,6 +38,7 @@
     margin-left: 45%;
     position: relative;
     width: 45%;
+    
 }
 .title-start {
     color: #ffd371;
@@ -121,10 +126,12 @@
 }
 .description {
     font-size: 14px;
-    color: #707070;
+    color: #898383;
     text-align: center;
     position: relative;
     bottom: 60px;
+    font-family: poppins;
+    
 }
 
 .append-buttons {
