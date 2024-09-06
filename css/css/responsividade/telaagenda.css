@@ -8,7 +8,7 @@
         background-image: url(imgs/agenda.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: right;
         margin: 0;
         width: 100%;
         height: 100vh;
@@ -23,7 +23,7 @@
     }
     .container {
         margin-top: 200px;
-        height: 1020vh;
+        height: 820vh;
         width: 100%;
         border-top-left-radius: 20px;
         /* Arredondar o canto superior esquerdo */
@@ -55,7 +55,7 @@
     #btn-um {
         position: relative;
         margin-left: -12%;
-        top: 2px;
+        top: 40px;
     }
     .title-agendamento-um {
         position: relative;
@@ -135,7 +135,7 @@
     #final {
         position: relative;
         left: 100px;
-        top: 15px;
+        margin-top: 10%;
     }
     #sobre {
         position: relative;
@@ -146,13 +146,13 @@
     }
     #servico{
         position: relative;
-        left: 90px;
-        top: -25px;
+        left: -5px;
+        top: -60px;
     }
     #agendamento-container{
         position: relative;
-        top: -20px;
-        margin-left: -30%;
+        top: 20px;
+        margin-left: 12%;
     }
     #rec{
         width: 300px;
@@ -171,7 +171,7 @@
         background-image: url(imgs/agenda.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: right;
         margin: 0;
         width: 100%;
         height: 100vh;
@@ -307,12 +307,13 @@
     }
     #servico{
         position: relative;
-        left: 90px;
+        left: -2px;
         top: 5px;
     }
     #agendamento-container{
         position: relative;
-        margin-left: -250px;
+        margin-left: 70px;
+        margin-top: 50px;
     }
     .recado{
         width: 300px;
