@@ -47,8 +47,8 @@
                     <ul class="menu-links">
                         <li class="nav-link">
                             <a href="valores-alt.php">
-                                <i class="fa-solid fa-money-bill icon"></i>
-                                <span class="text nav-text">Notificação</span>
+                                <i class="fa-solid fa-bell icon"></i>
+                                <span class=" text nav-text">Notificação</span>
                             </a>
                         </li>
                     </ul>
