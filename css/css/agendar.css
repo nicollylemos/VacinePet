@@ -187,6 +187,7 @@ body {
 
 #serviço{   
     position: relative;
+    top: -20px;
 }
 #btn-um{
     position: relative;
