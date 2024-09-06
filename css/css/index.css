@@ -243,3 +243,9 @@ body {
      height:2px; 
      font-size:55px;
 }
+.cat-card{
+    position: relative;
+    width: 80%;
+    top: -99%;
+    left: 115%;
+}
