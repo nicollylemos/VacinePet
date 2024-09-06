@@ -85,12 +85,12 @@ include("./inc/header.php");
                                 <p class="valor">149,
                                     99</p>
                                 <h3 class="nome-vacina">
-                                    <!-- futuro php-->Polivalente
+                                    <!-- futuro php-->PolivalentE
                                 </h3>
                                 <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry. Lorem Ipsum has. </p><a
-                                    href="vacinas.php"><button type="submit" class="btn-vacinas">Ver Mais</button></a>
+                                    href="#"><button type="submit" class="btn-vacinas">Ver Mais</button></a>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
