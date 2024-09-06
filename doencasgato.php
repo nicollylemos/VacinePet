@@ -50,11 +50,12 @@ include("./inc/header.php");
                                 <!-- futuro php--> PANLEUCOPENIA
                             </h3>
                             <div class="textinhos">
-                                <p class="description">A cinomose é um dos maiores pesadelos dos tutores de cães, é uma
-                                    doença altamente infecciosa e frequentemente
-                                    fatal causada por um vírus. A transmissão ocorre pelo contato direto com secreções
-                                    nasais e oculares,
-                                    tosse e espirros de um outro animal infectado... </p>
+                                <p class="description">A panleucopenia é uma doença viral que ataca o aparelho digestivo
+                                    dos gatos e acomete principalmente os filhotes não vacinados. É conhecida como a
+                                    “parvovirose dos gatos”. Sua transmissão se dá principalmente pelo contato direto
+                                    com as fezes de animais doentes.
+
+                                    ... </p>
                             </div>
                             <button onclick="modal.showModal()" class="btn-vacinas"><i class="fa-solid fa-angle-down"
                                     style=" width: 13px; height:7px; font-size:30px; margin-right: 16%;"></i> </button>
@@ -62,30 +63,24 @@ include("./inc/header.php");
                             <dialog id="modal" class="modal-css">
                                 <div class="infos">
                                     <div>
-                                        <div class="title-modal">CINOMOSE</div>
+                                        <div class="title-modal">PANLEUCOPENIA</div>
                                         <div class="modal-body">
-                                            A doença ataca o sistema digestivo, respiratório e, por fim, o sistema
-                                            nervoso central, causando
-                                            tremores, desorientação e convulsões. Quando o vírus atinge o sistema
-                                            nervoso central, em geral não
-                                            há tratamento efetivo, apenas medidas paliativas, que buscam tratar e
-                                            melhorar os sintomas. Caso
-                                            sobreviva, o animal pode ficar com sequelas para o resto da vida.<br><br>
+                                            O vírus causador da panleucopenia felina é altamente contagioso e, além
+                                            disso, é resistente a vários métodos de desinfecção física e química. É
+                                            importante destacar que, em ambientes contaminados, este vírus sobrevive em
+                                            sua forma infecciosa por períodos prolongados de tempo, por dias ou até
+                                            mesmo meses. Isso aumenta o risco de infecção para animais suscetíveis
+                                            localizados em tais ambientes. <br><br>
 
                                             Os sintomas são:
 
-                                            <span class="destaque">Diarreia;
-
-                                                Vômito;
-
-                                                Corrimento nasal e ocular;
-
-                                                Tosse;
-
-                                                Tiques nervosos;
-
-                                                Convulsões e paralisias.</span><br><br>
-                                            A melhor forma de prevenir a cinomose é por meio da vacinação. Converse com
+                                            <span class="destaque">Vômito, acompanhado ou não de diarreia;
+                                                Febre;
+                                                Apatia;
+                                                Falta de apetite e desidratação.
+                                            </span><br><br>
+                                            A melhor forma de prevenir a panleucopenia é por meio da vacinação. Converse
+                                            com
                                             o médico-veterinário e
                                             mantenha a vacinação do seu pet em dia.
 
@@ -98,11 +93,12 @@ include("./inc/header.php");
                     <div class=" card swiper-slide">
                         <div class="card-content">
                             <h3 class="nome-vacina">
-                                <!-- futuro php-->LEPTOSPIROSE CANINA
+                                <!-- futuro php--> RINOTRAQUEÍTE
                             </h3>
                             <div class="textinhos">
-                                <p class="description">A leptospirose canina é uma doença com alto índice de
-                                    mortalidade, causada por bactérias que também podem infectar os humanos...
+                                <p class="description">A rinotraqueíte é uma doença causada por um herpesvírus que
+                                    acomete o trato respiratório superior dos gatos. A transmissão é muito fácil entre
+                                    animais que convivem no mesmo ambiente...
                             </div>
                             </p> <button onclick="modal1.showModal()" class="btn-vacinas"><i
                                     class="fa-solid fa-angle-down"
@@ -111,16 +107,13 @@ include("./inc/header.php");
                             <dialog id="modal1" class="modal-css">
                                 <div class="infos">
                                     <div>
-                                        <div class="title-modal">LEPTOSPIROSE CANINA</div>
+                                        <div class="title-modal">RINOTRAQUEÍTE</div>
                                         <div class="modal-body">
-                                            A
-                                            transmissão se dá principalmente pelo contato com a urina dos animais
-                                            doentes, como
-                                            cães e os ratos.
-                                            O solo, a lama e a água contaminados pela bactéria
-                                            podem disseminar a doença, por isso o número de casos aumenta nas épocas de
-                                            chuvas e
-                                            enchentes<br><br>
+                                            A rinotraqueíte felina é uma enfermidade viral respiratória muito comum e
+                                            recorrente, principalmente nos meses mais frios do ano, e por isso é
+                                            popularmente chamada pelos tutores de gripe em gatos. Apesar da comparação
+                                            com a doença que acomete humanos, existem diferenças importantes que devem
+                                            ser esclarecidas ao dono do pet. <br><br>
 
                                             Os sintomas são:
 
