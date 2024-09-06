@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/responsividade/agendaresp.css">
+    <link rel="stylesheet" href="css/css/responsividade/telaagendar.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/agendamentoo.css">
+    <link rel="stylesheet" href="css/css/agendamento.css">
     <link rel="stylesheet" href="css/css/calendarioo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -56,7 +56,7 @@
                             <div id="horarios-disponiveis"></div>
                         </div>
 
-                        <div id="servico">
+                        <div id="servico" class="servico">
                             <p class="serviço">Escolha do serviço:</p>
                             <label class="radio-option">
                                 <input type="radio" name="service" value="vacinar">
@@ -71,8 +71,7 @@
                         <button id="btn-um" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(2)">Próximo</button>
 
-                        <p class="recado"> Atenção: O custo de deslocamento é ajustado conforme a localização do
-                            atendimento.
+                        <p id="rec" class="recado"> Atenção: O custo de deslocamento é ajustado conforme a localização do atendimento.
                         </p>
 
                     </div>

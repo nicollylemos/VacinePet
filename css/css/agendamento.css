@@ -176,18 +176,20 @@ body {
     position: relative;
     margin-top: 15%;
     color: #9c9c9c;
+    left: -40px;
 
 }
 #agendamento-container{
     position: relative;
-    left: 30%;
+    left: 10%;
     
 }
 
-#serviço{
-    position: fixed;
-    top: 40%;
-    
+#serviço{   
+    position: relative;
 }
-
+#btn-um{
+    position: relative;
+    left: 150px;
+}
 

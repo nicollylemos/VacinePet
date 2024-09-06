@@ -23,7 +23,7 @@
     }
     .container {
         margin-top: 200px;
-        height: 720vh;
+        height: 1020vh;
         width: 100%;
         border-top-left-radius: 20px;
         /* Arredondar o canto superior esquerdo */
@@ -54,7 +54,8 @@
     }
     #btn-um {
         position: relative;
-        left: 100px;
+        margin-left: -12%;
+        top: 2px;
     }
     .title-agendamento-um {
         position: relative;
@@ -146,15 +147,19 @@
     #servico{
         position: relative;
         left: 90px;
-        top: 5px;
+        top: -25px;
     }
     #agendamento-container{
         position: relative;
-        margin-left: -250px;
+        top: -20px;
+        margin-left: -30%;
     }
-    .recado{
+    #rec{
         width: 300px;
+        position: relative;
+        left: 5px;
     }
+
 }
 @media (min-width:375px) and (max-width: 430px) {
     html,
