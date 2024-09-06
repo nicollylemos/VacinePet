@@ -16,15 +16,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: -6%;
+    margin-top: -1%;
     width: 100%;
     height: 100vh;
+    
 }
 .subtitle{
     text-align: center;
     font-family: league;
     font-size: 20px;
     color: #3b3b3b;
+    margin-top: -3%;
 }
 
 .escritos {
@@ -46,7 +48,7 @@
     font-family: baloo;
     font-size: 20px;
     position: relative;
-    margin-top: -9%;
+    margin-top: 3%;
 }
 #doencas {
     background-color: rgb(255, 255, 255);
@@ -61,6 +63,7 @@
     border-radius: 20px;
     width: 200px;
     color: #ffcf67; /* Texto laranja */
+    margin-top: 5%;
 }
 
 .btn-start:hover {
@@ -274,7 +277,7 @@
     color: white;
     margin-bottom: 100px;
     left: 42%; 
-    top: 100px;
+    top: 80px;
     width: 200px;
     animation: pulsate 3s infinite; /* Aplicando a animação */
     transition: transform 0.3s ease; /* Transição suave */

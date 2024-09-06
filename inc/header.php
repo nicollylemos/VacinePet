@@ -8,6 +8,7 @@
     body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
+        
     }
 
     .topnav {
@@ -18,6 +19,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 16px;
+        
     }
 
     .topnav .logo {
