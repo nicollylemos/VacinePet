@@ -47,6 +47,7 @@ include("./inc/header.php");
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
                         <a href="doencascachorro.php"><button type="submit" class="btn-ler">Ler Mais</button></a>
+                       
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog"><img src="" alt=""></div>
@@ -57,7 +58,8 @@ include("./inc/header.php");
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
+                        <a href="doencasgato.php"><button class="btn-ler">Ler Mais</button></a> 
+                        <img class="cat-card" src="imgs/cat-card.png" alt="Cachorro">
                     </div>
                     <div class="img-pet">
                         <div class="pet-cat"><img src="" alt=""></div>
