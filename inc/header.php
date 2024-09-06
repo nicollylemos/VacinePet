@@ -8,7 +8,11 @@
     body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        
+
+    }
+
+    .topnav .logo:hover {
+        color: #FA5909;
     }
 
     .topnav {
@@ -19,7 +23,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 16px;
-        
+
     }
 
     .topnav .logo {
@@ -50,6 +54,16 @@
     .topnav .buttons {
         display: flex;
         gap: 1px;
+    }
+
+    .topnav .login:hover {
+        background-color: #7bcdd9;
+        border-color: #7bcdd9;
+    }
+
+    .topnav .cad:hover {
+        border-color: #7bcdd9;
+        color: #7bcdd9;
     }
 
     .topnav .cad {
@@ -150,7 +164,7 @@
 
     <div class="topnav" id="myTopnav">
         <a href="/VacinePet/index.php" class="logo">VacinePet<i class="fa-solid fa-paw fa-rotate-by"
-                style="color: #FA5909; --fa-rotate-angle: 49deg; width: 20px; height: 20px; font-size: 15px;"></i></a>
+                style="color: #FA5909; --fa-rotate-angle: 49deg; width: 18px; height: 6px; font-size: 13px;"></i></a>
         <div class="menu">
             <a href="/VacinePet/index.php" class="home active">Início</a>
             <a href="/VacinePet/infos-page/sobre-profissional.php">Profissional</a>
