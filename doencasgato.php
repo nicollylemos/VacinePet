@@ -47,7 +47,7 @@ include("./inc/header.php");
                     <div class="card swiper-slide">
                         <div class="card-content">
                             <h3 class="nome-vacina">
-                                <!-- futuro php-->CINOMOSE
+                                <!-- futuro php--> PANLEUCOPENIA
                             </h3>
                             <div class="textinhos">
                                 <p class="description">A cinomose é um dos maiores pesadelos dos tutores de cães, é uma
