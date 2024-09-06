@@ -13,6 +13,10 @@
         width: 100%;
         height: 100vh;
     }
+    .logo{
+        position: relative;
+        margin-left: -25px;
+    }
     .blue-div {
         display: none;
     }
@@ -176,6 +180,10 @@
         width: 100%;
         height: 100vh;
     }
+    .logo{
+        position: relative;
+        margin-left: -25px;
+    }
     .blue-div {
         display: none;
     }
@@ -209,14 +217,9 @@
         width: 300px;
         left: -20px;
     }
-    #agendamento-container {
-        position: relative;
-        top: 5px;
-        left: -20px;
-    }
     #btn-um {
         position: relative;
-        left: 100px;
+        margin-left: -13%;
     }
     .title-agendamento-um {
         position: relative;
@@ -296,7 +299,7 @@
     #final {
         position: relative;
         left: 100px;
-        top: 15px;
+        margin-top: 8%;
     }
     #sobre {
         position: relative;
@@ -307,8 +310,8 @@
     }
     #servico{
         position: relative;
-        left: -2px;
-        top: 5px;
+        left: -6px;
+        top: -48px;
     }
     #agendamento-container{
         position: relative;
@@ -317,6 +320,8 @@
     }
     .recado{
         width: 300px;
+        position: relative;
+        margin-left: 12%;
     }
 }
 @media (min-width:431px) and (max-width: 505px) {
@@ -329,10 +334,14 @@
         background-image: url(imgs/agenda.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center 25%;
+        background-position: right;
         margin: 0;
         width: 100%;
         height: 100vh;
+    }
+    .logo{
+        position: relative;
+        margin-left: -25px;
     }
     .blue-div {
         display: none;
@@ -358,14 +367,14 @@
     .title-agendamento {
         position: relative;
         font-size: 40px;
-        margin-left: 5px;
+        left: 5px;
         top: -10px;
     }
     .subtitle-inicio {
         position: relative;
         text-align: center;
         width: 300px;
-        left: -10px;
+        left: -22px;
     }
     #agendamento-container {
         position: relative;
@@ -374,7 +383,7 @@
     }
     #btn-um {
         position: relative;
-        left: 100px;
+        margin-left: -12%;
     }
     .title-agendamento-um {
         position: relative;
@@ -454,16 +463,261 @@
     #final {
         position: relative;
         left: 100px;
-        top: 15px;
+        margin-top: 10%;
     }
     #sobre {
         position: relative;
         left: -15px;
     }
+    #servico{
+        position: relative;
+        right: 18px;
+    }
+    #agendamento-container{
+        position: relative;
+        margin-left: 20%;
+    }
+    .recado{
+        width: 300px;
+        position: relative;
+        margin-left: 12%;
+    }
 }
 @media (min-width:506px) and (max-width: 575px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body {
+        background-image: url(imgs/agenda.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .logo{
+        position: relative;
+        margin-left: -25px;
+    }
+    .blue-div {
+        display: none;
+    }
+    .blue-div-resp {
+        position: relative;
+        left: -70px;
+        top: 25px;
+    }
+    .container {
+        margin-top: 200px;
+        height: 720vh;
+        width: 100%;
+        border-top-left-radius: 20px;
+        /* Arredondar o canto superior esquerdo */
+        border-top-right-radius: 20px;
+        /* Arredondar o canto superior direito */
+    }
+    #etapa1 {
+        position: relative;
+        left: -150px;
+    }
+    .title-agendamento {
+        position: relative;
+        font-size: 40px;
+        left: 5px;
+        top: -10px;
+    }
+    .subtitle-inicio {
+        position: relative;
+        text-align: center;
+        width: 300px;
+        left: -22px;
+    }
+    #agendamento-container {
+        position: relative;
+        top: 5px;
+        left: -20px;
+    }
+    #btn-um {
+        position: relative;
+        margin-left: -12%;
+    }
+    .title-agendamento-um {
+        position: relative;
+        font-size: 40px;
+        margin-left: 5px;
+        top: -10px;
+    }
+    #etapa2 {
+        position: relative;
+        left: -150px;
+    }
+    #form-control {
+        position: relative;
+        left: -30px;
+        width: 360px;
+    }
+    #btn-dois {
+        position: relative;
+        left: 45px;
+    }
+    #etapa3 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-tres {
+        position: relative;
+        left: 50px;
+    }
+
+    #etapa4 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-quatro {
+        position: relative;
+        left: 50px;
+    }
+    #etapa5 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-cinco {
+        position: relative;
+        left: 50px;
+    }
+    #etapa6 {
+        position: relative;
+        left: -150px;
+    }
+    #btn-seis {
+        position: relative;
+        left: 50px;
+    }
+    #radio {
+        position: relative;
+        left: 40px;
+    }
+    textarea {
+        width: 250px;
+    }
+    #etapa7 {
+        position: relative;
+        left: -150px;
+    }
+    #sucesso {
+        width: 350px;
+    }
+    #span {
+        position: relative;
+        top: -20px;
+    }
+    #agradecimento {
+        position: relative;
+        top: -20px;
+        width: 300px;
+    }
+    #final {
+        position: relative;
+        left: 100px;
+        margin-top: 10%;
+    }
+    #sobre {
+        position: relative;
+        left: -15px;
+    }
+    #servico{
+        position: relative;
+        right: 18px;
+    }
+    #agendamento-container{
+        position: relative;
+        margin-left: 20%;
+    }
+    .recado{
+        width: 300px;
+        position: relative;
+        margin-left: 12%;
+    }
+}
+@media (min-width:576px) and (max-width: 767px){
     #blue-div{
-        width: 230px !important;
+        width: 220px;
+        background-position: calc(100% - -40px) center;
+    }   
+    .logo{
+        position: relative;
+        margin-left: -10%;
+    }
+    .title-agendamento{
+        position: relative;
+        margin-left: -6%;
+    }
+    .subtitle-inicio{
+        position: relative;
+        width: 300px !important;
+        font-size: 15px;
+        margin-left: -14%;
+        text-align: center;
+    }
+    #servico{
+        position: relative;
+        left: -38px;
+    }
+    #agendamento-container{
+        position: relative;
+        left: -5px;
+    }
+    #btn-um{
+        position: relative;
+        margin-left: -25%;
+    }
+    .form-control{
+        width: 250px !important;
+        position: relative;
+        margin-left: -18%;
+    }
+    #sub{
+        position: relative;
+        text-align: center;
+        margin-left: -15%;
+    }
+    #btn-dois{
+        position: relative;
+        left: 8px;
+    }
+    #btn-tres{
+        position: relative;
+        left: 8px;
+    }
+    #btn-quatro{
+        position: relative;
+        left: 8px;
+    }
+    #btn-cinco{
+        position: relative;
+        left: 8px;
+    }
+    #btn-seis{
+        position: relative;
+        left: 8px;
+    }
+    #final{
+        position: relative;
+        left: 60px;
+        margin-top: 8px;
+    }
+    #sucesso{
+        position: relative;
+        top: -2%;
+    }
+}
+@media (min-width:768px) and (max-width: 820px){
+    #blue-div{
+        width: 300px;
+        background-position: calc(100% - -40px) center;
     }
 }
 
