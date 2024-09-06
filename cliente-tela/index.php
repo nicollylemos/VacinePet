@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/tela-cliente.css" />
+    <link rel="stylesheet" href="../css/css/tela-clientes.css" />
     <title>VacinePet</title>
 </head>
 
@@ -26,15 +26,15 @@
                     <p>Aqui você poderá editar suas informações básicas e profissionais.</p>
                     <div class="form-group mt-4">
                         <input id="form-control" type="text" maxlength="255" placeholder="Nome Completo"
-                            class="form-control" name="nome">
+                            class="form-control" id="nome" name="nome">
                     </div>
                     <div class="form-group mt-4">
-                        <input id="form-control" type="email" maxlength="255" placeholder="Email"
-                            class="form-control" name="email">
+                        <input id="form-control" type="email" maxlength="255" placeholder="Email" class="form-control"
+                            id="email" name="email">
                     </div>
                     <div class="form-group mt-4">
-                        <input id="form-control" type="text" maxlength="11" placeholder="Telefone"
-                            class="form-control" name="telefone">
+                        <input id="form-control" type="text" maxlength="11" placeholder="Telefone" class="form-control"
+                            id="telefone" name=" telefone">
                     </div>
                     <div class="form-group mt-4">
                         <input id="form-control" type="text" maxlength="11" placeholder="CPF" class="form-control"
@@ -47,8 +47,8 @@
                             name="rua">
                     </div>
                     <div class="form-group mt-4">
-                        <input id="form-control" type="text" maxlength="10" placeholder="Número"
-                            class="form-control" name="numero">
+                        <input id="form-control" type="text" maxlength="10" placeholder="Número" class="form-control"
+                            name="numero">
                     </div>
                     <div class="form-group mt-4">
                         <input id="form-control" type="text" maxlength="255" placeholder="Complemento"
@@ -58,7 +58,7 @@
                         <input id="form-control" type="text" maxlength="255" placeholder="Bloco (Apto.)"
                             class="form-control" name="bloco">
                     </div>
-                    
+
                 </div>
             </div>
         </div>

@@ -1,0 +1,27 @@
+
+.infos-pessoais h1{
+    margin-top: 20px;
+    color: rgb(62, 62, 62);
+}
+.infos-basica {
+    margin-left: 50px;
+    background-color: blue;
+}
+
+.infos-basica input{
+    border-radius: 20px;
+    border: 1px solid #838383;
+    padding: 6px;
+    width: 220px;
+    margin: 5px;
+}
+
+.infos-basica #nome{
+    display: flex;
+    float: left;
+}
+
+.infos-basica #email{
+    display: flex;
+    float: right;
+}
