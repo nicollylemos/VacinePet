@@ -19,6 +19,7 @@
     box-sizing: border-box;
 
 }
+
 .tela-inicial {
     background-image: url(img/background-home.svg);
     background-repeat: no-repeat;
@@ -28,6 +29,7 @@
     width: 100%;
     height: 100vh;
 }
+
 
 .titulo-site {
     color: #FA5909;
@@ -80,7 +82,7 @@ body {
 }
 
 .btn-inicio {
-    background-color:   #52BACB;
+    background-color: #52BACB;
     color: #fff;
     font-weight: 600;
     border-radius: 50px;
@@ -92,25 +94,29 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
 }
-.btn-inicio:hover{
-    background-color:  #55abb9;
+
+.btn-inicio:hover {
+    background-color: #55abb9;
     transition: 0.4s;
 }
-.btn-inicio a{
+
+.btn-inicio a {
     text-decoration: none;
     color: #ffffff;
 }
-.info-doencas{
+
+.info-doencas {
     position: relative;
 }
+
 .informacao {
     width: 95vw;
     position: relative;
     top: 10px;
     left: 50%;
-    transform: translate(-50%,-50%);
-    z-index:10;
-    
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
 }
 
 #info-cao {
@@ -125,11 +131,11 @@ body {
     float: left;
     right: -5%;
     margin-left: 100px;
-    
+
 }
 
 #info-gato {
-    background-color:  #52BACB;
+    background-color: #52BACB;
     width: 520px;
     height: 290px;
     border-radius: 25px;
@@ -184,7 +190,8 @@ body {
     font-family: baloo;
     margin-left: 2%;
 }
-.btn-ler{
+
+.btn-ler {
     margin-top: 5%;
     margin-left: 2%;
 }
@@ -231,19 +238,21 @@ body {
     color: #55abb9;
 }
 
-.img-pet{
+.img-pet {
     position: relative;
     float: right;
     top: 30px;
 }
-.fa-solid{
+
+.fa-solid {
     color: #fa5909;
     --fa-rotate-angle: 53deg;
-     width: 50px; 
-     height:2px; 
-     font-size:55px;
+    width: 50px;
+    height: 2px;
+    font-size: 55px;
 }
-.cat-card{
+
+.cat-card {
     position: relative;
     width: 80%;
     top: -99%;

@@ -9,7 +9,7 @@ include("./inc/header.php");
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/inicio-tela.css">
-    <link rel="stylesheet" href="css/css/index.css">
+    <link rel="stylesheet" href="css/css/inicial.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
@@ -73,7 +73,7 @@ include("./inc/header.php");
     <section class="secao-valores">
         <div class="vacinas-valor">
             <div class="titulo-vacina">
-                <h2>Vacinas mais procuradas</h2>
+                <h2 id="vmp">Vacinas mais procuradas</h2>
             </div>
             <div class="slide-container swiper">
                 <div class="slide-content">
@@ -173,8 +173,8 @@ include("./inc/header.php");
     <section class="atendimento-domiciliar">
         <div class="fundo-atendimento">
             <div class="conteudo-atend">
-                <h2>Como funciona a vacinação em domicílio?</h2>
-                <p>Nos dias de hoje,
+                <h2 class="como">Como funciona a vacinação em domicílio?</h2>
+                <p class="p-text" style="color: white;">Nos dias de hoje,
                     garantir a saúde e o bem-estar dos nossos animais de estimação é uma prioridade para muitos
                     donos de pets. Uma das formas mais eficazes de assegurar que os nossos amigos de quatro
                     patas estejam protegidos contra diversas doenças é através da vacinação. No entanto,
