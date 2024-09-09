@@ -206,3 +206,19 @@
     margin-top: 400px; /* Ajuste esse valor conforme necessário */
 }
 
+#tipo{
+    font-family: baloo;
+    color: #FD811C;
+    position: relative;
+    bottom: 55px;
+}
+#recado{
+    font-size: 13px;
+    font-weight: bolder;
+    position: relative;
+    margin-top: 5%;
+    color: #9c9c9c;
+    left: 220px;
+}
+
+

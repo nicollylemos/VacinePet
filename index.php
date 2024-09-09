@@ -20,6 +20,14 @@ include("./inc/header.php");
 
 </head>
 
+<style>
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+</style>
+
 <body>
     <section class="home-inicial">
         <div class="tela-inicial">
@@ -47,7 +55,7 @@ include("./inc/header.php");
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
                         <a href="doencascachorro.php"><button type="submit" class="btn-ler">Ler Mais</button></a>
-                       
+
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog"><img src="" alt=""></div>
@@ -58,7 +66,7 @@ include("./inc/header.php");
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="doencasgato.php"><button class="btn-ler">Ler Mais</button></a> 
+                        <a href="doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
                         <img class="cat-card" src="imgs/cat-card.png" alt="Cachorro">
                     </div>
                     <div class="img-pet">
@@ -84,15 +92,16 @@ include("./inc/header.php");
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">149,
-                                    99</p>
+                                <p class="valor">R$149,
+                                    90</p>
+                                    <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
-                                    <!-- futuro php-->Polivalente
+                                    <!-- futuro php-->V10
                                 </h3>
                                 <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><a
-                                    href="#"><button type="submit" class="btn-vacinas">Ver Mais</button></a>
+                                    printing and typesetting industry. Lorem Ipsum has. </p><a href="#"><button
+                                        type="submit" class="btn-vacinas">Ver Mais</button></a>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
@@ -101,8 +110,8 @@ include("./inc/header.php");
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">149,
-                                    99</p>
+                                <p class="valor">R$180,00</p>
+                                <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Gripe canina
                                 </h3>
@@ -118,10 +127,10 @@ include("./inc/header.php");
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">149,
-                                    99</p>
+                                <p class="valor">R$165,00</p>
+                                <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
-                                    <!-- futuro php-->Giardíase
+                                    <!-- futuro php-->Giardia
                                 </h3>
                                 <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
@@ -135,10 +144,61 @@ include("./inc/header.php");
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">149,
-                                    99</p>
+                                <p class="valor">R$125,90</p>
+                                <p id="tipo">Vacina Canina e Felina</p>
                                 <h3 class="nome-vacina">
-                                    <!-- futuro php-->Antirrábica
+                                    <!-- futuro php-->Raiva
+                                </h3>
+                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
+                                    class="btn-vacinas">Ver Mais</button>
+                            </div>
+                        </div>
+                        <div class=" card swiper-slide">
+                            <div class="image-content"><span class="overlay"></span>
+                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="valor">R$165,00</p>
+                                <p id="tipo">Vacina Felina</p>
+                                <h3 class="nome-vacina">
+                                    <!-- futuro php-->V3
+                                </h3>
+                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
+                                    class="btn-vacinas">Ver Mais</button>
+                            </div>
+                        </div>
+                        <div class=" card swiper-slide">
+                            <div class="image-content"><span class="overlay"></span>
+                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="valor">R$180,00</p>
+                                <p id="tipo">Vacina Felina</p>
+                                <h3 class="nome-vacina">
+                                    <!-- futuro php-->V4
+                                </h3>
+                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
+                                    class="btn-vacinas">Ver Mais</button>
+                            </div>
+                        </div>
+                        <div class=" card swiper-slide">
+                            <div class="image-content"><span class="overlay"></span>
+                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <p class="valor">R$210,00</p>
+                                <p id="tipo">Vacina Felina</p>
+                                <h3 class="nome-vacina">
+                                    <!-- futuro php-->V5
                                 </h3>
                                 <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
@@ -152,10 +212,10 @@ include("./inc/header.php");
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">149,
-                                    99</p>
+                                <p class="valor">R$139,90</p>
+                                <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
-                                    <!-- futuro php-->Polivalente
+                                    <!-- futuro php-->V8
                                 </h3>
                                 <p class="description">Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
@@ -170,6 +230,11 @@ include("./inc/header.php");
             </div>
         </div>
     </section>
+
+    <div class="recado">
+        <p id="recado">Atenção: O carrossel de vacinas do site oferece apenas uma estimativa de valores. As vacinas devem ser indicadas pela médica veterinária.</p>
+    </div>
+
     <section class="atendimento-domiciliar">
         <div class="fundo-atendimento">
             <div class="conteudo-atend">

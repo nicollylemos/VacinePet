@@ -69,6 +69,9 @@
     .p-text{
         text-align: center;
     }
+    .btn-ler{
+        top: -21px;
+    }
 
     .cat-card {
         display: none;
@@ -126,12 +129,13 @@
         height: 650px;
         background-color: #52BACB;
         background-image: none;
+        top: 10px;
     }
 
     .conteudo-atend {
         width: auto;
-        margin: 0;
         margin-right: 20px;
+        position: relative;
     }
 
     .conteudo-atend h2 {
@@ -150,6 +154,13 @@
     .whatsapp-icon {
         position: relative;
         left: 80%;
+        top: -700px; /*arrumar*/
+    }
+    .recado{
+        position: relative;
+        text-align: center;
+        margin-left: -55%;
+        width: 300px;
     }
 }
 
