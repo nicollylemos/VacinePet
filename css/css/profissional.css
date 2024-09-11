@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/league/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family:'baloo';
+    src:url("../font/baloo/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: 'poppins';
+    src: url("../font/poppins/Poppins-Regular.ttf");
+}
+
+body{
+    background-image: url('img/tela-doutora.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+      
+}
