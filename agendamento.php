@@ -43,7 +43,7 @@
                             <h1 class="title-agendamento"> AGENDAMENTO <i
                                     style="color: #fa5909; --fa-rotate-angle: 49deg;"></i></h1>
                             <h6 class="subtitle-inicio">
-                                Parabéns por priorizar a saúde do seu pet! 
+                                Parabéns por priorizar a saúde do seu pet!
                                 Agora, para prosseguir com o agendamento, selecione o dia e horário que melhor se
                                 adequam à sua agenda.
                             </h6>
@@ -58,20 +58,22 @@
 
                         <div id="servico" class="servico">
                             <p class="serviço">Escolha do serviço:</p>
-                            <label class="radio-option">
-                                <input type="radio" name="service" value="vacinar">
-                                Vacina animal
-                            </label>
-                            <label class="radio-option">
-                                <input type="radio" name="service" value="castrar">
-                                Castração de gatos
-                            </label>
+                            <div class="radio-option">
+                                <input type="radio" id="vacinar" name="service" value="vacinar">
+                                <label for="vacinar">Vacina animal</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="castrar" name="service" value="castrar">
+                                <label for="castrar">Castração de gatos</label>
+                            </div>
                         </div>
+
 
                         <button id="btn-um" type="button" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(2)">Próximo</button>
 
-                        <p id="rec" class="recado"> Atenção: O custo de deslocamento é ajustado conforme a localização do atendimento.
+                        <p id="rec" class="recado"> Atenção: O custo de deslocamento é ajustado conforme a localização
+                            do atendimento.
                         </p>
 
                     </div>
