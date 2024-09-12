@@ -138,7 +138,7 @@ body {
 }
 
 .btn-custom {
-    top: 35px;
+    top: 100px;
     position: relative;
     left: 120px;
     font-family: baloo;
@@ -174,20 +174,21 @@ body {
     text-align: center;
     font-weight: bolder;
     position: relative;
-    margin-top: 15%;
+    margin-top: 23%;
     color: #9c9c9c;
     left: -40px;
 
 }
 #agendamento-container{
+    z-index: 1000;
     position: relative;
     left: 10%;
     top: 35px;
     
 }
 .servico{
-    position: relative;
-    top: -50px;
+    position: fixed;
+    top: 250px;
 }
 #btn-um{
     position: relative;

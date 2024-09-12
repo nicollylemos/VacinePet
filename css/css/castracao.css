@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/league/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family:'baloo';
+    src:url("../font/baloo/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: 'poppins';
+    src: url("../font/poppins/Poppins-Regular.ttf");
+}
+
+body{
+    background-image: url('img/tela-castracao.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #419dac;
+      
+}
+#title{
+    font-family: baloo;
+    font-size: 50px;
+    color: white;
+    margin-left: 5%;
+    
+}
+
+.text{
+    width: 40%;
+    color: white;
+    margin-left: 5%;
+    position: relative;
+  
+   
+}
+#sub-title{
+    font-family: poppins;
+    color: white;
+    font-weight: 1000;
+   font-style: oblique;
+    text-align: center;
+    
+}
+
+.btn-custom {
+    top: 40px;
+    position: relative;
+    font-family: baloo;
+    font-size: 15px;
+    background-color: #FD811C;
+    border-color: #FD811C;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    color: white;
+    margin-bottom: 100px;
+    margin-left: 19%;
+}
+
+.btn-custom:hover {
+    background-color: #fcab65;
+    border-color: #fcab65;
+}
+p{
+    text-align: justify;
+}
