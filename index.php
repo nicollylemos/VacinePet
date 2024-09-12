@@ -94,7 +94,7 @@ include("./inc/header.php");
                             <div class="card-content">
                                 <p class="valor">R$149,
                                     90</p>
-                                    <p id="tipo">Vacina Canina</p>
+                                <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V10
                                 </h3>
@@ -232,20 +232,20 @@ include("./inc/header.php");
     </section>
 
     <div class="recado">
-        <p id="recado">Atenção: O carrossel de vacinas do site oferece apenas uma estimativa de valores. As vacinas devem ser indicadas pela médica veterinária.</p>
+        <p id="recado">Atenção: O carrossel de vacinas do site oferece apenas uma estimativa de valores. As vacinas
+            devem ser indicadas pela médica veterinária.</p>
     </div>
 
     <section class="atendimento-domiciliar">
         <div class="fundo-atendimento">
             <div class="conteudo-atend">
                 <h2 class="como">Como funciona a vacinação em domicílio?</h2>
-                <p class="p-text" style="color: white;">Nos dias de hoje,
-                    garantir a saúde e o bem-estar dos nossos animais de estimação é uma prioridade para muitos
-                    donos de pets. Uma das formas mais eficazes de assegurar que os nossos amigos de quatro
-                    patas estejam protegidos contra diversas doenças é através da vacinação. No entanto,
-                    levar os animais a uma clínica veterinária nem sempre é uma tarefa fácil. É aí que o serviço
-                    de atendimento a domicílio para vacinação de animais se destaca como uma excelente
-                    alternativa. </p><a href="como-funciona.php"><button class="btn-ler-atend">Saiba mais</button></a>
+                <p class="p-text" style="color: white;">
+                    Atualmente, assegurar a saúde e o bem-estar dos animais de estimação é uma prioridade para muitos
+                    proprietários. A vacinação é uma medida eficaz para protegê-los de doenças. Contudo, o deslocamento
+                    até uma clínica veterinária pode ser complicado. Nesse contexto, o serviço de vacinação a domicílio
+                    se apresenta como uma alternativa prática e conveniente.
+                </p><a href="como-funciona.php"><button class="btn-ler-atend">Saiba mais</button></a>
             </div>
         </div>
     </section>

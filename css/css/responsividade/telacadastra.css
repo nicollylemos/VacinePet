@@ -1,8 +1,12 @@
 @media (min-width:310px) and (max-width: 350px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -15,7 +19,7 @@
 
     .blue-div-resp {
         position: relative;
-        top: -45px;
+        top: -265px;
         align-items: center;
     }
 
@@ -26,7 +30,7 @@
     .form {
         position: relative;
         margin-left: -34%;
-        margin-top: -20px;
+        top: -250px;
     }
 
     .form-control {
@@ -51,7 +55,7 @@
     }
 
     .container {
-        margin-top: 400px;
+        margin-top: 450px;
         height: 720vh;
         width: 100%;
         position: absolute;
@@ -63,10 +67,6 @@
         /* Deixa o canto inferior esquerdo normal */
         border-bottom-right-radius: 0;
         /* Deixa o canto inferior direito normal */
-    }
-
-    .blue-div-resp {
-        margin-top: -155px;
     }
 
     .btn-perso {
@@ -115,16 +115,20 @@
         position: relative;
         top: -45px;
         font-size: 18px;
-        width: 270px;
+        width: 180px;
     }
 
 }
 
 @media (min-width:351px) and (max-width: 375px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -177,7 +181,8 @@
     }
 
     .blue-div-resp {
-        margin-top: -175px;
+        margin-top: -205px;
+        margin-left: 7px;
     }
 
     .title-blue-div1 {
@@ -191,6 +196,7 @@
 
     .title-blue-div3 {
         font-size: 15px;
+        width: 180px;
     }
 
     .btn-perso {
@@ -237,9 +243,13 @@
 
 @media (min-width:376px) and (max-width: 400px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -257,7 +267,7 @@
     .form {
         position: relative;
         margin-left: -30%;
-        margin-top: 10%;
+        margin-top: 25%;
     }
 
     .form-control {
@@ -292,7 +302,8 @@
     }
 
     .blue-div-resp {
-        margin-top: -175px;
+        margin-top: -195px;
+        margin-left: 8px;
     }
 
     .title-blue-div1 {
@@ -306,6 +317,7 @@
 
     .title-blue-div3 {
         font-size: 15px;
+        width: 180px;
     }
 
     .btn-perso {
@@ -352,9 +364,13 @@
 
 @media (min-width:401px) and (max-width: 450px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -372,7 +388,7 @@
     .form {
         position: relative;
         margin-left: -33%;
-        margin-top: 13%;
+        margin-top: 25%;
     }
 
     .form-control {
@@ -393,7 +409,7 @@
 
     .container {
         position: absolute;
-        margin-top: 430px;
+        margin-top: 410px;
         height: 900px;
         width: 100%;
         border-top-left-radius: 25px;
@@ -407,7 +423,7 @@
     }
 
     .blue-div-resp {
-        margin-top: -175px;
+        margin-top: -205px;
     }
 
     .title-blue-div1 {
@@ -427,6 +443,7 @@
         position: relative;
         font-size: 16px;
         margin-left: 5%;
+        width: 180px;
     }
 
     .btn-perso {
@@ -466,9 +483,13 @@
 
 @media (min-width:451px) and (max-width: 500px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -491,7 +512,7 @@
     .form {
         position: relative;
         margin-left: -33%;
-        margin-top: -10%;
+        margin-top: -20%;
     }
 
     .form-control {
@@ -526,7 +547,8 @@
     }
 
     .blue-div-resp {
-        margin-top: -175px;
+        margin-top: -120px;
+        margin-left: -8px;
     }
 
     .title-blue-div1 {
@@ -591,9 +613,13 @@
 
 @media (min-width:501px) and (max-width: 525px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -647,7 +673,7 @@
 
     .blue-div-resp {
         position: relative;
-        margin-top: -180px;
+        margin-top: 33px;
     }
 
     .title-blue-div1 {
@@ -712,9 +738,13 @@
 
 @media (min-width:526px) and (max-width: 565px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -753,7 +783,7 @@
 
     .container {
         position: absolute;
-        margin-top: 475px;
+        margin-top: 410px;
         height: 915px;
         width: 100%;
         border-top-left-radius: 25px;
@@ -768,7 +798,7 @@
 
     .blue-div-resp {
         position: relative;
-        margin-top: -240px;
+        margin-top: -200px;
     }
 
     .title-blue-div1 {
@@ -788,6 +818,7 @@
         position: relative;
         font-size: 18px;
         margin-left: 5%;
+        width: 300px;
     }
 
     .btn-perso {
@@ -835,9 +866,13 @@
 
 @media (min-width:566px) and (max-width: 575px) {
     body {
-        background-color: #52bacb;
-        background-size: cover;
+        background-image: url('imgs/cadresp.jpg');
         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right top 29%;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
     }
 
     #pata {
@@ -855,7 +890,7 @@
     .form {
         position: relative;
         margin-left: -30%;
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     .form-control {
@@ -876,7 +911,7 @@
 
     .container {
         position: absolute;
-        margin-top: 490px;
+        margin-top: 410px;
         height: 920px;
         width: 100%;
         border-top-left-radius: 25px;
@@ -891,7 +926,7 @@
 
     .blue-div-resp {
         position: relative;
-        margin-top: -240px;
+        margin-top: -190px;
     }
 
     .title-blue-div1 {
@@ -911,6 +946,7 @@
         position: relative;
         font-size: 18px;
         margin-left: 5%;
+        width: 300px;
     }
 
     .btn-perso {
