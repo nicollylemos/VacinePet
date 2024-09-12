@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'league';
+    src: url("../font/league/LeagueSpartan-Regular.ttf");
+}
+@font-face {
+    font-family:'baloo';
+    src:url("../font/baloo/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
+}
+@font-face {
+    font-family: 'poppins';
+    src: url("../font/poppins/Poppins-Regular.ttf");
+}
+
+body{
+    background-image: url('img/profissional.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+      
+}
+.title{
+    color: #52BACB;
+    font-family: baloo;
+    text-align: center;
+    font-size: 300%;
+    margin-left: 28%;
+    margin-top: 5%;
+}
+.subtitle{
+    color: #52BACB;
+    font-family: poppins;
+    text-align: center;
+    margin-left: 28%;
+    font-weight: 500;
+    font-size: 150%;
+    margin-top: -3%;
+}
+.destaque{
+    font-weight: bolder;
+    text-align: center;
+    color: #FD811C;
+    
+}
+.sobre-profissional{
+    
+    font-family: poppins;
+    width: 50%;
+    text-align: justify;
+    margin-top: 3%;
+    margin-left: 39%;
+    
+}
+.final{
+    background-color: #5fbbc9;
+    text-align: center;
+    width: 30%;
+    padding: 2px 2px;
+    color: white;
+    font-family: poppins;
+    display: none;
+   
+}
