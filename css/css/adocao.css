@@ -1,0 +1,9 @@
+.container{
+    background-image: url('img/adocao.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: aqua;
+}
+.part-div{
+    background-color: rgb(177, 66, 84);
+}

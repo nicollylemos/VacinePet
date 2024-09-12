@@ -171,7 +171,7 @@
             <a href="/VacinePet/index.php" class="home active">Início</a>
             <a href="/VacinePet/profissional.php">Profissional</a>
             <a href="/VacinePet/agendamento.php">Agendamento</a>
-            <a href="#">Adoção</a>
+            <a href="/VacinePet/adocao.php">Adoção</a>
             <a href="/VacinePet/castracao.php">Castração</a>
             <a href="/VacinePet/infos-page/sobre-vacinepet.php">Sobre</a>
 
