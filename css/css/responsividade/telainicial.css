@@ -152,7 +152,7 @@
     }
 
     .whatsapp-icon {
-        position: relative;
+        position: fixed;
         left: 80%;
         top: -700px; /*arrumar*/
     }
