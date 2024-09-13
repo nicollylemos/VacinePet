@@ -6,18 +6,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
     body {
-      
+
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
 
     }
+
+    @font-face {
+        font-family: 'league';
+        src: url("../font/league/LeagueSpartan-Bold.ttf");
+    }
+
 
     .topnav .logo:hover {
         color: #FA5909;
     }
 
     .topnav {
-        
+
         overflow: hidden;
         background-color: white;
         border-bottom: 1px solid #ddd;
@@ -46,7 +52,9 @@
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: league;
     }
 
     .topnav a:hover {
@@ -169,16 +177,16 @@
                 style="color: #FA5909; --fa-rotate-angle: 49deg; width: 18px; height: 6px; font-size: 13px;"></i></a>
         <div class="menu">
             <a href="/VacinePet/index.php" class="home active">Início</a>
-            <a href="/VacinePet/profissional.php">Profissional</a>
-            <a href="/VacinePet/agendamento.php">Agendamento</a>
-            <a href="/VacinePet/adocao.php">Adoção</a>
-            <a href="/VacinePet/castracao.php">Castração</a>
+            <a href="/VacinePet/conteudo/profissional.php">Profissional</a>
+            <a href="/VacinePet/usuario/agendamento.php">Agendamento</a>
+            <a href="/VacinePet/conteudo/adocao.php">Adoção</a>
+            <a href="/VacinePet/conteudo/castracao.php">Castração</a>
             <a href="/VacinePet/infos-page/sobre-vacinepet.php">Sobre</a>
 
         </div>
         <div class="buttons">
-            <a href="login.php"><button class="login">Entrar</button></a>
-            <a href="cadastro.php"><button class="cad">Cadastrar</button></a>
+            <a href="/VacinePet/inc/login.php"><button class="login">Entrar</button></a>
+            <a href="/VacinePet/usuario/cadastro.php"><button class="cad">Cadastrar</button></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i> <!-- Aqui está o ícone de hambúrguer -->

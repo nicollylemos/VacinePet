@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/cadastrar.css">
-    <link rel="stylesheet" href="css/css/responsividade/telacadastra.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/cadastrar.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telacadastra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Cadastro</title>
     <style>
-        .hidden {
-            display: none;
-        }
+    .hidden {
+        display: none;
+    }
     </style>
 </head>
 
@@ -23,7 +23,8 @@
         <div class="blue-div">
             <h4 class="title-blue-div1">
                 VacinePet
-                <i class="fa-solid fa-paw fa-rotate-by" style=" color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
+                <i class="fa-solid fa-paw fa-rotate-by"
+                    style=" color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
             </h4>
             <h1 class="title-blue-div2">Bem-vindo,</h1>
             <h3 class="title-blue-div3">
@@ -35,7 +36,8 @@
         <div class="blue-div-resp">
             <h4 class="title-blue-div1">
                 VacinePet
-                <i class="fa-solid fa-paw fa-rotate-by" style="  color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
+                <i class="fa-solid fa-paw fa-rotate-by"
+                    style="  color: white;transform: rotate(49deg); width: 20px; height: 20px; font-size: 15px;"></i>
             </h4>
             <h1 class="title-blue-div2 titulo">Bem-vindo,</h1>
             <h3 class="title-blue-div3 titulo">
@@ -59,11 +61,11 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control"
-                                    name="customer_name">
+                                    name="tutor_nome">
                             </div>
                             <div id="cpf" class="form-group col-md-6">
                                 <input type="text" maxlength="11" placeholder="CPF" class="form-control"
-                                    name="customer_cpf_cnpj">
+                                    name="tutor_cpf">
                             </div>
                         </div>
 
@@ -76,35 +78,35 @@
                             </div>
                             <div id="tele" class="form-group col-md-6">
                                 <input type="text" placeholder="DDD + Telefone" maxlength="14" class="form-control"
-                                    name="customer_phone">
+                                    name="tutor_telefone">
                             </div>
                         </div>
 
                         <script>
-                            // Máscara para a data de nascimento
-                            document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function (
-                                e) {
-                                let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
-                                if (value.length > 8) {
-                                    value = value.slice(0, 8); // Limita a 8 dígitos
-                                }
-                                // Adiciona as barras conforme necessário
-                                value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
-                                value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
-                                e.target.value = value;
-                            });
+                        // Máscara para a data de nascimento
+                        document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function(
+                            e) {
+                            let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
+                            if (value.length > 8) {
+                                value = value.slice(0, 8); // Limita a 8 dígitos
+                            }
+                            // Adiciona as barras conforme necessário
+                            value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
+                            value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
+                            e.target.value = value;
+                        });
 
-                            // Máscara para o telefone
+                        // Máscara para o telefone
                         </script>
 
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <input type="text" placeholder="Email" maxlength="255" class="form-control"
-                                    name="customer_email">
+                                    name="tutor_email">
                             </div>
                             <div id="senha" class="form-group col-md-6">
                                 <input type="password" placeholder="Senha" maxlength="100" class="form-control"
-                                    name="customer_password">
+                                    name="tutor_senha">
                             </div>
                         </div>
                     </div>
@@ -124,18 +126,20 @@
                     </div>
                     <div class="row">
                         <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="255" placeholder="Rua" class="form-control" name="rua">
+                            <input type="text" maxlength="255" placeholder="Rua" class="form-control"
+                                name="endereco_rua">
                         </div>
                         <div id="num" class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="10" placeholder="Número" class="form-control" name="numero">
+                            <input type="text" maxlength="10" placeholder="Número" class="form-control"
+                                name="endereco_numero">
                         </div>
                         <div class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Complemento" class="form-control"
-                                name="complemento">
+                                name="enedereco_complemento">
                         </div>
                         <div id="bloco" class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Bloco (Apto.)" class="form-control"
-                                name="bloco">
+                                name="endereco_bloco">
                         </div>
                     </div>
                     <div class="div-botoes">
@@ -156,16 +160,18 @@
                     </div>
                     <div class="row">
                         <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="8" placeholder="Bairro" class="form-control" name="bairro">
+                            <input type="text" maxlength="8" placeholder="Bairro" class="form-control"
+                                name="endereco_bairro">
                         </div>
                         <div id="cep" class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="8" placeholder="CEP" class="form-control" name="cep">
+                            <input type="text" maxlength="8" placeholder="CEP" class="form-control" name="endereco_cep">
                         </div>
                         <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="255" placeholder="Cidade" class="form-control" name="cidade">
+                            <input type="text" maxlength="255" placeholder="Cidade" class="form-control"
+                                name="endereco_cidade">
                         </div>
                         <div id="sp" class="form-group mt-4 col-md-6">
-                            <select class="form-control" name="estado">
+                            <select class="form-control" name="endereco_estado">
                                 <option value="SP">SP</option>
                             </select>
                         </div>
@@ -308,7 +314,7 @@
         </div>
     </div>
 
-    <script src="js/cadastro.js"></script>
+    <script src="../js/cadastro.js"></script>
 </body>
 
 </html>

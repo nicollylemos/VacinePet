@@ -21,11 +21,11 @@ include("./inc/header.php");
 </head>
 
 <style>
-    html,
-    body {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
+html,
+body {
+    overflow-x: hidden;
+    /* Esconde a rolagem horizontal */
+}
 </style>
 
 <body>
@@ -40,7 +40,8 @@ include("./inc/header.php");
                 <p>Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu <br>animal de
-                    estimação. </p><a href="agendamento.php"><button class="btn-inicio">Agendar</button></a>
+                    estimação. </p><a href="/VacinePet/usuario/agendamento.php"><button
+                        class="btn-inicio">Agendar</button></a>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -54,7 +55,8 @@ include("./inc/header.php");
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
-                        <a href="doencascachorro.php"><button type="submit" class="btn-ler">Ler Mais</button></a>
+                        <a href="/VacinePet/conteudo/doencascachorro.php"><button type="submit" class="btn-ler">Ler
+                                Mais</button></a>
 
                     </div>
                     <div class="img-pet">
@@ -66,7 +68,7 @@ include("./inc/header.php");
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
+                        <a href="/VacinePet/conteudo/doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
                         <img class="cat-card" src="imgs/cat-card.png" alt="Cachorro">
                     </div>
                     <div class="img-pet">
@@ -92,16 +94,16 @@ include("./inc/header.php");
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">R$149,
-                                    90</p>
+                                <p class="valor">R$149,90</p>
                                 <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V10
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><a href="#"><button
-                                        type="submit" class="btn-vacinas">Ver Mais</button></a>
+                                <p class="description">
+                                    A vacina V10 é fundamental para proteger cães contra 10 doenças graves, incluindo
+                                    cinomose, parvovirose e leptospirose. Previne infecções fatais e garante uma vida
+                                    saudável. </p><a href="#"><button type="submit" class="btn-vacinas">Ver
+                                        Mais</button></a>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
@@ -115,10 +117,10 @@ include("./inc/header.php");
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Gripe canina
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
-                                    class="btn-vacinas">Ver Mais</button>
+                                <p class="description">A vacina contra gripe canina previne infecções respiratórias
+                                    graves, como a tosse dos canis. Essencial para cães sociáveis, reduz sintomas e
+                                    mantém a saúde em dia.</p><button type="submit" class="btn-vacinas">Ver
+                                    Mais</button>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
@@ -132,10 +134,10 @@ include("./inc/header.php");
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Giardia
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
-                                    class="btn-vacinas">Ver Mais</button>
+                                <p class="description">A vacina contra giárdia protege cães da infecção intestinal
+                                    causada por parasitas. Importante para prevenir diarreia, vômitos e desidratação,
+                                    mantendo-os saudáveis. </p><button type="submit" class="btn-vacinas">Ver
+                                    Mais</button>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
@@ -149,10 +151,10 @@ include("./inc/header.php");
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Raiva
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
-                                    class="btn-vacinas">Ver Mais</button>
+                                <p class="description">A vacinação contra a raiva é obrigatória para cães e gatos no
+                                    Brasil, ajudando a controlar a doença viral que pode ser transmitida de animais para
+                                    humanos, protegendo ambos. </p><button type="submit" class="btn-vacinas">Ver
+                                    Mais</button>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
@@ -166,10 +168,10 @@ include("./inc/header.php");
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V3
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
-                                    class="btn-vacinas">Ver Mais</button>
+                                <p class="description">A vacina V3 para gatos, ou tríplice, protege contra
+                                    Rinotraqueíte, Calicivirose e Panleucopenia felina, prevenindo essas doenças graves
+                                    e mantendo a saúde do seu felino. </p><button type="submit" class="btn-vacinas">Ver
+                                    Mais</button>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
@@ -183,10 +185,10 @@ include("./inc/header.php");
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V4
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
-                                    class="btn-vacinas">Ver Mais</button>
+                                <p class="description">A vacina V4, ou Felocell CVR®-C, é uma vacina viva atenuada para
+                                    gatos, que protege contra panleucopenia, rinotraqueíte, calicivirose e clamidiose
+                                    felina.
+                                </p><button type="submit" class="btn-vacinas">Ver Mais</button>
                             </div>
                         </div>
                         <div class=" card swiper-slide">
@@ -200,9 +202,9 @@ include("./inc/header.php");
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V5
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
+                                <p class="description">A vacina V5 oferece proteção adicional ao incluir a imunização
+                                    contra Leucemia Felina (Felv), além das doenças já cobertas pela V4: panleucopenia,
+                                    rinotraqueíte, calicivirose e clamidiose. </p><button type="submit"
                                     class="btn-vacinas">Ver Mais</button>
                             </div>
                         </div>
@@ -217,10 +219,10 @@ include("./inc/header.php");
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V8
                                 </h3>
-                                <p class="description">Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum Lorem Ipsum is simply dummy text of the
-                                    printing and typesetting industry. Lorem Ipsum has. </p><button type="submit"
-                                    class="btn-vacinas">Ver Mais</button>
+                                <p class="description">A vacina V8 ajuda a prevenir cinomose, hepatite infecciosa
+                                    canina, parainfluenza, parvovirose, coronavirose e leptospirose, oferecendo proteção
+                                    abrangente para cães. </p><button type="submit" class="btn-vacinas">Ver
+                                    Mais</button>
                             </div>
                         </div>
                     </div>
@@ -245,7 +247,8 @@ include("./inc/header.php");
                     proprietários. A vacinação é uma medida eficaz para protegê-los de doenças. Contudo, o deslocamento
                     até uma clínica veterinária pode ser complicado. Nesse contexto, o serviço de vacinação a domicílio
                     se apresenta como uma alternativa prática e conveniente.
-                </p><a href="como-funciona.php"><button class="btn-ler-atend">Saiba mais</button></a>
+                </p><a href="/VacinePet/conteudo/como-funciona.php"><button class="btn-ler-atend">Saiba
+                        mais</button></a>
             </div>
         </div>
     </section>

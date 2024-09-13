@@ -1,5 +1,5 @@
 <?php
-include("./inc/header.php");
+include("../inc/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,10 +8,10 @@ include("./inc/header.php");
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/doencasgato.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/doencasgato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
-    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Doenças Felinas</title>
 </head>
@@ -335,25 +335,25 @@ include("./inc/header.php");
                             </dialog>
                         </div>
                     </div>
-                   
-                    </div>
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="agende-agora">
-                <a href="agendamento.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
+                </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="agende-agora">
+            <a href="agendamento.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
+
+        </div>
         </div>
 
 </body>
-<?php include("./inc/footer.php") ?>
+<?php include("../inc/footer.php") ?>
 <!--scroll JS-->
-<script src="js/scroll.js"></script>
+<script src="../js/scroll.js"></script>
 <!--swiper JS -->
-<script src="js/swiper/swiper-bundle.min.js"></script>
+<script src="../js/swiper/swiper-bundle.min.js"></script>
 <!--JS -->
-<script src="js/telainicial.js"></script>
+<script src="../js/telainicial.js"></script>
 
 </html>

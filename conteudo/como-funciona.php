@@ -1,5 +1,5 @@
 <?php
-include("./inc/teste-nav.php");
+include("../inc/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,8 +7,8 @@ include("./inc/teste-nav.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/como-funciona.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/como-funciona.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Como funciona?</title>
 </head>
@@ -35,7 +35,8 @@ include("./inc/teste-nav.php");
                     </div>
                     <h3 class="title-visita">VISITA DO VETERINÁRIO</h3>
                 </div>
-                <p class="text-visita">No dia agendado, nosso veterinário irá até sua residência com todos os equipamentos necessários para realizar a vacinação do seu pet.</p>
+                <p class="text-visita">No dia agendado, nosso veterinário irá até sua residência com todos os
+                    equipamentos necessários para realizar a vacinação do seu pet.</p>
             </div>
             <div class="separator"></div>
             <div class="sections">
@@ -45,20 +46,23 @@ include("./inc/teste-nav.php");
                     </div>
                     <h3 class="title-acompanhamento">ACOMPANHAMENTO<br> PÓS-ATENDIMENTO</h3>
                 </div>
-                <p class="text-acompanhamento">Após a visita, você terá acesso a um canal direto de comunicação com o veterinário para esclarecer dúvidas e receber orientações adicionais, garantindo o cuidado contínuo com seu pet.</p>
+                <p class="text-acompanhamento">Após a visita, você terá acesso a um canal direto de comunicação com o
+                    veterinário para esclarecer dúvidas e receber orientações adicionais, garantindo o cuidado contínuo
+                    com seu pet.</p>
             </div>
         </div>
         <div class="agende-agora">
             <h2 class="title-2">Não espere mais para proporcionar<br> o melhor cuidado ao seu animal!</h2>
-            <p class="text-agendeja"> Agende já a visita do nosso veterinário e garanta a saúde e bem-estar do<br> seu pet com toda a comodidade e segurança do atendimento a domicílio.</p>
+            <p class="text-agendeja"> Agende já a visita do nosso veterinário e garanta a saúde e bem-estar do<br> seu
+                pet com toda a comodidade e segurança do atendimento a domicílio.</p>
             <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
         </div>
     </div>
 </body>
 
-<?php include ("./inc/footer.php") ?>
+<?php include ("../inc/footer.php") ?>
 <!--Swiper JavaScript-->
-<script src="js/swiper/swiper-bundle.min.js"></script>
+<script src="../js/swiper/swiper-bundle.min.js"></script>
 
 </html>

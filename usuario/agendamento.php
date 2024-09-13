@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/responsividade/telaagenda.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css/agendar.css">
-    <link rel="stylesheet" href="css/css/calendarioo.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telaagenda.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/agendar.css">
+    <link rel="stylesheet" href="../css/css/calendarioo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <title>Agendamento</title>
     <style>
-        .hidden {
-            display: none;
-        }
+    .hidden {
+        display: none;
+    }
     </style>
 </head>
 
@@ -254,8 +254,8 @@
             </div>
         </div>
     </div>
-    <script src="js/agendamento.js"></script>
-    <script src="js/cale.js"></script>
+    <script src="../js/agendamento.js"></script>
+    <script src="../js/cale.js"></script>
 </body>
 
 </html>

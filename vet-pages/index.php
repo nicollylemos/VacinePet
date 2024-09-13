@@ -1,5 +1,5 @@
 <?php 
- include("../inc/header.php");
+include("../inc/header.php");
  include("sidebar-vet.php");
 ?>
 <!DOCTYPE html>

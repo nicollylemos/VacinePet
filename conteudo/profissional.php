@@ -1,5 +1,5 @@
 <?php
-include("./inc/header.php");
+include("../inc/header.php");
 ?>
 
 <!DOCTYPE html>
@@ -8,8 +8,8 @@ include("./inc/header.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css/teladra.css">
-    <link rel="stylesheet" href="css/css/whatsapp.css">
+    <link rel="stylesheet" href="../css/css/teladra.css">
+    <link rel="stylesheet" href="../css/css/whatsapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Conheça a Veterinária</title>
 </head>
@@ -43,8 +43,8 @@ include("./inc/header.php");
             especializado da Dra. Luciane. Seu animalzinho merece o melhor!</p>
     </div>
 
-     <!-- Ícone do WhatsApp -->
-     <div class="whatsapp-icon">
+    <!-- Ícone do WhatsApp -->
+    <div class="whatsapp-icon">
         <a href="https://wa.me/5512991445347?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20o%20serviço.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
             target="_blank" title="Fale conosco no WhatsApp">
             <i class="fab fa-whatsapp"></i>

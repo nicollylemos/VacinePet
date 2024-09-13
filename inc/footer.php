@@ -168,7 +168,7 @@
                 </li>
                 <li>Funcionamento de Segunda a Sexta
                 </li>
-                <li>Telefone: (XX)XXXXX-XXXX
+                <li>Telefone: +55 12 99144-5347
                 </li>
                 <li>Email: vacinepet@gmail.com</li>
             </ul>
