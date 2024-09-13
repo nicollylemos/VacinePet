@@ -11,7 +11,7 @@ include("./inc/header.php");
     <link rel="stylesheet" href="css/css/inicio-tela.css">
     <link rel="stylesheet" href="css/css/inicial.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
-    <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
+    <link rel="stylesheet" href="css/css/responsividade/telaindex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -32,14 +32,14 @@ body {
     <section class="home-inicial">
         <div class="tela-inicial">
             <div class="info-inicial">
-                <h1 class="titulo-site">VacinePet <i class="fa-solid fa-paw fa-rotate-by"></i>
+                <h1 class="titulo-site">VacinePet<i id="icon" class="fa-solid fa-paw fa-rotate-by"></i>
                 </h1>
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
                     NO CONFORTO DA SUA CASA.</h2>
                 <p>Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
-                    se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu <br>animal de
+                    se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p><a href="/VacinePet/usuario/agendamento.php"><button
                         class="btn-inicio">Agendar</button></a>
             </div>
