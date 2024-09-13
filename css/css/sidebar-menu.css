@@ -41,8 +41,8 @@ body{
 
 /* ===== Sidebar ===== */
  .sidebar{
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 67px;
     left: 0;
     height: 100%;
     width: 310px;

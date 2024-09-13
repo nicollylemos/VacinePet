@@ -1,11 +1,19 @@
 @font-face {
+    font-family: 'league';
+    src: url("../font/league/LeagueSpartan-Regular.ttf");
+}
+@font-face {
     font-family:'baloo';
     src:url("../font/baloo/Baloo-Regular.ttf");
+}
+@font-face {
+    font-family:'oswald';
+    src:url("../font/oswald/Oswald-Regular.ttf");
 }
 
 .home{
     position: absolute;
-    top: 0;
+    top: 0  ;
     top: 0;
     left: 90px;
     height: 100vh;
@@ -29,6 +37,7 @@
     text-align: center;
     padding-left:70px;
     position: relative;
+    top: 80px;
 }
 
 .home .content h1{
