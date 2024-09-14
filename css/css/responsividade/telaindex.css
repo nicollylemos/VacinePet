@@ -1,9 +1,9 @@
 @media (min-width:310px) and (max-width: 350px){
     .tela-inicial {
-        background-image: url(imgs/resp-index.png);
+        background-image: url('imgs/index-responsivo.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: right;
+        background-position: center; 
         width: 355px;
         height: 730px;
     }
