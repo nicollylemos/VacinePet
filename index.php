@@ -11,7 +11,7 @@ include("./inc/header.php");
     <link rel="stylesheet" href="css/css/inicio-tela.css">
     <link rel="stylesheet" href="css/css/inicial.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
-    <link rel="stylesheet" href="css/css/responsividade/telaindex.css">
+    <link rel="stylesheet" href="css/css/responsividade/telainicio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
