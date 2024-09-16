@@ -1,22 +1,55 @@
+<?php
+include("../inc/header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/css/adocao.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/adocaoo.css">
+    <link rel="stylesheet" href="../css/css/whatsapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Suporte de Adoção</title>
 </head>
 
 <body>
-    <section>
+    <section id="full-background" class="w-100 h-100">
         <div class="container">
-            <h1>oooi</h1>
+            <h1 class="title">Adote com amor,<br>
+                suporte de <span class="destaque">adoção</span><br>
+                animal.
+            </h1>
+            <p class="subtitle">Apoio e carinho na sua jornada de adoção</p>
+            <button onclick="scrollToSection()" type="submit"  class="btn btn-primary">Saiba Mais</button>
         </div>
     </section>
+    <section id="section2">
+        <div class="parte_2">
+            <h4 class="subtitle2">Facilitando a Adoção:<br> 
+            O Suporte da Nossa Veterinária</h4>
+        </div>
+
+    </section>
+
+     <!-- Ícone do WhatsApp -->
+     <div class="whatsapp-icon">
+        <a href="https://wa.me/5512991445347?text=Olá!%20Tenho%20interesse%20sobre%20a%20adoção.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
+            target="_blank" title="Fale conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
 
 </body>
+
+<!--scroll JS-->
+<script src="../js/scroll_adocao.js"></script>
+<!--swiper JS -->
+<script src="../js/swiper/swiper-bundle.min.js"></script>
+
 
 </html>
