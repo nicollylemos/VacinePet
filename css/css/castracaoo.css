@@ -32,18 +32,18 @@ body{
 
 .text{
     width: 40%;
-    color: white;
+    color: rgb(59, 59, 59);
     margin-left: 5%;
     position: relative;
+    
   
    
 }
 #sub-title{
-    font-family: poppins;
-    color: white;
-    font-weight: 1000;
-   font-style: oblique;
-    text-align: center;
+    font-family: league;
+    color: rgb(59, 59, 59);
+    font-weight: 100;
+    text-align: left;
     
 }
 

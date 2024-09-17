@@ -77,7 +77,28 @@ section {
 /* seção 2 */
 
 .subtitle2{
-    margin-bottom: 145%;
+    margin-bottom: 5%;
+    margin-top: 7%;
     color: #444444;
     text-align: center;
+}
+#texto{
+   width: 900px;
+   margin-top: 5%;
+}
+.text{
+    text-align: justify;
+    font-family: poppins;
+}
+.parte_2{
+    margin-bottom: 10%;
+}
+.destaque2{
+    font-weight: bolder;
+    color: #52bacb;
+
+}
+.btn-custom{
+    margin-left: 40%;
+    margin-top: 5%;
 }
