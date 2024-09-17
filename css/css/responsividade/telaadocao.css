@@ -1,0 +1,11 @@
+@media (min-width:1440px) and (max-width: 1920px){
+    #full-background{
+        background-position: calc(100% - -60px) center;
+        background-size: 100%;
+    }
+    .title{
+        position: relative;
+        left: -150px;
+        font-size: 75px;
+    }
+}

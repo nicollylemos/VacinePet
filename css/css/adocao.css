@@ -18,6 +18,7 @@
 #full-background {
     background-image: url('img/adocao.png');
     background-repeat: no-repeat;
+    background-color: #F8F8F8;
     background-size: cover; /* Faz a imagem cobrir todo o container */
     background-position: center; /* Centraliza a imagem */
     height: 100vh; /* Define a altura do container para ocupar a altura total da janela */
