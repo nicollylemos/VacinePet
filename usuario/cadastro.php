@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         // Informações do endereço
         $rua = $_POST['endereco_rua'];
         $numero = $_POST['endereco_numero'];
-        $complemento = $_POST['enedereco_complemento'];
+        $complemento = $_POST['endereco_complemento'];
         $bairro = $_POST['endereco_bairro'];
         $cep = $_POST['endereco_cep'];
         $cidade = $_POST['endereco_cidade'];
@@ -31,12 +31,16 @@ if (isset($_POST['submit'])) {
 
         // Informações do Pet
         $nome_pet = $_POST['pet_nome'];
-        $numero = $_POST['pet_sexo'];
-        $complemento = $_POST['pet_idade'];
-        $bairro = $_POST['endereco_bairro'];
-        $cep = $_POST['endereco_cep'];
-        $cidade = $_POST['endereco_cidade'];
-        $result_pet = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
+        $sexo = $_POST['pet_sexo'];
+        $idade = $_POST['pet_idade'];
+        $castracao = $_POST['pet_castracao'];
+        $porte = $_POST['pet_porte'];
+        $especie = $_POST['pet_especie'];
+        $historico = $_POST['pet_historico'];
+        $raca = $_POST['pet_raca'];
+        $foto_pet = $_POST['pet_foto_pet'];
+
+        $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
 
     }
 }
@@ -107,10 +111,21 @@ if (isset($_POST['submit'])) {
                                     name="tutor_nome">
                             </div>
                             <div id="cpf" class="form-group col-md-6">
-                                <input type="text" maxlength="11" placeholder="CPF" class="form-control"
+                                <input type="text" maxlength="14" placeholder="CPF" id="cpf" class="form-control"
                                     name="tutor_cpf">
                             </div>
                         </div>
+                        <script>
+                            document.getElementById('cpf').addEventListener('input', function(e) {
+  var value = e.target.value;
+  var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
+						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
+						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
+						.replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
+						.replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
+  e.target.value = cpfPattern;
+});
+                        </script>
 
 
                         <!--MASCARA E LIMITE DE DIGITAÇÃO, APENAS NÚMEROS-->
@@ -178,7 +193,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Complemento" class="form-control"
-                                name="enedereco_complemento">
+                                name="endereco_complemento">
                         </div>
 
                     </div>
@@ -249,7 +264,7 @@ if (isset($_POST['submit'])) {
                                     <div class="radio-group">
                                         <input type="radio" id="sexo-m" name="pet_sexo" value="Macho">
                                         <label for="sexo-m">Macho</label>
-                                        <input type="radio" id="sexo-f" name="pet_Sexo" value="Fêmea">
+                                        <input type="radio" id="sexo-f" name="pet_sexo" value="Fêmea">
                                         <label for="sexo-f">Fêmea</label>
                                     </div>
                                 </div>
@@ -277,7 +292,7 @@ if (isset($_POST['submit'])) {
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="pet_Raca">
+                            <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="pet_raca">
                         </div>
                         <div class="col-md-6">
                             <div class="form-control1">
