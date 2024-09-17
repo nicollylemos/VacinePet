@@ -13,6 +13,16 @@ if(isset($_POST['submit']))
     $senha = $_POST['tutor_senha'];
 
     $result = mysqli_query($conexao, "INSERT INTO tutor(nome,cpf,datanasc,telefone,email,senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
+
+    //pet informações
+
+    $nome = $_POST['tutor_nome'];
+    $cpf = $_POST['tutor_cpf'];
+    $datanasc = $_POST['tutor_datanasc'];
+    $telefone = $_POST['tutor_telefone'];
+    $email = $_POST['tutor_email'];
+    $senha = $_POST['tutor_senha'];
+
 }
 ?>
 <!DOCTYPE html>
