@@ -1,3 +1,20 @@
+<?php
+
+if(isset($_POST['submit']))
+{
+    print_r($_POST['tutor_nome']);
+    include_once('../config.php');
+    //tutor informações
+    $nome = $_POST['tutor_nome'];
+    $cpf = $_POST['tutor_cpf'];
+    $datanasc = $_POST['tutor_datanasc'];
+    $telefone = $_POST['tutor_telefone'];
+    $email = $_POST['tutor_email'];
+    $senha = $_POST['tutor_senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO tutor(nome,cpf,datanasc,telefone,email,senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,7 +26,7 @@
     <link rel="stylesheet" href="../css/css/cadastrar.css">
     <link rel="stylesheet" href="../css/css/responsividade/telacadastra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
-    <title>Cadastro</title>
+    <title>VacinePet - Cadastro</title>
     <style>
     .hidden {
         display: none;
@@ -47,7 +64,7 @@
         </div>
 
         <div class="form">
-            <form action="cadastro.php" method="post">
+            <form action="cadastro.php" method="POST">
                 <!-- Informações pessoais -->
                 <div id="etapa1" class="etapa">
                     <div class="title">
@@ -73,8 +90,8 @@
                         <!--MASCARA E LIMITE DE DIGITAÇÃO, APENAS NÚMEROS-->
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Data de Nascimento"
-                                    name="customer_birth_date" maxlength="10">
+                                <input type="date" class="form-control" placeholder="Data de Nascimento"
+                                    name="tutor_datanasc" maxlength="10">
                             </div>
                             <div id="tele" class="form-group col-md-6">
                                 <input type="text" placeholder="DDD + Telefone" maxlength="14" class="form-control"
@@ -137,10 +154,7 @@
                             <input type="text" maxlength="255" placeholder="Complemento" class="form-control"
                                 name="enedereco_complemento">
                         </div>
-                        <div id="bloco" class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="255" placeholder="Bloco (Apto.)" class="form-control"
-                                name="endereco_bloco">
-                        </div>
+
                     </div>
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
@@ -197,15 +211,15 @@
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
-                                    name="pet_name">
+                                    name="pet_Nome">
                             </div>
                             <div class="col-md-6">
                                 <div class="form-control1">
                                     <p>Sexo:</p>
                                     <div class="radio-group">
-                                        <input type="radio" id="sexo-m" name="pet_sex" value="Macho">
+                                        <input type="radio" id="sexo-m" name="pet_Sexo" value="Macho">
                                         <label for="sexo-m">Macho</label>
-                                        <input type="radio" id="sexo-f" name="pet_sex" value="Fêmea">
+                                        <input type="radio" id="sexo-f" name="pet_Sexo" value="Fêmea">
                                         <label for="sexo-f">Fêmea</label>
                                     </div>
                                 </div>
@@ -216,7 +230,7 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" maxlength="11" placeholder="Idade do Pet" class="form-control"
-                                name="pet_age">
+                                name="pet_Idade">
                         </div>
                         <div class="col-md-6">
                             <div class="form-control1">
@@ -233,17 +247,17 @@
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="pet_breed">
+                            <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="pet_Raca">
                         </div>
                         <div class="col-md-6">
                             <div class="form-control1">
                                 <p>Qual o porte do seu Pet?</p>
                                 <div class="radio-group">
-                                    <input type="radio" id="porte-p" name="pet_size" value="Pequeno">
+                                    <input type="radio" id="porte-p" name="pet_Porte" value="Pequeno">
                                     <label for="porte-p">Pequeno</label>
-                                    <input type="radio" id="porte-m" name="pet_size" value="Médio">
+                                    <input type="radio" id="porte-m" name="pet_Porte" value="Médio">
                                     <label for="porte-m">Médio</label>
-                                    <input type="radio" id="porte-g" name="pet_size" value="Grande">
+                                    <input type="radio" id="porte-g" name="pet_Porte" value="Grande">
                                     <label for="porte-g">Grande</label>
                                 </div>
                             </div>
@@ -270,7 +284,7 @@
                     <div class="form-group mt-4 col-md-6" style="width: 530px;">
                         <input type="text"
                             placeholder="Utilize esse espaço para adicionar mais informações sobre o pet."
-                            class="form-control add" name="cep">
+                            class="form-control add" name="pet_Historico">
                     </div>
 
                     <div class="quad-blue">
@@ -286,8 +300,8 @@
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(4)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(6)">Enviar</button>
+                        <input type="submit" name="submit" class="btn btn-primary btn-custom"
+                            onclick="proximaEtapa(6)"></input>
                     </div>
                 </div>
 
@@ -298,7 +312,8 @@
                                 style="color: green;"></i></h1>
                     </div>
                     <div class="p">
-                        <p><br>Seu cadastro foi realizado com sucesso e agora você pode prosseguir para o agendamento.
+                        <p><br>Seu cadastro foi realizado com sucesso e agora você pode prosseguir para o
+                            agendamento.
                             <br><br>Caso
                             queira realizar o agendamento depois, clique em "Finalizar".
                         </p>
