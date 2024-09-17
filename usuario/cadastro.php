@@ -1,10 +1,8 @@
-<?php
-
-if(isset($_POST['submit']))
-{
-    print_r($_POST['tutor_nome']);
+<?php 
+if (isset($_POST['submit'])) {
     include_once('../config.php');
-    //tutor informações
+
+    // Informações do tutor
     $nome = $_POST['tutor_nome'];
     $cpf = $_POST['tutor_cpf'];
     $datanasc = $_POST['tutor_datanasc'];
@@ -12,17 +10,35 @@ if(isset($_POST['submit']))
     $email = $_POST['tutor_email'];
     $senha = $_POST['tutor_senha'];
 
-    $result = mysqli_query($conexao, "INSERT INTO tutor(nome,cpf,datanasc,telefone,email,senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
+    // Inserir tutor
+    $result = mysqli_query($conexao, "INSERT INTO tutor (nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
 
-    //pet informações
+    if ($result) {
+        // Obter o ID do tutor inserido
+        $cod_tutor = mysqli_insert_id($conexao);
 
-    $nome = $_POST['tutor_nome'];
-    $cpf = $_POST['tutor_cpf'];
-    $datanasc = $_POST['tutor_datanasc'];
-    $telefone = $_POST['tutor_telefone'];
-    $email = $_POST['tutor_email'];
-    $senha = $_POST['tutor_senha'];
+        // Informações do endereço
+        $rua = $_POST['endereco_rua'];
+        $numero = $_POST['endereco_numero'];
+        $complemento = $_POST['enedereco_complemento'];
+        $bairro = $_POST['endereco_bairro'];
+        $cep = $_POST['endereco_cep'];
+        $cidade = $_POST['endereco_cidade'];
 
+        // Inserir endereço com o cod_tutor
+        $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
+
+
+        // Informações do Pet
+        $nome_pet = $_POST['pet_nome'];
+        $numero = $_POST['pet_sexo'];
+        $complemento = $_POST['pet_idade'];
+        $bairro = $_POST['endereco_bairro'];
+        $cep = $_POST['endereco_cep'];
+        $cidade = $_POST['endereco_cidade'];
+        $result_pet = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
+
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -221,13 +237,17 @@ if(isset($_POST['submit']))
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
-                                    name="pet_Nome">
+                                    name="pet_nome">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" maxlength="255" placeholder="Espécie do Pet" class="form-control"
+                                    name="pet_especie">
                             </div>
                             <div class="col-md-6">
                                 <div class="form-control1">
                                     <p>Sexo:</p>
                                     <div class="radio-group">
-                                        <input type="radio" id="sexo-m" name="pet_Sexo" value="Macho">
+                                        <input type="radio" id="sexo-m" name="pet_sexo" value="Macho">
                                         <label for="sexo-m">Macho</label>
                                         <input type="radio" id="sexo-f" name="pet_Sexo" value="Fêmea">
                                         <label for="sexo-f">Fêmea</label>
@@ -240,15 +260,15 @@ if(isset($_POST['submit']))
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" maxlength="11" placeholder="Idade do Pet" class="form-control"
-                                name="pet_Idade">
+                                name="pet_idade">
                         </div>
                         <div class="col-md-6">
                             <div class="form-control1">
                                 <p>Seu pet é castrado?</p>
                                 <div class="radio-group">
-                                    <input type="radio" id="sim" name="pet_neutered" value="Sim">
+                                    <input type="radio" id="sim" name="pet_castracao" value="Sim">
                                     <label for="sim">Sim</label>
-                                    <input type="radio" id="nao" name="pet_neutered" value="Não">
+                                    <input type="radio" id="nao" name="pet_castracao" value="Não">
                                     <label for="nao">Não</label>
                                 </div>
                             </div>
@@ -263,11 +283,11 @@ if(isset($_POST['submit']))
                             <div class="form-control1">
                                 <p>Qual o porte do seu Pet?</p>
                                 <div class="radio-group">
-                                    <input type="radio" id="porte-p" name="pet_Porte" value="Pequeno">
+                                    <input type="radio" id="porte-p" name="pet_porte" value="Pequeno">
                                     <label for="porte-p">Pequeno</label>
-                                    <input type="radio" id="porte-m" name="pet_Porte" value="Médio">
+                                    <input type="radio" id="porte-m" name="pet_porte" value="Médio">
                                     <label for="porte-m">Médio</label>
-                                    <input type="radio" id="porte-g" name="pet_Porte" value="Grande">
+                                    <input type="radio" id="porte-g" name="pet_porte" value="Grande">
                                     <label for="porte-g">Grande</label>
                                 </div>
                             </div>
@@ -294,7 +314,7 @@ if(isset($_POST['submit']))
                     <div class="form-group mt-4 col-md-6" style="width: 530px;">
                         <input type="text"
                             placeholder="Utilize esse espaço para adicionar mais informações sobre o pet."
-                            class="form-control add" name="pet_Historico">
+                            class="form-control add" name="pet_historico">
                     </div>
 
                     <div class="quad-blue">
@@ -304,7 +324,7 @@ if(isset($_POST['submit']))
                                 <div class="tab"></div>
                                 <h3 class="anexo">Anexe aqui a foto do seu pet</h3>
                             </label>
-                            <input id="file-upload" type="file" />
+                            <input id="file-upload" type="file" name="pet_foto_pet" />
                         </div>
                     </div>
                     <div class="div-botoes">
