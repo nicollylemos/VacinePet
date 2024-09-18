@@ -789,6 +789,9 @@
 }
 
 @media (min-width:576px) and (max-width: 767px) {
+    .logo{
+        display: none;
+    }
     #blue-div {
         width: 220px;
         background-position: calc(100% - -40px) center;
@@ -881,6 +884,9 @@
 }
 
 @media (min-width:768px) and (max-width: 991px) {
+    .logo{
+        display: none;
+    }
     #blue-div {
         width: 300px;
         background-position: calc(100% - -45px) center;
@@ -888,7 +894,7 @@
 
     #servico {
         position: fixed;
-        margin-top: 8%;
+        margin-top: 5%;
         margin-left: -2%;
     }
 
@@ -957,8 +963,96 @@
         margin-left: -10px;
     }
 }
+@media (min-width:992px) and (max-width: 1370px){
+    .logo{
+        display: none;
+    }
+    #blue-div {
+        width: 400px;
+        background-position: calc(100% - 20px) center;
+    }
 
-@media (min-width:992px) and (max-width: 2560px) {
+    #servico {
+        position: fixed;
+        margin-top: 6%;
+    }
+
+    #agendamento-container {
+        position: relative;
+        margin-left: 30px;
+    }
+
+    .subtitle-inicio {
+        font-size: 21px;
+    }
+
+    .title-agendamento {
+        font-size: 45px;
+    }
+
+    .title-agendamento-um {
+        font-size: 40px;
+    }
+
+    #btn-um {
+        position: relative;
+        margin-left: 5px;
+        top: 95px;
+    }
+
+    #rec {
+        left: -30px;
+    }
+
+    .form-control {
+        width: 450px !important;
+    }
+
+    #etapa2 {
+        position: relative;
+        left: -25px;
+    }
+
+    #etapa3 {
+        position: relative;
+        left: -25px;
+    }
+
+    #etapa4 {
+        position: relative;
+        left: -25px;
+    }
+
+    #etapa5 {
+        position: relative;
+        left: -25px;
+    }
+
+    #etapa6 {
+        position: relative;
+        left: -25px;
+    }
+
+    #sucesso {
+        left: -20px;
+    }
+
+    #span {
+        left: -15px;
+    }
+
+    #agradecimento {
+        left: -15px;
+    }
+
+    #final {
+        margin-left: -10px;
+    }
+}
+@media (min-width:1370px) and (max-width: 2560px) {
+    .logo{
+        display: none;
+    }
     #blue-div {
         width: 400px;
         background-position: calc(100% - -60px) center;
