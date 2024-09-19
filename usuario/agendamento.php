@@ -36,7 +36,7 @@
 
         <div class="quad">
             <div class="form">
-                <form id="agendamentoForm" action="agendamento.php" method="post" onsubmit="return false;">
+                <form id="agendamentoForm" action="/VacinePet/index.php" method="POST" onsubmit="return false;">
                     <!-- Etapa 1: introdução -->
                     <div id="etapa1">
                         <div class="title">
