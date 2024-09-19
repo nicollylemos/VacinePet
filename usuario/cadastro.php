@@ -94,7 +94,7 @@ if (isset($_POST['submit'])) {
         </div>
 
         <div class="form">
-            <form action="cadastro.php" method="POST">
+            <form action="final-cadastro.html" method="POST">
                 <!-- Informações pessoais -->
                 <div id="etapa1" class="etapa">
                     <div class="title">
@@ -107,11 +107,11 @@ if (isset($_POST['submit'])) {
                     <div class="form1">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control"
-                                    name="tutor_nome">
+                                <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control frm-ctrl" 
+                                    name="tutor_nome" >
                             </div>
                             <div id="cpf" class="form-group col-md-6">
-                                <input type="text" maxlength="14" placeholder="CPF" id="cpf" class="form-control"
+                                <input type="text" maxlength="14" placeholder="CPF" id="cpf" class="form-control frm-ctrl"
                                     name="tutor_cpf">
                             </div>
                         </div>
@@ -131,23 +131,23 @@ if (isset($_POST['submit'])) {
                         <!--MASCARA E LIMITE DE DIGITAÇÃO, APENAS NÚMEROS-->
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="date" class="form-control" placeholder="Data de Nascimento"
+                                <input type="date" class="form-control frm-ctrl" placeholder="Data de Nascimento"
                                     name="tutor_datanasc" maxlength="10">
                             </div>
                             <div id="tele" class="form-group col-md-6">
-                                <input type="text" placeholder="DDD + Telefone" maxlength="14" class="form-control"
+                                <input type="text" placeholder="DDD + Telefone" maxlength="14" class="form-control frm-ctrl"
                                     name="tutor_telefone">
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="text" placeholder="Email" maxlength="255" class="form-control"
-                                    name="tutor_email">
+                                <input type="text" placeholder="Email" maxlength="255" class="form-control frm-ctrl"
+                                    name="tutor_email" required>
                             </div>
                             <div id="senha" class="form-group col-md-6">
-                                <input type="password" placeholder="Senha" maxlength="100" class="form-control"
-                                    name="tutor_senha">
+                                <input type="password" placeholder="Senha" maxlength="100" class="form-control frm-ctrl"
+                                    name="tutor_senha" required>
                             </div>
                         </div>
                     </div>
@@ -189,11 +189,6 @@ if (isset($_POST['submit'])) {
                             <input type="text" maxlength="25" placeholder="Cidade" class="form-control frm-ctrl"
                                 name="endereco_cidade">
                         </div>
-                        <div id="sp" class="form-group col-md-6">
-                            <select class="selecionar slct" name="endereco_estado">
-                                <option value="SP">SP</option>
-                            </select>
-                        </div>
                     </div>
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
@@ -203,27 +198,8 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
 
-                <!-- Endereço 2 -->
-                <div id="etapa3" class="etapa hidden">
-                    <div class="title">
-                        <h1 class="title-title">CADASTRO</h1>
-                    </div>
-                    <div class="sub-title">
-                        <h5 class="sub-title-title">Preencha com suas informações de endereço.</h5>
-                    </div>
-                    <div class="row">
-                       
-                    </div>
-                    <div class="div-botoes">
-                        <button type="button" id="btn-sec" class="btn btn-secondary btn-custom btn-perso"
-                            onclick="anteriorEtapa(2)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(4)">Próximo</button>
-                    </div>
-                </div>
-
                 <!-- Informações pet 1 -->
-                <div id="etapa4" class="etapa hidden">
+                <div id="etapa3" class="etapa hidden">
                     <div class="title">
                         <h1 class="title-title">CADASTRO</h1>
                     </div>
@@ -245,16 +221,16 @@ if (isset($_POST['submit'])) {
                                     <option value="Fêmea">Fêmea</option>
                                 </select>
                                     <p>Nome:</p>
-                                    <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
+                                    <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control frm-ctrl"
                                         name="pet_nome">
                                     <p>Idade:</p>
-                                        <input type="number" maxlength="2" placeholder="Idade do Pet" class="form-control"
+                                        <input type="number" maxlength="2" placeholder="Idade do Pet" class="form-control frm-ctrl"
                                 name="pet_idade">
                             </div>
                     
                             <div class="col">
                                 <p>Raça:</p>
-                                <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="pet_raca">
+                                <input type="text" placeholder="Raça" maxlength="255" class="form-control frm-ctrl" name="pet_raca">
                                     <p>Seu pet é castrado?</p>
                                     <select  class="selecionar" name="pet_castracao" id="castracao">
                                         <option value="Sim">Sim</option>
@@ -273,14 +249,14 @@ if (isset($_POST['submit'])) {
 
                     <div class="div-botoes">
                         <button type="button" id="btn-etapa4" class="btn btn-secondary btn-custom btn-perso"
-                            onclick="anteriorEtapa(3)">Anterior</button>
+                            onclick="anteriorEtapa(2)">Anterior</button>
                         <button type="button" id="btn-btn-etapa4" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(5)">Próximo</button>
+                            onclick="proximaEtapa(4)">Próximo</button>
                     </div>
                 </div>
 
                 <!-- Informações pet 2 -->
-                <div id="etapa5" class="etapa hidden">
+                <div id="etapa4" class="etapa hidden">
                     <div class="title">
                         <h1 class="title-title">CADASTRO</h1>
                     </div>
@@ -305,36 +281,18 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
-                            onclick="anteriorEtapa(4)">Anterior</button>
-                        <input type="submit" name="submit" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(6)"></input>
+                            onclick="anteriorEtapa(3)">Anterior</button>
+                        <button type="submit" class="btn btn-primary btn-custom">Enviar</button>
                     </div>
                 </div>
 
-                <!-- Tela de confirmação -->
-                <div id="etapa6" class="etapa hidden">
-                    <div class="check">
-                        <h1 class="title-sucesso">Cadastro realizado com sucesso! <i class="fas fa-check-circle"
-                                style="color: green;"></i></h1>
-                    </div>
-                    <div class="p">
-                        <p><br>Seu cadastro foi realizado com sucesso e agora você pode prosseguir para o
-                            agendamento.
-                            <br><br>Caso
-                            queira realizar o agendamento depois, clique em "Finalizar".
-                        </p>
-                    </div>
-                    <div class="div-botoes2">
-                        <button type="button" class="btn btn-primary btn-custom btn-perso1"
-                            onclick="finalizar()">Finalizar</button>
-                        <button type="button" class="btn btn-primary btn-custom"
-                            onclick="agendamento()">Agendar</button>
-                    </div>
-                </div>
+            
             </form>
         </div>
     </div>
+    <script>
 
+</script>
     <script src="../js/cadastro.js"></script>
 </body>
 
