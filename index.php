@@ -112,7 +112,7 @@ body {
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">R$180,00</p>
+                                <p class="valor">R$179,90</p>
                                 <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Gripe canina
@@ -129,7 +129,7 @@ body {
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">R$165,00</p>
+                                <p class="valor">R$164,90</p>
                                 <p id="tipo">Vacina Canina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Giardia
@@ -163,7 +163,7 @@ body {
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">R$165,00</p>
+                                <p class="valor">R$165,90</p>
                                 <p id="tipo">Vacina Felina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V3
@@ -180,7 +180,7 @@ body {
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">R$180,00</p>
+                                <p class="valor">R$179,90</p>
                                 <p id="tipo">Vacina Felina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V4
@@ -197,7 +197,7 @@ body {
                                 </div>
                             </div>
                             <div class="card-content">
-                                <p class="valor">R$210,00</p>
+                                <p class="valor">R$209,90</p>
                                 <p id="tipo">Vacina Felina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->V5

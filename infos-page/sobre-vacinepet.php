@@ -87,7 +87,7 @@
             <hr>
             <div class="container-end">
                 <p>Gostou? Agende agora uma consulta no VacinePet!</p>
-                <a href="../agendamento.php""><button type=" button">Agendar agora!</button></a>
+                <a href="../agendamento.php"><button type=" button">Agendar agora!</button></a>
             </div>
         </div>
         </div>

@@ -9,6 +9,7 @@ include("../inc/header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/adocao.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telaadocao.css">
     <link rel="stylesheet" href="../css/css/whatsapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
@@ -71,14 +72,6 @@ include("../inc/header.php");
 
     </section>
 
-    <!-- Ícone do WhatsApp -->
-    <div class="whatsapp-icon">
-        <a href="https://wa.me/5512991445347?text=Olá!%20Tenho%20interesse%20sobre%20a%20adoção.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
-            target="_blank" title="Fale conosco no WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-    </div>
-
 
 </body>
 
@@ -86,6 +79,7 @@ include("../inc/header.php");
 <script src="../js/scroll_adocao.js"></script>
 <!--swiper JS -->
 <script src="../js/swiper/swiper-bundle.min.js"></script>
+<?php include("../inc/footer.php") ?>
 
 
 </html>

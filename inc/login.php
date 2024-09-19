@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="esquecer">
-                        <a href="#">Esqueceu sua senha?</a>
+                        <a href="recuperar.php">Esqueceu sua senha?</a>
                     </div>
 
                     <div class="final">

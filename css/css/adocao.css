@@ -24,7 +24,7 @@
     min-height: 100vh; /* Garante que a altura mínima seja 100% da tela */
     width: 100vw; /* Define a largura do container para ocupar a largura total da janela */
     position: relative;
-    margin-top: -1%;
+    margin-top: 1%;
    
 }
 .container{
@@ -37,6 +37,7 @@ body, html {
     height: 100%;
     width: 100%;
     overflow-x: hidden; /* Evita rolagem horizontal */
+    background-color: #F8F8F8;
 }
 
 section {

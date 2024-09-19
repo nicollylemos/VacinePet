@@ -2,56 +2,60 @@
     font-family: 'league';
     src: url("../font/league/LeagueSpartan-Regular.ttf");
 }
+
 @font-face {
-    font-family:'baloo';
-    src:url("../font/baloo/Baloo-Regular.ttf");
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
 }
+
 @font-face {
-    font-family:'oswald';
-    src:url("../font/oswald/Oswald-Regular.ttf");
+    font-family: 'oswald';
+    src: url("../font/oswald/Oswald-Regular.ttf");
 }
+
 @font-face {
     font-family: 'poppins';
     src: url("../font/poppins/Poppins-Regular.ttf");
 }
 
-body{
+body {
     background-image: url('img/tela-castracao.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #419dac;
-      
+
 }
-#title{
+
+#title {
     font-family: baloo;
     font-size: 50px;
     color: white;
     margin-left: 5%;
-    
+
 }
 
-.text{
+.text {
     width: 40%;
-    color: rgb(59, 59, 59);
+    color: white;
     margin-left: 5%;
     position: relative;
-    
-  
-   
+    font-weight: 600;
 }
-#sub-title{
+
+#sub-title {
     font-family: league;
-    color: rgb(59, 59, 59);
+    font-size: 30px;
+    color: white;
     font-weight: 100;
     text-align: left;
-    
+
 }
 
 .btn-custom {
     top: 40px;
     position: relative;
     font-family: baloo;
-    font-size: 15px;
+    font-size: 18px;
     background-color: #FD811C;
     border-color: #FD811C;
     border-radius: 20px;
@@ -66,6 +70,7 @@ body{
     background-color: #fcab65;
     border-color: #fcab65;
 }
-p{
+
+p {
     text-align: justify;
 }
