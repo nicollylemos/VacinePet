@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/css/cadastrar.css">
+    <link rel="stylesheet" href="../css/css/cadastrandos.css">
     <link rel="stylesheet" href="../css/css/responsividade/telacadastra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet - Cadastro</title>
@@ -117,14 +117,14 @@ if (isset($_POST['submit'])) {
                         </div>
                         <script>
                             document.getElementById('cpf').addEventListener('input', function(e) {
-  var value = e.target.value;
-  var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
-						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
-						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
-						.replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
-						.replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
-  e.target.value = cpfPattern;
-});
+                            var value = e.target.value;
+                            var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
+                                                    .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
+                                                    .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
+                                                    .replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
+                                                    .replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
+                            e.target.value = cpfPattern;
+                            });
                         </script>
 
 
@@ -139,23 +139,6 @@ if (isset($_POST['submit'])) {
                                     name="tutor_telefone">
                             </div>
                         </div>
-
-                        <script>
-                        // Máscara para a data de nascimento
-                        document.querySelector('input[name="customer_birth_date"]').addEventListener('input', function(
-                            e) {
-                            let value = e.target.value.replace(/\D/g, ''); // Remove tudo que não é número
-                            if (value.length > 8) {
-                                value = value.slice(0, 8); // Limita a 8 dígitos
-                            }
-                            // Adiciona as barras conforme necessário
-                            value = value.replace(/(\d{2})(\d{2})/, '$1/$2');
-                            value = value.replace(/(\d{2})(\d{4})/, '$1/$2');
-                            e.target.value = value;
-                        });
-
-                        // Máscara para o telefone
-                        </script>
 
                         <div class="row">
                             <div class="form-group col-md-6">
@@ -183,19 +166,34 @@ if (isset($_POST['submit'])) {
                         <h5 class="sub-title-title">Preencha com suas informações de endereço.</h5>
                     </div>
                     <div class="row">
-                        <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="255" placeholder="Rua" class="form-control"
+                          <div id="cep" class="form-group  col-md-6">
+                            <input type="text" maxlength="8" placeholder="CEP" class="form-control frm-ctrl" name="endereco_cep">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <input type="text" maxlength="255" placeholder="Rua" class="form-control frm-ctrl"
                                 name="endereco_rua">
                         </div>
-                        <div id="num" class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="10" placeholder="Número" class="form-control"
+                        <div id="num" class="form-group col-md-6">
+                            <input type="number" maxlength="5" placeholder="Número" class="form-control frm-ctrl"
                                 name="endereco_numero">
                         </div>
-                        <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="255" placeholder="Complemento" class="form-control"
+                        <div class="form-group  col-md-6">
+                            <input type="text" maxlength="255" placeholder="Complemento" class="form-control frm-ctrl"
                                 name="endereco_complemento">
                         </div>
-
+                        <div class="form-group col-md-6">
+                            <input type="text" maxlength="65" placeholder="Bairro" class="form-control frm-ctrl"
+                                name="endereco_bairro">
+                        </div>
+                        <div class="form-group  col-md-6">
+                            <input type="text" maxlength="25" placeholder="Cidade" class="form-control frm-ctrl"
+                                name="endereco_cidade">
+                        </div>
+                        <div id="sp" class="form-group col-md-6">
+                            <select class="selecionar slct" name="endereco_estado">
+                                <option value="SP">SP</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
@@ -214,22 +212,7 @@ if (isset($_POST['submit'])) {
                         <h5 class="sub-title-title">Preencha com suas informações de endereço.</h5>
                     </div>
                     <div class="row">
-                        <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="8" placeholder="Bairro" class="form-control"
-                                name="endereco_bairro">
-                        </div>
-                        <div id="cep" class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="8" placeholder="CEP" class="form-control" name="endereco_cep">
-                        </div>
-                        <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="255" placeholder="Cidade" class="form-control"
-                                name="endereco_cidade">
-                        </div>
-                        <div id="sp" class="form-group mt-4 col-md-6">
-                            <select class="form-control" name="endereco_estado">
-                                <option value="SP">SP</option>
-                            </select>
-                        </div>
+                       
                     </div>
                     <div class="div-botoes">
                         <button type="button" id="btn-sec" class="btn btn-secondary btn-custom btn-perso"
@@ -250,62 +233,40 @@ if (isset($_POST['submit'])) {
 
                     <div class="radio">
                         <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
-                                    name="pet_nome">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="text" maxlength="255" placeholder="Espécie do Pet" class="form-control"
-                                    name="pet_especie">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-control1">
-                                    <p>Sexo:</p>
-                                    <div class="radio-group">
-                                        <input type="radio" id="sexo-m" name="pet_sexo" value="Macho">
-                                        <label for="sexo-m">Macho</label>
-                                        <input type="radio" id="sexo-f" name="pet_sexo" value="Fêmea">
-                                        <label for="sexo-f">Fêmea</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" maxlength="11" placeholder="Idade do Pet" class="form-control"
+                            <div class="col">
+                                <p>Espécie:</p>
+                                <select class="selecionar" name="pet_especie" id="sexo">
+                                            <option value="Gato">Gato</option>
+                                            <option value="Fêmea">Cachorro</option>
+                                </select>
+                                <p>Sexo:</p>
+                                <select class="selecionar" name="pet_sexo" id="sexo">
+                                    <option value="Macho">Macho</option>
+                                    <option value="Fêmea">Fêmea</option>
+                                </select>
+                                    <p>Nome:</p>
+                                    <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control"
+                                        name="pet_nome">
+                                    <p>Idade:</p>
+                                        <input type="number" maxlength="2" placeholder="Idade do Pet" class="form-control"
                                 name="pet_idade">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-control1">
-                                <p>Seu pet é castrado?</p>
-                                <div class="radio-group">
-                                    <input type="radio" id="sim" name="pet_castracao" value="Sim">
-                                    <label for="sim">Sim</label>
-                                    <input type="radio" id="nao" name="pet_castracao" value="Não">
-                                    <label for="nao">Não</label>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="pet_raca">
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-control1">
-                                <p>Qual o porte do seu Pet?</p>
-                                <div class="radio-group">
-                                    <input type="radio" id="porte-p" name="pet_porte" value="Pequeno">
-                                    <label for="porte-p">Pequeno</label>
-                                    <input type="radio" id="porte-m" name="pet_porte" value="Médio">
-                                    <label for="porte-m">Médio</label>
-                                    <input type="radio" id="porte-g" name="pet_porte" value="Grande">
-                                    <label for="porte-g">Grande</label>
+                    
+                            <div class="col">
+                                <p>Raça:</p>
+                                <input type="text" placeholder="Raça" maxlength="255" class="form-control" name="pet_raca">
+                                    <p>Seu pet é castrado?</p>
+                                    <select  class="selecionar" name="pet_castracao" id="castracao">
+                                        <option value="Sim">Sim</option>
+                                        <option value="Não">Não</option>
+                                    </select>
+                                    <p>Qual o porte do seu Pet?</p>
+                                    <select  class="selecionar" name="pet_porte" id="porte">
+                                        <option value="Pequeno">Pequeno</option>
+                                        <option value="Médio">Médio</option>
+                                        <option value="Grande">Grande</option>
+                                    </select>
                                 </div>
-                            </div>
                         </div>
                     </div>
 
