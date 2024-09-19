@@ -79,6 +79,7 @@ include("../inc/header.php");
 <script src="../js/scroll_adocao.js"></script>
 <!--swiper JS -->
 <script src="../js/swiper/swiper-bundle.min.js"></script>
+<?php include("../inc/footer.php") ?>
 
 
 </html>

@@ -16,10 +16,12 @@ include("../inc/header.php");
 
 <body>
     <div class="resp">Como funciona a <br> castração de felinos?</div>
-    <div class="container"> <h1 id="title">CASTRAÇÃO DE FELINOS</h1>
+    <div class="container">
+        <h1 id="title">CASTRAÇÃO DE FELINOS</h1>
         <div class="text">
             <h2 id="sub-title" class="sub">O que é Castração?</h2>
-            <p id="p1">A castração é um procedimento cirúrgico que remove os órgãos reprodutivos dos felinos. Para os machos,
+            <p id="p1">A castração é um procedimento cirúrgico que remove os órgãos reprodutivos dos felinos. Para os
+                machos,
                 são
                 removidos os testículos, e para as fêmeas, os ovários e o útero. Este procedimento oferece diversos
                 benefícios,
@@ -27,7 +29,8 @@ include("../inc/header.php");
                 animais.<br></p>
 
             <h2 id="sub-title" class="sub1">Especialização e Valor</h2>
-            <p id="p2">Nossa veterinária é especializada exclusivamente na castração de felinos. Não realizamos castração de
+            <p id="p2">Nossa veterinária é especializada exclusivamente na castração de felinos. Não realizamos
+                castração de
                 cães.
                 Para mais
                 informações e consulta de valores, entre em contato conosco. Estamos prontos para oferecer o melhor
@@ -35,15 +38,10 @@ include("../inc/header.php");
 
 
         </div>
-        <a href="agendamento.php"><button class="btn btn-primary btn-custom">Consulte Agora</button></a>
+        <a href="https://wa.me/5512991445347?text=Olá!%20Tenho%20interesse%20pelo%20serviço%20de%20castração.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
+            target="_blank" title="Fale conosco no WhatsApp"><button class="btn btn-primary btn-custom">Consulte agora</button></a>
     </div>
-        <!-- Ícone do WhatsApp -->
-        <div class="whatsapp-icon">
-            <a href="https://wa.me/5512991445347?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20o%20serviço.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
-                target="_blank" title="Fale conosco no WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
+    
 
 
 
