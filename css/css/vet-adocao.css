@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'baloo';
+    src: url("../font/baloo/Baloo-Regular.ttf");
+}
+.adoc-atv{
+    width:210px;
+    border-radius: 20px;
+    height: 150px;
+    text-align: center;
+    background-color: #52BACB;
+}
+.ico{
+    color: white;
+    position: relative;
+    top: 20px;
+}
+.text-adocao{
+    position: relative;
+    top: 35px;
+    color: white;
+    font-family: baloo;
+    font-size: 20px;
+}
+#vizu{
+    position: relative;
+    left: 250px;
+    top: -150px;
+}
+ 
+/*add*/
+#form{
+    position: relative;
+    top: 100px;
+    left: -240px;
+    border-radius: 20px;
+    border: solid;
+    border-color: #52BACB;
+    background-color: white;
+    height: 700px;
+    width: 600px;
+    padding: 30px 35px;
+}
+#new{
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+.pata{
+    font-size: 25px;
+}
+.form-control{
+    width: 400px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid;
+    border-color: #52BACB;
+}
+#form-control{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: solid;
+    border-color: #52BACB;
+}
+.label{
+    font-family: baloo;
+    color: #8c8c8c9a;
+}
