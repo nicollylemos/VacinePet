@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/css/cadastrar.css">
+    <link rel="stylesheet" href="../css/css/cadastrando.css">
     <link rel="stylesheet" href="../css/css/responsividade/telacadastra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet - Cadastro</title>
@@ -115,17 +115,7 @@ if (isset($_POST['submit'])) {
                                     name="tutor_cpf">
                             </div>
                         </div>
-                        <script>
-                            document.getElementById('cpf').addEventListener('input', function(e) {
-  var value = e.target.value;
-  var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
-						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
-						.replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
-						.replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
-						.replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
-  e.target.value = cpfPattern;
-});
-                        </script>
+                     
 
 
                         <!--MASCARA E LIMITE DE DIGITAÇÃO, APENAS NÚMEROS-->
@@ -183,6 +173,9 @@ if (isset($_POST['submit'])) {
                         <h5 class="sub-title-title">Preencha com suas informações de endereço.</h5>
                     </div>
                     <div class="row">
+                          <div id="cep" class="form-group mt-4 col-md-6">
+                            <input type="text" maxlength="8" placeholder="CEP" class="form-control" name="endereco_cep">
+                        </div>
                         <div class="form-group mt-4 col-md-6">
                             <input type="text" maxlength="255" placeholder="Rua" class="form-control"
                                 name="endereco_rua">
@@ -215,18 +208,15 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="8" placeholder="Bairro" class="form-control"
+                            <input type="text" maxlength="65" placeholder="Bairro" class="form-control"
                                 name="endereco_bairro">
                         </div>
-                        <div id="cep" class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="8" placeholder="CEP" class="form-control" name="endereco_cep">
-                        </div>
                         <div class="form-group mt-4 col-md-6">
-                            <input type="text" maxlength="255" placeholder="Cidade" class="form-control"
+                            <input type="text" maxlength="25" placeholder="Cidade" class="form-control"
                                 name="endereco_cidade">
                         </div>
                         <div id="sp" class="form-group mt-4 col-md-6">
-                            <select class="form-control" name="endereco_estado">
+                            <select class="selecionar" name="endereco_estado">
                                 <option value="SP">SP</option>
                             </select>
                         </div>
@@ -255,18 +245,18 @@ if (isset($_POST['submit'])) {
                                     name="pet_nome">
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="text" maxlength="255" placeholder="Espécie do Pet" class="form-control"
-                                    name="pet_especie">
+                                <select name="pet_especie" id="sexo">
+                                        <option value="Gato">Gato</option>
+                                        <option value="Fêmea">Cachorro</option>
+                                </select>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-control1">
                                     <p>Sexo:</p>
-                                    <div class="radio-group">
-                                        <input type="radio" id="sexo-m" name="pet_sexo" value="Macho">
-                                        <label for="sexo-m">Macho</label>
-                                        <input type="radio" id="sexo-f" name="pet_sexo" value="Fêmea">
-                                        <label for="sexo-f">Fêmea</label>
-                                    </div>
+                                    <select class="selecionar" name="pet_sexo" id="sexo">
+                                        <option value="Macho">Macho</option>
+                                        <option value="Fêmea">Fêmea</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -280,12 +270,10 @@ if (isset($_POST['submit'])) {
                         <div class="col-md-6">
                             <div class="form-control1">
                                 <p>Seu pet é castrado?</p>
-                                <div class="radio-group">
-                                    <input type="radio" id="sim" name="pet_castracao" value="Sim">
-                                    <label for="sim">Sim</label>
-                                    <input type="radio" id="nao" name="pet_castracao" value="Não">
-                                    <label for="nao">Não</label>
-                                </div>
+                                <select name="pet_castracao" id="castracao">
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -297,14 +285,11 @@ if (isset($_POST['submit'])) {
                         <div class="col-md-6">
                             <div class="form-control1">
                                 <p>Qual o porte do seu Pet?</p>
-                                <div class="radio-group">
-                                    <input type="radio" id="porte-p" name="pet_porte" value="Pequeno">
-                                    <label for="porte-p">Pequeno</label>
-                                    <input type="radio" id="porte-m" name="pet_porte" value="Médio">
-                                    <label for="porte-m">Médio</label>
-                                    <input type="radio" id="porte-g" name="pet_porte" value="Grande">
-                                    <label for="porte-g">Grande</label>
-                                </div>
+                                <select name="pet_porte" id="porte">
+                                    <option value="Pequeno">Pequeno</option>
+                                    <option value="Médio">Médio</option>
+                                    <option value="Grande">Grande</option>
+                                </select>
                             </div>
                         </div>
                     </div>

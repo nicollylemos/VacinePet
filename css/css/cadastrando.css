@@ -10,6 +10,11 @@
     font-family: 'oswald';
     src: url("../font/oswald/Oswald-Regular.ttf");
 }
+
+@font-face {
+    font-family: 'poppins';
+    src: url("../font/poppins/Poppins-Regular.ttf");
+}
 body {
     background-color: #FFD371;
 }
@@ -90,12 +95,22 @@ body {
 }
 .form-control {
     border: solid #FFD371;
-    font-family: 'baloo';
-    border-radius: 20px;
+    font-family: 'poppins';
+    border-radius:25px;
     height: 50px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #000; /* Cor do texto digitado */
+    width: 100%;
+    padding-left: 10px;
+    color: #222222; /* Cor do texto digitado */
+    margin-top: 20px;
+}
+
+.selecionar{
+    border: solid #FFD371;
+    font-family: 'poppins';
+    border-radius:25px;
+    height: 50px;
+    width: 100%;
+    padding-left: 5px;
 }
 .form-control::placeholder {
     color: #8c8c8c9a;
