@@ -101,7 +101,6 @@ body {
     width: 100%;
     padding-left: 10px;
     color: #222222; /* Cor do texto digitado */
-    margin-top: 20px;
 }
 
 .selecionar{
@@ -111,6 +110,11 @@ body {
     height: 50px;
     width: 100%;
     padding-left: 5px;
+   
+}
+
+.slct, .frm-ctrl{
+    margin-top: 20px;
 }
 .form-control::placeholder {
     color: #8c8c8c9a;
