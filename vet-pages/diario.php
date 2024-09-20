@@ -1,10 +1,25 @@
+<!--
+ /**
+ * @file diario.php
+ * @brief Página de diario pessoal do profissional (calendário disponível).
+ *
+ * Este arquivo contém um calendário com a função de adicionar eventos e compromissos
+  escolhidos pelo profissional, marcando o nome do evento, seu início e seu término.
+ * @date 2024-09-20
+ * @author Nicolly Lemos da Silva
+ * @version 1.0
+ */
+-->
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
+-->
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
