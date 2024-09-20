@@ -1,4 +1,13 @@
-<?php 
+<!--
+
+/**
+ * Este código realiza o cadastro de tutores, pets e seus respectivos endereços no banco de dados.
+ * Utiliza a conexão com o banco de dados configurada previamente para inserir os dados fornecidos pelo formulário HTML.
+ *
+ * @version 1.0
+ * @since 20/09/2024
+ */
+ --><?php 
 if (isset($_POST['submit'])) {
     include_once('../config.php');
 
@@ -25,7 +34,10 @@ if (isset($_POST['submit'])) {
         $cep = $_POST['endereco_cep'];
         $cidade = $_POST['endereco_cidade'];
 
-        // Inserir endereço com o cod_tutor
+         /**
+         * Inserção dos dados do tutor no banco de dados.
+         * Utiliza uma query SQL para inserir o nome, CPF, data de nascimento, telefone, e-mail e senha do tutor.
+         */
         $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
 
 
@@ -40,6 +52,11 @@ if (isset($_POST['submit'])) {
         $raca = $_POST['pet_raca'];
         $foto_pet = $_POST['pet_foto_pet'];
 
+
+         /**
+         * Inserção dos dados de endereço no banco de dados.
+         * Utiliza o ID do tutor (cod_tutor) para associar o endereço ao tutor.
+         */
         $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
 
     }
@@ -49,6 +66,10 @@ if (isset($_POST['submit'])) {
 <html lang="pt-br">
 
 <head>
+    <!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome e Swiper.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
@@ -107,24 +128,25 @@ if (isset($_POST['submit'])) {
                     <div class="form1">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="text" maxlength="255" placeholder="Nome Completo" class="form-control frm-ctrl" 
-                                    name="tutor_nome" >
+                                <input type="text" maxlength="255" placeholder="Nome Completo"
+                                    class="form-control frm-ctrl" name="tutor_nome">
                             </div>
                             <div id="cpf" class="form-group col-md-6">
-                                <input type="text" maxlength="14" placeholder="CPF" id="cpf" class="form-control frm-ctrl"
-                                    name="tutor_cpf">
+                                <input type="text" maxlength="14" placeholder="CPF" id="cpf"
+                                    class="form-control frm-ctrl" name="tutor_cpf">
                             </div>
                         </div>
                         <script>
-                            document.getElementById('cpf').addEventListener('input', function(e) {
+                        document.getElementById('cpf').addEventListener('input', function(e) {
                             var value = e.target.value;
-                            var cpfPattern = value.replace(/\D/g, '') // Remove qualquer coisa que não seja número
-                                                    .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
-                                                    .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
-                                                    .replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
-                                                    .replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
+                            var cpfPattern = value.replace(/\D/g,
+                                    '') // Remove qualquer coisa que não seja número
+                                .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
+                                .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
+                                .replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
+                                .replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
                             e.target.value = cpfPattern;
-                            });
+                        });
                         </script>
 
 
@@ -135,8 +157,8 @@ if (isset($_POST['submit'])) {
                                     name="tutor_datanasc" maxlength="10">
                             </div>
                             <div id="tele" class="form-group col-md-6">
-                                <input type="text" placeholder="DDD + Telefone" maxlength="14" class="form-control frm-ctrl"
-                                    name="tutor_telefone">
+                                <input type="text" placeholder="DDD + Telefone" maxlength="14"
+                                    class="form-control frm-ctrl" name="tutor_telefone">
                             </div>
                         </div>
 
@@ -166,8 +188,9 @@ if (isset($_POST['submit'])) {
                         <h5 class="sub-title-title">Preencha com suas informações de endereço.</h5>
                     </div>
                     <div class="row">
-                          <div id="cep" class="form-group  col-md-6">
-                            <input type="text" maxlength="8" placeholder="CEP" class="form-control frm-ctrl" name="endereco_cep">
+                        <div id="cep" class="form-group  col-md-6">
+                            <input type="text" maxlength="8" placeholder="CEP" class="form-control frm-ctrl"
+                                name="endereco_cep">
                         </div>
                         <div class="form-group  col-md-6">
                             <input type="text" maxlength="255" placeholder="Rua" class="form-control frm-ctrl"
@@ -212,37 +235,38 @@ if (isset($_POST['submit'])) {
                             <div class="col">
                                 <p>Espécie:</p>
                                 <select class="selecionar" name="pet_especie" id="sexo">
-                                            <option value="Gato">Gato</option>
-                                            <option value="Fêmea">Cachorro</option>
+                                    <option value="Gato">Gato</option>
+                                    <option value="Fêmea">Cachorro</option>
                                 </select>
                                 <p>Sexo:</p>
                                 <select class="selecionar" name="pet_sexo" id="sexo">
                                     <option value="Macho">Macho</option>
                                     <option value="Fêmea">Fêmea</option>
                                 </select>
-                                    <p>Nome:</p>
-                                    <input type="text" maxlength="255" placeholder="Nome do Pet" class="form-control frm-ctrl"
-                                        name="pet_nome">
-                                    <p>Idade:</p>
-                                        <input type="number" maxlength="2" placeholder="Idade do Pet" class="form-control frm-ctrl"
-                                name="pet_idade">
+                                <p>Nome:</p>
+                                <input type="text" maxlength="255" placeholder="Nome do Pet"
+                                    class="form-control frm-ctrl" name="pet_nome">
+                                <p>Idade:</p>
+                                <input type="number" maxlength="2" placeholder="Idade do Pet"
+                                    class="form-control frm-ctrl" name="pet_idade">
                             </div>
-                    
+
                             <div class="col">
                                 <p>Raça:</p>
-                                <input type="text" placeholder="Raça" maxlength="255" class="form-control frm-ctrl" name="pet_raca">
-                                    <p>Seu pet é castrado?</p>
-                                    <select  class="selecionar" name="pet_castracao" id="castracao">
-                                        <option value="Sim">Sim</option>
-                                        <option value="Não">Não</option>
-                                    </select>
-                                    <p>Qual o porte do seu Pet?</p>
-                                    <select  class="selecionar" name="pet_porte" id="porte">
-                                        <option value="Pequeno">Pequeno</option>
-                                        <option value="Médio">Médio</option>
-                                        <option value="Grande">Grande</option>
-                                    </select>
-                                </div>
+                                <input type="text" placeholder="Raça" maxlength="255" class="form-control frm-ctrl"
+                                    name="pet_raca">
+                                <p>Seu pet é castrado?</p>
+                                <select class="selecionar" name="pet_castracao" id="castracao">
+                                    <option value="Sim">Sim</option>
+                                    <option value="Não">Não</option>
+                                </select>
+                                <p>Qual o porte do seu Pet?</p>
+                                <select class="selecionar" name="pet_porte" id="porte">
+                                    <option value="Pequeno">Pequeno</option>
+                                    <option value="Médio">Médio</option>
+                                    <option value="Grande">Grande</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -286,13 +310,13 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
 
-            
+
             </form>
         </div>
     </div>
     <script>
 
-</script>
+    </script>
     <script src="../js/cadastro.js"></script>
 </body>
 

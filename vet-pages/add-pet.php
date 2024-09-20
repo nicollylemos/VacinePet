@@ -26,7 +26,7 @@ include("sidebar-vet.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
-    <link rel="stylesheet" href="../css/css/vet-adocao.css" />
+    <link rel="stylesheet" href="../css/css/vet-adocaoo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -45,7 +45,7 @@ include("sidebar-vet.php");
             <form id="form" action="add.php" method="post">
                 <!-- area de campos do form -->
                 <div class="row">
-                    <div class="form-group col-md-7">
+                    <div class="form-group col-md-7 " style="margin-bottom: 20px;">
                         <label class="label">Espécie:</label>
                         <select id="form-control">
                             <option>Gato</option>
@@ -53,12 +53,12 @@ include("sidebar-vet.php");
                         </select>
                     </div>
 
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-3" style="margin-bottom: 20px;">
                         <label class="label">Nome:</label>
                         <input type="text" maxlength="11" class="form-control" name="customer['cpf_cnpj']">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="form-group col-md-2" style="margin-bottom: 20px;">
                         <label class="label">Sexo:</label>
                         <select id="form-control">
                             <option>Macho</option>
@@ -68,7 +68,7 @@ include("sidebar-vet.php");
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-md-5">
+                    <div class="form-group col-md-5" style="margin-bottom: 20px;">
                         <label class="label">Fase:</label>
                         <select id="form-control">
                             <option>Filhote</option>
@@ -77,7 +77,7 @@ include("sidebar-vet.php");
                     </div>
                 </div>
 
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-3" style="margin-bottom: 20px;">
                     <label class="label">Porte:</label>
                     <select id="form-control">
                         <option>Pequeno</option>
@@ -86,7 +86,7 @@ include("sidebar-vet.php");
                     </select>
                 </div>
 
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-3" style="margin-bottom: 20px;">
                     <label class="label">Cidade:</label>
                     <select id="form-control">
                         <option>Sorocaba - SP</option>
@@ -95,18 +95,18 @@ include("sidebar-vet.php");
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-3" style="margin-bottom: 20px;">
                         <label class="label" for="foto">Foto:</label>
                         <input type="file" maxlength="8" class="form-picture" id="foto" name="foto">
                     </div>
-                    <div class="form-group col-md-3">
+                    <div class="form-group col-md-3" style="margin-bottom: 20px;">
                         <label for="img">Pré-visualização</label>
                         <img maxlength="8" class="form-picture shadow rounded p-2 mb-2 bg-body" id="imgPreview"
                             src="../imgs/semimagem.png">
                     </div>
                 </div>
 
-                <div id="actions" class="row mt-2">
+                <div id="actions" class="row mt-2" style="margin-bottom: 20px;">
                     <div class="col-md-12">
                         <button type="submit" class="btn btn-warning" style="color:#ffffff;"> <i
                                 class="fa-solid fa-sd-card"></i> Salvar</button>
