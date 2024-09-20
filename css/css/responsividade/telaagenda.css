@@ -16,9 +16,10 @@
         height: 100vh;
     }
 
-    .logo {
+    .logo-resp {
         position: relative;
-        margin-left: -25px;
+        margin-left: 85px;
+        top: 80px;
     }
 
     .blue-div {
@@ -219,9 +220,10 @@
         height: 100vh;
     }
 
-    .logo {
+    .logo-resp {
         position: relative;
-        margin-left: -25px;
+        margin-left: 87px;
+        top: 80px;
     }
 
     .blue-div {
@@ -414,9 +416,10 @@
         height: 100vh;
     }
 
-    .logo {
+    .logo-resp {
         position: relative;
-        margin-left: -25px;
+        margin-left: 98px;
+        top: 80px;
     }
 
     .blue-div {
@@ -610,9 +613,10 @@
         height: 100vh;
     }
 
-    .logo {
+    .logo-resp {
         position: relative;
-        margin-left: -25px;
+        margin-left: 130px;
+        top: 70px;
     }
 
     .blue-div {
@@ -789,7 +793,9 @@
 }
 
 @media (min-width:576px) and (max-width: 767px) {
-
+    .logo-resp{
+        display: none;
+    }
     #blue-div {
         width: 220px;
         background-position: calc(100% - -40px) center;
@@ -882,7 +888,9 @@
 }
 
 @media (min-width:768px) and (max-width: 991px) {
-
+    .logo-resp{
+        display: none;
+    }
     #blue-div {
         width: 300px;
         background-position: calc(100% - -45px) center;
@@ -960,7 +968,9 @@
     }
 }
 @media (min-width:992px) and (max-width: 1370px){
-
+    .logo-resp{
+        display: none;
+    }
     #blue-div {
         width: 400px;
         background-position: calc(100% - 20px) center;
@@ -1044,10 +1054,12 @@
     }
 }
 @media (min-width:1370px) and (max-width: 2560px) {
-
+    .logo-resp{
+        display: none;
+    }
     #blue-div {
         width: 400px;
-        background-position: calc(100% - -60px) center;
+        background-position: calc(100% - -40px) center;
     }
 
     #servico {
