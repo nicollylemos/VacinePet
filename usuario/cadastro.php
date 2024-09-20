@@ -1,13 +1,20 @@
 <!--
-
-/**
- * Este código realiza o cadastro de tutores, pets e seus respectivos endereços no banco de dados.
+ /**
+ * @file cadastro.php
+ *
+ * @brief Este código realiza o cadastro de tutores, pets e seus respectivos endereços no banco de dados.
  * Utiliza a conexão com o banco de dados configurada previamente para inserir os dados fornecidos pelo formulário HTML.
  *
+ * @date 2024-09-20
+ *
+ * @author Rafaela Mansano Fernandes
+ *
  * @version 1.0
- * @since 20/09/2024
+ *
  */
- --><?php 
+ -->
+
+<?php 
 if (isset($_POST['submit'])) {
     include_once('../config.php');
 
