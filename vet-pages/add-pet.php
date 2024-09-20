@@ -16,8 +16,11 @@ include("../inc/header.php");
 include("sidebar-vet.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

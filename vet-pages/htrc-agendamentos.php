@@ -1,10 +1,27 @@
+<!--
+ /**
+ * @file htrc-agendamentos.php
+ * @brief Página de visualização de histórico de agendamentos (disponível apenas para o profissional).
+ *
+ * Este arquivo contém todos os agendamentos que já foram concluídos pelo profissional.
+ * 
+ * O arquivo mantém a forma organizada para garantir a praticidade e organização profissional.
+ *
+ * @date 2024-09-20
+ * @author Nicolly Lemos da Silva
+ * @version 1.0
+ */
+-->
 <?php 
  include("../inc/header.php");
  include("sidebar-vet.php");
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
+-->
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
