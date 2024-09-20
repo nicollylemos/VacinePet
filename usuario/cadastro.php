@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
         $foto_pet = $_POST['pet_foto_pet'];
 
 
-        /**
+         /**
          * Inserção dos dados de endereço no banco de dados.
          * Utiliza o ID do tutor (cod_tutor) para associar o endereço ao tutor.
          */
@@ -66,6 +66,10 @@ if (isset($_POST['submit'])) {
 <html lang="pt-br">
 
 <head>
+    <!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome e Swiper.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
