@@ -1,5 +1,25 @@
+<!--
+ /**
+ * @file agendamento.php
+ * @brief Página de agendamento de serviços para pets (castração de felinos ou vacinação ).
+ *
+ * Este arquivo contém o formulário de agendamento, dividido em etapas. O usuário pode selecionar
+ * a data, horário, serviço desejado e fornecer informações sobre o pet e o proprietário.
+ * 
+ * O formulário é estruturado em várias etapas, permitindo uma experiência de usuário fluida e organizada.
+ *
+ * @date 2024-09-20
+ * @author Eduarda Oliveira de Souza
+ * @version 1.0
+ */
+-->
 <!DOCTYPE html>
 <html lang="pt-BR">
+
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome e Swiper.
+-->
 
 <head>
     <meta charset="UTF-8">
