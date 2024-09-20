@@ -44,7 +44,7 @@
 <body>
 
     <div class="blue-div-resp">
-        <h2 class="logo" style="font-family:baloo; color:white;">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
+        <h2 class="logo-resp" style="font-family:baloo; color:white;">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
                 style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
     </div>
 

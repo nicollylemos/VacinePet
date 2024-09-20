@@ -1,3 +1,16 @@
+<!--
+ /**
+ * @file add-pet.php
+ * @brief Página de adicionar pet para adoção (disponível apenas para o profissional).
+ *
+ * Este arquivo contém um formulário para adicionar um novo pet para a página de adoção,
+ podendo ser acessada apenas pelo profissional, com os campos de: espécie, nome (opcional),
+ sexo, fase (filhote ou adulto), porte, cidade(Sorocaba ou Votorantim) e upload de foto. 
+ * @date 2024-09-20
+ * @author Eduarda Oliveira de Souza
+ * @version 1.0
+ */
+-->
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");

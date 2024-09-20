@@ -10,6 +10,7 @@ include("../inc/header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/profissional.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telaprofissional.css">
     <link rel="stylesheet" href="../css/css/whatsapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Conheça a Veterinária</title>
@@ -23,20 +24,20 @@ include("../inc/header.php");
 
         <p class="destaque">Dra. Luciane Mônica Gonçalves Mansano <br>CRMV SP 7854<br></p>
 
-        <p style="margin-bottom: 20px;">Dra. Luciane Mônica é uma médica veterinária com mais de 20 anos de experiência,
+        <p id="p1" style="margin-bottom: 20px;">Dra. Luciane Mônica é uma médica veterinária com mais de 20 anos de experiência,
             dedicada ao cuidado de pequenos animais, com especial foco em medicina de felinos. Possui especializações em
             Homeopatia, Saúde Pública e Medicina de Felinos, é mestre em Ciências pela USP.<br>
         </p>
-        <p style="margin-bottom: 20px;">Sua atuação inclui serviços práticos e acessíveis, como a aplicação de vacinas
+        <p id="p2" style="margin-bottom: 20px;">Sua atuação inclui serviços práticos e acessíveis, como a aplicação de vacinas
             em domicílio e a realização de castrações de felinos, garantindo o conforto e a tranquilidade dos tutores e
             de seus pets.<br>
         </p>
-        <p style="margin-bottom: 20px;"> Com um atendimento atencioso e especializado, Dra. Luciane proporciona o melhor
+        <p id="p3" style="margin-bottom: 20px;"> Com um atendimento atencioso e especializado, Dra. Luciane proporciona o melhor
             cuidado possível para a saúde e bem-estar dos animais e seus tutores.
             Com uma carreira sólida e ampla experiência clínica, Dra. Luciane Mônica é a escolha ideal para quem busca
             uma veterinária que une conhecimento técnico, experiência e paixão pelos animais.</p>
 
-        <p>Entre em contato e agende uma visita para garantir a saúde e o bem-estar do seu pet com o cuidado
+        <p id="p4" Entre em contato e agende uma visita para garantir a saúde e o bem-estar do seu pet com o cuidado
             especializado da Dra. Luciane. Seu animalzinho merece o melhor!</p>
 
             <a href="agendamento.php" class="btn btn-primary">Agende agora</a>

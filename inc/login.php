@@ -1,6 +1,23 @@
+<!--
+ /**
+ * @file login.php
+ * @brief Página de login de usuários cadastrados.
+ *
+ * Este arquivo contém o formulário de login. O usuário adiciona seu email e sua senha cadastrada 
+ para acessar sua conta e seus dados.
+ * 
+ * @date 2024-09-20
+ * @author Rafaela Mansano Fernandes
+ * @version 1.0
+ */
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome e Swiper.
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
