@@ -1,10 +1,33 @@
-<?php
-include("./inc/header.php");
+<!--
+ /**
+ * @file index.php
+ *
+ * @brief Página inicial do site VacinePet que fornece informações sobre o serviço de vacinação para animais domésticos, como cães e gatos.
+ *        Inclui links para agendamento de vacinas, informações sobre doenças comuns e um carrossel de vacinas mais procuradas.
+ *
+ * @author Nicolly Lemos da Silva
+ *
+ * @version 1.0
+ * 
+ * @date 2024-09-20
+ *
+ * @copyright Todos os direitos reservados
+ *
+ * @details
+ * Esta página contém seções para introduzir o serviço de vacinação de pets no domicílio, um carrossel para vacinas populares
+ * com informações e valores estimados, e links para páginas com informações mais detalhadas sobre doenças que afetam cães e gatos.
+ */
+--><?php
+include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
+    <!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome e Swiper.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
@@ -29,10 +52,14 @@ body {
 </style>
 
 <body>
+    <!--
+    * @brief Seção inicial com título e descrição do serviço.
+    * @details Apresenta o serviço de vacinação em domicílio com um botão de agendamento e uma breve descrição dos benefícios da vacinação.
+    -->
     <section class="home-inicial">
         <div class="tela-inicial">
             <div class="info-inicial">
-                <h1 class="titulo-site">VacinePet<i id="icon" class="fa-solid fa-paw fa-rotate-by"></i>
+                <h1 class="titulo-site">VacinePet
                 </h1>
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,

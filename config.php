@@ -1,3 +1,14 @@
+<!--/**
+* Conexão com o banco de dados MySQL.
+* A função `new mysqli()` cria uma conexão com o banco de dados usando as variáveis especificadas.
+*
+* @param string $dbHost O endereço do servidor do MySQL.
+* @param string $dbUserName O nome do usuário do banco de dados.
+* @param string $dbPassword A senha do banco de dados.
+* @param string $dbName O nome do banco de dados a ser conectado.
+*
+* @return mysqli Retorna uma conexão com o banco de dados MySQL.
+*-->
 <?php
     /** nome do host do MySQL */
     $dbHost = 'localhost';
