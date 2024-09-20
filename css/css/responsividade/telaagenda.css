@@ -789,9 +789,7 @@
 }
 
 @media (min-width:576px) and (max-width: 767px) {
-    .logo{
-        display: none;
-    }
+
     #blue-div {
         width: 220px;
         background-position: calc(100% - -40px) center;
@@ -884,9 +882,7 @@
 }
 
 @media (min-width:768px) and (max-width: 991px) {
-    .logo{
-        display: none;
-    }
+
     #blue-div {
         width: 300px;
         background-position: calc(100% - -45px) center;
@@ -964,9 +960,7 @@
     }
 }
 @media (min-width:992px) and (max-width: 1370px){
-    .logo{
-        display: none;
-    }
+
     #blue-div {
         width: 400px;
         background-position: calc(100% - 20px) center;
@@ -1050,9 +1044,7 @@
     }
 }
 @media (min-width:1370px) and (max-width: 2560px) {
-    .logo{
-        display: none;
-    }
+
     #blue-div {
         width: 400px;
         background-position: calc(100% - -60px) center;
