@@ -29,7 +29,7 @@ include("sidebar-vet.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
-    <link rel="stylesheet" href="../css/css/vet-adocao.css" />
+    <link rel="stylesheet" href="../css/css/vet-adocaoo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
