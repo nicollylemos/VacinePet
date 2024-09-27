@@ -24,8 +24,8 @@ include("../inc/header.php");
                 escolher a data e o horário mais
                 conveniente para você.
             </h6>
-            <img src="imgs/tela-cadastro.png" alt="Tela de cadastro" class="img-fluid">
-            <img src="imgs/tela-calendário.png" alt="Tela do calendário" class="img-fluid">
+            <img src="../imgs/cadastro.png" alt="Tela de cadastro" class="img-cad">
+            <img src="../imgs/calendario.png" alt="Tela do calendário" class="img-cale">
         </div>
         <div class="sections-container">
             <div class="section">
@@ -38,7 +38,6 @@ include("../inc/header.php");
                 <p class="text-visita">No dia agendado, nosso veterinário irá até sua residência com todos os
                     equipamentos necessários para realizar a vacinação do seu pet.</p>
             </div>
-            <div class="separator"></div>
             <div class="sections">
                 <div class="title-acompanhamento-container">
                     <div class="icon-container2">
@@ -55,7 +54,7 @@ include("../inc/header.php");
             <h2 class="title-2">Não espere mais para proporcionar<br> o melhor cuidado ao seu animal!</h2>
             <p class="text-agendeja"> Agende já a visita do nosso veterinário e garanta a saúde e bem-estar do<br> seu
                 pet com toda a comodidade e segurança do atendimento a domicílio.</p>
-            <a href="cadastro.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
+            <a href="../usuario/agendamento.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
         </div>
     </div>
