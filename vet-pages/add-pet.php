@@ -16,8 +16,11 @@ include("../inc/header.php");
 include("sidebar-vet.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,7 +100,6 @@ include("sidebar-vet.php");
                         <input type="file" maxlength="8" class="form-picture" id="foto" name="foto">
                     </div>
                     <div class="form-group col-md-3" style="margin-bottom: 20px;">
-                        <label for="img">Pré-visualização</label>
                         <img maxlength="8" class="form-picture shadow rounded p-2 mb-2 bg-body" id="imgPreview"
                             src="../imgs/semimagem.png">
                     </div>
@@ -105,10 +107,9 @@ include("sidebar-vet.php");
 
                 <div id="actions" class="row mt-2" style="margin-bottom: 20px;">
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-warning" style="color:#ffffff;"> <i
-                                class="fa-solid fa-sd-card"></i> Salvar</button>
-                        <a href="adocao.php" class="btn btn-outline-secondary"> <i class="fa-solid fa-arrow-left"></i>
-                            Voltar</a>
+                        <button type="submit" class="btn btn-warning" style="background-color:#52BACB; color: white; font-family: baloo; border-color: #52BACB; width: 100px; font-size: 15px; border-radius: 20px;"> Salvar</button>
+                        <button  style="background-color:#B5B5B5;  font-family: baloo; border-color: #B5B5B5; width: 100px; font-size: 15px; border-radius: 20px;"><a style="color: white; text-decoration: none; font-family: baloo; font-size: 15px;" href="adocao.php" class="btn btn-outline-secondary">
+                            Voltar</a> </button>
                     </div>
                 </div>
 

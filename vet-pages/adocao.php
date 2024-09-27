@@ -1,16 +1,35 @@
+<!--
+ /**
+ * @file adocao.php
+ * @brief Página de adoção para o usuário.
+ *
+ * Este arquivo contém um texto explicativo do funcionamento da adoção para 
+ o usuário e todos os pets que estão disponíveis para adotar, que o profissional
+ adicionou.
+ * 
+ * O formulário tem uma estética visual agradável, permitindo uma experiência de usuário fluida e organizada.
+ *
+ * @date 2024-09-20
+ * @author Eduarda Oliveira de Souza
+ * @version 1.0
+ */
+-->
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
-    <link rel="stylesheet" href="../css/css/vet-adocao.css" />
+    <link rel="stylesheet" href="../css/css/vet-adocaoo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"

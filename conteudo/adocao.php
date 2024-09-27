@@ -25,7 +25,7 @@ include("../inc/header.php");
                 animal.
             </h1>
             <p class="subtitle">Apoio e carinho na sua jornada de adoção</p>
-            <button onclick="scrollToSection()" type="submit" class="btn btn-primary">Saiba Mais</button>
+            <button id="btn-adocao" onclick="scrollToSection()" type="submit" class="btn btn-primary">Saiba Mais</button>
         </div>
     </section>
     <section id="section2">
