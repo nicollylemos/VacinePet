@@ -18,7 +18,7 @@
                     </span>
                     <div class="text logo-text">
                         <span class="name">VacinePet </span>
-                        <span class="subtitle">Vacinação para seu pet<br> em Sorocaba e região.</span>
+                        <span class="subtitle">Vacinação para seu pet<br> em Sorocaba e Votorantim.</span>
                     </div>
                 </div>
 
@@ -34,16 +34,10 @@
                                 <span class="text nav-text">Sobre o VacinePet</span>
                             </a>
                         </li>
-                        <li class="nav-link">
-                            <a href="sobre-atend.php">
-                                <i class="fa-solid fa-bell-concierge icon"></i>
-                                <span class="text nav-text">Sobre o atendimento</span>
-                            </a>
-                        </li>
                     </ul>
                     <ul class="menu-links">
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="politicas-privacidade.php">
                                 <i class="fa-solid fa-shield-halved icon"></i>
                                 <span class="text nav-text">Políticas de Privacidade</span>
                             </a>

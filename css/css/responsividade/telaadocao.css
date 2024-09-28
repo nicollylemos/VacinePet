@@ -8,4 +8,8 @@
         left: -150px;
         font-size: 75px;
     }
+    .subtitle{
+        position: relative;
+        left: -140px;
+    }
 }

@@ -27,12 +27,23 @@ body {
     margin-top: 20px;
 }
 
-.title-visita-container,
+.title-visita-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+    left: 10%;
+   
+}
 .title-acompanhamento-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 20px 0;
+    position: relative;
+    left: -8%;
 }
 
 .title-visita{
@@ -50,7 +61,7 @@ body {
     color: #F7D577;
     background-color: #FC9242;
     border-radius: 30px;
-    padding: 5px 60px;
+    padding: 5px 70px;
     display: inline-block;
     margin-left: 10px; /* Espaçamento entre o ícone e o texto */
     position: relative;
@@ -91,9 +102,11 @@ body {
     color: #ffffff;
     background-color: #2FA8BB;
     border-radius: 30px;
-    padding: 15px 20px;
+    padding: 20px 20px;
     display: inline-block;
     margin-top: 10px;
+    position: relative;
+    left: 8%;
 }
 .text-acompanhamento {
     color: #ffffff;
@@ -103,7 +116,7 @@ body {
     display: inline-block;
     margin-top: 10px;
     position: relative;
-    left: 5%;
+    left: -5%;
 }
 
 .title {
@@ -114,12 +127,23 @@ body {
     width: 100%;
 }
 
-.img-fluid {
+.img-cad{
     max-width: 45%;
     height: auto;
     border-radius: 15px;
-    margin-top: -70px;
+    margin-top: 45px;
+    position: relative;
+    left: -5%;
 }
+.img-cale {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 40px;
+    position: relative;
+    left: 10%;
+}
+
 
 .sections-container {
     display: flex;
