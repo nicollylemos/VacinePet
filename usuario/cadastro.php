@@ -1,45 +1,29 @@
-<!--
- /**
- * @file cadastro.php
- *
- * @brief Este código realiza o cadastro de tutores, pets e seus respectivos endereços no banco de dados.
- * Utiliza a conexão com o banco de dados configurada previamente para inserir os dados fornecidos pelo formulário HTML.
- *
- * @date 2024-09-20
- *
- * @author Rafaela Mansano Fernandes e Nicolly Lemos da Silva
- *
- * @version 1.0
- *
- */
- -->
-
-<?php 
+<?php
 if (isset($_POST['submit'])) {
+    // Inclui o arquivo de configuração para conectar ao banco de dados
     include_once('../config.php');
 
-    // Informações do tutor
+    // Obtém os dados do formulário
     $nome = $_POST['tutor_nome'];
-    $cpf = $_POST['tutor_cpf'];
     $datanasc = $_POST['tutor_datanasc'];
+    $cpf = $_POST['tutor_cpf'];
     $telefone = $_POST['tutor_telefone'];
     $email = $_POST['tutor_email'];
     $senha = $_POST['tutor_senha'];
 
-    // Inserir tutor
-    $result = mysqli_query($conexao, "INSERT INTO tutor (nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
+    $result = mysqli_query($conexao, "INSERT INTO tutor( nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
 
     if ($result) {
         // Obter o ID do tutor inserido
         $cod_tutor = mysqli_insert_id($conexao);
 
         // Informações do endereço
-        $rua = $_POST['endereco_rua'];
-        $numero = $_POST['endereco_numero'];
-        $complemento = $_POST['endereco_complemento'];
-        $bairro = $_POST['endereco_bairro'];
-        $cep = $_POST['endereco_cep'];
-        $cidade = $_POST['endereco_cidade'];
+        $rua = $_POST['end_rua'];
+        $numero = $_POST['end_numero'];
+        $complemento = $_POST['end_complemento'];
+        $bairro = $_POST['end_bairro'];
+        $cep = $_POST['end_cep'];
+        $cidade = $_POST['end_cidade'];
 
          /**
          * Inserção dos dados do tutor no banco de dados.
@@ -47,8 +31,7 @@ if (isset($_POST['submit'])) {
          */
         $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
 
-
-        // Informações do Pet
+         // Informações do Pet
         $nome_pet = $_POST['pet_nome'];
         $sexo = $_POST['pet_sexo'];
         $idade = $_POST['pet_idade'];
@@ -58,8 +41,9 @@ if (isset($_POST['submit'])) {
         $historico = $_POST['pet_historico'];
         $raca = $_POST['pet_raca'];
         $foto_pet = $_POST['pet_foto_pet'];
-
-
+            
+        
+        
          /**
          * Inserção dos dados de endereço no banco de dados.
          * Utiliza o ID do tutor (cod_tutor) para associar o endereço ao tutor.
@@ -67,19 +51,17 @@ if (isset($_POST['submit'])) {
         $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
 
     }
+    // Fecha a conexão
+    mysqli_close($conexao);
 }
 ?>
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <!--
-    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
-    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome e Swiper.
-    -->
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/cadastrandos.css">
     <link rel="stylesheet" href="../css/css/responsividade/telacadastra.css">
@@ -90,10 +72,10 @@ if (isset($_POST['submit'])) {
         display: none;
     }
     </style>
+    <title>Cadastro de Tutor</title>
 </head>
 
 <body>
-
     <div class="container">
         <div class="blue-div">
             <h4 class="title-blue-div1">
@@ -107,7 +89,6 @@ if (isset($_POST['submit'])) {
                 Cadastre-se agora!
             </h3>
         </div>
-
         <div class="blue-div-resp">
             <h4 class="title-blue-div1">
                 VacinePet
@@ -120,10 +101,8 @@ if (isset($_POST['submit'])) {
                 Cadastre-se agora!
             </h3>
         </div>
-
         <div class="form">
-            <form action="final-cadastro.html" method="POST">
-                <!-- Informações pessoais -->
+            <form action="cadastro.php" method="POST">
                 <div id="etapa1" class="etapa">
                     <div class="title">
                         <h1 class="title-title">CADASTRO</h1>
@@ -132,102 +111,84 @@ if (isset($_POST['submit'])) {
                         <h5 class="sub-title-title sub1">Preencha o cadastro abaixo com suas informações pessoais.</h5>
                     </div>
 
-                    <div class="form1">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" maxlength="255" placeholder="Nome Completo"
-                                    class="form-control frm-ctrl" name="tutor_nome">
-                            </div>
-                            <div id="cpf" class="form-group col-md-6">
-                                <input type="text" maxlength="14" placeholder="CPF" id="cpf"
-                                    class="form-control frm-ctrl" name="tutor_cpf">
-                            </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control frm-ctrl" name="tutor_nome" id="nome"
+                                placeholder="Nome Completo" required>
                         </div>
-                        <script>
-                        document.getElementById('cpf').addEventListener('input', function(e) {
-                            var value = e.target.value;
-                            var cpfPattern = value.replace(/\D/g,
-                                    '') // Remove qualquer coisa que não seja número
-                                .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o terceiro dígito
-                                .replace(/(\d{3})(\d)/, '$1.$2') // Adiciona ponto após o sexto dígito
-                                .replace(/(\d{3})(\d)/, '$1-$2') // Adiciona traço após o nono dígito
-                                .replace(/(-\d{2})\d+?$/, '$1'); // Impede entrada de mais de 11 dígitos
-                            e.target.value = cpfPattern;
-                        });
-                        </script>
-
-
-                        <!--MASCARA E LIMITE DE DIGITAÇÃO, APENAS NÚMEROS-->
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="date" class="form-control frm-ctrl" placeholder="Data de Nascimento"
-                                    name="tutor_datanasc" maxlength="10">
-                            </div>
-                            <div id="tele" class="form-group col-md-6">
-                                <input type="text" placeholder="DDD + Telefone" maxlength="14"
-                                    class="form-control frm-ctrl" name="tutor_telefone">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <input type="text" placeholder="Email" maxlength="255" class="form-control frm-ctrl"
-                                    name="tutor_email" required>
-                            </div>
-                            <div id="senha" class="form-group col-md-6">
-                                <input type="password" placeholder="Senha" maxlength="100" class="form-control frm-ctrl"
-                                    name="tutor_senha" required>
-                            </div>
+                        <div class="form-group col-md-6">
+                            <input type="date" class="form-control frm-ctrl" name="tutor_datanasc" id="datanasc"
+                                required>
                         </div>
                     </div>
-                    <div class="div-botoess">
-                        <button type="button" class="btn btn-primary btn-custom btn-cad"
-                            onclick="proximaEtapa(2)">Próximo</button>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control frm-ctrl" name="tutor_cpf" id="cpf" placeholder="CPF"
+                                maxlength="14" autocomplete="off" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="tel" class="form-control frm-ctrl" name="tutor_telefone" id="telefone"
+                                placeholder="(DDD) + Telefone" onkeyup="handlePhone(event)" maxlength="15">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control frm-ctrl" name="tutor_email" id="email"
+                                placeholder="Email" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="password" class="form-control frm-ctrl" name="tutor_senha" id="senha"
+                                placeholder="Senha" required>
+                        </div>
+
+                        <div class="div-botoess">
+                            <button type="button" class="btn btn-primary btn-custom btn-cad"
+                                onclick="proximaEtapa(2)">Próximo</button>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Endereço 1 -->
                 <div id="etapa2" class="etapa hidden">
                     <div class="title">
                         <h1 class="title-title">CADASTRO</h1>
-                    </div>
-                    <div class="sub-title">
                         <h5 class="sub-title-title">Preencha com suas informações de endereço.</h5>
                     </div>
                     <div class="row">
-                        <div id="cep" class="form-group  col-md-6">
-                            <input type="text" maxlength="8" placeholder="CEP" class="form-control frm-ctrl"
-                                name="endereco_cep">
-                        </div>
-                        <div class="form-group  col-md-6">
-                            <input type="text" maxlength="255" placeholder="Rua" class="form-control frm-ctrl"
-                                name="endereco_rua">
-                        </div>
-                        <div id="num" class="form-group col-md-6">
-                            <input type="number" maxlength="5" placeholder="Número" class="form-control frm-ctrl"
-                                name="endereco_numero">
-                        </div>
-                        <div class="form-group  col-md-6">
-                            <input type="text" maxlength="255" placeholder="Complemento" class="form-control frm-ctrl"
-                                name="endereco_complemento">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control frm-ctrl" name="end_cep" id="cep" placeholder="CEP">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" maxlength="65" placeholder="Bairro" class="form-control frm-ctrl"
-                                name="endereco_bairro">
-                        </div>
-                        <div class="form-group  col-md-6">
-                            <input type="text" maxlength="25" placeholder="Cidade" class="form-control frm-ctrl"
-                                name="endereco_cidade">
+                            <input type="text" class="form-control frm-ctrl" name="end_rua" id="rua" placeholder="Rua"
+                                required>
                         </div>
                     </div>
-                    <div class="div-botoes">
-                        <button type="button" class="btn btn-secondary btn-custom btn-perso"
-                            onclick="anteriorEtapa(1)">Anterior</button>
-                        <button type="button" class="btn btn-primary btn-custom"
-                            onclick="proximaEtapa(3)">Próximo</button>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="number" class="form-control frm-ctrl" name="end_numero" id="numero"
+                                placeholder="Número" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control frm-ctrl" name="end_complemento" id="complemento"
+                                placeholder="Complemento" maxlength="50">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control frm-ctrl" name="end_bairro" id="bairro"
+                                placeholder="Bairro" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control frm-ctrl" name="end_cidade" id="cidade"
+                                placeholder="Cidade" required>
+                        </div>
+
+                        <div class="div-botoes">
+                            <button type="button" class="btn btn-secondary btn-custom btn-perso"
+                                onclick="anteriorEtapa(1)">Anterior</button>
+                            <button type="button" class="btn btn-primary btn-custom"
+                                onclick="proximaEtapa(3)">Próximo</button>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Informações pet 1 -->
                 <div id="etapa3" class="etapa hidden">
                     <div class="title">
@@ -245,34 +206,35 @@ if (isset($_POST['submit'])) {
                                     <option value="Gato">Gato</option>
                                     <option value="Fêmea">Cachorro</option>
                                 </select>
-                                <p>Sexo:</p>
+                                <label for="especie">Espécie:</label>
                                 <select class="selecionar" name="pet_sexo" id="sexo">
                                     <option value="Macho">Macho</option>
                                     <option value="Fêmea">Fêmea</option>
                                 </select>
-                                <p>Nome:</p>
-                                <input type="text" maxlength="255" placeholder="Nome do Pet"
-                                    class="form-control frm-ctrl" name="pet_nome">
-                                <p>Idade:</p>
-                                <input type="number" maxlength="2" placeholder="Idade do Pet"
-                                    class="form-control frm-ctrl" name="pet_idade">
-                            </div>
-
-                            <div class="col">
-                                <p>Raça:</p>
-                                <input type="text" placeholder="Raça" maxlength="255" class="form-control frm-ctrl"
-                                    name="pet_raca">
-                                <p>Seu pet é castrado?</p>
+                                <label for="castracao">Seu pet é castrado?</label>
                                 <select class="selecionar" name="pet_castracao" id="castracao">
                                     <option value="Sim">Sim</option>
                                     <option value="Não">Não</option>
                                 </select>
-                                <p>Qual o porte do seu Pet?</p>
+                                <label for="porte">Qual o porte do seu Pet?</label>
                                 <select class="selecionar" name="pet_porte" id="porte">
                                     <option value="Pequeno">Pequeno</option>
                                     <option value="Médio">Médio</option>
                                     <option value="Grande">Grande</option>
                                 </select>
+                            </div>
+
+                            <div class="col">
+                                <p>Nome:</p>
+                                <input type="text" maxlength="255" placeholder="Nome do Pet"
+                                    class="form-control frm-ctrl" name="pet_nome">
+                                <p>Raça:</p>
+                                <input type="text" placeholder="Raça" maxlength="255" class="form-control frm-ctrl"
+                                    name="pet_raca">
+                                <p>Idade:</p>
+                                <input type="number" maxlength="2" placeholder="Idade do Pet"
+                                    class="form-control frm-ctrl" name="pet_idade">
+
                             </div>
                         </div>
                     </div>
@@ -313,18 +275,31 @@ if (isset($_POST['submit'])) {
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(3)">Anterior</button>
-                        <button type="submit" class="btn btn-primary btn-custom">Enviar</button>
+                        <input type="submit" name="submit" class="btn btn-secondary btn-custom btn-perso"
+                            value="Cadastrar">
                     </div>
                 </div>
 
 
             </form>
-        </div>
-    </div>
-    <script>
-
-    </script>
-    <script src="../js/cadastro.js"></script>
 </body>
+<script src="../js/cadastrar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+</script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+
+<script>
+$('#cep').mask('00000-000');
+$('#telefone').mask('(00) 00000-0000');
+$('#cpf').mask('000.000.000-00', {
+    reverse: true
+});
+$('#money').mask("#.##0,00", {
+    reverse: true
+});
+</script>
+</script>
 
 </html>
