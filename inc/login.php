@@ -18,6 +18,7 @@
     * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
     * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

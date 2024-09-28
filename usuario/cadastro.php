@@ -7,7 +7,7 @@
  *
  * @date 2024-09-20
  *
- * @author Rafaela Mansano Fernandes
+ * @author Rafaela Mansano Fernandes e Nicolly Lemos da Silva
  *
  * @version 1.0
  *
