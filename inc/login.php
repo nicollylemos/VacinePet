@@ -70,7 +70,7 @@
                             <button type="submit" class="btn btn-primary btn-custom">ENTRAR</button>
                         </div>
                         <div class="cad-text">
-                            <h7>Não tem uma conta?</h7><a href="cadastro.php"> Cadastre-se</a>
+                            <h7>Não tem uma conta?</h7><a href="../usuario/cadastro.php"> Cadastre-se</a>
                         </div>
                 </form>
             </div>
