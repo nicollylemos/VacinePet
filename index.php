@@ -74,7 +74,7 @@ body {
         </div>
     </section>
     <!-- Card para tela de informações sobre as doenças -->
-    <section class="info-doencas">
+    <div id="doencas" class="info-doencas">
         <div class="informacao">
             <div class="row justify-content-center">
                 <div class="col-4" id="info-cao">
@@ -104,7 +104,7 @@ body {
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Valores Vacinas -->
     <section class="secao-valores">

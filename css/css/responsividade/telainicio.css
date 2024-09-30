@@ -9,6 +9,9 @@
     #icon{
         font-size: 20px;
     }
+    p{
+        font-size: 25px;
+    }
     .titulo-site {
         font-size: 45px;
         text-align: center;
@@ -38,22 +41,20 @@
         margin-top: 150px;
         margin-left: 15px;
     }
-
-    #info-cao {
-        width: 320px !important;
-        height: 230px;
-        margin: auto;
-        position: relative;
-        top: -90px;
-        left: -8px;
+    .info-doencas{
+        width: 50px;
     }
-
-    #info-gato {
-        width: 320px !important;
-        height: 230px;
+    #info-cao{
+        width: 300px;
+        left: 15%;
         position: relative;
-        left: 82px;
-        top: -65px !important;
+        top: -95px;
+    }
+    #info-gato{
+        width: 300px;
+        position: relative;
+        left: 65%;
+        top: -55px;
     }
     #vmp{
         position: relative;
@@ -71,7 +72,7 @@
         left: -20px;
     }
     .btn-ler{
-        top: -21px;
+        top: 10px;
     }
 
     .cat-card {
@@ -174,6 +175,9 @@
     #icon{
         font-size: 20px;
     }
+    p{
+        font-size: 25px;
+    }
     .titulo-site {
         font-size: 45px;
         text-align: center;
@@ -203,24 +207,20 @@
         margin-top: 150px;
         margin-left: 15px;
     }
-
-    #info-cao {
-        width: 320px !important;
-        height: 230px;
-        margin: auto;
-        position: relative;
-        top: -90px;
-        left: 10px;
-        align-items: center;
+    .info-doencas{
+        width: 50px;
     }
-
-    #info-gato {
-        width: 320px !important;
-        height: 230px;
+    #info-cao{
+        width: 300px;
+        left: 15%;
         position: relative;
-        left: 62px;
-        top: -65px !important;
-        align-items: center;
+        top: -95px;
+    }
+    #info-gato{
+        width: 300px;
+        position: relative;
+        left: 65%;
+        top: -55px;
     }
     #vmp{
         position: relative;
@@ -238,7 +238,7 @@
         left: -20px;
     }
     .btn-ler{
-        top: -21px;
+        top: 10px;
     }
 
     .cat-card {
@@ -328,5 +328,4 @@
         margin-left: -55%;
         width: 300px;
     }
-
 }

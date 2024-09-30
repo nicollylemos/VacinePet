@@ -91,6 +91,10 @@
             color: #52BACB;
             font-family: league;
             padding: 3%;
+            position: static;
+            /* Alterado para static */
+            margin: 0;
+            /* Removido top e left */
         }
 
         .topnav .login {
@@ -106,13 +110,17 @@
             color: #fff;
             font-family: league;
             padding: 3%;
+            position: static;
+            /* Alterado para static */
+            margin: 0;
+            /* Removido top e left */
         }
 
         .topnav .icon {
             display: none;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 1171px) {
             .topnav .menu a {
                 display: none;
             }
@@ -130,7 +138,7 @@
             }
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 1171px) {
             .topnav.responsive {
                 position: relative;
                 flex-direction: column;
@@ -170,6 +178,11 @@
                 top: 16px;
             }
         }
+
+        /* Ocultar o ícone do WhatsApp quando o menu responsivo for aberto */
+        .hide-whatsapp-icon .whatsapp-icon {
+            display: none;
+        }
     </style>
 </head>
 
@@ -202,19 +215,21 @@
             var x = document.getElementById("myTopnav");
             var body = document.body;
             var html = document.documentElement;
+            var whatsappIcon = document.querySelector('.whatsapp-icon');
 
             if (x.className === "topnav") {
                 x.className += " responsive"; // Abre o menu responsivo
                 body.classList.add("no-scroll"); // Bloqueia a rolagem no body
                 html.classList.add("no-scroll"); // Bloqueia a rolagem no html
+                whatsappIcon.style.display = 'none'; // Esconde o ícone do WhatsApp
             } else {
                 x.className = "topnav"; // Fecha o menu
                 body.classList.remove("no-scroll"); // Libera a rolagem no body
                 html.classList.remove("no-scroll"); // Libera a rolagem no html
+                whatsappIcon.style.display = 'block' // Mostra o ícone do WhatsApp novamente
             }
         }
     </script>
 
 </body>
-
 </html>
