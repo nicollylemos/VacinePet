@@ -1,0 +1,554 @@
+@media (min-width:310px) and (max-width: 360px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        position: relative;
+        left: -2%;
+    }
+
+    #p1 {
+        position: relative;
+        width: 300px;
+        color: #8c8c8c;
+        text-align: left;
+    }
+
+    #p2 {
+        position: relative;
+        width: 300px;
+        color: #8c8c8c;
+        text-align: left;
+    }
+
+    #btn {
+        position: relative;
+        left: 10%;
+        top: 60px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+    }
+
+    .container-img {
+        height: 300px;
+        width: 350px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 350px;
+        position: relative;
+        left: 5%;
+        bottom: -34px;
+    }
+
+}
+
+@media (min-width:360px) and (max-width: 400px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        width: 300px;
+        position: relative;
+        left: -1%;
+    }
+
+    #p1 {
+        position: relative;
+        width: 330px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #p2 {
+        position: relative;
+        width: 330px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #btn {
+        position: relative;
+        left: 10%;
+        top: 60px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+    }
+
+    .container-img {
+        height: 300px;
+        width: 350px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 380px;
+        position: relative;
+        left: 12%;
+        bottom: -15px;
+    }
+}
+@media (min-width: 401px) and (max-width: 430px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        position: relative;
+        width: 300px;
+        left: 2%;
+    }
+
+    #p1 {
+        position: relative;
+        width: 360px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #p2 {
+        position: relative;
+        width: 360px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #btn {
+        position: relative;
+        left: 15%;
+        top: 60px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 7%;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 7%;
+    }
+
+    .container-img {
+        height: 300px;
+        width: 350px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 390px;
+        position: relative;
+        left: 19%;
+        bottom: -15px;
+    }
+}
+@media (min-width: 431px) and (max-width: 500px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        position: relative;
+        width: 300px;
+        left: 2%;
+    }
+
+    #p1 {
+        position: relative;
+        width: 380px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #p2 {
+        position: relative;
+        width: 380px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #btn {
+        position: relative;
+        left: 15%;
+        top: 130px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 7%;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 7%;
+    }
+
+    .container-img {
+        height: 500px;
+        width: 550px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 440px;
+        position: relative;
+        left: 14%;
+        bottom: -161px;
+    }
+}
+@media (min-width: 501px) and (max-width: 575px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        position: relative;
+        width: 300px;
+        left: 2%;
+    }
+
+    #p1 {
+        position: relative;
+        width: 420px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #p2 {
+        position: relative;
+        width: 420px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #btn {
+        position: relative;
+        left: 20%;
+        top: 120px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 7%;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 7%;
+    }
+
+    .container-img {
+        height: 500px;
+        width: 550px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 490px;
+        position: relative;
+        left: 14%;
+        bottom: -121px;
+    }
+}
+@media (min-width: 576px) and (max-width: 650px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        position: relative;
+        width: 300px;
+        left: 2%;
+        font-size: 55px;
+    }
+
+    #p1 {
+        position: relative;
+        width: 470px;
+        font-size: 20px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #p2 {
+        position: relative;
+        width: 470px;
+        font-size: 20px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #btn {
+        position: relative;
+        left: 20%;
+        top: 120px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+        font-size: 30px;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 350px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+        font-size: 30px;
+    }
+
+    .container-img {
+        height: 500px;
+        width: 550px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 530px;
+        position: relative;
+        left: 18%;
+        bottom: -90px;
+    }
+}
+@media (min-width: 651px) and (max-width: 750px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        position: relative;
+        width: 350px;
+        left: 2%;
+        font-size: 58px;
+    }
+
+    #p1 {
+        position: relative;
+        width: 580px;
+        font-size: 20px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #p2 {
+        position: relative;
+        width: 580px;
+        font-size: 20px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #btn {
+        position: relative;
+        left: 21%;
+        top: 120px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+        font-size: 30px;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 350px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+        font-size: 30px;
+    }
+
+    .container-img {
+        height: 500px;
+        width: 650px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 630px;
+        position: relative;
+        left: 17%;
+        bottom: -16px;
+    }
+}
+@media (min-width: 651px) and (max-width: 750px){
+
+
+    body {
+        background-image: none;
+    }
+
+    #title {
+        color: #52BACB;
+        text-align: left;
+        position: relative;
+        width: 350px;
+        left: 2%;
+        font-size: 58px;
+    }
+
+    #p1 {
+        position: relative;
+        width: 580px;
+        font-size: 20px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #p2 {
+        position: relative;
+        width: 580px;
+        font-size: 20px;
+        color: #8c8c8c;
+        text-align: left;
+        left: 5%;
+    }
+
+    #btn {
+        position: relative;
+        left: 21%;
+        top: 120px;
+    }
+
+    #sub-title-cas {
+        position: relative;
+        width: 300px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+        font-size: 30px;
+    }
+
+    #sub-title-esp {
+        position: relative;
+        width: 350px;
+        color: #5f5f5f;
+        text-align: left;
+        left: 5%;
+        font-size: 30px;
+    }
+
+    .container-img {
+        height: 500px;
+        width: 650px;
+        background-image: url('imgs/castracao.png');
+        background-repeat: no-repeat;
+        background-size: 630px;
+        position: relative;
+        left: 17%;
+        bottom: -16px;
+    }
+}
