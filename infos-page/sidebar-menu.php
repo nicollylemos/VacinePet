@@ -44,14 +44,7 @@
                         </li>
 
                         <li class="nav-link">
-                            <a href="#">
-                                <i class="fa-solid fa-file-signature icon"></i>
-                                <span class="text nav-text">Termos de uso</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-link">
-                            <a href="#">
+                            <a href="direitos.php">
                                 <i class="fa-solid fa-copyright icon"></i>
                                 <span class="text nav-text">Direitos Autorais</span>
                             </a>
@@ -59,17 +52,12 @@
                     </ul>
                     <ul class="menu-links">
                         <li class="nav-link">
-                            <a href="#">
+                            <a href="vacinacao.php">
                                 <i class="fa-solid fa-house icon"></i>
                                 <span class="text nav-text"> Vacinação em domicílio</span>
                             </a>
                         </li>
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class="fa-regular fa-calendar-days icon"></i>
-                                <span class="text nav-text">Confirmar agendamento</span>
-                            </a>
-                        </li>
+                        
                         <li class="nav-link">
                             <a href="pagamento.php">
                                 <i class="fa-solid fa-cash-register icon"></i>

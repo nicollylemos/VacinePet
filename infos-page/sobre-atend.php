@@ -112,6 +112,7 @@
                     eficiente para você e seu companheiro.
                 </p>
             </div>
+            <br>
             <hr>
             <div class="container-end">
                 <p>Gostou? Agende agora uma consulta no VacinePet!</p>

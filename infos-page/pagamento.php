@@ -1,5 +1,6 @@
 <?php
-    include("sidebar-menu.php");
+include("sidebar-menu.php");
+include("../inc/header.php");
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VacinePet</title>
-    <link rel="stylesheet" href="../css/css/info-menu.css">
+    <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
     <link rel="stylesheet" href="../css/css/responsividade/footer-resp.css">
 </head>
@@ -19,96 +20,21 @@
         <div class="content">
             <div class="header"></div>
             <div class="content-about">
-                <h1>Sobre o VacinePet</h1>
-                <h2>A saúde do seu pet em primeiro lugar.</h2>
-                <div class="content-txt one">
-                    <p>A saúde e o bem-estar dos nossos amigos de quatro patas são de extrema importância. Por isso,
-                        apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de estimação
-                        com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a dia, o
-                        estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas vezes
-                        dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
-                        eficiente para você e seu companheiro.</p>
+                <h1>Formas de Pagamento</h1>
+                <h2>Como realizar seu pagamento?</h2>
+                <div class="content-txt two">
+                    <p>No dia do atendimento, o pagamento será realizado diretamente com a veterinária. Aceitamos as
+                        seguintes opções: Cartão de Débito, Cartão de Crédito, PIX, Dinheiro e Boleto.</p>
                 </div>
             </div>
-            <div class="pet-img">
-                <img src="../imgs/cachorro-fofo.jpg" height="500px" alt="">
-            </div>
-            <h3 class="subtitle">1 Como surgiu?</h3>
             <div class="content-txt two">
-                <p>A saúde e o bem-estar dos nossos amigos de quatro
-                    patas são
-                    de extrema
-                    importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
-                    estimação
-                    com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
-                    dia, o
-                    estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas
-                    vezes
-                    dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
-                    eficiente para você e seu companheiro.A saúde e o bem-estar dos nossos amigos de quatro
-                    patas são de extrema
-                    importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
-                    estimação
-                    com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
-                    dia, o
-                    estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas
-                    vezes
-                    dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
-                    eficiente para você e seu companheiro.</p>
+                <p>É importante ressaltar que os pagamentos não serão realizados pelo site. Por favor, tenha a forma de
+                    pagamento escolhida pronta no momento da visita.
+
+                    Se tiver alguma dúvida sobre as opções de pagamento, sinta-se à vontade para nos contatar pelo
+                    email: vacinepet@gmail.com</p>
             </div>
-            <h3 class="subtitle">2 Objetivos do VacinePet</h3>
-            <div class="content-txt two">
-                <p>A saúde e o bem-estar dos nossos amigos de quatro
-                    patas são
-                    de extrema
-                    importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
-                    estimação
-                    com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
-                    dia, o
-                    estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas
-                    vezes
-                    dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
-                    eficiente para você e seu companheiro.A saúde e o bem-estar dos nossos amigos de quatro
-                    patas são de extrema
-                    importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
-                    estimação
-                    com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
-                    dia, o
-                    estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas
-                    vezes
-                    dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
-                    eficiente para você e seu companheiro.</p>
-            </div>
-            <h3 class="subtitle">3 Nossos valores</h3>
-            <div class="content-txt two">
-                <p>A saúde e o bem-estar dos nossos amigos de quatro
-                    patas são
-                    de extrema
-                    importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
-                    estimação
-                    com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
-                    dia, o
-                    estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas
-                    vezes
-                    dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
-                    eficiente para você e seu companheiro.A saúde e o bem-estar dos nossos amigos de quatro
-                    patas são de extrema
-                    importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
-                    estimação
-                    com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
-                    dia, o
-                    estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas
-                    vezes
-                    dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
-                    eficiente para você e seu companheiro.
-                </p>
-            </div>
+            <br>
             <hr>
             <div class="container-end">
                 <p>Gostou? Agende agora uma consulta no VacinePet!</p>

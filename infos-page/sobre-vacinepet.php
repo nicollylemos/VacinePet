@@ -34,7 +34,7 @@
             </div>
             <!-- <div class="pet-img">
         </div>-->
-            <h3 class="subtitle">1 Como surgiu?</h3>
+            <h3 class="subtitle">Como surgiu?</h3>
             <div class="content-txt two">
                 <p>O VacinePet surgiu com o propósito de facilitar o cuidado com a saúde dos pets, oferecendo uma
                     plataforma completa para agendamento de serviços essenciais. O site foi idealizado para atender a
@@ -47,7 +47,7 @@
                     animal, refletindo o compromisso do VacinePet com a saúde e o bem-estar dos pets.
                 </p>
             </div>
-            <h3 class="subtitle">2 Objetivos do VacinePet</h3>
+            <h3 class="subtitle">Objetivos do VacinePet</h3>
             <div class="content-txt two">
                 <p>O VacinePet tem como objetivos facilitar o acesso a cuidados veterinários, oferecendo agendamentos
                     para vacinação e castração de cães e gatos. Com serviços especializados realizados pela Dra. Monica,
@@ -56,7 +56,7 @@
                     também se dedica a educar os donos sobre cuidados com os pets e oferece atendimento personalizado,
                     fomentando uma comunidade responsável e engajada no bem-estar dos animais.</p>
             </div>
-            <h3 class="subtitle">3 Nossos valores</h3>
+            <h3 class="subtitle">Nossos valores</h3>
             <div class="content-txt two">
                 <p>A saúde e o bem-estar dos nossos amigos de quatro
                     patas são
@@ -84,6 +84,7 @@
                     eficiente para você e seu companheiro.
                 </p>
             </div>
+            <br>
             <hr>
             <div class="container-end">
                 <p>Gostou? Agende agora uma consulta no VacinePet!</p>
