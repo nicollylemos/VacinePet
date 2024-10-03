@@ -154,7 +154,7 @@
                 position: relative;
                 flex-direction: column;
                 align-items: flex-start;
-                z-index: 1000;
+                z-index: 10000;
                 height: 100vh;
             }
 
@@ -233,13 +233,10 @@
             if (x.className === "topnav") {
                 x.className += " responsive"; // Abre o menu responsivo
                 body.classList.add("no-scroll"); // Bloqueia a rolagem no body
-                html.classList.add("no-scroll"); // Bloqueia a rolagem no html
-                whatsappIcon.style.display = 'none'; // Esconde o ícone do WhatsApp
             } else {
                 x.className = "topnav"; // Fecha o menu
                 body.classList.remove("no-scroll"); // Libera a rolagem no body
                 html.classList.remove("no-scroll"); // Libera a rolagem no html
-                whatsappIcon.style.display = 'block' // Mostra o ícone do WhatsApp novamente
             }
         }
     </script>
