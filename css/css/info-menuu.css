@@ -11,14 +11,15 @@
     src:url("../font/oswald/Oswald-Regular.ttf");
 }
 
-.home{
+.home {
     position: absolute;
-    top: 0  ;
     top: 0;
     left: 90px;
     height: 100vh;
     width: calc(100% - 250px);
+    z-index: 1; /* Mudei de -1 para 1 para garantir que não sobreponha o header */
 }
+
 
 .home .header{
     background-image: url('img/pet-header.png');

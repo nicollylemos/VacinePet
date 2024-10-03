@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+     
+
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +23,14 @@
             overflow: hidden;
             width: 100%;
         }
+
+        .topnav {
+            position: relative;
+            /* Necessário para que o z-index funcione */
+            z-index: 1000;
+            /* Valor alto para garantir que o navbar fique sobre outros elementos */
+        }
+
 
         .topnav .logo:hover {
             color: #FA5909;
@@ -232,4 +242,5 @@
     </script>
 
 </body>
+
 </html>
