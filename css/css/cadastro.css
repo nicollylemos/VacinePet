@@ -229,3 +229,12 @@ body {
     margin-top: 10px;
     font-size: 20px;
 }
+
+/*validação*/
+
+.span-required{
+    display: none;
+    font-size: 12px;
+    margin: 3px 0 0 10px;
+    color: red;
+}
