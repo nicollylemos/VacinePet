@@ -202,13 +202,11 @@
         left: -18px;
         top: 1px;
     }
-
     .informacao {
         margin-top: 150px;
         margin-left: 15px;
     }
     .info-doencas{
-        position: relative;
         width: 50px;
     }
     #info-cao{

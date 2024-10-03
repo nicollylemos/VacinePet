@@ -17,7 +17,8 @@
  * Esta página contém seções para introduzir o serviço de vacinação de pets no domicílio, um carrossel para vacinas populares
  * com informações e valores estimados, e links para páginas com informações mais detalhadas sobre doenças que afetam cães e gatos.
  */
---><?php
+-->
+<?php
 include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 ?>
 <!DOCTYPE html>
@@ -44,11 +45,11 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 </head>
 
 <style>
-html,
-body {
-    overflow-x: hidden;
-    /* Esconde a rolagem horizontal */
-}
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
 </style>
 
 <body>
@@ -74,36 +75,29 @@ body {
         </div>
     </section>
     <!-- Card para tela de informações sobre as doenças -->
-    <div id="doencas" class="info-doencas">
-        <div class="informacao">
-            <div class="row justify-content-center">
-                <div class="infos" id="info-cao">
-                    <div class="texto">
-                        <h3>CÃO</h3>
-                        <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
-                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
-                        <a href="/VacinePet/conteudo/doencascachorro.php"><button type="submit" class="btn-ler">Ler
-                                Mais</button></a>
+        <div id="doenca" class="info-doencas">
+            <div class="informacao">
+                <div class="row justify-content-center">
+                    <div class="infos" id="info-cao">
+                        <div class="texto">
+                            <h3>CÃO</h3>
+                            <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
+                                podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
+                            <a href="/VacinePet/conteudo/doencascachorro.php"><button type="submit" class="btn-ler">Ler
+                                    Mais</button></a>
+                        </div>
                     </div>
-                    <div class="img-pet">
-                        <div class="pet-dog"><img src="" alt=""></div>
-                    </div>
-                </div>
-                <div class="infos" id="info-gato">
-                    <div class="texto">
-                        <h3>GATO</h3>
-                        <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
-                            podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="/VacinePet/conteudo/doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
-                        <img class="cat-card" src="imgs/cat-card.png" alt="Cachorro">
-                    </div>
-                    <div class="img-pet">
-                        <div class="pet-cat"><img src="" alt=""></div>
+                    <div class="infos" id="info-gato">
+                        <div class="texto">
+                            <h3>GATO</h3>
+                            <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
+                                podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
+                            <a href="/VacinePet/conteudo/doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Valores Vacinas -->
     <section class="secao-valores">
