@@ -1,5 +1,10 @@
 <?php 
+ // print_r($_REQUEST);
+ if(isset($_POST['submit'])){
 
+ }else{
+    header('Location: login.php');
+ }
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +57,7 @@
 
                     <div class="final">
                         <div id="actions" class="mt-4">
-                            <button type="submit" class="btn btn-primary btn-custom">ENTRAR</button>
+                            <input type="submit" class="btn btn-primary btn-custom"/>
                         </div>
                         <div class="cad-text">
                             <h7>Não tem uma conta?</h7><a href="../usuario/cadastro.php"> Cadastre-se</a>
