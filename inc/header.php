@@ -31,6 +31,7 @@
             /* Valor alto para garantir que o navbar fique sobre outros elementos */
         }
 
+       
 
         .topnav .logo:hover {
             color: #FA5909;
@@ -199,10 +200,12 @@
 <body>
 
     <div class="topnav" id="myTopnav">
+
+
         <a href="/VacinePet/index.php" class="logo">VacinePet<i class="fa-solid fa-paw fa-rotate-by"
                 style="color: #FA5909; --fa-rotate-angle: 49deg; width: 18px; height: 6px; font-size: 13px;"></i></a>
         <div class="menu">
-            <a href="/VacinePet/index.php" class="home active">Início</a>
+            <a href="/VacinePet/index.php" class="active">Início</a>
             <a href="/VacinePet/conteudo/profissional.php">Profissional</a>
             <a href="/VacinePet/usuario/agendamento.php">Agendamento</a>
             <a href="/VacinePet/conteudo/adocao.php">Adoção</a>

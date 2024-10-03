@@ -1,24 +1,9 @@
-<!--
- /**
- * @file login.php
- * @brief Página de login de usuários cadastrados.
- *
- * Este arquivo contém o formulário de login. O usuário adiciona seu email e sua senha cadastrada 
- para acessar sua conta e seus dados.
- * 
- * @date 2024-09-20
- * @author Rafaela Mansano Fernandes
- * @version 1.0
- */
--->
+<?php 
+
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--
-    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
-    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
--->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -53,12 +38,12 @@
 
                     <div class="form-group mt-4">
                         <input type="text" maxlength="255" placeholder="Email" class="form-control"
-                            name="customer['name']">
+                            name="tutor_email">
                     </div>
 
                     <div class="form-group mt-4">
                         <input type="password" maxlength="11" placeholder="Senha" class="form-control"
-                            name="customer['cpf_cnpj']">
+                            name="tutor_senha">
                     </div>
 
                     <div class="esquecer">
