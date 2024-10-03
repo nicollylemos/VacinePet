@@ -720,7 +720,7 @@
         background-size: 1500px;
     }
 }
-@media (min-width: 1145px) and (max-width: 1216px){
+@media (min-width: 1145px) and (max-width: 1240px){
     body{
         background-size: 1360px;
         background-position: calc(0% + -120px) calc(50% + -160px);
@@ -749,45 +749,6 @@
     }
     #btn{
         position: relative;
-        left: -5%;
-    }
-}
-@media (min-width: 1217px) and (max-width: 2560px){
-    body{
-        background-size: 1360px;
-        background-position: calc(0% + -120px) calc(50% + -130px);
-    }
-    #title{
-        font-size: 45px;
-        position: relative;
-        left: -3%;
-        top: 35px;
-    }
-    #sub-title-cas{
-        position: relative;
-        left: -6%;
-        top: 30px;
-    }
-    #p1{
-        position: relative;
-        left: -6%;
-        top: 38px;
-        width: 400px;
-    }
-    #sub-title-esp{
-        position: relative;
-        left: -6%;
-        top: 35px;
-    }
-    #p2{
-        position: relative;
-        left: -6%;
-        top: 35px;
-        width: 400px;
-    }
-    #btn{
-        position: relative;
-        top: 50px;
         left: -5%;
     }
 }

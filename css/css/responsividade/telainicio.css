@@ -208,18 +208,16 @@
         margin-left: 15px;
     }
     .info-doencas{
+        position: relative;
         width: 50px;
     }
     #info-cao{
         width: 300px;
-        left: 15%;
-        position: relative;
         top: -95px;
+        left: 90px;
     }
     #info-gato{
         width: 300px;
-        position: relative;
-        left: 65%;
         top: -55px;
     }
     #vmp{
@@ -320,12 +318,12 @@
         font-size: 18px;
         position: relative;
         top: 35px;
-        left: 10px;
+        left: -25px;
     }
-    .recado{
+    #recado{
         position: relative;
         text-align: center;
-        margin-left: -55%;
+        margin-left: -45%;
         width: 300px;
     }
 }

@@ -77,20 +77,19 @@ body {
     <div id="doencas" class="info-doencas">
         <div class="informacao">
             <div class="row justify-content-center">
-                <div class="col-4" id="info-cao">
+                <div class="infos" id="info-cao">
                     <div class="texto">
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
                         <a href="/VacinePet/conteudo/doencascachorro.php"><button type="submit" class="btn-ler">Ler
                                 Mais</button></a>
-
                     </div>
                     <div class="img-pet">
                         <div class="pet-dog"><img src="" alt=""></div>
                     </div>
                 </div>
-                <div class="col-4" id="info-gato">
+                <div class="infos" id="info-gato">
                     <div class="texto">
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
