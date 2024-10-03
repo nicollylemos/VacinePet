@@ -50,7 +50,16 @@ if (isset($_POST['submit'])) {
          */
         $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
 
+        if ($result && $result_endereco && $result_pet) {
+            // Se tudo der certo, redireciona
+            header("Location: ../inc/login.php");
+            exit;
+        } else {
+            echo "Erro ao salvar no banco de dados.";
+        }
     }
+
+
     // Fecha a conexão
     mysqli_close($conexao);
 }
