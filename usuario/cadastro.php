@@ -25,13 +25,13 @@ if (isset($_POST['submit'])) {
         $cep = $_POST['end_cep'];
         $cidade = $_POST['end_cidade'];
 
-         /**
+        /**
          * Inserção dos dados do tutor no banco de dados.
          * Utiliza uma query SQL para inserir o nome, CPF, data de nascimento, telefone, e-mail e senha do tutor.
          */
         $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
 
-         // Informações do Pet
+        // Informações do Pet
         $nome_pet = $_POST['pet_nome'];
         $sexo = $_POST['pet_sexo'];
         $idade = $_POST['pet_idade'];
@@ -41,16 +41,25 @@ if (isset($_POST['submit'])) {
         $historico = $_POST['pet_historico'];
         $raca = $_POST['pet_raca'];
         $foto_pet = $_POST['pet_foto_pet'];
-            
-        
-        
-         /**
+
+
+
+        /**
          * Inserção dos dados de endereço no banco de dados.
          * Utiliza o ID do tutor (cod_tutor) para associar o endereço ao tutor.
          */
         $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
 
+        if ($result && $result_endereco && $result_pet) {
+            // Se tudo der certo, redireciona
+            header("Location: ../inc/login.php");
+            exit;
+        } else {
+            echo "Erro ao salvar no banco de dados.";
+        }
     }
+
+
     // Fecha a conexão
     mysqli_close($conexao);
 }
@@ -63,7 +72,7 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/css/cadastrandos.css">
+    <link rel="stylesheet" href="../css/css/cadastro.css">
     <link rel="stylesheet" href="../css/css/responsividade/telacadastra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet - Cadastro</title>
@@ -102,7 +111,7 @@ if (isset($_POST['submit'])) {
             </h3>
         </div>
         <div class="form">
-            <form action="cadastro.php" method="POST">
+            <form id="form" action="cadastro.php" method="POST">
                 <div id="etapa1" class="etapa">
                     <div class="title">
                         <h1 class="title-title">CADASTRO</h1>
@@ -113,32 +122,37 @@ if (isset($_POST['submit'])) {
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="tutor_nome" id="nome"
-                                placeholder="Nome Completo" required>
+                            <input type="text" class="form-control frm-ctrl required" oninput="nameValidate()"
+                                name="tutor_nome" id="nome" placeholder="Nome Completo">
+                            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="date" class="form-control frm-ctrl" name="tutor_datanasc" id="datanasc"
-                                required>
+                            <input type="date" class="form-control frm-ctrl required" name="tutor_datanasc"
+                                id="datanasc" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control frm-ctrl" name="tutor_cpf" id="cpf" placeholder="CPF"
                                 maxlength="14" autocomplete="off" required>
+
                         </div>
                         <div class="form-group col-md-6">
                             <input type="tel" class="form-control frm-ctrl" name="tutor_telefone" id="telefone"
                                 placeholder="(DDD) + Telefone" onkeyup="handlePhone(event)" maxlength="15">
+                            <span class="span-required">Digite um número de telefone</span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control frm-ctrl" name="tutor_email" id="email"
-                                placeholder="Email" required>
+                            <input type="email" class="form-control frm-ctrl required" oninput="emailValidate()"
+                                name="tutor_email" id="email" placeholder="Email">
+                            <span class="span-required">Digite um email válido</span>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="password" class="form-control frm-ctrl" name="tutor_senha" id="senha"
-                                placeholder="Senha" required>
+                            <input type="password" class="form-control frm-ctrl required"
+                                oninput="mainPasswordValidate()" name="tutor_senha" id="senha" placeholder="Senha">
+                            <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                         </div>
 
                         <div class="div-botoess">
@@ -283,6 +297,70 @@ if (isset($_POST['submit'])) {
 
             </form>
 </body>
+
+<script>
+/Validação dos campos/
+
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+
+
+
+
+
+/Funções para aparecer e sumir o erro/
+
+function setError(index) {
+    campos[index].style.border = '2px solid red';
+    spans[index].style.display = 'block';
+}
+
+function removeError(index) {
+    campos[index].style.border = '';
+    spans[index].style.display = 'none';
+}
+/Validação do nome/
+
+function nameValidate() {
+    if (campos[0].value.length < 3) {
+
+        setError(0);
+    } else {
+        removeError(0)
+
+    }
+}
+
+/Validação do email/
+
+function emailValidate() {
+    if (!emailRegex.test(campos[2].value)) {
+        setError(2);
+    } else {
+        removeError(2);
+    }
+}
+
+/Validação de senha/
+
+function mainPasswordValidate() {
+    const senha = document.getElementById('senha');
+    const senhaSpan = document.querySelector(
+    '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+
+    if (senha.value.length < 8) {
+        senha.style.border = '2px solid red';
+        senhaSpan.style.display = 'block';
+    } else {
+        senha.style.border = '';
+        senhaSpan.style.display = 'none';
+    }
+}
+</script>
+
 <script src="../js/cadastrar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
@@ -301,5 +379,7 @@ $('#money').mask("#.##0,00", {
 });
 </script>
 </script>
+
+
 
 </html>
