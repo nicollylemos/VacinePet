@@ -36,24 +36,22 @@
         left: -18px;
         top: 1px;
     }
-
-    .informacao {
-        margin-top: 150px;
-        margin-left: 15px;
-    }
-    .info-doencas{
-        width: 50px;
+    .informacao{    
+        position: relative;
+        top: 500px;
+        width: 500px;
+        height: 500px;
     }
     #info-cao{
         width: 300px;
-        left: 15%;
         position: relative;
-        top: -95px;
+        left: -5px;
+        top: -130px;
     }
     #info-gato{
         width: 300px;
         position: relative;
-        left: 65%;
+        left: -2px;
         top: -55px;
     }
     #vmp{
@@ -157,9 +155,10 @@
         left: 10px;
     }
     .recado{
+        width: 300px !important;
+        left: -190px;
         position: relative;
         text-align: center;
-        margin-left: -55%;
         width: 300px;
     }
 
@@ -318,7 +317,7 @@
         top: 35px;
         left: -25px;
     }
-    #recado{
+    .recado{
         position: relative;
         text-align: center;
         margin-left: -45%;
