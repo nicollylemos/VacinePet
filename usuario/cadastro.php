@@ -145,13 +145,13 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control frm-ctrl required" oninput="emailValidate()" name="tutor_email" id="email"
-                                placeholder="Email">
+                            <input type="email" class="form-control frm-ctrl required" oninput="emailValidate()"
+                                name="tutor_email" id="email" placeholder="Email">
                             <span class="span-required">Digite um email válido</span>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="password" class="form-control frm-ctrl required" name="tutor_senha" id="senha"
-                                placeholder="Senha">
+                            <input type="password" class="form-control frm-ctrl required"
+                                oninput="mainPasswordValidate()" name="tutor_senha" id="senha" placeholder="Senha">
                             <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                         </div>
 
@@ -306,6 +306,12 @@ if (isset($_POST['submit'])) {
     const spans = document.querySelectorAll('.span-required');
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
+    form.addEventListener('click', (event) => {
+        event.preventDefault();
+        nameValidate();
+    });
+
+
 
 
     /*Funções para aparecer e sumir o erro*/
@@ -331,15 +337,29 @@ if (isset($_POST['submit'])) {
     }
 
     /*Validação do email*/
-    function emailValidate(){
-        if(!emailRegex.test(campos[2].value))
-        {
+    function emailValidate() {
+        if (!emailRegex.test(campos[2].value)) {
             setError(2);
         }
-        else{
+        else {
             removeError(2);
         }
     }
+
+    /*Validação de senha*/
+    function mainPasswordValidate() {
+        const senha = document.getElementById('senha');
+        const senhaSpan = document.querySelector('#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+
+        if (senha.value.length < 8) {
+            senha.style.border = '2px solid red';
+            senhaSpan.style.display = 'block';
+        } else {
+            senha.style.border = '';
+            senhaSpan.style.display = 'none';
+        }
+    }
+
 
 </script>
 
