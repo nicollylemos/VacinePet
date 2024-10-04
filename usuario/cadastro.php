@@ -306,10 +306,7 @@ if (isset($_POST['submit'])) {
     const spans = document.querySelectorAll('.span-required');
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    form.addEventListener('click', (event) => {
-        event.preventDefault();
-        nameValidate();
-    });
+    
 
 
 
