@@ -65,7 +65,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
                     NO CONFORTO DA SUA CASA.</h2>
-                <p>Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
+                <p id="sub">Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p><a href="/VacinePet/usuario/agendamento.php"><button
@@ -253,10 +253,10 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
         </div>
     </section>
 
-    <div class="recado">
-        <p id="recado">Atenção: O carrossel de vacinas do site oferece apenas uma estimativa de valores. As vacinas
-            devem ser indicadas pela médica veterinária.</p>
-    </div>
+    <section class="recado">
+        <h1 id="recado">Atenção: O carrossel de vacinas do site oferece apenas uma estimativa de valores. As vacinas
+        devem ser indicadas pela médica veterinária.</h1>
+    </section>
 
     <section class="atendimento-domiciliar">
         <div class="fundo-atendimento">

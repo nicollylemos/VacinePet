@@ -21,7 +21,7 @@
 }
 
 .tela-inicial {
-    background-image: url(img/background-home.svg);
+    background-image: url(img/background-index.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -245,4 +245,18 @@ body {
     bottom: 15px;
     font-family: baloo;
     margin-left: 2%;
+}
+#recado{
+    color: #9c9c9c;
+    font-size: 13px;
+}
+.recado{
+    width: 900px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+.como{
+    line-height: 68px;
 }

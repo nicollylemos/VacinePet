@@ -1,27 +1,34 @@
-@media (min-width:310px) and (max-width: 350px){
+@media (min-width:310px) and (max-width: 375px) {
     .tela-inicial {
         background-image: url('imgs/index-responsivo.png');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center; 
+        background-position: center;
         height: 730px;
     }
-    #icon{
+
+    #icon {
         font-size: 20px;
     }
-    p{
+
+    p {
         font-size: 25px;
     }
+
     .titulo-site {
+        position: relative;
+        left: -18px;
         font-size: 45px;
         text-align: center;
     }
+
     .info-inicial {
         width: auto;
         text-align: center;
         position: absolute;
         margin-left: 25px;
     }
+
     .subtitulo-site {
         font-size: 16px;
         text-align: center;
@@ -36,40 +43,49 @@
         left: -18px;
         top: 1px;
     }
-    .informacao{    
+
+    .informacao {
         position: relative;
         top: 500px;
         width: 500px;
         height: 500px;
     }
-    #info-cao{
+
+    #info-cao {
         width: 300px;
         position: relative;
         left: -5px;
         top: -130px;
     }
-    #info-gato{
+
+    #info-gato {
         width: 300px;
         position: relative;
         left: -2px;
         top: -55px;
     }
-    #vmp{
+
+    #vmp {
         position: relative;
         top: 35px;
     }
-    .como{
+
+    .como {
+        font-size: 40px !important;
+        line-height: 50px;
         position: relative;
         bottom: 25px;
         left: -20px;
         text-align: center;
     }
-    .p-text{
+
+    .p-text {
         text-align: center;
         position: relative;
         left: -20px;
     }
-    .btn-ler{
+
+    .btn-ler {
         top: 10px;
     }
 
@@ -84,6 +100,7 @@
         top: 12px;
         left: -10px;
     }
+
     #info-gato h3 {
         font-size: 40px;
         margin-bottom: 15px;
@@ -117,173 +134,12 @@
         position: relative;
         bottom: 50px;
     }
-    .slide-container{
+
+    .slide-container {
         position: relative;
         top: 30px;
     }
-    .btn-vacinas {
-        width: 150px;
-        height: 40px;
-    }
 
-    .fundo-atendimento {
-        height: 650px;
-        background-color: #52BACB;
-        background-image: none;
-        top: 10px;
-    }
-
-    .conteudo-atend {
-        width: auto;
-        margin-right: 20px;
-        position: relative;
-    }
-
-    .conteudo-atend h2 {
-        font-size: 32px;
-        text-align: left;
-    }
-
-    .conteudo-atend p {
-        font-size: 15.5px;
-    }
-
-    .btn-ler-atend {
-        font-size: 18px;
-        position: relative;
-        top: 35px;
-        left: 10px;
-    }
-    .recado{
-        width: 300px !important;
-        left: -190px;
-        position: relative;
-        text-align: center;
-        width: 300px;
-    }
-
-}
-@media (min-width:351px) and (max-width: 390px){
-    .tela-inicial {
-        background-image: url('imgs/index-responsivo.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; 
-        height: 730px;
-    }
-    #icon{
-        font-size: 20px;
-    }
-    p{
-        font-size: 25px;
-    }
-    .titulo-site {
-        font-size: 45px;
-        text-align: center;
-    }
-    .info-inicial {
-        width: auto;
-        text-align: center;
-        position: absolute;
-        margin-left: 25px;
-    }
-    .subtitulo-site {
-        font-size: 16px;
-        text-align: center;
-        margin-top: 10px;
-        left: -18px;
-    }
-
-    .info-inicial p {
-        text-align: center;
-        font-size: 14px;
-        position: relative;
-        left: -18px;
-        top: 1px;
-    }
-    .informacao {
-        margin-top: 150px;
-        margin-left: 15px;
-    }
-    .info-doencas{
-        width: 50px;
-    }
-    #info-cao{
-        width: 300px;
-        top: -95px;
-        left: 90px;
-    }
-    #info-gato{
-        width: 300px;
-        top: -55px;
-    }
-    #vmp{
-        position: relative;
-        top: 35px;
-    }
-    .como{
-        position: relative;
-        bottom: 25px;
-        left: -20px;
-        text-align: center;
-    }
-    .p-text{
-        text-align: center;
-        position: relative;
-        left: -20px;
-    }
-    .btn-ler{
-        top: 10px;
-    }
-
-    .cat-card {
-        display: none;
-    }
-
-    .btn-inicio {
-        font-size: 18px;
-        text-align: center;
-        position: relative;
-        top: 12px;
-        left: -10px;
-    }
-    #info-gato h3 {
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-
-    #info-cao h3 {
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-
-    #info-gato p {
-        font-size: 14px;
-    }
-
-    #info-cao p {
-        font-size: 14px;
-    }
-
-    .informacao button {
-        font-size: 17px;
-        padding: 2px;
-        color: #2FA8BB;
-        height: 30px;
-    }
-
-    .titulo-vacina h2 {
-        font-size: 30px;
-    }
-
-    .secao-valores {
-        position: relative;
-        bottom: 50px;
-    }
-    .slide-container{
-        position: relative;
-        top: 30px;
-    }
     .btn-vacinas {
         width: 150px;
         height: 40px;
@@ -318,9 +174,382 @@
         left: -25px;
     }
     .recado{
-        position: relative;
+        position:relative;
+        top: 30px;
         text-align: center;
-        margin-left: -45%;
-        width: 300px;
+        width: 250px;
+        left: 60px;
+        height: 100px;
+    }
+}
+@media (min-width:376px) and (max-width: 410px) {
+    .tela-inicial {
+        background-image: url('imgs/index-responsivo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 730px;
+    }
+
+    #icon {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .titulo-site {
+        position: relative;
+        left: -18px;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .info-inicial {
+        width: auto;
+        text-align: center;
+        position: absolute;
+        margin-left: 25px;
+    }
+
+    .subtitulo-site {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+        left: -18px;
+    }
+
+    .info-inicial p {
+        text-align: center;
+        font-size: 14px;
+        position: relative;
+        left: -18px;
+        top: 1px;
+    }
+
+    .informacao {
+        position: relative;
+        top: 500px;
+        width: 500px;
+        height: 500px;
+    }
+
+    #info-cao {
+        width: 350px;
+        position: relative;
+        left: -25px;
+        top: -130px;
+    }
+
+    #info-gato {
+        width: 350px;
+        position: relative;
+        left: 25px;
+        top: -55px;
+    }
+
+    #vmp {
+        position: relative;
+        top: 35px;
+    }
+
+    .como {
+        font-size: 40px !important;
+        line-height: 50px;
+        position: relative;
+        bottom: 25px;
+        left: -20px;
+        text-align: center;
+    }
+
+    .p-text {
+        text-align: center;
+        position: relative;
+        left: -20px;
+    }
+
+    .btn-ler {
+        top: 10px;
+    }
+
+    .cat-card {
+        display: none;
+    }
+
+    .btn-inicio {
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 12px;
+        left: -10px;
+    }
+
+    #info-gato h3 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #info-cao h3 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #info-gato p {
+        font-size: 14px;
+    }
+
+    #info-cao p {
+        font-size: 14px;
+    }
+
+    .informacao button {
+        font-size: 17px;
+        padding: 2px;
+        color: #2FA8BB;
+        height: 30px;
+    }
+
+    .titulo-vacina h2 {
+        font-size: 30px;
+    }
+
+    .secao-valores {
+        position: relative;
+        bottom: 50px;
+    }
+
+    .slide-container {
+        position: relative;
+        top: 30px;
+    }
+
+    .btn-vacinas {
+        width: 150px;
+        height: 40px;
+    }
+
+    .fundo-atendimento {
+        height: 650px;
+        background-color: #52BACB;
+        background-image: none;
+        top: 10px;
+    }
+
+    .conteudo-atend {
+        width: auto;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .conteudo-atend h2 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .conteudo-atend p {
+        font-size: 15.5px;
+    }
+
+    .btn-ler-atend {
+        font-size: 18px;
+        position: relative;
+        top: 35px;
+        left: -25px;
+    }
+    .recado{
+        position:relative;
+        top: 30px;
+        text-align: center;
+        width: 350px;
+        left: 30px;
+        height: 100px;
+    }
+}
+@media (min-width:411px) and (max-width: 455px) {
+    .tela-inicial {
+        background-image: url('imgs/index-responsivo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 730px;
+    }
+    #icon {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    .titulo-site {
+        position: relative;
+        left: 10px;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .info-inicial {
+        width: auto;
+        text-align: center;
+        position: absolute;
+        margin-left: 25px;
+    }
+
+    .subtitulo-site {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+        left: 15px;
+    }
+
+    .info-inicial p {
+        text-align: center;
+        font-size: 14px;
+        position: relative;
+        left: -18px;
+        top: 1px;
+    }
+
+    .informacao {
+        position: relative;
+        top: 500px;
+        width: 500px;
+        height: 500px;
+    }
+    #info-cao {
+        width: 380px;
+        position: relative;
+        left: -40px;
+        top: -130px;
+    }
+
+    #info-gato {
+        width: 380px;
+        position: relative;
+        left: 40px;
+        top: -55px;
+    }
+
+    #vmp {
+        position: relative;
+        top: 35px;
+    }
+
+    .como {
+        font-size: 40px !important;
+        line-height: 50px;
+        position: relative;
+        bottom: 25px;
+        left: -20px;
+        text-align: center;
+    }
+
+    .p-text {
+        text-align: center;
+        position: relative;
+        left: -20px;
+    }
+
+    .btn-ler {
+        top: 10px;
+    }
+
+    .cat-card {
+        display: none;
+    }
+
+    .btn-inicio {
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        top: 12px;
+        left: 20px;
+    }
+
+    #info-gato h3 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #info-cao h3 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    #info-gato p {
+        font-size: 14px;
+    }
+
+    #info-cao p {
+        font-size: 14px;
+    }
+
+    .informacao button {
+        font-size: 17px;
+        padding: 2px;
+        color: #2FA8BB;
+        height: 30px;
+    }
+
+    .titulo-vacina h2 {
+        font-size: 30px;
+    }
+
+    .secao-valores {
+        position: relative;
+        bottom: 50px;
+    }
+
+    .slide-container {
+        position: relative;
+        top: 30px;
+    }
+
+    .btn-vacinas {
+        width: 150px;
+        height: 40px;
+    }
+
+    .fundo-atendimento {
+        height: 650px;
+        background-color: #52BACB;
+        background-image: none;
+        top: 10px;
+    }
+
+    .conteudo-atend {
+        width: auto;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .conteudo-atend h2 {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .conteudo-atend p {
+        font-size: 15.5px;
+    }
+
+    .btn-ler-atend {
+        font-size: 18px;
+        position: relative;
+        top: 35px;
+        left: -25px;
+    }
+    .recado{
+        position:relative;
+        top: 30px;
+        text-align: center;
+        width: 350px;
+        left: 50px;
+        height: 100px;
+    }
+    #sub{
+        position: relative;
+        left: 15px;
+        width: 350px;
     }
 }
