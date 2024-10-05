@@ -35,7 +35,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
     <link rel="stylesheet" href="css/css/inicio-tela.css">
     <link rel="stylesheet" href="css/css/inicial.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
-    <link rel="stylesheet" href="css/css/responsividade/telainicio.css">
+    <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -65,7 +65,8 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
                     NO CONFORTO DA SUA CASA.</h2>
-                <p id="sub">Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
+                <p id="sub">Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do
+                    filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p><a href="/VacinePet/usuario/agendamento.php"><button
@@ -255,18 +256,20 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 
     <section class="recado">
         <h1 id="recado">Atenção: O carrossel de vacinas do site oferece apenas uma estimativa de valores. As vacinas
-        devem ser indicadas pela médica veterinária.</h1>
+            devem ser indicadas pela médica veterinária.</h1>
     </section>
 
     <section class="atendimento-domiciliar">
         <div class="fundo-atendimento">
             <div class="conteudo-atend">
-                <h2 class="como">Como funciona a vacinação em domicílio?</h2>
+                <h2 class="como">Como funciona nosso agendamento?</h2>
                 <p class="p-text" style="color: white;">
-                    Atualmente, assegurar a saúde e o bem-estar dos animais de estimação é uma prioridade para muitos
-                    proprietários. A vacinação é uma medida eficaz para protegê-los de doenças. Contudo, o deslocamento
-                    até uma clínica veterinária pode ser complicado. Nesse contexto, o serviço de vacinação a domicílio
-                    se apresenta como uma alternativa prática e conveniente.
+                    Atualmente, garantir a saúde e o bem-estar dos animais de estimação é uma prioridade para muitos
+                    proprietários. A vacinação é uma medida eficaz para protegê-los de doenças. No entanto, o
+                    deslocamento até uma clínica veterinária pode ser complicado. Para facilitar esse processo,
+                    oferecemos um sistema de agendamento que permite que você organize a vacinação do seu pet com
+                    comodidade. Nesse contexto, o serviço de vacinação a domicílio se apresenta como uma alternativa
+                    prática e conveniente.
                 </p><a href="/VacinePet/conteudo/como-funciona.php"><button class="btn-ler-atend">Saiba
                         mais</button></a>
             </div>
