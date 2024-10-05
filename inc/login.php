@@ -1,14 +1,6 @@
-<?php 
- // print_r($_REQUEST);
- if(isset($_POST['submit'])){
-
- }else{
-    header('Location: login.php');
- }
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -42,8 +34,7 @@
                     </div>
 
                     <div class="form-group mt-4">
-                        <input type="text" maxlength="255" placeholder="Email" class="form-control"
-                            name="tutor_email">
+                        <input type="text" maxlength="255" placeholder="Email" class="form-control" name="tutor_email">
                     </div>
 
                     <div class="form-group mt-4">
@@ -57,7 +48,7 @@
 
                     <div class="final">
                         <div id="actions" class="mt-4">
-                            <input type="submit" class="btn btn-primary btn-custom"/>
+                            <input type="submit" class="btn btn-primary btn-custom" />
                         </div>
                         <div class="cad-text">
                             <h7>Não tem uma conta?</h7><a href="../usuario/cadastro.php"> Cadastre-se</a>
