@@ -109,7 +109,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
             <div class="slide-container swiper">
                 <div class="slide-content">
                     <div class=" card-wrapper swiper-wrapper">
-                        <div class="card swiper-slide">
+                        <div class="card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -127,7 +127,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                                         Mais</button></a>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -144,7 +144,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -161,14 +161,14 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
                             </div>
-                            <div class="card-content">
+                            <div class="card-content" id="cardizinhos">
                                 <p class="valor">R$125,90</p>
-                                <p id="tipo">Vacina Canina e Felina</p>
+                                <p class="cf" id="tipo">Vacina Canina e Felina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Raiva
                                 </h3>
@@ -178,7 +178,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -191,11 +191,11 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                                 </h3>
                                 <p class="description">A vacina V3 para gatos, ou tríplice, protege contra
                                     Rinotraqueíte, Calicivirose e Panleucopenia felina, prevenindo essas doenças graves
-                                    e mantendo a saúde do seu felino. </p><button type="submit" class="btn-vacinas">Ver
+                                    e mantendo a saúde do seu felino. </p><button style="top: 1px;" type="submit" class="btn-vacinas">Ver
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -209,10 +209,10 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                                 <p class="description">A vacina V4, ou Felocell CVR®-C, é uma vacina viva atenuada para
                                     gatos, que protege contra panleucopenia, rinotraqueíte, calicivirose e clamidiose
                                     felina.
-                                </p><button type="submit" class="btn-vacinas">Ver Mais</button>
+                                </p><button style="top: 4px;" type="submit" class="btn-vacinas">Ver Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -229,7 +229,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                                     class="btn-vacinas">Ver Mais</button>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div class="card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
