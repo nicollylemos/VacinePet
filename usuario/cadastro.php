@@ -349,7 +349,7 @@ function emailValidate() {
 function mainPasswordValidate() {
     const senha = document.getElementById('senha');
     const senhaSpan = document.querySelector(
-    '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+        '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
 
     if (senha.value.length < 8) {
         senha.style.border = '2px solid red';

@@ -1,24 +1,5 @@
-<!--
- /**
- * @file index.php
- *
- * @brief Página inicial do site VacinePet que fornece informações sobre o serviço de vacinação para animais domésticos, como cães e gatos.
- *        Inclui links para agendamento de vacinas, informações sobre doenças comuns e um carrossel de vacinas mais procuradas.
- *
- * @author Nicolly Lemos da Silva
- *
- * @version 1.0
- * 
- * @date 2024-09-20
- *
- * @copyright Todos os direitos reservados
- *
- * @details
- * Esta página contém seções para introduzir o serviço de vacinação de pets no domicílio, um carrossel para vacinas populares
- * com informações e valores estimados, e links para páginas com informações mais detalhadas sobre doenças que afetam cães e gatos.
- */
--->
 <?php
+
 include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 ?>
 <!DOCTYPE html>
@@ -45,11 +26,11 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 </head>
 
 <style>
-    html,
-    body {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
+html,
+body {
+    overflow-x: hidden;
+    /* Esconde a rolagem horizontal */
+}
 </style>
 
 <body>
@@ -65,7 +46,8 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
                     NO CONFORTO DA SUA CASA.</h2>
-                <p id="sub">Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do filhote,
+                <p id="sub">Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do
+                    filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p><a href="/VacinePet/usuario/agendamento.php"><button
@@ -255,7 +237,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 
     <section class="recado">
         <h1 id="recado">Atenção: O carrossel de vacinas do site oferece apenas uma estimativa de valores. As vacinas
-        devem ser indicadas pela médica veterinária.</h1>
+            devem ser indicadas pela médica veterinária.</h1>
     </section>
 
     <section class="atendimento-domiciliar">

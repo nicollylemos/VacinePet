@@ -10,13 +10,13 @@
 
     $conexao = new mysqli($dbHost,$dbUserName,$dbPassword,$dbName);
   
-  /* if($conexao->connect_errno)
+ /* if($conexao->connect_errno)
     {
         echo "Erro, deu merda";
     }
     else
     { 
         echo "Conexão efetuada com sucesso.";
-    }
-*/
+    }*/
+
 ?>

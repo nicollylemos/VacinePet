@@ -27,19 +27,20 @@
 
         <div class="quad">
             <div class="form">
-                <form action="login.php" method="post">
+
+
+                <form method="POST" action="login.php">
 
                     <div class="title">
                         <h1 class="title-login"> LOGIN </h1>
                     </div>
 
                     <div class="form-group mt-4">
-                        <input type="text" maxlength="255" placeholder="Email" class="form-control" name="tutor_email">
+                        <input type="text" maxlength="255" placeholder="Email" class="form-control" name="email">
                     </div>
 
                     <div class="form-group mt-4">
-                        <input type="password" maxlength="11" placeholder="Senha" class="form-control"
-                            name="tutor_senha">
+                        <input type="password" maxlength="11" placeholder="Senha" class="form-control" name="senha">
                     </div>
 
                     <div class="esquecer">
@@ -48,7 +49,7 @@
 
                     <div class="final">
                         <div id="actions" class="mt-4">
-                            <input type="submit" class="btn btn-primary btn-custom" />
+                            <input type="submit" name="SendLogin" class="btn btn-primary btn-custom" />
                         </div>
                         <div class="cad-text">
                             <h7>Não tem uma conta?</h7><a href="../usuario/cadastro.php"> Cadastre-se</a>
