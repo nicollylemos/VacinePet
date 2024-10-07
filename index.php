@@ -16,7 +16,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
     <link rel="stylesheet" href="css/css/inicio-tela.css">
     <link rel="stylesheet" href="css/css/inicial.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
-    <link rel="stylesheet" href="css/css/responsividade/telainicio.css">
+    <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -90,7 +90,7 @@ body {
             <div class="slide-container swiper">
                 <div class="slide-content">
                     <div class=" card-wrapper swiper-wrapper">
-                        <div class="card swiper-slide">
+                        <div class="card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -108,7 +108,7 @@ body {
                                         Mais</button></a>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -125,7 +125,7 @@ body {
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -142,14 +142,14 @@ body {
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
                             </div>
-                            <div class="card-content">
+                            <div class="card-content" id="cardizinhos">
                                 <p class="valor">R$125,90</p>
-                                <p id="tipo">Vacina Canina e Felina</p>
+                                <p class="cf" id="tipo">Vacina Canina e Felina</p>
                                 <h3 class="nome-vacina">
                                     <!-- futuro php-->Raiva
                                 </h3>
@@ -159,7 +159,7 @@ body {
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -172,11 +172,11 @@ body {
                                 </h3>
                                 <p class="description">A vacina V3 para gatos, ou tríplice, protege contra
                                     Rinotraqueíte, Calicivirose e Panleucopenia felina, prevenindo essas doenças graves
-                                    e mantendo a saúde do seu felino. </p><button type="submit" class="btn-vacinas">Ver
+                                    e mantendo a saúde do seu felino. </p><button style="top: 1px;" type="submit" class="btn-vacinas">Ver
                                     Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -190,10 +190,10 @@ body {
                                 <p class="description">A vacina V4, ou Felocell CVR®-C, é uma vacina viva atenuada para
                                     gatos, que protege contra panleucopenia, rinotraqueíte, calicivirose e clamidiose
                                     felina.
-                                </p><button type="submit" class="btn-vacinas">Ver Mais</button>
+                                </p><button style="top: 4px;" type="submit" class="btn-vacinas">Ver Mais</button>
                             </div>
                         </div>
-                        <div class=" card swiper-slide">
+                        <div class=" card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -210,7 +210,7 @@ body {
                                     class="btn-vacinas">Ver Mais</button>
                             </div>
                         </div>
-                        <div class="card swiper-slide">
+                        <div class="card swiper-slide" id="cardizinhos">
                             <div class="image-content"><span class="overlay"></span>
                                 <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
                                 </div>
@@ -243,12 +243,14 @@ body {
     <section class="atendimento-domiciliar">
         <div class="fundo-atendimento">
             <div class="conteudo-atend">
-                <h2 class="como">Como funciona a vacinação em domicílio?</h2>
+                <h2 class="como">Como funciona nosso agendamento?</h2>
                 <p class="p-text" style="color: white;">
-                    Atualmente, assegurar a saúde e o bem-estar dos animais de estimação é uma prioridade para muitos
-                    proprietários. A vacinação é uma medida eficaz para protegê-los de doenças. Contudo, o deslocamento
-                    até uma clínica veterinária pode ser complicado. Nesse contexto, o serviço de vacinação a domicílio
-                    se apresenta como uma alternativa prática e conveniente.
+                    Atualmente, garantir a saúde e o bem-estar dos animais de estimação é uma prioridade para muitos
+                    proprietários. A vacinação é uma medida eficaz para protegê-los de doenças. No entanto, o
+                    deslocamento até uma clínica veterinária pode ser complicado. Para facilitar esse processo,
+                    oferecemos um sistema de agendamento que permite que você organize a vacinação do seu pet com
+                    comodidade. Nesse contexto, o serviço de vacinação a domicílio se apresenta como uma alternativa
+                    prática e conveniente.
                 </p><a href="/VacinePet/conteudo/como-funciona.php"><button class="btn-ler-atend">Saiba
                         mais</button></a>
             </div>

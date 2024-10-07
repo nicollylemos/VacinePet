@@ -21,7 +21,7 @@
 }
 
 .tela-inicial {
-    background-image: url(img/background-index.svg);
+    background-image: url(img/background-inicio.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -162,11 +162,6 @@ body {
     color: #55abb9;
 }
 
-.img-pet {
-    position: relative;
-    float: right;
-    top: 30px;
-}
 
 .fa-solid {
     color: #fa5909;
@@ -193,7 +188,11 @@ body {
     display: flex;
     float: left;
     right: -5%;
-    margin-left: 100px;
+    margin-left: 100px;; 
+    background-image: url('img/dog-brown.png'); 
+    background-position: calc(0% + 300px) calc(50% + 0px);
+    background-size: 200px; 
+    background-repeat: no-repeat; 
 }
 #info-gato {
     background-color: #52BACB;
@@ -207,6 +206,10 @@ body {
     float: right;
     right: 5%;
     margin-right: 100px;
+    background-image: url('img/ruivinho.png'); 
+    background-position: calc(0% + 310px) calc(50% + -20px);
+    background-size: 205px; 
+    background-repeat: no-repeat; 
 }
 #info-gato h3 {
     margin-top: 6px;

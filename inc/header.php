@@ -31,8 +31,6 @@
             /* Valor alto para garantir que o navbar fique sobre outros elementos */
         }
 
-       
-
         .topnav .logo:hover {
             color: #FA5909;
         }
@@ -75,6 +73,8 @@
         }
 
         .topnav .buttons {
+            position: relative;
+            top: -100px;
             display: flex;
             gap: 1px;
         }
@@ -213,9 +213,9 @@
             <a href="/VacinePet/infos-page/sobre-vacinepet.php">Sobre</a>
         </div>
         <div class="buttons">
-            <a href="/VacinePet/inc/login.php"><button style="width: 100px; border-radius: 15px;"
+            <a href="/VacinePet/inc/login.php"><button style=" width: 150px; border-radius: 20px;"
                     class="login">Entrar</button></a>
-            <a href="/VacinePet/usuario/cadastro.php"><button style="width: 100px; border-radius: 15px;"
+            <a href="/VacinePet/usuario/cadastro.php"><button style=" width: 150px; border-radius: 20px;"
                     class="cad">Cadastrar</button></a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
