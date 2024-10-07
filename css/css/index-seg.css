@@ -94,12 +94,13 @@
 
 .description {
     font-size: 14px;
-    color: #898383;
+    color: #3e3e3e;
     text-align: center;
     position: relative;
     bottom: 47px;
     font-family: poppins;
     font-weight: 700;
+    height:150px;
 }
 
 .append-buttons {
@@ -216,5 +217,16 @@
     height: 430px;
 }
 
-
-
+.modal {
+    width: 380px;
+    height: 490px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:  none;
+    padding-left: 20px;
+    padding-right: 20px;
+}

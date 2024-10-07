@@ -13,7 +13,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/inicio-tela.css">
+    <link rel="stylesheet" href="css/css/index-seg.css">
     <link rel="stylesheet" href="css/css/inicial.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
@@ -50,8 +50,12 @@ body {
                     filhote,
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
-                    estimação. </p><a href="/VacinePet/usuario/agendamento.php"><button
-                        class="btn-inicio">Agendar</button></a>
+                    estimação. </p> <?php if ($admin): ?><a href="/VacinePet/usuario/agendamento.php">
+                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
+                <?php if ($logado): ?><a href="/VacinePet/usuario/agendamento.php">
+                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
+                <?php  if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)): ?>
+                <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button><?php endif; ?>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -172,7 +176,8 @@ body {
                                 </h3>
                                 <p class="description">A vacina V3 para gatos, ou tríplice, protege contra
                                     Rinotraqueíte, Calicivirose e Panleucopenia felina, prevenindo essas doenças graves
-                                    e mantendo a saúde do seu felino. </p><button style="top: 1px;" type="submit" class="btn-vacinas">Ver
+                                    e mantendo a saúde do seu felino. </p><button style="top: 1px;" type="submit"
+                                    class="btn-vacinas">Ver
                                     Mais</button>
                             </div>
                         </div>
@@ -264,7 +269,20 @@ body {
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-
+    <dialog class="modal" id="modalLogin">
+        <div class="modalLogin">
+            <h1>Alterar Situação</h1>
+            <p>Este agendamento está atualmente pendente.</p>
+            <div class="alt-situ">
+                <select>
+                    <option value="1">Finalizado</option>
+                    <option value="2">Cancelado</option>
+                </select>
+            </div>
+            <button class="save">Salvar</button>
+            <button class="close" onclick=" modalLogin.close()">Fechar</button>
+        </div>
+    </dialog>
 </body>
 <?php include("./inc/footer.php") ?>
 <!--Swiper JavaScript-->

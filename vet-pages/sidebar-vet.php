@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -23,7 +22,8 @@
                 <div class="menu">
                     <ul class="menu-links">
                         <li class="nav-link"><a href="index.php"><i class="fa-solid fa-bars-progress icon"></i><span
-                                    class="text nav-text">Agendamentos Ativos</span></a></li>
+                                    class="text nav-text">Agendamentos
+                                    Ativos</span></a></li>
                         <li class="nav-link"><a href="htrc-agendamentos.php"><i
                                     class="fa-solid fa-clock-rotate-left icon"></i><span class="text nav-text">Histórico
                                     Agendamentos</span></a></li>
@@ -35,7 +35,7 @@
                                     class="text nav-text">Alteração de Valores</span></a></li>
                     </ul>
                     <li class="nav-link"><a href="adocao.php"><i class="fa-solid fa-paw icon"></i><span
-                                    class="text nav-text">Adoção</span></a></li>
+                                class="text nav-text">Adoção</span></a></li>
 
                 </div>
             </div>

@@ -27,10 +27,7 @@
 
         <div class="quad">
             <div class="form">
-
-
-                <form method="POST" action="login.php">
-
+                <form method="POST" action="testLogin.php">
                     <div class="title">
                         <h1 class="title-login"> LOGIN </h1>
                     </div>
@@ -49,7 +46,7 @@
 
                     <div class="final">
                         <div id="actions" class="mt-4">
-                            <input type="submit" name="SendLogin" class="btn btn-primary btn-custom" />
+                            <input type="submit" name="submit" class="btn btn-primary btn-custom" />
                         </div>
                         <div class="cad-text">
                             <h7>Não tem uma conta?</h7><a href="../usuario/cadastro.php"> Cadastre-se</a>

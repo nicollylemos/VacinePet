@@ -1,21 +1,27 @@
-<!--
- /**
- * @file valores-alt.php
- * @brief Página de alteração dos valores das vacinas disponíveis no carrossel do index.php principal 
- (disponível apenas para o profissional).
- *
- * Este arquivo contém todas as vacinas e todos os seus valores que podem ser alterados pela profissional.
- * 
- * O arquivo mantém a forma organizada para garantir a praticidade e organização profissional.
- *
- * @date 2024-09-20
- * @author Nicolly Lemos da Silva
- * @version 1.0
- */
--->
 <?php 
  include("../inc/header.php");
  include("sidebar-vet.php");
+session_start();
+include_once('../config.php');
+
+// Verifica se o email e a senha estão definidos na sessão
+if (!isset($_SESSION['email']) || !isset($_SESSION['senha'])) {
+    // Se não houver sessão, redireciona para a página de login
+    header('Location: login.php');
+    exit;
+}
+
+// Verifica se o email na sessão é diferente do permitido
+if ($_SESSION['email'] !== 'drmonica@gmail.com') {
+    // Se o email não for 'drmonica@gmail.com', destrói a sessão e redireciona
+    unset($_SESSION['email']);
+    unset($_SESSION['senha']);
+    header('Location: login.php');
+    exit;
+}
+
+// Caso contrário, o usuário está autenticado e pode acessar a página
+$logado = $_SESSION['email'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -23,6 +29,7 @@
     * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
     * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
 -->
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
