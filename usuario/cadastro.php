@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $cpf = $_POST['tutor_cpf'];
     $telefone = $_POST['tutor_telefone'];
     $email = $_POST['tutor_email'];
-    $senha = $_POST['tutor_senha'];
+    $senha = password_hash ($_POST['tutor_senha'],PASSWORD_DEFAULT);
 
     $result = mysqli_query($conexao, "INSERT INTO tutor( nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
 
