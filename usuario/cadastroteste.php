@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $cpf = $_POST['tutor_cpf'];
     $telefone = $_POST['tutor_telefone'];
     $email = $_POST['tutor_email'];
-    $senha = password_hash ($_POST['tutor_senha'],PASSWORD_DEFAULT);
+    $senha = $_POST['tutor_senha'];
 
     $result = mysqli_query($conexao, "INSERT INTO tutor( nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
 
@@ -77,9 +77,9 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet - Cadastro</title>
     <style>
-    .hidden {
-        display: none;
-    }
+        .hidden {
+            display: none;
+        }
     </style>
     <title>Cadastro de Tutor</title>
 </head>
@@ -123,7 +123,7 @@ if (isset($_POST['submit'])) {
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control frm-ctrl required" oninput="nameValidate()"
-                                name="tutor_nome" id="nome" placeholder="Nome Completo" minlength="3">
+                                name="tutor_nome" id="nome" placeholder="Nome Completo">
                             <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <div class="form-group col-md-6">
@@ -133,12 +133,12 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="tutor_cpf" id="cpf" placeholder="CPF"
-                                maxlength="14" autocomplete="off" required>
+                            <input type="text" class="form-control frm-ctrl required" name="tutor_cpf" id="cpf"
+                                placeholder="CPF" maxlength="14" autocomplete="off">
 
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="tel" class="form-control frm-ctrl" name="tutor_telefone" id="telefone"
+                            <input type="tel" class="form-control frm-ctrl required" name="tutor_telefone" id="telefone"
                                 placeholder="(DDD) + Telefone" onkeyup="handlePhone(event)" maxlength="15">
                             <span class="span-required">Digite um número de telefone</span>
                         </div>
@@ -151,7 +151,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="form-group col-md-6">
                             <input type="password" class="form-control frm-ctrl required"
-                                oninput="mainPasswordValidate()" name="tutor_senha" id="senha" placeholder="Senha"  minlength="8">
+                                oninput="mainPasswordValidate()" name="tutor_senha" id="senha" placeholder="Senha">
                             <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                         </div>
 
@@ -168,16 +168,17 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="end_cep" id="cep" placeholder="CEP">
+                            <input type="text" class="form-control frm-ctrl required" name="end_cep" id="cep"
+                                placeholder="CEP">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="end_rua" id="rua" placeholder="Rua"
-                                required>
+                            <input type="text" class="form-control frm-ctrl required" name="end_rua" id="rua"
+                                placeholder="Rua" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="number" class="form-control frm-ctrl" name="end_numero" id="numero"
+                            <input type="number" class="form-control frm-ctrl required" name="end_numero" id="numero"
                                 placeholder="Número" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -187,7 +188,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="end_bairro" id="bairro"
+                            <input type="text" class="form-control frm-ctrl required" name="end_bairro" id="bairro"
                                 placeholder="Bairro" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -293,9 +294,10 @@ if (isset($_POST['submit'])) {
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(3)">Anterior</button>
-                        <input type="submit" name="submit" class="btn btn-secondary btn-custom btn-perso"
-                            value="Cadastrar">
+                        <button type="submit" class="btn btn-secondary btn-custom btn-perso"
+                            id="cadastrarButton">Cadastrar</button>
                     </div>
+
                 </div>
 
 
@@ -303,86 +305,85 @@ if (isset($_POST['submit'])) {
 </body>
 
 <script>
-/Validação dos campos/
+    /Validação dos campos/
 
-const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
-const spans = document.querySelectorAll('.span-required');
-const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-
+    const form = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const spans = document.querySelectorAll('.span-required');
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 
 
 
-/Funções para aparecer e sumir o erro/
 
-function setError(index) {
-    campos[index].style.border = '2px solid red';
-    spans[index].style.display = 'block';
-}
 
-function removeError(index) {
-    campos[index].style.border = '';
-    spans[index].style.display = 'none';
-}
-/Validação do nome/
+    /Funções para aparecer e sumir o erro/
 
-function nameValidate() {
-    if (campos[0].value.length < 3) {
-
-        setError(0);
-    } else {
-        removeError(0)
-
+    function setError(index) {
+        campos[index].style.border = '2px solid red';
+        spans[index].style.display = 'block';
     }
-}
 
-/Validação do email/
-
-function emailValidate() {
-    if (!emailRegex.test(campos[2].value)) {
-        setError(2);
-    } else {
-        removeError(2);
+    function removeError(index) {
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
     }
-}
+    /Validação do nome/
 
-/Validação de senha/
+    function nameValidate() {
+        if (campos[0].value.length < 3) {
 
-function mainPasswordValidate() {
-    const senha = document.getElementById('senha');
-    const senhaSpan = document.querySelector(
-        '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+            setError(0);
+        } else {
+            removeError(0)
 
-    if (senha.value.length < 8) {
-        senha.style.border = '2px solid red';
-        senhaSpan.style.display = 'block';
-    } else {
-        senha.style.border = '';
-        senhaSpan.style.display = 'none';
+        }
     }
-}
+
+    /Validação do email/
+
+    function emailValidate() {
+        if (!emailRegex.test(campos[2].value)) {
+            setError(2);
+        } else {
+            removeError(2);
+        }
+    }
+
+    /Validação de senha/
+
+    function mainPasswordValidate() {
+        const senha = document.getElementById('senha');
+        const senhaSpan = document.querySelector(
+            '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+
+        if (senha.value.length < 8) {
+            senha.style.border = '2px solid red';
+            senhaSpan.style.display = 'block';
+        } else {
+            senha.style.border = '';
+            senhaSpan.style.display = 'none';
+        }
+    }
 </script>
-
 
 
 <script src="../js/cadastrar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-</script>
+    </script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 <script>
-$('#cep').mask('00000-000');
-$('#telefone').mask('(00) 00000-0000');
-$('#cpf').mask('000.000.000-00', {
-    reverse: true
-});
-$('#money').mask("#.##0,00", {
-    reverse: true
-});
+    $('#cep').mask('00000-000');
+    $('#telefone').mask('(00) 00000-0000');
+    $('#cpf').mask('000.000.000-00', {
+        reverse: true
+    });
+    $('#money').mask("#.##0,00", {
+        reverse: true
+    });
 </script>
 </script>
 

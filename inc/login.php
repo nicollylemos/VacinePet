@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/entrar.css">
     <link rel="stylesheet" href="../css/css/responsividade/telaentra.css">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Login</title>
 </head>
@@ -31,6 +29,21 @@
                     <div class="title">
                         <h1 class="title-login"> LOGIN </h1>
                     </div>
+
+                    <!-- Exibir mensagens de erro -->
+                    <?php if (isset($_GET['error'])): ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php
+                            if ($_GET['error'] == 'email_invalido') {
+                                echo "Email inválido!";
+                            } elseif ($_GET['error'] == 'senha_incorreta') {
+                                echo "Senha incorreta!";
+                            } elseif ($_GET['error'] == 'campos_vazios') {
+                                echo "Por favor, preencha todos os campos!";
+                            }
+                            ?>
+                        </div>
+                    <?php endif; ?>
 
                     <div class="form-group mt-4">
                         <input type="text" maxlength="255" placeholder="Email" class="form-control" name="email">
