@@ -162,12 +162,12 @@ body {
     color: #55abb9;
 }
 
-
-.fa-solid {
+/*! deixar responsivo*/
+.info-inicial .fa-paw {
     color: #fa5909;
     --fa-rotate-angle: 53deg;
-    width: 50px;
-    height: 2px;
+    width: 60px;
+    height: 60px;
     font-size: 55px;
 }
 
@@ -262,4 +262,77 @@ body {
 }
 .como{
     line-height: 68px;
+}
+
+/*? CSS: Modal Login */
+
+.modalLogin h1{
+    font-family: baloo;
+    font-size: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #FD811C;
+}
+
+.modalLogin p{
+    font-family: baloo;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.modalLogin .close{
+    background: none;
+    border: none;
+    color: #52BACB;
+    cursor: pointer;
+ 
+}
+.modalLogin .fa-circle-xmark{
+    font-size: 25px;
+    margin-bottom: 35px;
+ 
+}
+.modalLogin .fa-circle-exclamation{
+    font-size: 26px;
+ 
+}
+.modalLogin .entrar {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #52BACB;
+    border: 3.5px solid #52BACB;
+    width: 270px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #fff;
+    font-family: baloo;
+    padding: 1%;
+    margin: 0 auto; /* Centraliza o botão */
+    display: block; /* Permite que a margem automática funcione */
+    text-decoration: none;
+}
+
+.modalLogin .logar{
+    text-decoration: none;
+}
+.modalLogin .cadastrar{
+ 
+    color: #FD811C;
+}
+
+.modalLog {
+    width: 380px;
+    height: 390px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:  none;
+    padding-left: 20px;
+    padding-right: 20px;
 }

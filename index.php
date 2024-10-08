@@ -14,7 +14,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="stylesheet" href="css/css/index-seg.css">
-    <link rel="stylesheet" href="css/css/inicial.css">
+    <link rel="stylesheet" href="css/css/iniciar.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
@@ -41,7 +41,7 @@ body {
     <section class="home-inicial">
         <div class="tela-inicial">
             <div class="info-inicial">
-                <h1 class="titulo-site">VacinePet
+                <h1 class="titulo-site">VacinePet<i class="fa-solid fa-paw fa-rotate-by"> </i>
                 </h1>
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
@@ -269,18 +269,18 @@ body {
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-    <dialog class="modal" id="modalLogin">
+    <dialog class="modalLog" id="modalLogin">
         <div class="modalLogin">
-            <h1>Alterar Situação</h1>
-            <p>Este agendamento está atualmente pendente.</p>
-            <div class="alt-situ">
-                <select>
-                    <option value="1">Finalizado</option>
-                    <option value="2">Cancelado</option>
-                </select>
-            </div>
-            <button class="save">Salvar</button>
-            <button class="close" onclick=" modalLogin.close()">Fechar</button>
+            <button class="close" onclick=" modalLogin.close()">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <h1> Aviso:<br> Login Necessário</h1>
+            <p>Para realizar o agendamento, é necessário estar logado em sua conta. Por favor, faça login para
+                continuar.</p>
+            <a href="/VacinePet/inc/login.php" class="logar"><button class="entrar"
+                    style="border-radius:10px;">Entrar</button></a>
+            <p>Não tem uma conta? <a href="/VacinePet/usuario/cadastro.php" class="cadastrar">Se cadastre aqui!</a></p>
+
         </div>
     </dialog>
 </body>

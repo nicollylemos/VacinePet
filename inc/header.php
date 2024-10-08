@@ -35,6 +35,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
         src: url("../font/league/LeagueSpartan-Bold.ttf");
     }
 
+    @font-face {
+        font-family: 'poppins';
+        src: url("../font/poppins/Poppins-Regular.ttf");
+    }
 
     .topnav .logo:hover {
         color: #FA5909;
@@ -70,9 +74,9 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 20px;
-        font-weight: 500;
-        font-family: league;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: poppins;
     }
 
     .topnav a:hover {
@@ -84,7 +88,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
         gap: 1px;
     }
 
-    .topnav .login:hover {
+    .topnav .entrar:hover {
         background-color: #7bcdd9;
         border-color: #7bcdd9;
     }
@@ -94,34 +98,35 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
         color: #7bcdd9;
     }
 
-    .topnav .cad {
+    .cad {
         cursor: pointer;
         font-size: 18px;
-        background-color: transparent;
         border-radius: 10px;
+        background-color: transparent;
+        border-radius: 5px;
         border: 3.5px solid #52BACB;
         width: 150px;
-        font-weight: 700;
         letter-spacing: 0.5px;
         text-decoration: none;
         color: #52BACB;
-        font-family: league;
-        padding: 3%;
+        font-family: baloo;
+        padding: 1%;
     }
 
-    .topnav .login {
+    .login {
         cursor: pointer;
         font-size: 18px;
-        background-color: #52BACB;
         border-radius: 10px;
+        background-color: #52BACB;
+        border-radius: 2px;
         border: 3.5px solid #52BACB;
         width: 150px;
-        font-weight: 700;
+
         letter-spacing: 0.5px;
         text-decoration: none;
         color: #fff;
-        font-family: league;
-        padding: 3%;
+        font-family: baloo;
+        padding: 1%;
     }
 
     .topnav .icon {
@@ -231,6 +236,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
             <a href="/VacinePet/cliente-tela/index.php"><i class="fa-solid fa-circle-user"
                     style="color:  #52BACB;font-size: 25px;"></i></a>
             <?php endif; ?>
+            <?php  if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)): ?>
+            <a href="/VacinePet/inc/login.php"><button class="login" style="border-radius:10px;">Entrar</button></a>
+            <a href="/VacinePet/usuario/cadastro.php"><button class="cad"
+                    style="border-radius:10px;">Cadastrar</button></a>
+            <?php endif; ?>
+
         </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i> <!-- Aqui está o ícone de hambúrguer -->
