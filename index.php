@@ -176,8 +176,7 @@ body {
                                 </h3>
                                 <p class="description">A vacina V3 para gatos, ou tríplice, protege contra
                                     Rinotraqueíte, Calicivirose e Panleucopenia felina, prevenindo essas doenças graves
-                                    e mantendo a saúde do seu felino. </p><button style="top: 1px;" type="submit"
-                                    class="btn-vacinas">Ver
+                                    e mantendo a saúde do seu felino. </p><button type="submit" class="btn-vacinas">Ver
                                     Mais</button>
                             </div>
                         </div>
@@ -194,8 +193,8 @@ body {
                                 </h3>
                                 <p class="description">A vacina V4, ou Felocell CVR®-C, é uma vacina viva atenuada para
                                     gatos, que protege contra panleucopenia, rinotraqueíte, calicivirose e clamidiose
-                                    felina.
-                                </p><button style="top: 4px;" type="submit" class="btn-vacinas">Ver Mais</button>
+                                    felina. </p><button type="submit" class="btn-vacinas">Ver
+                                    Mais</button>
                             </div>
                         </div>
                         <div class=" card swiper-slide" id="cardizinhos">
