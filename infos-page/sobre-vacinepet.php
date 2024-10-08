@@ -13,7 +13,8 @@
     <title>VacinePet</title>
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
-    <link rel="stylesheet" href="../css/css/responsividade/footer-resp.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telasobre-vacinepet.css">
+
 
     
 
@@ -24,11 +25,11 @@
         <div class="content">
             <div class="header"></div>
             <div class="content-about">
-                <h1>Sobre o VacinePet</h1>
-                <h2>A saúde do seu pet em primeiro lugar.</h2>
+                <h1 id="title">Sobre o VacinePet</h1>
+                <h2 id="subtitle">A saúde do seu pet em primeiro lugar.</h2>
                 <div class="content-txt one">
                     <p>A saúde e o bem-estar dos nossos amigos de quatro patas são de extrema importância. Por isso,
-                        apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de estimação
+                        apresentamos o VacinePet, um site dedicado exclusivamente à vacinação de animais de estimação
                         com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a dia, o
                         estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas vezes
                         dificultam a manutenção da saúde dos pets. Pensando nisso, trouxemos uma solução prática e
@@ -37,7 +38,7 @@
             </div>
             <!-- <div class="pet-img">
         </div>-->
-            <h3 class="subtitle">Como surgiu?</h3>
+            <h3 id="sub-sub" class="subtitle">Como surgiu?</h3>
             <div class="content-txt two">
                 <p>O VacinePet surgiu com o propósito de facilitar o cuidado com a saúde dos pets, oferecendo uma
                     plataforma completa para agendamento de serviços essenciais. O site foi idealizado para atender a

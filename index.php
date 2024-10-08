@@ -26,11 +26,11 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 </head>
 
 <style>
-html,
-body {
-    overflow-x: hidden;
-    /* Esconde a rolagem horizontal */
-}
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
 </style>
 
 <body>
@@ -41,7 +41,7 @@ body {
     <section class="home-inicial">
         <div class="tela-inicial">
             <div class="info-inicial">
-                <h1 class="titulo-site">VacinePet<i class="fa-solid fa-paw fa-rotate-by"> </i>
+                <h1 class="titulo-site">VacinePet<i id="icon" class="fa-solid fa-paw fa-rotate-by"> </i>
                 </h1>
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
@@ -51,11 +51,11 @@ body {
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p> <?php if ($admin): ?><a href="/VacinePet/usuario/agendamento.php">
-                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
+                        <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
                 <?php if ($logado): ?><a href="/VacinePet/usuario/agendamento.php">
-                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
-                <?php  if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)): ?>
-                <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button><?php endif; ?>
+                        <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
+                <?php if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)): ?>
+                    <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button><?php endif; ?>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -249,12 +249,9 @@ body {
             <div class="conteudo-atend">
                 <h2 class="como">Como funciona nosso agendamento?</h2>
                 <p class="p-text" style="color: white;">
-                    Atualmente, garantir a saúde e o bem-estar dos animais de estimação é uma prioridade para muitos
-                    proprietários. A vacinação é uma medida eficaz para protegê-los de doenças. No entanto, o
-                    deslocamento até uma clínica veterinária pode ser complicado. Para facilitar esse processo,
-                    oferecemos um sistema de agendamento que permite que você organize a vacinação do seu pet com
-                    comodidade. Nesse contexto, o serviço de vacinação a domicílio se apresenta como uma alternativa
-                    prática e conveniente.
+                    Garantir a saúde dos pets é uma prioridade para muitos proprietários. A vacinação protege contra
+                    doenças, mas ir à clínica pode ser complicado. Para facilitar, oferecemos um sistema de agendamento
+                    que permite organizar a vacinação e castração do seu pet com comodidade, inclusive a domicílio.
                 </p><a href="/VacinePet/conteudo/como-funciona.php"><button class="btn-ler-atend">Saiba
                         mais</button></a>
             </div>

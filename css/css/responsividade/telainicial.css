@@ -7,10 +7,6 @@
         height: 730px;
     }
 
-    #icon {
-        font-size: 20px;
-    }
-
     p {
         font-size: 25px;
     }
@@ -193,9 +189,6 @@
         height: 730px;
     }
 
-    #icon {
-        font-size: 20px;
-    }
 
     p {
         font-size: 25px;
@@ -381,9 +374,7 @@
         background-position: center;
         height: 730px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -570,9 +561,7 @@
         background-position: calc(0% + 0px) calc(50% + -50px);
         height: 800px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -759,9 +748,7 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 800px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -950,9 +937,7 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 800px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -1141,9 +1126,7 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 800px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -1332,9 +1315,7 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 800px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -1523,9 +1504,7 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 800px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -1715,9 +1694,7 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 900px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
@@ -1908,9 +1885,6 @@
         background-size: cover;
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 900px;
-    }
-    #icon {
-        font-size: 20px;
     }
 
     p {
@@ -2104,9 +2078,6 @@
         background-size: cover;
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 1000px;
-    }
-    #icon {
-        font-size: 20px;
     }
 
     p {
@@ -2302,9 +2273,7 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 1100px;
     }
-    #icon {
-        font-size: 20px;
-    }
+
 
     p {
         font-size: 25px;
