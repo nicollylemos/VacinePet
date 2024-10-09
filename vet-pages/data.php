@@ -61,17 +61,16 @@ if (isset($_POST['mes']) && isset($_POST['ano'])) {
         // Pega o nome do dia da semana
         $nomeDiaSemana = diaSemana($numeroDiaSemana);
         
-        // Exibe a linha com a data, o nome do dia da semana e a seleção de horários
+        // Exibe a linha com a data, o nome do dia da semana e a entrada de horários
         echo "<tr>";
         echo "<td>" . date('d/m/Y', $timestamp) . "</td>";
         echo "<td>" . $nomeDiaSemana . "</td>";
         echo "<td>";
         
-        // Seleção de horários (você pode personalizar esses horários conforme a necessidade)
-        echo "<label><input type='checkbox' name='horarios[" . date('Y-m-d', $timestamp) . "][]' value='08:00'> 08:00 </label><br>";
-        echo "<label><input type='checkbox' name='horarios[" . date('Y-m-d', $timestamp) . "][]' value='10:00'> 10:00 </label><br>";
-        echo "<label><input type='checkbox' name='horarios[" . date('Y-m-d', $timestamp) . "][]' value='14:00'> 14:00 </label><br>";
-        echo "<label><input type='checkbox' name='horarios[" . date('Y-m-d', $timestamp) . "][]' value='16:00'> 16:00 </label><br>";
+        // Campo para adicionar horários personalizados
+        echo "<input type='time' name='horarios[" . date('Y-m-d', $timestamp) . "][]' />";
+        echo "<button type='button' onclick='addHorario(this)'>Adicionar Horário</button>";
+        echo "<div class='horarios-adicionados' data-date='" . date('Y-m-d', $timestamp) . "'></div>";
         
         echo "</td>";
         echo "<td><input type='checkbox' name='diasDisponiveis[]' value='" . date('Y-m-d', $timestamp) . "'></td>";
@@ -112,3 +111,18 @@ if (isset($_POST['diasDisponiveis']) && isset($_POST['horarios'])) {
 // Fecha a conexão
 $conexao->close();
 ?>
+
+<script>
+function addHorario(button) {
+    // Obtém o container de horários adicionados
+    var container = button.nextElementSibling;
+
+    // Cria um novo campo de entrada do tipo 'time' para o horário
+    var newInput = document.createElement('input');
+    newInput.type = 'time';
+    newInput.name = 'horarios[' + container.dataset.date + '][]';
+
+    // Adiciona o novo campo ao container
+    container.appendChild(newInput);
+}
+</script>

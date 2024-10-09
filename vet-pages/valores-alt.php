@@ -12,8 +12,7 @@ if (!isset($_SESSION['email']) || !isset($_SESSION['senha'])) {
 }
 
 // Verifica se o email na sessão é diferente do permitido
-if ($_SESSION['email'] !== 'drmonica@gmail.com') {
-    // Se o email não for 'drmonica@gmail.com', destrói a sessão e redireciona
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
     header('Location: login.php');

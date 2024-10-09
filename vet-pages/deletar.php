@@ -1,4 +1,6 @@
 <?php
+include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
+
 // Verifica se um mês e ano foram enviados via POST, senão usa os valores padrão
 $mes = isset($_POST['mes']) ? $_POST['mes'] : date('m'); // Mês atual se não enviado
 $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y'); // Ano atual se não enviado
@@ -34,14 +36,12 @@ echo "</form>";
 
 // Após a seleção, exibe os dias e horários disponíveis para o mês e ano escolhidos
 if (isset($_POST['mes']) && isset($_POST['ano'])) {
-    include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
-
     // Consulta os dias e horários disponíveis para o mês e ano selecionados
     $query = "SELECT data_disponivel, nome_dia_semana, horario_disponivel 
               FROM dias_disponiveis 
               WHERE MONTH(data_disponivel) = ? AND YEAR(data_disponivel) = ? 
               ORDER BY data_disponivel, horario_disponivel";
-    
+
     $stmt = $conexao->prepare($query);
     $stmt->bind_param('ii', $mes, $ano);
     $stmt->execute();
@@ -67,6 +67,67 @@ if (isset($_POST['mes']) && isset($_POST['ano'])) {
         echo "</form>";
     } else {
         echo "Não há dias ou horários disponíveis para o mês selecionado.";
+    }
+
+    // Fecha a conexão
+    $stmt->close();
+    $conexao->close();
+}
+
+// Parte para deletar agendamentos
+echo "<h2>Deletar um Agendamento</h2>";
+echo "<form action='' method='POST'>";
+echo "<label for='mesDelete'>Mês:</label>";
+echo "<select name='mesDelete'>";
+foreach ($meses as $num => $nome) {
+    echo "<option value='$num'>$nome</option>";
+}
+echo "</select>";
+
+echo "<label for='anoDelete'>Ano:</label>";
+echo "<select name='anoDelete'>";
+for ($i = date('Y'); $i <= date('Y') + 2; $i++) {
+    echo "<option value='$i'>$i</option>";
+}
+echo "</select>";
+
+echo "<input type='submit' name='verAgendamentos' value='Ver Agendamentos'>";
+echo "</form>";
+
+// Se o usuário clicar para ver agendamentos
+if (isset($_POST['verAgendamentos'])) {
+    $mesDelete = $_POST['mesDelete'];
+    $anoDelete = $_POST['anoDelete'];
+
+    // Consulta os agendamentos para o mês e ano selecionados
+    $query = "SELECT data_disponivel, nome_dia_semana, horario_disponivel 
+              FROM dias_disponiveis 
+              WHERE MONTH(data_disponivel) = ? AND YEAR(data_disponivel) = ? 
+              ORDER BY data_disponivel, horario_disponivel";
+
+    $stmt = $conexao->prepare($query);
+    $stmt->bind_param('ii', $mesDelete, $anoDelete);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    // Verifica se há resultados
+    if ($result->num_rows > 0) {
+        echo "<form action='processar_deletar_agendamento.php' method='POST'>";
+        echo "<h3>Selecione o agendamento para deletar:</h3>";
+
+        while ($row = $result->fetch_assoc()) {
+            $data = date('d/m/Y', strtotime($row['data_disponivel']));
+            $nomeDiaSemana = $row['nome_dia_semana'];
+            $horario = date('H:i', strtotime($row['horario_disponivel']));
+
+            echo "<input type='checkbox' name='agendamentos[]' value='" . $row['data_disponivel'] . " " . $row['horario_disponivel'] . "'> ";
+            echo $data . " (" . $nomeDiaSemana . ") - " . $horario . "<br>";
+        }
+
+        echo "<input type='submit' value='Deletar Agendamentos'>";
+        echo "</form>";
+    } else {
+        echo "Não há agendamentos disponíveis para o mês selecionado.";
     }
 
     // Fecha a conexão
