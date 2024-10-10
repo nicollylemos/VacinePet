@@ -1,4 +1,23 @@
-<?php
+<!--
+ /**
+ * @file index.php
+ *
+ * @brief Página inicial do site VacinePet que fornece informações sobre o serviço de vacinação para animais domésticos, como cães e gatos.
+ *        Inclui links para agendamento de vacinas, informações sobre doenças comuns e um carrossel de vacinas mais procuradas.
+ *
+ * @author Nicolly Lemos da Silva
+ *
+ * @version 1.0
+ * 
+ * @date 2024-09-20
+ *
+ * @copyright Todos os direitos reservados
+ *
+ * @details
+ * Esta página contém seções para introduzir o serviço de vacinação de pets no domicílio, um carrossel para vacinas populares
+ * com informações e valores estimados, e links para páginas com informações mais detalhadas sobre doenças que afetam cães e gatos.
+ */
+--><?php
 
 include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 ?>
