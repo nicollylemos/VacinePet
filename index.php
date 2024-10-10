@@ -41,7 +41,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
     <section class="home-inicial">
         <div class="tela-inicial">
             <div class="info-inicial">
-                <h1 class="titulo-site">VacinePet<i id="icon" class="fa-solid fa-paw fa-rotate-by"> </i>
+                <h1 class="titulo-site">VacinePet<i class="fa-solid fa-paw fa-rotate-by"  id="icon"> </i>
                 </h1>
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,

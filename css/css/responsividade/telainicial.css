@@ -1,4 +1,9 @@
 @media (min-width:310px) and (max-width: 375px) {
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     .tela-inicial {
         background-image: url('imgs/index-responsivo.png');
         background-repeat: no-repeat;
@@ -13,7 +18,7 @@
 
     .titulo-site {
         position: relative;
-        left: -18px;
+        left: 15px;
         font-size: 45px;
         text-align: center;
     }
@@ -181,6 +186,11 @@
     }
 }
 @media (min-width:376px) and (max-width: 410px) {
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     .tela-inicial {
         background-image: url('imgs/index-responsivo.png');
         background-repeat: no-repeat;
@@ -188,15 +198,13 @@
         background-position: center;
         height: 730px;
     }
-
-
     p {
         font-size: 25px;
     }
 
     .titulo-site {
         position: relative;
-        left: -18px;
+        left: 10px;
         font-size: 45px;
         text-align: center;
     }
@@ -367,6 +375,11 @@
     }
 }
 @media (min-width:411px) and (max-width: 455px) {
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     .tela-inicial {
         background-image: url('imgs/index-responsivo.png');
         background-repeat: no-repeat;
@@ -374,15 +387,13 @@
         background-position: center;
         height: 730px;
     }
-
-
     p {
         font-size: 25px;
     }
 
     .titulo-site {
         position: relative;
-        left: 10px;
+        left: 35px;
         font-size: 60px;
         text-align: center;
     }
@@ -561,15 +572,18 @@
         background-position: calc(0% + 0px) calc(50% + -50px);
         height: 800px;
     }
-
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
 
     .titulo-site {
         position: relative;
-        left: 40px;
+        left: 55px;
         font-size: 65px;
         text-align: center;
     }
@@ -749,7 +763,11 @@
         height: 800px;
     }
 
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -757,7 +775,7 @@
     .titulo-site {
         position: relative;
         top: -20px;
-        left: 20px;
+        left: 45px;
         font-size: 65px;
         text-align: center;
     }
@@ -938,7 +956,11 @@
         height: 800px;
     }
 
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -946,7 +968,7 @@
     .titulo-site {
         position: relative;
         top: -20px;
-        left: -10px;
+        left: 10px;
         font-size: 65px;
         text-align: center;
     }
@@ -1127,7 +1149,11 @@
         height: 800px;
     }
 
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -1135,7 +1161,7 @@
     .titulo-site {
         position: relative;
         top: -20px;
-        left: 5px;
+        left: 20px;
         font-size: 65px;
         text-align: center;
     }
@@ -1316,7 +1342,11 @@
         height: 800px;
     }
 
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -1324,7 +1354,7 @@
     .titulo-site {
         position: relative;
         top: -20px;
-        left: 30px;
+        left: 45px;
         font-size: 65px;
         text-align: center;
     }
@@ -1505,7 +1535,11 @@
         height: 800px;
     }
 
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -1513,7 +1547,7 @@
     .titulo-site {
         position: relative;
         top: -20px;
-        left: 50px;
+        left: 65px;
         font-size: 65px;
         text-align: center;
     }
@@ -1695,7 +1729,11 @@
         height: 900px;
     }
 
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -1703,7 +1741,7 @@
     .titulo-site {
         position: relative;
         top: 10px;
-        left: 80px;
+        left: 100px;
         font-size: 65px;
         text-align: center;
     }
@@ -1886,7 +1924,11 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 900px;
     }
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -1894,7 +1936,7 @@
     .titulo-site {
         position: relative;
         top: -30px;
-        left: 100px;
+        left: 120px;
         font-size: 65px;
         text-align: center;
     }
@@ -2079,7 +2121,11 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 1000px;
     }
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
     p {
         font-size: 25px;
     }
@@ -2087,7 +2133,7 @@
     .titulo-site {
         position: relative;
         top: 20px;
-        left: 120px;
+        left: 150px;
         font-size: 65px;
         text-align: center;
     }
@@ -2273,7 +2319,11 @@
         background-position: calc(0% + 0px) calc(80% + -50px);
         height: 1100px;
     }
-
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -20px;
+    }
 
     p {
         font-size: 25px;
@@ -2282,7 +2332,7 @@
     .titulo-site {
         position: relative;
         top: 20px;
-        left: 150px;
+        left: 180px;
         font-size: 65px;
         text-align: center;
     }
@@ -2461,6 +2511,12 @@
 
 }
 @media (min-width:931px) and (max-width: 1000px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+        top: 2px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -2552,6 +2608,11 @@
     }
 }
 @media (min-width:1001px) and (max-width: 1070px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -2637,6 +2698,11 @@
     }
 }
 @media (min-width:1071px) and (max-width: 1171px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -2726,6 +2792,11 @@
     }
 }
 @media (min-width:1172px) and (max-width: 1300px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -2808,6 +2879,11 @@
 
 }
 @media (min-width:1301px) and (max-width: 1500px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -2878,6 +2954,11 @@
 
 }
 @media (min-width:1501px) and (max-width: 1700px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -2953,6 +3034,11 @@
 
 }
 @media (min-width:1701px) and (max-width: 1900px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -3032,6 +3118,11 @@
 
 }
 @media (min-width:1901px) and (max-width: 1950px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -3109,6 +3200,12 @@
 
 }
 @media (min-width:1951px) and (max-width: 2300px){
+    #icon{
+        font-size: 50px;
+        position: relative;
+        left: 750px;
+        top: -260px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -3123,6 +3220,7 @@
     .titulo-site{
         position: relative;
         top: -65px;
+        height: 220px;
         font-size: 160px;
     }
     .subtitulo-site{
@@ -3193,6 +3291,12 @@
 
 }
 @media (min-width:2301px) and (max-width: 2560px){
+    #icon{
+        font-size: 50px;
+        position: relative;
+        left: 750px;
+        top: -260px;
+    }
     .tela-inicial{
         background-image: url(imgs/background-inicial.svg);
         background-size: cover;
@@ -3207,6 +3311,7 @@
     .titulo-site{
         position: relative;
         top: -65px;
+        height: 220px;
         font-size: 160px;
     }
     .subtitulo-site{
