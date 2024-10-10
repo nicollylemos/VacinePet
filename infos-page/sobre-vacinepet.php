@@ -40,7 +40,7 @@
         </div>-->
             <h3 id="sub-sub" class="subtitle">Como surgiu?</h3>
             <div class="content-txt two">
-                <p>O VacinePet surgiu com o propósito de facilitar o cuidado com a saúde dos pets, oferecendo uma
+                <p id="dois">O VacinePet surgiu com o propósito de facilitar o cuidado com a saúde dos pets, oferecendo uma
                     plataforma completa para agendamento de serviços essenciais. O site foi idealizado para atender a
                     uma demanda crescente por um serviço eficiente e acessível para vacinação, castração e suporte de
                     adoção de cães e gatos.
@@ -51,7 +51,7 @@
                     animal, refletindo o compromisso do VacinePet com a saúde e o bem-estar dos pets.
                 </p>
             </div>
-            <h3 class="subtitle">Objetivos do VacinePet</h3>
+            <h3 id="sub3" class="subtitle">Objetivos do VacinePet</h3>
             <div class="content-txt two">
                 <p>O VacinePet tem como objetivos facilitar o acesso a cuidados veterinários, oferecendo agendamentos
                     para vacinação e castração de cães e gatos. Com serviços especializados realizados pela Dra. Monica,
