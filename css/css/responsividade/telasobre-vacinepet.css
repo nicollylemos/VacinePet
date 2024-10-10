@@ -37,4 +37,17 @@
         width: 300px;
         font-size: 30px !important;
     }
+    .content-txt {
+        position: relative;
+        left: -70px;
+        width: 300px;
+    }
+    #sub3{
+        position: relative;
+        left: -100px;
+        font-size: 30px;
+        width: 300px;
+        text-align: left;
+        line-height: 30px;
+    }
 }
