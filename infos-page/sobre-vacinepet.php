@@ -13,7 +13,7 @@
     <title>VacinePet</title>
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
-    <link rel="stylesheet" href="../css/css/responsividade/telasobre-vacinepet.css">
+    <link rel="stylesheet" href="../css/css/responsividade/tela-sobre-vacine.css">
 
 
     
@@ -28,7 +28,7 @@
                 <h1 id="title">Sobre o VacinePet</h1>
                 <h2 id="subtitle">A saúde do seu pet em primeiro lugar.</h2>
                 <div class="content-txt one">
-                    <p>A saúde e o bem-estar dos nossos amigos de quatro patas são de extrema importância. Por isso,
+                    <p class="um" id="um">A saúde e o bem-estar dos nossos amigos de quatro patas são de extrema importância. Por isso,
                         apresentamos o VacinePet, um site dedicado exclusivamente à vacinação de animais de estimação
                         com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a dia, o
                         estresse dos animais ao saírem de casa e a busca por conveniência são fatores que muitas vezes
@@ -60,13 +60,13 @@
                     também se dedica a educar os donos sobre cuidados com os pets e oferece atendimento personalizado,
                     fomentando uma comunidade responsável e engajada no bem-estar dos animais.</p>
             </div>
-            <h3 class="subtitle">Nossos valores</h3>
+            <h3 id="sub4" class="subtitle">Nossos valores</h3>
             <div class="content-txt two">
                 <p>A saúde e o bem-estar dos nossos amigos de quatro
                     patas são
                     de extrema
                     importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
+                    apresentamos o VacinePet, um site dedicado exclusivamente à vacinação de animais de
                     estimação
                     com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
                     dia, o
@@ -77,7 +77,7 @@
                     eficiente para você e seu companheiro.A saúde e o bem-estar dos nossos amigos de quatro
                     patas são de extrema
                     importância. Por isso,
-                    apresentamos o PetVacina, um site dedicado exclusivamente à vacinação de animais de
+                    apresentamos o VacinePet, um site dedicado exclusivamente à vacinação de animais de
                     estimação
                     com um diferencial essencial: atendimento domiciliar. Entendemos que a correria do dia a
                     dia, o
@@ -89,10 +89,10 @@
                 </p>
             </div>
             <br>
-            <hr>
+            <hr class="line">
             <div class="container-end">
-                <p>Gostou? Agende agora uma consulta no VacinePet!</p>
-                <a href="../agendamento.php"><button type=" button">Agendar agora!</button></a>
+                <p id="fim">Gostou? Agende agora uma consulta no VacinePet!</p>
+                <a href="../agendamento.php"><button class="btn-fim" type=" button">Agendar agora!</button></a>
             </div>
         </div>
         </div>

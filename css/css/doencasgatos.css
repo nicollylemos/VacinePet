@@ -120,9 +120,11 @@
     font-weight: 500;
     color: #FD811C;
     position: relative;
-    bottom: 55px;
+
     text-align: center;
     align-items: center;
+    height:210px;
+    background: #52BACB;
 }
 .description {
     font-size: 14px;
@@ -131,7 +133,8 @@
     position: relative;
     bottom: 60px;
     font-family: poppins;
-    
+    height:210px;
+    background: #52BACB;
 }
 
 .append-buttons {
@@ -161,7 +164,6 @@
     border: none;
     letter-spacing: 1px;
     position: relative;
-    bottom: 45px;
     align-items: center;
 }
 .btn-vacinas:hover{
