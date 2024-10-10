@@ -1,40 +1,33 @@
-<?php
-    session_start();
-    // print_r($_REQUEST);
-    if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']))
-    {
-        // Acessa
-        include_once('../config.php');
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+<?php 
+session_start();
 
-        // print_r('Email: ' . $email);
-        // print_r('<br>');
-        // print_r('Senha: ' . $senha);
+if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])) {
+    // Acessa
+    include_once('../config.php');
+    
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-        $sql = "SELECT * FROM tutor WHERE email = '$email' and senha = '$senha'";
+    // Busca o usuário no banco de dados
+    $sql_code = "SELECT * FROM tutor WHERE email = '$email' LIMIT 1";
+    $sql_exec = $conexao->query($sql_code) or die($conexao->error);
 
-        $result = $conexao->query($sql);
-
-        // print_r($sql);
-        // print_r($result);
-
-        if(mysqli_num_rows($result) < 1)
-        {
-            unset($_SESSION['email']);
-            unset($_SESSION['senha']);
-            header('Location: login.php');
-        }
-        else
-        {
+    // Verifica se o usuário foi encontrado
+    if ($tutor = $sql_exec->fetch_assoc()) {
+        // Verifica a senha
+        if (password_verify($senha, $tutor['Senha'])) {
             $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
             header('Location: sistema.php');
+            exit();
+        } else {
+            echo "Falha ao logar: senha incorreta";
         }
+    } else {
+        echo "Falha ao logar: usuário não encontrado";
     }
-    else
-    {
-        // Não acessa
-        header('Location: login.php');
-    }
+} else {
+    // Redireciona para a página de login se os campos estiverem vazios
+    header('Location: login.php');
+    exit();
+}
 ?>

@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $cpf = $_POST['tutor_cpf'];
     $telefone = $_POST['tutor_telefone'];
     $email = $_POST['tutor_email'];
-    $senha = $_POST['tutor_senha'];
+    $senha = password_hash($_POST['tutor_senha'], PASSWORD_DEFAULT);
 
     $result = mysqli_query($conexao, "INSERT INTO tutor( nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
 
@@ -77,9 +77,9 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet - Cadastro</title>
     <style>
-    .hidden {
-        display: none;
-    }
+        .hidden {
+            display: none;
+        }
     </style>
     <title>Cadastro de Tutor</title>
 </head>
@@ -305,66 +305,66 @@ if (isset($_POST['submit'])) {
 </body>
 
 <script>
-/Validação dos campos/
+    /Validação dos campos/
 
-const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
-const spans = document.querySelectorAll('.span-required');
-const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-
+    const form = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const spans = document.querySelectorAll('.span-required');
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 
 
 
-/Funções para aparecer e sumir o erro/
 
-function setError(index) {
-    campos[index].style.border = '2px solid red';
-    spans[index].style.display = 'block';
-}
 
-function removeError(index) {
-    campos[index].style.border = '';
-    spans[index].style.display = 'none';
-}
-/Validação do nome/
+    /Funções para aparecer e sumir o erro/
 
-function nameValidate() {
-    if (campos[0].value.length < 3) {
-
-        setError(0);
-    } else {
-        removeError(0)
-
+    function setError(index) {
+        campos[index].style.border = '2px solid red';
+        spans[index].style.display = 'block';
     }
-}
 
-/Validação do email/
-
-function emailValidate() {
-    if (!emailRegex.test(campos[2].value)) {
-        setError(2);
-    } else {
-        removeError(2);
+    function removeError(index) {
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
     }
-}
+    /Validação do nome/
 
-/Validação de senha/
+    function nameValidate() {
+        if (campos[0].value.length < 3) {
 
-function mainPasswordValidate() {
-    const senha = document.getElementById('senha');
-    const senhaSpan = document.querySelector(
-        '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+            setError(0);
+        } else {
+            removeError(0)
 
-    if (senha.value.length < 8) {
-        senha.style.border = '2px solid red';
-        senhaSpan.style.display = 'block';
-    } else {
-        senha.style.border = '';
-        senhaSpan.style.display = 'none';
+        }
     }
-}
+
+    /Validação do email/
+
+    function emailValidate() {
+        if (!emailRegex.test(campos[2].value)) {
+            setError(2);
+        } else {
+            removeError(2);
+        }
+    }
+
+    /Validação de senha/
+
+    function mainPasswordValidate() {
+        const senha = document.getElementById('senha');
+        const senhaSpan = document.querySelector(
+            '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+
+        if (senha.value.length < 8) {
+            senha.style.border = '2px solid red';
+            senhaSpan.style.display = 'block';
+        } else {
+            senha.style.border = '';
+            senhaSpan.style.display = 'none';
+        }
+    }
 </script>
 
 
@@ -372,19 +372,19 @@ function mainPasswordValidate() {
 <script src="../js/cadastrar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-</script>
+    </script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 <script>
-$('#cep').mask('00000-000');
-$('#telefone').mask('(00) 00000-0000');
-$('#cpf').mask('000.000.000-00', {
-    reverse: true
-});
-$('#money').mask("#.##0,00", {
-    reverse: true
-});
+    $('#cep').mask('00000-000');
+    $('#telefone').mask('(00) 00000-0000');
+    $('#cpf').mask('000.000.000-00', {
+        reverse: true
+    });
+    $('#money').mask("#.##0,00", {
+        reverse: true
+    });
 </script>
 </script>
 
