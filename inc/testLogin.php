@@ -12,29 +12,23 @@
         // print_r('<br>');
         // print_r('Senha: ' . $senha);
 
-        $sql = "SELECT * FROM tutor WHERE email = '$email' and senha = '$senha'";
+        $sql_code = "select * from tutor where email = '$email'  LIMIT 1";
+        $sql_exec = $conexao ->query($sql_code) or die($conexao->error);
 
-        $result = $conexao->query($sql);
+        $tutor = $sql_exec->fetch_assoc();
 
-        // print_r($sql);
-        // print_r($result);
+        if(password_verify($senha, $tutor ['Senha'])){
 
-        if(mysqli_num_rows($result) < 1)
-        {
-            unset($_SESSION['email']);
-            unset($_SESSION['senha']);
-            header('Location: login.php');
+            echo "Usuario logado";
+
         }
-        else
-        {
-            $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
-            header('Location: sistema.php');
+        else{
+            echo "Falha ao logar";
         }
+
+
+        
     }
-    else
-    {
-        // Não acessa
-        header('Location: login.php');
-    }
+
+    
 ?>
