@@ -17,10 +17,13 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
         // Verifica a senha
         if (password_verify($senha, $tutor['Senha'])) {
             $_SESSION['email'] = $email;
+            // Armazena o hash da senha na sessão
+            $_SESSION['senha_hash'] = $tutor['Senha']; 
             header('Location: sistema.php');
             exit();
         } else {
             echo "Falha ao logar: senha incorreta";
+
         }
     } else {
         echo "Falha ao logar: usuário não encontrado";

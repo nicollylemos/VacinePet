@@ -73,15 +73,17 @@ $conexao->close();
                             }
                             echo "</select>";
 
-                            echo "<br><label for='ano'> Ano: </label> ";
-                            echo "<select name='ano'>";
+                            echo "<label for='ano' style='position: relative; left: 10px;'> Ano: </label> ";
+                            echo "<select name='ano' style='position: relative; top: -25px; left: 130px;'>";
+
+
                             for ($i = date('Y'); $i <= date('Y') + 2; $i++) { // Exibe o ano atual e mais dois anos
                                 $selected = ($i == $ano) ? "selected" : "";
                                 echo "<option value='$i' $selected>$i</option>";
                             }
                             echo "</select>";
 
-                            echo "<br><input type='submit' value='Adicionar novos horários'>";
+                            echo "<br><input type='submit' value='Adicionar novos horários' style='margin-top: 10px; margin-left:80px;'>";
                             echo "</form>";
 
                             // Função para retornar o nome do dia da semana em português
@@ -156,7 +158,8 @@ $conexao->close();
 
                                 echo "Dias e horários cadastrados com sucesso!";
                             } else {
-                                echo "Nenhum dia ou horário foi selecionado.";
+                                echo "<p style='font-size: 14px; position: relative; left:60px; top:10px;'>Nenhum dia ou horário foi selecionado.</p>";
+
                             }
                             ?>
 
