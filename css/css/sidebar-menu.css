@@ -44,7 +44,6 @@ body{
     position: static;
     top: 67px;
     left: 0;
-    height: 100%;
     width: 310px;
     padding: 10px 14px;
     background: var(--sidebar-color);
