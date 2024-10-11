@@ -16,8 +16,6 @@ include("../inc/header.php");
     <link rel="stylesheet" href="../css/css/responsividade/telasobre.css">
 
 
-
-
 </head>
 
 <body>
@@ -53,7 +51,7 @@ include("../inc/header.php");
                     adoção de cães e gatos.
                     A Dra. Monica, uma veterinária renomada e especializada em felinos, é a responsável por todos os
                     procedimentos oferecidos pelo VacinePet. Com uma vasta experiência e um profundo conhecimento sobre
-                    as necessidades dos gatos, a Dra. Monica garante que cada animal receba o cuidado adequado.
+                    as necessidades dos gatos, a Dra. Mônica garante que cada animal receba o cuidado adequado.
                     O VacinePet se destaca pela qualidade dos serviços prestados e pela atenção especial dada a cada
                     animal, refletindo o compromisso do VacinePet com a saúde e o bem-estar dos pets.
                 </p>

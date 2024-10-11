@@ -41,9 +41,10 @@ body{
 
 /* ===== Sidebar ===== */
  .sidebar{
-    position: static;
+    position: fixed;
     top: 67px;
     left: 0;
+    height: 100%;
     width: 310px;
     padding: 10px 14px;
     background: var(--sidebar-color);
@@ -242,6 +243,3 @@ body.dark .mode .sun-moon i.moon{
     border-radius: 6px;
     cursor: pointer;
 }
-
-
-
