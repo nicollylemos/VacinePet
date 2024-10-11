@@ -17,14 +17,14 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
     }
     
     // Prepare a consulta para obter o cod_tutor
-    $query = "SELECT cod_tutor FROM tutor WHERE email = ? AND senha = ?";
+    $query = "SELECT cod_tutor FROM tutor WHERE email = ?";
     
     // Cria um statement
     $stmt = $conexao->prepare($query);
     
     // Assumindo que você está armazenando a senha em texto claro, o que não é recomendado
     // Caso contrário, você deve substituir pela forma de hash que você está usando
-    $stmt->bind_param('ss', $_SESSION['email'], $_SESSION['senha']);
+    $stmt->bind_param('s', $_SESSION['email']);
     
     // Executa a consulta
     $stmt->execute();
