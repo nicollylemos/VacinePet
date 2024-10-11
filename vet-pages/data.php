@@ -24,6 +24,13 @@ $conexao->close();
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VacinePet</title>
+
+    <style>
+        .sidebar {
+
+            height: 300vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -74,7 +81,7 @@ $conexao->close();
                             }
                             echo "</select>";
 
-                            echo "<input type='submit' value='Adicionar novos horários'>";
+                            echo "<br><input type='submit' value='Adicionar novos horários'>";
                             echo "</form>";
 
                             // Função para retornar o nome do dia da semana em português

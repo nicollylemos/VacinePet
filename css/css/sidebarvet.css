@@ -60,7 +60,7 @@ body{
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;  
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid #DDD;
 }
 
     
