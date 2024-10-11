@@ -50,11 +50,11 @@ body{
   
   }
 /* ===== Sidebar ===== */
- .sidebar{
-    position: static;
-    top: 53px;
+ .sidebar {
+    position: static; /* Para fixar o sidebar */
+    top: 53px; /* Abaixo da navbar */
     left: 0;
-    height: 100vh;
+    height:120vh; /* Altura total menos a altura da navbar */
     width: 310px;
     padding: 10px 14px;
     background: var(--sidebar-color);
@@ -62,6 +62,8 @@ body{
     z-index: 100;  
     border-right: 1px solid #DDD;
 }
+
+    
 .sidebar.close{
     width: 88px;
 }
