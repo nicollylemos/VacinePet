@@ -14,8 +14,6 @@ include("../inc/header.php");
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
     <link rel="stylesheet" href="../css/css/responsividade/telasobre.css">
-
-
 </head>
 
 <body>

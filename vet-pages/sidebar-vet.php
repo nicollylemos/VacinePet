@@ -36,6 +36,10 @@
                     </ul>
                     <li class="nav-link"><a href="adocao.php"><i class="fa-solid fa-paw icon"></i><span
                                 class="text nav-text">Adoção</span></a></li>
+                    <li class="nav-link"><a href="data.php"><i class="fa-solid fa-clock icon"></i><span
+                                class="text nav-text">Gerenciar Atendimento</span></a></li>
+                    <li class="nav-link"><a href="configuracao.php"><i class="fa-solid fa-cog icon"></i><span
+                                class="text nav-text">Configuração</span></a></li>
 
                 </div>
             </div>

@@ -2,7 +2,7 @@
 include("../inc/header.php");
 include("sidebar-vet.php");
 // Verifica se o usuário está autenticado
-if (!isset($_SESSION['email']) || !isset($_SESSION['senha'])) {
+if (!isset($_SESSION['email']) || !$_SESSION['senha_hash']) {
     echo '<script type="text/javascript">';
     echo 'window.location.href = "../inc/login.php";';
     echo '</script>';
@@ -37,7 +37,7 @@ $logado = $_SESSION['email'];
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/veterinarioo.css" />
+    <link rel="stylesheet" href="../css/css/VetEstilo.css" />
     <title>VacinePet</title>
 </head>
 

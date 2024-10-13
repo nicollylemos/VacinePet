@@ -17,19 +17,7 @@
     --second-color: #FD811C;
     --primary-hover: #7bcdd9; 
 }
-.top-valores{
-    background-color:var(--primary-clr);
-   color: #fff;
-    width: 700px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
-    font-size: 1rem;
-    font-weight: 500;
-    text-transform: capitalize;
-}
+
 .table{
     width: 900px;
 }
@@ -105,15 +93,15 @@ table th:nth-child(5), table td:nth-child(5) {
 .container-valores{
     background-color: #ffffff;
     box-shadow: 5px 5px 5px #e9e9e9;
-    width: 650px;
+    width: 800px;
     height: 50px;
     display: flex;
-    align-items: center;
+ 
     justify-content: space-between;
     padding: 0 20px;
     font-size: 1rem;
     font-weight: 500;
-    text-transform: capitalize;
+    text-transform: capitalize; /*! Primeira letra fica maiuscúla */
     border-radius: 20px;
     margin: 10px;
 }
@@ -121,21 +109,17 @@ table th:nth-child(5), table td:nth-child(5) {
 .vac-cat{
     border: 2.5px solid var(--primary-clr);
 }
-.vac-dog{
-    border: 2.5px solid var(--second-color);
-}
-.vac-cat .id{
+
+.container-valores .id{
     color: var(--primary-clr);
     font-family: baloo;
     font-size: 1.6em;
     
 }
-.vac-dog .id{
-    color: var(--second-color);
-    font-family: baloo;
-    font-size: 1.6em;
-    
+.container-valores:nth-child(even) .id {
+   color: var(--second-color); /* Cor para containers pares */
 }
+
 .container-valores div {
     width: 14.28%;
     height: 100%;
@@ -149,6 +133,7 @@ table th:nth-child(5), table td:nth-child(5) {
     border: transparent;
     border-radius: 25px;
     cursor: pointer;
+    margin-top: 20%;
   }
   .container-valores .icon, 
   .container-valores .icone{
@@ -170,12 +155,20 @@ table th:nth-child(5), table td:nth-child(5) {
     margin-bottom: 3%;
     margin-top: 5%;
  }
-  .container-valores .icon{
-    background-color: var(--primary-clr);
-  }
-  .container-valores .icone{
-    background-color: var(--second-color);
-  }
+/* Estilo padrão para o ícone */
+.container-valores .icon {
+    background-color: var(--primary-clr); /* Cor inicial (primeiro container) */
+}
+
+/* Para containers pares, altera a cor do ícone */
+.container-valores:nth-child(even) .icon {
+    background-color: var(--second-color); /* Cor para containers pares */
+}
+
+
+.container-valores:nth-child(even) {
+    border-color: var(--second-color); /* Cor para containers pares */
+}
 .alt{
     border: 4px solid var(--primary-clr);
     border-radius: 20px;

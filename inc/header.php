@@ -7,9 +7,8 @@ $admin = null;  // Inicializa como null
 $nome = null;
 $tutorDados = null; // Inicializa a variável para armazenar os dados do tutor
 
-if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
+if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
     $logado = $_SESSION['email'];
-
     // Se for o email do administrador
     if ($logado === 'lmonicagm@gmail.com') {
         $admin = $_SESSION['email']; // Define o admin
@@ -63,8 +62,6 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
 
 
 ?>
-
-
 <!DOCTYPE html>
 <html>
 

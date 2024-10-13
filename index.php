@@ -20,6 +20,15 @@
 --><?php
 
 include("./inc/header.php"); ///< Inclui o cabeçalho do site.
+
+include_once('config.php');  // Inclui o arquivo de configuração para conexão com o banco
+
+// Defina o valor do cod_vac diretamente
+
+
+
+$sql = "SELECT * FROM vacina ORDER BY cod_vac ";
+$result = $conexao->query($sql);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -45,11 +54,11 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 </head>
 
 <style>
-    html,
-    body {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
+html,
+body {
+    overflow-x: hidden;
+    /* Esconde a rolagem horizontal */
+}
 </style>
 
 <body>
@@ -60,7 +69,7 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
     <section class="home-inicial">
         <div class="tela-inicial">
             <div class="info-inicial">
-                <h1 class="titulo-site">VacinePet<i class="fa-solid fa-paw fa-rotate-by"  id="icon"> </i>
+                <h1 class="titulo-site">VacinePet<i class="fa-solid fa-paw fa-rotate-by" id="icon"> </i>
                 </h1>
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
@@ -70,11 +79,11 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
                     a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
                     se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p> <?php if ($admin): ?><a href="/VacinePet/usuario/agendamento.php">
-                        <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
+                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
                 <?php if ($logado): ?><a href="/VacinePet/usuario/agendamento.php">
-                        <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
+                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
                 <?php if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)): ?>
-                    <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button><?php endif; ?>
+                <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button><?php endif; ?>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -104,158 +113,41 @@ include("./inc/header.php"); ///< Inclui o cabeçalho do site.
         </div>
     </div>
 
+
     <!-- Valores Vacinas -->
     <section class="secao-valores">
         <div class="vacinas-valor">
             <div class="titulo-vacina">
                 <h2 id="vmp">Vacinas mais procuradas</h2>
             </div>
+
             <div class="slide-container swiper">
                 <div class="slide-content">
-                    <div class=" card-wrapper swiper-wrapper">
-                        <div class="card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p class="valor">R$149,90</p>
-                                <p id="tipo">Vacina Canina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->V10
-                                </h3>
-                                <p class="description">
-                                    A vacina V10 é fundamental para proteger cães contra 10 doenças graves, incluindo
-                                    cinomose, parvovirose e leptospirose. Previne infecções fatais e garante uma vida
-                                    saudável. </p><a href="#"><button type="submit" class="btn-vacinas">Ver
-                                        Mais</button></a>
-                            </div>
-                        </div>
-                        <div class=" card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p class="valor">R$179,90</p>
-                                <p id="tipo">Vacina Canina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->Gripe canina
-                                </h3>
-                                <p class="description">A vacina contra gripe canina previne infecções respiratórias
-                                    graves, como a tosse dos canis. Essencial para cães sociáveis, reduz sintomas e
-                                    mantém a saúde em dia.</p><button type="submit" class="btn-vacinas">Ver
-                                    Mais</button>
-                            </div>
-                        </div>
-                        <div class=" card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p class="valor">R$164,90</p>
-                                <p id="tipo">Vacina Canina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->Giardia
-                                </h3>
-                                <p class="description">A vacina contra giárdia protege cães da infecção intestinal
-                                    causada por parasitas. Importante para prevenir diarreia, vômitos e desidratação,
-                                    mantendo-os saudáveis. </p><button type="submit" class="btn-vacinas">Ver
-                                    Mais</button>
-                            </div>
-                        </div>
-                        <div class=" card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content" id="cardizinhos">
-                                <p class="valor">R$125,90</p>
-                                <p class="cf" id="tipo">Vacina Canina e Felina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->Raiva
-                                </h3>
-                                <p class="description">A vacinação contra a raiva é obrigatória para cães e gatos no
-                                    Brasil, ajudando a controlar a doença viral que pode ser transmitida de animais para
-                                    humanos, protegendo ambos. </p><button type="submit" class="btn-vacinas">Ver
-                                    Mais</button>
-                            </div>
-                        </div>
-                        <div class=" card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p class="valor">R$165,90</p>
-                                <p id="tipo">Vacina Felina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->V3
-                                </h3>
-                                <p class="description">A vacina V3 para gatos, ou tríplice, protege contra
-                                    Rinotraqueíte, Calicivirose e Panleucopenia felina, prevenindo essas doenças graves
-                                    e mantendo a saúde do seu felino. </p><button type="submit" class="btn-vacinas">Ver
-                                    Mais</button>
-                            </div>
-                        </div>
-                        <div class=" card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p class="valor">R$179,90</p>
-                                <p id="tipo">Vacina Felina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->V4
-                                </h3>
-                                <p class="description">A vacina V4, ou Felocell CVR®-C, é uma vacina viva atenuada para
-                                    gatos, que protege contra panleucopenia, rinotraqueíte, calicivirose e clamidiose
-                                    felina. </p><button type="submit" class="btn-vacinas">Ver
-                                    Mais</button>
-                            </div>
-                        </div>
-                        <div class=" card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p class="valor">R$209,90</p>
-                                <p id="tipo">Vacina Felina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->V5
-                                </h3>
-                                <p class="description">A vacina V5 oferece proteção adicional ao incluir a imunização
-                                    contra Leucemia Felina (Felv), além das doenças já cobertas pela V4: panleucopenia,
-                                    rinotraqueíte, calicivirose e clamidiose. </p><button type="submit"
-                                    class="btn-vacinas">Ver Mais</button>
-                            </div>
-                        </div>
-                        <div class="card swiper-slide" id="cardizinhos">
-                            <div class="image-content"><span class="overlay"></span>
-                                <div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <p class="valor">R$139,90</p>
-                                <p id="tipo">Vacina Canina</p>
-                                <h3 class="nome-vacina">
-                                    <!-- futuro php-->V8
-                                </h3>
-                                <p class="description">A vacina V8 ajuda a prevenir cinomose, hepatite infecciosa
-                                    canina, parainfluenza, parvovirose, coronavirose e leptospirose, oferecendo proteção
-                                    abrangente para cães. </p><button type="submit" class="btn-vacinas">Ver
-                                    Mais</button>
-                            </div>
-                        </div>
+                    <div class="card-wrapper swiper-wrapper">
+
+                        <?php
+            // Verifica se existem vacinas cadastradas
+            if ($result->num_rows > 0) {
+                while ($vacina = $result->fetch_assoc()) {
+                    echo '<div class="card swiper-slide" id="cardizinhos">';
+                    echo '<div class="image-content"><span class="overlay"></span>';
+                    echo '<div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img"></div>';
+                    echo '</div>'; // image-content
+                    echo '<div class="card-content">';
+                    echo '<p class="valor">R$' . number_format($vacina['valor'], 2, ',', '.') . '</p>';
+                    echo '<p id="tipo">' . $vacina['tipo'] . '</p>';
+                    echo '<h3 class="nome-vacina">' . $vacina['nome'] . '</h3>';
+                    echo '<p class="description">' . $vacina['descricao'] . '</p>';
+                    echo '<a href="#"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
+                    echo '</div>'; // card-content
+                    echo '</div>'; // card
+                }
+            }
+            ?>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
+
     </section>
 
     <section class="recado">

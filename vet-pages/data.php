@@ -5,8 +5,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
 
 
 
-// Fecha a conexão
-$conexao->close();
+
 ?>
 
 <!DOCTYPE html>
@@ -26,10 +25,10 @@ $conexao->close();
     <title>VacinePet</title>
 
     <style>
-        .sidebar {
+    .sidebar {
 
-            height: 300vh;
-        }
+        height: 300vh;
+    }
     </style>
 </head>
 
@@ -177,16 +176,16 @@ $conexao->close();
 </html>
 
 <script>
-    function addHorario(button) {
-        // Obtém o container de horários adicionados
-        var container = button.nextElementSibling;
+function addHorario(button) {
+    // Obtém o container de horários adicionados
+    var container = button.nextElementSibling;
 
-        // Cria um novo campo de entrada do tipo 'time' para o horário
-        var newInput = document.createElement('input');
-        newInput.type = 'time';
-        newInput.name = 'horarios[' + container.dataset.date + '][]';
+    // Cria um novo campo de entrada do tipo 'time' para o horário
+    var newInput = document.createElement('input');
+    newInput.type = 'time';
+    newInput.name = 'horarios[' + container.dataset.date + '][]';
 
-        // Adiciona o novo campo ao container
-        container.appendChild(newInput);
-    }
+    // Adiciona o novo campo ao container
+    container.appendChild(newInput);
+}
 </script>
