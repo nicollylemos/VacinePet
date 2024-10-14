@@ -15,7 +15,7 @@
 :root{
     --body-color: #f7f9fd;
     --sidebar-color: #FFF;
-    --primary-color: #FD811C;
+    --primary-color:  #FD811C;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
@@ -39,27 +39,16 @@ body{
 
 
 
-.container {
-    padding: 5px;
-    display: flex;
-    position: absolute;
-    top: 60px;
-    left: 320px;
-    
-
-  
-  }
 /* ===== Sidebar ===== */
  .sidebar{
-    position: static;
-    top: 53px;
+    position: fixed;
+    top: 67px;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 310px;
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 100;  
     border-right: 1px solid #DDD;
 }
 .sidebar.close{
@@ -114,19 +103,20 @@ body{
 
 .sidebar header .image-text{
     display: flex;
+    align-items: center;
 }
 .sidebar header .logo-text{
     display: flex;
     flex-direction: column;
 }
-header .image-text .hello {
+header .image-text .name {
     margin-top: 15px;
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--primary-color);
-    align-items: left;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FD811C;
+    font-family: baloo;
+    align-items: center;
     padding-left: 30px;
-    margin-left: -10px;
 }
 
 header .image-text .subtitle{
@@ -160,11 +150,11 @@ header .image-text .profession{
     right: -25px;
     transform: translateY(-50%) rotate(180deg);
     height: 25px;
-    width: 25px;    
+    width: 25px;
     background-color: var(--primary-color);
     color: var(--sidebar-color);
     border-radius: 50%;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 22px;
@@ -192,7 +182,6 @@ header .image-text .profession{
     border-radius: 6px;
     text-decoration: none;
     transition: var(--tran-04);
-    margin-top: -55px;
 }
 
 .sidebar li a:hover{
@@ -253,6 +242,3 @@ body.dark .mode .sun-moon i.moon{
     border-radius: 6px;
     cursor: pointer;
 }
-
-
-

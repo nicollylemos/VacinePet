@@ -5,9 +5,10 @@ include_once('../config.php');
 
 // Verifica se o email e a senha estão definidos na sessão
 if (!isset($_SESSION['email']) || !isset($_SESSION['senha_hash'])) {
-    // Se não houver sessão, redireciona para a página de login
-    header('Location: login.php');
+    echo 'window.location.href = "../inc/login.php";';
+    echo '</script>';
     exit;
+  
 }
 
 // Consulta o tutor logado
@@ -27,8 +28,18 @@ if ($result_tutor && mysqli_num_rows($result_tutor) > 0) {
     exit;
 }
 
+// Consulta os agendamentos do tutor logado
+$sql = "SELECT a.id, a.data_agendamento, a.horario_agendamento, a.servico, a.situacao, 
+               p.Nome_Pet, p.Raca, p.Idade, p.Sexo, p.Especie, p.Castracao
+        FROM agendamentos a
+        JOIN pet p ON a.cod_pet = p.Cod_Pet
+        WHERE a.cod_tutor = '$cod_tutor'
+        ORDER BY a.data_agendamento DESC";
+
+$result = mysqli_query($conexao, $sql);
+
 // Consulta o endereço do tutor logado
-$sql_endereco = "SELECT Cep, Rua, Cidade, Bairro, Complemento, Numero 
+$sql_endereco = "SELECT Cod_End, Cep, Rua, Cidade, Bairro, Complemento, Numero 
                  FROM endereco 
                  WHERE Cod_Tutor = '$cod_tutor'";
 $result_endereco = mysqli_query($conexao, $sql_endereco);
@@ -40,30 +51,40 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados do Tutor</title>
+    <title>Meus Agendamentos</title>
     <link rel="stylesheet" href="styles.css">
     <style>
     .container {
         max-width: 800px;
         margin: 0 auto;
-        padding: 20px;
-        background-color: red;
-        height: 350px;
     }
 
     .section {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: red;
+        margin-bottom: 30px;
     }
 
-    .tutor {
-        background-color: green;
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
-    .endereco {
-        background-color: blue;
+    .info {
+        margin: 5px 0;
+    }
+
+    .info strong {
+        display: inline-block;
+        width: 150px;
+    }
+
+    .agendamento-item {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .agendamento-item div {
+        flex: 1;
     }
     </style>
 </head>
@@ -71,7 +92,7 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
 <body>
     <div class="container">
         <!-- Dados do Tutor -->
-        <div class="section tutor">
+        <div class="section">
             <h2>Dados do Tutor</h2>
             <div class="info">
                 <strong>Nome:</strong> <?php echo $nome_tutor; ?>
@@ -87,17 +108,36 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             </div>
             <div class="info">
                 <?php 
-            echo "<a href='editTutor.php?cod_tutor=" . $cod_tutor . "'>";
-            echo "<button>";
-            echo"<i class='fa-solid fa-pen-to-square icon'></i>";
-            echo"</button>";
-            echo"</a>";
-            ?>
+                echo "<a href='editTutor.php?cod_tutor=" . $cod_tutor . "'>";
+                echo "Editar Tutor"; // Adicione o texto ou conteúdo desejado dentro do link
+                echo "</a>";
+                ?>
+
+
             </div>
         </div>
 
+        <!-- Agendamentos -->
+        <div class="section">
+            <h2>Meus Agendamentos</h2>
+            <?php if (mysqli_num_rows($result) > 0): ?>
+            <?php while ($row = mysqli_fetch_assoc($result)): ?>
+            <div class="agendamento-item">
+                <div><strong>Pet:</strong> <?php echo $row['Nome_Pet']; ?></div>
+                <div><strong>Data:</strong> <?php echo date('d/m/Y', strtotime($row['data_agendamento'])); ?></div>
+                <div><strong>Hora:</strong> <?php echo $row['horario_agendamento']; ?></div>
+                <div><strong>Serviço:</strong> <?php echo $row['servico']; ?></div>
+                <div><strong>Situação:</strong> <?php echo $row['situacao']; ?></div>
+
+            </div>
+            <?php endwhile; ?>
+            <?php else: ?>
+            <p>Você ainda não realizou nenhum agendamento.</p>
+            <?php endif; ?>
+        </div>
+
         <!-- Endereço do Tutor -->
-        <div class="section endereco">
+        <div class="section">
             <h2>Endereço Cadastrado</h2>
             <?php if (mysqli_num_rows($result_endereco) > 0): ?>
             <?php while ($row_end = mysqli_fetch_assoc($result_endereco)): ?>
@@ -118,6 +158,15 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             </div>
             <div class="info">
                 <strong>Número:</strong> <?php echo $row_end['Numero']; ?>
+            </div>
+            <div class="info">
+                <?php 
+                echo "<a href='editEndereco.php?cod_tutor=" .$cod_tutor . "'>";
+                echo "Editar Tutor"; // Adicione o texto ou conteúdo desejado dentro do link
+                echo "</a>";
+                ?>
+
+
             </div>
             <?php endwhile; ?>
             <?php else: ?>
