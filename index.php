@@ -41,7 +41,7 @@ $result = $conexao->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/index-seg.css">
+    <link rel="stylesheet" href="css/css/index-seg.css">    
     <link rel="stylesheet" href="css/css/iniciar.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
@@ -97,7 +97,7 @@ body {
                         <h3>CÃO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu cão!</p>
-                        <a href="/VacinePet/conteudo/doencascachorro.php"><button type="submit" class="btn-ler">Ler
+                        <a href="/VacinePet/conteudo/doencascachorro.php"><button id="btn-cao" class="btn-ler">Ler
                                 Mais</button></a>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ body {
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="/VacinePet/conteudo/doencasgato.php"><button class="btn-ler">Ler Mais</button></a>
+                        <a href="/VacinePet/conteudo/doencasgato.php"><button id="btn-gato" class="btn-ler">Ler Mais</button></a>
                     </div>
                 </div>
             </div>
