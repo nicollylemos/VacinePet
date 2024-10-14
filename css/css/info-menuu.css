@@ -17,7 +17,7 @@
     left: 90px;
     height: 100vh;
     width: calc(100% - 250px);
-    z-index: 1; /* Mudei de -1 para 1 para garantir que não sobreponha o header */
+    z-index: -10; /* Mudei de -1 para 1 para garantir que não sobreponha o header */
 }
 
 
