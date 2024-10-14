@@ -32,7 +32,8 @@
                     </ul>
                     <ul class="menu-links">
                         <li class="nav-link"><a href="valores-alt.php"><i class="fa-solid fa-money-bill icon"></i><span
-                                    class="text nav-text">Alteração de Valores</span></a></li>
+                                    class="text nav-text">Alteração de
+                                    Valores</span></a></li>
                     </ul>
                     <li class="nav-link"><a href="adocao.php"><i class="fa-solid fa-paw icon"></i><span
                                 class="text nav-text">Adoção</span></a></li>

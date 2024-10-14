@@ -1,27 +1,52 @@
-<!--
- /**
- * @file htrc-agendamentos.php
- * @brief Página de visualização de histórico de agendamentos (disponível apenas para o profissional).
- *
- * Este arquivo contém todos os agendamentos que já foram concluídos pelo profissional.
- * 
- * O arquivo mantém a forma organizada para garantir a praticidade e organização profissional.
- *
- * @date 2024-09-20
- * @author Nicolly Lemos da Silva
- * @version 1.0
- */
--->
-<?php 
- include("../inc/header.php");
- include("sidebar-vet.php");
+<?php
+include("../inc/header.php");
+include("sidebar-vet.php");
+
+// Verifica se o usuário está autenticado
+if (!isset($_SESSION['email']) || !$_SESSION['senha_hash']) {
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../inc/login.php";';
+    echo '</script>';
+    exit;
+}
+
+// Se o usuário não for o administrador, redireciona
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
+    exit;
+}
+
+// Se chegou aqui, o usuário é o administrador e está autenticado
+$logado = $_SESSION['email'];
+
+$sql = "SELECT 
+    agendamentos.id, 
+    agendamentos.data_agendamento, 
+    agendamentos.horario_agendamento, 
+    agendamentos.servico,
+    agendamentos.situacao,
+    pet.Nome_Pet AS nome_pet, 
+    pet.Especie AS especie_pet,  
+    tutor.Nome AS nome_tutor
+FROM 
+    agendamentos
+JOIN 
+    tutor ON agendamentos.cod_tutor = tutor.Cod_Tutor
+JOIN 
+    pet ON agendamentos.cod_pet = pet.Cod_Pet
+WHERE
+    agendamentos.situacao NOT IN ('Pendente', 'Confirmado')  -- Filtra situações Cancelado e Concluído
+ORDER BY 
+    agendamentos.id;";
+
+$result = $conexao->query($sql);
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--
-    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
-    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
--->
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,7 +55,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/veterinarioo.css" />
+    <link rel="stylesheet" href="../css/css/VetEst.css" />
     <title>VacinePet</title>
 </head>
 
@@ -39,92 +64,37 @@
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1> Histórico de Agendamentos</h1>
+                    <h1> Histórico Agendamentos </h1>
                     <div class="table">
                         <table>
                             <tr>
                                 <th>Agendamento</th>
                                 <th>Data</th>
                                 <th>Hora</th>
-                                <th>Tutor</th>
+                                <th>Serviço</th>
                                 <th>Pet</th>
-                                <th>Situação</th>
-                                <th>Visualizar</th>
+                                <th>Tutor</th>
+                                <th>Situação </th>
                             </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2025</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos</td>
-                                <td>Bagu Lemos</td>
-                                <td>Pendente</td>
-                                <td>
-                                    <button onclick="modalView.showModal()"> <i class="fa-solid fa-eye"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2024</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos</td>
-                                <td>Bagu
-                                </td>
-                                <td>Pendente</td>
-                                <td>
-                                    <button onclick="modalView.showModal()"> <i class="fa-solid fa-eye"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2025</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos</td>
-                                <td>Bagu Lemos</td>
-                                <td>Pendente</td>
-                                <td>
-                                    <button onclick="modalView.showModal()"> <i class="fa-solid fa-eye"></i></button>
-                                </td>
-                            </tr>
+                            <?php
+                            while ($agendamento = mysqli_fetch_assoc($result)) {
+                                echo "<tr>";
+                                echo "<td>" . $agendamento['id'] . "</td>";
+                                echo "<td>" . date('d/m/Y', strtotime($agendamento['data_agendamento'])) . "</td>";
+                                echo "<td>" . date('H:i', strtotime($agendamento['horario_agendamento'])) . "</td>";
+                                echo "<td>" . $agendamento['servico'] . "</td>";
+                                echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
+                                echo "<td>" . $agendamento['nome_tutor'] . "</td>";
+                                echo "<td>" . $agendamento['situacao'] . "</td>"; 
+                                echo "</tr>";
+                            }
+                            ?>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-
-    <dialog class="modal" id="modalView">
-        <h1>Visualizar</h1>
-        <div class="infos">
-            <div>
-                <div class="tp-dados">Nome do Tutor:</div>
-                <p>Nicolly Lemos</p>
-            </div>
-            <div>
-                <div class="tp-dados">Nome do Pet:</div>
-                <p>Bagu Lemos
-                </p>
-            </div>
-            <div>
-                <div class="tp-dados">Data do Atendimento:</div>
-                <p>28/06/2024</p>
-            </div>
-            <div>
-                <div class="tp-dados">Horário:</div>
-                <p>16:00</p>
-            </div>
-            <div>
-                <div class="tp-dados">Endereço:</div>
-                <p>Rua Benedito de Almeida</p>
-            </div>
-            <div class="obv">
-                <div class="obv-title">Observações:</div>
-                <div class="txt">Ele é fofo e lindooo</div>
-            </div>
-        </div>
-        <button class="close" onclick=" modalView.close()">Fechar</button>
-
-    </dialog>
 
 </body>
 

@@ -1,8 +1,7 @@
 <?php 
- include("../inc/header.php");
- include("sidebar-vet.php");
-include_once('../config.php');
-
+  include("../inc/header.php");
+  include("sidebar-vet.php");
+ include_once('../config.php');
 // Verifica se o email e a senha estão definidos na sessão
 if (!isset($_SESSION['email']) || !isset($_SESSION['senha_hash'])) {
     // Se não houver sessão, redireciona para a página de login

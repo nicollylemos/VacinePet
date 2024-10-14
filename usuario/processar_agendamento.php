@@ -2,45 +2,39 @@
 // Inicia a sessão
 session_start();
 
-// Conexão com o banco de dados
 include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
 
-// Verifica se o usuário está logado
 if (!isset($_SESSION['email']) || !isset($_SESSION['senha_hash'])) {
     echo "Usuário não está logado.";
     exit;
 }
 
-// Consulta para obter o código do tutor
 $logado = $_SESSION['email'];
 $queryTutor = "SELECT cod_tutor FROM tutor WHERE email = ?";
-$stmtTutor = $conexao->prepare($queryTutor);
-$stmtTutor->bind_param('s', $logado);
-$stmtTutor->execute();
-$resultTutor = $stmtTutor->get_result();
+$decTutor = $conexao->prepare($queryTutor);
+$decTutor->bind_param('s', $logado);
+$decTutor->execute();
+$resultTutor = $decTutor->get_result();
 $rowTutor = $resultTutor->fetch_assoc();
 $cod_tutor = $rowTutor['cod_tutor'];
 
-// Dados do agendamento
+$situacao = $_POST['situacao'];
 $cod_pet = $_POST['pet'];
 $servico = $_POST['servico'];
 $dataHorarioSelecionado = $_POST['agendamento'];
 list($data_agendamento, $horario_agendamento) = explode(" ", $dataHorarioSelecionado);
 
-// Inserir o agendamento na tabela agendamentos
-$queryAgendamento = "INSERT INTO agendamentos (cod_tutor, cod_pet, data_agendamento, horario_agendamento, servico) 
-                     VALUES (?, ?, ?, ?, ?)";
-$stmtAgendamento = $conexao->prepare($queryAgendamento);
-$stmtAgendamento->bind_param('iisss', $cod_tutor, $cod_pet, $data_agendamento, $horario_agendamento, $servico);
-$stmtAgendamento->execute();
+$queryAgendamento = "INSERT INTO agendamentos (cod_tutor, cod_pet, data_agendamento, horario_agendamento, servico, situacao) 
+                     VALUES (?, ?, ?, ?, ?, ?)";
+$decAgendamento = $conexao->prepare($queryAgendamento);
+$decAgendamento->bind_param('iissss', $cod_tutor, $cod_pet, $data_agendamento, $horario_agendamento, $servico, $situacao);
+$decAgendamento->execute();
 
-// Remover o horário da tabela de dias_disponiveis
 $queryExcluir = "DELETE FROM dias_disponiveis WHERE data_disponivel = ? AND horario_disponivel = ?";
-$stmtExcluir = $conexao->prepare($queryExcluir);
-$stmtExcluir->bind_param('ss', $data_agendamento, $horario_agendamento);
-$stmtExcluir->execute();
+$decExcluir = $conexao->prepare($queryExcluir);
+$decExcluir->bind_param('ss', $data_agendamento, $horario_agendamento);
+$decExcluir->execute();
 
-// Definir uma variável para mostrar o modal
 $modalShow = true;
 ?>
 
@@ -66,7 +60,6 @@ $modalShow = true;
         padding-top: 60px;
     }
 
-
     .modal-content {
         background-color: #fff;
         margin: 5% auto;
@@ -75,7 +68,6 @@ $modalShow = true;
         width: 80%;
         max-width: 500px;
     }
-
 
     .close {
         color: #aaa;
@@ -110,7 +102,6 @@ $modalShow = true;
 
     <?php if ($modalShow): ?>
     <div id="myModal" class="modal" style="display: block;">
-
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Agendamento Confirmado!</h2>
@@ -127,7 +118,19 @@ $modalShow = true;
 
     <script>
     var modal = document.getElementById("myModal");
-
-
     var span = document.getElementsByClassName("close")[0];
-    // Quando o usuário clica no <
+    // Quando o usuário clica no "x", fecha o modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+    // Quando o usuário clica fora do modal, ele também é fechado
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+</body>
+
+</html>

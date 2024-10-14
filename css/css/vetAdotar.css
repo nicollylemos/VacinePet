@@ -5,9 +5,16 @@
 .adoc-atv{
     width:210px;
     border-radius: 20px;
-    height: 150px;
+    height: 160px;
     text-align: center;
     background-color: #52BACB;
+    display: inline-block;
+    margin:10px;
+}
+
+.adoc-atv:hover{
+    background-color: #6ecfde;
+    transition: 1s;
 }
 .ico{
     color: white;
@@ -27,6 +34,11 @@
     top: -150px;
 }
  
+.content{
+
+    width: 900px;
+    margin-top: 10px;
+}
 /*add*/
 #form{
     position: relative;

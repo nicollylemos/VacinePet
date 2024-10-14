@@ -1,6 +1,7 @@
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");
+
 // Verifica se o usuário está autenticado
 if (!isset($_SESSION['email']) || !$_SESSION['senha_hash']) {
     echo '<script type="text/javascript">';
@@ -20,14 +21,31 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 // Se chegou aqui, o usuário é o administrador e está autenticado
 $logado = $_SESSION['email'];
 
+$sql = "SELECT 
+    agendamentos.id, 
+    agendamentos.data_agendamento, 
+    agendamentos.horario_agendamento, 
+    agendamentos.servico,
+    agendamentos.situacao,
+    pet.Nome_Pet AS nome_pet, 
+    pet.Especie AS especie_pet,  
+    tutor.Nome AS nome_tutor
+FROM 
+    agendamentos
+JOIN 
+    tutor ON agendamentos.cod_tutor = tutor.Cod_Tutor
+JOIN 
+    pet ON agendamentos.cod_pet = pet.Cod_Pet
+WHERE
+    agendamentos.situacao NOT IN ('Cancelado', 'Concluído')  -- Filtra situações Cancelado e Concluído
+ORDER BY 
+    agendamentos.id;";
+
+$result = $conexao->query($sql);
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--
-    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
-    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
--->
 
 <head>
     <meta charset="UTF-8" />
@@ -37,7 +55,7 @@ $logado = $_SESSION['email'];
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/VetEstilo.css" />
+    <link rel="stylesheet" href="../css/css/VetEst.css" />
     <title>VacinePet</title>
 </head>
 
@@ -53,103 +71,44 @@ $logado = $_SESSION['email'];
                                 <th>Agendamento</th>
                                 <th>Data</th>
                                 <th>Hora</th>
-                                <th>Tutor</th>
+                                <th>Serviço</th>
                                 <th>Pet</th>
-                                <th>Situação</th>
-                                <th>...</th>
+                                <th>Tutor</th>
+                                <th>Situação </th>
+                                <th>... </th>
                             </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2025</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos</td>
-                                <td>Bagu Lemos Raimundo Carvalho</td>
-                                <td>Pendente</td>
-                                <td>
-
-                                    <!-- com variável -->
-                                    <button onclick="modalView.showModal()"> <i class="fa-solid fa-eye"></i></button>
-                                    <button onclick="modalCheck.showModal()"> <i class="fa-solid fa-check"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2025</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos</td>
-                                <td>Bagu
-                                </td>
-                                <td>Pendente</td>
-                                <td>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>28/01/2025</td>
-                                <td>16:00</td>
-                                <td>Nicolly Lemos da Silva Oliveira Santos Raimunda</td>
-                                <td>Bagu Lemos</td>
-                                <td>Pendente</td>
-                                <td>
-                                    <i class="fa-solid fa-eye"></i>
-                                    <i class="fa-solid fa-check"></i>
-                                </td>
-                            </tr>
+                            <?php
+                            while ($agendamento = mysqli_fetch_assoc($result)) {
+                                echo "<tr>";
+                                echo "<td>" . $agendamento['id'] . "</td>";
+                                echo "<td>" . date('d/m/Y', strtotime($agendamento['data_agendamento'])) . "</td>";
+                                echo "<td>" . date('H:i', strtotime($agendamento['horario_agendamento'])) . "</td>";
+                                echo "<td>" . $agendamento['servico'] . "</td>";
+                                echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
+                                echo "<td>" . $agendamento['nome_tutor'] . "</td>";
+                                echo "<td>" . $agendamento['situacao'] . "</td>"; 
+                                echo "<td>";
+                                echo "<a href='viewAgend.php?id=" . $agendamento['id'] . "'>";
+                                echo "<button>";
+                                echo"<i class='fa-solid fa-eye icon'></i>";
+                                echo"</button>";
+                                echo"</a>";
+                                echo "<a href='editAgend.php?id=" . $agendamento['id'] . "'>";
+                                echo "<button>";
+                                echo"<i class='fa-solid fa-eye icon'></i>";
+                                echo"</button>";
+                                echo"</a>";
+                                echo "</td>";
+                                echo "</tr>";
+                            }
+                            ?>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-    <dialog class="modal" id="modalView">
-        <h1>Visualizar</h1>
-        <div class="infos">
-            <div>
-                <div class="tp-dados">Nome do Tutor:</div>
-                <p>Nicolly Lemos</p>
-            </div>
-            <div>
-                <div class="tp-dados">Nome do Pet:</div>
-                <p>Bagu Lemos
-                </p>
-            </div>
-            <div>
-                <div class="tp-dados">Data do Atendimento:</div>
-                <p>28/06/2024</p>
-            </div>
-            <div>
-                <div class="tp-dados">Horário:</div>
-                <p>16:00</p>
-            </div>
-            <div>
-                <div class="tp-dados">Endereço:</div>
-                <p>Rua Benedito de Almeida</p>
-            </div>
-            <div class="obv">
-                <div class="obv-title">Observações:</div>
-                <div class="txt">Ele é fofo e lindooo</div>
-            </div>
-        </div>
-        <button class="close" onclick=" modalView.close()">Fechar</button>
 
-    </dialog>
-    <dialog class="modal" id="modalCheck">
-        <div class="modalCheck">
-            <h1>Alterar Situação</h1>
-            <p>Este agendamento está atualmente pendente.</p>
-            <div class="alt-situ">
-                <select>
-                    <option value="1">Finalizado</option>
-                    <option value="2">Cancelado</option>
-                </select>
-            </div>
-            <button class="save">Salvar</button>
-            <button class="close" onclick=" modalCheck.close()">Fechar</button>
-        </div>
-    </dialog>
 </body>
 
 </html>

@@ -38,17 +38,9 @@
                         </li>
 
                         <li class="nav-link">
-                            <a href="diario.php">
+                            <a href="meus-agend.php">
                                 <i class="fa-solid fa-calendar-days icon"></i>
                                 <span class="text nav-text">Meus Agendamentos</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="menu-links">
-                        <li class="nav-link">
-                            <a href="valores-alt.php">
-                                <i class="fa-solid fa-bell icon"></i>
-                                <span class=" text nav-text">Notificação</span>
                             </a>
                         </li>
                     </ul>

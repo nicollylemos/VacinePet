@@ -1,122 +1,149 @@
-<!--
- /**
- * @file add-pet.php
- * @brief Página de adicionar pet para adoção (disponível apenas para o profissional).
- *
- * Este arquivo contém um formulário para adicionar um novo pet para a página de adoção,
- podendo ser acessada apenas pelo profissional, com os campos de: espécie, nome (opcional),
- sexo, fase (filhote ou adulto), porte, cidade(Sorocaba ou Votorantim) e upload de foto. 
- * @date 2024-09-20
- * @author Eduarda Oliveira de Souza
- * @version 1.0
- */
--->
-<?php
-include("../inc/header.php");
-include("sidebar-vet.php");
+<?php 
+include("../inc/header.php");  
+include("sidebar-vet.php");    
+include_once('../config.php'); 
+
+// Verifica se o email e a senha estão definidos na sessão
+if (!isset($_SESSION['email']) || !isset($_SESSION['senha_hash'])) {
+    header('Location: login.php');
+    exit;
+}
+
+// Verifica se o email na sessão é diferente do permitido
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
+    unset($_SESSION['email']);
+    unset($_SESSION['senha']);
+    header('Location: login.php');
+    exit;
+}
+
+$logado = $_SESSION['email'];
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-<!--
-    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
-    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
--->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
     <link rel="stylesheet" href="../css/css/vet-adocaoo.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VacinePet</title>
+
+    <!-- Adicionando a função de preview de imagem -->
+    <script>
+    function previewImagem(event) {
+        const imgPreview = document.getElementById('imgPreview');
+        const file = event.target.files[0];
+
+        // Verifica se há um arquivo e se é uma imagem
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                imgPreview.src = e.target.result; // Define a imagem de preview
+            };
+
+            reader.readAsDataURL(file); // Lê o arquivo como URL de dados
+        }
+    }
+    </script>
 </head>
 
 <body>
 
-    <section class="agendamento-atv">
+    <section>
         <div class="container">
-            <h2 id="new" style="font-family: baloo; color:#41a4b3; font-size:38px">Nova Adoção <i
-                    class="fa-solid fa-paw pata" style="color: #41a4b3;"></i></h2>
-
-            <form id="form" action="add.php" method="post">
-                <!-- area de campos do form -->
+            <form action="adcPet.php" method="post" enctype="multipart/form-data">
+                <!-- área de campos do formulário -->
                 <div class="row">
-                    <div class="form-group col-md-7 " style="margin-bottom: 20px;">
-                        <label class="label">Espécie:</label>
-                        <select id="form-control">
+                    <h2 id="new">Nova Adoção <i class="fa-solid fa-paw pata"></i></h2>
+
+                    <!-- Espécie -->
+                    <div>
+                        <label>Espécie:</label>
+                        <select name="pet_especie">
                             <option>Gato</option>
                             <option>Cachorro</option>
                         </select>
                     </div>
 
-                    <div class="form-group col-md-3" style="margin-bottom: 20px;">
-                        <label class="label">Nome:</label>
-                        <input type="text" maxlength="11" class="form-control" name="customer['cpf_cnpj']">
+                    <!-- Nome -->
+                    <div>
+                        <label>Nome:</label>
+                        <input type="text" maxlength="11" name="pet_nome">
                     </div>
 
-                    <div class="form-group col-md-2" style="margin-bottom: 20px;">
-                        <label class="label">Sexo:</label>
-                        <select id="form-control">
+                    <!-- Sexo -->
+                    <div>
+                        <label>Sexo:</label>
+                        <select name="pet_sexo">
                             <option>Macho</option>
                             <option>Fêmea</option>
                         </select>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="form-group col-md-5" style="margin-bottom: 20px;">
-                        <label class="label">Fase:</label>
-                        <select id="form-control">
-                            <option>Filhote</option>
-                            <option>Adulto</option>
-                        </select>
-                    </div>
+                <!-- Fase -->
+                <div>
+                    <label>Fase:</label>
+                    <select name="pet_fase">
+                        <option>Filhote</option>
+                        <option>Adulto</option>
+                    </select>
                 </div>
 
-                <div class="form-group col-md-3" style="margin-bottom: 20px;">
-                    <label class="label">Porte:</label>
-                    <select id="form-control">
+                <!-- Porte -->
+                <div>
+                    <label>Porte:</label>
+                    <select name="pet_porte">
                         <option>Pequeno</option>
                         <option>Médio</option>
                         <option>Grande</option>
                     </select>
                 </div>
 
-                <div class="form-group col-md-3" style="margin-bottom: 20px;">
-                    <label class="label">Cidade:</label>
-                    <select id="form-control">
+                <!-- Cidade -->
+                <div>
+                    <label>Cidade:</label>
+                    <select name="pet_cidade">
                         <option>Sorocaba - SP</option>
                         <option>Votorantim - SP</option>
                     </select>
                 </div>
 
-                <div class="row">
-                    <div class="form-group col-md-3" style="margin-bottom: 20px;">
-                        <label class="label" for="foto">Foto:</label>
-                        <input type="file" maxlength="8" class="form-picture" id="foto" name="foto">
-                    </div>
-                    <div class="form-group col-md-3" style="margin-bottom: 20px;">
-                        <img maxlength="8" class="form-picture shadow rounded p-2 mb-2 bg-body" id="imgPreview"
-                            src="../imgs/semimagem.png">
-                    </div>
+                <!-- Campo de upload de foto -->
+                <div>
+                    <label for=" foto">Foto:</label>
+                    <input type="file" id="foto" name="pet_foto_pet" accept="image/*" onchange="previewImagem(event)">
                 </div>
 
-                <div id="actions" class="row mt-2" style="margin-bottom: 20px;">
-                    <div class="col-md-12">
-                        <button type="submit" class="btn btn-warning" style="background-color:#52BACB; color: white; font-family: baloo; border-color: #52BACB; width: 100px; font-size: 15px; border-radius: 20px;"> Salvar</button>
-                        <button  style="background-color:#B5B5B5;  font-family: baloo; border-color: #B5B5B5; width: 100px; font-size: 15px; border-radius: 20px;"><a style="color: white; text-decoration: none; font-family: baloo; font-size: 15px;" href="adocao.php" class="btn btn-outline-secondary">
-                            Voltar</a> </button>
-                    </div>
+                <!-- Imagem de preview -->
+                <div>
+                    <img id="imgPreview" src="../imgs/semimagem.png"
+                        class="form-picture shadow rounded p-2 mb-2 bg-body" alt="Preview da Imagem"
+                        style="max-width: 300px; max-height: 300px;" />
                 </div>
 
-               
+                <!-- Botões de ação -->
+                <div>
+                    <button type="submit" class="btn-salvar">Salvar</button>
+                    <button class="btn-voltar">
+                        <a href="adocao.php">Voltar</a>
+                    </button>
+                </div>
             </form>
         </div>
     </section>
+
 </body>
 
 </html>

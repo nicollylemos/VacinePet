@@ -24,12 +24,13 @@ include("sidebar-vet.php");
     * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
     * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
 -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
-    <link rel="stylesheet" href="../css/css/vet-adocaoo.css" />
+    <link rel="stylesheet" href="../css/css/vetAdotar.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -43,7 +44,7 @@ include("sidebar-vet.php");
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1> Adoção</h1>
+
                     <div class="row">
                         <div class="adoc-atv">
                             <a href="add-pet.php" style="text-decoration: none;">
@@ -58,7 +59,7 @@ include("sidebar-vet.php");
                             </a>
                         </div>
 
-                        <div id="vizu" class="adoc-atv">
+                        <div class="adoc-atv">
                             <a href="visualizar-pet.php" style="text-decoration: none;">
                                 <div class="row">
                                     <div class="col-xs-12 text-center p-0">
@@ -70,24 +71,14 @@ include("sidebar-vet.php");
                                 </div>
                             </a>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <dialog class="modal" id="modalEdit">
-        <div class="modalEdit">
-            <h1>Editar Valor</h1>
-            <p>Valor atual:</p>
-            <div>R$ 149,99</div>
-            <p>Novo valor:</p>
-            <input type="number" maxlength="5" placeholder="Novo Valor" class="form-control" name="valor">
-        </div>
-        <button class="save">Salvar</button>
-        <button class="close" onclick=" modalEdit.close()">Fechar</button>
-        </div>
-    </dialog>
+
 
 </body>
 
