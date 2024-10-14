@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre o VacinePet - VacinePet</title>
-    <link rel="stylesheet" href="../css/css/sidebar-menu.css">
+    <link rel="stylesheet" href="../css/css/sidebarMenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 </head>
 
@@ -57,7 +57,7 @@
                                 <span class="text nav-text"> Vacinação em domicílio</span>
                             </a>
                         </li>
-                        
+
                         <li class="nav-link">
                             <a href="pagamento.php">
                                 <i class="fa-solid fa-cash-register icon"></i>

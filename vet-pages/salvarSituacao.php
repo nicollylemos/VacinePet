@@ -14,7 +14,6 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
     header('Location: login.php');
-    exit;
 }
 
 if (isset($_POST['update'])) {

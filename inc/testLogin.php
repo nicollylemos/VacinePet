@@ -22,11 +22,16 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
             header('Location: sistema.php');
             exit();
         } else {
-            echo "Falha ao logar: senha incorreta";
-
+            // Define a mensagem de erro
+            $_SESSION['login_erro'] = "Falha ao logar: senha incorreta";
+            header('Location: login.php');
+            exit();
         }
     } else {
-        echo "Falha ao logar: usuário não encontrado";
+        // Define a mensagem de erro
+        $_SESSION['login_erro'] = "Falha ao logar: usuário não encontrado";
+        header('Location: login.php');
+        exit();
     }
 } else {
     // Redireciona para a página de login se os campos estiverem vazios

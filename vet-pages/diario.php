@@ -13,6 +13,13 @@
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");
+
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,6 +27,7 @@ include("sidebar-vet.php");
     * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
     * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
 -->
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />

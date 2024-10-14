@@ -17,6 +17,13 @@
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");
+
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

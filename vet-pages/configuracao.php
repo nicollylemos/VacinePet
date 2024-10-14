@@ -1,6 +1,13 @@
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");
+include("../config.php");
+
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
+}
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

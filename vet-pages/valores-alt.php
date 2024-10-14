@@ -5,17 +5,16 @@ include_once('../config.php');
 
 // Verifica se o email e a senha estão definidos na sessão
 if (!isset($_SESSION['email']) || !isset($_SESSION['senha_hash'])) {
-    // Se não houver sessão, redireciona para a página de login
-    header('Location: login.php');
-    exit;
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
 }
 
-// Verifica se o email na sessão é diferente do permitido
 if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
-    unset($_SESSION['email']);
-    unset($_SESSION['senha']);
-    header('Location: login.php');
-    exit;
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
+ 
 }
 
 // Caso contrário, o usuário está autenticado e pode acessar a página

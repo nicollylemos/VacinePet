@@ -3,7 +3,12 @@ include("../inc/header.php");
 include("sidebar-vet.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
 
-
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
+    exit;
+}
 
 
 ?>

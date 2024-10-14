@@ -7,7 +7,6 @@ if (!isset($_SESSION['email']) || !$_SESSION['senha_hash']) {
     echo '<script type="text/javascript">';
     echo 'window.location.href = "../inc/login.php";';
     echo '</script>';
-    exit;
 }
 
 // Se o usuário não for o administrador, redireciona
@@ -15,7 +14,6 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     echo '<script type="text/javascript">';
     echo 'window.location.href = "../index.php";';
     echo '</script>';
-    exit;
 }
 
 // Se chegou aqui, o usuário é o administrador e está autenticado
