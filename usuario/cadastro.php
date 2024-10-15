@@ -11,50 +11,109 @@ if (isset($_POST['submit'])) {
     $email = $_POST['tutor_email'];
     $senha = password_hash($_POST['tutor_senha'], PASSWORD_DEFAULT);
 
-    $result = mysqli_query($conexao, "INSERT INTO tutor( nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
+    // Validação dos campos obrigatórios
+    $erros = [];
+    if (empty($nome) || strlen($nome) < 3) {
+        $erros['tutor_nome'] = 'Nome deve ter no mínimo 3 caracteres.';
+    }
+    if (empty($datanasc)) {
+        $erros['tutor_datanasc'] = 'Data de nascimento é obrigatória.';
+    }
+    if (empty($cpf)) {
+        $erros['tutor_cpf'] = 'CPF é obrigatório.';
+    }
+    if (empty($telefone)) {
+        $erros['tutor_telefone'] = 'Telefone é obrigatório.';
+    }
+    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $erros['tutor_email'] = 'Email inválido.';
+    }
+    if (empty($_POST['tutor_senha']) || strlen($_POST['tutor_senha']) < 8) {
+        $erros['tutor_senha'] = 'Senha deve ter no mínimo 8 caracteres.';
+    }
 
-    if ($result) {
-        // Obter o ID do tutor inserido
-        $cod_tutor = mysqli_insert_id($conexao);
+    // Validação dos campos do endereço
+    $rua = $_POST['end_rua'];
+    $numero = $_POST['end_numero'];
+    $bairro = $_POST['end_bairro'];
+    $cep = $_POST['end_cep'];
+    $cidade = $_POST['end_cidade'];
 
-        // Informações do endereço
-        $rua = $_POST['end_rua'];
-        $numero = $_POST['end_numero'];
-        $complemento = $_POST['end_complemento'];
-        $bairro = $_POST['end_bairro'];
-        $cep = $_POST['end_cep'];
-        $cidade = $_POST['end_cidade'];
+    if (empty($rua)) {
+        $erros['end_rua'] = 'Rua é obrigatória.';
+    }
+    if (empty($numero)) {
+        $erros['end_numero'] = 'Número é obrigatório.';
+    }
+    if (empty($bairro)) {
+        $erros['end_bairro'] = 'Bairro é obrigatório.';
+    }
+    if (empty($cep)) {
+        $erros['end_cep'] = 'CEP é obrigatório.';
+    }
+    if (empty($cidade)) {
+        $erros['end_cidade'] = 'Cidade é obrigatória.';
+    }
 
-       
-        $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
+    // Validação dos campos do pet
+    $nome_pet = $_POST['pet_nome'];
+    $sexo = $_POST['pet_sexo'];
+    $idade = $_POST['pet_idade'];
+    $castracao = $_POST['pet_castracao'];
+    $porte = $_POST['pet_porte'];
+    $especie = $_POST['pet_especie'];
 
-        // Informações do Pet
-        $nome_pet = $_POST['pet_nome'];
-        $sexo = $_POST['pet_sexo'];
-        $idade = $_POST['pet_idade'];
-        $castracao = $_POST['pet_castracao'];
-        $porte = $_POST['pet_porte'];
-        $especie = $_POST['pet_especie'];
-        $historico = $_POST['pet_historico'];
-        $raca = $_POST['pet_raca'];
-        $foto_pet = $_POST['pet_foto_pet'];
+    if (empty($nome_pet)){
+        $erros['pet_nome'] = 'Nome do pet é obrigatório.';
+    }
+    if (empty($sexo)) {
+        $erros['pet_sexo'] = 'Sexo do pet é obrigatório.';
+    }
+    if (empty($idade)) {
+        $erros['pet_idade'] = 'Idade do pet é obrigatória.';
+    }
+    if (empty($castracao)) {
+        $erros['pet_castracao'] = 'Status de castração é obrigatório.';
+    }
+    if (empty($porte)) {
+        $erros['pet_porte'] = 'Porte do pet é obrigatório.';
+    }
+    if (empty($especie)) {
+        $erros['pet_especie'] = 'Espécie do pet é obrigatória.';
+    }
 
+    // Se houver erros, não insere no banco de dados
+    if (!empty($erros)) {
+        foreach ($erros as $erro) {
+            echo $erro . '<br>';
+        }
+        mysqli_close($conexao);
+    } else {
+        // Insira os dados do tutor no banco de dados
+        $result = mysqli_query($conexao, "INSERT INTO tutor(nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
 
+        if ($result) {
+            // Obter o ID do tutor inserido
+            $cod_tutor = mysqli_insert_id($conexao);
 
-        $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
+            // Insere as informações do endereço no banco de dados
+            $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '{$_POST['end_complemento']}', '$bairro', '$cep', '$cidade', '$cod_tutor')");
 
-        if ($result && $result_endereco && $result_pet) {
-            // Se tudo der certo, redireciona
-            header("Location: ../inc/login.php");
-            exit;
-        } else {
-            echo "Erro ao salvar no banco de dados.";
+            // Insere as informações do pet no banco de dados
+            $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '{$_POST['pet_historico']}', '{$_POST['pet_raca']}', '{$_POST['pet_foto_pet']}', '$cod_tutor')");
+
+            // Verifica se todas as inserções foram bem-sucedidas
+            if ($result_endereco && $result_pet) {
+                // Se tudo der certo, redireciona para a página de login
+                header("Location: ../inc/login.php");
+                exit;
+            } else {
+                echo "Erro ao salvar no banco de dados.";
+            }
         }
     }
 
 
-    // Fecha a conexão
-    mysqli_close($conexao);
 }
 ?>
 
@@ -73,6 +132,9 @@ if (isset($_POST['submit'])) {
     .hidden {
         display: none;
     }
+    .error {
+            border: 2px solid red;
+        }
     </style>
     <title>Cadastro de Tutor</title>
 </head>
@@ -104,7 +166,7 @@ if (isset($_POST['submit'])) {
             </h3>
         </div>
         <div class="form">
-            <form id="form" action="cadastro.php" method="POST">
+            <form id="form" action="cadastro.php" method="POST" novalidate>
                 <div id="etapa1" class="etapa">
                     <div class="title">
                         <h1 class="title-title">CADASTRO</h1>
@@ -242,11 +304,11 @@ if (isset($_POST['submit'])) {
 
                             <div class="col">
                                 <input type="text" maxlength="255" placeholder="Nome do Pet"
-                                    class="form-control frm-ctrl required" name="pet_nome">
+                                    class="form-control frm-ctrl required" name="pet_nome" id="nome_pet">
                                 <input type="text" placeholder="Raça do Pet" maxlength="255"
-                                    class="form-control frm-ctrl required" name="pet_raca">
+                                    class="form-control frm-ctrl required" name="pet_raca" id="raca_pet">
                                 <input type="number" maxlength="2" placeholder="Idade do Pet"
-                                    class="form-control frm-ctrl required" name="pet_idade">
+                                    class="form-control frm-ctrl required" name="pet_idade" id="idade_pet">
 
                             </div>
                         </div>
@@ -296,6 +358,52 @@ if (isset($_POST['submit'])) {
 
             </form>
 </body>
+
+<script>
+    document.getElementById('form').addEventListener('submit', function (event) {
+        // Obtém todos os campos do formulário
+        const campos = [
+            { name: 'tutor_nome', element: document.getElementById('nome') },
+            { name: 'tutor_datanasc', element: document.getElementById('datanasc') },
+            { name: 'tutor_cpf', element: document.getElementById('cpf') },
+            { name: 'tutor_telefone', element: document.getElementById('telefone') },
+            { name: 'tutor_email', element: document.getElementById('email') },
+            { name: 'tutor_senha', element: document.getElementById('senha') },
+            //end
+            { name: 'end_rua', element: document.getElementById('rua') },
+            { name: 'end_numero', element: document.getElementById('numero') },
+            { name: 'end_bairro', element: document.getElementById('bairro') },
+            { name: 'end_cep', element: document.getElementById('cep') },
+            { name: 'end_cidade', element: document.getElementById('cidade') },
+            //pet
+            
+            
+         
+            
+        ];
+
+        let valid = true;
+
+        // Limpa os estilos de erro
+        campos.forEach(campo => {
+            campo.element.classList.remove('error');
+        });
+
+        // Verifica se cada campo obrigatório está preenchido
+        campos.forEach(campo => {
+            if (!campo.element.value || (campo.name === 'tutor_nome' && campo.element.value.length < 3) || (campo.name === 'tutor_senha' && campo.element.value.length < 8)) {
+                campo.element.classList.add('error');
+                valid = false;
+            }
+        });
+
+        // Se algum campo não for válido, cancela o envio do formulário
+        if (!valid) {
+            event.preventDefault();
+            alert('Por favor, preencha todos os campos obrigatórios corretamente.');
+        }
+    });
+</script>
 
 <script>
 /Validação dos campos/
