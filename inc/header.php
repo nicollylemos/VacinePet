@@ -204,7 +204,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
         display: block;
     }
 
-    @media screen and (max-width: 1294px) {
+    @media screen and (max-width: 1309px) {
         .buttons {
             position: relative;
             top: -70px;
@@ -235,7 +235,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
         }
     }
 
-    @media screen and (max-width: 1294px) {
+    @media screen and (max-width: 1309px) {
         .topnav.responsive {
             position: relative;
             flex-direction: column;

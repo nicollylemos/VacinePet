@@ -186,7 +186,7 @@ body {
                 continuar.</p>
             <a href="/VacinePet/inc/login.php" class="logar"><button class="entrar"
                     style="border-radius:10px;">Entrar</button></a>
-            <p>Não tem uma conta? <a href="/VacinePet/usuario/cadastro.php" class="cadastrar">Se cadastre aqui!</a></p>
+            <p>Não tem uma conta? <a href="/VacinePet/usuario/cadastro.php" class="cadastrar">Cadastre-se aqui!</a></p>
 
         </div>
     </dialog>

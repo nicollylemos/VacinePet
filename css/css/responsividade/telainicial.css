@@ -2988,7 +2988,94 @@
         top: -5px;
     }
 }
-@media (min-width:1172px) and (max-width: 1300px){
+@media (min-width:1172px) and (max-width: 1172px){
+    #icon{
+        font-size: 30px;
+        position: relative;
+        left: -10px;
+    }
+    .tela-inicial{
+        background-image: url(imgs/background-inicial.svg);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .info-inicial{
+        position: relative;
+        left: -60px;
+    }
+    .titulo-site{
+        position: relative;
+        top: -65px;
+        font-size: 90px;
+    }
+    .subtitulo-site{
+        position: relative;
+        top: -75px;
+        font-size: 22px;
+    }
+    #sub{
+        position: relative;
+        top: -60px;
+        font-size: 19px;
+        width: 500px;
+        text-align: left;
+    }
+    .btn-inicio{
+        left: 5px;
+        top: -50px;
+        position: relative;
+    }
+    .informacao {
+        position: relative;
+        top: 320px;
+        width: 1300px;
+        height: 200px;
+    }
+    #info-cao{
+        position: relative;
+        left: -5px;
+        top: -50px;
+        background-position: calc(0% + 180px) calc(50% + 25px);
+    }
+    #info-gato{
+        position: relative;
+        left: 5px;
+        top: -50px;
+        background-position: calc(0% + 180px) calc(50% + 25px);;
+    }
+    #vmp{
+        font-size: 50px;
+    }
+    .recado{
+        position: relative;
+        text-align: center;
+        width: 900px;
+        height: 100px;
+        left: 165px;
+    }
+    .btn-vacinas{
+        width: 200px;
+    }
+    .conteudo-atend{
+        position: relative;
+        left: -30px;
+        top: 130px;
+    }
+    .como{
+        width: 700px;
+    }
+    .p-text{
+        position: relative;
+        top: 10px;
+    }
+    .btn-ler-atend{
+        position: relative;
+        top: 20px;
+    }
+
+}
+@media (min-width:1173px) and (max-width: 1300px){
     #icon{
         font-size: 30px;
         position: relative;

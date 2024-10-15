@@ -12,7 +12,7 @@ include("../inc/header.php");
     <title>VacinePet</title>
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
-    <link rel="stylesheet" href="../css/css/responsividade/footer-resp.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telapoliticas.css">
 </head>
 
 <body>
@@ -20,8 +20,8 @@ include("../inc/header.php");
         <div class="content">
             <div class="header"></div>
             <div class="content-about">
-                <h1>Políticas de Privacidade</h1>
-                <h2>Protegendo seus dados e garantindo segurança.</h2>
+                <h1 id="title">Políticas de Privacidade</h1>
+                <h2 id="subtitle">Protegendo seus dados e garantindo segurança.</h2>
                 <div class="content-txt one">
                     <p>No VacinePet, a sua privacidade é uma de nossas maiores prioridades. Entendemos a importância de
                         proteger as informações pessoais que você nos confia ao utilizar nossos serviços, e estamos
@@ -61,7 +61,7 @@ include("../inc/header.php");
                     Ao analisar como nossos usuários interagem com a plataforma, podemos identificar áreas de melhoria e
                     implementar ajustes que tornem sua experiência mais personalizada e eficiente.</p>
             </div>
-            <h3 class="subtitle">Compartilhamento de Informações</h3>
+            <h3  class="subtitle">Compartilhamento de Informações</h3>
             <div class="content-txt two">
                 <p>Nós não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para a
                     prestação dos serviços ou conforme exigido por lei. Em alguns casos, podemos precisar compartilhar
@@ -95,14 +95,6 @@ include("../inc/header.php");
                     mediante solicitação, e responderemos prontamente a todas as suas solicitações
                 </p>
             </div>
-            <h3 class="subtitle">Alterações na Política de Privacidade</h3>
-            <div class="content-txt two">
-                <p>
-                    O VacinePet reserva-se o direito de atualizar esta política de privacidade conforme necessário.
-                    Todas as alterações serão comunicadas por meio de avisos no site, e a versão atualizada entrará em
-                    vigor imediatamente após sua publicação.
-                </p>
-            </div>
             <h3 class="subtitle">Contato</h3>
             <div class="content-txt two">
                 <p>
@@ -111,10 +103,10 @@ include("../inc/header.php");
                 </p>
             </div>
             <br>
-            <hr>
+            <hr class="line">
             <div class="container-end">
-                <p>Gostou? Agende agora uma consulta no VacinePet!</p>
-                <a href="../agendamento.php"><button type=" button">Agendar agora!</button></a>
+                <p id="fim">Gostou? Agende agora uma consulta no VacinePet!</p>
+                <a href="../agendamento.php"><button class="btn-fim" type=" button">Agendar agora!</button></a>
             </div>
         </div>
         </div>

@@ -8,13 +8,19 @@ include("../inc/header.php");
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>VacinePet</title>
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
     <link rel="stylesheet" href="../css/css/responsividade/telasobre.css">
 </head>
+
+<style>
+    .home {
+        top: 10px;
+    }
+</style>
 
 <body>
     <section class="home">

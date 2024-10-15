@@ -12,7 +12,7 @@ include("../inc/header.php");
     <title>VacinePet</title>
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
-    <link rel="stylesheet" href="../css/css/responsividade/footer-resp.css">
+    <link rel="stylesheet" href="../css/css/responsividade/teladireitos.css">
 </head>
 
 <body>
