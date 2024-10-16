@@ -1,6 +1,7 @@
 <?php
-include("sidebar-menu.php");
 include("../inc/header.php");
+include("sidebar-menu.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -10,9 +11,15 @@ include("../inc/header.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VacinePet</title>
-    <link rel="stylesheet" href="../css/css/info-menuu.css">
+    <link rel="stylesheet" href="../css/css/InfoMenu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
     <link rel="stylesheet" href="../css/css/responsividade/telapoliticas.css">
+    <style>
+    .sidebar {
+
+        height: 270vh;
+    }
+    </style>
 </head>
 
 <body>
@@ -61,7 +68,7 @@ include("../inc/header.php");
                     Ao analisar como nossos usuários interagem com a plataforma, podemos identificar áreas de melhoria e
                     implementar ajustes que tornem sua experiência mais personalizada e eficiente.</p>
             </div>
-            <h3 id="sub-sub"  class="subtitle">Compartilhamento de Informações</h3>
+            <h3 id="sub-sub" class="subtitle">Compartilhamento de Informações</h3>
             <div class="content-txt two">
                 <p>Nós não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para a
                     prestação dos serviços ou conforme exigido por lei. Em alguns casos, podemos precisar compartilhar

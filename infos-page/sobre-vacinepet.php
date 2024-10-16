@@ -1,6 +1,9 @@
 <?php
-include("sidebar-menu.php");
 include("../inc/header.php");
+include("sidebar-menu.php");
+
+
+
 
 ?>
 
@@ -11,15 +14,30 @@ include("../inc/header.php");
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>VacinePet</title>
-    <link rel="stylesheet" href="../css/css/info-menuu.css">
+    <link rel="stylesheet" href="../css/css/InfoMenu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
     <link rel="stylesheet" href="../css/css/responsividade/telasobre.css">
 </head>
 
 <style>
-    .home {
-        top: 10px;
-    }
+.home {
+    top: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.sidebar {
+
+    height: 200vh;
+}
+</style>
 </style>
 
 <body>
