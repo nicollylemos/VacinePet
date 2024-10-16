@@ -184,9 +184,8 @@
                 <li>
                     <h2>Políticas e Termos</h2>
                 </li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termo de Uso</a></li>
-                <li><a href="#">Direitos Autorais</a></li>
+                <li><a href="infos-page/politicas-privacidade.php">Política de Privacidade</a></li>
+                <li><a href="infos-page/direitos.php">Direitos Autorais</a></li>
             </ul>
             <ul>
                 <li>

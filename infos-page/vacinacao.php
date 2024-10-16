@@ -12,7 +12,7 @@ include("../inc/header.php");
     <title>VacinePet</title>
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
-    <link rel="stylesheet" href="../css/css/responsividade/footer-resp.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telavacinacao.css">
 </head>
 
 <body>
@@ -20,8 +20,8 @@ include("../inc/header.php");
         <div class="content">
             <div class="header"></div>
             <div class="content-about">
-                <h1>Vacinação em domicílio</h1>
-                <h2>Facilitando o acesso à saúde animal com praticidade e conforto.</h2>
+                <h1 id="title">Vacinação em domicílio</h1>
+                <h2 id="subtitle">Facilitando o acesso à saúde animal com praticidade e conforto.</h2>
                 <div class="content-txt one">
                     <p>A vacinação é um aspecto essencial dos cuidados com a saúde dos nossos animais de estimação, como
                         cães e gatos. Para facilitar esse processo, muitos serviços oferecem a opção de vacinação
@@ -30,14 +30,14 @@ include("../inc/header.php");
             </div>
             <!-- <div class="pet-img">
         </div>-->
-            <h3 class="subtitle">Agendamento da Vacinação</h3>
+            <h3 id="sub-sub" class="subtitle">Agendamento da Vacinação</h3>
             <div class="content-txt two">
                 <p>O primeiro passo para a vacinação domiciliar é realizar o agendamento através do nosso site. Basta
                     selecionar a data desejada e fornecer o endereço onde o atendimento será realizado. É uma maneira
                     prática de garantir que seu animal receba as vacinas necessárias sem a necessidade de sair de casa.
                 </p>
             </div>
-            <h3 class="subtitle">Atendimento da Veterinária</h3>
+            <h3 id="sub-sub" class="subtitle">Atendimento da Veterinária</h3>
             <div class="content-txt two">
                 <p>
                     No dia agendado, uma veterinária qualificada se dirigirá ao endereço cadastrado. Com a formação
@@ -45,7 +45,7 @@ include("../inc/header.php");
                     vacinas escolhidas. Durante a visita, a veterinária também pode oferecer orientações sobre cuidados
                     gerais e responder a quaisquer dúvidas que os tutores possam ter.</p>
             </div>
-            <h3 class="subtitle">Cuidados após a Vacinação</h3>
+            <h3 id="sub-sub" class="subtitle">Cuidados após a Vacinação</h3>
             <div class="content-txt two">
                 <p>Após a aplicação das vacinas, a veterinária fornecerá um aviso importante: é comum que alguns animais
                     apresentem efeitos colaterais, que podem variar conforme a vacina administrada. Os efeitos podem
@@ -57,10 +57,10 @@ include("../inc/header.php");
                 </p>
             </div>
             <br>
-            <hr>
+            <hr class="line">
             <div class="container-end">
-                <p>Gostou? Agende agora uma consulta no VacinePet!</p>
-                <a href="../agendamento.php"><button type=" button">Agendar agora!</button></a>
+                <p id="fim">Gostou? Agende agora uma consulta no VacinePet!</p>
+                <a href="../agendamento.php"><button class="btn-fim" type=" button">Agendar agora!</button></a>
             </div>
         </div>
         </div>

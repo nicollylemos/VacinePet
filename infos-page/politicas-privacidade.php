@@ -33,7 +33,7 @@ include("../inc/header.php");
             </div>
             <!-- <div class="pet-img">
         </div>-->
-            <h3 class="subtitle">Informações que Coletamos</h3>
+            <h3 id="sub-sub" class="subtitle">Informações que Coletamos</h3>
             <div class="content-txt two">
                 <p>Para utilizar os serviços do VacinePet, solicitamos algumas informações pessoais no momento do
                     cadastro, incluindo seu nome, e-mail, endereço, senha e dados do seu pet, como nome, raça e idade.
@@ -41,7 +41,7 @@ include("../inc/header.php");
                     consultas.
                 </p>
             </div>
-            <h3 class="subtitle">Como Usamos Suas Informações</h3>
+            <h3 id="sub-sub" class="subtitle">Como Usamos Suas Informações</h3>
             <div class="content-txt two">
                 <p>
                     As informações que você nos fornece ao se cadastrar no VacinePet são fundamentais para garantir que
@@ -61,7 +61,7 @@ include("../inc/header.php");
                     Ao analisar como nossos usuários interagem com a plataforma, podemos identificar áreas de melhoria e
                     implementar ajustes que tornem sua experiência mais personalizada e eficiente.</p>
             </div>
-            <h3  class="subtitle">Compartilhamento de Informações</h3>
+            <h3 id="sub-sub"  class="subtitle">Compartilhamento de Informações</h3>
             <div class="content-txt two">
                 <p>Nós não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para a
                     prestação dos serviços ou conforme exigido por lei. Em alguns casos, podemos precisar compartilhar
@@ -69,7 +69,7 @@ include("../inc/header.php");
                     esses parceiros respeitem as normas de privacidade e segurança.
                 </p>
             </div>
-            <h3 class="subtitle">Armazenamento e Segurança</h3>
+            <h3 id="sub-sub" class="subtitle">Armazenamento e Segurança</h3>
             <div class="content-txt two">
                 <p>
                     As informações pessoais fornecidas ao VacinePet são armazenadas de maneira segura. Tomamos medidas
@@ -78,7 +78,7 @@ include("../inc/header.php");
                     cumprir as finalidades descritas nesta política ou conforme exigido por lei.
                 </p>
             </div>
-            <h3 class="subtitle">Direitos dos Usuários</h3>
+            <h3 id="sub-sub" class="subtitle">Direitos dos Usuários</h3>
             <div class="content-txt two">
                 <p>
                     Você tem o direito de acessar, corrigir ou excluir suas informações pessoais a qualquer momento.
@@ -87,7 +87,7 @@ include("../inc/header.php");
                     equipe de suporte por meio do e-mail fornecido abaixo.
                 </p>
             </div>
-            <h3 class="subtitle">Consentimento</h3>
+            <h3 id="sub-sub" class="subtitle">Consentimento</h3>
             <div class="content-txt two">
                 <p>
                     Ao utilizar nossos serviços, você consente com a coleta e o uso de suas informações conforme
@@ -95,7 +95,7 @@ include("../inc/header.php");
                     mediante solicitação, e responderemos prontamente a todas as suas solicitações
                 </p>
             </div>
-            <h3 class="subtitle">Contato</h3>
+            <h3 id="sub-sub" class="subtitle">Contato</h3>
             <div class="content-txt two">
                 <p>
                     Se você tiver alguma dúvida sobre esta política de privacidade ou quiser exercer seus direitos em

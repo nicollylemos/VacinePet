@@ -1,75 +1,213 @@
 @media (min-width:310px) and (max-width: 410px) {
-
     html,
     body {
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
-
     .home .header {
         display: none;
     }
 
     #title {
         position: relative;
-        left: -30px;
+        left: -70px;
         top: 25px;
         font-size: 35px;
         line-height: 40px;
-        width: 200px;
+        width: 300px;
     }
 
     #subtitle {
-        font-size: 15px;
+        font-size: 18px;
         position: relative;
-        left: -50px;
-        top: 45px;
-        width: 250px;
+        left: -20px;
+        margin-top: 40px;
+        width: 200px;
         line-height: 15px;
-        height: 70px;
+    }
+    #sub-sub{
+        font-size: 30px !important;
+        width: 300px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
     }
 
     .home .content p {
         text-align: left;
         position: relative;
-        top: -5px;
+        top: -25px;
     }
 
     .content-txt {
         position: relative;
-        left: -60px;
+        left: -70px;
         width: 300px;
+        top: 20px;
     }
 
     .line {
         position: relative;
         left: -30px;
         width: 200px;
-        top: -5px;
+        top: -20px;
     }
 
     #fim {
         width: 300px;
         position: relative;
         left: -80px;
-        top: -15px;
         text-align: center;
     }
 
     .btn-fim {
         position: relative;
-        left: -30px;
+        left: -20px;
         top: -20px;
     }
 }
-@media (min-width:411px) and (max-width: 500px) {
-
+@media (min-width:411px) and (max-width: 490px) {
     html,
     body {
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
+    .home .header {
+        display: none;
+    }
 
+    #title {
+        position: relative;
+        left: -50px;
+        top: 25px;
+        font-size: 35px;
+        line-height: 40px;
+        width: 300px;
+    }
+
+    #subtitle {
+        font-size: 18px;
+        position: relative;
+        left: -5px;
+        margin-top: 40px;
+        width: 200px;
+        line-height: 15px;
+    }
+    #sub-sub{
+        font-size: 30px !important;
+        width: 300px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
+    }
+
+    .home .content p {
+        text-align: left;
+        position: relative;
+        top: -25px;
+    }
+
+    .content-txt {
+        position: relative;
+        left: -70px;
+        width: 355px;
+        top: 20px;
+    }
+
+    .line {
+        position: relative;
+        left: -30px;
+        width: 300px !important;
+        top: -20px;
+    }
+
+    #fim {
+        width: 350px;
+        position: relative;
+        left: -60px;
+        text-align: center;
+    }
+
+    .btn-fim {
+        position: relative;
+        left: 10px;
+        top: -20px;
+    }
+}
+@media (min-width:491px) and (max-width: 530px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .home .header {
+        display: none;
+    }
+
+    #title {
+        position: relative;
+        left: -70px;
+        top: 25px;
+        font-size: 30px;
+        line-height: 40px;
+        width: 400px;
+    }
+
+    #subtitle {
+        font-size: 15px;
+        position: relative;
+        left: -25px;
+        margin-top: 40px;
+        width: 300px;
+        line-height: 15px;
+    }
+    #sub-sub{
+        font-size: 30px !important;
+        width: 400px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
+    }
+
+    .home .content p {
+        text-align: left;
+        position: relative;
+        top: -25px;
+    }
+
+    .content-txt {
+        position: relative;
+        left: -70px;
+        width: 410px;
+        top: 20px;
+    }
+
+    .line {
+        position: relative;
+        left: -30px;
+        width: 310px !important;
+        top: -20px;
+    }
+
+    #fim {
+        width: 400px;
+        position: relative;
+        left: -80px;
+        text-align: center;
+    }
+
+    .btn-fim {
+        position: relative;
+        left: 10px;
+        top: -20px;
+    }
+}
+@media (min-width:531px) and (max-width: 600px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
     .home .header {
         display: none;
     }
@@ -80,235 +218,253 @@
         top: 25px;
         font-size: 35px;
         line-height: 40px;
-        width: 300px;
-    }
-
-    #subtitle {
-        font-size: 15px;
-        position: relative;
-        left: -50px;
-        top: 45px;
-        width: 350px;
-        line-height: 15px;
-        height: 70px;
-    }
-
-    .home .content p {
-        text-align: left;
-        position: relative;
-        top: -5px;
-    }
-
-    .content-txt {
-        position: relative;
-        left: -60px;
-        width: 390px;
-    }
-
-    .line {
-        position: relative;
-        left: -30px;
-        width: 300px;
-        top: -5px;
-    }
-
-    #fim {
-        width: 350px;
-        position: relative;
-        left: -60px;
-        top: -15px;
-        text-align: center;
-    }
-
-    .btn-fim {
-        position: relative;
-        left: 20px;
-        top: -20px;
-    }
-}
-@media (min-width:501px) and (max-width: 600px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
-
-    .home .header {
-        display: none;
-    }
-
-    #title {
-        position: relative;
-        left: -60px;
-        top: 25px;
-        font-size: 40px;
-        line-height: 40px;
         width: 400px;
     }
 
     #subtitle {
         font-size: 18px;
         position: relative;
-        left: -30px;
-        top: 45px;
-        width: 350px;
-        line-height: 15px;
-        height: 70px;
+        left: 15px;
+        margin-top: 40px;
+        width: 300px;
+        line-height: 25px;
+    }
+    #sub-sub{
+        font-size: 35px !important;
+        width: 400px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
     }
 
     .home .content p {
         text-align: left;
         position: relative;
-        top: -5px;
+        top: -25px;
     }
 
     .content-txt {
         position: relative;
-        left: -60px;
-        width: 430px;
+        left: -70px;
+        width: 490px;
+        top: 20px;
     }
 
     .line {
         position: relative;
         left: -30px;
-        width: 380px;
-        top: -5px;
+        width: 410px !important;
+        top: -20px;
     }
 
     #fim {
-        width: 350px;
+        width: 500px;
         position: relative;
-        left: -20px;
-        top: -15px;
+        left: -80px;
         text-align: center;
     }
 
     .btn-fim {
         position: relative;
-        left: 30px;
+        left: 40px;
         top: -20px;
     }
 }
 @media (min-width:601px) and (max-width: 700px) {
-
     html,
     body {
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
-
     .home .header {
         display: none;
     }
 
     #title {
         position: relative;
-        left: -20px;
+        left: -60px;
         top: 25px;
         font-size: 40px;
         line-height: 40px;
-        width: 400px;
+        width: 500px;
     }
 
     #subtitle {
-        font-size: 18px;
+        font-size: 20px;
         position: relative;
-        left: 10px;
-        top: 45px;
-        width: 350px;
-        line-height: 15px;
-        height: 70px;
+        left: 5px;
+        margin-top: 40px;
+        width: 400px;
+        line-height: 25px;
+    }
+    #sub-sub{
+        font-size: 35px !important;
+        width: 400px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
     }
 
     .home .content p {
         text-align: left;
         position: relative;
-        top: -5px;
+        top: -25px;
     }
 
     .content-txt {
         position: relative;
-        left: -60px;
+        left: -70px;
         width: 550px;
+        top: 20px;
     }
 
     .line {
         position: relative;
         left: -30px;
-        width: 420px;
-        top: -5px;
+        width: 450px !important;
+        top: -20px;
     }
 
     #fim {
-        width: 400px;
+        width: 550px;
         position: relative;
-        left: -20px;
-        top: -15px;
+        left: -80px;
         text-align: center;
     }
 
     .btn-fim {
         position: relative;
-        left: 30px;
+        left: 40px;
         top: -20px;
     }
 }
 @media (min-width:701px) and (max-width: 800px) {
-
     html,
     body {
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
-
     .home .header {
         display: none;
     }
 
     #title {
         position: relative;
-        left: 40px;
+        left: 5px;
         top: 25px;
-        font-size: 40px;
+        font-size: 45px;
         line-height: 40px;
-        width: 400px;
+        width: 500px;
     }
 
     #subtitle {
-        font-size: 18px;
+        font-size: 20px;
         position: relative;
-        left: 70px;
-        top: 45px;
-        width: 350px;
-        line-height: 15px;
-        height: 70px;
+        left: 55px;
+        margin-top: 40px;
+        width: 400px;
+        line-height: 25px;
+    }
+    #sub-sub{
+        font-size: 35px !important;
+        width: 600px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
     }
 
     .home .content p {
         text-align: left;
         position: relative;
-        top: -5px;
+        top: -25px;
     }
 
     .content-txt {
         position: relative;
-        left: -60px;
+        left: -70px;
         width: 650px;
+        top: 20px;
     }
 
     .line {
         position: relative;
         left: -30px;
-        width: 550px;
-        top: -5px;
+        width: 580px !important;
+        top: -20px;
     }
 
     #fim {
-        width: 400px;
+        width: 550px;
+        position: relative;
+        left: -40px;
+        text-align: center;
+    }
+
+    .btn-fim {
         position: relative;
         left: 40px;
-        top: -15px;
+        top: -20px;
+    }
+}
+@media (min-width:801px) and (max-width: 900px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .home .header {
+        display: none;
+    }
+
+    #title {
+        position: relative;
+        left: 55px;
+        top: 25px;
+        font-size: 45px;
+        line-height: 40px;
+        width: 500px;
+    }
+
+    #subtitle {
+        font-size: 20px;
+        position: relative;
+        left: 95px;
+        margin-top: 40px;
+        width: 400px;
+        line-height:25px;
+    }
+    #sub-sub{
+        font-size: 35px !important;
+        width: 600px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
+    }
+
+    .home .content p {
+        text-align: left;
+        position: relative;
+        top: -25px;
+    }
+
+    .content-txt {
+        position: relative;
+        left: -70px;
+        width: 750px;
+        top: 20px;
+    }
+
+    .line {
+        position: relative;
+        left: -30px;
+        width: 680px !important;
+        top: -20px;
+    }
+
+    #fim {
+        width: 550px;
+        position: relative;
+        left: 20px;
         text-align: center;
     }
 
@@ -318,189 +474,133 @@
         top: -20px;
     }
 }
-@media (min-width:801px) and (max-width: 900px) {
-
+@media (min-width:901px) and (max-width: 1000px) {
     html,
     body {
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
-
     .home .header {
         display: none;
     }
 
     #title {
         position: relative;
-        left: 90px;
+        left: 95px;
         top: 25px;
-        font-size: 40px;
+        font-size: 45px;
         line-height: 40px;
-        width: 400px;
+        width: 500px;
     }
 
     #subtitle {
-        font-size: 18px;
+        font-size: 20px;
         position: relative;
-        left: 120px;
-        top: 45px;
-        width: 350px;
-        line-height: 15px;
-        height: 70px;
+        left: 145px;
+        margin-top: 40px;
+        width: 400px;
+        line-height: 25px;
     }
-
-    .home .content p {
-        text-align: left;
-        position: relative;
-        top: -5px;
-    }
-
-    .content-txt {
-        position: relative;
-        left: -60px;
-        width: 750px;
-    }
-
-    .line {
-        position: relative;
-        left: -30px;
-        width: 650px;
-        top: -5px;
-    }
-
-    #fim {
+    #sub-sub{
+        font-size: 35px !important;
         width: 600px;
         position: relative;
-        left: 10px;
-        top: -15px;
-        text-align: center;
-    }
-
-    .btn-fim {
-        position: relative;
-        left: 40px;
-        top: -20px;
-    }
-}
-@media (min-width:901px) and (max-width: 1000px) {
-
-    html,
-    body {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
-
-    .home .header {
-        display: none;
-    }
-
-    #title {
-        position: relative;
-        left: 120px;
-        top: 25px;
-        font-size: 40px;
-        line-height: 40px;
-        width: 400px;
-    }
-
-    #subtitle {
-        font-size: 18px;
-        position: relative;
-        left: 150px;
-        top: 45px;
-        width: 350px;
-        line-height: 15px;
-        height: 70px;
+        left: -70px;
+        top: -5px !important;
     }
 
     .home .content p {
         text-align: left;
         position: relative;
-        top: -5px;
+        top: -25px;
     }
 
     .content-txt {
         position: relative;
         left: -70px;
         width: 850px;
+        top: 20px;
     }
 
     .line {
         position: relative;
         left: -30px;
-        width: 700px;
-        top: -5px;
+        width: 780px !important;
+        top: -20px;
     }
 
     #fim {
-        width: 600px;
+        width: 550px;
         position: relative;
-        left: 10px;
-        top: -15px;
+        left: 70px;
         text-align: center;
     }
 
     .btn-fim {
         position: relative;
-        left: 40px;
+        left: 30px;
         top: -20px;
     }
 }
 @media (min-width:1001px) and (max-width: 1100px) {
-
     html,
     body {
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
-
     .home .header {
         display: none;
     }
 
     #title {
         position: relative;
-        left: 180px;
+        left: 135px;
         top: 25px;
-        font-size: 40px;
+        font-size: 45px;
         line-height: 40px;
-        width: 400px;
+        width: 500px;
     }
 
     #subtitle {
-        font-size: 18px;
+        font-size: 20px;
         position: relative;
-        left: 200px;
-        top: 45px;
-        width: 350px;
-        line-height: 15px;
-        height: 70px;
+        left: 185px;
+        margin-top: 40px;
+        width: 400px;
+        line-height: 25px;
+    }
+    #sub-sub{
+        font-size: 35px !important;
+        width: 600px;
+        position: relative;
+        left: -70px;
+        top: -5px !important;
     }
 
     .home .content p {
         text-align: left;
         position: relative;
-        top: -5px;
+        top: -25px;
     }
 
     .content-txt {
         position: relative;
-        left: -60px;
+        left: -70px;
         width: 950px;
+        top: 20px;
     }
 
     .line {
         position: relative;
         left: -30px;
-        width: 850px;
-        top: -5px;
+        width: 880px !important;
+        top: -20px;
     }
 
     #fim {
-        width: 600px;
+        width: 550px;
         position: relative;
-        left: 90px;
-        top: -15px;
+        left: 120px;
         text-align: center;
     }
 

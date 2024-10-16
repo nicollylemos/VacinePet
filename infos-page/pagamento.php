@@ -12,7 +12,7 @@ include("../inc/header.php");
     <title>VacinePet</title>
     <link rel="stylesheet" href="../css/css/info-menuu.css">
     <link rel="stylesheet" href="../css/css/rodarodape.css">
-    <link rel="stylesheet" href="../css/css/responsividade/footer-resp.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telapagamento.css">
 </head>
 
 <body>
@@ -20,11 +20,11 @@ include("../inc/header.php");
         <div class="content">
             <div class="header"></div>
             <div class="content-about">
-                <h1>Formas de Pagamento</h1>
-                <h2>Como realizar seu pagamento?</h2>
+                <h1 id="title">Formas de Pagamento</h1>
+                <h2 id="subtitle">Como realizar seu pagamento?</h2>
                 <div class="content-txt two">
                     <p>No dia do atendimento, o pagamento será realizado diretamente com a veterinária. Aceitamos as
-                        seguintes opções: Cartão de Débito, Cartão de Crédito, PIX, Dinheiro e Boleto.</p>
+                        seguintes opções: Cartão de Débito, Cartão de Crédito, PIX e Dinheiro.</p>
                 </div>
             </div>
             <div class="content-txt two">
@@ -35,10 +35,10 @@ include("../inc/header.php");
                     email: vacinepet@gmail.com</p>
             </div>
             <br>
-            <hr>
+            <hr class="line">
             <div class="container-end">
-                <p>Gostou? Agende agora uma consulta no VacinePet!</p>
-                <a href="../agendamento.php""><button type=" button">Agendar agora!</button></a>
+                <p id="fim">Gostou? Agende agora uma consulta no VacinePet!</p>
+                <a href="../agendamento.php""><button class="btn-fim" type=" button">Agendar agora!</button></a>
             </div>
         </div>
         </div>
