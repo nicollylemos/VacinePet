@@ -1,0 +1,46 @@
+@media (min-width:310px) and (max-width: 400px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencascao-resp.png);
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 40px;
+        position: relative;
+        left: 20px;
+        top: -20px;
+    }
+    .sub-title-start{
+        width: 300px;
+        position: relative;
+        top: 130px;
+        left: -120px;
+        text-align: left;
+    }
+    .btn-start{
+        position: relative;
+        top: 140px;
+        left: -80px;
+    }
+    #title-do{
+        position: relative;
+        top: -10px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 90px;
+    }
+
+
+}
