@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
     $numero = $_POST['end_numero'];
     $bairro = $_POST['end_bairro'];
     $cep = $_POST['end_cep'];
-    $cidade = $_POST['end_cidade'];
+    $cidade = isset($_POST['end_cidade']) ? $_POST['end_cidade'] : ''; // Verificação se a cidade existe
 
     if (empty($rua)) {
         $erros['end_rua'] = 'Rua é obrigatória.';
@@ -55,15 +55,15 @@ if (isset($_POST['submit'])) {
         $erros['end_cidade'] = 'Cidade é obrigatória.';
     }
 
-    // Validação dos campos do pet
+    // Validação dos campos do pet com isset para sexo, castracao, porte e espécie
     $nome_pet = $_POST['pet_nome'];
-    $sexo = $_POST['pet_sexo'];
+    $sexo = isset($_POST['pet_sexo']) ? $_POST['pet_sexo'] : ''; // Verifica se pet_sexo foi definido
     $idade = $_POST['pet_idade'];
-    $castracao = $_POST['pet_castracao'];
-    $porte = $_POST['pet_porte'];
-    $especie = $_POST['pet_especie'];
+    $castracao = isset($_POST['pet_castracao']) ? $_POST['pet_castracao'] : ''; // Verifica se pet_castracao foi definido
+    $porte = isset($_POST['pet_porte']) ? $_POST['pet_porte'] : ''; // Verifica se pet_porte foi definido
+    $especie = isset($_POST['pet_especie']) ? $_POST['pet_especie'] : ''; // Verifica se pet_especie foi definido
 
-    if (empty($nome_pet)){
+    if (empty($nome_pet)) {
         $erros['pet_nome'] = 'Nome do pet é obrigatório.';
     }
     if (empty($sexo)) {
@@ -112,9 +112,9 @@ if (isset($_POST['submit'])) {
             }
         }
     }
-
-
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -247,7 +247,7 @@ if (isset($_POST['submit'])) {
                         </div>
                         <div class="form-group col-md-6">
                             <select class="form-control frm-ctrl required" name="end_cidade" id="cidade" required>
-                                <option value="" disabled selected>-- Selecione a cidade --</option>
+                                <option value="" disabled selected>Selecione a cidade </option>
                                 <option value="Sorocaba">Sorocaba</option>
                                 <option value="Votorantim">Votorantim</option>
                             </select>
@@ -293,7 +293,7 @@ if (isset($_POST['submit'])) {
                                     <option value="Não">Não</option>
                                 </select>
 
-                                <select id="selecionar" class="form-control frm-ctrl required" name="pet_porte"
+                                <select class="form-control frm-ctrl required" name="pet_porte"
                                     id="porte" required>
                                     <option value="" disabled selected>-- Qual o porte do seu Pet? --</option>
                                     <option value="Pequeno">Pequeno</option>
@@ -360,49 +360,64 @@ if (isset($_POST['submit'])) {
 </body>
 
 <script>
-    document.getElementById('form').addEventListener('submit', function (event) {
-        // Obtém todos os campos do formulário
-        const campos = [
-            { name: 'tutor_nome', element: document.getElementById('nome') },
-            { name: 'tutor_datanasc', element: document.getElementById('datanasc') },
-            { name: 'tutor_cpf', element: document.getElementById('cpf') },
-            { name: 'tutor_telefone', element: document.getElementById('telefone') },
-            { name: 'tutor_email', element: document.getElementById('email') },
-            { name: 'tutor_senha', element: document.getElementById('senha') },
-            //end
-            { name: 'end_rua', element: document.getElementById('rua') },
-            { name: 'end_numero', element: document.getElementById('numero') },
-            { name: 'end_bairro', element: document.getElementById('bairro') },
-            { name: 'end_cep', element: document.getElementById('cep') },
-            { name: 'end_cidade', element: document.getElementById('cidade') },
-            //pet
-            
-            
-         
-            
-        ];
+  document.getElementById('form').addEventListener('submit', function (event) {
+    // Obtém todos os campos do formulário
+    const campos = [
+        { name: 'tutor_nome', element: document.getElementById('nome') },
+        { name: 'tutor_datanasc', element: document.getElementById('datanasc') },
+        { name: 'tutor_cpf', element: document.getElementById('cpf') },
+        { name: 'tutor_telefone', element: document.getElementById('telefone') },
+        { name: 'tutor_email', element: document.getElementById('email') },
+        { name: 'tutor_senha', element: document.getElementById('senha') },
+        // Endereço
+        { name: 'end_rua', element: document.getElementById('rua') },
+        { name: 'end_numero', element: document.getElementById('numero') },
+        { name: 'end_bairro', element: document.getElementById('bairro') },
+        { name: 'end_cep', element: document.getElementById('cep') },
+        { name: 'end_cidade', element: document.getElementById('cidade') },
+        // Pet
+        { name: 'pet_nome', element: document.getElementById('nome_pet') },
+        { name: 'pet_sexo', element: document.getElementById('sexo') },
+        { name: 'pet_idade', element: document.getElementById('idade_pet') },
+        { name: 'pet_castracao', element: document.getElementById('castracao') },
+        { name: 'pet_raca', element: document.getElementById('raca_pet') },
+        { name: 'pet_especie', element: document.getElementById('especie') }
+        { name: 'pet_porte', element: document.getElementById('porte') },
+        
+      
+      
+    ];
 
-        let valid = true;
+    let valid = true;
 
-        // Limpa os estilos de erro
-        campos.forEach(campo => {
-            campo.element.classList.remove('error');
-        });
+    // Limpa os estilos de erro
+    campos.forEach(campo => {
+        campo.element.classList.remove('error');
+    });
 
-        // Verifica se cada campo obrigatório está preenchido
-        campos.forEach(campo => {
-            if (!campo.element.value || (campo.name === 'tutor_nome' && campo.element.value.length < 3) || (campo.name === 'tutor_senha' && campo.element.value.length < 8)) {
-                campo.element.classList.add('error');
-                valid = false;
-            }
-        });
-
-        // Se algum campo não for válido, cancela o envio do formulário
-        if (!valid) {
-            event.preventDefault();
-            alert('Por favor, preencha todos os campos obrigatórios corretamente.');
+    // Verifica se cada campo obrigatório está preenchido corretamente
+    campos.forEach(campo => {
+        if (!campo.element.value ||
+            (campo.name === 'tutor_nome' && campo.element.value.length < 3) ||
+            (campo.name === 'tutor_senha' && campo.element.value.length < 8) ||
+            (campo.name === 'pet_nome' && campo.element.value.length < 1) || // Validação pet_nome
+            (campo.name === 'pet_sexo' && !campo.element.value) || // Validação pet_sexo
+            (campo.name === 'pet_idade' && !campo.element.value) || // Validação pet_idade
+            (campo.name === 'pet_castracao' && !campo.element.value) || // Validação pet_castracao
+            (campo.name === 'pet_porte' && !campo.element.value) || // Validação pet_porte
+            (campo.name === 'pet_especie' && !campo.element.value)) { // Validação pet_especie
+            campo.element.classList.add('error');
+            valid = false;
         }
     });
+
+    // Se algum campo não for válido, cancela o envio do formulário e exibe o alerta
+    if (!valid) {
+        event.preventDefault();
+        alert('Por favor, preencha todos os campos obrigatórios corretamente.');
+    }
+});
+
 </script>
 
 <script>
