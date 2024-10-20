@@ -5,7 +5,6 @@ include_once('../config.php');
 
 // Verifica se o email e a senha estão definidos na sessão
 if (!isset($_SESSION['email']) || !isset($_SESSION['senha_hash'])) {
-    // Se não houver sessão, redireciona para a página de login
     header('Location: login.php');
     exit;
 }
@@ -33,6 +32,8 @@ if (isset($_GET['cod_tutor'])) {
     exit;
 }
 
+$erro_senha = "";
+
 // Verifica se o formulário foi enviado para atualização dos dados
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome_tutor = mysqli_real_escape_string($conexao, $_POST['nome']);
@@ -41,28 +42,32 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email_tutor = mysqli_real_escape_string($conexao, $_POST['email']);
     
     // Verifica se o campo de senha foi preenchido e se as senhas coincidem
-    if (!empty($_POST['senha']) && $_POST['senha'] === $_POST['confirmar_senha']) {
-        $senha_tutor = mysqli_real_escape_string($conexao, $_POST['senha']);
-        $senha_hash = password_hash($senha_tutor, PASSWORD_DEFAULT);
+    if (!empty($_POST['senha']) && !empty($_POST['confirmar_senha'])) {
+        if ($_POST['senha'] === $_POST['confirmar_senha']) {
+            $senha_tutor = mysqli_real_escape_string($conexao, $_POST['senha']);
+            $senha_hash = password_hash($senha_tutor, PASSWORD_DEFAULT);
 
-        // Atualiza a senha do tutor no banco de dados
-        $update_query = "UPDATE tutor 
-                         SET Nome = '$nome_tutor', CPF = '$cpf_tutor', Telefone = '$telefone_tutor', Email = '$email_tutor', Senha = '$senha_hash' 
-                         WHERE Cod_Tutor = '$cod_tutor'";
+            $update_query = "UPDATE tutor 
+                             SET Nome = '$nome_tutor', CPF = '$cpf_tutor', Telefone = '$telefone_tutor', Email = '$email_tutor', Senha = '$senha_hash' 
+                             WHERE Cod_Tutor = '$cod_tutor'";
 
-        // Atualiza a senha também na sessão para manter o tutor logado
-        $_SESSION['senha_hash'] = $senha_hash;
+            $_SESSION['senha_hash'] = $senha_hash;
+        } else {
+            $erro_senha = "As senhas não coincidem. Por favor, tente novamente.";
+        }
     } else {
         $update_query = "UPDATE tutor 
                          SET Nome = '$nome_tutor', CPF = '$cpf_tutor', Telefone = '$telefone_tutor', Email = '$email_tutor' 
                          WHERE Cod_Tutor = '$cod_tutor'";
     }
 
-    // Executa a atualização no banco de dados
-    if (mysqli_query($conexao, $update_query)) {
-        echo "<script> window.location.href='index.php';</script>";
-    } else {
-        echo "Erro ao atualizar os dados: " . mysqli_error($conexao);
+    // Executa a atualização no banco de dados se não houve erro nas senhas
+    if (empty($erro_senha)) {
+        if (mysqli_query($conexao, $update_query)) {
+            echo "<script> window.location.href='index.php';</script>";
+        } else {
+            echo "Erro ao atualizar os dados: " . mysqli_error($conexao);
+        }
     }
 }
 ?>
@@ -74,73 +79,102 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Dados do Tutor</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .form-section {
-        margin-bottom: 30px;
-    }
-
-    h2 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .input-group {
-        margin: 10px 0;
-    }
-
-    .input-group label {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    .input-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    .btn-submit {
-        display: inline-block;
-        padding: 10px;
-        background-color: #4CAF50;
-        color: white;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .btn-submit:hover {
-        background-color: #45a049;
-    }
-
-    .btn-cancel {
-        display: inline-block;
-        padding: 10px;
-        background-color: #f44336;
-        color: white;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .btn-cancel:hover {
-        background-color: #d32f2f;
-    }
-    </style>
+    <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
 </head>
+<style>
+.container-editar {
+    background-color: #ffffff;
+    width: 600px;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-left: 20px;
+    box-shadow: 20px 30px 20px 20px rgba(194, 192, 192, 0.396);
+    border-radius: 15px;
+    padding: 15px;
+    padding-left: 30px;
+
+}
+
+* {
+    text-transform: capitalize;
+}
+
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+.input-group {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+.btn-submit {
+    background-color: #52BACB;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    border: 1px solid #52BACB;
+    height: 40px;
+    font-weight: 600;
+
+}
+
+.btn-cancel {
+    height: 40px;
+    background-color: transparent;
+    color: #52BACB;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    text-decoration: none;
+    border: 3.5px solid #52BACB;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background-color: #69c2d0;
+    border-color: #69c2d0;
+}
+
+.btn-cancel:hover {
+    color: #69c2d0;
+    border-color: #69c2d0;
+}
+
+.input-button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+</style>
 
 <body>
     <div class="container">
-        <div class="form-section">
+        <div class="container-editar">
             <h2>Editar Dados do Tutor</h2>
             <form method="POST" action="">
                 <div class="input-group">
@@ -150,19 +184,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <div class="input-group">
                     <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" name="cpf" value="<?php echo $cpf_tutor; ?>" required>
+                    <input type="text" id="cpf" name="cpf" value="<?php echo $cpf_tutor; ?>">
                 </div>
 
                 <div class="input-group">
                     <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone" name="telefone" value="<?php echo $telefone_tutor; ?>" required>
+                    <input type="text" id="telefone" name="telefone" value="<?php echo $telefone_tutor; ?>">
                 </div>
 
+                <input type="hidden" id="email" name="email" value="<?php echo $email_tutor; ?>">
 
-                <input type="hidden" id="email" name="email" value="<?php echo $email_tutor; ?>" required>
-
-
-                <!-- Novo campo para editar a senha -->
                 <div class="input-group">
                     <label for="senha">Nova Senha</label>
                     <input type="password" id="senha" name="senha" placeholder="Digite uma nova senha">
@@ -174,9 +205,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         placeholder="Confirme a nova senha">
                 </div>
 
-                <div class="input-group">
+                <!-- Exibe mensagem de erro se as senhas não coincidem -->
+                <?php if (!empty($erro_senha)) { ?>
+                <p style="color:red;text-align:center;"><?php echo $erro_senha; ?></p>
+                <?php } ?>
+
+                <div class="input-button">
                     <button type="submit" class="btn-submit">Salvar Alterações</button>
-                    <a href="index.php" class="btn-cancel">Cancelar</a>
+                    <a href="index.php"> <button class="btn-cancel">Cancelar
+                        </button></a>
                 </div>
             </form>
         </div>

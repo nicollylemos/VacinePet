@@ -13,8 +13,7 @@ include("sidebar-cliente.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="../css/css/veterinarioo.css" />
-    <link rel="stylesheet" href="../css/css/vetAdotar.css" />
+    <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -22,17 +21,34 @@ include("sidebar-cliente.php");
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VacinePet</title>
     <style>
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
+    .logout {
+        margin-top: 30px;
+        padding: 5px;
+        background-color: transparent;
+        color: #f44336;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 150px;
+        text-decoration: none;
+        border: 3.5px solid #f44336;
+        font-weight: 600;
+        display: inline-block;
+        /* Adiciona inline-block para permitir definir a largura */
+        box-sizing: border-box;
+        /* Garante que padding e borda sejam incluídos na largura */
+        text-align: center;
+        /* Centraliza o texto dentro do botão */
     }
     </style>
 </head>
 
 <body>
-    <section class="configuracao">
-        <div class="container">
-            <h1>Configuração</h1>
-            <p>Deseja sair?</p><a href="/VacinePet/inc/logout.php">Sair</a>
-        </div>
-    </section>
+
+    <div class="container">
+        <h1>Configuração</h1>
+        <p>Deseja sair?</p><a href="/VacinePet/inc/logout.php" class="logout">Sair</a>
+    </div>
+
+</body>
+
+</html>

@@ -19,7 +19,7 @@ if (isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']
             $_SESSION['email'] = $email;
             // Armazena o hash da senha na sessão
             $_SESSION['senha_hash'] = $tutor['Senha']; 
-            header('Location: sistema.php');
+            header('Location: ../index.php');
             exit();
         } else {
             // Define a mensagem de erro

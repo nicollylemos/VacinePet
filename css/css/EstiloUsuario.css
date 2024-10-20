@@ -1,0 +1,154 @@
+.section{
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    box-shadow:   -8px -8px 15px rgba(223, 223, 223, 0.396);
+    width: 900px;   
+}
+
+.container{ 
+    padding-top: 20px;
+    max-width: 1100px;
+    position: absolute;
+    top: 90px;
+    left: 320px;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: baloo;
+    font-size: 45px;
+    color: #FD811C;
+}
+   
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:  #52BACB;
+    
+}
+
+.info button{
+    background-color: transparent;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 30px;
+    width: 150px;
+    color:  #FD811C;
+    border: 3px solid  #FD811C;
+    font-weight: 600;
+    cursor:pointer;
+}
+.info button:hover{
+    color:  #f4974c;
+    border: 3px solid  #f4974c;
+}
+.agendamento-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.agendamento-item div {
+    flex: 1;
+}
+/*? meus-pets. estilização */
+.container-meuPet{
+    margin-bottom: 100px;
+    padding-top: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+.meuPet h2{
+    margin-left: 20px;
+    font-family: baloo;
+    font-size: 45px;
+    color: #FD811C; 
+    
+}
+.container-pet{
+    background-color: #ffffff;
+    width: 300px;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-left: 20px;
+    box-shadow: 20px 20px 20px rgba(194, 192, 192, 0.396);
+    border-radius: 15px;
+    padding: 15px;
+    padding-left: 30px;
+    
+}
+
+.info-val .nome-pet {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: baloo;
+    font-size: 25px;
+    color:  #52BACB;
+   
+}
+
+
+
+.btn-edit{
+    background-color: transparent;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 30px;
+    width: 60%;
+    color:  #FD811C;
+    border: 3px solid  #FD811C;
+    font-weight: 600;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
+.btn-add{
+    background-color:  #52BACB;
+    border-radius: 7px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 170px;
+    color:  hsl(0, 0%, 100%);
+    border: 3px solid   #52BACB;
+    font-weight: 600;
+    cursor:pointer;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.btn-apg{
+    background-color: transparent;
+    border-radius: 7px;
+    padding: 5px;
+    width: 150px;
+    color:  #52BACB;
+    border: 3px solid  #52BACB;
+    font-weight: 600;
+    cursor:pointer;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.btn-top{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-add:hover{
+    background-color:  #69c2d0;
+    border-color: #69c2d0;
+}
+.btn-apg:hover{
+    color:  #69c2d0;
+    border-color: #69c2d0;
+}
+/** Editar Pet*/
+
+

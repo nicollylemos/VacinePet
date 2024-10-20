@@ -1,8 +1,7 @@
 <?php 
 include("../inc/header.php");
-include("sidebar-cliente.php");
 include_once('../config.php');
-
+include("sidebar-cliente.php");
 // Verifica se o email e a senha estão definidos na sessão
 if (!isset($_SESSION['email']) || !isset($_SESSION['senha_hash'])) {
     echo 'window.location.href = "../inc/login.php";';
@@ -52,45 +51,23 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Agendamentos</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
+    <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
 
-    .section {
-        margin-bottom: 30px;
-    }
-
-    h2 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .info {
-        margin: 5px 0;
-    }
-
-    .info strong {
-        display: inline-block;
-        width: 150px;
-    }
-
-    .agendamento-item {
-        display: flex;
-        justify-content: space-between;
-        margin: 10px 0;
-    }
-
-    .agendamento-item div {
-        flex: 1;
-    }
-    </style>
 </head>
+<style>
+.sidebar {
+
+    height: 150vh;
+}
+
+* {
+    text-transform: capitalize;
+}
+</style>
 
 <body>
     <div class="container">
+        <h1>Meu Perfil</h1>
         <!-- Dados do Tutor -->
         <div class="section">
             <h2>Dados do Tutor</h2>
@@ -109,7 +86,9 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             <div class="info">
                 <?php 
                 echo "<a href='editTutor.php?cod_tutor=" . $cod_tutor . "'>";
-                echo "Editar Tutor"; // Adicione o texto ou conteúdo desejado dentro do link
+                echo "<button>";
+                echo "Editar Tutor"; 
+                echo "</button>";
                 echo "</a>";
                 ?>
 
@@ -124,7 +103,8 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             <?php while ($row = mysqli_fetch_assoc($result)): ?>
             <div class="agendamento-item">
                 <div><strong>Pet:</strong> <?php echo $row['Nome_Pet']; ?></div>
-                <div><strong>Data:</strong> <?php echo date('d/m/Y', strtotime($row['data_agendamento'])); ?></div>
+                <div><strong>Data:</strong> <?php echo date('d/m/Y', strtotime($row['data_agendamento'])); ?>
+                </div>
                 <div><strong>Hora:</strong> <?php echo $row['horario_agendamento']; ?></div>
                 <div><strong>Serviço:</strong> <?php echo $row['servico']; ?></div>
                 <div><strong>Situação:</strong> <?php echo $row['situacao']; ?></div>
@@ -162,7 +142,9 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             <div class="info">
                 <?php 
                 echo "<a href='editEndereco.php?cod_tutor=" .$cod_tutor . "'>";
-                echo "Editar Tutor"; // Adicione o texto ou conteúdo desejado dentro do link
+                echo "<button>";
+                echo "Editar Endereço";
+                echo "</button>";
                 echo "</a>";
                 ?>
 

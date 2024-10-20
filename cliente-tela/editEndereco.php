@@ -66,11 +66,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Endereço do Tutor</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
     <style>
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
+    .container-editar {
+        background-color: #ffffff;
+        width: 600px;
+        margin-bottom: 40px;
+        display: inline-block;
+        margin-left: 20px;
+        box-shadow: 20px 30px 20px 20px rgba(194, 192, 192, 0.396);
+        border-radius: 15px;
+        padding: 15px;
+        padding-left: 30px;
+
     }
 
     .form-section {
@@ -80,59 +88,81 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     h2 {
         margin-top: 20px;
         margin-bottom: 10px;
+        margin-left: 10%;
     }
 
     .input-group {
         margin: 10px 0;
+        text-align: center;
     }
 
     .input-group label {
         display: block;
         margin-bottom: 5px;
+        text-align: left;
+        margin-left: 10%;
     }
 
     .input-group input {
-        width: 100%;
+        width: 80%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+
     }
 
     .btn-submit {
-        display: inline-block;
-        padding: 10px;
-        background-color: #4CAF50;
+        background-color: #52BACB;
         color: white;
-        border-radius: 5px;
-        text-align: center;
+        border-radius: 8px;
         cursor: pointer;
-        text-decoration: none;
-    }
+        width: 150px;
+        border: 1px solid #52BACB;
+        height: 40px;
+        font-weight: 600;
+        font-size: 15px;
 
-    .btn-submit:hover {
-        background-color: #45a049;
     }
 
     .btn-cancel {
-        display: inline-block;
-        padding: 10px;
-        background-color: #f44336;
-        color: white;
-        border-radius: 5px;
-        text-align: center;
+        padding: 5px;
+        background-color: transparent;
+        color: #52BACB;
+        border-radius: 8px;
         cursor: pointer;
+        width: 150px;
         text-decoration: none;
+        border: 3.5px solid #52BACB;
+        font-weight: 600;
+        display: inline-block;
+        /* Adiciona inline-block para permitir definir a largura */
+        box-sizing: border-box;
+        /* Garante que padding e borda sejam incluídos na largura */
+        text-align: center;
+        /* Centraliza o texto dentro do botão */
+    }
+
+    .btn-submit:hover {
+        background-color: #69c2d0;
+        border-color: #69c2d0;
     }
 
     .btn-cancel:hover {
-        background-color: #d32f2f;
+        color: #69c2d0;
+        border-color: #69c2d0;
+    }
+
+    .input-button {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        text-align: center;
     }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="form-section">
+        <div class="container-editar">
             <h2>Editar Endereço do Tutor</h2>
             <form method="POST" action="">
                 <div class="input-group">
