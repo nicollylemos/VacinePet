@@ -48,10 +48,6 @@ session_start();
                         <input type="password" maxlength="11" placeholder="Senha" class="form-control" name="senha">
                     </div>
 
-                    <div class="esquecer">
-                        <a href="recuperar.php">Esqueceu sua senha?</a>
-                    </div>
-
                     <div class="final">
                         <div id="actions" class="mt-4">
                             <input type="submit" name="submit" class="btn btn-primary btn-custom" />

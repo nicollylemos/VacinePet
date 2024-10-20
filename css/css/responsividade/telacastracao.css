@@ -816,4 +816,288 @@
         left: -5%;
     }
 }
+@media (min-width: 1501px) and (max-width: 1600px){
+    body{
+        background-size: 1610px;
+        background-position: calc(0% + -10px) calc(50% + -110px);
+    }
+    .container{
+        position: relative;
+        top: 20px;
+    }
+    #title{
+        position: relative;
+        font-size: 45px;
+        left: -3%;
+        top: 15px;
+    }
+    #sub-title-cas{
+        position: relative;
+        left: -7%;
+    }
+    #p1{
+        position: relative;
+        left: -7%;
+    }
+    #sub-title-esp{
+        position: relative;
+        left: -7%;
+    }
+    #p2{
+        position: relative;
+        left: -7%;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: 20px;
+    }
+}
+@media (min-width: 1601px) and (max-width: 1700px){
+    body{
+        background-size: 1710px;
+        background-position: calc(0% + -10px) calc(50% + -70px);
+    }
+    .container{
+        position: relative;
+        top: 40px;
+    }
+    #title{
+        position: relative;
+        font-size: 45px;
+        left: -3%;
+        top: 15px;
+    }
+    #sub-title-cas{
+        position: relative;
+        left: -7%;
+    }
+    #p1{
+        position: relative;
+        left: -7%;
+    }
+    #sub-title-esp{
+        position: relative;
+        left: -7%;
+    }
+    #p2{
+        position: relative;
+        left: -7%;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: 20px;
+    }
+}
+@media (min-width: 1701px) and (max-width: 1800px){
+    .text, #title, #sub-title {
+        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
+    }
+    body{
+        background-size: 1810px;
+        background-position: calc(0% + -10px) calc(50% + -70px);
+    }
+    .container{
+        position: relative;
+        top: 40px;
+    }
+    #title{
+        position: relative;
+        font-size: 65px;
+        left: -3%;
+        top: 55px;
+    }
+    #sub-title-cas, #p1, #sub-title-esp, #p2{
+        position: relative;
+        left: -7%;
+        top: -50px;
+    }
+    #p1, #p2{
+        font-size: 20px;
+    }
+    #sub-title-cas, #sub-title-esp{
+        font-size: 30px;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: -100px;
+    }
+}
+@media (min-width: 1801px) and (max-width: 1900px){
+    .text, #title, #sub-title {
+        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
+    }
+    body{
+        background-size: 1910px;
+        background-position: calc(0% + -10px) calc(50% + -70px);
+    }
+    .container{
+        position: relative;
+        top: 40px;
+    }
+    #title{
+        position: relative;
+        font-size: 65px;
+        left: -3%;
+        top: 55px;
+    }
+    #sub-title-cas, #p1, #sub-title-esp, #p2{
+        position: relative;
+        left: -7%;
+        top: -50px;
+    }
+    #p1, #p2{
+        font-size: 20px;
+    }
+    #sub-title-cas, #sub-title-esp{
+        font-size: 30px;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: -100px;
+    }
+}
+@media (min-width: 1901px) and (max-width: 2000px){
+    .text, #title, #sub-title {
+        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
+    }
+    body{
+        background-size: cover;
+        background-position: calc(0% + -200px) calc(50% + -70px);
+    }
+    .container{
+        position: relative;
+        top: 40px;
+    }
+    #title{
+        position: relative;
+        font-size: 65px;
+        left: -3%;
+        top: 55px;
+    }
+    #sub-title-cas, #p1, #sub-title-esp, #p2{
+        position: relative;
+        left: -7%;
+        top: -50px;
+    }
+    #p1, #p2{
+        font-size: 20px;
+    }
+    #sub-title-cas, #sub-title-esp{
+        font-size: 30px;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: -100px;
+    }
+}
+@media (min-width: 2001px) and (max-width: 2200px){
+    .text, #title, #sub-title {
+        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
+    }
+    body{
+        background-size: cover;
+        background-position: calc(0% + -5px) calc(50% + -70px);
+    }
+    .container{
+        position: relative;
+        top: 40px;
+    }
+    #title{
+        position: relative;
+        font-size: 65px;
+        left: -3%;
+        top: 55px;
+    }
+    #sub-title-cas, #p1, #sub-title-esp, #p2{
+        position: relative;
+        left: -7%;
+        top: -50px;
+    }
+    #p1, #p2{
+        font-size: 20px;
+    }
+    #sub-title-cas, #sub-title-esp{
+        font-size: 30px;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: -100px;
+    }
+}
+@media (min-width: 2201px) and (max-width: 2350px){
+    .text, #title, #sub-title {
+        margin-bottom: 215px; /* Ajusta a margem inferior para dar espaço ao footer */
+    }
+    body{
+        background-size: cover;
+        background-position: calc(0% + -5px) calc(50% + -70px);
+    }
+    .container{
+        position: relative;
+        top: 40px;
+    }
+    #title{
+        position: relative;
+        font-size: 65px;
+        left: -3%;
+        top: 155px;
+    }
+    #sub-title-cas, #p1, #sub-title-esp, #p2{
+        position: relative;
+        left: -7%;
+        top: -50px;
+    }
+    #p1, #p2{
+        font-size: 20px;
+    }
+    #sub-title-cas, #sub-title-esp{
+        font-size: 30px;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: -150px;
+    }
+}
+@media (min-width: 2351px) and (max-width: 2560px){
+    .text, #title, #sub-title {
+        margin-bottom: 315px; /* Ajusta a margem inferior para dar espaço ao footer */
+    }
+    body{
+        background-size: cover;
+        background-position: calc(0% + -250px) calc(50% + -70px);
+    }
+    .container{
+        position: relative;
+        top: 40px;
+    }
+    #title{
+        position: relative;
+        font-size: 65px;
+        left: -3%;
+        top: 255px;
+    }
+    #sub-title-cas, #p1, #sub-title-esp, #p2{
+        position: relative;
+        left: -7%;
+        top: -50px;
+    }
+    #p1, #p2{
+        font-size: 20px;
+    }
+    #sub-title-cas, #sub-title-esp{
+        font-size: 30px;
+    }
+    #btn{
+        position: relative;
+        left: -5%;
+        top: -250px;
+    }
+}
 
