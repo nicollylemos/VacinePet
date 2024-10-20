@@ -1,0 +1,95 @@
+.container{ 
+    padding-top: 20px;
+    max-width: 1100px;
+    position: absolute;
+    top: 90px;
+    left: 320px;
+}
+.container-editar {
+    background-color: #ffffff;
+    width: 600px;
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-left: 20px;
+    box-shadow: 20px 30px 20px 20px rgba(194, 192, 192, 0.396);
+    border-radius: 15px;
+    padding: 15px;
+    padding-left: 30px;
+
+}
+
+* {
+    text-transform: capitalize;
+}
+
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+}
+
+.btn-submit {
+    background-color: #52BACB;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    border: 1px solid #52BACB;
+    height: 40px;
+    font-weight: 600;
+
+}
+
+.btn-cancel {
+    height: 40px;
+    background-color: transparent;
+    color: #52BACB;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 150px;
+    text-decoration: none;
+    border: 3.5px solid #52BACB;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background-color: #69c2d0;
+    border-color: #69c2d0;
+}
+
+.btn-cancel:hover {
+    color: #69c2d0;
+    border-color: #69c2d0;
+}
+
+.input-button {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+

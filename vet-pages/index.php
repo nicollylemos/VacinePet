@@ -37,7 +37,7 @@ JOIN
 WHERE
     agendamentos.situacao NOT IN ('Cancelado', 'Concluído')  -- Filtra situações Cancelado e Concluído
 ORDER BY 
-    agendamentos.id;";
+    agendamentos.data_agendamento;";
 
 $result = $conexao->query($sql);
 ?>
@@ -93,7 +93,7 @@ $result = $conexao->query($sql);
                                 echo"</a>";
                                 echo "<a href='editAgend.php?id=" . $agendamento['id'] . "'>";
                                 echo "<button>";
-                                echo"<i class='fa-solid fa-eye icon'></i>";
+                                echo"<i class='fa-solid fa-edit icon'></i>";
                                 echo"</button>";
                                 echo"</a>";
                                 echo "</td>";

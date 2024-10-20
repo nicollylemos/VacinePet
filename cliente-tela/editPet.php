@@ -65,11 +65,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Pet</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
     <style>
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
+    .container-editar {
+        background-color: #ffffff;
+        width: 600px;
+        margin-bottom: 40px;
+        display: inline-block;
+        margin-left: 20px;
+        box-shadow: 20px 30px 20px 20px rgba(194, 192, 192, 0.396);
+        border-radius: 15px;
+        padding: 15px;
+        padding-left: 30px;
+
     }
 
     .form-section {
@@ -79,88 +87,116 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     h2 {
         margin-top: 20px;
         margin-bottom: 10px;
+        margin-left: 10%;
     }
 
     .input-group {
         margin: 10px 0;
+        text-align: center;
     }
 
     .input-group label {
         display: block;
         margin-bottom: 5px;
+        text-align: left;
+        margin-left: 10%;
     }
 
     .input-group input {
-        width: 100%;
+        width: 80%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+
     }
 
     .btn-submit {
-        padding: 10px;
-        background-color: #4CAF50;
+        background-color: #52BACB;
         color: white;
-        border-radius: 5px;
+        border-radius: 8px;
         cursor: pointer;
-    }
+        width: 150px;
+        border: 1px solid #52BACB;
+        height: 40px;
+        font-weight: 600;
 
-    .btn-submit:hover {
-        background-color: #45a049;
     }
 
     .btn-cancel {
-        padding: 10px;
-        background-color: #f44336;
-        color: white;
-        border-radius: 5px;
+        height: 40px;
+        background-color: transparent;
+        color: #52BACB;
+        border-radius: 8px;
         cursor: pointer;
+        width: 150px;
+        text-decoration: none;
+        border: 3.5px solid #52BACB;
+        font-weight: 600;
+    }
+
+    .btn-submit:hover {
+        background-color: #69c2d0;
+        border-color: #69c2d0;
     }
 
     .btn-cancel:hover {
-        background-color: #d32f2f;
+        color: #69c2d0;
+        border-color: #69c2d0;
+    }
+
+    .input-button {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .input-button a {
+        text-decoration: none;
+        color: #52BACB;
     }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="form-section">
+        <div class="container-editar">
             <h2>Editar Pet</h2>
             <form method="POST" action="">
                 <div class="input-group">
                     <label for="nome">Nome do Pet</label>
-                    <input type="text" id="nome" name="nome" value="<?php echo $nome_pet; ?>" required>
+                    <input type="text" id="nome" name="nome" value="<?php echo $nome_pet; ?>">
                 </div>
-
+                <div class="input-group">
+                    <label for="especie">Espécie</label>
+                    <input type="text" id="especie" name="especie" value="<?php echo $especie_pet; ?>">
+                </div>
                 <div class="input-group">
                     <label for="raca">Raça</label>
-                    <input type="text" id="raca" name="raca" value="<?php echo $raca_pet; ?>" required>
+                    <input type="text" id="raca" name="raca" value="<?php echo $raca_pet; ?>">
                 </div>
 
                 <div class="input-group">
                     <label for="idade">Idade</label>
-                    <input type="number" id="idade" name="idade" value="<?php echo $idade_pet; ?>" required>
+                    <input type="number" id="idade" name="idade" value="<?php echo $idade_pet; ?>">
                 </div>
 
                 <div class="input-group">
                     <label for="sexo">Sexo</label>
-                    <input type="text" id="sexo" name="sexo" value="<?php echo $sexo_pet; ?>" required>
+                    <input type="text" id="sexo" name="sexo" value="<?php echo $sexo_pet; ?>">
                 </div>
 
-                <div class="input-group">
-                    <label for="especie">Espécie</label>
-                    <input type="text" id="especie" name="especie" value="<?php echo $especie_pet; ?>" required>
-                </div>
+
 
                 <div class="input-group">
                     <label for="castracao">Castrado?</label>
-                    <input type="text" id="castracao" name="castracao" value="<?php echo $castracao_pet; ?>" required>
+                    <input type="text" id="castracao" name="castracao" value="<?php echo $castracao_pet; ?>">
                 </div>
 
-                <div class="input-group">
+                <div class="input-button">
                     <button type="submit" class="btn-submit">Salvar Alterações</button>
-                    <a href="meu-pet.php" class="btn-cancel">Cancelar</a>
+                    <button class="btn-cancel">
+                        <a href="meu-pet.php"> Cancelar </a>
+                    </button>
                 </div>
             </form>
         </div>

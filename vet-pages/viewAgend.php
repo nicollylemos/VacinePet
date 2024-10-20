@@ -46,11 +46,33 @@ if(!empty($_GET['id'])) {
 
 ?>
 
-<!-- A tela de edição -->
-<div class="container">
-    <div class="conteudo-editar">
-        <h1>Editar Valor: <?php echo $nome ?></h1>
-        <p>Valor atual:<?php if ($result->num_rows > 0) {
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+    * @brief Cabeçalho HTML contendo informações de metadados e links para arquivos CSS externos.
+    * @details Inclui links para a estilização da página, o ícone do site e bibliotecas externas como FontAwesome.
+-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/css/EstiloVet.css" />
+    <title>VacinePet</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- A tela de edição -->
+    <div class="container">
+        <div class="container-editar">
+            <h2>Editar Valor: <?php echo $nome ?></h2>
+            <p><?php if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             echo "Nome do Tutor: " . $row['nome'] . "<br>";
             echo "CEP: " . $row['email'] . "<br>";
@@ -65,7 +87,10 @@ if(!empty($_GET['id'])) {
             echo "Nenhum resultado encontrado para este agendamento.";
         }
         ?>
-        </p>
-
+            </p>
+            <a href="index.php">Voltar</a>
+        </div>
     </div>
-</div>
+</body>
+
+</html>

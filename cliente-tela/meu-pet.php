@@ -40,75 +40,65 @@ $result_pets = mysqli_query($conexao, $sql_pets);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Pets</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
+    <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
 
-
-    .container-pet .id {
-        flex: 0.5;
-        padding: 5px;
-    }
-
-    .btn-edit {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 5px;
-        border-radius: 5px;
-        text-decoration: none;
-    }
-
-    .btn-edit:hover {
-        background-color: #45a049;
-    }
-
-    .icon {
-        margin-left: 5px;
-    }
-    </style>
 </head>
+<style>
+* {
+    text-transform: capitalize;
+}
+</style>
 
 <body>
-    <div class="container">
+    <div class="container meuPet">
         <!-- Meus Pets -->
-        <div class="section">
-            <h2>Meus Pets</h2>
-            <?php if (mysqli_num_rows($result_pets) > 0): ?>
-            <?php while ($user_data = mysqli_fetch_assoc($result_pets)): ?>
-            <div class="container-pet">
+
+        <h2>Meus Pets</h2>
+
+        <?php if (mysqli_num_rows($result_pets) > 0): ?>
+        <?php while ($user_data = mysqli_fetch_assoc($result_pets)): ?>
+        <div class="container-pet">
+
+            <div class="info-val">
+                <p class="nome-pet"> <?php echo $user_data['Nome_Pet']; ?></p>
+            </div>
+            <div class="content-pet">
                 <div class="info-val">
-                    <span><strong>Nome:</strong> <?php echo $user_data['Nome_Pet']; ?></span>
+                    <span><strong>Espécie:</strong> <?php echo $user_data['Especie']; ?></span>
                 </div>
                 <div class="info-val">
                     <span><strong>Raça:</strong> <?php echo $user_data['Raca']; ?></span>
                 </div>
                 <div class="info-val">
-                    <span><strong>Idade:</strong> <?php echo $user_data['Idade']; ?> anos</span>
+                    <span><strong>Idade:</strong> <?php echo $user_data['Idade']; ?></span>
                 </div>
                 <div class="info-val">
                     <span><strong>Sexo:</strong> <?php echo $user_data['Sexo']; ?></span>
                 </div>
-                <div class="info-val">
-                    <span><strong>Espécie:</strong> <?php echo $user_data['Especie']; ?></span>
-                </div>
+
                 <div class="info-val">
                     <span><strong>Castrado:</strong> <?php echo $user_data['Castracao']; ?></span>
                 </div>
-                <a href="editPet.php?cod_pet=<?php echo $user_data['Cod_Pet']; ?>" class="btn-edit">
-                    <button>
-                        <i class="fa-solid fa-pen-to-square icon"></i> Editar Pet
-                    </button>
-                </a>
+
             </div>
-            <?php endwhile; ?>
-            <?php else: ?>
-            <p>Você ainda não cadastrou nenhum pet.</p>
-            <?php endif; ?>
+            <a href="editPet.php?cod_pet=<?php echo $user_data['Cod_Pet']; ?>">
+                <button class="btn-edit">
+                    <i class="fa-solid fa-pen-to-square icon"></i> Editar Pet
+                </button>
+            </a>
+
+        </div>
+        <?php endwhile; ?>
+        <?php else: ?>
+        <p>Você ainda não cadastrou nenhum pet.</p>
+        <?php endif; ?>
+        <div class="btn-top">
+            <a href="addPet.php" class="btn-add">
+                <i class="fa-solid fa-plus"></i> Novo Pet
+            </a>
+            <a href="apgPet.php" class="btn-apg">
+                <i class="fa-solid fa-trash"></i> Apagar Pet
+            </a>
         </div>
     </div>
 </body>
