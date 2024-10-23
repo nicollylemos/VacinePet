@@ -1,0 +1,8 @@
+@media (min-width:310px) and (max-width: 400px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+}

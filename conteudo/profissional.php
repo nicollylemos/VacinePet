@@ -10,7 +10,7 @@ include("../inc/header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/profissional.css">
-    <link rel="stylesheet" href="../css/css/responsividade/teladoutora.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telaveterinaria.css">
     <link rel="stylesheet" href="../css/css/whatsapp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Conheça a Veterinária</title>
