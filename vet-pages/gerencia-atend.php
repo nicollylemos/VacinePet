@@ -58,7 +58,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
                             <i class="fa-solid fa-plus fa-4x ico" alt="Adicionar Atendimento"></i>
                         </div>
                         <div class="text-adocao">
-                            <p style="font-family: baloo;">Disponibilizar Atendimentos</p>
+                            <p style="font-family: baloo;">Disponibilizar Horários</p>
                         </div>
                     </a>
                 </div>

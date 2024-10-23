@@ -27,7 +27,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <title>VacinePet</title>
     <style>
     .sidebar {
-        height: 300vh;
+        height: 400vh;
     }
     </style>
 </head>
@@ -36,7 +36,8 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <section class="agendamento-atv">
         <div class="container-conteudo">
             <div class="container">
-                <h1>Selecione o Mês e o Ano</h1>
+                <h1>Disponibilizar Horários</h1>
+                <h2>Selecione o Mês e o Ano</h2>
                 <div class="row">
                     <div class="adoc-atv"><?php // Define o mês e o ano atuais
     $mes=isset($_POST['mes']) ? $_POST['mes'] : date('m');
@@ -112,8 +113,8 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
             echo "<td>". date('d/m/Y', $timestamp) . "</td>";
             echo "<td>". $nomeDiaSemana . "</td>";
             echo "<td>";
-            echo "<input type='time' name='horarios[". date('Y-m-d', $timestamp) . "][]' />";
-            echo "<button type='button' class='btn' onclick='addHorario(this)'>Adicionar Horário</button>";
+            echo "<input class='slct-hora' type='time' name='horarios[". date('Y-m-d', $timestamp) . "][]' />";
+            echo "<button type='button' class='btn-add' onclick='addHorario(this)'>Adicionar Horário</button>";
             echo "<div class='horarios-adicionados' data-date='". date('Y-m-d', $timestamp) . "'></div>";
             echo "</td>";
             echo "<td><input type='checkbox' name='diasDisponiveis[]' value='". date('Y-m-d', $timestamp) . "'></td>";
@@ -121,7 +122,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
         }
 
         echo "</table>";
-        echo "<input type='submit' value='Cadastrar Dias Disponíveis'>";
+        echo "<input type='submit'class='cad-hora' value='Cadastrar Dias Disponíveis'>";
         echo "</form>";
     }
 
@@ -162,6 +163,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
         var container = button.nextElementSibling;
         var newInput = document.createElement('input');
         newInput.type = 'time';
+        newInput.classList.add('slct-hora'); // Usando classList.add
         newInput.name = 'horarios[' + container.dataset.date + '][]';
         container.appendChild(newInput);
     }

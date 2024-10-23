@@ -1,3 +1,66 @@
+<?php
+
+include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
+
+
+$logado = null; // Inicializa como null
+$admin = null;  // Inicializa como null
+$nome = null;
+$tutorDados = null; // Inicializa a variável para armazenar os dados do tutor
+
+if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
+    $logado = $_SESSION['email'];
+    // Se for o email do administrador
+    if ($logado === 'lmonicagm@gmail.com') {
+        $admin = $_SESSION['email']; // Define o admin
+        $logado = null; // Remove o logado
+    }
+    
+    // Prepare a consulta para obter o cod_tutor
+    $query = "SELECT cod_tutor FROM tutor WHERE email = ?";
+    
+    // Cria um statement
+    $stmt = $conexao->prepare($query);
+    
+    // Assumindo que você está armazenando a senha em texto claro, o que não é recomendado
+    // Caso contrário, você deve substituir pela forma de hash que você está usando
+    $stmt->bind_param('s', $_SESSION['email']);
+    
+    // Executa a consulta
+    $stmt->execute();
+    
+    // Armazena o resultado
+    $stmt->store_result();
+    
+    // Verifica se foi encontrado algum resultado
+    if ($stmt->num_rows > 0) {
+        $stmt->bind_result($cod_tutor);
+        $stmt->fetch();
+
+        // Agora que temos o cod_tutor, vamos buscar todos os dados do tutor
+        $queryTutor = "SELECT * FROM tutor WHERE Cod_Tutor = ?";
+        
+        // Prepara a nova consulta
+        $stmtTutor = $conexao->prepare($queryTutor);
+        $stmtTutor->bind_param('i', $cod_tutor); // 'i' porque Cod_Tutor é um inteiro
+        $stmtTutor->execute();
+        
+        // Armazena o resultado
+        $resultTutor = $stmtTutor->get_result();
+        
+        // Verifica se foi encontrado algum resultado
+        if ($resultTutor->num_rows > 0) {
+            // Puxa todos os dados do tutor
+            $tutorDados = $resultTutor->fetch_assoc(); // Armazena os dados em um array associativo
+        } 
+        
+        // Fecha o statement do tutor
+        $stmtTutor->close();
+    } 
+    // Fecha o statement
+    $stmt->close();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -14,7 +77,8 @@
         <nav class="sidebar">
             <header>
                 <div class="image-text">
-                    <div class="text logo-text"><span class="hello">Olá,</span></div>
+                    <div class="text logo-text"><span class="hello">
+                            <?php echo "Olá, " .  $tutorDados['Nome']; ?></span></div>
                 </div><i class=" fa-solid fa-angle-left"></i>
             </header>
             <div class="menu-bar">
