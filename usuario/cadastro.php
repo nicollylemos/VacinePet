@@ -1,6 +1,7 @@
 <?php
+$error_email = ''; // Variável para armazenar o erro do e-mail
+
 if (isset($_POST['submit'])) {
-    // Inclui o arquivo de configuração para conectar ao banco de dados
     include_once('../config.php');
 
     // Obtém os dados do formulário
@@ -11,100 +12,45 @@ if (isset($_POST['submit'])) {
     $email = $_POST['tutor_email'];
     $senha = password_hash($_POST['tutor_senha'], PASSWORD_DEFAULT);
 
-    // Validação dos campos obrigatórios
-    $erros = [];
-    if (empty($nome) || strlen($nome) < 3) {
-        $erros['tutor_nome'] = 'Nome deve ter no mínimo 3 caracteres.';
-    }
-    if (empty($datanasc)) {
-        $erros['tutor_datanasc'] = 'Data de nascimento é obrigatória.';
-    }
-    if (empty($cpf)) {
-        $erros['tutor_cpf'] = 'CPF é obrigatório.';
-    }
-    if (empty($telefone)) {
-        $erros['tutor_telefone'] = 'Telefone é obrigatório.';
-    }
-    if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $erros['tutor_email'] = 'Email inválido.';
-    }
-    if (empty($_POST['tutor_senha']) || strlen($_POST['tutor_senha']) < 8) {
-        $erros['tutor_senha'] = 'Senha deve ter no mínimo 8 caracteres.';
-    }
+    // Verifica se o e-mail já está cadastrado
+    $query_email = "SELECT * FROM tutor WHERE email = '$email'";
+    $result_email = mysqli_query($conexao, $query_email);
 
-    // Validação dos campos do endereço
-    $rua = $_POST['end_rua'];
-    $numero = $_POST['end_numero'];
-    $bairro = $_POST['end_bairro'];
-    $cep = $_POST['end_cep'];
-    $cidade = isset($_POST['end_cidade']) ? $_POST['end_cidade'] : ''; // Verificação se a cidade existe
-
-    if (empty($rua)) {
-        $erros['end_rua'] = 'Rua é obrigatória.';
-    }
-    if (empty($numero)) {
-        $erros['end_numero'] = 'Número é obrigatório.';
-    }
-    if (empty($bairro)) {
-        $erros['end_bairro'] = 'Bairro é obrigatório.';
-    }
-    if (empty($cep)) {
-        $erros['end_cep'] = 'CEP é obrigatório.';
-    }
-    if (empty($cidade)) {
-        $erros['end_cidade'] = 'Cidade é obrigatória.';
-    }
-
-    // Validação dos campos do pet com isset para sexo, castracao, porte e espécie
-    $nome_pet = $_POST['pet_nome'];
-    $sexo = isset($_POST['pet_sexo']) ? $_POST['pet_sexo'] : ''; // Verifica se pet_sexo foi definido
-    $idade = $_POST['pet_idade'];
-    $castracao = isset($_POST['pet_castracao']) ? $_POST['pet_castracao'] : ''; // Verifica se pet_castracao foi definido
-    $porte = isset($_POST['pet_porte']) ? $_POST['pet_porte'] : ''; // Verifica se pet_porte foi definido
-    $especie = isset($_POST['pet_especie']) ? $_POST['pet_especie'] : ''; // Verifica se pet_especie foi definido
-
-    if (empty($nome_pet)) {
-        $erros['pet_nome'] = 'Nome do pet é obrigatório.';
-    }
-    if (empty($sexo)) {
-        $erros['pet_sexo'] = 'Sexo do pet é obrigatório.';
-    }
-    if (empty($idade)) {
-        $erros['pet_idade'] = 'Idade do pet é obrigatória.';
-    }
-    if (empty($castracao)) {
-        $erros['pet_castracao'] = 'Status de castração é obrigatório.';
-    }
-    if (empty($porte)) {
-        $erros['pet_porte'] = 'Porte do pet é obrigatório.';
-    }
-    if (empty($especie)) {
-        $erros['pet_especie'] = 'Espécie do pet é obrigatória.';
-    }
-
-    // Se houver erros, não insere no banco de dados
-    if (!empty($erros)) {
-        foreach ($erros as $erro) {
-            echo $erro . '<br>';
-        }
-        mysqli_close($conexao);
+    if (mysqli_num_rows($result_email) > 0) {
+        $error_email = "O e-mail já está cadastrado. Por favor, utilize outro e-mail.";
     } else {
-        // Insira os dados do tutor no banco de dados
+        // Insere os dados do tutor
         $result = mysqli_query($conexao, "INSERT INTO tutor(nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
 
         if ($result) {
             // Obter o ID do tutor inserido
             $cod_tutor = mysqli_insert_id($conexao);
 
-            // Insere as informações do endereço no banco de dados
-            $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '{$_POST['end_complemento']}', '$bairro', '$cep', '$cidade', '$cod_tutor')");
+            // Insere o endereço
+            $rua = $_POST['end_rua'];
+            $numero = $_POST['end_numero'];
+            $complemento = $_POST['end_complemento'];
+            $bairro = $_POST['end_bairro'];
+            $cep = $_POST['end_cep'];
+            $cidade = $_POST['end_cidade'];
 
-            // Insere as informações do pet no banco de dados
-            $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '{$_POST['pet_historico']}', '{$_POST['pet_raca']}', '{$_POST['pet_foto_pet']}', '$cod_tutor')");
+            $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
 
-            // Verifica se todas as inserções foram bem-sucedidas
-            if ($result_endereco && $result_pet) {
-                // Se tudo der certo, redireciona para a página de login
+            // Insere os dados do pet
+            $nome_pet = $_POST['pet_nome'];
+            $sexo = $_POST['pet_sexo'];
+            $idade = $_POST['pet_idade'];
+            $castracao = $_POST['pet_castracao'];
+            $porte = $_POST['pet_porte'];
+            $especie = $_POST['pet_especie'];
+            $historico = $_POST['pet_historico'];
+            $raca = $_POST['pet_raca'];
+            $foto_pet = $_POST['pet_foto_pet'];
+
+            $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
+
+            if ($result && $result_endereco && $result_pet) {
+                // Se tudo der certo, redireciona
                 header("Location: ../inc/login.php");
                 exit;
             } else {
@@ -112,10 +58,12 @@ if (isset($_POST['submit'])) {
             }
         }
     }
+
+    // Fecha a conexão
+    mysqli_close($conexao);
 }
-
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -129,11 +77,19 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet - Cadastro</title>
     <style>
-    .hidden {
-        display: none;
-    }
-    .error {
+        .hidden {
+            display: none;
+        }
+
+        .error {
             border: 2px solid red;
+        }
+
+
+
+        .text-danger {
+            color: red;
+            font-size: 14px;
         }
     </style>
     <title>Cadastro de Tutor</title>
@@ -200,10 +156,17 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="email" class="form-control frm-ctrl required" oninput="emailValidate()"
-                                name="tutor_email" id="email" placeholder="Email">
+                            <input type="email"
+                                class="form-control frm-ctrl required <?php echo !empty($error_email) ? 'error' : ''; ?>"
+                                oninput="emailValidate()" name="tutor_email" id="email"
+                                value="<?php echo isset($_POST['tutor_email']) ? $_POST['tutor_email'] : ''; ?>"
+                                placeholder="Email">
                             <span class="span-required">Digite um email válido</span>
+                            <?php if (!empty($error_email)): ?>
+                                <span class="text-danger"><?php echo $error_email; ?></span>
+                            <?php endif; ?>
                         </div>
+
                         <div class="form-group col-md-6">
                             <input type="password" class="form-control frm-ctrl required"
                                 oninput="mainPasswordValidate()" name="tutor_senha" id="senha" placeholder="Senha">
@@ -293,8 +256,7 @@ if (isset($_POST['submit'])) {
                                     <option value="Não">Não</option>
                                 </select>
 
-                                <select class="form-control frm-ctrl required" name="pet_porte"
-                                    id="porte" required>
+                                <select class="form-control frm-ctrl required" name="pet_porte" id="porte" required>
                                     <option value="" disabled selected>-- Qual o porte do seu Pet? --</option>
                                     <option value="Pequeno">Pequeno</option>
                                     <option value="Médio">Médio</option>
@@ -360,127 +322,66 @@ if (isset($_POST['submit'])) {
 </body>
 
 <script>
-  document.getElementById('form').addEventListener('submit', function (event) {
-    // Obtém todos os campos do formulário
-    const campos = [
-        { name: 'tutor_nome', element: document.getElementById('nome') },
-        { name: 'tutor_datanasc', element: document.getElementById('datanasc') },
-        { name: 'tutor_cpf', element: document.getElementById('cpf') },
-        { name: 'tutor_telefone', element: document.getElementById('telefone') },
-        { name: 'tutor_email', element: document.getElementById('email') },
-        { name: 'tutor_senha', element: document.getElementById('senha') },
-        // Endereço
-        { name: 'end_rua', element: document.getElementById('rua') },
-        { name: 'end_numero', element: document.getElementById('numero') },
-        { name: 'end_bairro', element: document.getElementById('bairro') },
-        { name: 'end_cep', element: document.getElementById('cep') },
-        { name: 'end_cidade', element: document.getElementById('cidade') },
-        // Pet
-        { name: 'pet_nome', element: document.getElementById('nome_pet') },
-        { name: 'pet_sexo', element: document.getElementById('sexo') },
-        { name: 'pet_idade', element: document.getElementById('idade_pet') },
-        { name: 'pet_castracao', element: document.getElementById('castracao') },
-        { name: 'pet_raca', element: document.getElementById('raca_pet') },
-        { name: 'pet_especie', element: document.getElementById('especie') }
-        { name: 'pet_porte', element: document.getElementById('porte') },
-        
-      
-      
-    ];
+    /Validação dos campos/
 
-    let valid = true;
+    const form = document.getElementById('form');
+    const campos = document.querySelectorAll('.required');
+    const spans = document.querySelectorAll('.span-required');
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    // Limpa os estilos de erro
-    campos.forEach(campo => {
-        campo.element.classList.remove('error');
-    });
 
-    // Verifica se cada campo obrigatório está preenchido corretamente
-    campos.forEach(campo => {
-        if (!campo.element.value ||
-            (campo.name === 'tutor_nome' && campo.element.value.length < 3) ||
-            (campo.name === 'tutor_senha' && campo.element.value.length < 8) ||
-            (campo.name === 'pet_nome' && campo.element.value.length < 1) || // Validação pet_nome
-            (campo.name === 'pet_sexo' && !campo.element.value) || // Validação pet_sexo
-            (campo.name === 'pet_idade' && !campo.element.value) || // Validação pet_idade
-            (campo.name === 'pet_castracao' && !campo.element.value) || // Validação pet_castracao
-            (campo.name === 'pet_porte' && !campo.element.value) || // Validação pet_porte
-            (campo.name === 'pet_especie' && !campo.element.value)) { // Validação pet_especie
-            campo.element.classList.add('error');
-            valid = false;
+
+
+
+
+    /Funções para aparecer e sumir o erro/
+
+    function setError(index) {
+        campos[index].style.border = '2px solid red';
+        spans[index].style.display = 'block';
+    }
+
+    function removeError(index) {
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
+    }
+    /Validação do nome/
+
+    function nameValidate() {
+        if (campos[0].value.length < 3) {
+
+            setError(0);
+        } else {
+            removeError(0)
+
         }
-    });
-
-    // Se algum campo não for válido, cancela o envio do formulário e exibe o alerta
-    if (!valid) {
-        event.preventDefault();
-        alert('Por favor, preencha todos os campos obrigatórios corretamente.');
     }
-});
 
-</script>
+    /Validação do email/
 
-<script>
-/Validação dos campos/
-
-const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
-const spans = document.querySelectorAll('.span-required');
-const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-
-
-
-
-
-/Funções para aparecer e sumir o erro/
-
-function setError(index) {
-    campos[index].style.border = '2px solid red';
-    spans[index].style.display = 'block';
-}
-
-function removeError(index) {
-    campos[index].style.border = '';
-    spans[index].style.display = 'none';
-}
-/Validação do nome/
-
-function nameValidate() {
-    if (campos[0].value.length < 3) {
-
-        setError(0);
-    } else {
-        removeError(0)
-
+    function emailValidate() {
+        if (!emailRegex.test(campos[2].value)) {
+            setError(2);
+        } else {
+            removeError(2);
+        }
     }
-}
 
-/Validação do email/
+    /Validação de senha/
 
-function emailValidate() {
-    if (!emailRegex.test(campos[2].value)) {
-        setError(2);
-    } else {
-        removeError(2);
+    function mainPasswordValidate() {
+        const senha = document.getElementById('senha');
+        const senhaSpan = document.querySelector(
+            '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
+
+        if (senha.value.length < 8) {
+            senha.style.border = '2px solid red';
+            senhaSpan.style.display = 'block';
+        } else {
+            senha.style.border = '';
+            senhaSpan.style.display = 'none';
+        }
     }
-}
-
-/Validação de senha/
-
-function mainPasswordValidate() {
-    const senha = document.getElementById('senha');
-    const senhaSpan = document.querySelector(
-        '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
-
-    if (senha.value.length < 8) {
-        senha.style.border = '2px solid red';
-        senhaSpan.style.display = 'block';
-    } else {
-        senha.style.border = '';
-        senhaSpan.style.display = 'none';
-    }
-}
 </script>
 
 
@@ -488,19 +389,19 @@ function mainPasswordValidate() {
 <script src="../js/cadastrar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-</script>
+    </script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 <script>
-$('#cep').mask('00000-000');
-$('#telefone').mask('(00) 00000-0000');
-$('#cpf').mask('000.000.000-00', {
-    reverse: true
-});
-$('#money').mask("#.##0,00", {
-    reverse: true
-});
+    $('#cep').mask('00000-000');
+    $('#telefone').mask('(00) 00000-0000');
+    $('#cpf').mask('000.000.000-00', {
+        reverse: true
+    });
+    $('#money').mask("#.##0,00", {
+        reverse: true
+    });
 </script>
 </script>
 
