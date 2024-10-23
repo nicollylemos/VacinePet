@@ -3,14 +3,13 @@ include("../inc/header.php");
 include("sidebar-vet.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
 
+// Verificação de autenticação
 if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     echo '<script type="text/javascript">';
     echo 'window.location.href = "../index.php";';
     echo '</script>';
     exit;
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -20,18 +19,14 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="../css/css/veterinarioo.css" />
-    <link rel="stylesheet" href="../css/css/data-vet.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
+    <link rel="stylesheet" href="../css/css/vetAtend.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VacinePet</title>
-
     <style>
     .sidebar {
-
         height: 300vh;
     }
     </style>
@@ -39,158 +34,138 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
 <body>
     <section class="agendamento-atv">
-        <div class="container">
-            <div class="container-tabela">
-                <div class="content">
-                    <h1> Selecione o Mês e o Ano</h1>
-                    <div class="row">
-                        <div class="adoc-atv">
+        <div class="container-conteudo">
+            <div class="container">
+                <h1>Selecione o Mês e o Ano</h1>
+                <div class="row">
+                    <div class="adoc-atv"><?php // Define o mês e o ano atuais
+    $mes=isset($_POST['mes']) ? $_POST['mes'] : date('m');
+    $ano=isset($_POST['ano']) ? $_POST['ano'] : date('Y');
 
-                            <?php
-                            // Verifica se um mês e ano foram enviados via POST, senão usa os valores padrão
-                            $mes = isset($_POST['mes']) ? $_POST['mes'] : date('m'); // Mês atual se não enviado
-                            $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y'); // Ano atual se não enviado
-                            
-                            // Array com os meses em português
-                            $meses = [
-                                1 => 'Janeiro',
-                                2 => 'Fevereiro',
-                                3 => 'Março',
-                                4 => 'Abril',
-                                5 => 'Maio',
-                                6 => 'Junho',
-                                7 => 'Julho',
-                                8 => 'Agosto',
-                                9 => 'Setembro',
-                                10 => 'Outubro',
-                                11 => 'Novembro',
-                                12 => 'Dezembro'
-                            ];
+    // Array de meses em português
+    $meses=[ 1=>'Janeiro',
+    2=>'Fevereiro',
+    3=>'Março',
+    4=>'Abril',
+    5=>'Maio',
+    6=>'Junho',
+    7=>'Julho',
+    8=>'Agosto',
+    9=>'Setembro',
+    10=>'Outubro',
+    11=>'Novembro',
+    12=>'Dezembro'
+    ];
 
-                            // Formulário para selecionar mês e ano
-                            echo "<form action='' method='POST'>";
-                            echo "<label for='mes'>Mês: </label>";
-                            echo "<select name='mes'>";
-                            foreach ($meses as $num => $nome) {
-                                $selected = ($num == $mes) ? "selected" : "";
-                                echo "<option value='$num' $selected>$nome</option>";
-                            }
-                            echo "</select>";
+    // Formulário para selecionar o mês e ano
+    echo "<form action='' method='POST'>";
+    echo "<label for='mes'>Mês: </label>";
+    echo "<select class='selecionar' name='mes'>";
 
-                            echo "<label for='ano' style='position: relative; left: 10px;'> Ano: </label> ";
-                            echo "<select name='ano' style='position: relative; top: -25px; left: 130px;'>";
+    foreach ($meses as $num=> $nome) {
+        $selected=($num==$mes) ? "selected": "";
+        echo "<option value='$num' $selected>$nome</option>";
+    }
 
+    echo "</select>";
 
-                            for ($i = date('Y'); $i <= date('Y') + 2; $i++) { // Exibe o ano atual e mais dois anos
-                                $selected = ($i == $ano) ? "selected" : "";
-                                echo "<option value='$i' $selected>$i</option>";
-                            }
-                            echo "</select>";
+    echo "<label for='ano' style='margin-left: 20px;'>Ano: </label>";
+    echo "<select class='selecionar' name='ano'>";
 
-                            echo "<br><input type='submit' value='Adicionar novos horários' style='margin-top: 10px; margin-left:80px;'>";
-                            echo "</form>";
+    for ($i=date('Y'); $i <=date('Y') + 2; $i++) {
+        $selected=($i==$ano) ? "selected": "";
+        echo "<option value='$i' $selected>$i</option>";
+    }
 
-                            // Função para retornar o nome do dia da semana em português
-                            function diaSemana($numeroDia)
-                            {
-                                $diasSemana = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
-                                return $diasSemana[$numeroDia];
-                            }
+    echo "</select>";
 
-                            // Se o mês e o ano forem selecionados, exibe os dias e horários disponíveis
-                            if (isset($_POST['mes']) && isset($_POST['ano'])) {
-                                // Pega o número total de dias no mês
-                                $diasNoMes = cal_days_in_month(CAL_GREGORIAN, $mes, $ano);
+    echo "<input class='add-hora' type='submit' value='Buscar' style='margin-top: 10px;'>";
+    echo "</form>";
 
-                                // Exibe o formulário para seleção dos dias e horários disponíveis
-                                echo "<h2 style='color:#52BACB; font-family: baloo;'>" . $meses[$mes] . " de " . $ano . "</h2>";
-                                echo "<form action='' method='POST'>";
-                                echo "<table border='1'>";
-                                echo "<tr><th>Data</th><th>Dia da Semana</th><th>Horários Disponíveis</th><th>Selecionar</th></tr>";
+    // Função para pegar o nome do dia da semana
+    function diaSemana($numeroDia) {
+        $diasSemana=['Domingo',
+        'Segunda-feira',
+        'Terça-feira',
+        'Quarta-feira',
+        'Quinta-feira',
+        'Sexta-feira',
+        'Sábado'];
+        return $diasSemana[$numeroDia];
+    }
 
-                                for ($dia = 1; $dia <= $diasNoMes; $dia++) {
-                                    // Obtém o timestamp para o dia atual
-                                    $timestamp = mktime(0, 0, 0, $mes, $dia, $ano);
+    // Exibir dias e horários disponíveis
+    if (isset($_POST['mes']) && isset($_POST['ano'])) {
+        $diasNoMes=cal_days_in_month(CAL_GREGORIAN, $mes, $ano);
 
-                                    // Pega o número do dia da semana (0 = Domingo, 6 = Sábado)
-                                    $numeroDiaSemana = date('w', $timestamp);
+        echo "<h2>". $meses[$mes] . " de ". $ano . "</h2>";
+        echo "<form action='' method='POST'>";
+        echo "<table border='1'>";
+        echo "<tr><th>Data</th><th>Dia da Semana</th><th>Horários Disponíveis</th><th>Selecionar</th></tr>";
 
-                                    // Pega o nome do dia da semana
-                                    $nomeDiaSemana = diaSemana($numeroDiaSemana);
+        for ($dia=1; $dia <=$diasNoMes; $dia++) {
+            $timestamp=mktime(0, 0, 0, $mes, $dia, $ano);
+            $numeroDiaSemana=date('w', $timestamp);
+            $nomeDiaSemana=diaSemana($numeroDiaSemana);
 
-                                    // Exibe a linha com a data, o nome do dia da semana e a entrada de horários
-                                    echo "<tr>";
-                                    echo "<td>" . date('d/m/Y', $timestamp) . "</td>";
-                                    echo "<td>" . $nomeDiaSemana . "</td>";
-                                    echo "<td>";
+            echo "<tr>";
+            echo "<td>". date('d/m/Y', $timestamp) . "</td>";
+            echo "<td>". $nomeDiaSemana . "</td>";
+            echo "<td>";
+            echo "<input type='time' name='horarios[". date('Y-m-d', $timestamp) . "][]' />";
+            echo "<button type='button' class='btn' onclick='addHorario(this)'>Adicionar Horário</button>";
+            echo "<div class='horarios-adicionados' data-date='". date('Y-m-d', $timestamp) . "'></div>";
+            echo "</td>";
+            echo "<td><input type='checkbox' name='diasDisponiveis[]' value='". date('Y-m-d', $timestamp) . "'></td>";
+            echo "</tr>";
+        }
 
-                                    // Campo para adicionar horários personalizados
-                                    echo "<input type='time' name='horarios[" . date('Y-m-d', $timestamp) . "][]' />";
-                                    echo "<button type='button' onclick='addHorario(this)'>Adicionar Horário</button>";
-                                    echo "<div class='horarios-adicionados' data-date='" . date('Y-m-d', $timestamp) . "'></div>";
+        echo "</table>";
+        echo "<input type='submit' value='Cadastrar Dias Disponíveis'>";
+        echo "</form>";
+    }
 
-                                    echo "</td>";
-                                    echo "<td><input type='checkbox' name='diasDisponiveis[]' value='" . date('Y-m-d', $timestamp) . "'></td>";
-                                    echo "</tr>";
-                                }
+    // Verifica se dias e horários foram selecionados
+    if (isset($_POST['diasDisponiveis']) && isset($_POST['horarios'])) {
+        $diasSelecionados=$_POST['diasDisponiveis'];
+        $horariosSelecionados=$_POST['horarios'];
 
-                                echo "</table>";
-                                echo "<input type='submit' value='Cadastrar Dias Disponíveis'>";
-                                echo "</form>";
-                            }
+        // Inserir dados no banco de dados
+        $stmt=$conexao->prepare("INSERT INTO dias_disponiveis (data_disponivel, nome_dia_semana, horario_disponivel) VALUES (?, ?, ?)");
 
-                            // Verifica se algum dia foi selecionado
-                            if (isset($_POST['diasDisponiveis']) && isset($_POST['horarios'])) {
-                                $diasSelecionados = $_POST['diasDisponiveis'];
-                                $horariosSelecionados = $_POST['horarios'];
+        foreach ($diasSelecionados as $dia) {
+            $timestamp=strtotime($dia);
+            $nomeDiaSemana=diaSemana(date('w', $timestamp));
 
-                                // Prepara a inserção de dados no banco de dados
-                                $stmt = $conexao->prepare("INSERT INTO dias_disponiveis (data_disponivel, nome_dia_semana, horario_disponivel) VALUES (?, ?, ?)");
+            if (isset($horariosSelecionados[$dia])) {
+                foreach ($horariosSelecionados[$dia] as $horario) {
+                    $stmt->bind_param("sss", $dia, $nomeDiaSemana, $horario);
+                    $stmt->execute();
+                }
+            }
+        }
 
-                                // Percorre os dias selecionados e insere cada um no banco de dados com seus horários
-                                foreach ($diasSelecionados as $dia) {
-                                    $timestamp = strtotime($dia);
-                                    $nomeDiaSemana = diaSemana(date('w', $timestamp));
+        echo "Dias e horários cadastrados com sucesso!";
+    }
 
-                                    if (isset($horariosSelecionados[$dia])) {
-                                        foreach ($horariosSelecionados[$dia] as $horario) {
-                                            $stmt->bind_param("sss", $dia, $nomeDiaSemana, $horario); // "sss" = três strings
-                                            $stmt->execute();
-                                        }
-                                    }
-                                }
+    else {
+        echo "<p>Nenhum dia ou horário foi selecionado.</p>";
+    }
 
-                                echo "Dias e horários cadastrados com sucesso!";
-                            } else {
-                                echo "<p style='font-size: 14px; position: relative; left:60px; top:10px;'>Nenhum dia ou horário foi selecionado.</p>";
-
-                            }
-                            ?>
-
-                        </div>
-
-                    </div>
+    ?></div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-
+    <script>
+    function addHorario(button) {
+        var container = button.nextElementSibling;
+        var newInput = document.createElement('input');
+        newInput.type = 'time';
+        newInput.name = 'horarios[' + container.dataset.date + '][]';
+        container.appendChild(newInput);
+    }
+    </script>
 </body>
 
 </html>
-
-<script>
-function addHorario(button) {
-    // Obtém o container de horários adicionados
-    var container = button.nextElementSibling;
-
-    // Cria um novo campo de entrada do tipo 'time' para o horário
-    var newInput = document.createElement('input');
-    newInput.type = 'time';
-    newInput.name = 'horarios[' + container.dataset.date + '][]';
-
-    // Adiciona o novo campo ao container
-    container.appendChild(newInput);
-}
-</script>

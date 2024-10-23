@@ -10,7 +10,7 @@
  * O formulário tem uma estética visual agradável, permitindo uma experiência de usuário fluida e organizada.
  *
  * @date 2024-09-20
- * @author Eduarda Oliveira de Souza 
+ * @Nicolly Lemos da Silva
  * @version 1.0
  */
 -->
@@ -36,8 +36,8 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="../css/css/veterinarioo.css" />
     <link rel="stylesheet" href="../css/css/vetGerenciar.css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -49,43 +49,49 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 <body>
     <section class="agendamento-atv">
         <div class="container">
-            <div class="container-tabela">
-                <div class="content">
 
-                    <div class="row">
-                        <div class="adoc-atv">
-                            <a href="add-pet.php" style="text-decoration: none;">
-                                <div class="row">
-                                    <div class="col-xs-12 text-center p-0">
-                                        <i class="fa-solid fa-plus fa-4x ico"></i>
-                                    </div>
-                                    <div class="text-adocao">
-                                        <p style="font-family: baloo;">Adicionar Adoção</p>
-                                    </div>
-                                </div>
-                            </a>
+            <div class="row">
+                <!-- Disponibilizar Atendimentos -->
+                <div class="adoc-atv">
+                    <a href="data.php" style="text-decoration: none;">
+                        <div class="col-xs-12 text-center p-0">
+                            <i class="fa-solid fa-plus fa-4x ico" alt="Adicionar Atendimento"></i>
                         </div>
-
-                        <div class="adoc-atv">
-                            <a href="visualizar-pet.php" style="text-decoration: none;">
-                                <div class="row">
-                                    <div class="col-xs-12 text-center p-0">
-                                        <i class="fa-solid fa-paw fa-4x ico"></i>
-                                    </div>
-                                    <div class="text-adocao">
-                                        <p style="font-family: baloo;">Adoções Ativas</p>
-                                    </div>
-                                </div>
-                            </a>
+                        <div class="text-adocao">
+                            <p style="font-family: baloo;">Disponibilizar Atendimentos</p>
                         </div>
-
-                    </div>
+                    </a>
                 </div>
+
+                <!-- Deletar atendimentos -->
+                <div class="adoc-atv">
+                    <a href="deletar.php" style="text-decoration: none;">
+                        <div class="col-xs-12 text-center p-0">
+                            <i class="fa-solid fa-trash fa-4x ico" alt="Deletar Atendimento"></i>
+                        </div>
+                        <div class="text-adocao">
+                            <p style="font-family: baloo;">Apagar<br> atendimentos</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Visualizar atendimentos -->
+                <div class="adoc-atv">
+                    <a href="ver-disponivel.php" style="text-decoration: none;">
+                        <div class="col-xs-12 text-center p-0">
+                            <i class="fa-regular fa-calendar fa-4x ico" alt="Visualizar Atendimento"></i>
+                        </div>
+                        <div class="text-adocao">
+                            <p style="font-family: baloo;">Atendimentos disponíveis</p>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
         </div>
+        </div>
     </section>
-
 
 </body>
 

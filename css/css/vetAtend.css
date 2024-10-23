@@ -1,0 +1,54 @@
+.adoc-atv {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #52BACB;
+    color: white;
+}
+.container{
+    width: 900px;
+    display: inline-block;
+}
+
+.add-hora{
+    background-color: #52BACB;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    width: 120px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 24px;
+}
+
+.add-hora:hover{
+    transition: 1s;
+    background-color: #63c3d1;
+}
+
+.selecionar{
+    width: 200px; 
+    height: 40px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: transparent; 
+    color: #333; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-bottom: 40px;
+}

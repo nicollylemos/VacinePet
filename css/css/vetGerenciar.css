@@ -2,33 +2,49 @@
     font-family: 'baloo';
     src: url("../font/baloo/Baloo-Regular.ttf");
 }
-.adoc-atv{
-    width:210px;
+
+.adoc-atv {
+    width: 210px;
     border-radius: 20px;
-    height: 150px;
+    height: 200px;
     text-align: center;
-    
+    background-color: #52BACB;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top; /* Garante o alinhamento ao topo */
+    transition: background-color 1s;
 }
-.ico{
+
+.adoc-atv:hover {
+    background-color: #6ecfde;
+}
+
+.ico {
     color: white;
-    position: relative;
-    top: 20px;
+    margin-top: 20px;
 }
-.text-adocao{
-    position: relative;
-    top: 35px;
+
+.text-adocao {
+    margin-top: 35px;
     color: white;
     font-family: baloo;
     font-size: 20px;
 }
-#vizu{
-    position: relative;
-    left: 250px;
-    top: -150px;
+
+/* Remover espaçamento entre inline-blocks */
+.content {
+    font-size: 0; /* Remove o espaço entre os blocos */
+    width: 100%;
+    max-width: 900px;
+    margin-top: 10px;
 }
- 
-/*add*/
-#form{
+
+.adoc-atv {
+    font-size: 16px; /* Reaplica o tamanho de fonte normal para os elementos */
+}
+
+/* Form */
+#form {
     position: relative;
     top: 100px;
     left: -240px;
@@ -40,29 +56,34 @@
     width: 600px;
     padding: 30px 35px;
 }
-#new{
+
+#new {
     position: relative;
     left: 20px;
     top: 15px;
 }
-.pata{
+
+.pata {
     font-size: 25px;
 }
-.form-control{
+
+.form-control {
     width: 400px;
     height: 40px;
     border-radius: 20px;
     border: solid;
     border-color: #52BACB;
 }
-#form-control{
+
+#form-control {
     width: 200px;
     height: 40px;
     border-radius: 20px;
     border: solid;
     border-color: #52BACB;
 }
-.label{
+
+.label {
     font-family: baloo;
     color: #8c8c8c9a;
 }

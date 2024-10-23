@@ -153,7 +153,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     .input-button {
-        margin-top: 60px;
+        margin-top: 40px;
         margin-bottom: 20px;
         text-align: center;
     }
@@ -195,7 +195,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <input type="text" id="numero" name="numero" value="<?php echo $numero; ?>" required>
                 </div>
 
-                <div class="input-group">
+                <div class="input-button">
                     <button type="submit" class="btn-submit">Salvar Alterações</button>
                     <a href="index.php" class="btn-cancel">Cancelar</a>
                 </div>

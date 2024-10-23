@@ -14,8 +14,7 @@
         <nav class="sidebar">
             <header>
                 <div class="image-text">
-                    <div class="text logo-text"><span class="hello">Olá,
-                            Luciane Mônica</span></div>
+                    <div class="text logo-text"><span class="hello">Olá,</span></div>
                 </div><i class=" fa-solid fa-angle-left"></i>
             </header>
             <div class="menu-bar">
@@ -37,7 +36,7 @@
                     </ul>
                     <li class="nav-link"><a href="adocao.php"><i class="fa-solid fa-paw icon"></i><span
                                 class="text nav-text">Adoção</span></a></li>
-                    <li class="nav-link"><a href="data.php"><i class="fa-solid fa-clock icon"></i><span
+                    <li class="nav-link"><a href="gerencia-atend.php"><i class="fa-solid fa-clock icon"></i><span
                                 class="text nav-text">Gerenciar Atendimento</span></a></li>
                     <li class="nav-link"><a href="configuracao.php"><i class="fa-solid fa-cog icon"></i><span
                                 class="text nav-text">Configuração</span></a></li>
