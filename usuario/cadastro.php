@@ -217,7 +217,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-group col-md-6">
                             <input type="email"
                                 class="form-control frm-ctrl required <?php echo !empty($error_email) ? 'error' : ''; ?>"
-                                oninput="emailValidate()" name="tutor_email" id="email"
+                                 name="tutor_email" id="email"
                                 value="<?php echo isset($_POST['tutor_email']) ? $_POST['tutor_email'] : ''; ?>"
                                 placeholder="Email">
                             <span class="span-required">Digite um email válido</span>
