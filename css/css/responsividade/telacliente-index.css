@@ -329,6 +329,9 @@
     .section{
         width: 800px;
     }
+    .sidebar{
+        height: 200vh;
+    }
 }
 @media (min-width:1051px) and (max-width: 1200px){
     html,
