@@ -41,12 +41,16 @@ JOIN
     pet ON agendamentos.cod_pet = pet.Cod_Pet
 WHERE
     agendamentos.situacao NOT IN ('Cancelado', 'Concluído') 
-    AND MONTH(agendamentos.data_agendamento) = $mes
-    AND YEAR(agendamentos.data_agendamento) = $ano
+    AND MONTH(agendamentos.data_agendamento) = ? 
+    AND YEAR(agendamentos.data_agendamento) = ?
 ORDER BY 
     agendamentos.data_agendamento;";
 
-$result = $conexao->query($sql);
+// Prepara a consulta
+$stmt = $conexao->prepare($sql);
+$stmt->bind_param("ii", $mes, $ano);
+$stmt->execute();
+$result = $stmt->get_result();
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +60,6 @@ $result = $conexao->query($sql);
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -97,53 +100,51 @@ $result = $conexao->query($sql);
                             <?php endfor; ?>
                         </select>
 
-
                         <button type="submit">Buscar</button>
                     </form>
 
                     <div class="table">
                         <table>
+                            <tr>
+                                <th>Agendamento</th>
+                                <th>Data</th>
+                                <th>Hora</th>
+                                <th>Serviço</th>
+                                <th>Pet</th>
+                                <th>Tutor</th>
+                                <th>Situação</th>
+                                <th>...</th>
+                            </tr>
 
                             <?php
-                            if  ($agendamento = mysqli_fetch_assoc($result)){
-                                echo "<tr>
-                                        <th>Agendamento</th>
-                                        <th>Data</th>
-                                        <th>Hora</th>
-                                        <th>Serviço</th>
-                                        <th>Pet</th>
-                                        <th>Tutor</th>
-                                        <th>Situação</th>
-                                        <th>...</th>
-                                    </tr>";
-
-                            while ($agendamento = mysqli_fetch_assoc($result)) {
-                                echo "<tr>";
-                                echo "<td>" . $agendamento['id'] . "</td>";
-                                echo "<td>" . date('d/m/Y', strtotime($agendamento['data_agendamento'])) . "</td>";
-                                echo "<td>" . date('H:i', strtotime($agendamento['horario_agendamento'])) . "</td>";
-                                echo "<td>" . $agendamento['servico'] . "</td>";
-                                echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
-                                echo "<td>" . $agendamento['nome_tutor'] . "</td>";
-                                echo "<td>" . $agendamento['situacao'] . "</td>"; 
-                                echo "<td>";
-                                echo "<a href='viewAgend.php?id=" . $agendamento['id'] . "'>";
-                                echo "<button>";
-                                echo "<i class='fa-solid fa-eye icon'></i>";
-                                echo "</button>";
-                                echo "</a>";
-                                echo "<a href='editAgend.php?id=" . $agendamento['id'] . "'>";
-                                echo "<button>";
-                                echo "<i class='fa-solid fa-edit icon'></i>";
-                                echo "</button>";
-                                echo "</a>";
-                                echo "</td>";
-                                echo "</tr>";
+                            // Verifica se há resultados
+                            if ($result->num_rows > 0) {
+                                while ($agendamento = $result->fetch_assoc()) {
+                                    echo "<tr>";
+                                    echo "<td>" . $agendamento['id'] . "</td>";
+                                    echo "<td>" . date('d/m/Y', strtotime($agendamento['data_agendamento'])) . "</td>";
+                                    echo "<td>" . date('H:i', strtotime($agendamento['horario_agendamento'])) . "</td>";
+                                    echo "<td>" . $agendamento['servico'] . "</td>";
+                                    echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
+                                    echo "<td>" . $agendamento['nome_tutor'] . "</td>";
+                                    echo "<td>" . $agendamento['situacao'] . "</td>"; 
+                                    echo "<td>";
+                                    echo "<a href='viewAgend.php?id=" . $agendamento['id'] . "'>";
+                                    echo "<button>";
+                                    echo "<i class='fa-solid fa-eye icon'></i>";
+                                    echo "</button>";
+                                    echo "</a>";
+                                    echo "<a href='editAgend.php?id=" . $agendamento['id'] . "'>";
+                                    echo "<button>";
+                                    echo "<i class='fa-solid fa-edit icon'></i>";
+                                    echo "</button>";
+                                    echo "</a>";
+                                    echo "</td>";
+                                    echo "</tr>";
+                                }
+                            } else {
+                                echo "<tr><td colspan='8'>Não há atendimentos agendados para este mês.</td></tr>";
                             }
-                        }
-                        else{
-                            echo"Não há atendimentos agendados para este mês.";
-                        }
                             ?>
                         </table>
                     </div>
