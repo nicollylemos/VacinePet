@@ -1,0 +1,34 @@
+@media (min-width:310px) and (max-width: 410px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container{
+        left: 100px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    
+}
+@media (min-width:411px) and (max-width: 450px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container{
+        left: 100px;
+    }
+}
+@media (min-width:451px) and (max-width: 900px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container{
+        left: 100px;
+    }
+}

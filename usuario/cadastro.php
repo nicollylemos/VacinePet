@@ -4,65 +4,98 @@ $error_email = ''; // Variável para armazenar o erro do e-mail
 if (isset($_POST['submit'])) {
     include_once('../config.php');
 
-    // Obtém os dados do formulário
-    $nome = $_POST['tutor_nome'];
-    $datanasc = $_POST['tutor_datanasc'];
-    $cpf = $_POST['tutor_cpf'];
-    $telefone = $_POST['tutor_telefone'];
-    $email = $_POST['tutor_email'];
-    $senha = password_hash($_POST['tutor_senha'], PASSWORD_DEFAULT);
+    // Verifica se os campos obrigatórios estão preenchidos
+    $required_fields = [
+        'tutor_nome',
+        'tutor_datanasc',
+        'tutor_cpf',
+        'tutor_telefone',
+        'tutor_email',
+        'tutor_senha',
+        'end_rua',
+        'end_numero',
+        'end_bairro',
+        'end_cep',
+        'end_cidade',
+        'pet_nome',
+        'pet_sexo',
+        'pet_idade',
+        'pet_castracao',
+        'pet_porte',
+        'pet_especie'
+    ];
 
-    // Verifica se o e-mail já está cadastrado
-    $query_email = "SELECT * FROM tutor WHERE email = '$email'";
-    $result_email = mysqli_query($conexao, $query_email);
+    $missing_fields = [];
 
-    if (mysqli_num_rows($result_email) > 0) {
-        $error_email = "O e-mail já está cadastrado. Por favor, utilize outro e-mail.";
-    } else {
-        // Insere os dados do tutor
-        $result = mysqli_query($conexao, "INSERT INTO tutor(nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
-
-        if ($result) {
-            // Obter o ID do tutor inserido
-            $cod_tutor = mysqli_insert_id($conexao);
-
-            // Insere o endereço
-            $rua = $_POST['end_rua'];
-            $numero = $_POST['end_numero'];
-            $complemento = $_POST['end_complemento'];
-            $bairro = $_POST['end_bairro'];
-            $cep = $_POST['end_cep'];
-            $cidade = $_POST['end_cidade'];
-
-            $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
-
-            // Insere os dados do pet
-            $nome_pet = $_POST['pet_nome'];
-            $sexo = $_POST['pet_sexo'];
-            $idade = $_POST['pet_idade'];
-            $castracao = $_POST['pet_castracao'];
-            $porte = $_POST['pet_porte'];
-            $especie = $_POST['pet_especie'];
-            $historico = $_POST['pet_historico'];
-            $raca = $_POST['pet_raca'];
-            $foto_pet = $_POST['pet_foto_pet'];
-
-            $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
-
-            if ($result && $result_endereco && $result_pet) {
-                // Se tudo der certo, redireciona
-                header("Location: ../inc/login.php");
-                exit;
-            } else {
-                echo "Erro ao salvar no banco de dados.";
-            }
+    foreach ($required_fields as $field) {
+        if (empty($_POST[$field])) {
+            $missing_fields[] = $field;
         }
     }
 
-    // Fecha a conexão
-    mysqli_close($conexao);
+    if (!empty($missing_fields)) {
+        echo "Por favor, preencha todos os campos obrigatórios: ";
+    } else {
+        // Obtém os dados do formulário
+        $nome = $_POST['tutor_nome'];
+        $datanasc = $_POST['tutor_datanasc'];
+        $cpf = $_POST['tutor_cpf'];
+        $telefone = $_POST['tutor_telefone'];
+        $email = $_POST['tutor_email'];
+        $senha = password_hash($_POST['tutor_senha'], PASSWORD_DEFAULT);
+
+        // Verifica se o e-mail já está cadastrado
+        $query_email = "SELECT * FROM tutor WHERE email = '$email'";
+        $result_email = mysqli_query($conexao, $query_email);
+
+        if (mysqli_num_rows($result_email) > 0) {
+            $error_email = "O e-mail já está cadastrado. Por favor, utilize outro e-mail.";
+        } else {
+            // Insere os dados do tutor
+            $result = mysqli_query($conexao, "INSERT INTO tutor(nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
+
+            if ($result) {
+                // Obter o ID do tutor inserido
+                $cod_tutor = mysqli_insert_id($conexao);
+
+                // Insere o endereço
+                $rua = $_POST['end_rua'];
+                $numero = $_POST['end_numero'];
+                $complemento = $_POST['end_complemento'] ?? null;
+                $bairro = $_POST['end_bairro'];
+                $cep = $_POST['end_cep'];
+                $cidade = $_POST['end_cidade'];
+
+                $result_endereco = mysqli_query($conexao, "INSERT INTO endereco(rua, numero, complemento, bairro, cep, cidade, cod_tutor) VALUES ('$rua', '$numero', '$complemento', '$bairro', '$cep', '$cidade', '$cod_tutor')");
+
+                // Insere os dados do pet
+                $nome_pet = $_POST['pet_nome'];
+                $sexo = $_POST['pet_sexo'];
+                $idade = $_POST['pet_idade'];
+                $castracao = $_POST['pet_castracao'];
+                $porte = $_POST['pet_porte'];
+                $especie = $_POST['pet_especie'];
+                $historico = $_POST['pet_historico'] ?? null;
+                $foto_pet = $_POST['pet_foto_pet'] ?? null;
+
+                $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
+
+                if ($result && $result_endereco && $result_pet) {
+                    // Se tudo der certo, redireciona
+                    header("Location: ../inc/login.php");
+                    exit;
+                } else {
+                    echo "Erro ao salvar no banco de dados.";
+                }
+            }
+        }
+
+        // Fecha a conexão
+        mysqli_close($conexao);
+    }
 }
 ?>
+
 
 
 <!DOCTYPE html>
@@ -85,6 +118,11 @@ if (isset($_POST['submit'])) {
             border: 2px solid red;
         }
 
+        .erro {
+            border-color: red;
+        }
+
+
 
 
         .text-danger {
@@ -97,6 +135,25 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="container">
+
+        <!-- Modal para mensagens de erro -->
+        <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="errorModalLabel">Erro no Cadastro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Por favor, preencha todos os campos obrigatórios.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="blue-div">
             <h4 class="title-blue-div1">
                 VacinePet
@@ -134,7 +191,9 @@ if (isset($_POST['submit'])) {
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control frm-ctrl required" oninput="nameValidate()"
-                                name="tutor_nome" id="nome" placeholder="Nome Completo">
+                                name="tutor_nome" id="nome"
+                                value="<?php echo isset($_POST['tutor_nome']) ? $_POST['tutor_nome'] : ''; ?>"
+                                placeholder="Nome Completo">
                             <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                         </div>
                         <div class="form-group col-md-6">
@@ -144,12 +203,12 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="tutor_cpf" id="cpf" placeholder="CPF"
-                                maxlength="14" autocomplete="off" required>
+                            <input type="text" class="form-control frm-ctrl required" name="tutor_cpf" id="cpf"
+                            oninput="mascaraCPF(this)" placeholder="CPF" maxlength="14" autocomplete="off" required>
 
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="tel" class="form-control frm-ctrl" name="tutor_telefone" id="telefone"
+                            <input type="tel" class="form-control frm-ctrl required" name="tutor_telefone" id="telefone"
                                 placeholder="(DDD) + Telefone" onkeyup="handlePhone(event)" maxlength="15">
                             <span class="span-required">Digite um número de telefone</span>
                         </div>
@@ -158,7 +217,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-group col-md-6">
                             <input type="email"
                                 class="form-control frm-ctrl required <?php echo !empty($error_email) ? 'error' : ''; ?>"
-                                oninput="emailValidate()" name="tutor_email" id="email"
+                                 name="tutor_email" id="email"
                                 value="<?php echo isset($_POST['tutor_email']) ? $_POST['tutor_email'] : ''; ?>"
                                 placeholder="Email">
                             <span class="span-required">Digite um email válido</span>
@@ -186,16 +245,17 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="end_cep" id="cep" placeholder="CEP">
+                            <input type="text" class="form-control frm-ctrl required" name="end_cep" id="cep"
+                                placeholder="CEP">
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="end_rua" id="rua" placeholder="Rua"
-                                required>
+                            <input type="text" class="form-control frm-ctrl required" name="end_rua" id="rua"
+                                placeholder="Rua" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="number" class="form-control frm-ctrl" name="end_numero" id="numero"
+                            <input type="number" class="form-control frm-ctrl required" name="end_numero" id="numero"
                                 placeholder="Número" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -205,7 +265,7 @@ if (isset($_POST['submit'])) {
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" class="form-control frm-ctrl" name="end_bairro" id="bairro"
+                            <input type="text" class="form-control frm-ctrl required" name="end_bairro" id="bairro"
                                 placeholder="Bairro" required>
                         </div>
                         <div class="form-group col-md-6">
@@ -322,6 +382,38 @@ if (isset($_POST['submit'])) {
 </body>
 
 <script>
+    // Função de validação ao submeter o formulário
+    document.getElementById('form').onsubmit = function (event) {
+        const requiredFields = document.querySelectorAll('.required');
+        let isValid = true;
+
+        // Checa cada campo obrigatório
+        requiredFields.forEach(field => {
+            if (!field.value) {
+                field.classList.add('error'); // Adiciona a classe error (borda vermelha)
+                isValid = false;
+            } else {
+                field.classList.remove('error');
+            }
+        });
+
+        // Se houver campos não preenchidos, exibe o modal e cancela o envio
+        if (!isValid) {
+            event.preventDefault(); // Impede o envio do formulário
+            var modal = new bootstrap.Modal(document.getElementById('errorModal'), {
+                backdrop: false // Desativa o fundo escurecido
+            });
+            modal.show();
+        }
+
+    };
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
     /Validação dos campos/
 
     const form = document.getElementById('form');
@@ -394,15 +486,62 @@ if (isset($_POST['submit'])) {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 <script>
+    // Função para aplicar a máscara do CPF enquanto o usuário digita
+function mascaraCPF(cpf) {
+    // Remove tudo que não é dígito
+    cpf.value = cpf.value.replace(/\D/g, "");
+
+    // Aplica a máscara com pontos e traço
+    cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+}
+
+// Função para validar o CPF, mantendo pontos e traços
+function validarCPF(cpf) {
+    // Mantém os pontos e traço para a exibição, mas retira para a validação
+    var cpfSemMascara = cpf.replace(/[^\d]+/g, ''); // Remove pontos e traço
+    
+    // Validação básica de formato
+    if (cpfSemMascara == '' || cpfSemMascara.length != 11 || /^(\d)\1+$/.test(cpfSemMascara)) {
+        return false;
+    }
+
+    // Validação dos dígitos verificadores
+    var soma = 0, resto;
+    for (var i = 1; i <= 9; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (11 - i);
+    resto = (soma * 10) % 11;
+    if ((resto == 10) || (resto == 11)) resto = 0;
+    if (resto != parseInt(cpfSemMascara.substring(9, 10))) return false;
+
+    soma = 0;
+    for (var i = 1; i <= 10; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (12 - i);
+    resto = (soma * 10) % 11;
+    if ((resto == 10) || (resto == 11)) resto = 0;
+    if (resto != parseInt(cpfSemMascara.substring(10, 11))) return false;
+
+    return true;
+}
+
+// Aplicação da validação ao perder o foco (blur)
+document.getElementById("cpf").addEventListener("blur", function() {
+    var cpfInput = this;
+    if (!validarCPF(cpfInput.value)) {
+        cpfInput.classList.add("erro");
+        alert("CPF inválido!");
+    } else {
+        cpfInput.classList.remove("erro");
+    }
+});
+
+</script>
+</script>
+<script>
     $('#cep').mask('00000-000');
     $('#telefone').mask('(00) 00000-0000');
-    $('#cpf').mask('000.000.000-00', {
-        reverse: true
-    });
     $('#money').mask("#.##0,00", {
         reverse: true
     });
-</script>
 </script>
 
 

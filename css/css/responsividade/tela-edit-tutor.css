@@ -1,0 +1,322 @@
+@media (min-width:310px) and (max-width: 450px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 250px !important;
+        position: relative;
+        left: -235px;
+    }
+    #senha,  ::placeholder{
+        font-size: 12px;
+    }
+    .btn-submit{
+        position: relative;
+        top: -15px;
+    }
+    .sidebar{
+        height: 150vh;
+    }
+    h2{
+        font-size: 20px;
+        width: 250px;
+        position: relative;
+        left: -35px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 14px;
+    }
+}
+@media (min-width: 451px) and (max-width: 500px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 300px !important;
+        position: relative;
+        left: -225px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .btn-submit{
+        position: relative;
+        top: -15px;
+    }
+    .sidebar{
+        height: 150vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -45px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
+@media (min-width: 501px) and (max-width: 600px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 350px !important;
+        position: relative;
+        left: -225px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .sidebar{
+        height: 150vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -15px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .input-button{
+        position: relative;
+        left: 5px;
+    }
+    
+}
+@media (min-width: 601px) and (max-width: 650px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 400px !important;
+        position: relative;
+        left: -205px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .sidebar{
+        height: 150vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -15px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .input-button{
+        position: relative;
+        left: 5px;
+    }
+    
+}
+@media (min-width: 651px) and (max-width: 700px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 450px !important;
+        position: relative;
+        left: -205px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .sidebar{
+        height: 110vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -15px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .input-button{
+        position: relative;
+        left: -5px;
+    }
+    
+}
+@media (min-width: 701px) and (max-width: 750px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 500px !important;
+        position: relative;
+        left: -205px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .sidebar{
+        height: 110vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -15px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .input-button{
+        position: relative;
+        left: -5px;
+    }
+    
+}
+@media (min-width: 751px) and (max-width: 800px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 550px !important;
+        position: relative;
+        left: -205px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .sidebar{
+        height: 110vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -15px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .input-button{
+        position: relative;
+        left: -5px;
+    }
+    
+}
+@media (min-width: 801px) and (max-width: 900px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 600px !important;
+        position: relative;
+        left: -205px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .sidebar{
+        height: 110vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -15px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .input-button{
+        position: relative;
+        left: -5px;
+    }
+    
+}
+@media (min-width: 901px) and (max-width: 1309px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-editar{
+        width: 600px !important;
+        position: relative;
+        left: -65px;
+    }
+    #senha,  ::placeholder{
+        font-size: 14px;
+    }
+    .sidebar{
+        height: 110vh;
+    }
+    h2{
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        left: -15px;
+    }
+    form{
+        position: relative;
+        left: -15px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .input-button{
+        position: relative;
+        left: -5px;
+    }
+    
+}

@@ -41,6 +41,7 @@ $result_pets = mysqli_query($conexao, $sql_pets);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Pets</title>
     <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telameu-pet.css">
 
 </head>
 <style>

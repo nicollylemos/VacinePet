@@ -52,6 +52,7 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Agendamentos</title>
     <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telacliente-index.css">
 
 </head>
 <style>
@@ -67,7 +68,7 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
 
 <body>
     <div class="container">
-        <h1>Meu Perfil</h1>
+        <h1 class="title">Meu Perfil</h1>
         <!-- Dados do Tutor -->
         <div class="section">
             <h2>Dados do Tutor</h2>
@@ -80,7 +81,7 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             <div class="info">
                 <strong>Telefone:</strong> <?php echo $telefone_tutor; ?>
             </div>
-            <div class="info">
+            <div id="email" class="info">
                 <strong>Email:</strong> <?php echo $email_tutor; ?>
             </div>
             <div class="info">
@@ -133,7 +134,7 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             <div class="info">
                 <strong>Bairro:</strong> <?php echo $row_end['Bairro']; ?>
             </div>
-            <div class="info">
+            <div id="complemento" class="info">
                 <strong>Complemento:</strong> <?php echo $row_end['Complemento']; ?>
             </div>
             <div class="info">
