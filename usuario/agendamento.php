@@ -129,8 +129,8 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
 
                             echo "<label for='servico'>Selecione o Serviço:</label><br>";
                             echo "<select class='custom-select' name='servico' required>";
-                            echo "<option value='vacina'>Vacina</option>";
-                            echo "<option value='castracao'>Castração</option>";
+                            echo "<option value='Vacina'>Vacina</option>";
+                            echo "<option value='Castração'>Castração</option>";
                             echo "</select><br><br>";
 
                             echo "<label for='agendamento'>Selecione a Data e Horário:</label><br>";

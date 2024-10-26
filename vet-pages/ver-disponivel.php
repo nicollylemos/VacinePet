@@ -38,7 +38,7 @@ echo "</select>";
 
 echo "<label for='ano' style='margin-left: 20px;'>Ano:</label>";
 echo "<select class='selecionar' name='ano'>";
-for ($i = date('Y'); $i <= date('Y') + 2; $i++) { // Exibe o ano atual e mais dois
+for ($i = date('Y'); $i <= date('Y') + 10; $i++) { // Exibe o ano atual e mais dois
     $selected = ($i == $ano) ? "selected" : "";
     echo "<option value='$i' $selected>$i</option>";
 }
@@ -62,9 +62,8 @@ if (isset($_POST['mes']) && isset($_POST['ano'])) {
 
     // Verifica se há resultados
     if ($result->num_rows > 0) {
-        echo "<h2>Agendar um Horário para " . $meses[$mes] . " de " . $ano . "</h2>";
-        echo "<form action='processar_agendamento.php' method='POST'>";
-        echo "<label for='data'>Selecione uma data e horário:</label><br>";
+        echo "<h2>Horários disponíveis para " . $meses[$mes] . " de " . $ano . "</h2>";
+
 
         // Exibe os dias e horários disponíveis
         while ($row = $result->fetch_assoc()) {
@@ -72,7 +71,7 @@ if (isset($_POST['mes']) && isset($_POST['ano'])) {
             $nomeDiaSemana = $row['nome_dia_semana'];
             $horario = date('H:i', strtotime($row['horario_disponivel']));
 
-            echo "<input type='radio' name='agendamento' value='" . $row['data_disponivel'] . " " . $row['horario_disponivel'] . "'> ";
+           
             echo $data . " (" . $nomeDiaSemana . ") - " . $horario . "<br>";
         }
 

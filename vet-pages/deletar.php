@@ -1,9 +1,15 @@
 <?php
+include("../inc/header.php");
+include("sidebar-vet.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
 
-// Verifica se um mês e ano foram enviados via POST, senão usa os valores padrão
-$mes = isset($_POST['mes']) ? $_POST['mes'] : date('m'); // Mês atual se não enviado
-$ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y'); // Ano atual se não enviado
+// Verificação de autenticação
+if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
+    echo '<script type="text/javascript">';
+    echo 'window.location.href = "../index.php";';
+    echo '</script>';
+    exit;
+}
 
 // Array com os meses em português
 $meses = [
@@ -12,86 +18,31 @@ $meses = [
     9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'
 ];
 
-// Formulário para selecionar mês e ano
-echo "<h2>Selecione o Mês e o Ano</h2>";
+// Obtendo o mês atual
+$mesAtual = date('n'); // 'n' retorna o mês sem zeros à esquerda
+
+// Parte para deletar agendamentos
+echo"  <link rel='stylesheet' href='../css/css/vetAtend.css' />";
+echo "<div class='container'>";
+echo "<h1>Apagar Atendimentos</h1>";
+echo "<h2>Selecione Mês e Ano:</h2>";
 echo "<form action='' method='POST'>";
-echo "<label for='mes'>Mês:</label>";
-echo "<select name='mes'>";
+echo "<label for='mesDelete'>Mês: </label>";
+echo "<select class='selecionar' name='mesDelete'>";
 foreach ($meses as $num => $nome) {
-    $selected = ($num == $mes) ? "selected" : "";
+    $selected = ($num == $mesAtual) ? "selected" : ""; // Verifica se o mês é o atual
     echo "<option value='$num' $selected>$nome</option>";
 }
 echo "</select>";
 
-echo "<label for='ano'>Ano:</label>";
-echo "<select name='ano'>";
-for ($i = date('Y'); $i <= date('Y') + 2; $i++) { // Exibe o ano atual e mais dois
-    $selected = ($i == $ano) ? "selected" : "";
-    echo "<option value='$i' $selected>$i</option>";
-}
-echo "</select>";
-
-echo "<input type='submit' value='Verificar Disponibilidade'>";
-echo "</form>";
-
-// Após a seleção, exibe os dias e horários disponíveis para o mês e ano escolhidos
-if (isset($_POST['mes']) && isset($_POST['ano'])) {
-    // Consulta os dias e horários disponíveis para o mês e ano selecionados
-    $query = "SELECT data_disponivel, nome_dia_semana, horario_disponivel 
-              FROM dias_disponiveis 
-              WHERE MONTH(data_disponivel) = ? AND YEAR(data_disponivel) = ? 
-              ORDER BY data_disponivel, horario_disponivel";
-
-    $stmt = $conexao->prepare($query);
-    $stmt->bind_param('ii', $mes, $ano);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    // Verifica se há resultados
-    if ($result->num_rows > 0) {
-        echo "<h2>Agendar um Horário para " . $meses[$mes] . " de " . $ano . "</h2>";
-        echo "<form action='processar_agendamento.php' method='POST'>";
-        echo "<label for='data'>Selecione uma data e horário:</label><br>";
-
-        // Exibe os dias e horários disponíveis
-        while ($row = $result->fetch_assoc()) {
-            $data = date('d/m/Y', strtotime($row['data_disponivel']));
-            $nomeDiaSemana = $row['nome_dia_semana'];
-            $horario = date('H:i', strtotime($row['horario_disponivel']));
-
-            echo "<input type='radio' name='agendamento' value='" . $row['data_disponivel'] . " " . $row['horario_disponivel'] . "'> ";
-            echo $data . " (" . $nomeDiaSemana . ") - " . $horario . "<br>";
-        }
-
-        echo "<input type='submit' value='Confirmar Agendamento'>";
-        echo "</form>";
-    } else {
-        echo "Não há dias ou horários disponíveis para o mês selecionado.";
-    }
-
-    // Fecha a conexão
-    $stmt->close();
-    $conexao->close();
-}
-
-// Parte para deletar agendamentos
-echo "<h2>Deletar um Agendamento</h2>";
-echo "<form action='' method='POST'>";
-echo "<label for='mesDelete'>Mês:</label>";
-echo "<select name='mesDelete'>";
-foreach ($meses as $num => $nome) {
-    echo "<option value='$num'>$nome</option>";
-}
-echo "</select>";
-
-echo "<label for='anoDelete'>Ano:</label>";
-echo "<select name='anoDelete'>";
-for ($i = date('Y'); $i <= date('Y') + 2; $i++) {
+echo "<label for='anoDelete'> Ano: </label>";
+echo "<select  class='selecionar' name='anoDelete'>";
+for ($i = date('Y'); $i <= date('Y') + 10; $i++) {
     echo "<option value='$i'>$i</option>";
 }
 echo "</select>";
 
-echo "<input type='submit' name='verAgendamentos' value='Ver Agendamentos'>";
+echo "<input type='submit' class='add-hora' name='verAgendamentos' value='Buscar'>";
 echo "</form>";
 
 // Se o usuário clicar para ver agendamentos
@@ -129,7 +80,7 @@ if (isset($_POST['verAgendamentos'])) {
     } else {
         echo "Não há agendamentos disponíveis para o mês selecionado.";
     }
-
+echo"</div>";
     // Fecha a conexão
     $stmt->close();
     $conexao->close();

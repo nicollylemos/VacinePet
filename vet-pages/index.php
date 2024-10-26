@@ -19,6 +19,11 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 // Se chegou aqui, o usuário é o administrador e está autenticado
 $logado = $_SESSION['email'];
 
+// Verifica se foram enviados parâmetros de mês e ano
+$mes = isset($_GET['mes']) ? $_GET['mes'] : date('m'); // Padrão: mês atual
+$ano = isset($_GET['ano']) ? $_GET['ano'] : date('Y'); // Padrão: ano atual
+
+// Consulta SQL com filtro de mês e ano
 $sql = "SELECT 
     agendamentos.id, 
     agendamentos.data_agendamento, 
@@ -35,7 +40,9 @@ JOIN
 JOIN 
     pet ON agendamentos.cod_pet = pet.Cod_Pet
 WHERE
-    agendamentos.situacao NOT IN ('Cancelado', 'Concluído')  -- Filtra situações Cancelado e Concluído
+    agendamentos.situacao NOT IN ('Cancelado', 'Concluído') 
+    AND MONTH(agendamentos.data_agendamento) = $mes
+    AND YEAR(agendamentos.data_agendamento) = $ano
 ORDER BY 
     agendamentos.data_agendamento;";
 
@@ -54,6 +61,7 @@ $result = $conexao->query($sql);
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/VetEst.css" />
+
     <title>VacinePet</title>
 </head>
 
@@ -62,20 +70,53 @@ $result = $conexao->query($sql);
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1> Agendamentos Ativos</h1>
+                    <h1>Agendamentos Ativos</h1>
+
+                    <!-- Formulário de filtro por mês e ano -->
+                    <form method="GET" action="">
+                        <label for="mes">Mês:</label>
+                        <select name="mes" id="mes">
+                            <?php 
+                            $meses = [
+                                1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril',
+                                5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto',
+                                9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'
+                            ];
+                            foreach ($meses as $numero => $nome): ?>
+                            <option value="<?= $numero ?>" <?= $numero == $mes ? 'selected' : '' ?>>
+                                <?= $nome ?>
+                            </option>
+                            <?php endforeach; ?>
+                        </select>
+
+                        <label for="ano">Ano:</label>
+                        <select name="ano" id="ano">
+                            <?php for ($i = 2024; $i <= date('Y') + 10; $i++): ?>
+                            <!-- Exibe até 10 anos no futuro -->
+                            <option value="<?= $i ?>" <?= $i == $ano ? 'selected' : '' ?>><?= $i ?></option>
+                            <?php endfor; ?>
+                        </select>
+
+
+                        <button type="submit">Buscar</button>
+                    </form>
+
                     <div class="table">
                         <table>
-                            <tr>
-                                <th>Agendamento</th>
-                                <th>Data</th>
-                                <th>Hora</th>
-                                <th>Serviço</th>
-                                <th>Pet</th>
-                                <th>Tutor</th>
-                                <th>Situação </th>
-                                <th>... </th>
-                            </tr>
+
                             <?php
+                            if  ($agendamento = mysqli_fetch_assoc($result)){
+                                echo "<tr>
+                                        <th>Agendamento</th>
+                                        <th>Data</th>
+                                        <th>Hora</th>
+                                        <th>Serviço</th>
+                                        <th>Pet</th>
+                                        <th>Tutor</th>
+                                        <th>Situação</th>
+                                        <th>...</th>
+                                    </tr>";
+
                             while ($agendamento = mysqli_fetch_assoc($result)) {
                                 echo "<tr>";
                                 echo "<td>" . $agendamento['id'] . "</td>";
@@ -88,17 +129,21 @@ $result = $conexao->query($sql);
                                 echo "<td>";
                                 echo "<a href='viewAgend.php?id=" . $agendamento['id'] . "'>";
                                 echo "<button>";
-                                echo"<i class='fa-solid fa-eye icon'></i>";
-                                echo"</button>";
-                                echo"</a>";
+                                echo "<i class='fa-solid fa-eye icon'></i>";
+                                echo "</button>";
+                                echo "</a>";
                                 echo "<a href='editAgend.php?id=" . $agendamento['id'] . "'>";
                                 echo "<button>";
-                                echo"<i class='fa-solid fa-edit icon'></i>";
-                                echo"</button>";
-                                echo"</a>";
+                                echo "<i class='fa-solid fa-edit icon'></i>";
+                                echo "</button>";
+                                echo "</a>";
                                 echo "</td>";
                                 echo "</tr>";
                             }
+                        }
+                        else{
+                            echo"Não há atendimentos agendados para este mês.";
+                        }
                             ?>
                         </table>
                     </div>
@@ -106,7 +151,6 @@ $result = $conexao->query($sql);
             </div>
         </div>
     </section>
-
 </body>
 
 </html>

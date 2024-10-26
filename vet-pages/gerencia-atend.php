@@ -52,40 +52,48 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
             <div class="row">
                 <!-- Disponibilizar Atendimentos -->
-                <div class="adoc-atv">
-                    <a href="data.php" style="text-decoration: none;">
+                <a href="data.php" style="text-decoration: none;">
+                    <div class="adoc-atv">
+
                         <div class="col-xs-12 text-center p-0">
                             <i class="fa-solid fa-plus fa-4x ico" alt="Adicionar Atendimento"></i>
                         </div>
                         <div class="text-adocao">
                             <p style="font-family: baloo;">Disponibilizar Horários</p>
                         </div>
-                    </a>
-                </div>
+
+                    </div>
+                </a>
 
                 <!-- Deletar atendimentos -->
-                <div class="adoc-atv">
-                    <a href="deletar.php" style="text-decoration: none;">
+                <a href="deletar.php" style="text-decoration: none;">
+                    <div class="adoc-atv">
+
                         <div class="col-xs-12 text-center p-0">
                             <i class="fa-solid fa-trash fa-4x ico" alt="Deletar Atendimento"></i>
                         </div>
                         <div class="text-adocao">
                             <p style="font-family: baloo;">Apagar<br> atendimentos</p>
                         </div>
-                    </a>
-                </div>
+
+
+
+                    </div>
+
+                </a>
 
                 <!-- Visualizar atendimentos -->
-                <div class="adoc-atv">
-                    <a href="ver-disponivel.php" style="text-decoration: none;">
+                <a href="ver-disponivel.php" style="text-decoration: none;">
+                    <div class="adoc-atv">
+
                         <div class="col-xs-12 text-center p-0">
                             <i class="fa-regular fa-calendar fa-4x ico" alt="Visualizar Atendimento"></i>
                         </div>
                         <div class="text-adocao">
                             <p style="font-family: baloo;">Atendimentos disponíveis</p>
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
 
             </div>
         </div>

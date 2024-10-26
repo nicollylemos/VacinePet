@@ -1,6 +1,7 @@
 <?php
 include("../inc/header.php");
 include("sidebar-vet.php");
+include_once('../config.php');
 
 // Verifica se o usuário está autenticado
 if (!isset($_SESSION['email']) || !$_SESSION['senha_hash']) {
@@ -18,9 +19,12 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     exit;
 }
 
-// Se chegou aqui, o usuário é o administrador e está autenticado
-$logado = $_SESSION['email'];
+// Variáveis para filtros de pesquisa
+$mes = $_POST['mes'] ?? date('m');
+$ano = $_POST['ano'] ?? date('Y');
+$situacao = $_POST['situacao'] ?? '';
 
+// Consulta SQL com filtros dinâmicos
 $sql = "SELECT 
     agendamentos.id, 
     agendamentos.data_agendamento, 
@@ -36,12 +40,26 @@ JOIN
     tutor ON agendamentos.cod_tutor = tutor.Cod_Tutor
 JOIN 
     pet ON agendamentos.cod_pet = pet.Cod_Pet
-WHERE
-    agendamentos.situacao NOT IN ('Pendente', 'Confirmado')  -- Filtra situações Cancelado e Concluído
-ORDER BY 
-    agendamentos.id;";
+WHERE 
+    MONTH(agendamentos.data_agendamento) = ? 
+    AND YEAR(agendamentos.data_agendamento) = ?
+    AND agendamentos.situacao NOT IN ('Pendente', 'Confirmado')";  // Filtra situações
 
-$result = $conexao->query($sql);
+// Adiciona o filtro de situação se selecionado
+if (!empty($situacao)) {
+    $sql .= " AND agendamentos.situacao = ?";
+}
+
+$sql .= " ORDER BY agendamentos.id";
+
+$query = $conexao->prepare($sql);
+if (!empty($situacao)) {
+    $query->bind_param("iis", $mes, $ano, $situacao);
+} else {
+    $query->bind_param("ii", $mes, $ano);
+}
+$query->execute();
+$result = $query->get_result();
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +69,6 @@ $result = $conexao->query($sql);
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,7 +81,48 @@ $result = $conexao->query($sql);
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1> Histórico Agendamentos </h1>
+                    <h1>Histórico Agendamentos</h1>
+
+                    <!-- Formulário de Filtro -->
+                    <form method="POST">
+                        <label for="mes">Mês:</label>
+                        <select name="mes" id="mes">
+                            <?php
+                            $meses = [
+                                1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril', 
+                                5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto', 
+                                9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'
+                            ];
+                            
+                            foreach ($meses as $numero => $nome) {
+                                $selected = ($numero == $mes) ? 'selected' : '';
+                                echo "<option value='$numero' $selected>$nome</option>";
+                            }
+                            ?>
+                        </select>
+
+                        <label for="ano">Ano:</label>
+                        <select name="ano" id="ano">
+                            <?php
+                            for ($y = 2024; $y <= 2034; $y++) {
+                                $selected = ($y == $ano) ? 'selected' : '';
+                                echo "<option value='$y' $selected>$y</option>";
+                            }
+                            ?>
+                        </select>
+
+                        <label for="situacao">Situação:</label>
+                        <select name="situacao" id="situacao">
+                            <option value="" <?= $situacao == '' ? 'selected' : '' ?>>Todas</option>
+                            <option value="Cancelado" <?= $situacao == 'Cancelado' ? 'selected' : '' ?>>Cancelado
+                            </option>
+                            <option value="Concluído" <?= $situacao == 'Concluído' ? 'selected' : '' ?>>Concluído
+                            </option>
+                        </select>
+
+                        <button type="submit">Buscar</button>
+                    </form>
+
                     <div class="table">
                         <table>
                             <tr>
@@ -74,19 +132,23 @@ $result = $conexao->query($sql);
                                 <th>Serviço</th>
                                 <th>Pet</th>
                                 <th>Tutor</th>
-                                <th>Situação </th>
+                                <th>Situação</th>
                             </tr>
                             <?php
-                            while ($agendamento = mysqli_fetch_assoc($result)) {
-                                echo "<tr>";
-                                echo "<td>" . $agendamento['id'] . "</td>";
-                                echo "<td>" . date('d/m/Y', strtotime($agendamento['data_agendamento'])) . "</td>";
-                                echo "<td>" . date('H:i', strtotime($agendamento['horario_agendamento'])) . "</td>";
-                                echo "<td>" . $agendamento['servico'] . "</td>";
-                                echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
-                                echo "<td>" . $agendamento['nome_tutor'] . "</td>";
-                                echo "<td>" . $agendamento['situacao'] . "</td>"; 
-                                echo "</tr>";
+                            if ($result->num_rows > 0) {
+                                while ($agendamento = $result->fetch_assoc()) {
+                                    echo "<tr>";
+                                    echo "<td>" . $agendamento['id'] . "</td>";
+                                    echo "<td>" . date('d/m/Y', strtotime($agendamento['data_agendamento'])) . "</td>";
+                                    echo "<td>" . date('H:i', strtotime($agendamento['horario_agendamento'])) . "</td>";
+                                    echo "<td>" . $agendamento['servico'] . "</td>";
+                                    echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
+                                    echo "<td>" . $agendamento['nome_tutor'] . "</td>";
+                                    echo "<td>" . $agendamento['situacao'] . "</td>"; 
+                                    echo "</tr>";
+                                }
+                            } else {
+                                echo "<tr><td colspan='7'>Não há registro de atendimentos.</td></tr>";
                             }
                             ?>
                         </table>

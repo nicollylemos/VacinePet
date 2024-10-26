@@ -73,7 +73,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     echo "<label for='ano' style='margin-left: 20px;'>Ano: </label>";
     echo "<select class='selecionar' name='ano'>";
 
-    for ($i=date('Y'); $i <=date('Y') + 2; $i++) {
+    for ($i=date('Y'); $i <=date('Y') + 10; $i++) {
         $selected=($i==$ano) ? "selected": "";
         echo "<option value='$i' $selected>$i</option>";
     }
