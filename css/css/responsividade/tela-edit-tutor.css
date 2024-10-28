@@ -7,7 +7,7 @@
     .container-editar{
         width: 250px !important;
         position: relative;
-        left: -235px;
+        left: -165px;
     }
     #senha,  ::placeholder{
         font-size: 12px;
@@ -42,7 +42,7 @@
     .container-editar{
         width: 300px !important;
         position: relative;
-        left: -225px;
+        left: -170px;
     }
     #senha,  ::placeholder{
         font-size: 14px;
@@ -77,7 +77,7 @@
     .container-editar{
         width: 350px !important;
         position: relative;
-        left: -225px;
+        left: -175px;
     }
     #senha,  ::placeholder{
         font-size: 14px;
@@ -113,7 +113,7 @@
     .container-editar{
         width: 400px !important;
         position: relative;
-        left: -205px;
+        left: -135px;
     }
     #senha,  ::placeholder{
         font-size: 14px;
@@ -149,7 +149,7 @@
     .container-editar{
         width: 450px !important;
         position: relative;
-        left: -205px;
+        left: -125px;
     }
     #senha,  ::placeholder{
         font-size: 14px;
@@ -185,7 +185,7 @@
     .container-editar{
         width: 500px !important;
         position: relative;
-        left: -205px;
+        left: -135px;
     }
     #senha,  ::placeholder{
         font-size: 14px;
@@ -221,7 +221,7 @@
     .container-editar{
         width: 550px !important;
         position: relative;
-        left: -205px;
+        left: -135px;
     }
     #senha,  ::placeholder{
         font-size: 14px;

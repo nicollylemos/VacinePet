@@ -1,6 +1,6 @@
 <?php
 include("../inc/header.php");
-include("sidebar-vet.php");
+include("sidebar-veterinaria.php");
 include_once('../config.php');
 
 // Verifica se o usuário está autenticado
@@ -73,6 +73,7 @@ $result = $query->get_result();
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/VetEst.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/telas-vetpages.css" />
     <title>VacinePet</title>
 </head>
 
@@ -84,7 +85,7 @@ $result = $query->get_result();
                     <h1>Histórico Agendamentos</h1>
 
                     <!-- Formulário de Filtro -->
-                    <form method="POST">
+                    <form class="form" method="POST">
                         <label for="mes">Mês:</label>
                         <select name="mes" id="mes">
                             <?php
@@ -101,7 +102,7 @@ $result = $query->get_result();
                             ?>
                         </select>
 
-                        <label for="ano">Ano:</label>
+                        <label class="ano" for="ano">Ano:</label>
                         <select name="ano" id="ano">
                             <?php
                             for ($y = 2024; $y <= 2034; $y++) {
@@ -111,7 +112,7 @@ $result = $query->get_result();
                             ?>
                         </select>
 
-                        <label for="situacao">Situação:</label>
+                        <label class="situ" for="situacao">Situação:</label>
                         <select name="situacao" id="situacao">
                             <option value="" <?= $situacao == '' ? 'selected' : '' ?>>Todas</option>
                             <option value="Cancelado" <?= $situacao == 'Cancelado' ? 'selected' : '' ?>>Cancelado
@@ -120,7 +121,7 @@ $result = $query->get_result();
                             </option>
                         </select>
 
-                        <button type="submit">Buscar</button>
+                        <button id="btn-htrc" class="btn-busca" type="submit">Buscar</button>
                     </form>
 
                     <div class="table">

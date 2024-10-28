@@ -16,7 +16,7 @@
 -->
 <?php
 include("../inc/header.php");
-include("sidebar-vet.php");
+include("sidebar-veterinaria.php");
 
 if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     echo '<script type="text/javascript">';
@@ -48,7 +48,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
 <body>
     <section class="agendamento-atv">
-        <div class="container">
+        <div id="gerencia" class="container">
 
             <div class="row">
                 <!-- Disponibilizar Atendimentos -->

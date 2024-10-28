@@ -15,7 +15,7 @@
 :root{
     --body-color: #f7f9fd;
     --sidebar-color: #FFF;
-    --primary-color:  #FD811C;
+    --primary-color:  #52BACB;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
     --text-color: #707070;
@@ -41,15 +41,15 @@ body{
 
 /* ===== Sidebar ===== */
  .sidebar{
-    position: relative; 
-    top: 1px; 
+    position: relative;
+    top: 1px;
     left: 0;
-    height:120vh; 
+    height: 150vh;
     width: 310px;
     padding: 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
-    z-index: 10;  
+    z-index: 10;
     border-right: 1px solid #DDD;
 }
 .sidebar.close{
@@ -112,12 +112,16 @@ body{
 }
 header .image-text .name {
     margin-top: 15px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
-    color: #FD811C;
+    color: #52BACB;
     font-family: baloo;
     align-items: center;
     padding-left: 30px;
+}
+.name{
+    position: relative;
+    left: -55px;
 }
 
 header .image-text .subtitle{

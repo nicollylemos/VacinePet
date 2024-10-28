@@ -2,7 +2,16 @@
     font-family: 'baloo';
     src: url("../font/baloo/Baloo-Regular.ttf");
 }
-
+html,
+body {
+    overflow-x: hidden;
+    /* Esconde a rolagem horizontal */
+}
+.content, #gerencia{
+    position: relative;
+    left: 250px;
+    top: -880px;
+}
 .adoc-atv {
     width: 210px;
     border-radius: 20px;

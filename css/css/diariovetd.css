@@ -7,8 +7,16 @@
   font-family: 'baloo';
   src: url("../font/baloo/Baloo-Regular.ttf");
 }
-
-
+html,
+body {
+    overflow-x: hidden;
+    /* Esconde a rolagem horizontal */
+}
+.diario{
+  position: relative;
+  left: 150px;
+  top: -880px;
+}
 .hello{
   margin-left: -10px;
   font-weight: 500;
@@ -20,7 +28,8 @@
 }
 
 .btn-add{
-  top: 600px;
+  top: -550px;
+  left: 450px;
   position: absolute;
 }
 
@@ -352,8 +361,8 @@
 }
 .add-event-wrapper {
   position: absolute;
-  top: 250px;
-  left: 50%;
+  top: -450px;
+  left: 160%;
   width: 90%;
   max-height: 0;
   overflow: hidden;
