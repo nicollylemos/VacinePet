@@ -74,10 +74,11 @@ body {
                 <h2 class="subtitulo-site">CARINHO,
                     CUIDADO E PREVENÇÃO PARA <br>SEU PET,
                     NO CONFORTO DA SUA CASA.</h2>
-                <p id="sub">Manter a vacinação do seu pet atualizada também é uma forma de amor. Com a chegada do
+                <p id="sub">Vacinar é um ato de amor. Com a chegada do
                     filhote,
-                    a responsabilidade aumenta e a imunização contra doenças já nos primeiros meses de vida,
-                    se faz mais do que necessária. Agende agora com o VacinePet e garanta a saúde do seu animal de
+                    a responsabilidade aumenta e a imunização contra doenças nos primeiros meses de vida é obrigatória. Ao longo da vida do 
+                    seu pet manter a vacinação em dia é fundamental. 
+                    Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p> <?php if ($admin): ?><a href="/VacinePet/usuario/agendamento.php">
                     <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
                 <?php if ($logado): ?><a href="/VacinePet/usuario/agendamento.php">

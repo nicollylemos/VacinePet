@@ -54,7 +54,7 @@ include("sidebar-menu.php");
             </div>
             <h3 id="sub-sub" class="subtitle">Cuidados após a Vacinação</h3>
             <div class="content-txt two">
-                <p>Após a aplicação das vacinas, a veterinária fornecerá um aviso importante: é comum que alguns animais
+                <p>Após a aplicação das vacinas, é possível que alguns animais
                     apresentem efeitos colaterais, que podem variar conforme a vacina administrada. Os efeitos podem
                     incluir leve febre, sonolência ou reações no local da aplicação. A veterinária orientará os tutores
                     sobre o que observar e quando procurar ajuda, garantindo que o processo de vacinação seja seguro e

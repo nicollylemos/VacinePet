@@ -11,6 +11,11 @@
     src:url("../font/oswald/Oswald-Regular.ttf");
 }
 
+html,
+body {
+    overflow-x: hidden;
+    /* Esconde a rolagem horizontal */
+}
 :root{
     --primary-clr:#52BACB;
     --title-color:#3e3e3e;
@@ -18,7 +23,11 @@
     --primary-hover: #7bcdd9; 
 }
 
-
+.content{
+    position: relative;
+    left: 200px;
+    top: -880px;
+}
 .container-tabela{
     margin: 19px;
 }
@@ -288,5 +297,21 @@ table th:nth-child(5), table td:nth-child(5) {
     padding-right: 20px;
     
 }
-
+.btn-busca{
+    padding: 5px;
+    background-color: transparent;
+    color: #52BACB;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 140px;
+    text-decoration: none;
+    border: 3.5px solid #52BACB;
+    font-weight: 600;
+    display: inline-block;
+    /* Adiciona inline-block para permitir definir a largura */
+    box-sizing: border-box;
+    /* Garante que padding e borda sejam incluídos na largura */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+}
 

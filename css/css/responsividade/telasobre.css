@@ -1253,7 +1253,7 @@
         top: -20px;
     }
 }
-@media (min-width:1500px) and (max-width: 2560px) {
+@media (min-width:1310px) and (max-width: 2560px) {
     html,
     body {
         overflow-x: hidden;

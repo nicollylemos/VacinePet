@@ -1,6 +1,6 @@
 <?php
 include("../inc/header.php");
-include("sidebar-vet.php");
+include("sidebar-veterinaria.php");
 include("../config.php");
 
 if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
@@ -29,12 +29,49 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VacinePet</title>
 </head>
+<style>
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    .logout {
+        margin-top: 30px;
+        padding: 5px;
+        background-color: transparent;
+        color: #f44336;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 150px;
+        text-decoration: none;
+        border: 3.5px solid #f44336;
+        font-weight: 600;
+        display: inline-block;
+        /* Adiciona inline-block para permitir definir a largura */
+        box-sizing: border-box;
+        /* Garante que padding e borda sejam incluídos na largura */
+        text-align: center;
+        /* Centraliza o texto dentro do botão */
+    }
+
+    .configuracao {
+        position: relative;
+        left: 250px;
+        top: -900px;
+    }
+    .title{
+        color: #52BACB;
+        font-family: baloo;
+        font-size: 38px;
+    }
+</style>
 
 <body>
     <section class="configuracao">
         <div class="container">
-            <h1> Configuração</h1>
+            <h1 class="title"> Configuração</h1>
             <p>Deseja sair?</p>
-            <a href="/VacinePet/inc/logout.php">Sair</a>
+            <a href="/VacinePet/inc/logout.php" class="logout">Sair</a>
         </div>
     </section>

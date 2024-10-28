@@ -1,6 +1,6 @@
 <?php
 include("../inc/header.php");
-include("sidebar-vet.php");
+include("sidebar-veterinaria.php");
 
 // Verifica se o usuário está autenticado
 if (!isset($_SESSION['email']) || !$_SESSION['senha_hash']) {
@@ -61,6 +61,7 @@ $result = $conexao->query($sql);
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/VetEst.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/telas-vetpages.css" />
 
     <title>VacinePet</title>
 </head>
@@ -98,11 +99,11 @@ $result = $conexao->query($sql);
                         </select>
 
 
-                        <button type="submit">Buscar</button>
+                        <button class="btn-busca" type="submit">Buscar</button>
                     </form>
 
                     <div class="table">
-                        <table>
+                        <table class="table">
 
                             <?php
                             if  ($agendamento = mysqli_fetch_assoc($result)){
@@ -142,7 +143,7 @@ $result = $conexao->query($sql);
                             }
                         }
                         else{
-                            echo"Não há atendimentos agendados para este mês.";
+                            echo '<p class="else">Não há atendimentos agendados para este mês.</p>';
                         }
                             ?>
                         </table>
