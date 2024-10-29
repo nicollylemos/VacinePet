@@ -55,7 +55,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>Agendamento</title>
-    <link rel="stylesheet" href="../css/css/agenEst.css">
+    <link rel="stylesheet" href="../css/css/agenEstilo.css">
     <link rel="stylesheet" href="../css/css/responsividade/telaagenda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 
