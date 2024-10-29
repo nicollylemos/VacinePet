@@ -55,7 +55,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>Agendamento</title>
-    <link rel="stylesheet" href="../css/css/agenEstilo.css">
+    <link rel="stylesheet" href="../css/css/agendaEstilo.css">
     <link rel="stylesheet" href="../css/css/responsividade/telaagenda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 
@@ -73,6 +73,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
             <div class="form">
 
                 <h1>AGENDAMENTO</h1>
+                <p>Selecione o mês e ano para visualizar os horários disponíveis:</p>
                 <form action="" method="POST">
                     <div class="form-inline">
                         <label for="mes">Selecione o Mês:</label>
@@ -97,8 +98,8 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
             }
             ?>
                         </select>
-
-                        <input type="submit" value="Verificar Disponibilidade">
+                                <br>
+                        <input type="submit" class="btn-verificar" value="Verificar Disponibilidade">
                     </div>
                 </form>
 
@@ -118,23 +119,25 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
 
                         // Exibe os horários disponíveis
                         if ($result->num_rows > 0) {
+                            echo"<div class='form-inline'>";
                             echo "<form action='processar_agendamento.php' method='POST'>";
-                            echo "<label for='pet'>Selecione o Pet:</label><br>";
-                            echo "<select class='custom-select' name='pet' id='pet' required>";
+                            echo"<p>Selecione o mês e ano para visualizar os horários disponíveis:</p>";
+                            echo "<label for='pet'>Selecione o Pet: </label>";
+                            echo "<select class='selecionar-pet' name='pet' id='pet' required>";
                             while ($rowPet = $resultPets->fetch_assoc()) {
                                 echo "<option value='" . $rowPet['cod_pet'] . "'>" . $rowPet['nome_pet'] . "</option>";
                             }
-                            echo "</select><br><br>";
+                            echo "</select>";
                             echo "<input type='hidden' name='situacao' value='Pendente'>";
 
-                            echo "<label for='servico'>Selecione o Serviço:</label><br>";
-                            echo "<select class='custom-select' name='servico' required>";
+                            echo "<label for='servico'> Serviço: </label>";
+                            echo "<select name='servico'  class='selecionar-servico' required>";
                             echo "<option value='Vacina'>Vacina</option>";
                             echo "<option value='Castração'>Castração</option>";
                             echo "</select><br><br>";
 
-                            echo "<label for='agendamento'>Selecione a Data e Horário:</label><br>";
-                            echo "<select name='agendamento' id='agendamento'  required>";
+                            echo "<label for='agendamento'>Selecione a Data e Horário:  </label>";
+                            echo "<select name='agendamento' id='agendamento'  class='selecionar-data'  required>";
                             while ($row = $result->fetch_assoc()) {
                                 $data          = date('d/m/Y', strtotime($row['data_disponivel']));
                                 $nomeDiaSemana = $row['nome_dia_semana'];
@@ -143,14 +146,17 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                                 echo "$data ($nomeDiaSemana) - $horario</option>";
                             }
                             echo "</select><br><br>";
-
-                            echo "<input type='submit' value='Confirmar Agendamento'>";
+                            echo"</div>
+                            ";
+                            echo "<input type='submit' class='btn-confirmar' value='Confirmar Agendamento'>";
                             echo "</form>";
                         } else {
-                            echo "Não há horários disponíveis para o mês e ano selecionados.";
+                            echo "<span class='span-erro'>Não há horários disponíveis para o mês e ano selecionados.</span>";
                         }
                     }
                 ?>
+                <br>
+                <p class="span-custo">*Aviso: o custo da viagem será calculado com base na distância percorrida.</p>
             </div>
         </div>
     </div>

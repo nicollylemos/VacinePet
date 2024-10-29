@@ -29,6 +29,11 @@ body {
 
 }
 
+p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
 .container {
     background-color: rgb(255, 255, 255);
@@ -45,7 +50,7 @@ body {
 
 .form {
     position: absolute;
-    left: 35%;
+    left: 32%;
     top: 2%;
 
 }
@@ -56,11 +61,8 @@ body {
         color: #52BACB;
 }
 
-
-
-
 select{
-    width: 150px; 
+    width: 180px;
     height: 40px;
     border: 1px solid #ccc; 
     border-radius: 5px; 
@@ -68,8 +70,8 @@ select{
     color: #333; 
     font-size: 16px; 
     cursor: pointer; 
-    margin-bottom: 40px;
-    display: inline-flex;
+    margin-bottom: 20px;
+    display:inline-flex;
 }
 
 
@@ -85,4 +87,75 @@ select{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.label-agend{
+    display: block;
+    font-size: 17px;
+}
+
+.selecionar-pet{
+    width: 190px;
+}
+
+.selecionar-data{
+    width: 400px;
+}
+
+.selecionar-servico{
+    width: 230px;
+}
+
+.btn-verificar{
+    width: 230px;
+    height: 40px;
+    background-color: transparent;
+    border: 3.5px solid  #FD811C;
+    color: #FD811C;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-family: baloo;
+    cursor: pointer;
+}
+
+.btn-confirmar{
+    width: 230px;
+    height: 40px;
+    color: #fff;
+    border: 3.5px solid  #FD811C;
+    background-color: #FD811C;
+    font-size: 17px;
+    border-radius: 10px;
+    font-family: baloo;
+    cursor: pointer;
+ 
+}
+
+.span-erro{
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.span-custo{
+    position: absolute;
+    font-size: 14px;
+    margin-top: 60px;
+    left: 4%;
+    color: #8a8a8a;
+
+}
+
+.btn-confirmar:hover {
+    background-color: #f3a15e;
+    color: #fff;
+    transition: 1s;
+    border-color: #f3a15e;
+}
+
+
+.btn-verificar:hover {
+    transition: 1s;
+    border-color: #f3a15e;
+    color:#f3a15e;
 }
