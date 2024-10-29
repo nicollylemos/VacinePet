@@ -141,14 +141,24 @@ if (isset($_POST['submit'])) {
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="errorModalLabel">Erro no Cadastro</h5>
+                        <h5 class="modal-title" id="errorModalLabel"
+                            style="color: #FD811C; font-family: 'Baloo', sans-serif; font-size: 24px;">
+                            Erro no Cadastro
+                        </h5>
+
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Por favor, preencha todos os campos obrigatórios.</p>
+                        <p>Por favor, preencha todos os campos obrigatórios e corretamente.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="background-color: #52bacb; color: #fff;"
+                            onmouseover="this.style.backgroundColor='#3a94a3';"
+                            onmouseout="this.style.backgroundColor='#52bacb';">
+                            Fechar
+                        </button>
+
                     </div>
                 </div>
             </div>
@@ -204,7 +214,7 @@ if (isset($_POST['submit'])) {
                     <div class="row">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control frm-ctrl required" name="tutor_cpf" id="cpf"
-                            oninput="mascaraCPF(this)" placeholder="CPF" maxlength="14" autocomplete="off" required>
+                                oninput="mascaraCPF(this)" placeholder="CPF" maxlength="14" autocomplete="off" required>
 
                         </div>
                         <div class="form-group col-md-6">
@@ -217,7 +227,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-group col-md-6">
                             <input type="email"
                                 class="form-control frm-ctrl required <?php echo !empty($error_email) ? 'error' : ''; ?>"
-                                 name="tutor_email" id="email"
+                                name="tutor_email" id="email"
                                 value="<?php echo isset($_POST['tutor_email']) ? $_POST['tutor_email'] : ''; ?>"
                                 placeholder="Email">
                             <span class="span-required">Digite um email válido</span>
@@ -247,6 +257,7 @@ if (isset($_POST['submit'])) {
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control frm-ctrl required" name="end_cep" id="cep"
                                 placeholder="CEP">
+                            <span id="cep_error" style="color: red;"></span>
                         </div>
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control frm-ctrl required" name="end_rua" id="rua"
@@ -273,6 +284,8 @@ if (isset($_POST['submit'])) {
                                 <option value="" disabled selected>Selecione a cidade </option>
                                 <option value="Sorocaba">Sorocaba</option>
                                 <option value="Votorantim">Votorantim</option>
+                                <option value="Caçapava">Caçapava</option>
+                                <option value="Taubaté">Taubaté</option>
                             </select>
                         </div>
 
@@ -298,26 +311,26 @@ if (isset($_POST['submit'])) {
                             <div class="col">
 
                                 <select class="form-control frm-ctrl required" name="pet_especie" id="especie" required>
-                                    <option value="" disabled selected>-- Selecione a espécie --</option>
+                                    <option value="" disabled selected>Selecione a espécie</option>
                                     <option value="Gato">Gato</option>
                                     <option value="Cachorro">Cachorro</option>
                                 </select>
 
                                 <select class="form-control frm-ctrl required" name="pet_sexo" id="sexo" required>
-                                    <option value="" disabled selected>-- Selecione o sexo --</option>
+                                    <option value="" disabled selected> Selecione o sexo </option>
                                     <option value="Macho">Macho</option>
                                     <option value="Fêmea">Fêmea</option>
                                 </select>
 
                                 <select class="form-control frm-ctrl required" name="pet_castracao" id="castracao"
                                     required>
-                                    <option value="" disabled selected>-- Seu pet é castrado? --</option>
+                                    <option value="" disabled selected>Seu pet é castrado?</option>
                                     <option value="Sim">Sim</option>
                                     <option value="Não">Não</option>
                                 </select>
 
                                 <select class="form-control frm-ctrl required" name="pet_porte" id="porte" required>
-                                    <option value="" disabled selected>-- Qual o porte do seu Pet? --</option>
+                                    <option value="" disabled selected>Qual o porte do seu Pet?</option>
                                     <option value="Pequeno">Pequeno</option>
                                     <option value="Médio">Médio</option>
                                     <option value="Grande">Grande</option>
@@ -354,21 +367,12 @@ if (isset($_POST['submit'])) {
                         <h5 class="sub-title-title">Preencha com as informações do seu pet.</h5>
                     </div>
                     <div class="form-group mt-4 col-md-6" style="width: 530px;">
-                        <input type="text"
-                            placeholder="Utilize esse espaço para adicionar mais informações sobre o pet."
-                            class="form-control add" name="pet_historico">
+                        <textarea
+                            placeholder="Em caso de necessidade, adicione informações relevantes sobre o pet que podem ser úteis para a veterinária, como histórico de saúde, alergias ou comportamento."
+                            class="form-control add" name="pet_historico" style="height: 150px;"></textarea>
                     </div>
 
-                    <div class="quad-blue">
-                        <div class="upload-section">
-                            <label for="file-upload" class="custom-file-upload">
-                                <i id="anexo" class="fa fa-cloud-upload"></i>
-                                <div class="tab"></div>
-                                <h3 class="anexo">Anexe aqui a foto do seu pet</h3>
-                            </label>
-                            <input id="file-upload" type="file" name="pet_foto_pet" />
-                        </div>
-                    </div>
+
                     <div class="div-botoes">
                         <button type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(3)">Anterior</button>
@@ -407,6 +411,37 @@ if (isset($_POST['submit'])) {
         }
 
     };
+</script>
+
+<script>
+    // Função para validar o CEP
+document.getElementById('cep').addEventListener('blur', function() {
+    var cepInput = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+    if (cepInput.length === 8) { // Verifica se o CEP tem 8 dígitos
+        fetch(`https://viacep.com.br/ws/${cepInput}/json/`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.erro) {
+                    this.classList.add("erro"); // Adiciona a classe de erro
+                    alert("CEP inválido! Verifique e tente novamente.");
+                } else {
+                    this.classList.remove("erro"); // Remove a classe de erro
+                    // Aqui você pode preencher outros campos automaticamente se desejar
+                    document.getElementById('rua').value = data.logradouro;
+                    document.getElementById('bairro').value = data.bairro;
+                    document.getElementById('cidade').value = data.localidade;
+                    // Adicione mais campos se necessário
+                }
+            })
+            .catch(error => {
+                console.error('Erro ao validar o CEP:', error);
+                alert("Erro ao validar o CEP. Tente novamente mais tarde.");
+            });
+    } else {
+        alert("Por favor, insira um CEP válido com 8 dígitos.");
+    }
+});
+
 </script>
 
 <!-- Bootstrap JS -->
@@ -487,52 +522,52 @@ if (isset($_POST['submit'])) {
 
 <script>
     // Função para aplicar a máscara do CPF enquanto o usuário digita
-function mascaraCPF(cpf) {
-    // Remove tudo que não é dígito
-    cpf.value = cpf.value.replace(/\D/g, "");
+    function mascaraCPF(cpf) {
+        // Remove tudo que não é dígito
+        cpf.value = cpf.value.replace(/\D/g, "");
 
-    // Aplica a máscara com pontos e traço
-    cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
-    cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
-    cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-}
-
-// Função para validar o CPF, mantendo pontos e traços
-function validarCPF(cpf) {
-    // Mantém os pontos e traço para a exibição, mas retira para a validação
-    var cpfSemMascara = cpf.replace(/[^\d]+/g, ''); // Remove pontos e traço
-    
-    // Validação básica de formato
-    if (cpfSemMascara == '' || cpfSemMascara.length != 11 || /^(\d)\1+$/.test(cpfSemMascara)) {
-        return false;
+        // Aplica a máscara com pontos e traço
+        cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
     }
 
-    // Validação dos dígitos verificadores
-    var soma = 0, resto;
-    for (var i = 1; i <= 9; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (11 - i);
-    resto = (soma * 10) % 11;
-    if ((resto == 10) || (resto == 11)) resto = 0;
-    if (resto != parseInt(cpfSemMascara.substring(9, 10))) return false;
+    // Função para validar o CPF, mantendo pontos e traços
+    function validarCPF(cpf) {
+        // Mantém os pontos e traço para a exibição, mas retira para a validação
+        var cpfSemMascara = cpf.replace(/[^\d]+/g, ''); // Remove pontos e traço
 
-    soma = 0;
-    for (var i = 1; i <= 10; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (12 - i);
-    resto = (soma * 10) % 11;
-    if ((resto == 10) || (resto == 11)) resto = 0;
-    if (resto != parseInt(cpfSemMascara.substring(10, 11))) return false;
+        // Validação básica de formato
+        if (cpfSemMascara == '' || cpfSemMascara.length != 11 || /^(\d)\1+$/.test(cpfSemMascara)) {
+            return false;
+        }
 
-    return true;
-}
+        // Validação dos dígitos verificadores
+        var soma = 0, resto;
+        for (var i = 1; i <= 9; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (11 - i);
+        resto = (soma * 10) % 11;
+        if ((resto == 10) || (resto == 11)) resto = 0;
+        if (resto != parseInt(cpfSemMascara.substring(9, 10))) return false;
 
-// Aplicação da validação ao perder o foco (blur)
-document.getElementById("cpf").addEventListener("blur", function() {
-    var cpfInput = this;
-    if (!validarCPF(cpfInput.value)) {
-        cpfInput.classList.add("erro");
-        alert("CPF inválido!");
-    } else {
-        cpfInput.classList.remove("erro");
+        soma = 0;
+        for (var i = 1; i <= 10; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (12 - i);
+        resto = (soma * 10) % 11;
+        if ((resto == 10) || (resto == 11)) resto = 0;
+        if (resto != parseInt(cpfSemMascara.substring(10, 11))) return false;
+
+        return true;
     }
-});
+
+    // Aplicação da validação ao perder o foco (blur)
+    document.getElementById("cpf").addEventListener("blur", function () {
+        var cpfInput = this;
+        if (!validarCPF(cpfInput.value)) {
+            cpfInput.classList.add("erro");
+            alert("CPF inválido! Verifique e tente novamente.");
+        } else {
+            cpfInput.classList.remove("erro");
+        }
+    });
 
 </script>
 </script>
@@ -543,6 +578,25 @@ document.getElementById("cpf").addEventListener("blur", function() {
         reverse: true
     });
 </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const requiredFields = document.querySelectorAll('.required');
+
+    requiredFields.forEach((field, index) => {
+        field.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Impede o envio do formulário
+                // Muda o foco para o próximo campo
+                if (index < requiredFields.length - 1) {
+                    requiredFields[index + 1].focus();
+                }
+            }
+        });
+    });
+});
+</script>
+
 
 
 
