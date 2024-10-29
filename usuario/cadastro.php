@@ -106,7 +106,7 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/cadastro.css">
-    <link rel="stylesheet" href="../css/css/responsividade/telacadastra.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telacadastrar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>VacinePet - Cadastro</title>
     <style>
@@ -251,7 +251,7 @@ if (isset($_POST['submit'])) {
                 <div id="etapa2" class="etapa hidden">
                     <div class="title">
                         <h1 class="title-title">CADASTRO</h1>
-                        <h5 class="sub-title-title">Preencha com suas informações de endereço.</h5>
+                        <h5 id="etapa2-sub" class="sub-title-title">Preencha com suas informações de endereço.</h5>
                     </div>
                     <div class="row">
                         <div class="form-group col-md-6">
@@ -290,9 +290,9 @@ if (isset($_POST['submit'])) {
                         </div>
 
                         <div class="div-botoes">
-                            <button id="btn2-ant" type="button" class="btn btn-secondary btn-custom btn-perso"
+                            <button id="btn2-ant" type="button" class="btn btn-secondary btn-custom btn-perso "
                                 onclick="anteriorEtapa(1)">Anterior</button>
-                            <button id="btn2-prox" type="button" class="btn btn-primary btn-custom"
+                            <button id="btn2-prox" type="button" class="btn btn-primary btn-custom btn-etapa2"
                                 onclick="proximaEtapa(3)">Próximo</button>
                         </div>
                     </div>
@@ -350,10 +350,10 @@ if (isset($_POST['submit'])) {
                     </div>
 
 
-                    <div class="div-botoes">
+                    <div id="div-btn3" class="div-botoes">
                         <button type="button" id="btn3-ant" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(2)">Anterior</button>
-                        <button type="button" id="btn3-prox" class="btn btn-primary btn-custom"
+                        <button type="button" id="btn3-prox" class="btn btn-primary btn-custom btn-etapa3"
                             onclick="proximaEtapa(4)">Próximo</button>
                     </div>
                 </div>
