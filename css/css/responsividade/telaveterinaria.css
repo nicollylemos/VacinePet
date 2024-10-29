@@ -4,6 +4,10 @@
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
+    body{
+        background-image: url(imgs/doutora.png);
+        background-size: 405px;
+    }
 
 }
 @media (min-width:1501px) and (max-width: 2560px){
