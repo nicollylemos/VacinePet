@@ -29,11 +29,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $idade_pet = $_POST['idade_pet'];
     $sexo_pet = $_POST['sexo_pet'];
     $especie_pet = $_POST['especie_pet'];
-    $castracao_pet = isset($_POST['castracao_pet']) ? 1 : 0; // 1 se estiver marcado, 0 caso contrário
+    $castracao_pet =$_POST['castracao_pet'];
+    $porte_pet =$_POST['porte_pet'];
 
     // Insere o pet no banco de dados
-    $sql_insert = "INSERT INTO pet (Nome_Pet, Raca, Idade, Sexo, Especie, Castracao, Cod_Tutor) 
-                   VALUES ('$nome_pet', '$raca_pet', '$idade_pet', '$sexo_pet', '$especie_pet', '$castracao_pet', '$cod_tutor')";
+    $sql_insert = "INSERT INTO pet (Nome_Pet, Raca, Idade, Sexo, Especie, Castracao, Porte, Cod_Tutor) 
+                   VALUES ('$nome_pet', '$raca_pet', '$idade_pet', '$sexo_pet', '$especie_pet', '$castracao_pet', '$porte_pet',  '$cod_tutor')";
 
     if (mysqli_query($conexao, $sql_insert)) {
         echo '<script>alert("Pet cadastrado com sucesso!"); window.location.href="meu-pet.php";</script>';
@@ -193,12 +194,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
-
+                </div>
+                <div class="form-group">
+                    <label for="porte_pet">Castração:</label>
+                    <select id="porte_pet" name="porte_pet">
+                        <option value="Pequeno">Pequeno</option>
+                        <option value="Médio">Médio</option>
+                        <option value="Grande">Grande</option>
+                    </select>
                 </div>
                 <div class="input-button">
                     <button type="submit" class="btn-submit">Cadastrar Pet</button>
 
                     <a href="meu-pet.php" class="btn-cancel">Cancelar</a>
+                </div>
+</form>
+        </div>
+    </div>
 
 </body>
 

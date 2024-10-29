@@ -76,9 +76,9 @@ if (isset($_POST['submit'])) {
                 $porte = $_POST['pet_porte'];
                 $especie = $_POST['pet_especie'];
                 $historico = $_POST['pet_historico'] ?? null;
-                $foto_pet = $_POST['pet_foto_pet'] ?? null;
+                $raca = $_POST['pet_raca'];
 
-                $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, foto_pet, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$foto_pet', '$cod_tutor')");
+                $result_pet = mysqli_query($conexao, "INSERT INTO pet(nome_pet, sexo, idade, castracao, porte, especie, historico, raca, cod_tutor) VALUES ('$nome_pet', '$sexo', '$idade', '$castracao', '$porte', '$especie', '$historico', '$raca', '$cod_tutor')");
 
                 if ($result && $result_endereco && $result_pet) {
                     // Se tudo der certo, redireciona
