@@ -136,7 +136,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                             echo "<option value='Castração'>Castração</option>";
                             echo "</select><br><br>";
 
-                            echo "<label for='agendamento'>Selecione a Data e Horário:</label>";
+                            echo "<label for='agendamento'>Selecione a Data e Horário:  </label>";
                             echo "<select name='agendamento' id='agendamento'  class='selecionar-data'  required>";
                             while ($row = $result->fetch_assoc()) {
                                 $data          = date('d/m/Y', strtotime($row['data_disponivel']));

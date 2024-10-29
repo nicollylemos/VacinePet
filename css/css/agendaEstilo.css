@@ -116,6 +116,7 @@ select{
     font-size: 17px;
     border-radius: 10px;
     font-family: baloo;
+    cursor: pointer;
 }
 
 .btn-confirmar{
@@ -127,6 +128,8 @@ select{
     font-size: 17px;
     border-radius: 10px;
     font-family: baloo;
+    cursor: pointer;
+ 
 }
 
 .span-erro{
@@ -144,12 +147,15 @@ select{
 }
 
 .btn-confirmar:hover {
-    background-color: #fff;
-    color: #FD811C;
+    background-color: #f3a15e;
+    color: #fff;
+    transition: 1s;
+    border-color: #f3a15e;
 }
 
 
 .btn-verificar:hover {
-    background-color: #FD811C;
-    color: #fff;
+    transition: 1s;
+    border-color: #f3a15e;
+    color:#f3a15e;
 }
