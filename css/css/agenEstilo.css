@@ -20,27 +20,6 @@ body {
     font-family: poppins;
 }
 
-.radio-option {
-    display: flex;
-    align-items: center;
-}
-.radio-option input {
-    margin-right: 8px;
-}
-
-.radio-option label {
-    margin-right: 15px;
-}
-
-
-
-
-.subtitle-inicio {
-    position: relative;
-    width: 350px;
-}
-
-
 .logo {
     font-family: baloo;
     margin-top: 60px;
@@ -60,36 +39,39 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    min-height: 600px;
-    max-height: 1000px;
+ 
     box-shadow: 20px 20px 20px #d8b363;
 }
 
 .form {
     position: absolute;
-    left: 45%;
+    left: 35%;
     top: 2%;
 
 }
 .form h1{
    
         font-family:baloo;
-        font-size: 45px;
+        font-size: 55px;
         color: #52BACB;
 }
 
 
 
-.form-control::placeholder {
-    color: #8c8c8c9a;
+
+select{
+    width: 150px; 
+    height: 40px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: transparent; 
+    color: #333; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-bottom: 40px;
+    display: inline-flex;
 }
 
-.form-control:focus {
-    border-color: #fcdfa3;
-    /* Cor da borda quando focada */
-    outline: none;
-    /* Remove o outline padrão */
-}
 
 .blue-div {
     font-family: baloo;
@@ -104,146 +86,3 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.imagem-animais {
-    position: absolute;
-    top: 49%;
-    left: 6%;
-    width: 690px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
-
-.form-inline {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaço entre os elementos */
-}
-
-.form-inline label {
-    margin-right: 5px;
-}
-
-.form-inline select, .form-inline input[type="submit"] {
-    margin: 0;
-}
-
-.verificarBtn {
-    background-color: transparent;
-    border: 3.5px solid #FD811C;
-    border-radius: 15px;
-    padding: 7px;
-    font-weight: 700;
-    color: #FD811C;
-    font-size: 15px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-}
-.custom-select {
-   
-    background-color:transparent; /* Cor de fundo */
-    border: 2px solid #FD811C; /* Borda laranja */
-    border-radius: 10px; /* Arredondamento das bordas */
-    font-size: 15px; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
-    font-weight: 500; /* Peso da fonte */
-    outline: none; /* Remove a borda de foco padrão */
-    transition: border-color 0.3s ease, background-color 0.3s ease; /* Transição suave */
-    cursor: pointer; /* Apontador de mão ao passar o mouse */
-    position: relative; /* Necessário para a seta personalizada */
-}
-
-.custom-select:hover {
-    background-color: #f2f0f0; /* Cor de fundo ao passar o mouse */
-}
-
-
-
-.form-inline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Espaçamento entre os elementos */
-}
-
-.form-inline label {
-    display: block;
-    margin-bottom: 5px; /* Espaço entre o label e o select */
-    font-weight: bold; /* Texto em negrito */
-}
-
-.form-inline select,
-.form-inline input[type="submit"] {
-    padding: 8px;
-    border: 2px solid #FD811C;
-    border-radius: 8px;
-    font-size: 14px;
-    color: #333;
-}
-
-
-
-.verificarBtn:hover {
-    background-color: #FD811C; 
-    color: white; 
-    border-color: #FD811C; 
-}
-
-.btn-custom {
-    top: 100px;
-    position: relative;
-    left: 120px;
-    font-family: baloo;
-    font-size: 20px;
-    background-color: #FD811C;
-    border-color: #FD811C;
-    border-radius: 20px;
-    width: 100px;
-    color: white;
-}
-
-.btn-custom:hover {
-    background-color: #fcab65;
-    border-color: #fcab65;
-}
-#span{
-    position: relative;
-    top: 50px;
-}
-#agradecimento{
-    position: relative;
-    top: 50px;
-}
-#final{
-    position: relative;
-    top: 55px;
-}
-#sub{
-    width: 300px;
-}
-.recado{
-    font-size: 13px;
-    text-align: center;
-    font-weight: bolder;
-    position: relative;
-    margin-top: 23%;
-    color: #9c9c9c;
-    left: -40px;
-
-}
-#agendamento-container{
-    z-index: 1000;
-    position: relative;
-    left: 10%;
-    top: 35px;
-    
-}
-.servico{
-    position: fixed;
-    top: 250px;
-}
-#btn-um{
-    position: relative;
-    left: 150px;
-}
-
