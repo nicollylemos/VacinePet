@@ -55,7 +55,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <title>Agendamento</title>
-    <link rel="stylesheet" href="../css/css/agenEst.css">
+    <link rel="stylesheet" href="../css/css/agenEstilo.css">
     <link rel="stylesheet" href="../css/css/responsividade/telaagenda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
 
@@ -76,8 +76,8 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                 <form action="" method="POST">
                     <div class="form-inline">
                         <label for="mes">Selecione o Mês:</label>
-
-                        <select name="mes" id="mes">
+                           
+                        <select name="mes" id="mes" class="selecionar">
                             <?php
             // Exibe os meses para o usuário escolher
             foreach ($meses as $numero => $nome) {
@@ -91,7 +91,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                         <select name="ano" id="ano">
                             <?php
             // Exibe os anos para o usuário escolher
-            for ($i = date('Y'); $i <= date('Y') + 2; $i++) {
+            for ($i = date('Y'); $i <= date('Y') + 10; $i++) {
                 $selected = ($i == $ano) ? "selected" : "";
                 echo "<option value='$i' $selected>$i</option>";
             }

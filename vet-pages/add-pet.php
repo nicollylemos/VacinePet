@@ -79,7 +79,7 @@ $logado = $_SESSION['email'];
                     <!-- Nome -->
                     <div>
                         <label>Nome:</label>
-                        <input type="text" maxlength="11" name="pet_nome">
+                        <input type="text" maxlength="50" name="pet_nome">
                     </div>
 
                     <!-- Sexo -->
