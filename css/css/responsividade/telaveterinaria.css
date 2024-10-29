@@ -6,3 +6,9 @@
     }
 
 }
+@media (min-width:1501px) and (max-width: 2560px){
+    .sobre-profissional, .final {
+        margin-bottom: 220px; /* Ajuste conforme necessário */
+    }
+    
+}

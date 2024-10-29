@@ -1,0 +1,954 @@
+@media (min-width:310px) and (max-width: 400px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: url(imgs/cadresp.jpg);
+        background-position: calc(0% + -280px) calc(50% + -90px);
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+        background-size: cover;
+    }
+    .blue-div-resp {
+        position: relative;
+        top: -260px;
+        left: -20px;
+    }
+    .title-blue-div1{
+        position: relative;
+        top: 40px;
+        left: 30px;
+    }
+    .title-blue-div2{
+        position: relative;
+        top: -10px;
+        left: 30px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: -20px;
+        font-size: 15px;
+        width: 200px;
+        left: 30px;
+    }
+    .title-title{
+        font-size: 45px;
+        position: relative;
+        left: 35px;
+    }
+    .sub-title-title{
+        font-size: 18px;
+    }
+    .container {
+        position: relative;
+        top: 800px;
+        width: 405px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        height: 200vh;
+    }
+
+    #etapa1, #etapa2, #etapa3, #etapa4 {
+        position: relative;
+        left: -100px;
+    }
+    #sub, #sub2{
+        width: 300px;
+    }
+    .form-control {
+        width: 300px;
+    }
+    #btn1{
+        position: relative;
+        left: -60px;
+    }
+    #btn2-ant, #btn3-ant{
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    #btn2-prox, #btn3-prox{
+        position: relative;
+        left: 20px;
+        top: 40px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 70px;
+        left: 20px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 90px;
+        left: 20px;
+    }
+    .modal-content{
+        width: 300px;
+        position: relative;
+        left: 45px;
+    }
+    .blue-div {
+        display: none;
+    }
+
+}
+@media (min-width:401px) and (max-width: 450px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: url(imgs/cadresp.jpg);
+        background-position: calc(0% + -250px) calc(50% + -90px);
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+        background-size: cover;
+    }
+    .blue-div-resp {
+        position: relative;
+        top: -260px;
+        left: -5px;
+    }
+    #etapa2-sub{
+        width: 350px;
+    }
+    .title-blue-div1{
+        position: relative;
+        top: 40px;
+        left: 30px;
+    }
+    .title-blue-div2{
+        position: relative;
+        top: -10px;
+        left: 30px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: -20px;
+        font-size: 15px;
+        width: 200px;
+        left: 30px;
+    }
+    .title-title{
+        font-size: 45px;
+        position: relative;
+        left: 55px;
+    }
+    .sub-title-title{
+        font-size: 20px;
+        position: relative;
+        left: 5px;
+    }
+    .container {
+        position: relative;
+        top: 800px;
+        width: 455px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        height: 200vh;
+    }
+
+    #etapa1, #etapa2, #etapa3, #etapa4 {
+        position: relative;
+        left: -120px;
+    }
+    #sub, #sub2{
+        width: 300px;
+    }
+    .form-control {
+        width: 350px;
+    }
+    #btn1{
+        position: relative;
+        left: -50px;
+    }
+    #btn2-ant, #btn3-ant{
+        position: relative;
+        left: 40px;
+        top: 20px;
+    }
+    #btn2-prox, #btn3-prox{
+        position: relative;
+        left: 40px;
+        top: 40px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 70px;
+        left: 40px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 90px;
+        left: 40px;
+    }
+    .blue-div {
+        display: none;
+    }
+
+}
+@media (min-width:451px) and (max-width: 500px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: url(imgs/cadresp.jpg);
+        background-position: calc(0% + -210px) calc(50% + -90px);
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+        background-size: cover;
+    }
+    .blue-div-resp {
+        position: relative;
+        top: -260px;
+        left: 10px;
+    }
+    #etapa2-sub{
+        width: 350px;
+    }
+    .title-blue-div1{
+        position: relative;
+        top: 40px;
+        left: 30px;
+    }
+    .title-blue-div2{
+        position: relative;
+        top: -10px;
+        left: 30px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: -20px;
+        font-size: 15px;
+        width: 200px;
+        left: 30px;
+    }
+    .title-title{
+        font-size: 55px;
+        position: relative;
+        left: 55px;
+    }
+    .sub-title-title{
+        font-size: 20px;
+        width: 350px;
+        position: relative;
+        left: 5px;
+    }
+    .container {
+        position: relative;
+        top: 800px;
+        width: 505px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        height: 200vh;
+    }
+
+    #etapa1, #etapa2, #etapa3, #etapa4 {
+        position: relative;
+        left: -130px;
+    }
+    #sub, #sub2{
+        width: 300px;
+    }
+    .form-control {
+        width: 380px;
+    }
+    #btn1{
+        position: relative;
+        left: -50px;
+    }
+    #btn2-ant, #btn3-ant{
+        position: relative;
+        left: 50px;
+        top: 20px;
+    }
+    .btn-etapa2{
+        position: relative;
+        top: 100px;
+        left: -165px;
+    }
+    #btn3-prox{
+        position: relative;
+        left: 50px;
+        top: 40px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 70px;
+        left: 50px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 90px;
+        left: 50px;
+    }
+    .modal-content{
+        width: 400px;
+        position: relative;
+        left: 40px;
+    }
+    .blue-div {
+        display: none;
+    }
+
+}
+@media (min-width:501px) and (max-width: 550px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: url(imgs/cadresp.jpg);
+        background-position: calc(0% + -150px) calc(50% + -90px);
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+        background-size: cover;
+    }
+    .blue-div-resp {
+        position: relative;
+        top: -260px;
+        left: 10px;
+    }
+    #etapa2-sub{
+        width: 350px;
+    }
+    .title-blue-div1{
+        position: relative;
+        top: 40px;
+        left: 30px;
+    }
+    .title-blue-div2{
+        position: relative;
+        top: -10px;
+        left: 30px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: -20px;
+        font-size: 15px;
+        width: 300px;
+        left: 30px;
+    }
+    .title-title{
+        font-size: 55px;
+        position: relative;
+        left: 65px;
+    }
+    .sub-title-title{
+        font-size: 20px;
+        width: 350px;
+        position: relative;
+        left: 5px;
+    }
+    .container {
+        position: relative;
+        top: 800px;
+        width: 555px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        height: 200vh;
+    }
+
+    #etapa1, #etapa2, #etapa3, #etapa4 {
+        position: relative;
+        left: -140px;
+    }
+    #sub, #sub2{
+        width: 300px;
+    }
+    .form-control {
+        width: 420px;
+    }
+    #btn1{
+        position: relative;
+        left: -40px;
+    }
+    #btn2-ant, #btn3-ant{
+        position: relative;
+        left: 60px;
+        top: 20px;
+    }
+    .btn-etapa2{
+        position: relative;
+        top: 100px;
+        left: -155px;
+    }
+    #btn3-prox{
+        position: relative;
+        left: -150px;
+        top: 100px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 70px;
+        left: 60px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 150px;
+        left: -150px;
+    }
+    .modal-content{
+        width: 450px;
+        position: relative;
+        left: 40px;
+    }
+    .blue-div {
+        display: none;
+    }
+
+}
+@media (min-width:551px) and (max-width: 575px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+
+    body {
+        background-image: url(imgs/cadresp.jpg);
+        background-position: calc(0% + -130px) calc(50% + -90px);
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+        background-size: cover;
+    }
+    .blue-div-resp {
+        position: relative;
+        top: -260px;
+        left: 10px;
+    }
+    #etapa2-sub{
+        width: 350px;
+    }
+    .title-blue-div1{
+        position: relative;
+        top: 40px;
+        left: 30px;
+    }
+    .title-blue-div2{
+        position: relative;
+        top: -10px;
+        left: 30px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: -20px;
+        font-size: 15px;
+        width: 300px;
+        left: 30px;
+    }
+    .title-title{
+        font-size: 55px;
+        position: relative;
+        left: 65px;
+    }
+    .sub-title-title{
+        font-size: 20px;
+        width: 350px;
+        position: relative;
+        left: 5px;
+    }
+    .container {
+        position: relative;
+        top: 800px;
+        width: 576px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        height: 200vh;
+    }
+
+    #etapa1, #etapa2, #etapa3, #etapa4 {
+        position: relative;
+        left: -140px;
+    }
+    #sub, #sub2{
+        width: 300px;
+    }
+    .form-control {
+        width: 420px;
+    }
+    #btn1{
+        position: relative;
+        left: -40px;
+    }
+    #btn2-ant, #btn3-ant{
+        position: relative;
+        left: 60px;
+        top: 20px;
+    }
+    .btn-etapa2{
+        position: relative;
+        top: 100px;
+        left: -155px;
+    }
+    #btn3-prox{
+        position: relative;
+        left: -150px;
+        top: 100px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 70px;
+        left: 60px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 150px;
+        left: -150px;
+    }
+    .modal-content{
+        width: 500px;
+        position: relative;
+        left: 30px;
+    }
+    .blue-div {
+        display: none;
+    }
+
+}
+@media (min-width:576px) and (max-width: 675px) {
+    .blue-div-resp{
+        display: none;
+    }
+    .blue-div{
+        width: 200px;
+    }
+    .title-blue-div1{
+        font-size: 18px;
+    }
+    .title-blue-div2{
+        font-size: 25px;
+        position: relative;
+        top: 35px;
+        width: 200px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: 30px;
+        font-size: 18px;
+        width: 180px;
+    }
+    .title-title{
+        font-size: 50px;
+    }
+    #etapa1, #etapa2, #etapa3, #etapa4{
+        position: relative;
+        left: 15px;
+    }
+    #etapa3{
+        top: -20px;
+    }
+    .sub-title-title{
+        position: relative;
+        left: 5px;
+        width: 300px;
+    }
+    .form-control{
+        width: 300px;
+    }
+    #btn1{
+        position: relative;
+        left: -100px;
+    }
+    #btn2-ant{
+        position: relative;
+        top: -30px;
+    }
+    #btn2-prox{
+        position: relative;
+        top: 30px;
+        left: -215px;
+    }
+    #btn3-ant{
+        position: relative;
+        top: -60px;
+    }
+    #btn3-prox{
+        position: relative;
+        top: -5px;
+        left: -215px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 20px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 85px;
+        left: -215px;
+    }
+    .modal-content{
+        width: 500px;
+        position: relative;
+        left: 15px;
+    }
+
+}
+@media (min-width:676px) and (max-width: 767px) {
+    
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .blue-div-resp{
+        display: none;
+    }
+    .blue-div{
+        width: 250px;
+    }
+    .title-blue-div1{
+        font-size: 18px;
+    }
+    .title-blue-div2{
+        font-size: 25px;
+        position: relative;
+        top: 75px;
+        width: 200px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: 70px;
+        font-size: 18px;
+        width: 250px;
+    }
+    .title-title{
+        font-size: 50px;
+    }
+    #etapa1, #etapa2, #etapa3, #etapa4{
+        position: relative;
+        left: 65px;
+    }
+    #etapa3{
+        top: -20px;
+    }
+    .sub-title-title{
+        position: relative;
+        left: 5px;
+        width: 250px;
+    }
+    .form-control{
+        width: 250px;
+    }
+    #btn1{
+        position: relative;
+        left: -120px;
+        top: -30px;
+    }
+    #btn2-ant{
+        position: relative;
+        top: -30px;
+        left: -10px;
+    }
+    #btn2-prox{
+        position: relative;
+        top: 30px;
+        left: -225px;
+    }
+    #btn3-ant{
+        position: relative;
+        top: -60px;
+        left: -15px;
+    }
+    #btn3-prox{
+        position: relative;
+        top: -5px;
+        left: -230px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 20px;
+        left: -15px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 85px;
+        left: -230px;
+    }
+    .modal-content{
+        width: 500px;
+        position: relative;
+        left: 25px;
+    }
+
+}
+@media (min-width:768px) and (max-width: 875px) {
+    .blue-div-resp{
+        display: none;
+    }
+    .blue-div{
+        width: 280px;
+    }
+    .title-blue-div1{
+        font-size: 18px;
+    }
+    .title-blue-div2{
+        font-size: 35px;
+        position: relative;
+        top: 75px;
+        width: 200px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: 70px;
+        font-size: 18px;
+        width: 280px;
+    }
+    .title-title{
+        font-size: 60px;
+    }
+    #etapa1, #etapa2, #etapa3, #etapa4{
+        width: 10px;
+        position: relative;
+        left: 65px;
+    }
+    #etapa3{
+        top: -30px;
+    }
+    .sub-title-title{
+        position: relative;
+        left: 5px;
+        width: 350px;
+    }
+    .form-control{
+        width: 350px;
+    }
+    #btn1{
+        position: relative;
+        left: 70px;
+        top: -30px;
+    }
+    #btn2-ant{
+        position: relative;
+        top: 6px;
+        left: 70px;
+    }
+    #btn2-prox{
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+    #btn3-ant{
+        position: relative;
+        top: -25px;
+        left: 70px;
+    }
+    #btn3-prox{
+        position: relative;
+        top: -15px;
+        left: 70px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 80px;
+        left: 70px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 95px;
+        left: 70px;
+    }
+    .modal-content{
+        width: 500px;
+        position: relative;
+        left: 25px;
+    }
+
+}
+@media (min-width:768px) and (max-width: 991px) {
+    
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .blue-div-resp{
+        display: none;
+    }
+    .blue-div{
+        width: 280px;
+    }
+    .title-blue-div1{
+        font-size: 18px;
+    }
+    .title-blue-div2{
+        font-size: 35px;
+        position: relative;
+        top: 75px;
+        width: 200px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: 70px;
+        font-size: 18px;
+        width: 280px;
+    }
+    .title-title{
+        font-size: 60px;
+    }
+    #etapa1, #etapa2, #etapa3, #etapa4{
+        width: 10px;
+        position: relative;
+        left: 65px;
+    }
+    #etapa3{
+        top: -30px;
+    }
+    .sub-title-title{
+        position: relative;
+        left: 5px;
+        width: 350px;
+    }
+    .form-control{
+        width: 350px;
+    }
+    #btn1{
+        position: relative;
+        left: 70px;
+        top: -30px;
+    }
+    #btn2-ant{
+        position: relative;
+        top: 6px;
+        left: 70px;
+    }
+    #btn2-prox{
+        position: relative;
+        top: 20px;
+        left: 70px;
+    }
+    #btn3-ant{
+        position: relative;
+        top: -25px;
+        left: 70px;
+    }
+    #btn3-prox{
+        position: relative;
+        top: -15px;
+        left: 70px;
+    }
+    #btn4-ant{
+        position: relative;
+        top: 80px;
+        left: 70px;
+    }
+    #btn4-prox{
+        position: relative;
+        top: 95px;
+        left: 70px;
+    }
+    .modal-content{
+        width: 600px;
+        position: relative;
+        left: -20px;
+    }
+
+}
+@media (min-width:992px) and (max-width: 1000px) {
+    
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .blue-div-resp{
+        display: none;
+    }
+    .blue-div{
+        width: 280px;
+    }
+    .title-blue-div1{
+        font-size: 18px;
+    }
+    .title-blue-div2{
+        font-size: 35px;
+        position: relative;
+        top: 75px;
+        width: 200px;
+    }
+    .title-blue-div3{
+        position: relative;
+        top: 70px;
+        font-size: 18px;
+        width: 280px;
+    }
+    #datanasc, #telefone, #senha{
+        position: relative;
+        left: 20px;
+    }
+    .title-title{
+        font-size: 60px;
+    }
+    #etapa1, #etapa2, #etapa3, #etapa4{
+        position: relative;
+        left: -25px;
+    }
+    .sub-title-title{
+        position: relative;
+        left: 5px;
+    }
+    .form-control{
+        width: 280px;
+    }
+    #btn1{
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    #div-btn3{
+        position: relative;
+        top: -170px;
+    }
+    #nome_pet, #raca_pet, #idade_pet{
+        position: relative;
+        left: 310px;
+        top: -280px;
+    }
+    .div-botoes{
+        position: relative;
+        top: 40px;
+        left: 30px;
+    }
+    .add{
+        width: 600px;
+        height: 500px;
+    }
+    .modal-content{
+        width: 600px;
+        position: relative;
+        left: -20px;
+    }
+
+}
+@media (min-width:1001px) and (max-width: 2560px) {
+    .div-botoes{
+        position: relative;
+        left: 20px;
+        top: 40px;
+    }
+}
+@media (min-width:1001px) and (max-width: 9560px){
+    .blue-div-resp{
+        display: none;
+    }
+}
