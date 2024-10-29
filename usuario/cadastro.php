@@ -243,7 +243,7 @@ if (isset($_POST['submit'])) {
                         </div>
 
                         <div class="div-botoess">
-                            <button type="button" class="btn btn-primary btn-custom btn-cad"
+                            <button id="btn1" type="button" class="btn btn-primary btn-custom btn-cad"
                                 onclick="proximaEtapa(2)">Próximo</button>
                         </div>
                     </div>
@@ -290,9 +290,9 @@ if (isset($_POST['submit'])) {
                         </div>
 
                         <div class="div-botoes">
-                            <button type="button" class="btn btn-secondary btn-custom btn-perso"
+                            <button id="btn2-ant" type="button" class="btn btn-secondary btn-custom btn-perso"
                                 onclick="anteriorEtapa(1)">Anterior</button>
-                            <button type="button" class="btn btn-primary btn-custom"
+                            <button id="btn2-prox" type="button" class="btn btn-primary btn-custom"
                                 onclick="proximaEtapa(3)">Próximo</button>
                         </div>
                     </div>
@@ -303,7 +303,7 @@ if (isset($_POST['submit'])) {
                         <h1 class="title-title">CADASTRO</h1>
                     </div>
                     <div class="sub-title">
-                        <h5 class="sub-title-title">Preencha com as informações do seu pet.</h5>
+                        <h5 id="sub" class="sub-title-title">Preencha com as informações do seu pet.</h5>
                     </div>
 
                     <div class="radio">
@@ -351,9 +351,9 @@ if (isset($_POST['submit'])) {
 
 
                     <div class="div-botoes">
-                        <button type="button" id="btn-etapa4" class="btn btn-secondary btn-custom btn-perso"
+                        <button type="button" id="btn3-ant" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(2)">Anterior</button>
-                        <button type="button" id="btn-btn-etapa4" class="btn btn-primary btn-custom"
+                        <button type="button" id="btn3-prox" class="btn btn-primary btn-custom"
                             onclick="proximaEtapa(4)">Próximo</button>
                     </div>
                 </div>
@@ -364,7 +364,7 @@ if (isset($_POST['submit'])) {
                         <h1 class="title-title">CADASTRO</h1>
                     </div>
                     <div class="sub-title">
-                        <h5 class="sub-title-title">Preencha com as informações do seu pet.</h5>
+                        <h5 id="sub2" class="sub-title-title">Preencha com as informações do seu pet.</h5>
                     </div>
                     <div class="form-group mt-4 col-md-6" style="width: 530px;">
                         <textarea
@@ -374,9 +374,9 @@ if (isset($_POST['submit'])) {
 
 
                     <div class="div-botoes">
-                        <button type="button" class="btn btn-secondary btn-custom btn-perso"
+                        <button id="btn4-ant" type="button" class="btn btn-secondary btn-custom btn-perso"
                             onclick="anteriorEtapa(3)">Anterior</button>
-                        <input type="submit" name="submit" class="btn btn-secondary btn-custom btn-perso"
+                        <input id="btn4-prox" type="submit" name="submit" class="btn btn-secondary btn-custom btn-perso"
                             value="Cadastrar">
                     </div>
                 </div>
