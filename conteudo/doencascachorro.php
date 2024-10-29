@@ -530,7 +530,7 @@ include("../inc/header.php");
                 <div class="swiper-button-next"></div>
             </div>
             <div class="agende-agora">
-                <a href="agendamento.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
+                <a href="usuario/agendamento.php"><button class="btn btn-primary btn-custom">AGENDE AGORA</button></a>
 
             </div>
         </div>

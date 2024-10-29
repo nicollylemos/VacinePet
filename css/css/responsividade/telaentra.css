@@ -314,8 +314,8 @@
    }
    .yellow-div{
       width: 370px;
-      background-size: 550px;
-      background-position: right;
+      background-size: 800px;
+      background-position: calc(0% + -320px) calc(50% + -10px);
    }
    .cilindros{
       display: none;
