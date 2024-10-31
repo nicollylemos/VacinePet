@@ -1,0 +1,400 @@
+@media (min-width:310px) and (max-width: 380px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: url(imgs/agendar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .blue-div-resp{
+        position: relative;
+        top: -190px;
+        color: white;
+        left: -80px;
+        font-size: 15px;
+    }
+    .container{
+        border-top-left-radius: 50px;
+        margin-top: 520px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        width: 405px;
+        height: 1300px;
+    }
+    #title{
+        position: relative;
+        left: -80px;
+        font-size: 45px;
+    }
+    #subtitle{
+        position: relative;
+        width: 300px;
+        top: -20px;
+        left: -70px;
+    }
+    #form-inline{
+        width: 300px;
+        position: relative;
+        left: -50px;
+        top: -20px;
+    }
+    .btn-verificar{
+        position: relative;
+        left: 15px;
+    }
+    #mes, #ano, #pet, .selecionar-servico{
+        width: 120px;
+    }
+    .span-custo{
+        position: relative;
+        left: -75px;
+        width: 300px;
+        text-align: center;
+    }
+    #agendamento{
+        width: 250px;
+    }
+    .form-inline{
+        position: relative;
+        left: -50px;
+        top: 5px;
+        width: 300px;
+    }
+    .btn-confirmar{
+        position: relative;
+        left: -35px;
+    }
+    .span-erro{
+        position: relative;
+        left: -70px;
+    }
+}
+@media (min-width:381px) and (max-width: 450px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: url(imgs/agendar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .blue-div-resp{
+        position: relative;
+        top: -200px;
+        color: white;
+        left: -90px;
+        font-size: 15px;
+    }
+    .container{
+        position: fixed;
+        border-top-left-radius: 50px;
+        margin-top: 405px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        width: 455px;
+        height: 1300px;
+    }
+    #title{
+        position: relative;
+        left: -90px;
+        font-size: 50px;
+    }
+    #subtitle{
+        position: relative;
+        width: 300px;
+        top: -20px;
+        left: -70px;
+    }
+    #form-inline{
+        width: 300px;
+        position: relative;
+        left: -50px;
+        top: -20px;
+    }
+    .btn-verificar{
+        position: relative;
+        left: 15px;
+    }
+    #mes, #ano, #pet, .selecionar-servico{
+        width: 150px;
+    }
+    .span-custo{
+        position: relative;
+        left: -75px;
+        width: 300px;
+        text-align: center;
+    }
+    #agendamento{
+        width: 280px;
+    }
+    .form-inline{
+        position: relative;
+        left: -50px;
+        top: 5px;
+        width: 300px;
+    }
+    .btn-confirmar{
+        position: relative;
+        left: -35px;
+    }
+    .span-erro{
+        position: relative;
+        left: -70px;
+        width: 300px;
+    }
+}
+@media (min-width:451px) and (max-width: 500px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: url(imgs/agendar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .blue-div-resp{
+        position: relative;
+        top: -200px;
+        color: white;
+        left: -90px;
+        font-size: 15px;
+    }
+    .container{
+        position: fixed;
+        border-top-left-radius: 50px;
+        margin-top: 405px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        width: 505px;
+        height: 1300px;
+    }
+    #title{
+        position: relative;
+        left: -90px;
+        font-size: 50px;
+    }
+    #subtitle{
+        position: relative;
+        width: 340px;
+        top: -20px;
+        left: -70px;
+    }
+    #form-inline{
+        width: 300px;
+        position: relative;
+        left: -50px;
+        top: -20px;
+    }
+    .btn-verificar{
+        position: relative;
+        left: 15px;
+    }
+    #mes, #ano, #pet, .selecionar-servico{
+        width: 150px;
+    }
+    .span-custo{
+        position: relative;
+        left: -75px;
+        width: 300px;
+        text-align: center;
+    }
+    #agendamento{
+        width: 280px;
+    }
+    .form-inline{
+        position: relative;
+        left: -50px;
+        top: 5px;
+        width: 300px;
+    }
+    .btn-confirmar{
+        position: relative;
+        left: -35px;
+    }
+    .span-erro{
+        position: relative;
+        left: -70px;
+    }
+}
+@media (min-width:501px) and (max-width: 550px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: url(imgs/agendar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .blue-div-resp{
+        position: relative;
+        top: -200px;
+        color: white;
+        left: -130px;
+        font-size: 22px;
+    }
+    .container{
+        position: fixed;
+        border-top-left-radius: 50px;
+        margin-top: 625px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        width: 555px;
+        height: 1300px;
+    }
+    #title{
+        position: relative;
+        left: -90px;
+        font-size: 50px;
+    }
+    #subtitle{
+        position: relative;
+        width: 340px;
+        top: -20px;
+        left: -70px;
+    }
+    #form-inline{
+        width: 300px;
+        position: relative;
+        left: -50px;
+        top: -20px;
+    }
+    .btn-verificar{
+        position: relative;
+        left: 15px;
+    }
+    #mes, #ano, #pet, .selecionar-servico{
+        width: 150px;
+    }
+    .span-custo{
+        position: relative;
+        left: -75px;
+        width: 300px;
+        text-align: center;
+    }
+    #agendamento{
+        width: 280px;
+    }
+    .form-inline{
+        position: relative;
+        left: -50px;
+        top: 5px;
+        width: 300px;
+    }
+    .btn-confirmar{
+        position: relative;
+        left: -35px;
+    }
+    .span-erro{
+        position: relative;
+        left: -70px;
+    }
+}
+@media (min-width:501px) and (max-width: 550px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: url(imgs/agendar.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #52bacb;
+    }
+    .blue-div{
+        display: none;
+    }
+    .blue-div-resp{
+        position: relative;
+        top: -200px;
+        color: white;
+        left: -130px;
+        font-size: 22px;
+    }
+    .container{
+        position: fixed;
+        border-top-left-radius: 50px;
+        margin-top: 625px;
+        border-top-right-radius: 50px;
+        box-shadow: none;
+        width: 555px;
+        height: 1300px;
+    }
+    #title{
+        position: relative;
+        left: -90px;
+        font-size: 50px;
+    }
+    #subtitle{
+        position: relative;
+        width: 340px;
+        top: -20px;
+        left: -70px;
+    }
+    #form-inline{
+        width: 300px;
+        position: relative;
+        left: -50px;
+        top: -20px;
+    }
+    .btn-verificar{
+        position: relative;
+        left: 15px;
+    }
+    #mes, #ano, #pet, .selecionar-servico{
+        width: 150px;
+    }
+    .span-custo{
+        position: relative;
+        left: -75px;
+        width: 300px;
+        text-align: center;
+    }
+    #agendamento{
+        width: 280px;
+    }
+    .form-inline{
+        position: relative;
+        left: -50px;
+        top: 5px;
+        width: 300px;
+    }
+    .btn-confirmar{
+        position: relative;
+        left: -35px;
+    }
+    .span-erro{
+        position: relative;
+        left: -70px;
+    }
+}
+@media (min-width:1000px) and (max-width: 9560px){
+    .blue-div-resp{
+        display: none;
+    }
+}

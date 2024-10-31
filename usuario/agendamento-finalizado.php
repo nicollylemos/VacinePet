@@ -80,7 +80,8 @@
             <p><strong>Data:</strong> <?= $data_agendamento; ?></p>
             <p><strong>Horário:</strong> <?= $horario_agendamento; ?></p>
 
-            <button class="btn" onclick="window.location.href='cadastro.php';">Voltar para a Página Inicial</button>
+            <button class="btn" onclick="window.location.href='../index.php';">Voltar para a Página Inicial</button>
+
         </div>
     </div>
 

@@ -65,6 +65,12 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
 
 <body>
     <div class="container">
+
+    <div id="blue-div-resp" class="blue-div-resp">
+            <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
+                    style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
+        </div>
+
         <div id="blue-div" class="blue-div">
             <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by"
                     style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
@@ -72,10 +78,10 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
         <div class="quad">
             <div class="form">
 
-                <h1>AGENDAMENTO</h1>
-                <p>Selecione o mês e ano para visualizar os horários disponíveis:</p>
+                <h1 id="title">AGENDAMENTO</h1>
+                <p id="subtitle">Selecione o mês e ano para visualizar os horários disponíveis:</p>
                 <form action="" method="POST">
-                    <div class="form-inline">
+                    <div id="form-inline">
                         <label for="mes">Selecione o Mês:</label>
                            
                         <select name="mes" id="mes" class="selecionar">
@@ -121,7 +127,6 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                         if ($result->num_rows > 0) {
                             echo"<div class='form-inline'>";
                             echo "<form action='processar_agendamento.php' method='POST'>";
-                            echo"<p>Selecione o mês e ano para visualizar os horários disponíveis:</p>";
                             echo "<label for='pet'>Selecione o Pet: </label>";
                             echo "<select class='selecionar-pet' name='pet' id='pet' required>";
                             while ($rowPet = $resultPets->fetch_assoc()) {
