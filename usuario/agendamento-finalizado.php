@@ -75,10 +75,6 @@
             <span class="close">&times;</span>
             <h2>Agendamento Confirmado!</h2>
             <p>O seu agendamento foi realizado com sucesso. Confira os detalhes:</p>
-            <p><strong>Pet:</strong> <?= htmlspecialchars($_POST['pet']); ?></p>
-            <p><strong>Serviço:</strong> <?= htmlspecialchars($_POST['servico']); ?></p>
-            <p><strong>Data:</strong> <?= $data_agendamento; ?></p>
-            <p><strong>Horário:</strong> <?= $horario_agendamento; ?></p>
 
             <button class="btn" onclick="window.location.href='../index.php';">Voltar para a Página Inicial</button>
 
