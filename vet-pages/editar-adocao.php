@@ -25,6 +25,41 @@ if (isset($_GET['cod_adocao'])) {
     echo "Código do pet não fornecido.";
     exit;
 }
+
+// Verifica se o formulário foi enviado
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $pet_especie = $_POST['pet_especie'];
+    $pet_nome = $_POST['pet_nome'];
+    $pet_sexo = $_POST['pet_sexo'];
+    $pet_fase = $_POST['pet_fase'];
+    $pet_porte = $_POST['pet_porte'];
+    $pet_cidade = $_POST['pet_cidade'];
+
+    // Verifica se uma nova foto foi enviada
+    if (isset($_FILES['pet_foto_pet']) && $_FILES['pet_foto_pet']['error'] == UPLOAD_ERR_OK) {
+        // Caminho da nova foto
+        $novo_nome_foto = 'uploads/' . basename($_FILES['pet_foto_pet']['name']);
+
+        // Exclui a foto antiga se existir
+        if ($foto_pet && file_exists($foto_pet)) {
+            unlink($foto_pet);
+        }
+
+        // Move a nova foto para o diretório
+        move_uploaded_file($_FILES['pet_foto_pet']['tmp_name'], $novo_nome_foto);
+        $foto_pet = $novo_nome_foto; // Atualiza o nome da foto
+    }
+
+    // Atualiza os detalhes do pet no banco de dados
+    $sql = "UPDATE pet_adocao SET especie='$pet_especie', nome='$pet_nome', sexo='$pet_sexo', fase='$pet_fase', porte='$pet_porte', cidade='$pet_cidade', foto='$foto_pet' WHERE cod_adocao='$cod_adocao'";
+    
+    if (mysqli_query($conexao, $sql)) {
+        echo "Pet atualizado com sucesso!";
+    } else {
+        echo "Erro ao atualizar o pet: " . mysqli_error($conexao);
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -42,8 +77,7 @@ if (isset($_GET['cod_adocao'])) {
         <div class="container">
             <h1>Editar Pet</h1>
 
-            <form action="editAdocao.php?cod_adocao=<?php echo $cod_adocao; ?>" method="POST"
-                enctype="multipart/form-data">
+            <form action="" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="pet_especie">Espécie:</label>
                     <input type="text" id="pet_especie" name="pet_especie" value="<?php echo $especie; ?>" required>
