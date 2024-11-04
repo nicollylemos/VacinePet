@@ -43,7 +43,7 @@ JOIN
 WHERE 
     MONTH(agendamentos.data_agendamento) = ? 
     AND YEAR(agendamentos.data_agendamento) = ?
-    AND agendamentos.situacao NOT IN ('Cancelado', 'Concluído')"; // Ajusta conforme necessário
+    AND agendamentos.situacao NOT IN ('Cancelado', 'Concluído')";
 
 // Adiciona o filtro de situação, se selecionado
 if (!empty($situacao)) {
@@ -73,7 +73,7 @@ $result = $query->get_result();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/VetEst.css" />
+    <link rel="stylesheet" href="../css/css/VetEstilizar.css" />
     <title>VacinePet</title>
 </head>
 
@@ -82,12 +82,12 @@ $result = $query->get_result();
         <div class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1>Histórico de Agendamentos</h1>
+                    <h1>Agendamentos Ativos</h1>
 
                     <!-- Formulário de Filtro -->
                     <form class="form" method="POST">
                         <label for="mes">Mês:</label>
-                        <select name="mes" id="mes">
+                        <select name="mes" id="mes" class="selecionar">
                             <?php
                             $meses = [
                                 1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril', 
@@ -102,7 +102,7 @@ $result = $query->get_result();
                         </select>
 
                         <label for="ano">Ano:</label>
-                        <select name="ano" id="ano">
+                        <select name="ano" id="ano" class="selecionar">
                             <?php
                             for ($y = 2024; $y <= 2034; $y++) {
                                 $selected = ($y == $ano) ? 'selected' : '';
@@ -112,10 +112,9 @@ $result = $query->get_result();
                         </select>
 
                         <label for="situacao">Situação:</label>
-                        <select name="situacao" id="situacao">
+                        <select name="situacao" id="situacao" class="selecionar">
                             <option value="" <?= $situacao == '' ? 'selected' : '' ?>>Todas</option>
-                            <option value="Pendente" <?= $situacao == 'Pendente' ? 'selected' : '' ?>>Pendente
-                            </option>
+                            <option value="Pendente" <?= $situacao == 'Pendente' ? 'selected' : '' ?>>Pendente</option>
                             <option value="Confirmado" <?= $situacao == 'Confirmado' ? 'selected' : '' ?>>Confirmado
                             </option>
                         </select>
@@ -133,6 +132,7 @@ $result = $query->get_result();
                                 <th>Pet</th>
                                 <th>Tutor</th>
                                 <th>Situação</th>
+                                <th>Ações</th>
                             </tr>
                             <?php
                             if ($result->num_rows > 0) {
@@ -144,11 +144,12 @@ $result = $query->get_result();
                                     echo "<td>" . $agendamento['servico'] . "</td>";
                                     echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
                                     echo "<td>" . $agendamento['nome_tutor'] . "</td>";
-                                    echo "<td>" . $agendamento['situacao'] . "</td>"; 
+                                    echo "<td>" . $agendamento['situacao'] . "</td>";
+                                    echo "<td><a href='viewAgend.php?id=" . $agendamento['id'] . "' class='btn'><i class='fa-solid fa-eye'></i></a></td>";
                                     echo "</tr>";
                                 }
                             } else {
-                                echo "<tr><td colspan='7'>Não há registros de agendamentos.</td></tr>";
+                                echo "<tr><td colspan='8'>Não há registros de agendamentos.</td></tr>";
                             }
                             ?>
                         </table>

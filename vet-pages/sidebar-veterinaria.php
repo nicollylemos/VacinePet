@@ -55,12 +55,6 @@
                             </a>
                         </li>
 
-                        <li class="nav-link">
-                            <a href="adocao.php">
-                                <i class="fa-solid fa-paw icon"></i>
-                                <span class="text nav-text">Adoção</span>
-                            </a>
-                        </li>
                     </ul>
                     <ul class="menu-links">
                         <li class="nav-link">
@@ -88,14 +82,14 @@
     </section>
 
     <script>
-        const body = document.querySelector('body'),
-            sidebar = body.querySelector('nav.sidebar'),
-            toggle = body.querySelector(".fa-solid.fa-angle-left");
+    const body = document.querySelector('body'),
+        sidebar = body.querySelector('nav.sidebar'),
+        toggle = body.querySelector(".fa-solid.fa-angle-left");
 
-        // Toggle do menu lateral
-        toggle.addEventListener("click", () => {
-            sidebar.classList.toggle("close");
-        });
+    // Toggle do menu lateral
+    toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+    });
     </script>
 </body>
 

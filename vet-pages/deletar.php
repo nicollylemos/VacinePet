@@ -1,6 +1,6 @@
 <?php
 include("../inc/header.php");
-include("sidebar-vet.php");
+include("sidebar-veterinaria.php");
 include_once($_SERVER['DOCUMENT_ROOT'] . '/VacinePet/config.php');
 
 // Verificação de autenticação

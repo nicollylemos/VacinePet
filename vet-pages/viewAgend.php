@@ -1,6 +1,6 @@
 <?php 
  include("../inc/header.php");
- include("sidebar-vet.php");
+ include("sidebar-veterinaria.php");
 include_once('../config.php');
 
 // Verifica se o email e a senha estão definidos na sessão
