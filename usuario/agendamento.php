@@ -64,9 +64,6 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y'); // Ano atual se não en
 
 <body>
     <div class="container">
-        <div id="blue-div-resp" class="blue-div-resp">
-            <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by" style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
-        </div>
 
         <div id="blue-div" class="blue-div">
             <h2 class="logo">VacinePet <i class="fa-solid fa-paw fa-rotate-by" style="color: #fffff; --fa-rotate-angle: 49deg; width: 13px; height:7px; font-size:15px;"></i></h2>
