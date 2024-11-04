@@ -73,7 +73,7 @@ $result = $query->get_result();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/VetEstilizar.css" />
+    <link rel="stylesheet" href="../css/css/VetEstilizando.css" />
     <title>VacinePet</title>
 </head>
 
@@ -102,7 +102,7 @@ $result = $query->get_result();
                         </select>
 
                         <label for="ano">Ano:</label>
-                        <select name="ano" id="ano" class="selecionar">
+                        <select name="ano" id="ano" class="selecionar" style="width: 150px">
                             <?php
                             for ($y = 2024; $y <= 2034; $y++) {
                                 $selected = ($y == $ano) ? 'selected' : '';
@@ -146,6 +146,7 @@ $result = $query->get_result();
                                     echo "<td>" . $agendamento['nome_tutor'] . "</td>";
                                     echo "<td>" . $agendamento['situacao'] . "</td>";
                                     echo "<td><a href='viewAgend.php?id=" . $agendamento['id'] . "' class='btn'><i class='fa-solid fa-eye'></i></a></td>";
+                                    echo "<td><a href='editSituacao.php?id=" . $agendamento['id'] . "' class='btn'><i class='fa-solid fa-pen'></i></a></td>";
                                     echo "</tr>";
                                 }
                             } else {

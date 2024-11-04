@@ -145,17 +145,19 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                                 echo "$data ($nomeDiaSemana) - $horario</option>";
                             }
                             echo "</select><br><br>";
-                            echo"</div>
-                            ";
+                            echo"</div>";
                             echo "<input type='submit' class='btn-confirmar' value='Confirmar Agendamento'>";
+                          
                             echo "</form>";
+                           
                         } else {
-                            echo "<span class='span-erro'>Não há horários disponíveis para o mês e ano selecionados.</span>";
+                            echo "<span class='span-erro' >Não há horários disponíveis para o mês e ano selecionados.</span>";
                         }
                     }
+
+                    echo "<span class='span-custo'></span>";
+                        
                 ?>
-                <br>
-                <p class="span-custo">*Aviso: o custo da viagem será calculado com base na distância percorrida.</p>
             </div>
         </div>
     </div>

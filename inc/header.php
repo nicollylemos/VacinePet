@@ -129,7 +129,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
         font-size: 17px;
         font-weight: 600;
         font-family: poppins;
-        
+
     }
 
     .topnav a:hover {
@@ -292,8 +292,14 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
         <div class="menu">
             <a href="/VacinePet/index.php">Início</a>
             <a href="/VacinePet/conteudo/profissional.php">Profissional</a>
+            <?php if ($admin || $logado) : ?>
+
             <a href="/VacinePet/usuario/agendamento.php">Agendamento</a>
-            <a href="/VacinePet/conteudo/adocao.php">Adoção</a>
+            <?php endif; ?>
+            <?php if (!isset($_SESSION['email']) && !isset($_SESSION['senha_hash'])): ?>
+            <a href="#" onclick="document.getElementById('modalLogin').showModal(); return false;">Agendamento</a>
+            <?php endif; ?>
+            <a href=" /VacinePet/conteudo/adocao.php">Adoção</a>
             <a href="/VacinePet/conteudo/castracao.php">Castração</a>
             <a href="/VacinePet/infos-page/sobre-vacinepet.php">Sobre</a>
         </div>
@@ -339,7 +345,20 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
         }
     }
     </script>
-
+    <dialog class="modalLog" id="modalLogin">
+        <div class="modalLogin">
+            <button class="close" onclick="document.getElementById('modalLogin').close()">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <h1> Aviso:<br> Login Necessário</h1>
+            <p>Para realizar o agendamento, é necessário estar logado em sua conta. Por favor, faça login para
+                continuar.</p>
+            <a href="/VacinePet/inc/login.php" class="logar">
+                <button class="entrar" style="border-radius:10px;">Entrar</button>
+            </a>
+            <p>Não tem uma conta? <a href="/VacinePet/usuario/cadastro.php" class="cadastrar">Cadastre-se aqui!</a></p>
+        </div>
+    </dialog>
 </body>
 
 </html>

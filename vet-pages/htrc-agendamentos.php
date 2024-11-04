@@ -73,6 +73,7 @@ $result = $query->get_result();
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/VetEstil.css" />
+    <link rel="stylesheet" href="../css/css/vetAtend.css" />
     <link rel="stylesheet" href="../css/css/responsividade/telas-vetpages.css" />
     <title>VacinePet</title>
 </head>
@@ -87,7 +88,7 @@ $result = $query->get_result();
                     <!-- Formulário de Filtro -->
                     <form class="form" method="POST">
                         <label for="mes">Mês:</label>
-                        <select name="mes" id="mes">
+                        <select name="mes" id="mes" class="selecionar">
                             <?php
                             $meses = [
                                 1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril', 
@@ -103,7 +104,7 @@ $result = $query->get_result();
                         </select>
 
                         <label class="ano" for="ano">Ano:</label>
-                        <select name="ano" id="ano">
+                        <select name="ano" id="ano" class="selecionar" style="width: 150px">
                             <?php
                             for ($y = 2024; $y <= 2034; $y++) {
                                 $selected = ($y == $ano) ? 'selected' : '';
@@ -113,7 +114,7 @@ $result = $query->get_result();
                         </select>
 
                         <label class="situ" for="situacao">Situação:</label>
-                        <select name="situacao" id="situacao">
+                        <select name="situacao" id="situacao" class="selecionar">
                             <option value="" <?= $situacao == '' ? 'selected' : '' ?>>Todas</option>
                             <option value="Cancelado" <?= $situacao == 'Cancelado' ? 'selected' : '' ?>>Cancelado
                             </option>

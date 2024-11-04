@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento Confirmado</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
-    <link rel="stylesheet" href="../css/css/agendamento-modal.css">
+    <link rel="stylesheet" href="../css/css/agendamentofinal.css">
     <style>
 
     </style>
@@ -23,7 +23,7 @@
                 perfil.</p>
 
 
-            <button class="btn" onclick="window.location.href='../index.php';">Finalizar</button>
+            <button class="btn" onclick="window.location.href='/VacinePet/cliente-tela/index.php';">Finalizar</button>
 
         </div>
     </div>
@@ -34,7 +34,7 @@
     var span = document.getElementsByClassName("close")[0];
     // Quando o usuário clica no "x", fecha o modal
     span.onclick = function() {
-        modal.style.display = "none";
+        window.location.href = "../inc/login.php";
     }
     // Quando o usuário clica fora do modal, ele também é fechado
     window.onclick = function(event) {

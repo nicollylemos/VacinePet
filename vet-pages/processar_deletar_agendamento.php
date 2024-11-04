@@ -16,7 +16,9 @@ if (isset($_POST['agendamentos'])) {
 
     // Executa a deleção
     if ($stmt->execute()) {
-        echo "Agendamentos deletados com sucesso!";
+        echo '<script>';
+        echo 'window.location.href = "deletar.php";';
+    echo '</script>';
     } else {
         echo "Erro ao deletar agendamentos.";
     }

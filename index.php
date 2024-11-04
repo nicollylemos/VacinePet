@@ -41,7 +41,7 @@ $result = $conexao->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/css/index-seg.css">    
+    <link rel="stylesheet" href="css/css/index-seg.css">
     <link rel="stylesheet" href="css/css/iniciar.css">
     <link rel="stylesheet" href="css/css/whatsapp.css">
     <link rel="stylesheet" href="css/css/responsividade/telainicial.css">
@@ -76,15 +76,17 @@ body {
                     NO CONFORTO DA SUA CASA.</h2>
                 <p id="sub">Vacinar é um ato de amor. Com a chegada do
                     filhote,
-                    a responsabilidade aumenta e a imunização contra doenças nos primeiros meses de vida é obrigatória. Ao longo da vida do 
-                    seu pet manter a vacinação em dia é fundamental. 
+                    a responsabilidade aumenta e a imunização contra doenças nos primeiros meses de vida é obrigatória.
+                    Ao longo da vida do
+                    seu pet manter a vacinação em dia é fundamental.
                     Agende agora com o VacinePet e garanta a saúde do seu animal de
                     estimação. </p> <?php if ($admin): ?><a href="/VacinePet/usuario/agendamento.php">
                     <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
                 <?php if ($logado): ?><a href="/VacinePet/usuario/agendamento.php">
                     <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
                 <?php if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)): ?>
-                <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button><?php endif; ?>
+                <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button>
+                <?php endif; ?>
             </div>
             <div class="img-animal"></div>
         </div>
@@ -107,7 +109,8 @@ body {
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="/VacinePet/conteudo/doencasgato.php"><button id="btn-gato" class="btn-ler">Ler Mais</button></a>
+                        <a href="/VacinePet/conteudo/doencasgato.php"><button id="btn-gato" class="btn-ler">Ler
+                                Mais</button></a>
                     </div>
                 </div>
             </div>
