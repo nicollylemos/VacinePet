@@ -1,0 +1,24 @@
+@media (min-width:310px) and (max-width: 400px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 14px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 750px;
+    background-position: calc(0% + -250px) calc(50% + 120px);
+    }
+    #texto{
+        width: 300px;
+    }
+}
