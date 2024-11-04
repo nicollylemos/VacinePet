@@ -129,6 +129,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
         font-size: 17px;
         font-weight: 600;
         font-family: poppins;
+        
     }
 
     .topnav a:hover {
@@ -166,6 +167,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
     }
 
     .login {
+        display: inline;
         cursor: pointer;
         font-size: 18px;
         border-radius: 10px;
@@ -220,6 +222,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
 
         .topnav .menu a {
             display: none;
+
         }
 
         .topnav .menu {
@@ -261,12 +264,15 @@ if (isset($_SESSION['email']) && isset($_SESSION['senha_hash'])) {
             display: block;
             width: 100%;
             padding: 0 16px;
+            z-index: -20;
         }
 
         .topnav.responsive .buttons .login,
         .topnav.responsive .buttons .cad {
             width: auto;
             margin: 5px 0;
+            position: relative;
+            top: 30px;
         }
 
         .topnav.responsive .icon {

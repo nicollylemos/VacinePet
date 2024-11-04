@@ -49,6 +49,15 @@
         position: relative;
         top: 30px;
     }
+    .btn-modal-fechar{
+        top:-7px;
+        left: 70px;
+    }
+    .modal-css{
+    max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+    overflow-y: auto; /* Habilita a rolagem vertical */
+    padding: 16px; /* Dá um pouco de espaço interno */
+    }
 }
 @media (min-width:401px) and (max-width: 460px) {
 
@@ -101,6 +110,15 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+    }
+    .btn-modal-fechar{
+        top: 15px;
+        left: 95px;
+    }
 }
 @media (min-width:461px) and (max-width: 510px) {
     html,
@@ -151,6 +169,15 @@
     .slide-container{
         position: relative;
         top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+    }
+    .btn-modal-fechar{
+        
+        left: 145px;
     }
 }
 @media (min-width:511px) and (max-width: 580px) {
@@ -205,6 +232,11 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
 }
 @media (min-width:581px) and (max-width: 620px) {
     html,
@@ -258,6 +290,11 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
 }
 @media (min-width:621px) and (max-width: 700px) {
     html,
@@ -311,6 +348,11 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
 }
 @media (min-width:701px) and (max-width: 780px) {
     html,
@@ -364,6 +406,11 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
 }
 @media (min-width:781px) and (max-width: 820px) {
     html,
@@ -418,6 +465,11 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
 }
 @media (min-width:821px) and (max-width: 880px) {
     html,
@@ -472,6 +524,11 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
 }
 @media (min-width:881px) and (max-width: 920px) {
     html,
@@ -526,6 +583,11 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
 }
 @media (min-width:921px) and (max-width: 990px) {
     html,
@@ -579,6 +641,11 @@
     .slide-container{
         position: relative;
         top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
     }
 }
 @media (min-width:991px) and (max-width: 1024px) {
@@ -634,7 +701,13 @@
         position: relative;
         top: 10px;
     }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+    }
 }
+/*sem rolagem*/
 @media (min-width: 1025px) and (max-width: 1150px) {
     html,
     body {

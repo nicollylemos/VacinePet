@@ -65,13 +65,11 @@ include("../inc/header.php");
                                     <div>
                                         <div class="title-modal">CINOMOSE</div>
                                         <div class="modal-body">
-                                            A doença ataca o sistema digestivo, respiratório e, por fim, o sistema
-                                            nervoso central, causando
+                                            A cinomose afeta os sistemas digestivo, respiratório e nervoso, causando
                                             tremores, desorientação e convulsões. Quando o vírus atinge o sistema
-                                            nervoso central, em geral não
-                                            há tratamento efetivo, apenas medidas paliativas, que buscam tratar e
-                                            melhorar os sintomas. Caso
-                                            sobreviva, o animal pode ficar com sequelas para o resto da vida.<br><br>
+                                            nervoso, geralmente não há tratamento eficaz, apenas medidas paliativas para
+                                            aliviar os sintomas. Se o animal sobreviver, pode ficar com sequelas
+                                            permanentes.<br><br>
 
                                             Os sintomas são:
 
@@ -86,9 +84,10 @@ include("../inc/header.php");
                                                 Tiques nervosos;
 
                                                 Convulsões e paralisias.</span><br><br>
-                                            A melhor forma de prevenir a cinomose é por meio da vacinação. Converse com
-                                            o médico-veterinário e
-                                            mantenha a vacinação do seu pet em dia.
+                                            A melhor prevenção é a vacinação. Consulte o veterinário e mantenha a
+                                            imunização do seu pet em dia.
+
+
 
                                         </div>
                                     </div>
@@ -114,14 +113,11 @@ include("../inc/header.php");
                                     <div>
                                         <div class="title-modal">LEPTOSPIROSE CANINA</div>
                                         <div class="modal-body">
-                                            A
-                                            transmissão se dá principalmente pelo contato com a urina dos animais
-                                            doentes, como
-                                            cães e os ratos.
-                                            O solo, a lama e a água contaminados pela bactéria
-                                            podem disseminar a doença, por isso o número de casos aumenta nas épocas de
-                                            chuvas e
-                                            enchentes<br><br>
+                                            A leptospirose é transmitida principalmente pelo contato com a urina de
+                                            animais doentes, como cães e ratos. Solo, lama e água contaminados também
+                                            espalham a doença, especialmente em épocas de chuvas e enchentes.
+
+                                            <br><br>
 
                                             Os sintomas são:
 
@@ -133,11 +129,8 @@ include("../inc/header.php");
                                                 Icterícia;
                                                 Vômito;
                                                 Urina de cor amarronzada.</span><br><br>
-                                            A melhor forma de prevenir a leptospirose canina é por meio da vacinação.
-                                            Converse com
-                                            o médico-veterinário e
-                                            mantenha a vacinação do seu pet em dia.
-
+                                            A prevenção é feita pela vacinação. Consulte o veterinário e mantenha a
+                                            imunização do seu pet em dia.
                                         </div>
                                     </div>
                                     <button class="btn-modal-fechar" onclick="modal1.close()">FECHAR</button>
@@ -219,19 +212,13 @@ include("../inc/header.php");
                                                 Tristeza;
                                                 Falta de apetite.
                                             </span><br><br>
-                                            Se não tratados a tempo, os animais podem falecer por desidratação e
-                                            infecção generalizada.
-                                            É
-                                            importante higienizar
-                                            de forma adequada o ambiente onde animais doentes viveram, uma vez que o
-                                            vírus é resistente e
-                                            pode sobreviver por meses.<br><br>
+                                            Sem tratamento, o animal pode morrer por desidratação e infecção
+                                            generalizada. É essencial higienizar bem o ambiente, pois o vírus é
+                                            resistente e pode sobreviver por meses.
 
-                                            A melhor forma de prevenir a parvovirose é por meio da
-                                            vacinação.
-                                            Converse com
-                                            o médico-veterinário e
-                                            mantenha a vacinação do seu pet em dia.
+                                            A prevenção é feita pela vacinação. Consulte o veterinário e mantenha a
+                                            vacinação do seu pet em dia.
+
 
                                         </div>
                                     </div>
@@ -306,11 +293,11 @@ include("../inc/header.php");
                                     <div>
                                         <div class="title-modal">ADENOVIROSE RESPIRATÓRIA</div>
                                         <div class="modal-body">
-                                            A transmissão se dá pelo contato direto entre cães, onde os
-                                            animais infectados transmitem a doença para os cães sadios. Além disso, o
-                                            aparecimento da
-                                            doença por falta de higienização no ambiente em que o animal vive é bem
-                                            propício.<br><br>
+                                            A transmissão ocorre pelo contato direto entre cães, onde animais infectados
+                                            contaminam cães saudáveis. A falta de higienização no ambiente também
+                                            facilita o surgimento da doença.
+
+                                            <br><br>
 
                                             Os sintomas são:
 
@@ -318,11 +305,8 @@ include("../inc/header.php");
                                                 Vômitos;
                                                 Espirros;
                                                 Secreções nasais e oculares, bem similares aos da gripe.</span><br><br>
-                                            A melhor forma de prevenir a adenovirose respiratória é por meio da
-                                            vacinação.
-                                            Converse com
-                                            o médico-veterinário e
-                                            mantenha a vacinação do seu pet em dia.
+                                            A prevenção é feita pela vacinação. Consulte o veterinário e mantenha a
+                                            vacinação do seu pet em dia.
 
                                         </div>
                                     </div>
@@ -365,12 +349,8 @@ include("../inc/header.php");
                                             observar o comportamento do seu cão, pois a progressão da doença pode levar
                                             a complicações, como infecções secundárias.<br><br>
 
-                                            A melhor forma de prevenir a parainfluenza é por meio da
-                                            vacinação.
-                                            Converse com
-                                            o médico-veterinário e
-                                            mantenha a vacinação do seu pet em dia.
-
+                                            A prevenção é feita pela vacinação. Consulte o veterinário e mantenha a
+                                            vacinação do seu pet em dia.
                                         </div>
                                     </div>
                                     <button class="btn-modal-fechar" onclick="modal6.close()">FECHAR</button>
@@ -399,11 +379,9 @@ include("../inc/header.php");
                                     <div>
                                         <div class="title-modal">TOSSE DOS CANIS</div>
                                         <div class="modal-body">
-                                            Normalmente, o número de casos aumenta durante o inverno, estação onde os
-                                            cães ficam mais
-                                            expostos ao clima e à umidade. Mas também pode acontecer durante todo o ano,
-                                            em todas as
-                                            estações.<br><br>
+                                            O número de casos de gripe canina geralmente aumenta no inverno, quando os
+                                            cães ficam expostos ao clima e à umidade, mas pode ocorrer em qualquer época
+                                            do ano.<br><br>
 
                                             Os sintomas são:
 
@@ -414,12 +392,12 @@ include("../inc/header.php");
                                                 Espirros;
                                                 Secreção nasal e ocular</span><br><br>
 
-                                            Cães de qualquer raça ou idade podem pegar a gripe canina e os animais podem
-                                            demorar semanas
-                                            até se recuperarem, sendo a pneumonia uma complicação comum. Além da
-                                            vacinação,
-                                            recomenda-se utilizar boas práticas de manejo e adequada desinfecção do
+                                            Cães de qualquer raça ou idade podem contrair a gripe canina, e a
+                                            recuperação pode levar semanas, com pneumonia sendo uma complicação comum.
+                                            Além da vacinação, recomenda-se boas práticas de manejo e desinfecção do
                                             ambiente.
+
+
 
                                         </div>
                                     </div>
@@ -450,11 +428,7 @@ include("../inc/header.php");
                                     <div>
                                         <div class="title-modal">RAIVA</div>
                                         <div class="modal-body">
-                                            O vírus da raiva afeta o sistema nervoso, provocando alterações de
-                                            comportamento que
-                                            podem variar de extrema excitação (daí o nome da doença) até depressão.
-                                            Muitos animais não
-                                            conseguem engolir comida e líquidos à medida que a doença progride.<br><br>
+                                        O vírus da raiva afeta o sistema nervoso, causando alterações de comportamento que vão de excitação extrema a depressão. Com a progressão da doença, muitos animais têm dificuldade em engolir alimentos e líquidos.<br><br>
 
                                             Os sintomas são:
 
@@ -468,11 +442,7 @@ include("../inc/header.php");
                                                 Dificuldade de engolir;
                                                 Salivação.</span><br><br>
 
-                                            A melhor forma de prevenir a raiva é por meio da
-                                            vacinação.
-                                            Converse com
-                                            o médico-veterinário e
-                                            mantenha a vacinação do seu pet em dia.
+                                                A melhor forma de prevenir a raiva é a vacinação. Mantenha a vacinação do seu pet em dia e converse com o veterinário.
 
                                         </div>
                                     </div>
