@@ -33,13 +33,7 @@ session_start();
                         <h1 class="title-login"> LOGIN </h1>
                     </div>
 
-                    <?php
-                        if (isset($_SESSION['login_erro'])) {
-                            echo "<p style='color: red;'>" . $_SESSION['login_erro'] . "</p>";
-                            // Remove a mensagem de erro para que não apareça novamente ao atualizar a página
-                            unset($_SESSION['login_erro']);
-                        }
-                    ?>
+
                     <div class="form-group mt-4">
                         <input type="text" maxlength="255" placeholder="Email" class="form-control" name="email">
                     </div>
@@ -55,6 +49,18 @@ session_start();
                         <div class="cad-text">
                             <h7>Não tem uma conta?</h7><a href="../usuario/cadastro.php"> Cadastre-se</a>
                         </div>
+                        <?php
+                        if (isset($_SESSION['login_erro'])) {
+                            echo "<p style='color: red;'>" . $_SESSION['login_erro'] . "</p>";
+                            // Remove a mensagem de erro para que não apareça novamente ao atualizar a página
+                            unset($_SESSION['login_erro']);
+                        }
+                        if (isset($_SESSION['login_user'])){
+                            echo "<p style='color: red;'>" . $_SESSION['login_user'] . "</p>";
+                            unset($_SESSION['login_user']);
+                            
+                        }
+                    ?>
                 </form>
             </div>
         </div>

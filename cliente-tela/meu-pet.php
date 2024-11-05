@@ -48,6 +48,18 @@ $result_pets = mysqli_query($conexao, $sql_pets);
 * {
     text-transform: capitalize;
 }
+
+
+
+.btn-add:hover,
+.btn-apg:hover {
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.container-pet {
+    height: 300px;
+}
 </style>
 
 <body>

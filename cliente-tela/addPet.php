@@ -170,7 +170,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="form-group">
                     <label for="especie_pet">Espécie:</label>
-                    <input type="text" id="especie_pet" name="especie_pet">
+                    <select id="especie_pet" name="especie_pet">
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="raca_pet">Raça:</label>
@@ -196,7 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="porte_pet">Castração:</label>
+                    <label for="porte_pet">Porte:</label>
                     <select id="porte_pet" name="porte_pet">
                         <option value="Pequeno">Pequeno</option>
                         <option value="Médio">Médio</option>
@@ -208,7 +211,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <a href="meu-pet.php" class="btn-cancel">Cancelar</a>
                 </div>
-</form>
+            </form>
         </div>
     </div>
 

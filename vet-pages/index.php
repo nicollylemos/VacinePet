@@ -132,7 +132,7 @@ $result = $query->get_result();
                                 <th>Pet</th>
                                 <th>Tutor</th>
                                 <th>Situação</th>
-                                <th>Ações</th>
+                                <th>...</th>
                             </tr>
                             <?php
                             if ($result->num_rows > 0) {
@@ -145,8 +145,8 @@ $result = $query->get_result();
                                     echo "<td>" . $agendamento['nome_pet'] . "</td>"; 
                                     echo "<td>" . $agendamento['nome_tutor'] . "</td>";
                                     echo "<td>" . $agendamento['situacao'] . "</td>";
-                                    echo "<td><a href='viewAgend.php?id=" . $agendamento['id'] . "' class='btn'><i class='fa-solid fa-eye'></i></a></td>";
-                                    echo "<td><a href='editSituacao.php?id=" . $agendamento['id'] . "' class='btn'><i class='fa-solid fa-pen'></i></a></td>";
+                                    echo "<td><a href='viewAgend.php?id=" . $agendamento['id'] . "' class='btn'><i class='fa-solid fa-eye'></i></a>";
+                                    echo "<a href='editSituacao.php?id=" . $agendamento['id'] . "' class='btn'><i class='fa-solid fa-pen'></i></a></td>";
                                     echo "</tr>";
                                 }
                             } else {

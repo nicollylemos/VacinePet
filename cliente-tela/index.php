@@ -77,18 +77,21 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             </div>
             <div class="info">
                 <strong>CPF:</strong> <?php echo $cpf_tutor; ?>
+
             </div>
             <div class="info">
                 <strong>Telefone:</strong> <?php echo $telefone_tutor; ?>
+
             </div>
             <div id="email" class="info">
                 <strong>Email:</strong> <?php echo $email_tutor; ?>
+
             </div>
             <div class="info">
                 <?php 
                 echo "<a href='editTutor.php?cod_tutor=" . $cod_tutor . "'>";
                 echo "<button>";
-                echo "Editar Tutor"; 
+                echo "Editar"; 
                 echo "</button>";
                 echo "</a>";
                 ?>
@@ -103,12 +106,12 @@ $result_endereco = mysqli_query($conexao, $sql_endereco);
             <?php if (mysqli_num_rows($result) > 0): ?>
             <?php while ($row = mysqli_fetch_assoc($result)): ?>
             <div class="agendamento-item">
-                <div><strong>Pet:</strong> <?php echo $row['Nome_Pet']; ?></div>
-                <div><strong>Data:</strong> <?php echo date('d/m/Y', strtotime($row['data_agendamento'])); ?>
+                <div><strong>Pet:</strong> <br><?php echo $row['Nome_Pet']; ?></div>
+                <div><strong>Data:</strong> <br><?php echo date('d/m/Y', strtotime($row['data_agendamento'])); ?>
                 </div>
-                <div><strong>Hora:</strong> <?php echo $row['horario_agendamento']; ?></div>
-                <div><strong>Serviço:</strong> <?php echo $row['servico']; ?></div>
-                <div><strong>Situação:</strong> <?php echo $row['situacao']; ?></div>
+                <div><strong>Hora:</strong><br> <?php echo $row['horario_agendamento']; ?></div>
+                <div><strong>Serviço:</strong> <br><?php echo $row['servico']; ?></div>
+                <div><strong>Situação:</strong><br> <?php echo $row['situacao']; ?></div>
 
             </div>
             <?php endwhile; ?>

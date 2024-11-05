@@ -82,6 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
     <link rel="stylesheet" href="../css/css/responsividade/tela-edit-tutor.css">
 </head>
+
 <style>
 .container-editar {
     background-color: #ffffff;
@@ -93,13 +94,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     border-radius: 15px;
     padding: 15px;
     padding-left: 30px;
-
 }
 
 * {
     text-transform: capitalize;
 }
-
 
 .form-section {
     margin-bottom: 30px;
@@ -129,7 +128,6 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 5px;
     text-transform: capitalize;
-
 }
 
 .btn-submit {
@@ -141,7 +139,6 @@ h2 {
     border: 1px solid #52BACB;
     height: 40px;
     font-weight: 600;
-
 }
 
 .btn-cancel {
@@ -185,12 +182,14 @@ h2 {
 
                 <div class="input-group">
                     <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" name="cpf" value="<?php echo $cpf_tutor; ?>">
+                    <input type="text" id="cpf" name="cpf" value="<?php echo $cpf_tutor; ?>" oninput="mascaraCPF(this)"
+                        maxlength="14">
                 </div>
 
                 <div class="input-group">
                     <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone" name="telefone" value="<?php echo $telefone_tutor; ?>">
+                    <input type="text" id="telefone" name="telefone" value="<?php echo $telefone_tutor; ?>"
+                        oninput="mascaraTelefone(this)" maxlength="15">
                 </div>
 
                 <input type="hidden" id="email" name="email" value="<?php echo $email_tutor; ?>">
@@ -213,12 +212,31 @@ h2 {
 
                 <div class="input-button">
                     <button type="submit" class="btn-submit">Salvar Alterações</button>
-                    <a href="index.php"> <button class="btn-cancel">Cancelar
-                        </button></a>
+                    <a href="index.php"> <button class="btn-cancel">Cancelar</button></a>
                 </div>
             </form>
         </div>
     </div>
+
+    <!-- Scripts para Máscaras de CPF e Telefone -->
+    <script>
+    // Máscara para CPF (formato: XXX.XXX.XXX-XX)
+    function mascaraCPF(campo) {
+        var cpf = campo.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Adiciona o ponto após os primeiros 3 números
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Adiciona o ponto após os próximos 3 números
+        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); // Adiciona o traço antes dos últimos 2 números
+        campo.value = cpf;
+    }
+
+    // Máscara para telefone (formato: (XX) XXXXX-XXXX)
+    function mascaraTelefone(campo) {
+        var telefone = campo.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+        telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2"); // Adiciona o parêntese e espaço
+        telefone = telefone.replace(/(\d{5})(\d{1,4})$/, "$1-$2"); // Adiciona o traço
+        campo.value = telefone;
+    }
+    </script>
 </body>
 
 </html>

@@ -31,6 +31,7 @@
     max-width: 600px;
     border-radius: 15px;
     height: 400px;
+    box-shadow: 10px 0 15px #369eae;
 }
 
 body {
@@ -44,6 +45,8 @@ h2{
     font-family: baloo;
     font-size: 36px;
     color: #FD811C;
+    margin-bottom: -5px;
+    margin-top: 5px;
 }
 
 .close {
@@ -92,3 +95,9 @@ p{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+  .modal-content i {
+        font-size: 55px;
+        margin-top: 35px;
+        color: #FD811C;
+  }

@@ -111,6 +111,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     }
 
+    .input-group select {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+
+    }
+
     .btn-submit {
         background-color: #52BACB;
         color: white;
@@ -143,6 +151,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     .btn-cancel:hover {
         color: #69c2d0;
         border-color: #69c2d0;
+
     }
 
     .input-button {
@@ -169,7 +178,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <div class="input-group">
                     <label for="especie">Espécie</label>
-                    <input type="text" id="especie" name="especie" value="<?php echo $especie_pet; ?>">
+                    <select id="especie_select" name="especie" onchange="alternarSexo()">
+                        <option value="Cachorro" <?php echo ($especie_pet == 'Macho') ? 'selected' : ''; ?>>Cachorro
+                        </option>
+                        <option value="Gato" <?php echo ($especie_pet == 'Gato') ? 'selected' : ''; ?>>Gato</option>
+                    </select>
                 </div>
                 <div class="input-group">
                     <label for="raca">Raça</label>
@@ -183,14 +196,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                 <div class="input-group">
                     <label for="sexo">Sexo</label>
-                    <input type="text" id="sexo" name="sexo" value="<?php echo $sexo_pet; ?>">
+                    <select id="sexo_select" name="sexo" onchange="alternarSexo()">
+                        <option value="Macho" <?php echo ($sexo_pet == 'Macho') ? 'selected' : ''; ?>>Macho</option>
+                        <option value="Fêmea" <?php echo ($sexo_pet == 'Fêmea') ? 'selected' : ''; ?>>Fêmea</option>
+                    </select>
+
                 </div>
-
-
-
                 <div class="input-group">
-                    <label for="castracao">Castrado?</label>
-                    <input type="text" id="castracao" name="castracao" value="<?php echo $castracao_pet; ?>">
+                    <label for="castracao">Castrado</label>
+                    <select id="castracao_select" name="castracao" onchange="alternarCastracao()">
+                        <option value="Sim" <?php echo ($castracao_pet == 'Sim') ? 'selected' : ''; ?>>Sim</option>
+                        <option value="Não" <?php echo ($castracao_pet == 'Não') ? 'selected' : ''; ?>>Não</option>
+                    </select>
+
                 </div>
 
                 <div class="input-button">
@@ -199,8 +217,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <a href="meu-pet.php"> Cancelar </a>
                     </button>
                 </div>
-            </form>
         </div>
+
+
+
+
+        </form>
+    </div>
     </div>
 </body>
 
