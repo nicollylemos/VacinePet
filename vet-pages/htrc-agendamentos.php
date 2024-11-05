@@ -72,7 +72,7 @@ $result = $query->get_result();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/VetEstil.css" />
+    <link rel="stylesheet" href="../css/css/VetEstilizando.css" />
     <link rel="stylesheet" href="../css/css/vetAtend.css" />
     <link rel="stylesheet" href="../css/css/responsividade/telas-vetpages.css" />
     <title>VacinePet</title>
@@ -82,8 +82,8 @@ $result = $query->get_result();
     <section class="agendamento-atv">
         <div class="container">
             <div class="container-tabela">
-                <div class="content">
-                    <h1>Histórico Agendamentos</h1>
+                <div id="container-htrc" class="content">
+                    <h1 id="title-htrc">Histórico de Agendamentos</h1>
 
                     <!-- Formulário de Filtro -->
                     <form class="form" method="POST">

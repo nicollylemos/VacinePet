@@ -44,7 +44,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
 <body>
     <section class="diario">
-        <div class="container">
+        <div id="container-diario" class="container">
             <div class="right">
 
                 <div class="calendar">

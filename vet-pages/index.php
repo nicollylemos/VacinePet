@@ -74,15 +74,16 @@ $result = $query->get_result();
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/VetEstilizando.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/telas-vetpages.css" />
     <title>VacinePet</title>
 </head>
 
 <body>
     <section class="agendamento-atv">
-        <div class="container">
+        <div id="container-index" class="container">
             <div class="container-tabela">
                 <div class="content">
-                    <h1>Agendamentos Ativos</h1>
+                    <h1 id="title-atv">Agendamentos Ativos</h1>
 
                     <!-- Formulário de Filtro -->
                     <form class="form" method="POST">
@@ -119,7 +120,7 @@ $result = $query->get_result();
                             </option>
                         </select>
 
-                        <button type="submit">Buscar</button>
+                        <button id="btn-htrc" class="btn-busca" type="submit">Buscar</button>
                     </form>
 
                     <div class="table">
