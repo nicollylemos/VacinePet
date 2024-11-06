@@ -74,7 +74,7 @@ $result = $query->get_result();
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/VetEstilizando.css" />
     <link rel="stylesheet" href="../css/css/vetAtend.css" />
-    <link rel="stylesheet" href="../css/css/responsividade/telas-vetpages.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/tela-vet-pages.css" />
     <title>VacinePet</title>
 </head>
 

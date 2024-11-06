@@ -41,6 +41,7 @@ $result = $conexao->query($sql);
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/VetEstilizando.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/tela-vet-pages.css"/>
     <title>VacinePet</title>
     <style>
     </style>
@@ -50,8 +51,8 @@ $result = $conexao->query($sql);
     <section class="agendamento-atv">
         <div class="container">
             <div class="container-tabela">
-                <div class="content">
-                    <h1> Alteração de Valores</h1>
+                <div id="container-alt" class="content">
+                    <h1 id="title-alt"> Alteração de Valores</h1>
                     <div class="valores">
 
                         <?php
@@ -62,13 +63,13 @@ $result = $conexao->query($sql);
                                 echo"<div class='id'>";
                                 echo"<td>" . $user_data['cod_vac'] . "</td>";
                                 echo"</div>";
-                                echo"<div class='info-val'>";
+                                echo"<div id='nome-val' class='info-val'>";
                                 echo"<td>" . $user_data['nome'] . "</td>";
                                 echo"</div>";
-                                echo"<div class='info-val'>";
+                                echo"<div id='tipo-val' class='info-val'>";
                                 echo"<td>" . $user_data['tipo'] . "</td>";
                                 echo"</div>";
-                                echo"<div class='info-val'>";
+                                echo"<div id='valor-val' class='info-val'>";
                                 echo"<td>" . $user_data['valor'] . "</td>";
                                 echo"</div>";
                                 echo "<a href='editValor.php?cod_vac=" . $user_data['cod_vac'] . "'>";
