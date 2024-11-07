@@ -1,0 +1,1006 @@
+@media (min-width:310px) and (max-width: 400px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 35px;
+        position: relative;
+        left: 35px;
+        top: 30px;
+    }
+    .sub-title-start{
+        width: 300px;
+        position: relative;
+        top: 155px;
+        left: -120px;
+        text-align: left;
+        color: black;
+    }
+    .btn-start{
+        position: relative;
+        top: 160px;
+        left: -80px;
+    }
+    #title-do{
+        position: relative;
+        top: 35px;
+    }
+    .subtitle{
+        width: 310px;
+        position: relative;
+        left: 40px;
+        top: 45px;
+        font-size: 16px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 70px;
+        left: 90px;
+    }
+    .slide-container{
+        position: relative;
+        top: 50px;
+    }
+    .btn-modal-fechar{
+        top:-7px;
+        left: 70px;
+    }
+    .modal-css{
+    max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+    overflow-y: auto; /* Habilita a rolagem vertical */
+    padding: 16px; /* Dá um pouco de espaço interno */
+    }
+}
+@media (min-width:401px) and (max-width: 460px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 490px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 45px;
+        position: relative;
+        left: 19px;
+        top: -20px;
+    }
+    .sub-title-start{
+        width: 360px;
+        position: relative;
+        top: 180px;
+        left: -150px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 195px;
+        left: -80px;
+    }
+    #title-do{
+        position: relative;
+        top: 5px;
+    }
+    .subtitle{
+        width: 310px;
+        position: relative;
+        left: 60px;
+        top: 12px;
+        font-size: 16px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 100px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+    }
+    .btn-modal-fechar{
+        top: 15px;
+        left: 95px;
+    }
+}
+@media (min-width:461px) and (max-width: 510px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 515px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 45px;
+        position: relative;
+        left: 19px;
+        top: -20px;
+    }
+    .sub-title-start{
+        width: 360px;
+        position: relative;
+        top: 180px;
+        left: -150px;
+        color: #000;
+        text-align: left;
+    }
+    .btn-start{
+        position: relative;
+        top: 195px;
+        left: -80px;
+    }
+    #title-do{
+        position: relative;
+        top: 5px;
+    }
+    .subtitle{
+        width: 310px;
+        position: relative;
+        left: 80px;
+        top: -20px;
+        font-size: 16px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 130px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+    }
+    .btn-modal-fechar{
+        
+        left: 145px;
+    }
+}
+@media (min-width:511px) and (max-width: 580px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 585px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 55px;
+        position: relative;
+        left: 19px;
+        top: -10px;
+    }
+    .sub-title-start{
+        width: 360px;
+        font-size: 25px;
+        position: relative;
+        top: 190px;
+        left: -150px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 200px;
+        left: -80px;
+    }
+    #title-do{
+        font-size: 50px;
+        position: relative;
+        top: 5px;
+    }
+    .subtitle{
+        width: 400px;
+        position: relative;
+        left: 75px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 150px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
+}
+@media (min-width:581px) and (max-width: 620px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 625px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 60px;
+        position: relative;
+        left: 25px;
+        top: 10px;
+    }
+    .sub-title-start{
+        width: 360px;
+        font-size: 25px;
+        position: relative;
+        top: 220px;
+        left: -130px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 240px;
+        left: -80px;
+    }
+    #title-do{
+        font-size: 50px;
+        position: relative;
+        top: 5px;
+    }
+    .subtitle{
+        width: 400px;
+        position: relative;
+        left: 110px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 190px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
+}
+@media (min-width:621px) and (max-width: 700px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 705px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 65px;
+        position: relative;
+        left: 25px;
+        top: 15px;
+    }
+    .sub-title-start{
+        width: 600px;
+        font-size: 25px;
+        position: relative;
+        top: 260px;
+        left: -250px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 280px;
+        left: -70px;
+    }
+    #title-do{
+        font-size: 60px;
+        position: relative;
+        top: -5px;
+    }
+    .subtitle{
+        width: 450px;
+        position: relative;
+        left: 110px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 215px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
+}
+@media (min-width:701px) and (max-width: 780px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 785px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 75px;
+        position: relative;
+        left: 35px;
+        top: 15px;
+    }
+    .sub-title-start{
+        width: 600px;
+        font-size: 25px;
+        position: relative;
+        top: 300px;
+        left: -250px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 320px;
+        left: -70px;
+    }
+    #title-do{
+        font-size: 75px;
+        position: relative;
+        top: -15px;
+    }
+    .subtitle{
+        width: 400px;
+        position: relative;
+        left: 200px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 265px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
+}
+@media (min-width:781px) and (max-width: 820px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 825px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 75px;
+        position: relative;
+        left: 35px;
+        top: 15px;
+    }
+    .sub-title-start{
+        width: 700px;
+        font-size: 25px;
+        position: relative;
+        line-height: 35px;
+        top: 340px;
+        left: -270px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 370px;
+        left: -50px;
+    }
+    #title-do{
+        font-size: 75px;
+        position: relative;
+        top: -25px;
+    }
+    .subtitle{
+        width: 700px;
+        position: relative;
+        left: 45px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 275px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
+}
+@media (min-width:821px) and (max-width: 880px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 885px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 85px;
+        position: relative;
+        left: 45px;
+        top: 15px;
+    }
+    .sub-title-start{
+        width: 700px;
+        font-size: 25px;
+        position: relative;
+        top: 360px;
+        line-height: 35px;
+        left: -270px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 370px;
+        left: -50px;
+    }
+    #title-do{
+        font-size: 75px;
+        position: relative;
+        top: -25px;
+    }
+    .subtitle{
+        width: 700px;
+        position: relative;
+        left: 85px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 310px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
+}
+@media (min-width:881px) and (max-width: 920px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 925px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 95px;
+        position: relative;
+        left: 50px;
+        top: 15px;
+    }
+    .sub-title-start{
+        width: 700px;
+        font-size: 25px;
+        position: relative;
+        top: 360px;
+        line-height: 35px;
+        left: -270px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 370px;
+        left: -50px;
+    }
+    #title-do{
+        font-size: 75px;
+        position: relative;
+        top: -25px;
+    }
+    .subtitle{
+        width: 700px;
+        position: relative;
+        left: 115px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 330px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+        }
+}
+@media (min-width:921px) and (max-width: 990px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 995px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 95px;
+        position: relative;
+        left: 50px;
+        top: 85px;
+    }
+    .sub-title-start{
+        width: 700px;
+        font-size: 25px;
+        position: relative;
+        top: 400px;
+        line-height: 35px;
+        left: -270px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 410px;
+        left: -50px;
+    }
+    #title-do{
+        font-size: 75px;
+        position: relative;
+        top: -25px;
+    }
+    .subtitle{
+        width: 700px;
+        position: relative;
+        left: 125px;
+        top: -20px;
+        font-size: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 350px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+    }
+}
+@media (min-width:991px) and (max-width: 1024px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-image: url(imgs/doencasgato-resp.png);
+        background-size: 1025px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .title-start{
+        font-size: 95px;
+        position: relative;
+        left: 50px;
+        top: 35px;
+    }
+    .sub-title-start{
+        width: 800px;
+        font-size: 30px;
+        position: relative;
+        top: 400px;
+        line-height: 45px;
+        left: -320px;
+        text-align: left;
+        color: #000;
+    }
+    .btn-start{
+        position: relative;
+        top: 420px;
+        left: -30px;
+    }
+    #title-do{
+        font-size: 85px;
+        position: relative;
+        top: -30px;
+    }
+    .subtitle{
+        width: 900px;
+        position: relative;
+        left: 60px;
+        top: -20px;
+        font-size: 25px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 40px;
+        left: 400px;
+    }
+    .slide-container{
+        position: relative;
+        top: 10px;
+    }
+    .modal-css{
+        max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
+        overflow-y: auto; /* Habilita a rolagem vertical */
+        padding: 16px; /* Dá um pouco de espaço interno */
+    }
+}
+/*sem rolagem*/
+@media (min-width: 1025px) and (max-width: 1150px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: left;
+    }
+    .title-start{
+        font-size: 60px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: 5px;
+        top: -10px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 55px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+    }
+}
+@media (min-width: 1151px) and (max-width: 1250px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: left;
+    }
+    .title-start{
+        font-size: 60px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: -5px;
+        top: 50px;
+    }
+    .sub-title-start{
+        width: 550px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 55px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+    }
+}
+@media (min-width: 1251px) and (max-width: 1650px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: left;
+    }
+    .title-start{
+        font-size: 75px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: -5px;
+        top: 50px;
+    }
+    .sub-title-start{
+        width: 550px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 55px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+    }
+}
+@media (min-width: 1651px) and (max-width: 1750px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: center;
+    }
+    .title-start{
+        font-size: 95px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: -5px;
+        top: 100px;
+    }
+    .sub-title-start{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 85px;
+        top: -25px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+        left: 700px;
+    }
+}
+@media (min-width: 1751px) and (max-width: 1950px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: center;
+    }
+    .title-start{
+        font-size: 95px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: -5px;
+        top: 100px;
+    }
+    .sub-title-start{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 85px;
+        top: -25px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+        left: 820px;
+    }
+}
+@media (min-width: 1951px) and (max-width: 2100px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: center;
+    }
+    .title-start{
+        font-size: 95px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: -5px;
+        top: 100px;
+    }
+    .sub-title-start{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 85px;
+        top: -25px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+        left: 880px;
+    }
+}
+@media (min-width: 2101px) and (max-width: 2360px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: center;
+    }
+    .title-start{
+        font-size: 95px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: -5px;
+        top: 100px;
+    }
+    .sub-title-start{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 85px;
+        top: -25px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+        left: 950px;
+    }
+}
+@media (min-width: 2361px) and (max-width: 2560px) {
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .start{
+        background-position: center;
+    }
+    .title-start{
+        font-size: 95px;
+    }
+    .title-start, .sub-title-start, .btn-start{
+        position: relative;
+        left: -5px;
+        top: 150px;
+    }
+    .sub-title-start{
+        font-size: 25px;
+        line-height: 32px;
+    }
+    #title-do{
+        position: relative;
+        left: 20px;
+        font-size: 85px;
+        top: -35px;
+    }
+    .subtitle{
+        position: relative;
+        left: 20px;
+    }
+    .btn-custom{
+        position: relative;
+        top: 45px;
+        left: 1100px;
+    }
+}

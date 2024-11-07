@@ -13,6 +13,7 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/teladoencasgato.css">
     <title>Doenças Felinas</title>
 </head>
 
@@ -37,7 +38,7 @@ include("../inc/header.php");
     <section id="doencas">
         <div class="space"></div>
         <div class="titulo-vacina">
-            <h2>DOENÇAS FELINAS</h2>
+            <h2 id="title-do">DOENÇAS FELINAS</h2>
             <p class="subtitle">Conheça as principais doenças felinas e agende a vacinação com o veterinário<br> para
                 garantir a saúde e bem-estar do seu pet.</p>
         </div>
