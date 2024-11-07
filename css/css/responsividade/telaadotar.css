@@ -1,4 +1,4 @@
-@media (min-width:310px) and (max-width: 400px){
+@media (min-width:310px) and (max-width: 500px){
     .title{
         position: relative;
         top: -70px;
@@ -18,7 +18,904 @@
     background-size: 750px;
     background-position: calc(0% + -250px) calc(50% + 120px);
     }
-    #texto{
-        width: 300px;
-    }
+   .subtitle2{
+    position: relative;
+    top: 490px;
+   }
+
+   #texto{
+    width: 300px;
+    position: relative;
+    top: 505px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 1140px; 
+   }
+   
+
 }
+
+@media (min-width:450px) and (max-width: 469px){
+
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 14px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 750px;
+    background-position: calc(0% + -250px) calc(50% + 120px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 390px;
+   }
+   #texto{
+    width: 370px;
+    position: relative;
+    top: 390px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 870px; 
+   }
+
+}
+
+
+
+@media (min-width:470px) and (max-width: 499px){
+
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 14px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 750px;
+    background-position: calc(0% + -250px) calc(50% + 120px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 390px;
+   }
+   #texto{
+    width: 400px;
+    position: relative;
+    top: 390px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 870px; 
+   }
+
+}
+
+
+@media (min-width:500px) and (max-width: 540px){
+
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 14px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 770px;
+    background-position: calc(0% + -210px) calc(50% + 100px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 390px;
+   }
+
+   #texto{
+    width: 400px;
+    position: relative;
+    top: 390px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 900px; 
+   }
+
+}
+
+@media (min-width:540px) and (max-width: 580px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 14px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 750px;
+    background-position: calc(0% + -170px) calc(50% + 100px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 410px;
+   }
+
+   #texto{
+    width: 400px;
+    position: relative;
+    top: 410px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 980px; 
+   }
+}
+
+@media (min-width:581px) and (max-width: 600px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 14px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 800px;
+    background-position: calc(0% + -170px) calc(50% + 100px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 350px;
+   }
+
+   #texto{
+    width: 460px;
+    position: relative;
+    top: 350px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 870px; 
+   }
+}
+
+@media (min-width:601px) and (max-width: 640px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 35px;
+        width: 350px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 14px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 830px;
+    background-position: calc(0% + -170px) calc(50% + 100px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 350px;
+   }
+
+   #texto{
+    width: 480px;
+    position: relative;
+    top: 350px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 800px; 
+   }
+}
+
+@media (min-width:641px) and (max-width: 680px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 850px;
+    background-position: calc(0% + -170px) calc(50% + 90px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 500px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:681px) and (max-width: 700px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 900px;
+    background-position: calc(0% + -170px) calc(50% + 90px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 500px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:701px) and (max-width: 750px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+    }
+    #full-background{
+    background-size: 920px;
+    background-position: calc(0% + -170px) calc(50% + 80px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 570px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+
+@media (min-width:751px) and (max-width: 767px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: -50px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: -50px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: -50px;
+    }
+    #full-background{
+    background-size: 940px;
+    background-position: calc(0% + -170px) calc(50% + 80px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 570px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -65px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:768px) and (max-width: 800px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: 30px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: 30px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: 30px;
+    }
+    #full-background{
+    background-size: 970px;
+    background-position: calc(0% + -170px) calc(50% + 70px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 590px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:801px) and (max-width: 840px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: 30px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: 30px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: 30px;
+    }
+    #full-background{
+    background-size: 1000px;
+    background-position: calc(0% + -160px) calc(50% + 60px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 610px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:841px) and (max-width: 875px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: 30px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: 30px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: 30px;
+    }
+    #full-background{
+    background-size: 1000px;
+    background-position: calc(0% + -125px) calc(50% + 60px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 610px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:876px) and (max-width: 910px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: 10px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: 10px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: 10px;
+    }
+    #full-background{
+    background-size: 1020px;
+    background-position: calc(0% + -105px) calc(50% + 60px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 630px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:911px) and (max-width: 940px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: -15px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: -15px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: -15px;
+    }
+    #full-background{
+    background-size: 1040px;
+    background-position: calc(0% + -70px) calc(50% + 60px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 300px;
+   }
+
+   #texto{
+    width: 630px;
+    position: relative;
+    top: 300px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 740px; 
+   }
+}
+
+@media (min-width:941px) and (max-width: 980px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: -25px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: -25px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: -25px;
+    }
+    #full-background{
+    background-size: 1060px;
+    background-position: calc(0% + -70px) calc(50% + 50px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 250px;
+   }
+
+   #texto{
+    width: 660px;
+    position: relative;
+    top: 250px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 670px; 
+   }
+}
+
+@media (min-width:981px) and (max-width: 991px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: -35px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: -35px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: -35px;
+    }
+    #full-background{
+    background-size: 1080px;
+    background-position: calc(0% + -50px) calc(50% + 50px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 250px;
+   }
+
+   #texto{
+    width: 660px;
+    position: relative;
+    top: 250px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 670px; 
+   }
+}
+
+@media (min-width:992px) and (max-width: 1010px){
+    .title{
+        position: relative;
+        top: -70px;
+        font-size: 40px;
+        width: 400px;
+        left: 55px;
+    }
+    .subtitle{
+        position: relative;
+        top: -60px;
+        font-size: 15px;
+        left: 55px;
+    }
+    #btn-adocao{
+        position: relative;
+        top: -60px;
+        left: 55px;
+    }
+    #full-background{
+    background-size: 1080px;
+    background-position: calc(0% + -30px) calc(50% + 50px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 250px;
+   }
+
+   #texto{
+    width: 700px;
+    position: relative;
+    top: 250px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -50px;
+   }
+   #section2{
+    padding-bottom: 670px; 
+   }
+}
+
+@media (min-width:1011px) and (max-width: 1050px){
+    
+    #full-background{
+    background-size: 1080px;
+    background-position: calc(0% + -30px) calc(50% + 30px);
+    }
+   .subtitle2{
+    position: relative;
+    top: 250px;
+   }
+
+   #texto{
+    width: 720px;
+    position: relative;
+    top: 250px;
+    text-align: left;
+   }
+   .btn-custom{
+    position: relative;
+    left: -30px;
+   }
+   #section2{
+    padding-bottom: 670px; 
+   }
+}
+
+@media (min-width:1051px) and (max-width: 1100px){
+
+    .subtitle2{
+        position: relative;
+        top: 10px;
+       }
+    #section2{
+        padding-bottom: 200px; 
+       }
+
+    .btn-custom{
+        position: relative;
+        top:-15px;
+       }
+    
+}
+
+@media (min-width:1101px) and (max-width: 1200px){
+
+    .title{
+        position: relative;
+        left: -20px;
+    }
+    .subtitle{
+        position: relative;
+        left: -20px;
+    }
+    #btn-adocao{
+        position: relative;
+        left: -20px;
+    }
+
+    .subtitle2{
+        position: relative;
+        top: 10px;
+       }
+    #section2{
+        padding-bottom: 200px; 
+       }
+
+    .btn-custom{
+        position: relative;
+        top:-15px;
+       }
+    
+}
+
+@media (min-width:1201px) and (max-width: 1270px){
+
+    .subtitle2{
+        position: relative;
+        top: 10px;
+       }
+    #section2{
+        padding-bottom: 200px; 
+       }
+
+    .btn-custom{
+        position: relative;
+        top:-15px;
+       }
+    
+}
+
+@media (min-width:1271px) and (max-width: 1300px){
+
+    .subtitle2{
+        position: relative;
+        top: -5px;
+       }
+    #section2{
+        padding-bottom: 200px; 
+       }
+
+    .btn-custom{
+        position: relative;
+        top:-15px;
+       }
+    
+}
+
+@media (min-width:1301px) and (max-width: 1920px){
+
+    .subtitle2{
+        position: relative;
+        top: -5px;
+       }
+    #section2{
+        padding-bottom: 200px; 
+       }
+
+    .btn-custom{
+        position: relative;
+        top:-15px;
+       }
+    
+}
+

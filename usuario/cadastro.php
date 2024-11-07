@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
         $result_email = mysqli_query($conexao, $query_email);
 
         if (mysqli_num_rows($result_email) > 0) {
-            $error_email = "O e-mail já está cadastrado. Por favor, utilize outro e-mail.";
+            $error_email = "O e-mail já está cadastrado.";
         } else {
             // Insere os dados do tutor
             $result = mysqli_query($conexao, "INSERT INTO tutor(nome, cpf, datanasc, telefone, email, senha) VALUES ('$nome', '$cpf', '$datanasc', '$telefone', '$email', '$senha')");
