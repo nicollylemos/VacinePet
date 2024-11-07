@@ -88,6 +88,7 @@
 
 .slide-content {
     margin: 0 40px;
+    margin-top: 2%;
 }
 
 .valores-info h2 {
@@ -98,7 +99,7 @@
     border-radius: 25px;
     background-color: #ffffff;
     height: 900px;
-    border-color: #FD811C;
+    border-color: #52BACB;
 
 }
 .card-content {
@@ -118,13 +119,11 @@
     font-family: baloo;
     font-size: 30px;
     font-weight: 500;
-    color: #FD811C;
+    color: #52BACB;
     position: relative;
-
+    bottom: 55px;
     text-align: center;
     align-items: center;
-    height:210px;
-    background: #52BACB;
 }
 .description {
     font-size: 14px;
@@ -133,8 +132,6 @@
     position: relative;
     bottom: 60px;
     font-family: poppins;
-    height:210px;
-    background: #52BACB;
 }
 
 .append-buttons {
@@ -153,7 +150,7 @@
 }
 
 .btn-vacinas {
-    background-color: #FD811C;
+    background-color: #52BACB;
     color: #fff;
     font-weight: 500;
     border-radius: 15px;
@@ -164,10 +161,11 @@
     border: none;
     letter-spacing: 1px;
     position: relative;
+    bottom: 45px;
     align-items: center;
 }
 .btn-vacinas:hover{
-    background-color: #ffae6b;
+    background-color: #8ec8d1;
     color: #fff;
     font-weight: 500;
     border-radius: 15px;
@@ -190,97 +188,19 @@
     margin: 35px;
     font-size: 45px;
     height: 70px;
-    margin-top: 3%;
+    margin-top: 10%;
 }
 .textinhos{
     height: 300px;
 }
-
-
-/* bolinhas*/
-.orange-balls{
-    background-color: #FD811C;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 84%;
-    margin-top: -4%;
-}
-.orange-balls1{
-    background-color:  #FD811C;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 95%;
-    margin-top: 3%;
-}
-.orange-balls2{
-    background-color:  #FD811C;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 77%;
-    margin-top: 3%;
-}
-.blue-balls{
-    background-color:#52BACB;
-    width: 39px;
-    height: 39px;
-    border-radius: 50%;
-    margin-left: 89%;
-    margin-top: -8%;
-}
-.blue-balls1{
-    background-color:#52BACB;
-    width: 27px;
-    height: 27px;
-    border-radius: 50%;
-    margin-left: 88%;
-    margin-top: 2%;
-}
-.blue-balls2{
-    background-color:#52BACB;
-    width: 43px;
-    height: 43px;
-    border-radius: 50%;
-    margin-left: 84%;
-    margin-top: 0%;
-}
-.blue-balls3{
-    background-color:#52BACB;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left: 96%;
-    margin-top: -2%;
-}
-.bolinha-furada{
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: #52BACB solid 6px;
-    margin-left: 81%;
-    margin-top: -8%;
-}
-.bolinha-furada1{
-    height: 42px;
-    width: 42px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: #52BACB solid 6px;
-    margin-left:92%;
-    margin-top: -2%;
-}
-
 
 .btn-custom {
   
     position: relative;
     font-family: baloo;
     font-size: 20px;
-    background-color: #FD811C;
-    border-color: #FD811C;
+    background-color:#ffd371;
+    border-color: #ffd371;
     border-radius: 20px;
     width: 200px;
     color: white;
@@ -293,8 +213,8 @@
 }
 
 .btn-custom:hover {
-    background-color: #fcab65;
-    border-color: #fcab65;
+    background-color: #f5dba3;
+    border-color: #f5dba3;
     animation: none; /* Parando a animação ao passar o mouse */
 }
 /* modal */
@@ -304,14 +224,14 @@
     background-color: #ffffff;
     border-radius: 15px;
     padding: 20px;
-    border-color: #FD811C;
+    border-color: #52BACB;
     border-width: 1px;
     overflow: hidden;
   }
   .title-modal{
     text-align: center;
     font-size: 35px;
-    color: #FD811C;
+    color: #52BACB;
     font-family: baloo;
   }
   .btn-modal-fechar{

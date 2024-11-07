@@ -23,11 +23,6 @@ body {
     --primary-hover: #7bcdd9; 
 }
 
-.content{
-    position: relative;
-    left: 200px;
-    top: -880px;
-}
 .container-tabela{
     margin: 19px;
 }

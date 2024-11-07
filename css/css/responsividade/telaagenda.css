@@ -1,4 +1,4 @@
-@media (min-width:310px) and (max-width: 450px){
+@media (min-width:310px) and (max-width: 400px){
     html,
     body {
         overflow-x: hidden;
@@ -59,6 +59,140 @@
     .btn-confirmar{
         position: relative;
         left: 60px;
+        top: -20px;
+    }
+    .estilo{
+        height: 150px;
+        top: 20px;
+        position: relative;
+    }
+    .cilindro{
+        background-color: #ffd371;
+        height: 40px;
+        width: 300px;
+        position: relative;
+        left: 180px;
+        border-radius: 50px;
+    }
+    .cilindro-menor{
+        background-color: #ffd371;
+        height: 30px;
+        width: 200px;
+        position: relative;
+        left: 280px;
+        top: 20px;
+        border-radius: 50px;
+    }
+    .cilindro-menor-maior{
+        background-color: #ffd371;
+        height: 50px;
+        width: 200px;
+        position: relative;
+        left: 230px;
+        top: 30px;
+        border-radius: 50px;
+    }
+    .form{
+        position: relative;
+        top: -30px;
+    }
+}
+@media (min-width:401px) and (max-width: 450px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-color: white;
+    }
+    .blue-div{
+        display: none;
+    }
+    .container{
+        box-shadow: none;
+    }
+    #title{
+        font-size: 45px;
+        position: relative;
+        left: 25px;
+    }
+    #subtitle{
+        font-size: 15px;
+        width: 300px;
+        position: relative;
+        left: 35px;
+    }
+    .btn-verificar{
+        position: relative;
+        left: 10px;
+    }
+    #mes, #ano, #pet, .selecionar-servico{
+        width: 120px;
+    }
+    #form-inline{
+        position: relative;
+        left: 50px;
+        width: 300px;
+    }
+    .span-custo{
+        position: relative;
+        left: 30px;
+        width: 300px;
+        text-align: center;
+    }
+    #agendamento{
+        width: 250px;
+    }
+    .form-inline{
+        position: relative;
+        left: 50px;
+        top: 5px;
+        width: 300px;
+    }
+    .span-erro{
+        font-size: 11px;
+        position: relative;
+        left: 20px;
+    }
+    .btn-confirmar{
+        position: relative;
+        left: 60px;
+    }
+    .estilo{
+        height: 150px;
+        top: 20px;
+        position: relative;
+    }
+    .cilindro{
+        background-color: #ffd371;
+        height: 40px;
+        width: 300px;
+        position: relative;
+        left: 180px;
+        border-radius: 50px;
+    }
+    .cilindro-menor{
+        background-color: #ffd371;
+        height: 30px;
+        width: 200px;
+        position: relative;
+        left: 280px;
+        top: 20px;
+        border-radius: 50px;
+    }
+    .cilindro-menor-maior{
+        background-color: #ffd371;
+        height: 50px;
+        width: 200px;
+        position: relative;
+        left: 230px;
+        top: 30px;
+        border-radius: 50px;
+    }
+    .form{
+        position: relative;
+        top: -30px;
     }
 }
 @media (min-width:451px) and (max-width: 600px){
@@ -123,6 +257,41 @@
         position: relative;
         left: 70px;
     }
+    .estilo{
+        height: 150px;
+        top: 20px;
+        position: relative;
+    }
+    .cilindro{
+        background-color: #ffd371;
+        height: 40px;
+        width: 500px;
+        position: relative;
+        left: 180px;
+        border-radius: 50px;
+    }
+    .cilindro-menor{
+        background-color: #ffd371;
+        height: 30px;
+        width: 500px;
+        position: relative;
+        left: 280px;
+        top: 20px;
+        border-radius: 50px;
+    }
+    .cilindro-menor-maior{
+        background-color: #ffd371;
+        height: 50px;
+        width: 500px;
+        position: relative;
+        left: 230px;
+        top: 30px;
+        border-radius: 50px;
+    }
+    .form{
+        position: relative;
+        top: -30px;
+    }
 }
 @media (min-width:601px) and (max-width: 774px){
     html,
@@ -184,6 +353,41 @@
         position: relative;
         left: 70px;
     }
+    .estilo{
+        height: 150px;
+        top: 20px;
+        position: relative;
+    }
+    .cilindro{
+        background-color: #ffd371;
+        height: 40px;
+        width: 500px;
+        position: relative;
+        left: 280px;
+        border-radius: 50px;
+    }
+    .cilindro-menor{
+        background-color: #ffd371;
+        height: 30px;
+        width: 500px;
+        position: relative;
+        left: 420px;
+        top: 20px;
+        border-radius: 50px;
+    }
+    .cilindro-menor-maior{
+        background-color: #ffd371;
+        height: 50px;
+        width: 500px;
+        position: relative;
+        left: 350px;
+        top: 30px;
+        border-radius: 50px;
+    }
+    .form{
+        position: relative;
+        top: -30px;
+    }
 }
 @media (min-width:775px) and (max-width: 1000px){
     html,
@@ -243,8 +447,46 @@
         position: relative;
         left: -60px;
     }
+    .estilo{
+        height: 150px;
+        top: 20px;
+        position: relative;
+    }
+    .cilindro{
+        background-color: #ffd371;
+        height: 40px;
+        width: 600px;
+        position: relative;
+        left: 280px;
+        border-radius: 50px;
+    }
+    .cilindro-menor{
+        background-color: #ffd371;
+        height: 30px;
+        width: 600px;
+        position: relative;
+        left: 380px;
+        top: 20px;
+        border-radius: 50px;
+    }
+    .cilindro-menor-maior{
+        background-color: #ffd371;
+        height: 50px;
+        width: 600px;
+        position: relative;
+        left: 330px;
+        top: 30px;
+        border-radius: 50px;
+    }
+    .form{
+        position: relative;
+        top: -30px;
+    }
 }
 @media (min-width:1001px) and (max-width: 1920px){
+    .cilindro{
+        display: none;
+    }
     .container{
         height: 100%;
     }
@@ -259,10 +501,6 @@
     #form-inline{
         position: relative;
         top: -50px;
-    }
-    .btn-verificar{
-        position: relative;
-        top: 10px;
     }
     .form-inline{
         position: relative;
