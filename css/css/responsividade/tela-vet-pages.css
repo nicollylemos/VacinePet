@@ -1,0 +1,26 @@
+@media (min-width:310px) and (max-width: 400px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    /*index*/
+    .content{
+        width: 300px;
+        position: relative;
+        left: 90px;
+        top: -950px;
+    }
+    .form{
+        width: 250px;
+    }
+    #title-atv{
+        font-size: 30px;
+        width: 250px;
+    }
+    #btn-htrc{
+        position: relative;
+        top: -20px;
+    }
+      
+}
