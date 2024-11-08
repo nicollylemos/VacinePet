@@ -68,7 +68,11 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
     <link rel="stylesheet" href="../css/css/responsividade/telaagenda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
+    <style>
+    .container {
+        height: 850px;
+    }
+    </style>
 </head>
 
 <body>
@@ -87,89 +91,80 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                 <h1 id="title">AGENDAMENTO</h1>
                 <p id="subtitle">Selecione o mês e ano para visualizar os horários disponíveis:</p>
                 <form action="" method="POST">
-                    <div class="form-inline">
-                        <label for="mes">Selecione o Mês:</label>
+                    <div class="form-inline"><label for="mes">Selecione o Mês:</label><select name="mes" id="mes"
+                            class="selecionar"><?php // Exibe os meses para o usuário escolher
 
-                        <select name="mes" id="mes" class="selecionar">
-                            <?php
-                            // Exibe os meses para o usuário escolher
-                            foreach ($meses as $numero => $nome) {
-                                $selected = ($numero == $mes) ? "selected" : "";
-                                echo "<option value='$numero' $selected>$nome</option>";
-                            }
-                            ?>
-                        </select>
+    foreach ($meses as $numero=> $nome) {
+        $selected=($numero==$mes) ? "selected": "";
+        echo "<option value='$numero' $selected>$nome</option>";
+    }
 
-                        <label for="ano">Selecione o Ano:</label>
-                        <select name="ano" id="ano">
-                            <?php
-                            // Exibe os anos para o usuário escolher
-                            for ($i = date('Y'); $i <= date('Y') + 10; $i++) {
-                                $selected = ($i == $ano) ? "selected" : "";
-                                echo "<option value='$i' $selected>$i</option>";
-                            }
-                            ?>
-                        </select>
-                        <br>
-                        <input type="submit" class="btn-verificar" value="Verificar Disponibilidade">
-                    </div>
-                </form>
+    ?></select><label for="ano">Selecione o Ano:</label><select name="ano" id="ano"><?php // Exibe os anos para o usuário escolher
 
+    for ($i=date('Y'); $i <=date('Y') + 10; $i++) {
+        $selected=($i==$ano) ? "selected": "";
+        echo "<option value='$i' $selected>$i</option>";
+    }
 
-                <?php
-                if (isset($_POST['mes']) && isset($_POST['ano'])) {
-                    // Consulta os horários disponíveis para o mês e ano selecionados
-                    $query = "SELECT data_disponivel, nome_dia_semana, horario_disponivel 
-                                FROM dias_disponiveis 
-                                WHERE MONTH(data_disponivel) = ? AND YEAR(data_disponivel) = ?
-                                ORDER BY data_disponivel, horario_disponivel";
+    ?></select><br><input type="submit" class="btn-verificar" value="Verificar Disponibilidade"></div>
+                </form><?php if (isset($_POST['mes']) && isset($_POST['ano'])) {
+        // Consulta os horários disponíveis para o mês e ano selecionados
+        $query="SELECT data_disponivel, nome_dia_semana, horario_disponivel 
+FROM dias_disponiveis WHERE MONTH(data_disponivel)=? AND YEAR(data_disponivel)=? ORDER BY data_disponivel,
+        horario_disponivel";
 
-                    $stmt = $conexao->prepare($query);
-                    $stmt->bind_param('ii', $mes, $ano);
-                    $stmt->execute();
-                    $result = $stmt->get_result();
+        $stmt=$conexao->prepare($query);
+        $stmt->bind_param('ii', $mes, $ano);
+        $stmt->execute();
+        $result=$stmt->get_result();
 
-                    // Exibe os horários disponíveis
-                    if ($result->num_rows > 0) {
-                        echo "<div class='form-inline'>";
-                        echo "<form action='processar_agendamento.php' method='POST'>";
-                        echo "<label for='pet'>Selecione o Pet: </label>";
-                        echo "<select class='selecionar-pet' name='pet' id='pet' required>";
-                        while ($rowPet = $resultPets->fetch_assoc()) {
-                            echo "<option value='" . $rowPet['cod_pet'] . "'>" . $rowPet['nome_pet'] . "</option>";
-                        }
-                        echo "</select>";
-                        echo "<input type='hidden' name='situacao' value='Pendente'>";
+        // Exibe os horários disponíveis
+        if ($result->num_rows > 0) {
+            echo "<div class='form-inline'>";
+            echo "<form action='processar_agendamento.php' method='POST'>";
+            echo "<label for='pet'>Selecione o Pet: </label>";
+            echo "<select class='selecionar-pet' name='pet' id='pet' required>";
 
-                        echo "<label for='servico'> Serviço: </label>";
-                        echo "<select name='servico'  class='selecionar-servico' required>";
-                        echo "<option value='Vacina'>Vacina</option>";
-                        echo "<option value='Castração'>Castração</option>";
-                        echo "</select><br><br>";
+            while ($rowPet=$resultPets->fetch_assoc()) {
+                echo "<option value='". $rowPet['cod_pet'] . "'>". $rowPet['nome_pet'] . "</option>";
+            }
 
-                        echo "<label for='agendamento'>Selecione a Data e Horário:  </label>";
-                        echo "<select name='agendamento' id='agendamento'  class='selecionar-data'  required>";
-                        while ($row = $result->fetch_assoc()) {
-                            $data = date('d/m/Y', strtotime($row['data_disponivel']));
-                            $nomeDiaSemana = $row['nome_dia_semana'];
-                            $horario = date('H:i', strtotime($row['horario_disponivel']));
-                            echo "<option value='" . $row['data_disponivel'] . " " . $row['horario_disponivel'] . "'>";
-                            echo "$data ($nomeDiaSemana) - $horario</option>";
-                        }
-                        echo "</select><br><br>";
-                        echo "</div>";
-                        echo "<input type='submit' class='btn-confirmar' value='Confirmar Agendamento'>";
+            echo "</select>";
+            echo "<input type='hidden' name='situacao' value='Pendente'>";
 
-                        echo "</form>";
+            echo "<label for='servico'> Serviço: </label>";
+            echo "<select name='servico'  class='selecionar-servico' required>";
+            echo "<option value='Vacina'>Vacina</option>";
+            echo "<option value='Castração'>Castração</option>";
+            echo "</select><br><br>";
 
-                    } else {
-                        echo "<span class='span-erro' >Não há horários disponíveis para o mês e ano selecionados.</span>";
-                    }
-                }
+            echo "<label for='agendamento'>Selecione a Data e Horário:  </label>";
+            echo "<select name='agendamento' id='agendamento'  class='selecionar-data'  required>";
 
-                echo "<span class='span-custo'></span>";
+            while ($row=$result->fetch_assoc()) {
+                $data=date('d/m/Y', strtotime($row['data_disponivel']));
+                $nomeDiaSemana=$row['nome_dia_semana'];
+                $horario=date('H:i', strtotime($row['horario_disponivel']));
+                echo "<option value='". $row['data_disponivel'] . " ". $row['horario_disponivel'] . "'>";
+                echo "$data ($nomeDiaSemana) - $horario</option>";
+            }
 
-                ?>
+            echo "</select><br><br>";
+            echo "</div>";
+            echo "<input type='submit' class='btn-confirmar' value='Confirmar Agendamento'>";
+
+            echo "</form>";
+
+        }
+
+        else {
+            echo "<span class='span-erro' >Não há horários disponíveis para o mês e ano selecionados.</span>";
+        }
+    }
+
+    echo "<span class='span-custo'></span>";
+
+    ?>
             </div>
         </div>
     </div>
