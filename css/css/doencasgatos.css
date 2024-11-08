@@ -14,7 +14,16 @@
     font-family: 'poppins';
     src: url("../font/poppins/Poppins-Regular.ttf");
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Evita rolagem horizontal */
+    height: 100%;         /* Garante que o conteúdo ocupe 100% da altura da página */
+}
 
+body {
+    overflow-y: auto;     /* Permite rolagem vertical quando necessário */
+}
 .start {
     background-image: url(img/fundo-cat.png);
     background-repeat: no-repeat;

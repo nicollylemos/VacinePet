@@ -58,8 +58,8 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
     .configuracao {
         position: relative;
-        left: 250px;
-        top: -900px;
+        left: 180px;
+        top: -1100px;
     }
     .title{
         color: #52BACB;
