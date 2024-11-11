@@ -22,11 +22,6 @@ body {
     --second-color: #FD811C;
     --primary-hover: #7bcdd9; 
 }
-.content{
-    position: relative;
-    top: -1100px;
-    left: 120px;
-}
 .container-tabela{
     margin: 19px;
 }
