@@ -92,10 +92,14 @@
         margin: 20px;
     }
 
-    @media (min-width:310px) and (max-width: 350px) {
+    @media (min-width:310px) and (max-width: 500px) {
+        .sobre{
+            position: relative;
+            left: -50px;
+        }
         .footer {
-            width: 350px;
-            height: 650px;
+            width: 480px;
+            height: 900px;
         }
 
         ul {
@@ -110,6 +114,9 @@
         .redes-sociais i {
             text-align: center;
             margin: 5px
+        }
+        .creditos{
+            width: 300px;
         }
     }
 
@@ -177,24 +184,24 @@
                     <h2>Dúvidas</h2>
                 </li>
                 <li><a href="como-funciona.php">Como funciona o agendamento</a></li>
-                <li><a href="#">Como confirmar agendamento</a></li>
-                <li><a href="infos-page/pagamento.php">Formas de pagamento</a></li>
+                <li><a href="../infos-page/vacinacao.php">Vacinação em Domicílio</a></li>
+                <li><a href="../infos-page/pagamento.php">Formas de pagamento</a></li>
             </ul>
             <ul>
                 <li>
                     <h2>Políticas e Termos</h2>
                 </li>
-                <li><a href="#">Termos de Uso</a></li>
-                <li><a href="infos-page/politicas-privacidade.php">Política de Privacidade</a></li>
-                <li><a href="infos-page/direitos.php">Direitos Autorais</a></li>
+                <li><a href="../infos-page/politicas-privacidade.php">Termos de Uso</a></li>
+                <li><a href="../infos-page/politicas-privacidade.php">Política de Privacidade</a></li>
+                <li><a href="../infos-page/direitos.php">Direitos Autorais</a></li>
             </ul>
-            <ul>
+            <ul  class="sobre">
                 <li>
-                    <h2>Sobre nós</h2>
+                    <h2 >Sobre nós</h2>
                 </li>
-                <li><a href="infos-page/sobre-vacinepet.php">Sobre o VacinePet</a></li>
-                <li><a href="infos-page/sobre-profissional.php">Sobre o profissional</a></li>
-                <li><a href="infos-page/sobre-atend.php">Sobre o atendimento</a></li>
+                <li><a href="../infos-page/sobre-vacinepet.php">Sobre o VacinePet</a></li>
+                <li><a href="profissional.php">Sobre o profissional</a></li>
+                <li><a href="../infos-page/vacinacao.php">Sobre o atendimento</a></li>
             </ul>
             <ul class="redes-sociais">
                 <li>

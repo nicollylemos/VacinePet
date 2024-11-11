@@ -15,6 +15,9 @@ include("../inc/header.php");
     <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Suporte de Adoção</title>
+
+    
+
 </head>
 
 <body>
@@ -25,7 +28,8 @@ include("../inc/header.php");
                 animal.
             </h1>
             <p class="subtitle">Apoio e carinho na sua jornada de adoção</p>
-            <button id="btn-adocao" onclick="scrollToSection()" type="submit" class="btn btn-primary">Saiba Mais</button>
+            <button id="btn-adocao" onclick="scrollToSection()" type="submit" class="btn btn-primary">Saiba
+                Mais</button>
         </div>
     </section>
     <section id="section2">
@@ -52,19 +56,20 @@ include("../inc/header.php");
 
                 <p class="text" style="margin-bottom: 20px;">
                     Agora, a escolha está em suas mãos. Cada animal adotado significa uma vida
-                        transformada tanto a sua quanto a dele. Entre em contato e dê o
-                        primeiro passo para trazer alegria, companheirismo e amor
-                        incondicional ao seu lar. Adotar é uma escolha que muda
-                        vidas, e a próxima pode ser a sua!
+                    transformada tanto a sua quanto a dele. Entre em contato e dê o
+                    primeiro passo para trazer alegria, companheirismo e amor
+                    incondicional ao seu lar. Adotar é uma escolha que muda
+                    vidas, e a próxima pode ser a sua!
                 </p>
 
-                <a  href="https://wa.me/5512991445347?text=Olá!%20Tenho%20interesse%20sobre%20a%20adoção.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
-            target="_blank" title="Fale conosco no WhatsApp"><button class="btn btn-primary btn-custom">Pronto Para Adotar?</button></a>
+                <a href="https://wa.me/5512991445347?text=Olá!%20Tenho%20interesse%20sobre%20a%20adoção.%20Poderia%20me%20ajudar%20com%20mais%20informações?"
+                    target="_blank" title="Fale conosco no WhatsApp"><button class="btn btn-primary btn-custom">Pronto
+                        Para Adotar?</button></a>
 
-          
 
 
-                
+
+
 
             </div>
 
