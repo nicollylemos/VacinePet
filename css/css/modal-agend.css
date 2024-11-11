@@ -1,0 +1,88 @@
+/* Certifique-se de que o html e body ocupem toda a altura da página */
+html, body {
+    height: 100%; /* Garante que o body e html ocupem 100% da altura */
+    margin: 0;    /* Remove margens padrão */
+    padding: 0;   /* Remove o padding padrão */
+    position: relative; /* Define o posicionamento do body */
+}
+
+/* Estilo para o modal */
+.modalLog {
+    width: 380px;
+    height: 390px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute; /* Modal posicionado de forma absoluta em relação ao body */
+    top: 50%;           /* Posiciona o modal verticalmente no centro */
+    left: 50%;          /* Posiciona o modal horizontalmente no centro */
+    transform: translate(-50%, -50%); /* Ajusta o modal para que seu centro esteja no centro da tela */
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 9999;      /* Garante que o modal fique acima de outros elementos */
+}
+
+/* Estilo para o título */
+.modalLogin h1 {
+    font-family: baloo;
+    font-size: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #FD811C;
+}
+
+/* Estilo para o parágrafo */
+.modalLogin p {
+    font-family: baloo;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo para o botão de fechar */
+.modalLogin .close {
+    background: none;
+    border: none;
+    color: #52BACB;
+    cursor: pointer;
+}
+
+/* Estilo para o ícone de fechar */
+.modalLogin .fa-circle-xmark {
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+/* Estilo para o ícone de alerta */
+.modalLogin .fa-circle-exclamation {
+    font-size: 26px;
+}
+
+/* Estilo para o botão de login */
+.modalLogin .entrar {
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #52BACB;
+    border: 3.5px solid #52BACB;
+    width: 270px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: #fff;
+    font-family: baloo;
+    padding: 1%;
+    margin: 0 auto; /* Centraliza o botão */
+    display: block; /* Garante que a margem automática funcione */
+}
+
+/* Estilo para links de login e cadastro */
+.modalLogin .logar {
+    text-decoration: none;
+}
+
+.modalLogin .cadastrar {
+    color: #FD811C;
+}
