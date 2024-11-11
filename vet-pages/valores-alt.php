@@ -74,7 +74,7 @@ $result = $conexao->query($sql);
                                 echo"</div>";
                                 echo "<a href='editValor.php?cod_vac=" . $user_data['cod_vac'] . "'>";
                                 echo "<button>";
-                                echo"<i class='fa-solid fa-pen-to-square icon'></i>";
+                                echo"<i class='fa-solid fa-pen-to-square icon editar'></i>";
                                 echo"</button>";
                                 echo"</a>";
                                 echo"</div>";
