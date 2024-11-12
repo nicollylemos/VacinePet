@@ -6,162 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/css/rodapee.css">
     <style>
-    @font-face {
-        font-family: 'league';
-        src: url("../font/league/LeagueSpartan-Regular.ttf");
-    }
+        @font-face {
+            font-family: 'league';
+            src: url("../font/league/LeagueSpartan-Regular.ttf");
+        }
 
-    @font-face {
-        font-family: 'baloo';
-        src: url("../font/baloo/Baloo-Regular.ttf");
-    }
+        @font-face {
+            font-family: 'baloo';
+            src: url("../font/baloo/Baloo-Regular.ttf");
+        }
 
-    @font-face {
-        font-family: 'oswald';
-        src: url("../font/oswald/Oswald-Regular.ttf");
-    }
+        @font-face {
+            font-family: 'oswald';
+            src: url("../font/oswald/Oswald-Regular.ttf");
+        }
 
-    .footer h1 {
-        color: #ffffff;
-        font-family: baloo;
-        font-size: 23px;
-        margin-left: 30px;
-        position: relative;
-        top: 25px;
-        margin-bottom: 35px;
-        font-weight: 500;
-    }
-
-    .footer {
-        padding-left: 15px;
-    }
-
-    .footer {
-        background-color: #419dac;
-        height: 270px;
-    }
-
-    .footer ul {
-        display: inline-block;
-        list-style: none;
-        font-weight: 400;
-    }
-
-    .footer li {
-        font-family: league;
-        color: #ffffff;
-        margin-right: 30px;
-        font-size: 15px;
-        margin-left: 10px;
-        margin-top: 5px;
-    }
-
-    .footer a {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    .footer h2 {
-        font-size: 17px;
-        font-family: baloo;
-        color: #ffffff;
-        font-weight: 500;
-        margin-bottom: 5px;
-    }
-
-    .redes-sociais {
-        display: inline-block;
-        position: relative;
-        bottom: 30px;
-    }
-
-    .redes-sociais i {
-        text-align: center;
-        margin: 5px
-    }
-
-    .creditos {
-        margin-top: 10px;
-        text-align: center;
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    hr {
-        margin: 20px;
-    }
-
-    @media (min-width:310px) and (max-width: 500px) {
-        .sobre{
+        .footer h1 {
+            color: #ffffff;
+            font-family: baloo;
+            font-size: 23px;
+            margin-left: 30px;
             position: relative;
-            left: -50px;
-        }
-        .footer {
-            width: 480px;
-            height: 900px;
+            top: 25px;
+            margin-bottom: 35px;
+            font-weight: 500;
         }
 
-        ul {
-            margin-top: 10px;
+        .footer {
+            padding-left: 15px;
+        }
+
+        .footer {
+            background-color: #419dac;
+            height: 270px;
+        }
+
+        .footer ul {
+            display: inline-block;
+            list-style: none;
+            font-weight: 400;
+        }
+
+        .footer li {
+            font-family: league;
+            color: #ffffff;
+            margin-right: 30px;
+            font-size: 15px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer h2 {
+            font-size: 17px;
+            font-family: baloo;
+            color: #ffffff;
+            font-weight: 500;
+            margin-bottom: 5px;
         }
 
         .redes-sociais {
+            display: inline-block;
             position: relative;
-            top: 10px;
+            bottom: 30px;
         }
 
         .redes-sociais i {
             text-align: center;
             margin: 5px
         }
-        .creditos{
-            width: 300px;
-        }
-    }
 
-    @media (max-width:767px) and (min-width: 350px) {
-        .footer {
-            height: 650px;
-        }
-
-        ul {
+        .creditos {
             margin-top: 10px;
-        }
-
-        .redes-sociais {
-            margin-top: 30px;
-        }
-
-        .redes-sociais i {
             text-align: center;
-            margin: 5px
-        }
-    }
-
-    @media (max-width: 992px) and (min-width:725px) {
-        .redes-sociais {
-            margin-top: 30px;
-            margin-left: 90px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
         }
 
-        .footer {
-            height: 400px;
-        }
-    }
-
-
-    @media (min-width:992px) and (max-width:1216px) {
-        .redes-sociais {
-            margin-top: 30px;
+        hr {
+            margin: 20px;
         }
 
-        .footer {
-            height: 400px;
+        @media (min-width:310px) and (max-width: 350px) {
+            .footer {
+                width: 350px;
+                height: 650px;
+            }
+
+            ul {
+                margin-top: 10px;
+            }
+
+            .redes-sociais {
+                position: relative;
+                top: 10px;
+            }
+
+            .redes-sociais i {
+                text-align: center;
+                margin: 5px
+            }
         }
-    }
+
+        @media (max-width:767px) and (min-width: 350px) {
+            .footer {
+                height: 650px;
+            }
+
+            ul {
+                margin-top: 10px;
+            }
+
+            .redes-sociais {
+                margin-top: 30px;
+            }
+
+            .redes-sociais i {
+                text-align: center;
+                margin: 5px
+            }
+        }
+
+        @media (max-width: 992px) and (min-width:725px) {
+            .redes-sociais {
+                margin-top: 30px;
+                margin-left: 90px;
+            }
+
+            .footer {
+                height: 400px;
+            }
+        }
+
+        @media (min-width:992px) and (max-width:1216px) {
+            .redes-sociais {
+                margin-top: 30px;
+            }
+
+            .footer {
+                height: 400px;
+            }
+        }
     </style>
-
 </head>
 
 <body>
@@ -195,9 +186,9 @@
                 <li><a href="../infos-page/politicas-privacidade.php">Política de Privacidade</a></li>
                 <li><a href="../infos-page/direitos.php">Direitos Autorais</a></li>
             </ul>
-            <ul  class="sobre">
+            <ul class="sobre">
                 <li>
-                    <h2 >Sobre nós</h2>
+                    <h2>Sobre nós</h2>
                 </li>
                 <li><a href="../infos-page/sobre-vacinepet.php">Sobre o VacinePet</a></li>
                 <li><a href="profissional.php">Sobre o profissional</a></li>
@@ -215,9 +206,5 @@
             <hr>
             <p class="creditos"> VacinePet © Copyright 2024. Desenvolvido pela WebWave</p>
         </div>
-
-
     </div>
 </body>
-
-</html>

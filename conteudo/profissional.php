@@ -15,19 +15,7 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Conheça a Veterinária</title>
 
-    <style>
-        .modalLog {
-
-            position: absolute;
-            /* Modal posicionado de forma absoluta em relação ao body */
-            top: 50%;
-            /* Posiciona o modal verticalmente no centro */
-            left: 25%;
-            /* Posiciona o modal horizontalmente no centro */
-            /* Garante que o modal fique acima de outros elementos */
-        }
-    </style>
-</head>
+    
 
 <body>
     <h1 class="title">Conheça nossa profissional</h1>

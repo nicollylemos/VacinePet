@@ -13,20 +13,9 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <title>Castração de Felinos</title>
 
-    <style>
-        .modalLog {
-
-            position: absolute;
-            /* Modal posicionado de forma absoluta em relação ao body */
-            top: 50%;
-            /* Posiciona o modal verticalmente no centro */
-            left: 25%;
-            /* Posiciona o modal horizontalmente no centro */
-            /* Garante que o modal fique acima de outros elementos */
-        }
-    </style>
 </head>
 <style>
+    
 @font-face {
     font-family: 'poppins';
     src: url("/VacinePet/css/font/poppins/Poppins-Regular.ttf");
