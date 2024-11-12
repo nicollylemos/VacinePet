@@ -7,47 +7,35 @@
   font-family: 'baloo';
   src: url("../font/baloo/Baloo-Regular.ttf");
 }
-html,
-body {
-    overflow-x: hidden;
-    /* Esconde a rolagem horizontal */
-}
-.diario{
-  position: relative;
-  left: 150px;
-  top: -1080px;
-}
+
+
 .hello{
   margin-left: -10px;
   font-weight: 500;
 }
-.container{
-  background-color:transparent;
-  border-radius: 20px;
-  margin-left: 80px;
-  top: 90px;
-  left: 320px;
+
+
+.btn-add{
+  top: 600px;
+  position: absolute;
+}
+
+.left {
+  height: 100vh;
+  width: 400px;
+  padding: 50px;
   position: relative;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .container{
   padding-top: 20px;
   max-width: 1100px;
-
- 
-}
-.btn-add{
-  top: -550px;
-  left: 450px;
   position: absolute;
-}
-
-.left {
-  height: 100%;
-  width: 400px;
-  padding: 50px;
-  position: relative;
-  margin-left: 110px;
+  top: 90px;
+  left: 320px;
+  display: inline-block;
 }
 .calendar {
   position: relative;
@@ -230,7 +218,8 @@ body {
   border-radius: 0;
 }
 .container .right {
-  position: relative;
+  display: inline-block;
+  margin-right: 100px;
   width: 40%;
   min-height: 100%;
   padding: 20px 0;
@@ -259,6 +248,7 @@ body {
   font-weight: 500;
   color: var(--primary-clr);
   margin-bottom: 10px;
+
 }
 .events {
   width: 100%;
@@ -370,8 +360,8 @@ body {
 }
 .add-event-wrapper {
   position: absolute;
-  top: -450px;
-  left: 160%;
+  top: 250px;
+  left: 50%;
   width: 90%;
   max-height: 0;
   overflow: hidden;
@@ -525,4 +515,3 @@ body {
     padding: 20px;
   }
 }
-

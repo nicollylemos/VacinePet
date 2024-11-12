@@ -38,15 +38,13 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
     <link rel="stylesheet" href="../css/css/diariovetd.css" />
-    <link rel="stylesheet" href="../css/css/responsividade/tela-vet-pages.css"/>
 
     <title>VacinePet</title>
 </head>
 
 <body>
-<div class="container">
     <section class="diario">
-        <div id="container-diario">
+        <div class="container">
             <div class="right">
 
                 <div class="calendar">
@@ -56,13 +54,13 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
                         <i class="fas fa-angle-right next"></i>
                     </div>
                     <div class="weekdays">
-                        <div id="sem">Dom</div>
-                        <div id="sem">Seg</div>
-                        <div id="sem">Ter</div>
-                        <div id="sem">Qua</div>
-                        <div id="sem">Qui</div>
-                        <div id="sem">Sex</div>
-                        <div id="sem">Sab</div>
+                        <div>Dom</div>
+                        <div>Seg</div>
+                        <div>Ter</div>
+                        <div>Qua</div>
+                        <div>Qui</div>
+                        <div>Sex</div>
+                        <div>Sab</div>
                     </div>
                     <div class="days"></div>
                     <div class="goto-today">
@@ -109,8 +107,13 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
         </div>
     </section>
-    </div>
+
     <script src="../js/diary.js"></script>
+    <script>
+            
+
+
+    </script>
 </body>
 
-</html>
+</html> 

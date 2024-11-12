@@ -43,13 +43,24 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../css/css/responsividade/tela-vet-pages.css"/>
     <title>VacinePet</title>
+    <style>
+#gerencia{
+    padding-top: 20px;
+  top: 10px;
+  left: 320px;
+  position: absolute;
+}
+
+
+    </style>
 </head>
 
 <body>
+<div class="container">
     <section class="agendamento-atv">
-        <div id="gerencia" class="container">
+   
+        <div id="gerencia" >
 
             <div class="row">
                 <!-- Disponibilizar Atendimentos -->
@@ -100,8 +111,10 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
         </div>
         </div>
         </div>
+      
     </section>
-
+ 
+    </div>
 </body>
 
 </html>
