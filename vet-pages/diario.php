@@ -44,8 +44,9 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 </head>
 
 <body>
+<div class="container">
     <section class="diario">
-        <div id="container-diario" class="container">
+        <div id="container-diario">
             <div class="right">
 
                 <div class="calendar">
@@ -108,7 +109,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
         </div>
     </section>
-
+    </div>
     <script src="../js/diary.js"></script>
 </body>
 

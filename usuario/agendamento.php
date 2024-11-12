@@ -70,7 +70,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <style>
     .container {
-        height: 670px;
+        height: 850px;
     }
     </style>
 </head>

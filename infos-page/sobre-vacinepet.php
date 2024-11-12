@@ -34,7 +34,7 @@ include("sidebar-menu.php");
 }
 
 .sidebar {
-    height: 250vh;
+    height: 150vh;
 }
 </style>
 </style>
