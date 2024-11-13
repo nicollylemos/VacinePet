@@ -37,7 +37,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/css/vetGerenciar.css" />
-
+    <link rel="stylesheet" href="../css/css/responsividade/telasvetpages.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="calendar, events, reminders, javascript, html, css, open source coding" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -60,7 +60,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 <div class="container">
     <section class="agendamento-atv">
    
-        <div id="gerencia" >
+        <div class="gerenciar" id="gerencia" >
 
             <div class="row">
                 <!-- Disponibilizar Atendimentos -->
