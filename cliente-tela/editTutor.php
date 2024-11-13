@@ -1,4 +1,4 @@
-<?php 
+<?php
 include("../inc/header.php");
 include("sidebar-cliente.php");
 include_once('../config.php');
@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $cpf_tutor = mysqli_real_escape_string($conexao, $_POST['cpf']);
     $telefone_tutor = mysqli_real_escape_string($conexao, $_POST['telefone']);
     $email_tutor = mysqli_real_escape_string($conexao, $_POST['email']);
-    
+
     // Verifica se o campo de senha foi preenchido e se as senhas coincidem
     if (!empty($_POST['senha']) && !empty($_POST['confirmar_senha'])) {
         if ($_POST['senha'] === $_POST['confirmar_senha']) {
@@ -84,90 +84,90 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <style>
-.container-editar {
-    background-color: #ffffff;
-    width: 600px;
-    margin-bottom: 40px;
-    display: inline-block;
-    margin-left: 20px;
-    box-shadow: 20px 30px 20px 20px rgba(194, 192, 192, 0.396);
-    border-radius: 15px;
-    padding: 15px;
-    padding-left: 30px;
-}
+    .container-editar {
+        background-color: #ffffff;
+        width: 600px;
+        margin-bottom: 40px;
+        display: inline-block;
+        margin-left: 20px;
+        box-shadow: 20px 30px 20px 20px rgba(194, 192, 192, 0.396);
+        border-radius: 15px;
+        padding: 15px;
+        padding-left: 30px;
+    }
 
-* {
-    text-transform: capitalize;
-}
+    * {
+        text-transform: capitalize;
+    }
 
-.form-section {
-    margin-bottom: 30px;
-}
+    .form-section {
+        margin-bottom: 30px;
+    }
 
-h2 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 10%;
-}
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
 
-.input-group {
-    margin: 10px 0;
-    text-align: center;
-}
+    .input-group {
+        margin: 10px 0;
+        text-align: center;
+    }
 
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
-    margin-left: 10%;
-}
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left;
+        margin-left: 10%;
+    }
 
-.input-group input {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-transform: capitalize;
-}
+    .input-group input {
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-transform: capitalize;
+    }
 
-.btn-submit {
-    background-color: #52BACB;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 150px;
-    border: 1px solid #52BACB;
-    height: 40px;
-    font-weight: 600;
-}
+    .btn-submit {
+        background-color: #52BACB;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 150px;
+        border: 1px solid #52BACB;
+        height: 40px;
+        font-weight: 600;
+    }
 
-.btn-cancel {
-    height: 40px;
-    background-color: transparent;
-    color: #52BACB;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 150px;
-    text-decoration: none;
-    border: 3.5px solid #52BACB;
-    font-weight: 600;
-}
+    .btn-cancel {
+        height: 40px;
+        background-color: transparent;
+        color: #52BACB;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 150px;
+        text-decoration: none;
+        border: 3.5px solid #52BACB;
+        font-weight: 600;
+    }
 
-.btn-submit:hover {
-    background-color: #69c2d0;
-    border-color: #69c2d0;
-}
+    .btn-submit:hover {
+        background-color: #69c2d0;
+        border-color: #69c2d0;
+    }
 
-.btn-cancel:hover {
-    color: #69c2d0;
-    border-color: #69c2d0;
-}
+    .btn-cancel:hover {
+        color: #69c2d0;
+        border-color: #69c2d0;
+    }
 
-.input-button {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+    .input-button {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 </style>
 
 <body>
@@ -207,36 +207,90 @@ h2 {
 
                 <!-- Exibe mensagem de erro se as senhas não coincidem -->
                 <?php if (!empty($erro_senha)) { ?>
-                <p style="color:red;text-align:center;"><?php echo $erro_senha; ?></p>
+                    <p style="color:red;text-align:center;"><?php echo $erro_senha; ?></p>
                 <?php } ?>
 
                 <div class="input-button">
-                    <button type="submit" class="btn-submit">Salvar Alterações</button>
-                    <a href="index.php"> <button class="btn-cancel">Cancelar</button></a>
+                    <button type="submit" class="btn-submit" id="btnSalvar" disabled>Salvar Alterações</button>
+                    <a href="index.php"> <button type="button" class="btn-cancel">Cancelar</button></a>
                 </div>
+
             </form>
         </div>
     </div>
 
     <!-- Scripts para Máscaras de CPF e Telefone -->
     <script>
-    // Máscara para CPF (formato: XXX.XXX.XXX-XX)
-    function mascaraCPF(campo) {
-        var cpf = campo.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
-        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Adiciona o ponto após os primeiros 3 números
-        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2"); // Adiciona o ponto após os próximos 3 números
-        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2"); // Adiciona o traço antes dos últimos 2 números
-        campo.value = cpf;
-    }
-
-    // Máscara para telefone (formato: (XX) XXXXX-XXXX)
-    function mascaraTelefone(campo) {
-        var telefone = campo.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
-        telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2"); // Adiciona o parêntese e espaço
-        telefone = telefone.replace(/(\d{5})(\d{1,4})$/, "$1-$2"); // Adiciona o traço
-        campo.value = telefone;
-    }
+        // Máscara para telefone (formato: (XX) XXXXX-XXXX)
+        function mascaraTelefone(campo) {
+            var telefone = campo.value.replace(/\D/g, ""); // Remove todos os caracteres não numéricos
+            telefone = telefone.replace(/^(\d{2})(\d)/, "($1) $2"); // Adiciona o parêntese e espaço
+            telefone = telefone.replace(/(\d{5})(\d{1,4})$/, "$1-$2"); // Adiciona o traço
+            campo.value = telefone;
+        }
     </script>
+
+    <!--CPF -->
+    <script>
+        // Função para aplicar a máscara do CPF enquanto o usuário digita
+        function mascaraCPF(cpf) {
+            cpf.value = cpf.value.replace(/\D/g, "");
+            cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+            cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+            cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+        }
+
+        // Função para validar o CPF, mantendo pontos e traços
+        function validarCPF(cpf) {
+            var cpfSemMascara = cpf.replace(/[^\d]+/g, ''); // Remove pontos e traço
+
+            if (cpfSemMascara == '' || cpfSemMascara.length != 11 || /^(\d)\1+$/.test(cpfSemMascara)) {
+                return false;
+            }
+
+            var soma = 0, resto;
+            for (var i = 1; i <= 9; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (11 - i);
+            resto = (soma * 10) % 11;
+            if ((resto == 10) || (resto == 11)) resto = 0;
+            if (resto != parseInt(cpfSemMascara.substring(9, 10))) return false;
+
+            soma = 0;
+            for (var i = 1; i <= 10; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (12 - i);
+            resto = (soma * 10) % 11;
+            if ((resto == 10) || (resto == 11)) resto = 0;
+            if (resto != parseInt(cpfSemMascara.substring(10, 11))) return false;
+
+            return true;
+        }
+
+        document.getElementById("cpf").addEventListener("input", function () {
+            var cpfInput = this;
+            var btnSalvar = document.getElementById("btnSalvar");
+
+            // Aplica máscara e valida o CPF
+            mascaraCPF(cpfInput);
+
+            if (validarCPF(cpfInput.value)) {
+                cpfInput.classList.remove("erro");
+                btnSalvar.disabled = false; // Habilita o botão se o CPF for válido
+            } else {
+                cpfInput.classList.add("erro");
+                btnSalvar.disabled = true; // Desabilita o botão se o CPF for inválido
+            }
+        });
+
+        // Verificação adicional ao perder o foco (opcional)
+        document.getElementById("cpf").addEventListener("blur", function () {
+            var cpfInput = this;
+            if (!validarCPF(cpfInput.value)) {
+                cpfInput.classList.add("erro");
+                alert("CPF inválido! Verifique e tente novamente.");
+            } else {
+                cpfInput.classList.remove("erro");
+            }
+        });
+    </script>
+
 </body>
 
 </html>

@@ -165,10 +165,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div class="container">
         <div class="container-editar">
             <h2>Editar Endereço do Tutor</h2>
-            <form method="POST" action="">
+            <form method="POST" action="" onsubmit="return verificarCep();">
                 <div class="input-group">
                     <label for="cep">CEP</label>
-                    <input type="text" id="cep" name="cep" value="<?php echo $cep; ?>" required>
+                    <input type="text" id="cep" name="cep" maxlength="9" value="<?php echo $cep; ?>" required>
                 </div>
 
                 <div class="input-group">
@@ -204,5 +204,65 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
 </body>
+
+<script>
+    function mascaraCEP(cep) {
+        cep.value = cep.value.replace(/\D/g, "").replace(/(\d{5})(\d)/, "$1-$2");
+    }
+
+    function validarCEP(cep) {
+        // Verifica se o CEP tem o formato 00000-000
+        return /^[0-9]{5}-?[0-9]{3}$/.test(cep);
+    }
+
+    function verificarCep() {
+        const cep = document.getElementById('cep').value;
+        
+        // Verifica se o CEP está no formato correto
+        if (!validarCEP(cep)) {
+            alert("Por favor, insira um CEP válido.");
+            return false; // Impede o envio do formulário
+        }
+        
+        // Verifica se o campo CEP possui uma classe de erro
+        if (document.getElementById('cep').classList.contains('erro')) {
+            alert("O CEP é inválido! Verifique e tente novamente.");
+            return false; // Impede o envio do formulário
+        }
+        
+        return true; // Permite o envio do formulário se tudo estiver certo
+    }
+
+    document.getElementById('cep').addEventListener('blur', function () {
+        var cepInput = this.value.replace(/\D/g, '');
+        if (cepInput.length === 8) {
+            fetch(`https://viacep.com.br/ws/${cepInput}/json/`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.erro) {
+                        this.classList.add("erro");
+                        alert("CEP inválido! Verifique e tente novamente.");
+                    } else {
+                        this.classList.remove("erro");
+                        document.getElementById('rua').value = data.logradouro;
+                        document.getElementById('bairro').value = data.bairro;
+                        document.getElementById('cidade').value = data.localidade;
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao validar o CEP:', error);
+                    alert("Erro ao validar o CEP. Verifique e tente novamente.");
+                });
+        } else {
+            alert("Por favor, insira um CEP válido com 8 dígitos.");
+        }
+    });
+
+    document.getElementById('cep').addEventListener('input', function () {
+        mascaraCEP(this);
+    });
+</script>
+
+
 
 </html>
