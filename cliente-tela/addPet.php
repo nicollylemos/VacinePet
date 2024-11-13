@@ -24,22 +24,27 @@ if ($result_tutor && mysqli_num_rows($result_tutor) > 0) {
 
 // Processa o formulário de cadastro de pet
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nome_pet = $_POST['nome_pet'];
-    $raca_pet = $_POST['raca_pet'];
-    $idade_pet = $_POST['idade_pet'];
+    $nome_pet = trim($_POST['nome_pet']);
+    $raca_pet = trim($_POST['raca_pet']);
+    $idade_pet = trim($_POST['idade_pet']);
     $sexo_pet = $_POST['sexo_pet'];
     $especie_pet = $_POST['especie_pet'];
-    $castracao_pet =$_POST['castracao_pet'];
-    $porte_pet =$_POST['porte_pet'];
+    $castracao_pet = $_POST['castracao_pet'];
+    $porte_pet = $_POST['porte_pet'];
 
-    // Insere o pet no banco de dados
-    $sql_insert = "INSERT INTO pet (Nome_Pet, Raca, Idade, Sexo, Especie, Castracao, Porte, Cod_Tutor) 
-                   VALUES ('$nome_pet', '$raca_pet', '$idade_pet', '$sexo_pet', '$especie_pet', '$castracao_pet', '$porte_pet',  '$cod_tutor')";
-
-    if (mysqli_query($conexao, $sql_insert)) {
-        echo '<script>alert("Pet cadastrado com sucesso!"); window.location.href="meu-pet.php";</script>';
+    // Verifica se algum campo está vazio
+    if (empty($nome_pet) || empty($raca_pet) || empty($idade_pet) || empty($sexo_pet) || empty($especie_pet) || empty($castracao_pet) || empty($porte_pet)) {
+        echo '<script>alert("Por favor, preencha todos os campos.");</script>';
     } else {
-        echo "Erro ao cadastrar pet: " . mysqli_error($conexao);
+        // Insere o pet no banco de dados
+        $sql_insert = "INSERT INTO pet (Nome_Pet, Raca, Idade, Sexo, Especie, Castracao, Porte, Cod_Tutor) 
+                       VALUES ('$nome_pet', '$raca_pet', '$idade_pet', '$sexo_pet', '$especie_pet', '$castracao_pet', '$porte_pet', '$cod_tutor')";
+
+        if (mysqli_query($conexao, $sql_insert)) {
+            echo '<script>alert("Pet cadastrado com sucesso!"); window.location.href="meu-pet.php";</script>';
+        } else {
+            echo "Erro ao cadastrar pet: " . mysqli_error($conexao);
+        }
     }
 }
 ?>
@@ -53,6 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Adicionar Pet</title>
     <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
     <style>
+    /* Estilos personalizados */
     .container-adicionar {
         background-color: #ffffff;
         width: 600px;
@@ -63,7 +69,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         border-radius: 15px;
         padding: 15px;
         padding-left: 30px;
-
     }
 
     .form-section {
@@ -88,33 +93,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         margin-left: 10%;
     }
 
-    .form-group input {
-        width: 80%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-
-    }
-
+    .form-group input,
     .form-group select {
         width: 80%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
+    }
 
+    .btn-submit,
+    .btn-cancel {
+        width: 150px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 8px;
+        text-align: center;
     }
 
     .btn-submit {
         background-color: #52BACB;
         color: white;
-        border-radius: 8px;
-        cursor: pointer;
-        width: 150px;
         border: 1px solid #52BACB;
-        height: 40px;
-        font-weight: 600;
-        font-size: 15px;
-
     }
 
     .btn-cancel {
@@ -150,17 +151,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         margin-bottom: 20px;
         text-align: center;
     }
-
-    .input-button a {
-        text-decoration: none;
-        color: #52BACB;
-    }
     </style>
 </head>
 
 <body>
     <div class="container">
-
         <div class="container-adicionar">
             <h2>Adicionar Pet</h2>
             <form method="POST" action="">
@@ -171,6 +166,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="form-group">
                     <label for="especie_pet">Espécie:</label>
                     <select id="especie_pet" name="especie_pet">
+                        <option value="">Selecione</option>
                         <option value="Cachorro">Cachorro</option>
                         <option value="Gato">Gato</option>
                     </select>
@@ -186,14 +182,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="form-group">
                     <label for="sexo_pet">Sexo:</label>
                     <select id="sexo_pet" name="sexo_pet">
+                        <option value="">Selecione</option>
                         <option value="Macho">Macho</option>
                         <option value="Fêmea">Fêmea</option>
                     </select>
                 </div>
-
                 <div class="form-group">
                     <label for="castracao_pet">Castração:</label>
                     <select id="castracao_pet" name="castracao_pet">
+                        <option value="">Selecione</option>
                         <option value="Sim">Sim</option>
                         <option value="Não">Não</option>
                     </select>
@@ -201,6 +198,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="form-group">
                     <label for="porte_pet">Porte:</label>
                     <select id="porte_pet" name="porte_pet">
+                        <option value="">Selecione</option>
                         <option value="Pequeno">Pequeno</option>
                         <option value="Médio">Médio</option>
                         <option value="Grande">Grande</option>
@@ -208,13 +206,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
                 <div class="input-button">
                     <button type="submit" class="btn-submit">Cadastrar Pet</button>
-
                     <a href="meu-pet.php" class="btn-cancel">Cancelar</a>
                 </div>
             </form>
         </div>
     </div>
 
+    <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        const requiredFields = ["nome_pet", "raca_pet", "idade_pet", "sexo_pet", "especie_pet", "castracao_pet",
+            "porte_pet"
+        ];
+        let allFieldsFilled = true;
+
+        requiredFields.forEach(fieldId => {
+            const field = document.getElementById(fieldId);
+            if (field.value.trim() === "") {
+                allFieldsFilled = false;
+                field.style.border = "2px solid red";
+            } else {
+                field.style.border = "";
+            }
+        });
+
+        if (!allFieldsFilled) {
+            alert("Por favor, preencha todos os campos obrigatórios.");
+            event.preventDefault(); // Impede o envio do formulário
+        }
+    });
+    </script>
 </body>
 
 </html>
