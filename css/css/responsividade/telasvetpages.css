@@ -1,0 +1,144 @@
+@media (min-width:310px) and (max-width: 450px) {
+    .content {
+        position: relative;
+        left: -230px;
+    }
+
+    .form {
+        width: 250px;
+    }
+
+    #title-atv {
+        width: 250px;
+        font-size: 35px;
+    }
+
+    #title-htrc {
+        width: 250px;
+        font-size: 35px;
+    }
+
+    #btn-htrc {
+        position: relative;
+        top: -20px;
+    }
+
+    .table {
+        width: 250px;
+        /* Define a largura da área visível da tabela */
+        overflow-x: auto;
+        /* Permite rolagem horizontal */
+        white-space: nowrap;
+        /* Impede que o conteúdo quebre para uma nova linha */
+    }
+
+    .table::-webkit-scrollbar {
+        height: 8px;
+        /* Define a altura da barra de rolagem horizontal */
+    }
+
+    .table::-webkit-scrollbar-thumb {
+        background-color: #52bacb;
+        /* Cor da barra de rolagem */
+        border-radius: 4px;
+        /* Bordas arredondadas na barra de rolagem */
+    }
+
+    .table::-webkit-scrollbar-track {
+        background-color: #f0f0f0;
+        /* Cor do fundo da barra de rolagem */
+    }
+
+    .right {
+        position: relative;
+        left: -210px;
+    }
+
+    .calendar {
+        width: 250px;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+
+    .weekdays {
+        display: flex;
+        gap: 10px;
+        /* Define o espaçamento entre as divs */
+    }
+
+    #sem {
+        position: relative;
+        left: -11px;
+        font-size: 13px;
+    }
+    .event-date{
+        position: relative;
+        left: -170px;
+    }
+    .btn-add{
+        position: relative;
+        top: -300px;
+        left: -120px;
+    }
+    #title-alt{
+        position: relative;
+        left: 10px;
+        font-size: 35px;
+        width: 250px;
+    }
+    .container-valores{
+        width: 250px;
+        height: 70px;
+    }
+    .id{
+        position: relative;
+        left: -15px;
+    }
+    .editar{
+        position: relative;
+        left: 15px;
+    }
+    #nome-val{
+        font-size: 14px;
+        position: relative;
+        left: -15px;
+    }
+    #tipo-val{
+        font-size: 12px;
+        position: relative;
+        left: -5px;
+    }
+    #valor-val{
+        font-size: 14px;
+        position: relative;
+        left: 10px;
+    }
+    .row{
+        position: relative;
+        left: -200px;
+        top: 100px;
+    }
+
+}
+@media (min-width:1001px) and (max-width: 2560px){
+    .content{
+        position: relative;
+        left: -200px;
+    }
+    .btn-add{
+        position: relative;
+        top: -500px;
+    }
+    .row{
+        position: relative;
+        top: 100px;
+        left: -180px;
+    }
+    #container-sair{
+        position: relative;
+        top: 250px;
+        left: -30px;
+    }
+}

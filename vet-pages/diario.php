@@ -38,13 +38,13 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
     <link rel="stylesheet" href="../css/css/diariovetd.css" />
-
+    <link rel="stylesheet" href="../css/css/responsividade/telasvetpages.css" />
     <title>VacinePet</title>
 </head>
 
 <body>
     <section class="diario">
-        <div class="container">
+        <div id="container-diario" class="container">
             <div class="right">
 
                 <div class="calendar">
@@ -54,13 +54,13 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
                         <i class="fas fa-angle-right next"></i>
                     </div>
                     <div class="weekdays">
-                        <div>Dom</div>
-                        <div>Seg</div>
-                        <div>Ter</div>
-                        <div>Qua</div>
-                        <div>Qui</div>
-                        <div>Sex</div>
-                        <div>Sab</div>
+                        <div id="sem">Dom</div>
+                        <div id="sem">Seg</div>
+                        <div id="sem">Ter</div>
+                        <div id="sem">Qua</div>
+                        <div id="sem">Qui</div>
+                        <div id="sem">Sex</div>
+                        <div id="sem">Sab</div>
                     </div>
                     <div class="days"></div>
                     <div class="goto-today">
@@ -78,7 +78,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
                     <div class="event-date"></div>
                 </div>
                 <div class="events"></div>
-                <div class="add-event-wrapper">
+                <div id="events" class="add-event-wrapper">
                     <div class="add-event-header">
                         <div class="title">Adicionar Evento</div>
                         <i class="fas fa-times close"></i>
