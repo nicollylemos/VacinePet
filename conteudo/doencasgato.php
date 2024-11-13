@@ -146,11 +146,7 @@ include("../inc/header.php");
                             <div class="textinhos">
                                 <p class="description">
 
-                                    A calicivirose é extremamente contagiosa e provoca um quadro de doença respiratória
-                                    nos gatos, sendo muitas vezes confundida com outras doenças. No geral, o animal é
-                                    infectado ao entrar em contato com outro gato que esteja com o calicivírus. Ela
-                                    costuma ocorrer por meio da inalação de aerossóis ou contato com a saliva do outro
-                                    felino...
+                                A calicivirose é uma doença respiratória altamente contagiosa nos gatos, frequentemente confundida com outras enfermidades. A infecção ocorre principalmente por contato com gatos infectados, seja por aerossóis ou saliva...
                             </div>
                             </p> <button onclick="modal2.showModal()" class="btn-vacinas"><i
                                     class="fa-solid fa-angle-down"
@@ -194,10 +190,7 @@ include("../inc/header.php");
                                 <!-- futuro php--> CLAMIDIOSE
                             </h3>
                             <div class="textinhos">
-                                <p class="description">A clamidiose é uma infecção bacteriana que afeta em particular os
-                                    olhos dos gatos. Frequentemente, a clamidiose ocorre ao mesmo tempo com outras
-                                    infecções respiratórias. Se os olhos não forem tratados adequadamente, pode
-                                    haver comprometimento permanente da visão...
+                                <p class="description">A clamidiose é uma infecção bacteriana que afeta principalmente os olhos dos gatos, muitas vezes ocorrendo junto com outras infecções respiratórias. Se não tratada corretamente, pode causar danos permanentes à visão...
                             </div>
                             </p> <button onclick="modal3.showModal()" class="btn-vacinas"><i
                                     class="fa-solid fa-angle-down"
@@ -232,9 +225,7 @@ include("../inc/header.php");
 
                                             A melhor forma de prevenir a clamidiose é por meio da
                                             vacinação.
-                                            Converse com
-                                            o médico-veterinário e
-                                            mantenha a vacinação do seu pet em dia.
+
 
                                         </div>
                                     </div>
@@ -248,10 +239,7 @@ include("../inc/header.php");
                                 <!-- futuro php--> LEUCEMIA VIRAL FELINA (FELV)
                             </h3>
                             <div class="textinhos">
-                                <p class="description">A leucemia viral felina é uma doença incurável, causada por um
-                                    vírus que afeta o sistema imune dos gatos, facilitando o aparecimento de infecções
-                                    por bactérias e até mesmo de alguns tipos de tumor. Pode infectar gatos de qualquer
-                                    idade, em geral os filhotes com menos de 1 ano de idade são os mais acometidos....
+                                <p class="description">A leucemia viral felina é incurável e enfraquece o sistema imunológico, tornando os gatos mais propensos a infecções e tumores. Filhotes com menos de 1 ano são os mais afetados...
                             </div>
                             </p> <button onclick="modal4.showModal()" class="btn-vacinas"><i
                                     class="fa-solid fa-angle-down"
@@ -261,7 +249,7 @@ include("../inc/header.php");
                             <dialog id="modal4" class="modal-css">
                                 <div class="infos">
                                     <div>
-                                        <div class="title-modal">HEPATITE INFECCIOSA</div>
+                                        <div class="title-modal">LEUCEMIA VIRAL FELINA (FELV)</div>
                                         <div class="modal-body">
                                             A transmissão acontece principalmente quando um animal infectado lambe
                                             outros gatos, já que o vírus é excretado em abundância na saliva. É uma
@@ -293,10 +281,7 @@ include("../inc/header.php");
                                 <!-- futuro php--> RAIVA
                             </h3>
                             <div class="textinhos">
-                                <p class="description">A raiva é uma das doenças infecciosas de cães e gatos mais
-                                    importantes porque é uma zoonose fatal. Geralmente é transmitida por meio da mordida
-                                    de um animal infectado (que pode ser um cão ou um gato) ou de animais que funcionam
-                                    como reservatórios naturais (morcegos, por exemplo)...
+                                <p class="description">A  raiva é uma zoonose fatal que afeta cães e gatos, sendo transmitida principalmente pela mordida de animais infectados, como cães, gatos e morcegos...
                             </div>
                             </p> <button onclick="modal5.showModal()" class="btn-vacinas"><i
                                     class="fa-solid fa-angle-down"
@@ -306,7 +291,7 @@ include("../inc/header.php");
                             <dialog id="modal5" class="modal-css">
                                 <div class="infos">
                                     <div>
-                                        <div class="title-modal">ADENOVIROSE RESPIRATÓRIA</div>
+                                        <div class="title-modal">RAIVA</div>
                                         <div class="modal-body">
                                             O vírus da raiva afeta o sistema nervoso, provocando alterações de
                                             comportamento que podem variar de extrema excitação (daí o nome da doença)

@@ -6,22 +6,34 @@ html, body {
     position: relative; /* Define o posicionamento do body */
 }
 
-/* Estilo para o modal */
 .modalLog {
     width: 380px;
     height: 390px;
     background-color: #ffffff;
     border-radius: 20px;
     padding: 20px;
-    position: absolute; /* Modal posicionado de forma absoluta em relação ao body */
-    top: 50%;           /* Posiciona o modal verticalmente no centro */
-    left: 50%;          /* Posiciona o modal horizontalmente no centro */
-    transform: translate(-50%, -50%); /* Ajusta o modal para que seu centro esteja no centro da tela */
+    position: fixed; /* Fixar o modal em relação à janela */
+    top: 50%; /* Posição vertical no centro da tela */
+    left: 50%; /* Posição horizontal no centro da tela */
+    transform: translate(-50%, -50%); /* Centraliza o modal em relação ao seu próprio tamanho */
     border: none;
     padding-left: 20px;
     padding-right: 20px;
-    z-index: 9999;      /* Garante que o modal fique acima de outros elementos */
+    z-index: 99999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.modalLogOverlay {
+    position: fixed; /* Fixar a sobreposição também */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+    z-index: 9999;
+}
+
+
 
 /* Estilo para o título */
 .modalLogin h1 {

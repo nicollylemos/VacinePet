@@ -91,7 +91,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
                 <h1 id="title">AGENDAMENTO</h1>
                 <p id="subtitle">Selecione o mês e ano para visualizar os horários disponíveis:</p>
                 <form action="" method="POST">
-                    <div class="form-inline"><label for="mes">Selecione o Mês:</label><select name="mes" id="mes"
+                    <div class="form-inline"><label for="mes">Selecione o Mês:</label> <select name="mes" id="mes"
                             class="selecionar"><?php // Exibe os meses para o usuário escolher
 
     foreach ($meses as $numero=> $nome) {
@@ -99,7 +99,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
         echo "<option value='$numero' $selected>$nome</option>";
     }
 
-    ?></select><label for="ano">Selecione o Ano:</label><select name="ano" id="ano"><?php // Exibe os anos para o usuário escolher
+    ?></select><label for="ano">Selecione o Ano:</label> <select name="ano" id="ano"><?php // Exibe os anos para o usuário escolher
 
     for ($i=date('Y'); $i <=date('Y') + 10; $i++) {
         $selected=($i==$ano) ? "selected": "";
