@@ -48,7 +48,14 @@ include("../inc/header.php");
             <p id="p4"> Entre em contato e agende uma visita para garantir a saúde e o bem-estar do seu pet com o cuidado
                 especializado da Dra. Luciane. Seu animalzinho merece o melhor!</p>
 
-                <a href="agendamento.php" class="btn btn-primary">Agende agora</a>
+
+                <?php if ($admin || $logado) : ?>
+                    <a  class="btn btn-primary" href="/VacinePet/usuario/agendamento.php">Agende agora</a>
+                    <?php endif; ?>
+                    <?php if (!isset($_SESSION['email']) && !isset($_SESSION['senha_hash'])): ?>
+                    <a  class="btn btn-primary" href="#" onclick="document.getElementById('modalLogin').showModal(); return false;">Agende agora</a>
+                    <?php endif; ?>
+                  
 
         </div>
         
@@ -67,5 +74,18 @@ include("../inc/header.php");
 </body>
 <?php include("../inc/footer.php") ?>
 
-
+<dialog class="modalLog" id="modalLogin">
+        <div class="modalLogin">
+            <button class="close" onclick="document.getElementById('modalLogin').close()">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+            <h1> Aviso:<br> Login Necessário</h1>
+            <p>Para realizar o agendamento, é necessário estar logado em sua conta. Por favor, faça login para
+                continuar.</p>
+            <a href="/VacinePet/inc/login.php" class="logar">
+                <button class="entrar" style="border-radius:10px;">Entrar</button>
+            </a>
+            <p>Não tem uma conta? <a href="/VacinePet/usuario/cadastro.php" class="cadastrar">Cadastre-se aqui!</a></p>
+        </div>
+    </dialog>
 </html>

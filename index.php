@@ -80,13 +80,15 @@ body {
                     Ao longo da vida do
                     seu pet manter a vacinação em dia é fundamental.
                     Agende agora com o VacinePet e garanta a saúde do seu animal de
-                    estimação. </p> <?php if ($admin): ?><a href="/VacinePet/usuario/agendamento.php">
-                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
-                <?php if ($logado): ?><a href="/VacinePet/usuario/agendamento.php">
-                    <button class="btn-inicio">Agendar</button></a> <?php endif; ?>
-                <?php if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)): ?>
-                <button class="btn-inicio" onclick="modalLogin.showModal()">Agendar</button>
-                <?php endif; ?>
+                    estimação. </p> 
+                    
+                    <?php if ($admin || $logado) : ?>
+                    <a class="btn-inicio" href="/VacinePet/usuario/agendamento.php">Agendar</a>
+                    <?php endif; ?>
+                    <?php if (!isset($_SESSION['email']) && !isset($_SESSION['senha_hash'])): ?>
+                    <a  class="btn-inicio" href="#" onclick="document.getElementById('modalLogin').showModal(); return false;">Agendar</a>
+                    <?php endif; ?>
+                  
             </div>
             <div class="img-animal"></div>
         </div>
@@ -191,16 +193,16 @@ body {
     </div>
     <dialog class="modalLog" id="modalLogin">
         <div class="modalLogin">
-            <button class="close" onclick=" modalLogin.close()">
+            <button class="close" onclick="document.getElementById('modalLogin').close()">
                 <i class="fa-regular fa-circle-xmark"></i>
             </button>
             <h1> Aviso:<br> Login Necessário</h1>
             <p>Para realizar o agendamento, é necessário estar logado em sua conta. Por favor, faça login para
                 continuar.</p>
-            <a href="/VacinePet/inc/login.php" class="logar"><button class="entrar"
-                    style="border-radius:10px;">Entrar</button></a>
+            <a href="/VacinePet/inc/login.php" class="logar">
+                <button class="entrar" style="border-radius:10px;">Entrar</button>
+            </a>
             <p>Não tem uma conta? <a href="/VacinePet/usuario/cadastro.php" class="cadastrar">Cadastre-se aqui!</a></p>
-
         </div>
     </dialog>
 </body>

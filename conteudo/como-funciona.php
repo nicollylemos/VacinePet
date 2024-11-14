@@ -19,9 +19,20 @@
             src: url("../font/league/LeagueSpartan-Regular.ttf");
         }
 
+        
+    @font-face {
+        font-family: 'poppins';
+        src: url("../font/poppins/Poppins-Medium.ttf");
+    }
+
+
+    .menu a {
+     
+        font-family: poppins;
+    }
         /* Configurações gerais */
         body {
-            font-family: 'Poppins', sans-serif;
+      
             color: #333;
             background-color: #52BACB;
         }
@@ -38,7 +49,10 @@
         .subtitle {
             font-family: sans-serif;
         }
-
+        a{
+            font-family: poppins;
+        }
+       
         .title-section h1 {
             font-size: 1.9rem;
             color: #fff;
