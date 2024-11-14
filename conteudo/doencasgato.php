@@ -15,9 +15,16 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/css/responsividade/teladoencasgato.css">
     <title>Doenças Felinas</title>
+
+    <style>
+        .conta {
+            margin-top: 19px;
+        }
+    </style>
 </head>
 
 <body>
+<div class="conta">
     <section class="start">
         <div class="espaco"></div>
         <div class="escritos">
@@ -332,7 +339,7 @@ include("../inc/header.php");
 
         </div>
         </div>
-
+        </div>
 </body>
 <?php include("../inc/footer.php") ?>
 <!--scroll JS-->
