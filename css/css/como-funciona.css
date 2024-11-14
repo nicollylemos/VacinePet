@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'baloo';
+    src: url('../font/baloo/Baloo-Regular.ttf');
+}
+
 body {
     background-image: url('img/fundo-patas.png');
     background-repeat: no-repeat;
