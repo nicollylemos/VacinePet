@@ -32,6 +32,10 @@
     label{
         font-size: 14px;
     }
+    #title-editpet{
+        position: relative;
+        left: -20px;
+    }
 }
 @media (min-width: 451px) and (max-width: 500px){
     html,
@@ -66,6 +70,10 @@
     }
     label{
         font-size: 15px;
+    }
+    #title-editpet{
+        position: relative;
+        left: -20px;
     }
 }
 @media (min-width: 501px) and (max-width: 600px){

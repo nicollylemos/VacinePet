@@ -7,6 +7,7 @@
     <title>Agendamento Confirmado</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="../css/css/agendconcluir.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telaconfirmaagendamento.css" />
     <style>
 
     </style>

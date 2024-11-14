@@ -21,6 +21,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../css/css/vetAtend.css" />
     <link rel="stylesheet" href="../css/css/EstiloVet.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/telas-horarios-vetpages.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -106,7 +107,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
 
         echo "<h2>". $meses[$mes] . " de ". $ano . "</h2>";
         echo "<form action='' method='POST'>";
-        echo "<table border='1'>";
+        echo "<table class='table-disponiveis' border='1'>";
         echo "<tr><th>Data</th><th>Dia da Semana</th><th>Horários Disponíveis</th><th>Selecionar</th></tr>";
 
         for ($dia=1; $dia <=$diasNoMes; $dia++) {

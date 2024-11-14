@@ -142,7 +142,16 @@ body {
                     echo '<p id="tipo">' . $vacina['tipo'] . '</p>';
                     echo '<h3 class="nome-vacina">' . $vacina['nome'] . '</h3>';
                     echo '<p class="description">' . $vacina['descricao'] . '</p>';
-                    echo '<a href="#"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
+                    if (strpos(strtolower($vacina['tipo']), 'felina') !== false) {
+                        // Vacina Felina
+                        echo '<a href="/VacinePet/conteudo/doencasgato.php"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
+                    } elseif (strpos(strtolower($vacina['tipo']), 'canina') !== false) {
+                        // Vacina Canina
+                        echo '<a href="/VacinePet/conteudo/doencascachorro.php"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
+                    } else {
+                        // Vacinas para ambos ou desconhecidas
+                        echo '<a href="#"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
+                    }
                     echo '</div>'; // card-content
                     echo '</div>'; // card
                 }

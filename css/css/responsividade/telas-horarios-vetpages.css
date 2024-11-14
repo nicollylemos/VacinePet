@@ -1,0 +1,38 @@
+@media (min-width:310px) and (max-width: 520px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-conteudo {
+        position: relative;
+        left: -270px;
+    }
+    .container {
+        width: 250px;
+    }
+    /* Estilização da tabela com rolagem horizontal */
+    .table-disponiveis {
+        width: 250px !important;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        max-width: 100%;
+    }
+
+    /* Personalização da barra de rolagem */
+    .table-disponiveis::-webkit-scrollbar {
+        height: 8px; /* Altura da barra de rolagem */
+    }
+
+    .table-disponiveis::-webkit-scrollbar-thumb {
+        background-color: #52bacb; /* Cor personalizada */
+        border-radius: 4px;
+    }
+
+    .table-disponiveis::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+}
+

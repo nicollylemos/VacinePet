@@ -56,6 +56,7 @@ $result_pets = mysqli_query($conexao, $sql_pets);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css/responsividade/telameu-pet.css" />
     <title>Apagar Pet</title>
 
 </head>
@@ -122,10 +123,10 @@ h2 {
     <div class="container">
         <!-- Meus Pets -->
         <div class="section">
-            <h2>Meus Pets</h2>
+            <h2 id="title-apg">Meus Pets</h2>
             <?php if (mysqli_num_rows($result_pets) > 0): ?>
             <?php while ($user_data = mysqli_fetch_assoc($result_pets)): ?>
-            <div class="container-pet">
+            <div id="container-apgpet" class="container-pet">
                 <div class="info-val">
                     <p class="nome-pet"> <?php echo $user_data['Nome_Pet']; ?></p>
                 </div>

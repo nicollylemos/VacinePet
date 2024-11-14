@@ -1,0 +1,15 @@
+@media (min-width:310px) and (max-width: 667px){
+    .modal-content{
+        width: 280px;
+        height: 520px;
+        position: relative;
+    }
+    i {
+        position: relative;
+        left: 20px;
+    }
+    h2, p {
+        position: relative;
+        left: 10px;
+    }
+}

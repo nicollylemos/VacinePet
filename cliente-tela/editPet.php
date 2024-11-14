@@ -171,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  <body>
      <div class="container">
          <div class="container-editar">
-             <h2>Editar Pet</h2>
+             <h2 id="title-editpet">Editar Pet</h2>
              <form method="POST" action="">
                  <div class="input-group">
                      <label for="nome">Nome do Pet</label>

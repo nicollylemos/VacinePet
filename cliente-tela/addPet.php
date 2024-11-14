@@ -57,6 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adicionar Pet</title>
     <link rel="stylesheet" href="../css/css/EstiloUsuario.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telameu-pet.css" />
     <style>
     /* Estilos personalizados */
     .container-adicionar {
@@ -157,7 +158,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="container">
         <div class="container-adicionar">
-            <h2>Adicionar Pet</h2>
+            <h2 id="title-add">Adicionar Pet</h2>
             <form method="POST" action="">
                 <div class="form-group">
                     <label for="nome_pet">Nome do Pet:</label>
