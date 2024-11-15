@@ -305,8 +305,7 @@ table th:nth-child(5), table td:nth-child(5) {
 }
 .btn-busca{
     padding: 5px;
-    background-color: transparent;
-    color: #52BACB;
+    background-color: #52BACB;
     border-radius: 8px;
     cursor: pointer;
     width: 140px;
@@ -314,11 +313,18 @@ table th:nth-child(5), table td:nth-child(5) {
     border: 3.5px solid #52BACB;
     font-weight: 600;
     display: inline-block;
+    color: #fff;
     /* Adiciona inline-block para permitir definir a largura */
     box-sizing: border-box;
     /* Garante que padding e borda sejam incluídos na largura */
     text-align: center;
     /* Centraliza o texto dentro do botão */
+    height: 40px;
+}
+.btn-busca:hover{
+    background-color: #8cd0db;
+    border-color: #8cd0db;
+    transition: 1s;
 }
 
 .container{
@@ -326,5 +332,5 @@ table th:nth-child(5), table td:nth-child(5) {
     max-width: 1100px;
     position: absolute;
     top: 90px;
-    left: 320px;
+    left: 400px;
 }

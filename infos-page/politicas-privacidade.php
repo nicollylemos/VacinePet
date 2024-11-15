@@ -113,7 +113,7 @@ include("sidebar-menu.php");
             <hr class="line">
             <div class="container-end">
                 <p id="fim">Gostou? Agende agora uma consulta no VacinePet!</p>
-                <a href="../agendamento.php"><button class="btn-fim" type=" button">Agendar agora!</button></a>
+
             </div>
         </div>
         </div>

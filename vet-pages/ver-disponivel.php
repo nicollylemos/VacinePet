@@ -22,7 +22,7 @@ $meses = [
     5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto',
     9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'
 ];
-echo"  <link rel='stylesheet' href='../css/css/vetAtend.css' />";
+echo"  <link rel='stylesheet' href='../css/css/vetAtendimento.css' />";
 echo "<div class='container'>";
 // Formulário para selecionar mês e ano
 echo "<h1>Atendimentos Disponíveis</h1>";

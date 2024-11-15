@@ -14,15 +14,14 @@ include("../inc/header.php");
     <title>Castração de Felinos</title>
 
     <style>
-        #modalLogin{
-            position: relative;
-            bottom: -80px;
-        }
+    #modalLogin {
+        position: relative;
+        bottom: -80px;
+    }
     </style>
 
 </head>
 <style>
-    
 @font-face {
     font-family: 'poppins';
     src: url("/VacinePet/css/font/poppins/Poppins-Regular.ttf");

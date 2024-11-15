@@ -19,10 +19,9 @@ $meses = [
 ];
 
 // Obtendo o mês atual
-$mesAtual = date('n'); // 'n' retorna o mês sem zeros à esquerda
+$mesAtual = date('n');
 
-// Parte para deletar agendamentos
-echo"  <link rel='stylesheet' href='../css/css/vetAtend.css' />";
+echo "<link rel='stylesheet' href='../css/css/vetAtendimento.css' />";
 echo "<div class='container'>";
 echo "<h1>Apagar Atendimentos</h1>";
 echo "<h2>Selecione Mês e Ano:</h2>";
@@ -30,13 +29,13 @@ echo "<form action='' method='POST'>";
 echo "<label for='mesDelete'>Mês: </label>";
 echo "<select class='selecionar' name='mesDelete'>";
 foreach ($meses as $num => $nome) {
-    $selected = ($num == $mesAtual) ? "selected" : ""; // Verifica se o mês é o atual
+    $selected = ($num == $mesAtual) ? "selected" : "";
     echo "<option value='$num' $selected>$nome</option>";
 }
 echo "</select>";
 
 echo "<label for='anoDelete'> Ano: </label>";
-echo "<select  class='selecionar' name='anoDelete'>";
+echo "<select class='selecionar' name='anoDelete'>";
 for ($i = date('Y'); $i <= date('Y') + 10; $i++) {
     echo "<option value='$i'>$i</option>";
 }
@@ -50,7 +49,6 @@ if (isset($_POST['verAgendamentos'])) {
     $mesDelete = $_POST['mesDelete'];
     $anoDelete = $_POST['anoDelete'];
 
-    // Consulta os agendamentos para o mês e ano selecionados
     $query = "SELECT data_disponivel, nome_dia_semana, horario_disponivel 
               FROM dias_disponiveis 
               WHERE MONTH(data_disponivel) = ? AND YEAR(data_disponivel) = ? 
@@ -61,9 +59,8 @@ if (isset($_POST['verAgendamentos'])) {
     $stmt->execute();
     $result = $stmt->get_result();
 
-    // Verifica se há resultados
     if ($result->num_rows > 0) {
-        echo "<form action='processar_deletar_agendamento.php' method='POST'>";
+        echo "<form action='processar_deletar_agendamento.php' method='POST' onsubmit='return validarSelecao()'>";
         echo "<h3>Selecione o agendamento para deletar:</h3>";
 
         while ($row = $result->fetch_assoc()) {
@@ -75,14 +72,33 @@ if (isset($_POST['verAgendamentos'])) {
             echo $data . " (" . $nomeDiaSemana . ") - " . $horario . "<br>";
         }
 
-        echo "<input type='submit' value='Deletar Agendamentos'>";
+        echo "<input type='submit' class='ver-hora' value='Deletar Agendamentos'>";
         echo "</form>";
     } else {
         echo "Não há agendamentos disponíveis para o mês selecionado.";
     }
-echo"</div>";
-    // Fecha a conexão
+    echo "</div>";
+    
     $stmt->close();
     $conexao->close();
 }
 ?>
+
+<script type="text/javascript">
+function validarSelecao() {
+    const checkboxes = document.querySelectorAll("input[name='agendamentos[]']");
+    let selecionado = false;
+
+    checkboxes.forEach((checkbox) => {
+        if (checkbox.checked) {
+            selecionado = true;
+        }
+    });
+
+    if (!selecionado) {
+        alert("Por favor, selecione pelo menos um agendamento para deletar.");
+    }
+
+    return selecionado;
+}
+</script>
