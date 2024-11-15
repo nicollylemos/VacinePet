@@ -6,7 +6,7 @@
     }
     .content {
         position: relative;
-        left: -230px;
+        left: -320px;
     }
 
     .form {
@@ -140,7 +140,7 @@
     }
     .content {
         position: relative;
-        left: -230px;
+        left: -300px;
     }
 
     .form {
@@ -274,7 +274,7 @@
     }
     .content {
         position: relative;
-        left: -220px;
+        left: -300px;
     }
 
     .form {
@@ -407,7 +407,7 @@
     }
     .content {
         position: relative;
-        left: -220px;
+        left: -300px;
     }
 
     .form {
@@ -536,7 +536,7 @@
     }
     .content {
         position: relative;
-        left: -210px;
+        left: -300px;
     }
 
     .form {
@@ -654,7 +654,7 @@
     }
     .content {
         position: relative;
-        left: -210px;
+        left: -300px;
     }
 
     .form {
@@ -724,7 +724,7 @@
         width: 450px;
     }
     .container-valores{
-        width: 450px;
+        width: 550px;
         height: 70px;
     }
     .id{
@@ -769,7 +769,7 @@
     }
     .content {
         position: relative;
-        left: -210px;
+        left: -315px;
     }
 
     .form {
@@ -856,7 +856,7 @@
     }
     .content{
         position: relative;
-        left: -150px;
+        left: -300px;
     }
     .form{
         width: 450px;
@@ -867,12 +867,12 @@
     }
     .container-valores{
         position: relative;
-        left: -50px;
+        left: -10px;
         width: 700px;
     }
     #title-alt{
         position: relative;
-        left: -35px;
+        left: 5px;
     }
     .row{ width: 800px;
         position: relative;
@@ -884,6 +884,11 @@
         top: -300px;
         left: 65px;
     }
+    #container-sair{
+        position: relative;
+        left: -50px;
+        top: 250px;
+    }
 
 }
 @media (min-width:1024px) and (max-width: 2560px){
@@ -894,15 +899,96 @@
     }
     .content{
         position: relative;
+        left: -290px;
+    }
+    .form{
+        width: 450px;
+    }
+    .right {
+        position: relative;
+        left: -150px;
+    }
+    .container-valores{
+        position: relative;
+        left: -10px;
+        width: 700px;
+    }
+    #title-alt{
+        position: relative;
+        left: 5px;
+    }
+    .row{ width: 800px;
+        position: relative;
         left: -200px;
+        top: 100px;
     }
     .btn-add{
         position: relative;
-        top: -500px;
+        top: -300px;
+        left: 65px;
     }
-    .row{
+    #container-sair{
         position: relative;
-        top: 100px;
-        left: -180px;
+        left: -50px;
+        top: 150px;
+    }
+}
+@media (min-width: 390px) and (min-height: 844px){
+    #container-sair{
+        position: relative;
+        top: -100px;
+    }
+}
+@media (min-width: 430px) and (min-height: 932px){
+    #container-sair{
+        position: relative;
+        top: -220px;
+    }
+}
+@media (min-width: 412px) and (min-height: 915px){
+    #container-sair{
+        position: relative;
+        top: -220px;
+    }
+}
+@media (min-width: 360px) and (min-height: 740px){
+    #container-sair{
+        position: relative;
+        top: 50px;
+        left: -80px;
+    }
+}
+@media (min-width: 768px) and (min-height: 1024px){
+    #container-sair{
+        position: relative;
+        top: -380px;
+        left: -50px;
+    }
+}
+@media (min-width: 820px) and (min-height: 1180px){
+    #container-sair{
+        position: relative;
+        top: -600px;
+        left: -50px;
+    }
+}
+@media (min-width: 1024px) and (min-height: 1366px){
+    #container-sair{
+        position: relative;
+        top: -880px;
+        left: -50px;
+    }
+}
+@media (min-width: 412px) and (min-height: 914px){
+    #container-sair{
+        position: relative;
+        top: -210px;
+        left: -50px;
+    }
+}
+@media (min-width: 1920px) and (min-height: 1080px) {
+    #container-sair{
+        position: relative;
+        top: -400px;
     }
 }

@@ -63,6 +63,7 @@
     }
 
 }
+
 @media (min-width:360px) and (max-width: 400px) {
 
     html,
@@ -132,6 +133,7 @@
         bottom: -15px;
     }
 }
+
 @media (min-width: 401px) and (max-width: 430px) {
 
     html,
@@ -201,6 +203,7 @@
         bottom: -15px;
     }
 }
+
 @media (min-width: 431px) and (max-width: 500px) {
 
     html,
@@ -270,6 +273,7 @@
         bottom: -161px;
     }
 }
+
 @media (min-width: 501px) and (max-width: 575px) {
 
     html,
@@ -339,6 +343,7 @@
         bottom: -121px;
     }
 }
+
 @media (min-width: 576px) and (max-width: 650px) {
 
     html,
@@ -413,6 +418,7 @@
         bottom: -90px;
     }
 }
+
 @media (min-width: 651px) and (max-width: 750px) {
 
     html,
@@ -487,6 +493,7 @@
         bottom: -16px;
     }
 }
+
 @media (min-width: 751px) and (max-width: 850px) {
 
     html,
@@ -561,8 +568,9 @@
         bottom: -30px;
     }
 }
-@media (min-width: 851px) and (max-width: 950px){
-   
+
+@media (min-width: 851px) and (max-width: 950px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -635,7 +643,9 @@
         bottom: -15px;
     }
 }
-@media (min-width: 951px) and (max-width: 1050px){
+
+@media (min-width: 951px) and (max-width: 1050px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -708,388 +718,78 @@
         bottom: -15px;
     }
 }
-@media (min-width: 1051px) and (max-width: 1144px){
-    body{
+
+@media (min-width: 1051px) and (max-width: 1144px) {
+    body {
         background-size: 1510px;
     }
 }
-@media (min-width: 1145px) and (max-width: 1240px){
-    body{
+
+@media (min-width: 1145px) and (max-width: 1240px) {
+    body {
         background-size: 1360px;
         background-position: calc(0% + -95px) calc(50% + -20px);
     }
-    #title{
+
+    #title {
         position: relative;
         font-size: 43px;
         left: -4%;
         top: 15px;
     }
-    #sub-title-cas{
+
+    #sub-title-cas {
         position: relative;
         left: -7%;
     }
-    #p1{
+
+    #p1 {
         position: relative;
         left: -7%;
     }
-    #sub-title-esp{
+
+    #sub-title-esp {
         position: relative;
         left: -7%;
     }
-    #p2{
+
+    #p2 {
         position: relative;
         left: -7%;
     }
-    #btn{
+
+    #btn {
         position: relative;
         left: -5%;
     }
 }
-@media (min-width: 1241px) and (max-width: 1300px){
-    body{
-        background-size: 1360px;
-        background-position: calc(0% + -10px) calc(50% + -20px);
-    }
-    #title{
-        position: relative;
-        font-size: 45px;
-        left: -3%;
-        top: 15px;
-    }
-    #sub-title-cas{
-        position: relative;
-        left: -7%;
-    }
-    #p1{
-        position: relative;
-        left: -7%;
-    }
-    #sub-title-esp{
-        position: relative;
-        left: -7%;
-    }
-    #p2{
-        position: relative;
-        left: -7%;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-    }
-}
-@media (min-width: 1301px) and (max-width: 1500px){
-    body{
-        background-size: 1510px;
-        background-position: calc(0% + -60px) calc(50% + -100px);
-    }
-    #title{
-        position: relative;
-        font-size: 45px;
-        left: -3%;
-        top: 15px;
-    }
-    #sub-title-cas{
-        position: relative;
-        left: -7%;
-    }
-    #p1{
-        position: relative;
-        left: -7%;
-    }
-    #sub-title-esp{
-        position: relative;
-        left: -7%;
-    }
-    #p2{
-        position: relative;
-        left: -7%;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-    }
-}
-@media (min-width: 1501px) and (max-width: 1600px){
-    body{
-        background-size: 1610px;
-        background-position: calc(0% + -50px) calc(50% + -80px);
-    }
-    .container{
-        position: relative;
-        top: 20px;
-    }
-    #title{
-        position: relative;
-        font-size: 45px;
-        left: -3%;
-        top: 15px;
-    }
-    #sub-title-cas{
-        position: relative;
-        left: -7%;
-    }
-    #p1{
-        position: relative;
-        left: -7%;
-    }
-    #sub-title-esp{
-        position: relative;
-        left: -7%;
-    }
-    #p2{
-        position: relative;
-        left: -7%;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: 20px;
-    }
-}
-@media (min-width: 1601px) and (max-width: 1700px){
-    body{
-        background-size: 1710px;
-        background-position: calc(0% + -10px) calc(50% + -70px);
-    }
-    .container{
-        position: relative;
-        top: 40px;
-    }
-    #title{
-        position: relative;
-        font-size: 45px;
-        left: -3%;
-        top: 15px;
-    }
-    #sub-title-cas{
-        position: relative;
-        left: -7%;
-    }
-    #p1{
-        position: relative;
-        left: -7%;
-    }
-    #sub-title-esp{
-        position: relative;
-        left: -7%;
-    }
-    #p2{
-        position: relative;
-        left: -7%;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: 20px;
-    }
-}
-@media (min-width: 1701px) and (max-width: 1800px){
-    .text, #title, #sub-title {
-        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
-    }
-    body{
-        background-size: 1850px;
-        background-position: calc(0% + -50px) calc(50% + 110px);
-    }
-    .container{
-        position: relative;
-        top: 40px;
-    }
-    #title{
-        position: relative;
-        font-size: 65px;
-        left: -3%;
-        top: 55px;
-    }
-    #sub-title-cas, #p1, #sub-title-esp, #p2{
-        position: relative;
-        left: -7%;
-        top: -50px;
-    }
-    #p1, #p2{
-        font-size: 20px;
-    }
-    #sub-title-cas, #sub-title-esp{
-        font-size: 30px;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: -100px;
-    }
-}
-@media (min-width: 1801px) and (max-width: 1900px){
-    .text, #title, #sub-title {
-        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
-    }
-    body{
-        background-size: 1910px;
-        background-position: calc(0% + -10px) calc(50% + 70px);
-    }
-    .container{
-        position: relative;
-        top: 40px;
-    }
-    #title{
-        position: relative;
-        font-size: 65px;
-        left: -3%;
-        top: 55px;
-    }
-    #sub-title-cas, #p1, #sub-title-esp, #p2{
-        position: relative;
-        left: -7%;
-        top: -50px;
-    }
-    #p1, #p2{
-        font-size: 20px;
-    }
-    #sub-title-cas, #sub-title-esp{
-        font-size: 30px;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: -100px;
-    }
-}
-@media (min-width: 1901px) and (max-width: 2000px){
-    .text, #title, #sub-title {
-        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
-    }
-    body{
+
+@media (min-width: 1241px) and (max-width: 1309px) {
+    body {
         background-size: cover;
-        background-position: calc(0% + -30px) calc(50% + 70px);
-    }
-    .container{
-        position: relative;
-        top: 40px;
-    }
-    #title{
-        position: relative;
-        font-size: 65px;
-        left: -3%;
-        top: 55px;
-    }
-    #sub-title-cas, #p1, #sub-title-esp, #p2{
-        position: relative;
-        left: -7%;
-        top: -50px;
-    }
-    #p1, #p2{
-        font-size: 20px;
-    }
-    #sub-title-cas, #sub-title-esp{
-        font-size: 30px;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: -100px;
     }
 }
-@media (min-width: 2001px) and (max-width: 2200px){
-    .text, #title, #sub-title {
-        margin-bottom: 115px; /* Ajusta a margem inferior para dar espaço ao footer */
-    }
-    body{
-        background-size: cover;
-        background-position: calc(0% + -5px) calc(50% + 70px);
-    }
-    .container{
-        position: relative;
-        top: 40px;
-    }
-    #title{
-        position: relative;
-        font-size: 65px;
-        left: -3%;
-        top: 55px;
-    }
-    #sub-title-cas, #p1, #sub-title-esp, #p2{
-        position: relative;
-        left: -7%;
-        top: -50px;
-    }
-    #p1, #p2{
-        font-size: 20px;
-    }
-    #sub-title-cas, #sub-title-esp{
-        font-size: 30px;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: -100px;
+
+@media (min-width: 1310px) and (max-width: 1366px) {
+    body {
+        background-size: 1388px;
     }
 }
-@media (min-width: 2201px) and (max-width: 2350px){
-    .text, #title, #sub-title {
-        margin-bottom: 215px; /* Ajusta a margem inferior para dar espaço ao footer */
-    }
+
+@media (min-width: 1367px) and (max-width: 1450px){
     body{
-        background-size: cover;
-        background-position: calc(0% + -5px) calc(50% + 150px);
-    }
-    .container{
-        position: relative;
-        top: 40px;
-    }
-    #title{
-        position: relative;
-        font-size: 65px;
-        left: -3%;
-        top: 155px;
-    }
-    #sub-title-cas, #p1, #sub-title-esp, #p2{
-        position: relative;
-        left: -7%;
-        top: -50px;
-    }
-    #p1, #p2{
-        font-size: 20px;
-    }
-    #sub-title-cas, #sub-title-esp{
-        font-size: 30px;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: -150px;
+        background-size: 1480px;
     }
 }
-@media (min-width: 2351px) and (max-width: 2560px){
-    .text, #title, #sub-title {
-        margin-bottom: 315px; /* Ajusta a margem inferior para dar espaço ao footer */
-    }
+
+@media (min-width: 1451px) and (max-width: 1520px){
     body{
-        background-size: cover;
-        background-position: calc(0% + -10px) calc(50% + 270px);
+        background-size: 1540px;
     }
-    .container{
-        position: relative;
-        top: -80px;
-    }
-    #title{
-        position: relative;
-        font-size: 65px;
-        left: -3%;
-        top: 255px;
-    }
-    #sub-title-cas, #p1, #sub-title-esp, #p2{
-        position: relative;
-        left: -7%;
-        top: -50px;
-    }
-    #p1, #p2{
-        font-size: 20px;
-    }
-    #sub-title-cas, #sub-title-esp{
-        font-size: 30px;
-    }
-    #btn{
-        position: relative;
-        left: -5%;
-        top: -250px;
+}
+
+@media (min-width: 1920px) and (max-width: 2000px){
+    body{
+        background-size: 2050px;
     }
 }
