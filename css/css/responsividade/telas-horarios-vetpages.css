@@ -35,4 +35,188 @@
         border-radius: 4px;
     }
 }
+@media (min-width:521px) and (max-width: 700px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-conteudo {
+        position: relative;
+        left: -210px;
+    }
+    .container {
+        width: 500px;
+    }
+    .selecionar{
+        width: 150px;
+    }
+    /* Estilização da tabela com rolagem horizontal */
+    .table-disponiveis {
+        width: 400px !important;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 
+    /* Personalização da barra de rolagem */
+    .table-disponiveis::-webkit-scrollbar {
+        height: 8px; /* Altura da barra de rolagem */
+    }
+
+    .table-disponiveis::-webkit-scrollbar-thumb {
+        background-color: #52bacb; /* Cor personalizada */
+        border-radius: 4px;
+    }
+
+    .table-disponiveis::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+}
+@media (min-width:701px) and (max-width: 800px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-conteudo {
+        position: relative;
+        left: -230px;
+    }
+    .container {
+        width: 500px;
+    }
+    /* Estilização da tabela com rolagem horizontal */
+    .table-disponiveis {
+        width: 525px !important;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Personalização da barra de rolagem */
+    .table-disponiveis::-webkit-scrollbar {
+        height: 8px; /* Altura da barra de rolagem */
+    }
+
+    .table-disponiveis::-webkit-scrollbar-thumb {
+        background-color: #52bacb; /* Cor personalizada */
+        border-radius: 4px;
+    }
+
+    .table-disponiveis::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+}
+@media (min-width:801px) and (max-width: 900px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-conteudo {
+        position: relative;
+        left: -240px;
+    }
+    /* Estilização da tabela com rolagem horizontal */
+    .table-disponiveis {
+        width: 640px !important;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Personalização da barra de rolagem */
+    .table-disponiveis::-webkit-scrollbar {
+        height: 8px; /* Altura da barra de rolagem */
+    }
+
+    .table-disponiveis::-webkit-scrollbar-thumb {
+        background-color: #52bacb; /* Cor personalizada */
+        border-radius: 4px;
+    }
+
+    .table-disponiveis::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+}
+@media (min-width:901px) and (max-width: 1000px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-conteudo {
+        position: relative;
+        left: -200px;
+    }
+    /* Estilização da tabela com rolagem horizontal */
+    .table-disponiveis {
+        width: 640px !important;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Personalização da barra de rolagem */
+    .table-disponiveis::-webkit-scrollbar {
+        height: 8px; /* Altura da barra de rolagem */
+    }
+
+    .table-disponiveis::-webkit-scrollbar-thumb {
+        background-color: #52bacb; /* Cor personalizada */
+        border-radius: 4px;
+    }
+
+    .table-disponiveis::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+}
+@media (min-width:1001px) and (max-width: 1309px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-conteudo {
+        position: relative;
+        left: -150px;
+    }
+    /* Estilização da tabela com rolagem horizontal */
+    .table-disponiveis {
+        width: 640px !important;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Personalização da barra de rolagem */
+    .table-disponiveis::-webkit-scrollbar {
+        height: 8px; /* Altura da barra de rolagem */
+    }
+
+    .table-disponiveis::-webkit-scrollbar-thumb {
+        background-color: #52bacb; /* Cor personalizada */
+        border-radius: 4px;
+    }
+
+    .table-disponiveis::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+}
+@media (min-width:1310px) and (max-width: 2560px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    .container-conteudo {
+        position: relative;
+        left: -200px;
+    }
+}
