@@ -22,7 +22,8 @@ $meses = [
 $mesAtual = date('n');
 
 echo "<link rel='stylesheet' href='../css/css/vetAtendimento.css' />";
-echo "<div class='container'>";
+echo "<link rel='stylesheet' href='../css/css/responsividade/telas-horarios-vetpages.css' />";
+echo "<div class='container content-apg'>";
 echo "<h1>Apagar Atendimentos</h1>";
 echo "<h2>Selecione Mês e Ano:</h2>";
 echo "<form action='' method='POST'>";
@@ -60,7 +61,7 @@ if (isset($_POST['verAgendamentos'])) {
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        echo "<form action='processar_deletar_agendamento.php' method='POST' onsubmit='return validarSelecao()'>";
+        echo "<form class='form-apg' action='processar_deletar_agendamento.php' method='POST' onsubmit='return validarSelecao()'>";
         echo "<h3>Selecione o agendamento para deletar:</h3>";
 
         while ($row = $result->fetch_assoc()) {

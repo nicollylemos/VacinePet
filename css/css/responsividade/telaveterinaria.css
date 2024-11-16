@@ -1,18 +1,419 @@
-@media (min-width:310px) and (max-width: 400px){
+@media (min-width:310px) and (max-width: 450px){
     html,
     body {
         overflow-x: hidden;
         /* Esconde a rolagem horizontal */
     }
     body{
-        background-image: url(imgs/doutora.png);
-        background-size: 405px;
+        background-image: none;
     }
-
+    .title{
+        position: relative;
+        text-align: left;
+        width: 350px;
+        left: -85px;
+        top: 30px;
+        font-size: 45px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -85px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -125px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -120px;
+        width: 320px;
+    }
+    .btn{
+        position: relative;
+        left: -100px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:451px) and (max-width: 550px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        width: 350px;
+        left: -105px;
+        top: 30px;
+        font-size: 45px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -105px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -153px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -150px;
+        width: 400px;
+    }
+    .btn{
+        position: relative;
+        left: -100px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:551px) and (max-width: 650px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        left: -105px;
+        top: 30px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -105px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -165px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -165px;
+        width: 480px;
+    }
+    .btn{
+        position: relative;
+        left: -120px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:651px) and (max-width: 750px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        left: -125px;
+        top: 30px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -125px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -195px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -195px;
+        width: 550px;
+    }
+    .btn{
+        position: relative;
+        left: -140px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:751px) and (max-width: 850px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        left: -185px;
+        top: 30px;
+        width: 900px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -180px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -260px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -258px;
+        width: 650px;
+    }
+    .btn{
+        position: relative;
+        left: -110px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:851px) and (max-width: 950px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        left: -185px;
+        top: 30px;
+        width: 900px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -180px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -270px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -268px;
+        width: 750px;
+    }
+    .btn{
+        position: relative;
+        left: -120px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:951px) and (max-width: 1050px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        left: -185px;
+        top: 30px;
+        width: 900px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -180px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -280px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -278px;
+        width: 750px;
+    }
+    .btn{
+        position: relative;
+        left: -140px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:1051px) and (max-width: 1150px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        left: -185px;
+        top: 30px;
+        width: 900px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -180px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -290px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -288px;
+        width: 850px;
+    }
+    .btn{
+        position: relative;
+        left: -140px;
+        top: -20px;
+        margin-top: 50px;
+    }
+}
+@media (min-width:1151px) and (max-width: 1320px){
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
+    body{
+        background-image: none;
+    }
+    .title{
+        position: relative;
+        text-align: left;
+        left: -245px;
+        top: 30px;
+        width: 900px;
+    }
+    .subtitle{
+        position: relative;
+        text-align: left;
+        width: 380px;
+        left: -240px;
+        top: 30px;
+        font-size: 20px;
+    }
+    .destaque{
+        position: relative;
+        left: -362px;
+        top: 25px;
+        width: 350px;
+        text-align: left;
+    }
+    #p1, #p2, #p3, #p4{
+        text-align: left;
+        justify-content: none;
+        position: relative;
+        top: 20px;
+        left: -358px;
+        width: 950px;
+    }
+    .btn{
+        position: relative;
+        left: -140px;
+        top: -20px;
+        margin-top: 50px;
+    }
 }
 @media (min-width:1501px) and (max-width: 2560px){
     .sobre-profissional, .final {
         margin-bottom: 220px; /* Ajuste conforme necessário */
-    }
-    
+    } 
 }

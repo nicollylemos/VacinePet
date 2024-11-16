@@ -23,11 +23,12 @@ $meses = [
     9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'
 ];
 echo"  <link rel='stylesheet' href='../css/css/vetAtendimento.css' />";
-echo "<div class='container'>";
+echo "<link rel='stylesheet' href='../css/css/responsividade/telas-horarios-vetpages.css' />";
+echo "<div class='container content-apg'>";
 // Formulário para selecionar mês e ano
 echo "<h1>Atendimentos Disponíveis</h1>";
 echo "<h2>Selecione o Mês e o Ano</h2>";
-echo "<form action='' method='POST'>";
+echo "<form  action='' method='POST'>";
 echo "<label for='mes'>Mês:</label>";
 echo "<select class='selecionar' name='mes'>";
 foreach ($meses as $num => $nome) {

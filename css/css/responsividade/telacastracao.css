@@ -788,8 +788,13 @@
     }
 }
 
-@media (min-width: 1920px) and (max-width: 2000px){
+@media (min-width: 1920px) and (max-width: 2560px){
     body{
         background-size: 2050px;
+    }
+    .container{
+        position: relative;
+        top: 100px;
+        margin-bottom: 240px;
     }
 }
