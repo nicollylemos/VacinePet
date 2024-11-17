@@ -51,34 +51,41 @@ if ($id_agendamento) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atualizar Situação do Agendamento</title>
     <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/css/edicaoo.css">
 </head>
 
 <body>
     <div class="container">
-        <h2>Atualizar Situação do Agendamento</h2>
+        <div class="conteudo-editar">
+            <i class="fa-solid fa-pen-to-square icon"></i>
 
-        <?php if (isset($agendamento)): ?>
-        <form action="" method="POST">
-            <input type="hidden" name="id_agendamento" value="<?php echo $agendamento['id']; ?>">
+            <?php if (isset($agendamento)): ?>
+            <h2>Atualizar Situação do Agendamento</h2>
+            <form action="" method="POST">
+                <input type="hidden" name="id_agendamento" value="<?php echo $agendamento['id']; ?>">
 
-            <label for="id">ID do Agendamento:</label>
-            <input type="text" name="id" value="<?php echo $agendamento['id']; ?>" disabled>
+                <label for="id">ID do Agendamento:</label>
+                <input type="text" name="id" value="<?php echo $agendamento['id']; ?>" disabled>
 
-            <label for="situacao">Situação:</label>
-            <select name="situacao" required>
-                <option value="pendente" <?php echo $agendamento['situacao'] == 'pendente' ? 'selected' : ''; ?>>
-                    Pendente</option>
-                <option value="confirmado" <?php echo $agendamento['situacao'] == 'confirmado' ? 'selected' : ''; ?>>
-                    Confirmado</option>
-                <option value="cancelado" <?php echo $agendamento['situacao'] == 'cancelado' ? 'selected' : ''; ?>>
-                    Cancelado</option>
-            </select>
+                <label for="situacao">Situação:</label>
+                <select name="situacao" required>
+                    <option value="pendente" <?php echo $agendamento['situacao'] == 'pendente' ? 'selected' : ''; ?>>
+                        Pendente</option>
+                    <option value="confirmado"
+                        <?php echo $agendamento['situacao'] == 'confirmado' ? 'selected' : ''; ?>>
+                        Confirmado</option>
+                    <option value="cancelado" <?php echo $agendamento['situacao'] == 'cancelado' ? 'selected' : ''; ?>>
+                        Cancelado</option>
+                </select>
+                <br>
+                <button type="submit" class="save" name="update">Atualizar</button>
+                <a href="index.php" class="back">Voltar</a>
 
-            <button type="submit" name="update">Atualizar</button>
-        </form>
-        <?php else: ?>
-        <p>Agendamento não encontrado.</p>
-        <?php endif; ?>
+            </form>
+            <?php else: ?>
+            <p>Agendamento não encontrado.</p>
+            <?php endif; ?>
+        </div>
     </div>
 </body>
 

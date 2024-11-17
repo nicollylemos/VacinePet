@@ -61,7 +61,7 @@ if(!empty($_GET['id'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/css/EstiloVet.css" />
+    <link rel="stylesheet" href="../css/css/edicaoo.css">
     <title>VacinePet</title>
     <style>
     </style>
@@ -70,9 +70,11 @@ if(!empty($_GET['id'])) {
 <body>
     <!-- A tela de edição -->
     <div class="container">
-        <div class="container-editar">
-            <h2>Editar Valor: <?php echo $nome ?></h2>
-            <p><?php if ($result->num_rows > 0) {
+        <div class="conteudo-editar">
+            <h2>Sobre Agendamento</h2>
+
+            </hbre o2>
+            <p class="infos"><?php if ($result->num_rows > 0) {
             $row = $result->fetch_assoc();
             echo "Nome do Tutor: " . $row['nome'] . "<br>";
             echo "CEP: " . $row['email'] . "<br>";
@@ -88,7 +90,8 @@ if(!empty($_GET['id'])) {
         }
         ?>
             </p>
-            <a href="index.php">Voltar</a>
+            <a href="index.php"> <button class="back">Voltar
+                </button></a>
         </div>
     </div>
 </body>

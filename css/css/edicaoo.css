@@ -1,0 +1,125 @@
+.container{
+    padding-top: 20px;
+    max-width: 1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  
+}
+
+
+.conteudo-editar{
+    width:420px;
+    background-color:#fff ;
+    height:490px;
+    padding: 30px;
+text-align: center;
+    border-radius: 30px;
+    border: 1px solid #ddd; /* Borda cinza suave */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* Sombra leve */
+}
+
+h1{
+    font-family: baloo;
+    text-align: center;
+    color: #52BACB;
+    text-align: center;
+}
+
+h2{
+    margin-bottom:10px;
+    font-family: poppins;
+    text-align: center;
+}
+
+.icon{
+    font-size:30px;
+}
+
+input, select{
+    width: 80%;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+input:focus {
+    border-color: #e97203; /* Azul suave no foco */
+    box-shadow: 0 0 8px rgba(91, 155, 213, 0.3); /* Sombra sutil ao focar */
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: #aaa; /* Cor do placeholder */
+}
+
+.save {
+    background-color: #52BACB;
+    width: 80%;
+    border: none;
+    height: 38px;
+    margin-top: 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    font-size: 16px;
+}
+
+.save:hover {
+    background-color: #65cbd8; /* Um tom mais escuro no hover */
+    transform: scale(1.02); /* Leve aumento para destaque */
+}
+
+.back {
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    width: 80%;
+    height: 38px;
+    color: #52BACB;
+    font-weight: 600;
+    border: 3px solid #52BACB;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Remove o sublinhado */
+    line-height: 38px; /* Centraliza o texto verticalmente */
+}
+
+.back:hover {
+    transform: scale(1.02);
+}
+
+
+
+a{
+    text-decoration: none;
+    color: #52BACB;
+    font-weight: 600;
+}
+
+.valor{
+    margin-top:5px;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.infos{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

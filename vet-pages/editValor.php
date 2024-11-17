@@ -47,19 +47,26 @@ if(!empty($_GET['cod_vac']))
 ?>
 
 <!-- A tela de edição -->
+<link rel="stylesheet" href="../css/css/edicaoo.css">
 <div class="container">
     <div class="conteudo-editar">
-        <h1>Editar Valor: <?php echo $nome ?></h1>
-        <p>Valor atual:<?php echo $valor ?></p>
-        <div>R$ </div>
+        <i class="fa-solid fa-pen-to-square icon"></i>
+        <h2>Editar Valor</h2>
+        <h1> <?php echo $nome ?>
+        </h1>
+        <p>Valor atual:</p>
+        <div class="valor">R$ <?php echo $valor ?></div>
 
         <form method="POST" action="salvarEdit.php">
-            <p>Novo valor:</p>
-            <input type="hidden" name="cod_vac" value=" <?php echo $cod_vac ?>">
+
+            <p> Novo valor:</p> <input type="hidden" name="cod_vac" value=" <?php echo $cod_vac ?>">
             <input type="number" id="valor" value="<?php echo number_format($valor, 2, '.', ''); ?>"
                 class="form-control" name="valor" step="0.01">
 
             <button class="save" type="submit" name="update" id="update">Salvar</button>
+            <br>
+            <a href="valores-alt.php"> <button class="back">Voltar
+                </button></a>
         </form>
     </div>
 </div>
