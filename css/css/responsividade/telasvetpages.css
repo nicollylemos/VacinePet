@@ -136,6 +136,11 @@
         top: -330px;
         left: -100px;
     }
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 250px;
+    }
 }
 @media (min-width:411px) and (max-width: 450px) {
     html,
@@ -211,7 +216,6 @@
         gap: 10px;
         /* Define o espaçamento entre as divs */
     }
-
     #sem {
         position: relative;
         left: -11px;
@@ -274,6 +278,12 @@
         width: 250px;
         top: -330px;
         left: -90px;
+    }
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 250px;
+        top: 100px;
     }
 
 }
@@ -414,6 +424,12 @@
         top: -330px;
         left: -50px;
     } 
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 300px;
+        top: 120px;
+    }
 }
 @media (min-width:501px) and (max-width: 600px) {
     html,
@@ -548,6 +564,12 @@
         top: -330px;
         left: -40px;
     }
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 300px;
+        top: 120px;
+    }
 }
 @media (min-width:601px) and (max-width: 700px) {
     html,
@@ -671,6 +693,12 @@
         top: -330px;
         left: 20px;
     }
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 350px;
+        top: 120px;
+    }
 }
 @media (min-width:701px) and (max-width: 784px) {
     html,
@@ -791,6 +819,12 @@
         top: -330px;
         left: 40px;
     }
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 400px;
+        top: 120px;
+    }
 }
 @media (min-width:785px) and (max-width: 880px) {
     html,
@@ -883,6 +917,12 @@
         top: -330px;
         left: 40px;
     }
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 450px;
+        top: 120px;
+    }
 }
 @media (min-width:881px) and (max-width: 1023px){
     html,
@@ -930,6 +970,12 @@
         width: 350px;
         top: -330px;
         left: 100px;
+    }
+    .conteudo-editar{
+        position: relative;
+        left: 40px;
+        width: 480px;
+        top: 120px;
     }
 }
 @media (min-width:1024px) and (max-width: 1176px){
@@ -1039,6 +1085,10 @@
         left: 200px;
         top: -920px;
     }
+    .conteudo-editar{
+        position: relative;
+        top: 70px;
+    }
 }
 @media (min-width: 390px) and (min-height: 844px){
     #container-sair{
@@ -1053,6 +1103,7 @@
     }
 }
 @media (min-width: 412px) and (min-height: 915px){
+
     #container-sair{
         position: relative;
         top: -220px;
@@ -1091,6 +1142,12 @@
         position: relative;
         top: -210px;
         left: -50px;
+    }
+    .conteudo-editar{
+        position: relative;
+        width: 250px;
+        left: 40px;
+        top: -50px;
     }
 }
 @media (min-width: 1920px) and (min-height: 1080px) {

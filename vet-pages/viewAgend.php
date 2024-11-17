@@ -62,6 +62,7 @@ if(!empty($_GET['id'])) {
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/css/edicaoo.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telasvetpages.css">
     <title>VacinePet</title>
     <style>
     </style>

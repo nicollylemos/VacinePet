@@ -1,12 +1,8 @@
 @media (min-width:310px) and (max-width: 520px){
-    html,
-    body {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
+
     .container-conteudo {
         position: relative;
-        left: -270px;
+        left: -290px;
     }
     .container {
         width: 250px;
@@ -34,6 +30,11 @@
         background-color: #f1f1f1;
         border-radius: 4px;
     }
+    .content-apg{
+        position: relative;
+        left: -250px;
+    }
+
 }
 @media (min-width:521px) and (max-width: 700px){
     html,
@@ -184,7 +185,8 @@
     }
     .container-conteudo {
         position: relative;
-        left: -150px;
+        left: -250px;
+        top: 30px;
     }
     /* Estilização da tabela com rolagem horizontal */
     .table-disponiveis {
@@ -208,6 +210,11 @@
         background-color: #f1f1f1;
         border-radius: 4px;
     }
+    .content-apg{
+        position: relative;
+        left: 150px;
+        top: -1040px;
+    }
 }
 @media (min-width:1310px) and (max-width: 2560px){
     html,
@@ -218,5 +225,10 @@
     .container-conteudo {
         position: relative;
         left: -200px;
+    }
+    .content-apg{
+        position: relative;
+        left: 150px;
+        top: -900px;
     }
 }

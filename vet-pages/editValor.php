@@ -48,6 +48,7 @@ if(!empty($_GET['cod_vac']))
 
 <!-- A tela de edição -->
 <link rel="stylesheet" href="../css/css/edicaoo.css">
+<link rel="stylesheet" href="../css/css/responsividade/telasvetpages.css">
 <div class="container">
     <div class="conteudo-editar">
         <i class="fa-solid fa-pen-to-square icon"></i>
