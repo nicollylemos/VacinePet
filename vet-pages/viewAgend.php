@@ -96,8 +96,14 @@ if (!empty($_GET['id'])) {
                     echo "<span>Castrado:</span> " . ($row['castracao'] ? "Sim" : "Não") . "<br>";
 
                     echo "<h3>Dados do Agendamento</h3>";
-                    echo "<span>Data:</span> " . $row['data_agendamento'] . "<br>";
-                    echo "<span>Horário:</span> " . $row['horario_agendamento'] . "<br>";
+                   // Formatar a data
+                $data_formatada = date('d/m/Y', strtotime($row['data_agendamento']));
+
+                // Formatar a hora
+                $hora_formatada = date('H:i', strtotime($row['horario_agendamento']));
+
+                echo "<span>Data:</span> " . $data_formatada . "<br>";
+                echo "<span>Horário:</span> " . $hora_formatada . "<br>";
                     echo "<span>Serviço:</span> " . $row['servico'] . "<br>";
                     echo "<span>Situação:</span> " . $row['situacao'] . "<br>";
                 } else {
