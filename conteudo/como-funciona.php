@@ -7,32 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como Funciona?</title>
     <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @font-face {
-            font-family: 'baloo';
-            src: url("../font/baloo/Baloo-Regular.ttf");
+    
+
+
+        .menu a {
+
+            font-family: poppins;
         }
 
-        @font-face {
-            font-family: 'league';
-            src: url("../font/league/LeagueSpartan-Regular.ttf");
-        }
-
-        
-    @font-face {
-        font-family: 'poppins';
-        src: url("../font/poppins/Poppins-Medium.ttf");
-    }
-
-
-    .menu a {
-     
-        font-family: poppins;
-    }
         /* Configurações gerais */
         body {
-      
+
             color: #333;
             background-color: #52BACB;
         }
@@ -49,10 +37,11 @@
         .subtitle {
             font-family: sans-serif;
         }
-        a{
+
+        a {
             font-family: poppins;
         }
-       
+
         .title-section h1 {
             font-size: 1.9rem;
             color: #fff;
@@ -251,6 +240,17 @@
             .cta-section h2 {
                 font-size: 1.8rem;
             }
+
+            .images {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .img-fluid {
+                max-width: 80%;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -289,12 +289,7 @@
                 </div>
             </section>
 
-            <section class="cta-section">
-                <h2>Não espere mais para proporcionar o melhor cuidado ao seu animal!</h2>
-                <p>Agende já a visita do nosso veterinário e garanta a saúde e bem-estar do seu pet com toda a
-                    comodidade e segurança do atendimento a domicílio.</p>
-                <a href="../usuario/agendamento.php" class="btn btn-custom">Agende Agora</a>
-            </section>
+
         </main>
     </div>
 
