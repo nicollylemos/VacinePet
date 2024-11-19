@@ -21,10 +21,10 @@
 }
 
 
-span{
+.container span{
     font-weight: 700;
 }
-h2{
+.container h2{
     margin-bottom:10px;
     text-align: center;
     color: #52BACB;
@@ -32,12 +32,12 @@ h2{
     font-size: 35px;
 }
 
-.icon{
+.container .icon{
     width: 100%;
     font-size:30px;
 }
 
-input, select{
+.container input, select{
     width: 80%;
     padding: 12px 16px;
     border: 1px solid #ccc;
@@ -51,17 +51,17 @@ input, select{
 
 
 
-input:focus {
+.container input:focus {
     border-color: #e97203; /* Azul suave no foco */
     box-shadow: 0 0 8px rgba(91, 155, 213, 0.3); /* Sombra sutil ao focar */
     background-color: #fff;
 }
 
-input::placeholder {
+.container input::placeholder {
     color: #aaa; /* Cor do placeholder */
 }
 
-h3{
+.container h3{
     margin-top: 20px;
     margin-bottom: 10px;
     color: #e87d0b;
@@ -113,7 +113,7 @@ h3{
 
 
 
-a{
+.container a{
     text-decoration: none;
     color: #52BACB;
     font-weight: 600;
