@@ -128,7 +128,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
         }
 
         echo "</table>";
-        echo "<input type='submit'class='cad-hora' value='Cadastrar Dias Disponíveis'>";
+        echo "<input type='submit'class='cad-hora cad-hora2' value='Cadastrar Dias Disponíveis'>";
         echo "</form>";
     }
 

@@ -52,6 +52,7 @@ if ($id_agendamento) {
     <title>Atualizar Situação do Agendamento</title>
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="stylesheet" href="../css/css/edicaoo.css">
+    <link rel="stylesheet" href="../css/css/responsividade/telasvetpages.css">
 </head>
 
 <body>

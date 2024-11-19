@@ -17,7 +17,8 @@
  * Esta página contém seções para introduzir o serviço de vacinação de pets no domicílio, um carrossel para vacinas populares
  * com informações e valores estimados, e links para páginas com informações mais detalhadas sobre doenças que afetam cães e gatos.
  */
---><?php
+-->
+<?php
 
 include("./inc/header.php"); ///< Inclui o cabeçalho do site.
 
@@ -54,11 +55,11 @@ $result = $conexao->query($sql);
 </head>
 
 <style>
-html,
-body {
-    overflow-x: hidden;
-    /* Esconde a rolagem horizontal */
-}
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
 </style>
 
 <body>
@@ -80,15 +81,16 @@ body {
                     Ao longo da vida do
                     seu pet manter a vacinação em dia é fundamental.
                     Agende agora com o VacinePet e garanta a saúde do seu animal de
-                    estimação. </p> 
-                    
-                    <?php if ($admin || $logado) : ?>
+                    estimação. </p>
+
+                <?php if ($admin || $logado): ?>
                     <a class="btn-inicio" href="/VacinePet/usuario/agendamento.php">Agendar</a>
-                    <?php endif; ?>
-                    <?php if (!isset($_SESSION['email']) && !isset($_SESSION['senha_hash'])): ?>
-                    <a  class="btn-inicio" href="#" onclick="document.getElementById('modalLogin').showModal(); return false;">Agendar</a>
-                    <?php endif; ?>
-                  
+                <?php endif; ?>
+                <?php if (!isset($_SESSION['email']) && !isset($_SESSION['senha_hash'])): ?>
+                    <a class="btn-inicio" href="#"
+                        onclick="document.getElementById('modalLogin').showModal(); return false;">Agendar</a>
+                <?php endif; ?>
+
             </div>
             <div class="img-animal"></div>
         </div>
@@ -132,33 +134,24 @@ body {
                     <div class="card-wrapper swiper-wrapper">
 
                         <?php
-            // Verifica se existem vacinas cadastradas
-            if ($result->num_rows > 0) {
-                while ($vacina = $result->fetch_assoc()) {
-                    echo '<div class="card swiper-slide" id="cardizinhos">';
-                    echo '<div class="image-content"><span class="overlay"></span>';
-                    echo '<div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img"></div>';
-                    echo '</div>'; // image-content
-                    echo '<div class="card-content">';
-                    echo '<p class="valor">R$' . number_format($vacina['valor'], 2, ',', '.') . '</p>';
-                    echo '<p id="tipo">' . $vacina['tipo'] . '</p>';
-                    echo '<h3 class="nome-vacina">' . $vacina['nome'] . '</h3>';
-                    echo '<p class="description">' . $vacina['descricao'] . '</p>';
-                    if (strpos(strtolower($vacina['tipo']), 'felina') !== false) {
-                        // Vacina Felina
-                        echo '<a href="/VacinePet/conteudo/doencasgato.php"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
-                    } elseif (strpos(strtolower($vacina['tipo']), 'canina') !== false) {
-                        // Vacina Canina
-                        echo '<a href="/VacinePet/conteudo/doencascachorro.php"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
-                    } else {
-                        // Vacinas para ambos ou desconhecidas
-                        echo '<a href="#"><button type="submit" class="btn-vacinas">Ver Mais</button></a>';
-                    }
-                    echo '</div>'; // card-content
-                    echo '</div>'; // card
-                }
-            }
-            ?>
+                        // Verifica se existem vacinas cadastradas
+                        if ($result->num_rows > 0) {
+                            while ($vacina = $result->fetch_assoc()) {
+                                echo '<div class="card swiper-slide" id="cardizinhos">';
+                                echo '<div class="image-content"><span class="overlay"></span>';
+                                echo '<div class="card-image"><img src="imgs/pata-icone.png" alt="" class="card-img"></div>';
+                                echo '</div>'; // image-content
+                                echo '<div class="card-content">';
+                                echo '<p class="valor">R$' . number_format($vacina['valor'], 2, ',', '.') . '</p>';
+                                echo '<p id="tipo">' . $vacina['tipo'] . '</p>';
+                                echo '<h3 class="nome-vacina">' . $vacina['nome'] . '</h3>';
+                                echo '<p class="description">' . $vacina['descricao'] . '</p>';
+
+                                echo '</div>'; // card-content
+                                echo '</div>'; // card
+                            }
+                        }
+                        ?>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>

@@ -1,5 +1,9 @@
 @media (min-width:310px) and (max-width: 520px){
-
+    html,
+    body {
+        overflow-x: hidden;
+        /* Esconde a rolagem horizontal */
+    }
     .container-conteudo {
         position: relative;
         left: -290px;
@@ -30,9 +34,22 @@
         background-color: #f1f1f1;
         border-radius: 4px;
     }
-    .content-apg{
+    .conteudo-apg{
+        margin-left: -290px;
+    }
+    .cad-hora{
         position: relative;
-        left: -250px;
+        left: -20px;
+        top: -20px;
+    }
+    .add-hora{
+        position: relative;
+        left: -25px;
+        top: -10px;
+    }
+    .cad-hora2{
+        position: relative;
+        left: -1px;
     }
 
 }
@@ -44,17 +61,14 @@
     }
     .container-conteudo {
         position: relative;
-        left: -210px;
+        left: -280px;
     }
     .container {
-        width: 500px;
-    }
-    .selecionar{
-        width: 150px;
+        width: 250px;
     }
     /* Estilização da tabela com rolagem horizontal */
     .table-disponiveis {
-        width: 400px !important;
+        width: 350px !important;
         display: block;
         overflow-x: auto;
         white-space: nowrap;
@@ -74,6 +88,27 @@
         background-color: #f1f1f1;
         border-radius: 4px;
     }
+    h1{
+        width: 450px;
+        font-size: 30px;
+    }
+    .conteudo-apg{
+        margin-left: -290px;
+    }
+    .cad-hora{
+        position: relative;
+        left: -20px;
+        top: -20px;
+    }
+    .add-hora{
+        position: relative;
+        left: -25px;
+        top: -10px;
+    }
+    .cad-hora2{
+        position: relative;
+        left: -1px;
+    }
 }
 @media (min-width:701px) and (max-width: 800px){
     html,
@@ -83,7 +118,7 @@
     }
     .container-conteudo {
         position: relative;
-        left: -230px;
+        left: -270px;
     }
     .container {
         width: 500px;
@@ -110,6 +145,23 @@
         background-color: #f1f1f1;
         border-radius: 4px;
     }
+    .conteudo-apg{
+        margin-left: -270px;
+    }
+    .cad-hora{
+        position: relative;
+        left: -20px;
+        top: -20px;
+    }
+    .add-hora{
+        position: relative;
+        left: -25px;
+        top: -10px;
+    }
+    .cad-hora2{
+        position: relative;
+        left: -1px;
+    }
 }
 @media (min-width:801px) and (max-width: 900px){
     html,
@@ -119,7 +171,10 @@
     }
     .container-conteudo {
         position: relative;
-        left: -240px;
+        left: -270px;
+    }
+    .container {
+        width: 500px;
     }
     /* Estilização da tabela com rolagem horizontal */
     .table-disponiveis {
@@ -142,6 +197,23 @@
     .table-disponiveis::-webkit-scrollbar-track {
         background-color: #f1f1f1;
         border-radius: 4px;
+    }
+    .conteudo-apg{
+        margin-left: -270px;
+    }
+    .cad-hora{
+        position: relative;
+        left: -20px;
+        top: -20px;
+    }
+    .add-hora{
+        position: relative;
+        left: -25px;
+        top: -10px;
+    }
+    .cad-hora2{
+        position: relative;
+        left: -1px;
     }
 }
 @media (min-width:901px) and (max-width: 1000px){
@@ -152,7 +224,10 @@
     }
     .container-conteudo {
         position: relative;
-        left: -200px;
+        left: -270px;
+    }
+    .container {
+        width: 500px;
     }
     /* Estilização da tabela com rolagem horizontal */
     .table-disponiveis {
@@ -175,6 +250,23 @@
     .table-disponiveis::-webkit-scrollbar-track {
         background-color: #f1f1f1;
         border-radius: 4px;
+    }
+    .conteudo-apg{
+        margin-left: -270px;
+    }
+    .cad-hora{
+        position: relative;
+        left: -20px;
+        top: -20px;
+    }
+    .add-hora{
+        position: relative;
+        left: -25px;
+        top: -10px;
+    }
+    .cad-hora2{
+        position: relative;
+        left: -1px;
     }
 }
 @media (min-width:1001px) and (max-width: 1309px){
@@ -226,9 +318,8 @@
         position: relative;
         left: -200px;
     }
-    .content-apg{
-        position: relative;
-        left: 150px;
-        top: -900px;
+    .conteudo-apg{
+        margin-left: -200px;
     }
+
 }

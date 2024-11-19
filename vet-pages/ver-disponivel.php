@@ -24,7 +24,7 @@ $meses = [
 ];
 echo"  <link rel='stylesheet' href='../css/css/vetAtendimento.css' />";
 echo "<link rel='stylesheet' href='../css/css/responsividade/telas-horarios-vetpages.css' />";
-echo "<div class='container content-apg'>";
+echo "<div class='container conteudo-apg'>";
 // Formulário para selecionar mês e ano
 echo "<h1>Atendimentos Disponíveis</h1>";
 echo "<h2>Selecione o Mês e o Ano</h2>";
