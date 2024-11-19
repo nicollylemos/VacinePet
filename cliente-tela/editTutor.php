@@ -211,7 +211,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <?php } ?>
 
                 <div class="input-button">
-                    <button type="submit" class="btn-submit" id="btnSalvar" disabled>Salvar Alterações</button>
+                    <button type="submit" class="btn-submit" id="btnSalvar">Salvar Alterações</button>
                     <a href="index.php"> <button type="button" class="btn-cancel">Cancelar</button></a>
                 </div>
 

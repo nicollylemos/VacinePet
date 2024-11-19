@@ -87,13 +87,14 @@ body {
     font-weight: 600;
     border-radius: 50px;
     font-size: 25px;
-    padding: 10.0px;
+    padding: 10px 40px;
     width: 210px;
     border: none;
     font-family: league;
     letter-spacing: 1px;
     cursor: pointer;
     text-decoration: none;
+    
 }
 
 .btn-inicio:hover {
