@@ -108,27 +108,28 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="../css/css/cadastro.css">
     <link rel="stylesheet" href="../css/css/responsividade/telacadastrar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <link rel="icon" href="/VacinePet/imgs/logo-borda.png" type="image/x-icon">
     <title>VacinePet - Cadastro</title>
     <style>
-        .hidden {
-            display: none;
-        }
+    .hidden {
+        display: none;
+    }
 
-        .error {
-            border: 2px solid red;
-        }
+    .error {
+        border: 2px solid red;
+    }
 
-        .erro {
-            border-color: red;
-        }
-
-
+    .erro {
+        border-color: red;
+    }
 
 
-        .text-danger {
-            color: red;
-            font-size: 14px;
-        }
+
+
+    .text-danger {
+        color: red;
+        font-size: 14px;
+    }
     </style>
     <title>Cadastro de Tutor</title>
 </head>
@@ -232,7 +233,7 @@ if (isset($_POST['submit'])) {
                                 placeholder="Email">
                             <span class="span-required">Digite um email válido</span>
                             <?php if (!empty($error_email)): ?>
-                                <span class="text-danger"><?php echo $error_email; ?></span>
+                            <span class="text-danger"><?php echo $error_email; ?></span>
                             <?php endif; ?>
                         </div>
 
@@ -386,35 +387,35 @@ if (isset($_POST['submit'])) {
 </body>
 
 <script>
-    // Função de validação ao submeter o formulário
-    document.getElementById('form').onsubmit = function (event) {
-        const requiredFields = document.querySelectorAll('.required');
-        let isValid = true;
+// Função de validação ao submeter o formulário
+document.getElementById('form').onsubmit = function(event) {
+    const requiredFields = document.querySelectorAll('.required');
+    let isValid = true;
 
-        // Checa cada campo obrigatório
-        requiredFields.forEach(field => {
-            if (!field.value) {
-                field.classList.add('error'); // Adiciona a classe error (borda vermelha)
-                isValid = false;
-            } else {
-                field.classList.remove('error');
-            }
-        });
-
-        // Se houver campos não preenchidos, exibe o modal e cancela o envio
-        if (!isValid) {
-            event.preventDefault(); // Impede o envio do formulário
-            var modal = new bootstrap.Modal(document.getElementById('errorModal'), {
-                backdrop: false // Desativa o fundo escurecido
-            });
-            modal.show();
+    // Checa cada campo obrigatório
+    requiredFields.forEach(field => {
+        if (!field.value) {
+            field.classList.add('error'); // Adiciona a classe error (borda vermelha)
+            isValid = false;
+        } else {
+            field.classList.remove('error');
         }
+    });
 
-    };
+    // Se houver campos não preenchidos, exibe o modal e cancela o envio
+    if (!isValid) {
+        event.preventDefault(); // Impede o envio do formulário
+        var modal = new bootstrap.Modal(document.getElementById('errorModal'), {
+            backdrop: false // Desativa o fundo escurecido
+        });
+        modal.show();
+    }
+
+};
 </script>
 
 <script>
-    // Função para validar o CEP
+// Função para validar o CEP
 document.getElementById('cep').addEventListener('blur', function() {
     var cepInput = this.value.replace(/\D/g, ''); // Remove caracteres não numéricos
     if (cepInput.length === 8) { // Verifica se o CEP tem 8 dígitos
@@ -441,7 +442,6 @@ document.getElementById('cep').addEventListener('blur', function() {
         alert("Por favor, insira um CEP válido com 8 dígitos.");
     }
 });
-
 </script>
 
 <!-- Bootstrap JS -->
@@ -449,66 +449,66 @@ document.getElementById('cep').addEventListener('blur', function() {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-    /Validação dos campos/
+/Validação dos campos/
 
-    const form = document.getElementById('form');
-    const campos = document.querySelectorAll('.required');
-    const spans = document.querySelectorAll('.span-required');
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span-required');
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 
 
 
-    /Funções para aparecer e sumir o erro/
 
-    function setError(index) {
-        campos[index].style.border = '2px solid red';
-        spans[index].style.display = 'block';
+
+/Funções para aparecer e sumir o erro/
+
+function setError(index) {
+    campos[index].style.border = '2px solid red';
+    spans[index].style.display = 'block';
+}
+
+function removeError(index) {
+    campos[index].style.border = '';
+    spans[index].style.display = 'none';
+}
+/Validação do nome/
+
+function nameValidate() {
+    if (campos[0].value.length < 3) {
+
+        setError(0);
+    } else {
+        removeError(0)
+
     }
+}
 
-    function removeError(index) {
-        campos[index].style.border = '';
-        spans[index].style.display = 'none';
+/Validação do email/
+
+function emailValidate() {
+    if (!emailRegex.test(campos[2].value)) {
+        setError(2);
+    } else {
+        removeError(2);
     }
-    /Validação do nome/
+}
 
-    function nameValidate() {
-        if (campos[0].value.length < 3) {
+/Validação de senha/
 
-            setError(0);
-        } else {
-            removeError(0)
+function mainPasswordValidate() {
+    const senha = document.getElementById('senha');
+    const senhaSpan = document.querySelector(
+        '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
 
-        }
+    if (senha.value.length < 8) {
+        senha.style.border = '2px solid red';
+        senhaSpan.style.display = 'block';
+    } else {
+        senha.style.border = '';
+        senhaSpan.style.display = 'none';
     }
-
-    /Validação do email/
-
-    function emailValidate() {
-        if (!emailRegex.test(campos[2].value)) {
-            setError(2);
-        } else {
-            removeError(2);
-        }
-    }
-
-    /Validação de senha/
-
-    function mainPasswordValidate() {
-        const senha = document.getElementById('senha');
-        const senhaSpan = document.querySelector(
-            '#senha + .span-required'); // Seleciona o span que vem logo após o campo senha
-
-        if (senha.value.length < 8) {
-            senha.style.border = '2px solid red';
-            senhaSpan.style.display = 'block';
-        } else {
-            senha.style.border = '';
-            senhaSpan.style.display = 'none';
-        }
-    }
+}
 </script>
 
 
@@ -516,75 +516,75 @@ document.getElementById('cep').addEventListener('blur', function() {
 <script src="../js/cadastrar.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-    </script>
+</script>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 
 <script>
-    // Função para aplicar a máscara do CPF enquanto o usuário digita
-    function mascaraCPF(cpf) {
-        // Remove tudo que não é dígito
-        cpf.value = cpf.value.replace(/\D/g, "");
+// Função para aplicar a máscara do CPF enquanto o usuário digita
+function mascaraCPF(cpf) {
+    // Remove tudo que não é dígito
+    cpf.value = cpf.value.replace(/\D/g, "");
 
-        // Aplica a máscara com pontos e traço
-        cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
-        cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
-        cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+    // Aplica a máscara com pontos e traço
+    cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf.value = cpf.value.replace(/(\d{3})(\d)/, "$1.$2");
+    cpf.value = cpf.value.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+}
+
+// Função para validar o CPF, mantendo pontos e traços
+function validarCPF(cpf) {
+    // Mantém os pontos e traço para a exibição, mas retira para a validação
+    var cpfSemMascara = cpf.replace(/[^\d]+/g, ''); // Remove pontos e traço
+
+    // Validação básica de formato
+    if (cpfSemMascara == '' || cpfSemMascara.length != 11 || /^(\d)\1+$/.test(cpfSemMascara)) {
+        return false;
     }
 
-    // Função para validar o CPF, mantendo pontos e traços
-    function validarCPF(cpf) {
-        // Mantém os pontos e traço para a exibição, mas retira para a validação
-        var cpfSemMascara = cpf.replace(/[^\d]+/g, ''); // Remove pontos e traço
+    // Validação dos dígitos verificadores
+    var soma = 0,
+        resto;
+    for (var i = 1; i <= 9; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (11 - i);
+    resto = (soma * 10) % 11;
+    if ((resto == 10) || (resto == 11)) resto = 0;
+    if (resto != parseInt(cpfSemMascara.substring(9, 10))) return false;
 
-        // Validação básica de formato
-        if (cpfSemMascara == '' || cpfSemMascara.length != 11 || /^(\d)\1+$/.test(cpfSemMascara)) {
-            return false;
-        }
+    soma = 0;
+    for (var i = 1; i <= 10; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (12 - i);
+    resto = (soma * 10) % 11;
+    if ((resto == 10) || (resto == 11)) resto = 0;
+    if (resto != parseInt(cpfSemMascara.substring(10, 11))) return false;
 
-        // Validação dos dígitos verificadores
-        var soma = 0, resto;
-        for (var i = 1; i <= 9; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (11 - i);
-        resto = (soma * 10) % 11;
-        if ((resto == 10) || (resto == 11)) resto = 0;
-        if (resto != parseInt(cpfSemMascara.substring(9, 10))) return false;
+    return true;
+}
 
-        soma = 0;
-        for (var i = 1; i <= 10; i++) soma += parseInt(cpfSemMascara.substring(i - 1, i)) * (12 - i);
-        resto = (soma * 10) % 11;
-        if ((resto == 10) || (resto == 11)) resto = 0;
-        if (resto != parseInt(cpfSemMascara.substring(10, 11))) return false;
-
-        return true;
+// Aplicação da validação ao perder o foco (blur)
+document.getElementById("cpf").addEventListener("blur", function() {
+    var cpfInput = this;
+    if (!validarCPF(cpfInput.value)) {
+        cpfInput.classList.add("erro");
+        alert("CPF inválido! Verifique e tente novamente.");
+    } else {
+        cpfInput.classList.remove("erro");
     }
-
-    // Aplicação da validação ao perder o foco (blur)
-    document.getElementById("cpf").addEventListener("blur", function () {
-        var cpfInput = this;
-        if (!validarCPF(cpfInput.value)) {
-            cpfInput.classList.add("erro");
-            alert("CPF inválido! Verifique e tente novamente.");
-        } else {
-            cpfInput.classList.remove("erro");
-        }
-    });
-
+});
 </script>
 </script>
 <script>
-    $('#cep').mask('00000-000');
-    $('#telefone').mask('(00) 00000-0000');
-    $('#money').mask("#.##0,00", {
-        reverse: true
-    });
+$('#cep').mask('00000-000');
+$('#telefone').mask('(00) 00000-0000');
+$('#money').mask("#.##0,00", {
+    reverse: true
+});
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const requiredFields = document.querySelectorAll('.required');
 
     requiredFields.forEach((field, index) => {
-        field.addEventListener('keydown', function (event) {
+        field.addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
                 event.preventDefault(); // Impede o envio do formulário
                 // Muda o foco para o próximo campo

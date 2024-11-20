@@ -66,6 +66,7 @@ $ano = isset($_POST['ano']) ? $_POST['ano'] : date('Y');  // Ano atual se não e
     <title>Agendamento</title>
     <link rel="stylesheet" href="../css/css/agendaEstilo.css">
     <link rel="stylesheet" href="../css/css/responsividade/telaagenda.css">
+    <link rel="icon" href="/VacinePet/imgs/logo-borda.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <style>

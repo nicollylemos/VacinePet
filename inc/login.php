@@ -12,17 +12,18 @@ session_start();
     <link rel="stylesheet" href="../css/css/entrar.css">
     <link rel="stylesheet" href="../css/css/responsividade/telaentra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+    <link rel="icon" href="/VacinePet/imgs/logo-borda.png" type="image/x-icon">
     <title>Login</title>
 
     <style>
-        #toggleSenha {
-            font-size: 18px;
-            color: #888;
-        }
+    #toggleSenha {
+        font-size: 18px;
+        color: #888;
+    }
 
-        #toggleSenha:hover {
-            color: #000;
-        }
+    #toggleSenha:hover {
+        color: #000;
+    }
     </style>
 </head>
 
@@ -50,8 +51,8 @@ session_start();
                     </div>
 
                     <div class="form-group mt-4" style="position: relative;">
-                        <input type="password"  placeholder="Senha" class="form-control" name="senha"
-                            id="senha" style="padding-right: 40px;">
+                        <input type="password" placeholder="Senha" class="form-control" name="senha" id="senha"
+                            style="padding-right: 40px;">
                         <button type="button" id="toggleSenha"
                             style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); border: none; background: none; cursor: pointer;">
                             <i id="iconeOlho" class="fa fa-eye"></i>
@@ -85,19 +86,19 @@ session_start();
 </body>
 
 <script>
-    const inputSenha = document.getElementById('senha');
-    const botaoToggle = document.getElementById('toggleSenha');
-    const iconeOlho = document.getElementById('iconeOlho');
+const inputSenha = document.getElementById('senha');
+const botaoToggle = document.getElementById('toggleSenha');
+const iconeOlho = document.getElementById('iconeOlho');
 
-    botaoToggle.addEventListener('click', () => {
-        // Alterna o tipo entre 'password' e 'text'
-        const tipoAtual = inputSenha.getAttribute('type');
-        inputSenha.setAttribute('type', tipoAtual === 'password' ? 'text' : 'password');
+botaoToggle.addEventListener('click', () => {
+    // Alterna o tipo entre 'password' e 'text'
+    const tipoAtual = inputSenha.getAttribute('type');
+    inputSenha.setAttribute('type', tipoAtual === 'password' ? 'text' : 'password');
 
-        // Alterna o ícone
-        iconeOlho.classList.toggle('fa-eye');
-        iconeOlho.classList.toggle('fa-eye-slash');
-    });
+    // Alterna o ícone
+    iconeOlho.classList.toggle('fa-eye');
+    iconeOlho.classList.toggle('fa-eye-slash');
+});
 </script>
 
 
