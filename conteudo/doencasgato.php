@@ -13,7 +13,7 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../css/css/responsividade/teladoencascats.css">
+    <link rel="stylesheet" href="../css/css/responsividade/teladoencascatss.css">
     <title>Doenças Felinas</title>
 
     <style>
@@ -108,8 +108,8 @@ include("../inc/header.php");
                                             olhos dos gatos. Frequentemente, a clamidiose ocorre ao mesmo tempo com
                                             outras
                                             infecções respiratórias. Se os olhos não forem tratados adequadamente, pode
-                                            haver comprometimento permanente da visão... </p><button type="submit"
-                                            class="btn-vacinas">Ver
+                                            haver comprometimento permanente da visão... </p><button
+                                            onclick="modal3.showModal()" type="submit" class="btn-vacinas">Ver
                                             Mais</button>
                                     </div>
                                 </div>

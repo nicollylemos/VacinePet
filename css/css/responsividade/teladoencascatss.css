@@ -274,9 +274,7 @@
         background-repeat: no-repeat;
         background-position: top;
     }
-    .description{
-        font-size:10px;
-    }
+   
     .title-start{
         font-size: 60px;
         position: relative;
@@ -379,9 +377,7 @@
         top: -20px;
         font-size: 20px;
     }
-    .description{
-        font-size:10px;
-    }
+    
     .btn-custom{
         position: relative;
         top: 110px;
@@ -598,7 +594,7 @@
     }
   
     .description{
-        font-size:15px;
+        font-size:12px;
     }
     .btn-custom{
         position: relative;
@@ -670,7 +666,7 @@
     }
    
     .description{
-        font-size:10px;
+        font-size:12px;
     }
     .btn-custom{
         position: relative;
@@ -742,7 +738,7 @@
     }
     
     .description{
-        font-size:10px;
+        font-size:12px;
     }
     .btn-custom{
         position: relative;
@@ -814,7 +810,7 @@
     }
       
     .description{
-        font-size:10px;
+        font-size:12px;
     }
     .btn-custom{
         position: relative;
@@ -867,7 +863,7 @@
         left: 20px;
     }
     .description{
-        font-size:10px;
+        font-size:13px;
     }
     .btn-custom{
         position: relative;
@@ -917,7 +913,7 @@
         left: 20px;
     }
     .description{
-        font-size:10px;
+        font-size:13px;
     }
     .btn-custom{
         position: relative;
@@ -967,11 +963,11 @@
         left: 20px;
     }
     .description{
-        font-size:10px;
+        font-size:13px;
     }
     .btn-custom{
         position: relative;
-        top: 170px;
+        top: 110px;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -980,7 +976,7 @@
     }
     .slide-container{
         position: relative;
-        top: 120px;
+        top: 10px;
     }
     .btn-vacinas{
     
