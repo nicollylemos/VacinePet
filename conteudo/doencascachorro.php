@@ -27,7 +27,7 @@ include("../inc/header.php");
             <div class="espaco"></div>
             <div class="escritos">
                 <h1 class="title-start">Doenças Caninas</h1>
-                <h4 class="sub-title-start">Conheça as doenças felinas e proteja seu melhor amigo!
+                <h4 class="sub-title-start">Conheça as doenças caninas e proteja seu melhor amigo!
                     Saber mais sobre infecções e problemas genéticos
                     é essencial para a saúde do seu cão. Identifique
                     sintomas cedo e assegure um tratamento eficaz.
