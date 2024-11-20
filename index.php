@@ -55,11 +55,11 @@ $result = $conexao->query($sql);
 </head>
 
 <style>
-    html,
-    body {
-        overflow-x: hidden;
-        /* Esconde a rolagem horizontal */
-    }
+html,
+body {
+    overflow-x: hidden;
+    /* Esconde a rolagem horizontal */
+}
 </style>
 
 <body>
@@ -84,11 +84,11 @@ $result = $conexao->query($sql);
                     estimação. </p>
 
                 <?php if ($admin || $logado): ?>
-                    <a class="btn-inicio" href="/VacinePet/usuario/agendamento.php">Agendar</a>
+                <a class="btn-inicio" href="/VacinePet/usuario/agendamento.php">Agendar</a>
                 <?php endif; ?>
                 <?php if (!isset($_SESSION['email']) && !isset($_SESSION['senha_hash'])): ?>
-                    <a class="btn-inicio" href="#"
-                        onclick="document.getElementById('modalLogin').showModal(); return false;">Agendar</a>
+                <a class="btn-inicio" href="#"
+                    onclick="document.getElementById('modalLogin').showModal(); return false;">Agendar</a>
                 <?php endif; ?>
 
             </div>
@@ -113,7 +113,7 @@ $result = $conexao->query($sql);
                         <h3>GATO</h3>
                         <p>Muitos problemas de saúde podem atingir nossos pets. Informe-se sobre as doenças que
                             podem afetar seus pets e como preveni-las. Conheça os riscos à saúde do seu gato!</p>
-                        <a href="/VacinePet/conteudo/doencasgato.php"><button id="btn-gato" class="btn-ler">Ler
+                        <a href="/VacinePet/conteudo/doencasgatos.php"><button id="btn-gato" class="btn-ler">Ler
                                 Mais</button></a>
                     </div>
                 </div>
