@@ -39,6 +39,7 @@ if ($_SESSION['email'] !== 'lmonicagm@gmail.com') {
     <link rel="stylesheet" href="../css/css/veterinarioo.css" />
     <link rel="stylesheet" href="../css/css/diariovetd.css" />
     <link rel="stylesheet" href="../css/css/responsividade/telasvetpages.css" />
+    <link rel="stylesheet" href="../css/css/responsividade/tela-diario-vet-pages.css" />
     <title>VacinePet</title>
 </head>
 

@@ -65,8 +65,8 @@ if (!empty($_GET['id'])) {
 
 <body>
     <div class="container">
-        <div class="conteudo-editar">
-            <h2>Sobre o Agendamento</h2>
+        <div id="sobre-ag" class="conteudo-editar">
+            <h2 id="title-sobre">Sobre o Agendamento</h2>
             <p class="infos">
                 <?php 
                 if ($result->num_rows > 0) {
