@@ -18,7 +18,8 @@
         z-index: 1;
         line-height: 35px;
         letter-spacing: 1px;
-        font-size: 50px;
+        font-size: 40px;
+        left: 30px;
         
     }
     .sub-title-start{
@@ -81,23 +82,28 @@
         background-repeat: no-repeat;
         background-position: top;
     }
-    .title-start{
-        font-size: 45px;
+    .conta h1{
+        color: #ffd371;
+        font-family: baloo;
         position: relative;
-        left: 19px;
-        top: -20px;
+        z-index: 1;
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 45px;
+        left: 30px;
+        
     }
     .sub-title-start{
         width: 360px;
         position: relative;
-        top: 180px;
+        top: 200px;
         left: -150px;
         text-align: left;
         color: #000;
     }
     .btn-start{
         position: relative;
-        top: 195px;
+        top: 205px;
         left: -80px;
     }
     #title-do{
@@ -146,23 +152,29 @@
         background-repeat: no-repeat;
         background-position: top;
     }
-    .title-start{
-        font-size: 45px;
+    .conta h1{
+        color: #ffd371;
+        font-family: baloo;
         position: relative;
-        left: 19px;
-        top: -20px;
+        z-index: 1;
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 45px;
+        left: 45px;
+        top: 20px;
+        
     }
     .sub-title-start{
         width: 360px;
         position: relative;
-        top: 180px;
+        top: 220px;
         left: -150px;
         color: #000;
         text-align: left;
     }
     .btn-start{
         position: relative;
-        top: 195px;
+        top: 225px;
         left: -80px;
     }
     #title-do{
@@ -211,41 +223,47 @@
         background-repeat: no-repeat;
         background-position: top;
     }
-    .title-start{
-        font-size: 55px;
+    .conta h1{
+        color: #ffd371;
+        font-family: baloo;
         position: relative;
-        left: 19px;
-        top: -10px;
+        z-index: 1;
+        line-height: 45px;
+        letter-spacing: 1px;
+        font-size: 55px;
+        left: 40px;
+        top: 25px;
+        
     }
     .sub-title-start{
-        width: 360px;
+        width: 450px;
         font-size: 25px;
         position: relative;
-        top: 190px;
-        left: -150px;
+        top: 260px;
+        left: -190px;
         text-align: left;
         color: #000;
     }
     .btn-start{
         position: relative;
-        top: 200px;
+        top: 280px;
         left: -80px;
     }
     #title-do{
         font-size: 50px;
         position: relative;
-        top: 5px;
+        top: 115px;
     }
     .subtitle{
-        width: 400px;
+        width: 450px;
         position: relative;
-        left: 75px;
-        top: -20px;
+        left: 25px;
+        top: 80px;
         font-size: 20px;
     }
     .btn-custom{
         position: relative;
-        top: 110px;
+        top: 200px;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -254,7 +272,7 @@
     }
     .slide-container{
         position: relative;
-        top: 10px;
+        top: 80px;
     }
     .modal-css{
         max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
@@ -274,44 +292,47 @@
         background-repeat: no-repeat;
         background-position: top;
     }
-    .description{
-        font-size:10px;
-    }
-    .title-start{
-        font-size: 60px;
+    .conta h1{
+        color: #ffd371;
+        font-family: baloo;
         position: relative;
-        left: 25px;
-        top: 10px;
+        z-index: 1;
+        line-height: 55px;
+        letter-spacing: 1px;
+        font-size: 65px;
+        left: 40px;
+        top: 45px;
+        
     }
     .sub-title-start{
-        width: 360px;
+        width: 500px;
         font-size: 25px;
         position: relative;
-        top: 220px;
-        left: -130px;
+        top: 290px;
+        left: -205px;
         text-align: left;
         color: #000;
     }
     .btn-start{
         position: relative;
-        top: 240px;
+        top: 310px;
         left: -80px;
     }
     #title-do{
         font-size: 50px;
         position: relative;
-        top: 5px;
+        top: 115px;
     }
     .subtitle{
-        width: 400px;
+        width: 500px;
         position: relative;
-        left: 110px;
-        top: -20px;
+        left: 45px;
+        top: 80px;
         font-size: 20px;
     }
     .btn-custom{
         position: relative;
-        top: 110px;
+        top: 200px;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -320,14 +341,13 @@
     }
     .slide-container{
         position: relative;
-        top: 10px;
+        top: 80px;
     }
     .modal-css{
         max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
         overflow-y: auto; /* Habilita a rolagem vertical */
         padding: 16px; /* Dá um pouco de espaço interno */
         }
-
         .btn-vacinas{
             font-size: 10px;
             width: 95%;
@@ -346,9 +366,9 @@
         background-position: top;
     }
     .title-start{
-        font-size: 65px;
+        font-size: 75px;
         position: relative;
-        left: 25px;
+        left: 55px;
         top: 15px;
     }
     .sub-title-start{
@@ -356,7 +376,7 @@
         font-size: 25px;
         position: relative;
         top: 260px;
-        left: -250px;
+        left: -260px;
         text-align: left;
         color: #000;
     }
@@ -373,14 +393,11 @@
 
    
     .subtitle{
-        width: 450px;
+        width: 500px;
         position: relative;
-        left: 110px;
+        left: 60px;
         top: -20px;
         font-size: 20px;
-    }
-    .description{
-        font-size:10px;
     }
     .btn-custom{
         position: relative;
@@ -420,7 +437,7 @@
     .title-start{
         font-size: 75px;
         position: relative;
-        left: 35px;
+        left: 65px;
         top: 15px;
     }
     .sub-title-start{
@@ -443,17 +460,13 @@
         top: -15px;
     }
     .subtitle{
-        width: 400px;
+        width: 600px;
         position: relative;
         left: 50%;
         transform: translate(-50%,-50%);
         top: 30px;
         font-size: 20px;
         text-align: center;
-    }
-   
-    .description{
-        font-size:10px;
     }
     .btn-custom{
         position: relative;
@@ -491,9 +504,9 @@
         background-position: top;
     }
     .title-start{
-        font-size: 75px;
+        font-size: 85px;
         position: relative;
-        left: 35px;
+        left: 85px;
         top: 15px;
     }
     .sub-title-start{
@@ -525,7 +538,7 @@
     }
   
     .description{
-        font-size:15px;
+        font-size:25px;
     }
     .btn-custom{
         position: relative;
@@ -565,7 +578,7 @@
     .title-start{
         font-size: 85px;
         position: relative;
-        left: 45px;
+        left: 65px;
         top: 15px;
     }
     .sub-title-start{
@@ -638,8 +651,9 @@
     .title-start{
         font-size: 95px;
         position: relative;
-        left: 50px;
+        left: 60px;
         top: 15px;
+        line-height: 65px;
     }
     .sub-title-start{
         width: 700px;
@@ -669,9 +683,6 @@
         font-size: 20px;
     }
    
-    .description{
-        font-size:10px;
-    }
     .btn-custom{
         position: relative;
         top: 110px;
@@ -965,9 +976,6 @@
     .subtitle{
         position: relative;
         left: 20px;
-    }
-    .description{
-        font-size:10px;
     }
     .btn-custom{
         position: relative;
