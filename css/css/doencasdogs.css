@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'league';
     src: url("../font/league/LeagueSpartan-Regular.ttf");
@@ -29,16 +31,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-top: -1%;
     width: 100%;
     height: 100vh;
+    
 }
 .subtitle{
     text-align: center;
-    font-family: league;
-    font-size: 20px;
-    margin-top: -2%;
+    font-family: poppins;
+    font-size: 18px;
     color: #3b3b3b;
+    margin-top: -1%;
+    margin-bottom: 20px;
 }
 
 .escritos {
@@ -46,21 +49,23 @@ body {
     margin-left: 45%;
     position: relative;
     width: 45%;
+    
 }
-.title-start {
-    color: #FA5909;
+.conta h1 {
+    color:  #FA5909;
     font-family: baloo;
-    font-size: 85px;
     position: relative;
     z-index: 1;
-    line-height: 0.85; 
+    line-height: 65px;
+    letter-spacing: -5px;
 }
 .sub-title-start {
     color: #3b3b3b;
-    font-family: baloo;
+    font-family: poppins;
     font-size: 20px;
     position: relative;
-    margin-top: 1%;
+    margin-top: 3%;
+    font-weight: 700;
 }
 #doencas {
     background-color: rgb(255, 255, 255);
@@ -70,32 +75,37 @@ body {
     position: relative;
     font-family: baloo;
     font-size: 23px;
-    background-color: transparent; /* Fundo transparente */
-    border: 3px solid #FD811C; /* Borda laranja */
+    background-color:  #FA5909;
+    border: 3px solid  #FA5909; 
     border-radius: 20px;
     width: 200px;
-    color: #FD811C; /* Texto laranja */
-    margin-top: 2%;
+    color: #ffffff;
+    margin-top: 5%;
 }
 
 .btn-start:hover {
-    background-color: #fcab65;
-    border-color: #fcab65;
+    background-color: #fa925e;
+    border-color:  #fa925e;
 }
 
 
 /* carrossel help */
+
+.vacinas-valor{
+    position: relative;
+    top: 300%;
+    
+}
 .valores-info {
     display: flex;
     align-items: center;
     min-height: 100vh;
     justify-content: center;
-
+    
 }
 
 .slide-content {
     margin: 0 40px;
-    margin-top: 2%;
 }
 
 .valores-info h2 {
@@ -106,39 +116,72 @@ body {
     border-radius: 25px;
     background-color: #ffffff;
     height: 900px;
-    border-color: #FD811C;
+    border: 1px solid #a8a8a8;
 
 }
+
+.image-content,
 .card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 14px;
-    margin-top: 33%;
-    height: 300px;
 }
 
+.card-image {
+    position: relative;
+    height: 55px;
+    width: 55px;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: #FD811C solid 6px;
+}
+.fa-dog{
+    text-align: center;
+   color: #FD811C;
+    padding-top: 6px;
+    font-size: 25px;
+}
 .slide-container {
     width: 100%;
+    padding: 40px 0;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px 0 25px;
+    padding: 25px 0;
 }
 
 .nome-vacina {
     font-family: baloo;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
-    color: #FD811C;
+    color:#FD811C;
     position: relative;
-    bottom: 55px;
+    bottom: 50px;
     text-align: center;
     align-items: center;
+    height: 60px;
+    margin-top: 20px;
 }
+
 .description {
     font-size: 14px;
-    color: #898383;
+    color: #3e3e3e;
     text-align: center;
     position: relative;
-    bottom: 60px;
+    bottom: 47px;
     font-family: poppins;
+    font-weight: 700;
+    height:150px;
 }
 
 .append-buttons {
@@ -149,82 +192,53 @@ body {
 .swiper {
     width: 95%;
 }
+
+.btn-img {
+    z-index: auto;
+    position: absolute;
+}
+
 .valor {
     font-size: 30px;
     font-family: baloo;
     position: relative;
-    bottom: 30px;
+    bottom: 43px;
+    
 }
 
 .btn-vacinas {
-    background-color: #FD811C;
+    background-color:#FD811C;
     color: #fff;
     font-weight: 500;
     border-radius: 15px;
     font-size: 18px;
     padding: 8px;
-    width: 90px;
-    height: 40px;
-    border: none;
-    letter-spacing: 1px;
-    position: relative;
-    bottom: 45px;
-    align-items: center;
-}
-.btn-vacinas:hover{
-    background-color: #ffae6b;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 15px;
-    font-size: 18px;
-    padding: 8px;
-    width: 90px;
-    height: 40px;
+    width: 250px;
     border: none;
     font-family: baloo;
     letter-spacing: 1px;
     position: relative;
-    bottom: 45px;
+    bottom: 20px;
+    cursor: pointer;
+    margin-top: 15px;
 }
+
 .titulo-vacina h2 {
     text-align: center;
     align-items: center;
     font-family: baloo;
     font-weight: 800;
-    color: #52BACB;
+    color: #FD811C;
     margin: 35px;
-    font-size: 45px;
-    height: 70px;
-    margin-top: 10%;
-}
-.textinhos{
-    height: 300px;
+    font-size: 60px;
+    margin-top: 60px;
 }
 
-
-.btn-custom {
-  
-    position: relative;
-    font-family: baloo;
-    font-size: 20px;
-    background-color: #FD811C;
-    border-color: #FD811C;
-    border-radius: 20px;
-    width: 200px;
-    color: white;
-    margin-bottom: 100px;
-    left: 42%; 
-    top: 85px;
-    width: 200px;
-    animation: pulsate 3s infinite; /* Aplicando a animação */
-    transition: transform 0.3s ease; /* Transição suave */
+.btn-vacinas:hover {
+    background-color:#f5a665;
+    transition: 0.7s;
 }
 
-.btn-custom:hover {
-    background-color: #fcab65;
-    border-color: #fcab65;
-    animation: none; /* Parando a animação ao passar o mouse */
-}
 /* modal */
 .modal-css {
     width: 500px;
@@ -239,18 +253,18 @@ body {
   .title-modal{
     text-align: center;
     font-size: 35px;
-    color: #FD811C;
+    color:#FD811C;
     font-family: baloo;
   }
   .btn-modal-fechar{
     position: relative;
     left: 35%;
     top: 50px;
-    background-color: #52BACB;
+    background-color:#FD811C;
     color: white;
     font-family: baloo;
     border-radius: 20px;
-    border-color: #52BACB;  
+    border-color: #FD811C; 
     text-align: center;
     border: none;
     width: 150px;
@@ -265,6 +279,22 @@ body {
     font-weight:600;
 }
 
+.btn-custom{
+  
+    background-color:  #FD811C;
+    border: 3px solid #FD811C; /* Borda laranja */
+    border-radius: 20px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    font-family: baloo;
+}
 
+.btn-custom:hover{
+    background-color:  #fca157;
+    border: 3px solid #fca157; /* Borda laranja */
+}
 
 
