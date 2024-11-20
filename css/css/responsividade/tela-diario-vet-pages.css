@@ -1,0 +1,72 @@
+@media (min-width:310px) and (max-width: 420px){
+    .events{
+        margin-left: -220px;
+        width: 250px;
+    }
+    #events{
+        margin-top: 20px;
+    }
+}
+@media (min-width:421px) and (max-width: 520px){
+    .events{
+        margin-left: -220px;
+        width: 320px;
+    }
+    #events{
+        margin-top: 20px;
+    }
+}
+@media (min-width:521px) and (max-width: 620px){
+    .events{
+        margin-left: -220px;
+        width: 400px;
+    }
+    #events{
+        margin-top: 20px;
+    }
+}
+@media (min-width:621px) and (max-width: 820px){
+    .events{
+        margin-left: -220px;
+    }
+    #events{
+        margin-top: 20px;
+    }
+}
+@media (min-width:821px) and (max-width: 920px){
+    .events{
+        margin-left: -220px;
+    }
+    #events{
+        margin-top: 20px;
+    }
+}
+@media (min-width:921px) and (max-width: 1176px){
+    .events{
+        margin-left: 10px;
+    }
+    .btn-add{
+        margin-top: -50px;
+    }
+    #events{
+        margin-top: 400px;
+    }
+}
+@media (min-width:1177px) and (max-width: 1309px){
+    .btn-add{
+        position: relative;
+        top: -250px;
+    }
+    #events{
+        margin-top: 220px;
+    }
+}
+@media (min-width:1310px) and (max-width: 2560px) {
+    .btn-add{
+        position: relative;
+        top: -250px;
+    }
+    #events{
+        margin-top: 220px;
+    }
+}

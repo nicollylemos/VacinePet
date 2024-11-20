@@ -50,6 +50,7 @@
     .cad-hora2{
         position: relative;
         left: -1px;
+        top: 5px;
     }
 
 }
@@ -108,6 +109,7 @@
     .cad-hora2{
         position: relative;
         left: -1px;
+        top: 5px;
     }
 }
 @media (min-width:701px) and (max-width: 800px){
@@ -161,6 +163,7 @@
     .cad-hora2{
         position: relative;
         left: -1px;
+        top: 5px;
     }
 }
 @media (min-width:801px) and (max-width: 900px){
@@ -214,6 +217,7 @@
     .cad-hora2{
         position: relative;
         left: -1px;
+        top: 5px;
     }
 }
 @media (min-width:901px) and (max-width: 1000px){
@@ -267,6 +271,7 @@
     .cad-hora2{
         position: relative;
         left: -1px;
+        top: 5px;
     }
 }
 @media (min-width:1001px) and (max-width: 1309px){
@@ -302,10 +307,9 @@
         background-color: #f1f1f1;
         border-radius: 4px;
     }
-    .content-apg{
-        position: relative;
-        left: 150px;
-        top: -1040px;
+    .conteudo-apg{
+        margin-left: -250px;
+        margin-top: 30px;
     }
 }
 @media (min-width:1310px) and (max-width: 2560px){
@@ -317,9 +321,10 @@
     .container-conteudo {
         position: relative;
         left: -200px;
+        margin-top: 60px;
     }
     .conteudo-apg{
         margin-left: -200px;
+        margin-top: 30px;
     }
-
 }
