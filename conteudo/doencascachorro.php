@@ -13,8 +13,8 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../css/css/responsividade/teladoencasgato.css">
-    <title>Doenças Felinas</title>
+    <link rel="stylesheet" href="../css/css/responsividade/teladoencascao.css">
+    <title>Doenças Caninas</title>
 
     <style>
 
@@ -247,7 +247,7 @@ include("../inc/header.php");
     <dialog id="modalCinomose" class="modal-css">
         <div class="infos">
             <div>
-                <div class="title-modal">Cinomse</div>
+                <div class="title-modal">Cinomose</div>
                 <div class="modal-body">
                     A cinomose é uma doença viral altamente contagiosa que afeta cães, podendo afetar vários sistemas do
                     corpo, incluindo o sistema respiratório, digestivo e nervoso. O vírus é transmitido por contato com
