@@ -16,9 +16,9 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Doenças Caninas</title>
     <style>
-        .conta {
-            margin-top: 19px;
-        }
+    .conta {
+        margin-top: 19px;
+    }
     </style>
 </head>
 
@@ -530,12 +530,19 @@ include("../inc/header.php");
                     <div class="swiper-button-next"></div>
                 </div>
                 <div class="agende-agora">
-                    <a href="usuario/agendamento.php"><button class="btn btn-primary btn-custom">AGENDE
+                    <?php if ($admin || $logado): ?>
+                    <a href="/VacinePet/usuario/agendamento.php"><button class="btn btn-primary btn-custom">AGENDE
                             AGORA</button></a>
+                    <?php endif; ?>
+                    <?php if (!isset($_SESSION['email']) && !isset($_SESSION['senha_hash'])): ?>
+                    <a href="#" onclick="document.getElementById('modalLogin').showModal(); return false;"><button
+                            class="btn btn-primary btn-custom">Agendar</button></a>
+                    <?php endif; ?>
+
 
                 </div>
             </div>
-            
+
     </div>
 
 
