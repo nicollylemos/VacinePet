@@ -13,7 +13,7 @@ include("../inc/header.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="../css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../css/css/responsividade/teladoencasgato.css">
+    <link rel="stylesheet" href="../css/css/responsividade/teladoencascats.css">
     <title>Doenças Felinas</title>
 
     <style>
@@ -66,9 +66,9 @@ include("../inc/header.php");
                                             como a
                                             “parvovirose dos gatos”. Sua transmissão se dá principalmente pelo contato
                                             direto
-                                            com as fezes de animais doentes. </p><a href="#"><button
-                                                onclick="modal.showModal()" type="submit" class="btn-vacinas">Ver
-                                                Mais</button></a>
+                                            com as fezes de animais doentes. </p><button onclick="modal.showModal()"
+                                            type="submit" class="btn-vacinas">Ver
+                                            Mais</button></a>
                                     </div>
                                 </div>
                                 <div class=" card swiper-slide" id="cardizinhos">

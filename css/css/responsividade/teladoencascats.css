@@ -11,11 +11,15 @@
         background-repeat: no-repeat;
         background-position: top;
     }
-    .title-start{
-        font-size: 35px;
+    .conta h1{
+        color: #ffd371;
+        font-family: baloo;
         position: relative;
-        left: 35px;
-        top: 30px;
+        z-index: 1;
+        line-height: 35px;
+        letter-spacing: 1px;
+        font-size: 50px;
+        
     }
     .sub-title-start{
         width: 300px;
@@ -23,7 +27,7 @@
         top: 155px;
         left: -120px;
         text-align: left;
-        color: black;
+        color: rgb(29, 29, 29);
     }
     .btn-start{
         position: relative;
@@ -43,8 +47,12 @@
     }
     .btn-custom{
         position: relative;
-        top: 70px;
-        left: 90px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
     }
     .slide-container{
         position: relative;
@@ -105,8 +113,12 @@
     }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 100px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
     }
     .slide-container{
         position: relative;
@@ -166,8 +178,12 @@
     }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 130px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
     }
     .slide-container{
         position: relative;
@@ -229,8 +245,12 @@
     }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 150px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
     }
     .slide-container{
         position: relative;
@@ -253,6 +273,9 @@
         background-size: 625px;
         background-repeat: no-repeat;
         background-position: top;
+    }
+    .description{
+        font-size:10px;
     }
     .title-start{
         font-size: 60px;
@@ -288,8 +311,12 @@
     }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 190px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
     }
     .slide-container{
         position: relative;
@@ -299,6 +326,11 @@
         max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
         overflow-y: auto; /* Habilita a rolagem vertical */
         padding: 16px; /* Dá um pouco de espaço interno */
+        }
+
+        .btn-vacinas{
+            font-size: 10px;
+            width: 95%;
         }
 }
 @media (min-width:621px) and (max-width: 700px) {
@@ -338,6 +370,8 @@
         position: relative;
         top: -5px;
     }
+
+   
     .subtitle{
         width: 450px;
         position: relative;
@@ -345,10 +379,21 @@
         top: -20px;
         font-size: 20px;
     }
+    .description{
+        font-size:10px;
+    }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 215px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .btn-vacinas{
+        font-size: 20px;
+        width: 95%;
     }
     .slide-container{
         position: relative;
@@ -400,14 +445,28 @@
     .subtitle{
         width: 400px;
         position: relative;
-        left: 200px;
-        top: -20px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        top: 30px;
         font-size: 20px;
+        text-align: center;
+    }
+   
+    .description{
+        font-size:10px;
     }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 265px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .btn-vacinas{
+        font-size: 20px;
+        width: 95%;
     }
     .slide-container{
         position: relative;
@@ -464,10 +523,22 @@
         top: -20px;
         font-size: 20px;
     }
+  
+    .description{
+        font-size:15px;
+    }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 275px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .btn-vacinas{
+        font-size: 20px;
+        width: 95%;
     }
     .slide-container{
         position: relative;
@@ -501,11 +572,12 @@
         width: 700px;
         font-size: 25px;
         position: relative;
-        top: 360px;
+        top: 380px;
         line-height: 35px;
         left: -270px;
         text-align: left;
         color: #000;
+
     }
     .btn-start{
         position: relative;
@@ -524,10 +596,22 @@
         top: -20px;
         font-size: 20px;
     }
+  
+    .description{
+        font-size:15px;
+    }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 310px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .btn-vacinas{
+        font-size: 20px;
+        width: 95%;
     }
     .slide-container{
         position: relative;
@@ -559,9 +643,9 @@
     }
     .sub-title-start{
         width: 700px;
-        font-size: 25px;
+        font-size: 18px;
         position: relative;
-        top: 360px;
+        top: 390px;
         line-height: 35px;
         left: -270px;
         text-align: left;
@@ -584,10 +668,22 @@
         top: -20px;
         font-size: 20px;
     }
+   
+    .description{
+        font-size:10px;
+    }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 330px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .btn-vacinas{
+        font-size: 20px;
+        width: 95%;
     }
     .slide-container{
         position: relative;
@@ -619,9 +715,9 @@
     }
     .sub-title-start{
         width: 700px;
-        font-size: 25px;
+        font-size: 15px;
         position: relative;
-        top: 400px;
+        top: 500px;
         line-height: 35px;
         left: -270px;
         text-align: left;
@@ -629,25 +725,37 @@
     }
     .btn-start{
         position: relative;
-        top: 410px;
+        top: 510px;
         left: -50px;
     }
     #title-do{
         font-size: 75px;
         position: relative;
-        top: -25px;
+        top: 45px;
     }
     .subtitle{
         width: 700px;
         position: relative;
         left: 125px;
-        top: -20px;
+        top: 25px;
         font-size: 20px;
+    }
+    
+    .description{
+        font-size:10px;
     }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 350px;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .btn-vacinas{
+        font-size: 20px;
+        width: 95%;
     }
     .slide-container{
         position: relative;
@@ -679,9 +787,9 @@
     }
     .sub-title-start{
         width: 800px;
-        font-size: 30px;
+        font-size: 20px;
         position: relative;
-        top: 400px;
+        top: 510px;
         line-height: 45px;
         left: -320px;
         text-align: left;
@@ -689,29 +797,41 @@
     }
     .btn-start{
         position: relative;
-        top: 420px;
+        top: 515px;
         left: -30px;
     }
     #title-do{
-        font-size: 85px;
+        font-size: 75px;
         position: relative;
-        top: -30px;
+        top: 170px;
     }
     .subtitle{
         width: 900px;
         position: relative;
         left: 60px;
-        top: -20px;
-        font-size: 25px;
+        top: 130px;
+        font-size: 20px;
+    }
+      
+    .description{
+        font-size:10px;
     }
     .btn-custom{
         position: relative;
-        top: 40px;
-        left: 400px;
+        top: 170px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
     }
     .slide-container{
         position: relative;
-        top: 10px;
+        top: 120px;
+    }
+    .btn-vacinas{
+    
+        width: 80%;
     }
     .modal-css{
         max-height: 70vh; /* Limita a altura do modal a 70% da altura da tela */
@@ -746,9 +866,25 @@
         position: relative;
         left: 20px;
     }
+    .description{
+        font-size:10px;
+    }
     .btn-custom{
         position: relative;
-        top: 45px;
+        top: 170px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .slide-container{
+        position: relative;
+        top: 120px;
+    }
+    .btn-vacinas{
+    
+        width: 80%;
     }
 }
 @media (min-width: 1151px) and (max-width: 1250px) {
@@ -780,9 +916,25 @@
         position: relative;
         left: 20px;
     }
+    .description{
+        font-size:10px;
+    }
     .btn-custom{
         position: relative;
-        top: 45px;
+        top: 170px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .slide-container{
+        position: relative;
+        top: 120px;
+    }
+    .btn-vacinas{
+    
+        width: 80%;
     }
 }
 @media (min-width: 1251px) and (max-width: 1650px) {
@@ -814,9 +966,25 @@
         position: relative;
         left: 20px;
     }
+    .description{
+        font-size:10px;
+    }
     .btn-custom{
         position: relative;
-        top: 45px;
+        top: 170px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        margin-top: 250px;
+    }
+    .slide-container{
+        position: relative;
+        top: 120px;
+    }
+    .btn-vacinas{
+    
+        width: 80%;
     }
 }
 @media (min-width: 1651px) and (max-width: 1750px) {
@@ -853,7 +1021,7 @@
     .btn-custom{
         position: relative;
         top: 45px;
-        left: 700px;
+        left: 50%;
     }
 }
 @media (min-width: 1751px) and (max-width: 1950px) {
@@ -890,7 +1058,7 @@
     .btn-custom{
         position: relative;
         top: 45px;
-        left: 820px;
+        left: 50%;
     }
 }
 @media (min-width: 1951px) and (max-width: 2100px) {
@@ -927,7 +1095,7 @@
     .btn-custom{
         position: relative;
         top: 45px;
-        left: 880px;
+        left: 50%;
     }
 }
 @media (min-width: 2101px) and (max-width: 2360px) {
@@ -964,7 +1132,7 @@
     .btn-custom{
         position: relative;
         top: 45px;
-        left: 950px;
+        left: 50%;
     }
 }
 @media (min-width: 2361px) and (max-width: 2560px) {
@@ -1001,6 +1169,6 @@
     .btn-custom{
         position: relative;
         top: 45px;
-        left: 1100px;
+        left: 50%;
     }
 }
