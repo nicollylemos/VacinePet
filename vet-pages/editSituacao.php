@@ -72,11 +72,17 @@ if ($id_agendamento) {
                 <select name="situacao" required>
                     <option value="pendente" <?php echo $agendamento['situacao'] == 'pendente' ? 'selected' : ''; ?>>
                         Pendente</option>
+
                     <option value="confirmado"
                         <?php echo $agendamento['situacao'] == 'confirmado' ? 'selected' : ''; ?>>
                         Confirmado</option>
                     <option value="cancelado" <?php echo $agendamento['situacao'] == 'cancelado' ? 'selected' : ''; ?>>
                         Cancelado</option>
+                    <option value="concluído"
+                        <?php echo (isset($agendamento['situacao']) && $agendamento['situacao'] == 'concluído') ? 'selected' : ''; ?>>
+                        Concluído
+                    </option>
+
                 </select>
                 <br>
                 <button type="submit" class="save" name="update">Atualizar</button>
